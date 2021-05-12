@@ -6,6 +6,8 @@ const Index = ({ notes }) => {
   return (
     <div className="notes-container">
       <h1>Notes</h1>
+
+      
       <div className="grid wrapper">
         {notes.map(note => {
           return (
