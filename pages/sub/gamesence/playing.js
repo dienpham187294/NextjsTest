@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Dictaphone from "../../components/helpers/Regcognition"
 import ArrOfPeopeAppear_ReactJSX from "./playingcomponents/ArrOfPeopeAppear_ReactJSX"
-import { Read } from "../../components/helpers/Speak"
+
 let flag = true
 export default function Playing() {
     const [ArrOfPeopeAppear_ReactData, SET_ArrOfPeopeAppear_ReactData] = useState([]);
@@ -33,7 +33,7 @@ export default function Playing() {
                         ArrOfPeopeAppear_ReactData={ArrOfPeopeAppear_ReactData}
                     />
                 </div>
-                <button onClick={() => { Read("Hi how are you", 3) }}>READ</button>
+            
             </div>
         </>
     )
