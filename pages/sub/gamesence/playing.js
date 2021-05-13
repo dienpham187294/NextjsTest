@@ -1,4 +1,4 @@
-
+import Dictaphone from "../../components/helpers/Regcognition"
 
 
 export default function Playing() {
@@ -6,7 +6,9 @@ export default function Playing() {
 
     return (
         <>
-            Playing
+            <div>
+                <Dictaphone />
+            </div>
         </>
     )
 }

@@ -10,7 +10,9 @@
     "mongodb": "^3.5.9",
     "next": "latest",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-speech-recognition": "^3.8.0",
+    "regenerator-runtime": "^0.13.7"
   },
   "license": "MIT"
 }
