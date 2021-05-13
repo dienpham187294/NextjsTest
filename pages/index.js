@@ -6,7 +6,7 @@ import Footer from "./components/main/_footer"
 import Header from "./components/main/_header"
 export default function Home({ isConnected }) {
   return (
-    <div className={styles.container}>
+    <div className="container">
 
       <Header />
 

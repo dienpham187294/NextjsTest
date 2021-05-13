@@ -14,3 +14,21 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.GameSence_Playing{
+  border: 1px solid forestgreen;
+  border-radius: 6px;
+  max-height: 600px;
+  overflow: auto;
+}
+.GameSence_Playing_Arrpeople{
+  width: fit-content;
+  display: inline-block;
+  padding: 6px;
+  margin: 10px;
+}
+
+.GameSence_Playing_Arrpeople img{
+  width: 120px;
+  cursor: pointer;
+}
