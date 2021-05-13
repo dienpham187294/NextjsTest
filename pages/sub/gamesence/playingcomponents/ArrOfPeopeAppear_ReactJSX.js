@@ -15,15 +15,13 @@ function ArrOfPeopeAppear_ReactJSX(props) {
 export default ArrOfPeopeAppear_ReactJSX
 
 function Show_ArrOfPeopeAppear_ReactData(arr) {
-
-    if (arr.length > 0) {
+    if (arr !== undefined) {
         return arr.map((e, index) =>
             <div className="GameSence_Playing_Arrpeople" key={index}>
                 <img alt={e.name} src={e.image} />
             </div>
         )
     }
-
     return null
 }
 
