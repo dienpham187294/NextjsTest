@@ -11,6 +11,7 @@ function Read_ReactJSX(props) {
                 SET_message_speakJSX(null)
             } else {
                 SET_message_speakJSX('Text-to-speech not supported.');
+                alert("Your browser does not support text-to-speech software! Try Chrome desktop, maybe?")
             }
             synth = window.speechSynthesis;
             voices = synth.getVoices();
@@ -18,13 +19,16 @@ function Read_ReactJSX(props) {
         }
     })
     useEffect(() => {
-        if (!flag) {
-            Read(props.MessagetoRead, 1)
+        if (props.MessagetoRead !== null) {
+            console.log(props.MessagetoRead)
+            Read(props.MessagetoRead[0], props.MessagetoRead[1])
+            props.SET_MessagetoRead(null)
+            console.log("done")
         }
     }, [props.MessagetoRead])
     async function Read(message, i) {
 
-        if (message !== "-") {
+        if (message !== null) {
             let number = 1;
             if (i !== 1) {
                 number = 3;

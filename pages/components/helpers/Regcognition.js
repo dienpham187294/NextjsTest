@@ -2,9 +2,10 @@ import React, { useState, useEffect } from 'react';
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
 
 let flag = true
-export default function Dictaphone() {
+let SaveInterimTranscript = "";
+export default function Dictaphone(props) {
     const [Message_Regconition, SET_Message_Regconition] = useState("")
-    const { finalTranscript } = useSpeechRecognition();
+    const { finalTranscript, interimTranscript } = useSpeechRecognition();
 
     useEffect(() => {
         if (flag) {
@@ -14,29 +15,37 @@ export default function Dictaphone() {
 
             if (!SpeechRecognition.browserSupportsSpeechRecognition()) {
                 SET_Message_Regconition("Your browser does not support speech recognition software! Try Chrome desktop, maybe?")
-                console.log('Your browser does not support speech recognition software! Try Chrome desktop, maybe?');
+                alert("Your browser does not support speech recognition software! Try Chrome desktop, maybe?")
             } else {
                 SET_Message_Regconition("Speech recognition software is ready!")
             }
-            console.log("Start")
-            SpeechRecognition.startListening({
-                continuous: true,
-                language: 'en-GB'
-            })
-            console.log("EndStart")
             flag = false;
         }
 
     });
+
+    function Start_regconition() {
+        SpeechRecognition.startListening({
+            continuous: true,
+            language: 'en-GB'
+        })
+    }
     useEffect(
         () => {
-            console.log(finalTranscript)
+            props.SET_Info_message(SaveInterimTranscript);
+            SaveInterimTranscript = ""
         }, [finalTranscript]
     )
-
+    useEffect(
+        () => {
+            if (interimTranscript !== "") {
+                SaveInterimTranscript = interimTranscript;
+            }
+        }, [interimTranscript]
+    )
     return (
         <>
-            <button onClick={SpeechRecognition.startListening}>Listen</button>
+            <button onClick={Start_regconition()}>Listen</button>
             <button onClick={SpeechRecognition.stopListening}>Stop</button>
             <p>{Message_Regconition}</p>
             <p>{finalTranscript}</p>
