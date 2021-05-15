@@ -32,3 +32,14 @@ a {
   width: 120px;
   cursor: pointer;
 }
+.GameSence_Playing_OneShow{
+  
+  width: 90%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.Span_Show_Info_StrickAnwers_Reactdata{
+  margin: 5px;
+  padding: 5px;
+}

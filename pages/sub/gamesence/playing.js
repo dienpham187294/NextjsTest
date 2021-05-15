@@ -35,6 +35,7 @@ export default function Playing() {
                     <ArrOfPeopeAppear_ReactJSX
                         ArrOfPeopeAppear_ReactData={ArrOfPeopeAppear_ReactData}
                         Info_message={Info_message}
+                        SET_Info_message={SET_Info_message}
                     />
                 </div>
 
@@ -47,111 +48,138 @@ let arr = [
     {
         image: "https://i.postimg.cc/mgdMdLCP/man5.png",
         status: true,
+        gender: "male",
         questionandanwers: {
-            begin: [
-                {
-                    Question: ["Hi How are you?"],
-                    anwer: {
-                        text: ["I'm good. How are you?, Pretty good. How are you?, Not bad. How are you?"],
-                        statusStrickmode: true,
-                        stricktext: ["I'm good", "Pretty good", "Not bad"]
-                    },
-                }
-            ],
-
-            middle: [
-                {
-                    Question: ["What do you want?", "What would you like?", "May I help you anything?"],
-                    anwer: {
-                        text: ["I want to take 1 kg apple. Do you have it?", "Do you have any apple?"],
-                        statusStrickmode: true,
-                        stricktext: ["Yes I have"],
+            //Begin -----------------------------------------------
+            begin:
+            {
+                //---------------------------------------
+                iamsaying: {
+                    texttosay: ["Hi How are you?", "How is going?"],
+                    handling:
+                    {
+                        theysay: ["I'm good. How are you?", "Pretty good. How are you?", "Not bad. How are you?"],
                         icon: "https://i.postimg.cc/mgdMdLCP/man5.png",
-                    }
+                        strictmode: true,
+                        function: null,
+                        handling_next: [
+                            {
+                                texttosay: ["I'm good", "Pretty good", "Not bad"],
+                                theysay: null,
+                                strictmode: false,
+                                icon: "https://i.postimg.cc/mgdMdLCP/man5.png",
+                                function: null,
+                                handling_next: null
+                            },
+                            {
+                                texttosay: ["I'm not good"],
+                                theysay: ["I'm sorry. What happend to you?"],
+                                strictmode: true,
+                                icon: null,
+                                function: null,
+                                handling_next: [
+                                    {
+                                        texttosay: ["Nothing at all"],
+                                        theysay: null,
+                                        strictmode: false,
+                                        icon: "https://i.postimg.cc/mgdMdLCP/man5.png",
+                                        function: null,
+                                        handling_next: null
+                                    }
+                                ]
+                            },
+                        ],
+                    },
+                },
+                //---------------------------------------
+            },
+            //Middle -----------------------------------------------
+            middle: [
+
+                {
+                    iamsaying: {
+                        texttosay: ["What do you want?", "What would you like?", "May I help you anything?"],
+                        handling:
+                        {
+                            theysay: ["I want to take 1 kg apple. Do you have it?", "Do you have any apple?"],
+                            icon: "https://i.postimg.cc/mgdMdLCP/man5.png",
+                            function: null,
+                            strictmode: true,
+                            handling_next: [
+                                {
+                                    texttosay: ["Yes I have!", "We have it."],
+                                    theysay: null,
+                                    strictmode: false,
+                                    icon: "https://i.postimg.cc/mgdMdLCP/man5.png",
+                                    function: null,
+                                    handling_next: null
+                                },
+                                {
+                                    texttosay: ["Can you say again!", "What did you say?."],
+                                    theysay: ["Do you have apple.", "T would like to buy some apple."],
+                                    strictmode: false,
+                                    icon: "https://i.postimg.cc/mgdMdLCP/man5.png",
+                                    function: null,
+                                    handling_next: null
+                                },
+
+                            ],
+                        }
+                        ,
+                    },
                 },
                 {
-                    Question: ["How many do you want?"],
-                    anwer: {
-                        text: ["I want to take 1 kg apple."],
-                        statusStrickmode: false,
-                        stricktext: null,
-                        icon: null
-                    }
+                    iamsaying: {
+                        texttosay: ["How many do you want?"],
+                        icon: "https://i.postimg.cc/mgdMdLCP/man5.png",
+                        strictmode: true,
+                        function: null,
+                        handling:
+                        {
+                            theysay: ["I want to take 1 kg apple."],
+                            icon: "https://i.postimg.cc/mgdMdLCP/man5.png",
+                            function: null,
+                            strictmode: false,
+                            handling_next: null
+                        },
+                    },
+
                 },
 
             ],
+            //End -----------------------------------------------
+            end:
+            {
+                //---------------------------------------
+                iamsaying: {
+                    texttosay: ["Here you are.", "This is yours."],
+                    handling:
+                    {
+                        theysay: ["Thank's so much."],
+                        icon: "https://i.postimg.cc/mgdMdLCP/man5.png",
+                        function: null,
+                        strictmode: true,
+                        handling_next: [
+                            {
+                                texttosay: ["You are welcome!", "Nothing at all."],
+                                theysay: null,
+                                strictmode: false,
+                                icon: "https://i.postimg.cc/mgdMdLCP/man5.png",
+                                function: "end_successfull",
+                                handling_next: null
+                            },
 
-            end: [
-                {
-                    Question: ["Here you are."],
-                    anwer: {
-                        text: ["Thank you."],
-                        statusStrickmode: true,
-                        stricktext: ["You are welcome", "Nothing at all"],
-                        icon: null
+                        ],
                     },
-                }
-            ]
+                },
+                //---------------------------------------
+            }
         },
         submit: {
             info: ["apple", 1],
-            templatetoSubmit: "Apple 1KG",
-        },
-    },
-
-    {
-        image: "https://i.postimg.cc/mgdMdLCP/man5.png",
-        status: true,
-        questionandanwers: {
-            begin: [
-                {
-                    Question: ["Hi How are you?"],
-                    anwer: {
-                        text: ["I'm good. How are you?, Pretty good. How are you?, Not bad. How are you?"],
-                        statusStrickmode: true,
-                        stricktext: ["I'm good", "Pretty good", "Not bad"],
-                        icon: null
-                    },
-                }
-            ],
-
-            middle: [
-                {
-                    Question: ["What do you want?", "What would you like?", "May I help you anything?"],
-                    anwer: {
-                        text: ["I want to take 1 kg banana. Do you have it?", "Do you have any banana?"],
-                        statusStrickmode: true,
-                        stricktext: ["Yes I have"],
-                        icon: null
-                    }
-                },
-                {
-                    Question: ["How many do you want?"],
-                    anwer: {
-                        text: ["I want to take 1 kg apple."],
-                        statusStrickmode: false,
-                        stricktext: null,
-                        icon: null
-                    }
-                },
-
-            ],
-
-            end: [
-                {
-                    Question: ["Here you are."],
-                    anwer: {
-                        text: ["Thank you."],
-                        statusStrickmode: true,
-                        stricktext: ["You are welcome", "Nothing at all"],
-                        icon: null
-                    },
-                }
-            ]
-        },
-        submit: {
-            info: ["banana", 1],
-            templatetoSubmit: "Apple 1KG",
+            submitsyntax: "Apple 1KG",
+            strictmode_end: true
         },
     }
+
 ]

@@ -45,8 +45,8 @@ export default function Dictaphone(props) {
     )
     return (
         <>
-            <button onClick={Start_regconition()}>Listen</button>
-            <button onClick={SpeechRecognition.stopListening}>Stop</button>
+            <button onClick={() => Start_regconition()} className="btn btn-sm btn-outline-primary">Listen</button>
+            <button onClick={() => SpeechRecognition.stopListening} className="btn btn-sm btn-outline-primary">Stop</button>
             <p>{Message_Regconition}</p>
             <p>{finalTranscript}</p>
 
