@@ -1,23 +1,37 @@
-import React, { useEffect, useLayoutEffect, useState } from "react"
+import React, { useEffect, useState } from "react";
 import Read_ReactJSX from "../../../components/helpers/Read_ReactJSX"
-
+const e = React.createElement;
 let VoicePick = 1;
-let Time = Date.now();
+
+let flag_Data_normal_mode = true;
+let Data_normal_mode = [];
+
+
 let State_of_Anwer = ["none"];
 let Data_temp_Strickmode = [];
-let Data_normal_mode = [];
+
 let AllData_OfOne = [];
+let ALLTableTool;
+let flag_ALLTableTool = true
+let ArrSearch = ["", ""];
 function ArrOfPeopeAppear_ReactJSX(props) {
 
     const [MessagetoRead, SET_MessagetoRead] = useState(null)
-
     const [Info_StrickAnwers_Reactdata, SET_Info_StrickAnwers_Reactdata] = useState()
     const [Info_Icon_Reactdata, SET_Info_Icon_Reactdata] = useState(null)
     const [Info_Avatar_Reactdata, SET_Avatar_Reactdata] = useState(null)
-    const [Info_ToSunmit_Reactdata, SET_Info_ToSunmit_Reactdata] = useState(null)
-    const [Score, SET_Sore] = useState(0)
+    const [Info_ToSunmit_Reactdata, SET_Info_ToSunmit_Reactdata] = useState(null);
 
+    const [Info_Tool_AfterSearch, SET_Info_Tool_AfterSearch] = useState(null);
+    const [Score, SET_Score] = useState(0)
 
+    useEffect(() => {
+        if (flag_ALLTableTool) {
+            ALLTableTool = props.ALLTable_ReactData;
+            SET_Info_Tool_AfterSearch(ALLTableTool)
+            flag_ALLTableTool = false
+        }
+    })
 
     useEffect(
         () => {
@@ -255,11 +269,12 @@ function ArrOfPeopeAppear_ReactJSX(props) {
 
 
     /*BEGIN ARR TO SHOW */
-    async function AddTo_Show_ArrOfPeopeAppear_ReactData(e) {
+    async function AddTo_Show_ArrOfPeopeAppear_ReactData(e, index) {
 
         if (Info_Avatar_Reactdata === null) {
 
-            e.status = false;
+            // e.status = false;
+            props.ArrOfPeopeAppear_ReactData[index] = false
             State_of_Anwer.push("begin")
             AllData_OfOne.push(e);
             Data_temp_Strickmode.push(e.questionandanwers.begin.iamsaying.texttosay);
@@ -277,12 +292,15 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                 VoicePick = numVoiceArr[d.getSeconds() % 2];
 
             }
-
-            e.questionandanwers.middle.forEach(e => {
-                e.iamsaying.texttosay.forEach(ee => {
-                    Data_normal_mode.push(ee)
+            if (flag_Data_normal_mode) {
+                e.questionandanwers.middle.forEach(e => {
+                    e.iamsaying.texttosay.forEach(ee => {
+                        Data_normal_mode.push(ee)
+                    })
                 })
-            })
+                flag_Data_normal_mode = false
+            }
+
 
         }
     }
@@ -291,7 +309,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
     function Show_ArrOfPeopeAppear_ReactData(arr) {
         if (arr !== undefined) {
             return arr.map((e, index) => e.status ?
-                <div onClick={() => AddTo_Show_ArrOfPeopeAppear_ReactData(e)} className="GameSence_Playing_Arrpeople" key={index}>
+                <div onClick={() => AddTo_Show_ArrOfPeopeAppear_ReactData(e, index)} className="GameSence_Playing_Arrpeople" key={index}>
                     <img alt={e.image} src={e.image} />
                 </div> : null
             )
@@ -314,7 +332,12 @@ function ArrOfPeopeAppear_ReactJSX(props) {
         if (command === "end_successfull") {
 
             State_of_Anwer.push("none");
-            SET_Sore(S => S + 1);
+            SET_Score(S => S + 1);
+            SET_Avatar_Reactdata(null)
+            return
+        }
+        if (command === "end_unsuccessfull") {
+            State_of_Anwer.push("none");
             SET_Avatar_Reactdata(null)
             return
         }
@@ -345,12 +368,89 @@ function ArrOfPeopeAppear_ReactJSX(props) {
             <span className="Span_Show_Info_StrickAnwers_Reactdata" key={index}>{e}</span>
         )
     }
+
+    /*BEGIN SHOW SEARCH*/
+    // function AddTo_SHOW_Search() {
+    //     console.log(ArrSearch);
+    //     // let Arr = [];
+
+
+    // }
+
+
+    function SHOW_Search() {
+
+
+
+        let ArrLevelTale = []
+        Info_Tool_AfterSearch.forEach((Element, index) => {
+            let ArrInside = [<h4>{Element.name}</h4>];
+            let TableTr = [];
+            Element.content.forEach(eeee => {
+                let ArrObjectkey = Object.keys(eeee);
+                let ArrTD = [];
+                ArrObjectkey.forEach(eArrObjectkey => {
+
+                    if (eArrObjectkey === "img" || eArrObjectkey === "image") {
+
+                        ArrTD.push(e("td", null,
+                            e("img", { src: eeee[eArrObjectkey], className: "img_inSearch" })
+                        ))
+                    } else {
+                        ArrTD.push(e("td", null, eeee[eArrObjectkey]))
+                    }
+
+                })
+
+                TableTr.push(e("tr", null, ArrTD))
+            })
+            let Table = e("table", { className: "table table-sm" },
+                e("tbody", null, TableTr)
+            )
+
+
+
+            ArrInside.push(Table)
+
+            let temp = e("div", { key: index }, ArrInside);
+            ArrLevelTale.push(temp)
+        })
+
+
+        let RES = e("div", { key: "index" }, ArrLevelTale)
+
+        return (
+            <div className="toolSearch">
+                {RES}
+            </div >
+        )
+
+
+    }
+    /*END SHOW SEARCH */
+
     function Show_OnePeopeAppear_ReactData() {
         if (Info_Avatar_Reactdata !== null) {
             return (
                 <div className="row GameSence_Playing_OneShow">
                     <div className="col-5">
-                        Table tool
+                        {/* <input type="text" className="form-control" placeholder="Enter name of table"
+                            onKeyUp={(e) => {
+                                if (e.key === "Enter") {
+                                    ArrSearch[0] = e.currentTarget.value;
+                                    AddTo_SHOW_Search()
+                                }
+                            }}
+
+                        />
+                        <input type="text" className="form-control" placeholder="Enter syxtax to search"
+                            onKeyUp={(e) => {
+                                if (e.key === "Enter") {
+                                    ArrSearch[1] = e.currentTarget.value;
+                                    AddTo_SHOW_Search()
+                                }
+                            }} /> */}
+                        {SHOW_Search()}
                     </div>
                     <div className="col-7">
 
@@ -388,9 +488,20 @@ function ArrOfPeopeAppear_ReactJSX(props) {
         return null
     }
     /*END JUST ONE TO SHOW */
+
+
+
+
+
+
+
+
+
+
     return (
         <>
             <div className="GameSence_Playing">
+                <p>  Score:  {Score}</p>
 
                 {Show_OnePeopeAppear_ReactData()}
                 {Show_ArrOfPeopeAppear_ReactData(props.ArrOfPeopeAppear_ReactData)}
@@ -401,6 +512,28 @@ function ArrOfPeopeAppear_ReactJSX(props) {
     )
 }
 export default ArrOfPeopeAppear_ReactJSX
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 function SortMessageToArray(message) {
 
