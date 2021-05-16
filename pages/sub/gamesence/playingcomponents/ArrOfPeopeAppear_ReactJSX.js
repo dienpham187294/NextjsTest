@@ -43,45 +43,47 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                     let Data_use_StrickMode = Data_temp_Strickmode[Data_temp_Strickmode.length - 1]
                     let Data_use_AllData_OfOne = AllData_OfOne[AllData_OfOne.length - 1]
 
-
-                    let Begin_Status = false;
-                    Data_use_StrickMode.forEach(e => {
-                        if (checkMessage(props.Info_message, e)) {
-                            Begin_Status = true
-                        }
-                    })
-
-
-                    if (Begin_Status) {
-                        let data = Data_use_AllData_OfOne.questionandanwers.begin.iamsaying.handling;
-
-                        if (data.theysay !== null) {
-                            let d = new Date();
-                            let numVoice = d.getSeconds() % data.theysay.length;
-                            Read_message(data.theysay[numVoice], VoicePick);
-                        }
-                        SET_Info_Icon_Reactdata(data.icon)
-                        Submit_check_funtion_indata(data.function)
+                    try {
+                        let Begin_Status = false;
+                        Data_use_StrickMode.forEach(e => {
+                            if (checkMessage(props.Info_message, e)) {
+                                Begin_Status = true
+                            }
+                        })
 
 
-                        if (data.strictmode) {
-                            State_of_Anwer.push("strictmode")
-                            Data_temp_Strickmode.push(data.handling_next)
-                            let arrTemp = [];
-                            data.handling_next.forEach(e => {
+                        if (Begin_Status) {
+                            let data = Data_use_AllData_OfOne.questionandanwers.begin.iamsaying.handling;
 
-                                e.texttosay.forEach(ee => {
-                                    arrTemp.push(ee)
+                            if (data.theysay !== null) {
+                                let d = new Date();
+                                let numVoice = d.getSeconds() % data.theysay.length;
+                                Read_message(data.theysay[numVoice], VoicePick);
+                            }
+                            SET_Info_Icon_Reactdata(data.icon)
+                            Submit_check_funtion_indata(data.function)
+
+
+                            if (data.handling_next !== null) {
+                                State_of_Anwer.push("strictmode")
+                                Data_temp_Strickmode.push(data.handling_next)
+                                let arrTemp = [];
+                                data.handling_next.forEach(e => {
+
+                                    e.texttosay.forEach(ee => {
+                                        arrTemp.push(ee)
+                                    })
                                 })
-                            })
 
-                            SET_Info_StrickAnwers_Reactdata(arrTemp)
-                        } else {
-                            State_of_Anwer.push("normalmode")
-                            SET_Info_StrickAnwers_Reactdata(Data_normal_mode);
+                                SET_Info_StrickAnwers_Reactdata(arrTemp)
+                            } else {
+                                State_of_Anwer.push("normalmode")
+                                SET_Info_StrickAnwers_Reactdata(Data_normal_mode);
+                            }
+
                         }
+                    } catch (error) { }
 
-                    }
                 }
 
                 else if (State_of_Anwer[State_of_Anwer.length - 1] === "strictmode") {
@@ -135,7 +137,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
 
 
                         try {
-                            if (data.strictmode) {
+                            if (data.handling_next !== null) {
                                 State_of_Anwer.push("strictmode")
                                 Data_temp_Strickmode.push(data.handling_next)
                                 let arrTemp = [];
@@ -202,7 +204,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
 
                         try {
 
-                            if (data.iamsaying.handling.strictmode) {
+                            if (data.iamsaying.handling.handling_next !== null) {
                                 State_of_Anwer.push("strictmode")
                                 Data_temp_Strickmode.push(data.iamsaying.handling.handling_next)
                                 let arrTemp = [];
@@ -241,7 +243,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                             }
                             SET_Info_Icon_Reactdata(data.handling.icon)
                             Submit_check_funtion_indata(data.handling.function)
-                            if (data.handling.strictmode) {
+                            if (data.handling.handling_next !== null) {
                                 State_of_Anwer.push("strictmode")
                                 Data_temp_Strickmode.push(data.handling.handling_next)
                                 let arrTemp = [];

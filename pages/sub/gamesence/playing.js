@@ -63,13 +63,13 @@ let arr = [
                     {
                         theysay: ["I'm good. How are you?", "Pretty good. How are you?", "Not bad. How are you?"],
                         icon: "https://i.postimg.cc/mgdMdLCP/man5.png",
-                        strictmode: true,
+
                         function: null,
                         handling_next: [
                             {
                                 texttosay: ["I'm good", "Pretty good", "Not bad"],
                                 theysay: null,
-                                strictmode: false,
+
                                 icon: "https://i.postimg.cc/mgdMdLCP/man5.png",
                                 function: null,
                                 handling_next: null
@@ -77,14 +77,14 @@ let arr = [
                             {
                                 texttosay: ["I'm not good"],
                                 theysay: ["I'm sorry. What happend to you?"],
-                                strictmode: true,
+
                                 icon: null,
                                 function: null,
                                 handling_next: [
                                     {
                                         texttosay: ["Nothing at all"],
                                         theysay: null,
-                                        strictmode: false,
+
                                         icon: "https://i.postimg.cc/mgdMdLCP/man5.png",
                                         function: null,
                                         handling_next: null
@@ -107,12 +107,12 @@ let arr = [
                             theysay: ["I want to take 1 kg apple. Do you have it?", "Do you have any apple?"],
                             icon: "https://i.postimg.cc/mgdMdLCP/man5.png",
                             function: null,
-                            strictmode: true,
+
                             handling_next: [
                                 {
                                     texttosay: ["Yes I have!", "We have it."],
                                     theysay: null,
-                                    strictmode: false,
+
                                     icon: "https://i.postimg.cc/mgdMdLCP/man5.png",
                                     function: null,
                                     handling_next: null
@@ -120,7 +120,7 @@ let arr = [
                                 {
                                     texttosay: ["Can you say again!", "What did you say?."],
                                     theysay: ["Do you have apple.", "T would like to buy some apple."],
-                                    strictmode: false,
+
                                     icon: "https://i.postimg.cc/mgdMdLCP/man5.png",
                                     function: null,
                                     handling_next: null
@@ -135,14 +135,14 @@ let arr = [
                     iamsaying: {
                         texttosay: ["How many do you want?"],
                         icon: "https://i.postimg.cc/mgdMdLCP/man5.png",
-                        strictmode: true,
+
                         function: null,
                         handling:
                         {
                             theysay: ["I want to take 1 kg apple."],
                             icon: "https://i.postimg.cc/mgdMdLCP/man5.png",
                             function: null,
-                            strictmode: false,
+
                             handling_next: null
                         },
                     },
@@ -161,12 +161,12 @@ let arr = [
                         theysay: ["Thank's so much."],
                         icon: "https://i.postimg.cc/mgdMdLCP/man5.png",
                         function: null,
-                        strictmode: true,
+
                         handling_next: [
                             {
                                 texttosay: ["You are welcome!", "Nothing at all."],
                                 theysay: null,
-                                strictmode: false,
+
                                 icon: "https://i.postimg.cc/mgdMdLCP/man5.png",
                                 function: "end_successfull",
                                 handling_next: null
@@ -180,8 +180,7 @@ let arr = [
         },
         submit: {
             info: ["apple", 1],
-            submitsyntax: "Apple 1KG",
-            strictmode_end: true
+            submitsyntax: "Apple 1KG"
         },
     }
 
