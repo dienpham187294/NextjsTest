@@ -45,7 +45,10 @@ function Playing({ note }) {
 Playing.getInitialProps = async ({ query: { id, lession } }) => {
 
     try {
-        const res = await fetch(`http://localhost:3000/api/gamesence/${id}`, {
+        // const res = await fetch(`http://localhost:3000/api/gamesence/${id}`, {
+        //     method: "GET"
+        // });
+        const res = await fetch(`https://app-testdienpham.herokuapp.com/api/gamesence/${id}`, {
             method: "GET"
         });
         const { data } = await res.json();
