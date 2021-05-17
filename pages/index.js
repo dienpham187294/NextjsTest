@@ -1,18 +1,13 @@
 // import Head from 'next/head'
 import { connectToDatabase } from '../util/mongodb'
 import styles from '../styles/Home.module.css'
-import Body from "./components/main/_body"
-import Footer from "./components/main/_footer"
-import Header from "./components/main/_header"
+import Body from "./main/_body"
+
+
 export default function Home({ isConnected }) {
   return (
     <div className="container">
-
-      <Header />
-
       <Body />
-
-      <Footer />
     </div>
   )
 }

@@ -7,7 +7,8 @@
     "start": "next start -p $PORT"
   },
   "dependencies": {
-    "bootstrap": "^5.0.0-beta3",
+    "html-react-parser": "^1.2.6",
+    "isomorphic-unfetch": "^3.1.0",
     "mongodb": "^3.5.9",
     "next": "latest",
     "react": "^16.13.1",

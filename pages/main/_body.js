@@ -1,5 +1,5 @@
 
-import styles from '../../../styles/Home.module.css'
+import styles from '../../styles/Home.module.css'
 import Link from 'next/link'
 export default function body() {
 
@@ -36,11 +36,11 @@ export default function body() {
                 </a>
 
                 <a href="#" className={styles.card}>
-                    <h2>Account &rarr;</h2>
-                    <p>Login - Sign up!</p>
+                    <h2>Forum &rarr;</h2>
+                    <p>Trao đổi - nhận xét</p>
                 </a>
 
-                <Link href="/manager" >
+                {/* <Link href="/manager" >
                     <a className={styles.card}>
                         <h2>Manager &rarr;</h2>
                         <p>Manager Setting.</p>
@@ -51,7 +51,7 @@ export default function body() {
                         <h2>Admin &rarr;</h2>
                         <p>Admin Setting.</p>
                     </a>
-                </Link>
+                </Link> */}
 
             </div>
         </main>

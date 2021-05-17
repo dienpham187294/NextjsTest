@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Read_ReactJSX from "../../../components/helpers/Read_ReactJSX"
+import Read_ReactJSX from "../../helpers/Read_ReactJSX"
 const e = React.createElement;
 let VoicePick = 1;
 
@@ -13,7 +13,7 @@ let Data_temp_Strickmode = [];
 let AllData_OfOne = [];
 let ALLTableTool;
 let flag_ALLTableTool = true
-let ArrSearch = ["", ""];
+// let ArrSearch = ["", ""];
 function ArrOfPeopeAppear_ReactJSX(props) {
 
     const [MessagetoRead, SET_MessagetoRead] = useState(null)
@@ -388,23 +388,26 @@ function ArrOfPeopeAppear_ReactJSX(props) {
         Info_Tool_AfterSearch.forEach((Element, index) => {
             let ArrInside = [<h4>{Element.name}</h4>];
             let TableTr = [];
-            Element.content.forEach(eeee => {
+            Element.content.forEach((eeee, indexeeee) => {
                 let ArrObjectkey = Object.keys(eeee);
                 let ArrTD = [];
-                ArrObjectkey.forEach(eArrObjectkey => {
+                ArrObjectkey.forEach((eArrObjectkey, i) => {
 
                     if (eArrObjectkey === "img" || eArrObjectkey === "image") {
+                        let Keytemp = indexeeee + " " + i;
 
-                        ArrTD.push(e("td", null,
+                        ArrTD.push(e("td", { key: { Keytemp } },
                             e("img", { src: eeee[eArrObjectkey], className: "img_inSearch" })
                         ))
                     } else {
-                        ArrTD.push(e("td", null, eeee[eArrObjectkey]))
+                        let Keytemp = indexeeee + " " + i;
+
+                        ArrTD.push(e("td", { key: { Keytemp } }, eeee[eArrObjectkey]))
                     }
 
                 })
 
-                TableTr.push(e("tr", null, ArrTD))
+                TableTr.push(e("tr", { key: { indexeeee } }, ArrTD))
             })
             let Table = e("table", { className: "table table-sm" },
                 e("tbody", null, TableTr)

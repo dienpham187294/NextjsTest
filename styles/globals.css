@@ -55,3 +55,15 @@ a {
 
     width: 60px;
 }
+/* .gamesence_allcource{
+
+} */
+.gamesence_allcource_card{
+  width: 23%;
+  min-width: 300px;
+  border: 1px solid green;
+  border-radius: 6px;
+  padding: 10px;
+  margin: 1%;
+  display: inline-block;
+}
