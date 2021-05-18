@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router'
-import parse, { attributesToProps } from 'html-react-parser';
+import parse from 'html-react-parser';
 import { useEffect, useState } from 'react';
 
 function Lession({ note }) {
@@ -37,7 +37,7 @@ function Lession({ note }) {
     )
 }
 Lession.getInitialProps = async ({ query: { id, lession } }) => {
-  
+
     try {
         // const res = await fetch(`http://localhost:3000/api/gamesence/${id}`, {
         //     method: "GET"

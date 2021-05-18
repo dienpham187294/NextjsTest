@@ -59,9 +59,6 @@ function MyApp({ Component, pageProps }) {
                 <Link href="/gamesence">
                   <a className="dropdown-item" >Game by sence</a>
                 </Link>
-
-
-
                 <Link href="/boardgame">
                   <a className="dropdown-item" >Board Game</a>
                 </Link>

@@ -67,3 +67,42 @@ a {
   margin: 1%;
   display: inline-block;
 }
+
+.Insert_lession div {
+  border: 1px solid green;
+  border-radius: 6px;
+}
+
+.Insert_lession textarea {
+    width: 80%;
+    height: fit-content;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid black;
+    margin-top: 10px;
+    border-radius: 10px;
+
+}
+
+.Insert_tool div {
+  border: 1px solid green;
+  border-radius: 6px;
+}
+
+.Insert_tool textarea {
+    width: 80%;
+    height: fit-content;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid black;
+    margin-top: 10px;
+    border-radius: 10px;
+
+}
+
+#Text_gamedata{
+  width: 80%;
+  height: fit-content;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}

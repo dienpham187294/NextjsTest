@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Read_ReactJSX from "../../helpers/Read_ReactJSX"
+import Read_ReactJSX from "../helpers/Read_ReactJSX"
 const e = React.createElement;
 let VoicePick = 1;
 
@@ -49,14 +49,14 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                         let Begin_Status = false;
                         Data_use_StrickMode.forEach(e => {
                             if (checkMessage(props.Info_message, e)) {
-
+                                console.log(props.Info_message, e)
+                                console.log(checkMessage(props.Info_message, e))
                                 Begin_Status = true
                             }
                         })
 
 
                         if (Begin_Status) {
-
                             let data = Data_use_AllData_OfOne.questionandanwers.begin.iamsaying.handling;
 
                             if (data.theysay !== null) {
@@ -98,14 +98,14 @@ function ArrOfPeopeAppear_ReactJSX(props) {
 
                         //Buoc 2 xu ly data
 
-                        let ARR_TEMP_CHECKMESSAGE_Rate = 6;                       let ARR_TEMP_CHECKMESSAGE_Length = 0
+                        let ARR_TEMP_CHECKMESSAGE_Rate = 6
+                        let ARR_TEMP_CHECKMESSAGE_Length = 0
                         let ARR_TEMP_CHECKMESSAGE_ARR = ["none"]
 
 
                         Data_Strict.forEach(e => {
                             e.texttosay.forEach(ee => {
                                 let TEMP_CHECK = checkMessageReturnNumber(props.Info_message, ee)
-                                console.log(TEMP_CHECK)
                                 if (TEMP_CHECK[0] >= ARR_TEMP_CHECKMESSAGE_Rate) {
                                     if (TEMP_CHECK[0] === ARR_TEMP_CHECKMESSAGE_Length && TEMP_CHECK[1] > ARR_TEMP_CHECKMESSAGE_Length) {
                                         ARR_TEMP_CHECKMESSAGE_Rate = TEMP_CHECK[0];
@@ -348,20 +348,13 @@ function ArrOfPeopeAppear_ReactJSX(props) {
 
                 State_of_Anwer.push("none");
                 SET_Score(S => S + 1);
+                props.SET_ScoreSumit(S => S + 1)
                 SET_Avatar_Reactdata(null)
                 return
             }
             if (command === "end_unsuccessfull") {
                 State_of_Anwer.push("none");
                 SET_Avatar_Reactdata(null)
-                return
-            }
-            if (command.indexOf("read_") > 0) {
-                let a = command.replace("read_", "");
-                Read_message(a);
-
-                // State_of_Anwer.push("none");
-                // SET_Avatar_Reactdata(null)
                 return
             }
         } catch (error) {
@@ -532,6 +525,28 @@ function ArrOfPeopeAppear_ReactJSX(props) {
 }
 export default ArrOfPeopeAppear_ReactJSX
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function SortMessageToArray(message) {
 
 
@@ -549,6 +564,7 @@ function SortMessageToArray(message) {
 }
 
 function checkMessage(message_API, message_INPUT) {
+
     if (message_API === null || message_INPUT === null || message_API === "" || message_INPUT === "") {
         return false
     }
@@ -558,15 +574,14 @@ function checkMessage(message_API, message_INPUT) {
     SortMessageToArray(message_INPUT).forEach(e => {
         if (message_API.indexOf(e) !== -1) {
             numCheckRight += 1;
+
         }
     })
 
     if (numCheckRight / Allnumtocheck > 2 / 3) {
         return true
-    } else {
-        return false
     }
-
+    return false
 }
 
 function checkMessageReturnNumber(message_API, message_INPUT) {
