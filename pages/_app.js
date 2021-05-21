@@ -4,6 +4,8 @@ import Link from 'next/link'
 import 'regenerator-runtime/runtime'
 import Head from "next/head";
 function MyApp({ Component, pageProps }) {
+  // let ACB = "ABC"
+
   return (<>
     <Head>
       <title>ESL GAME</title>
@@ -77,6 +79,7 @@ function MyApp({ Component, pageProps }) {
         </div>
       </nav>
     </header>
+
     <Component {...pageProps} />
   </>)
 

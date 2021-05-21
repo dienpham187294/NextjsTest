@@ -204,15 +204,7 @@ export default function Manager({ Tempdata }) {
                 }
             })
 
-            // const res = await fetch(`http://localhost:3000/api/gamesence/insertlession`, {
-            //     method: 'PUT',
-            //     headers: {
-            //         "Accept": "application/json",
-            //         "Content-Type": "application/json"
-            //     },
-            //     body: JSON.stringify([{ "subject": OnetoInsert, "data": Datatoupdate }])
-            // })
-            const res = await fetch(`https://app-testdienpham.herokuapp.com/api/gamesence/insertlession`, {
+            const res = await fetch(`http://localhost:3000/api/gamesence/insertlession`, {
                 method: 'PUT',
                 headers: {
                     "Accept": "application/json",
@@ -220,6 +212,14 @@ export default function Manager({ Tempdata }) {
                 },
                 body: JSON.stringify([{ "subject": OnetoInsert, "data": Datatoupdate }])
             })
+            // const res = await fetch(`https://app-testdienpham.herokuapp.com/api/gamesence/insertlession`, {
+            //     method: 'PUT',
+            //     headers: {
+            //         "Accept": "application/json",
+            //         "Content-Type": "application/json"
+            //     },
+            //     body: JSON.stringify([{ "subject": OnetoInsert, "data": Datatoupdate }])
+            // })
 
             const { success } = await res.json();
 
@@ -235,7 +235,7 @@ export default function Manager({ Tempdata }) {
                 //     },
                 //     body: JSON.stringify([{ "subject": OnetoInsert, "data": Datatoupdate }])
                 // })
-                const res = await fetch(`https://app-testdienpham.herokuapp.com/api/gamesence/insertlession`, {
+                const res1 = await fetch(`https://app-testdienpham.herokuapp.com/api/gamesence/insertlession`, {
                     method: 'PUT',
                     headers: {
                         "Accept": "application/json",

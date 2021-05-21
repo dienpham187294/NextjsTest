@@ -33,17 +33,15 @@ function Post({ note }) {
 
     })
     return (
-
-        <div className="container">
-            {Data_show !== null ? Data_show.map((e, index) =>
-                <Link href={"/gamesence/post/" + router.query.id + "/" + e.nameoflession} key={index + "link"} >
-                    <a className="gamesence_allcource_card" key={index + "a"}>
-                        <h3>Lession {index + 1}: {e.nameoflession} &rarr;</h3>
-                        <p>{e.description}!</p>
-                    </a>
-                </Link>
-            ) : Mesage_Data_show}
-        </div>
+        <div className="container"> {
+            Data_show !== null ? Data_show.map((e, index) =>
+                <Link href={"/gamesence/post/" + router.query.id + "/" + e.nameoflession}
+                    key={index + "link"}>
+                    <a className="gamesence_allcource_card"
+                        key={index + "a"}>
+                        <h3> Lession {index + 1}: {e.nameoflession} & rarr; </h3> <p> {e.description}! </p> </a> </Link>
+            ) : Mesage_Data_show
+        } </div>
     )
 }
 
@@ -51,12 +49,12 @@ function Post({ note }) {
 Post.getInitialProps = async ({ query: { id } }) => {
 
     try {
-        // const res = await fetch(`http://localhost:3000/api/gamesence/${id}`, {
-        //     method: "GET"
-        // });
-        const res = await fetch(`https://app-testdienpham.herokuapp.com/api/gamesence/${id}`, {
+        const res = await fetch(`http://localhost:3000/api/gamesence/${id}`, {
             method: "GET"
         });
+        // const res = await fetch(`https://app-testdienpham.herokuapp.com/api/gamesence/${id}`, {
+        //     method: "GET"
+        // });
         const { data } = await res.json();
 
         return { note: data[0].all_lession }

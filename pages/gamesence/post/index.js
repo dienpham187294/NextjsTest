@@ -21,8 +21,8 @@ export default function Home({ data }) {
                 {data_ReactJSX !== null ? data_ReactJSX.map((e, index) =>
                     <Link href={"/gamesence/post/" + e.subject} key={index + "link"} >
                         <a className="gamesence_allcource_card" key={index + "a"}>
-                            <h3>Chủ đề: {e.subject} &rarr;</h3>
-                            <p>Tác giả:  {e.author}!</p>
+                            <h3> {e.subject} &rarr;</h3>
+                            <p>  {e.author}!</p>
                             <p>{e.description}!</p>
                         </a>
                     </Link>

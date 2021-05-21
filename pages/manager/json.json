@@ -1,0 +1,159 @@
+[
+    {
+        "image": "https://i.postimg.cc/mgdMdLCP/man5.png",
+        "status": true,
+        "gender": "male",
+        "questionandanwers": {
+            "begin": {
+                "iamsaying": {
+                    "texttosay": [
+                        "Hi How are you?",
+                        "How is going?"
+                    ],
+                    "handling": {
+                        "theysay": [
+                            "I'm good. How are you?",
+                            "Pretty good. How are you?",
+                            "Not bad. How are you?"
+                        ],
+                        "icon": "https://i.postimg.cc/mgdMdLCP/man5.png",
+                        "function": null,
+                        "mark": "124",
+                        "handling_next": [
+                            {
+                                "texttosay": [
+                                    "I'm good",
+                                    "Pretty good",
+                                    "Not bad"
+                                ],
+                                "theysay": null,
+                                "icon": "https://i.postimg.cc/mgdMdLCP/man5.png",
+                                "function": null,
+                                "mark": "124222",
+                                "handling_next": null
+                            },
+                            {
+                                "texttosay": [
+                                    "I'm not good"
+                                ],
+                                "theysay": [
+                                    "I'm sorry. What happend to you?"
+                                ],
+                                "icon": null,
+                                "function": null,
+                                "mark": "1242111122",
+                                "handling_next": [
+                                    {
+                                        "texttosay": [
+                                            "Nothing at all"
+                                        ],
+                                        "theysay": null,
+                                        "icon": "https://i.postimg.cc/mgdMdLCP/man5.png",
+                                        "function": null,
+                                        "mark": "1242111aaaa122",
+                                        "handling_next": null
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                }
+            },
+            "middle": [
+                {
+                    "iamsaying": {
+                        "texttosay": [
+                            "What do you want?",
+                            "What would you like?",
+                            "May I help you anything?"
+                        ],
+                        "handling": {
+                            "theysay": [
+                                "I want to take 1 kg apple. Do you have it?",
+                                "Do you have any apple?"
+                            ],
+                            "icon": "https://i.postimg.cc/mgdMdLCP/man5.png",
+                            "function": null,
+                            "handling_next": [
+                                {
+                                    "texttosay": [
+                                        "Yes I have!",
+                                        "We have it."
+                                    ],
+                                    "theysay": null,
+                                    "icon": "https://i.postimg.cc/mgdMdLCP/man5.png",
+                                    "function": null,
+                                    "handling_next": null
+                                },
+                                {
+                                    "texttosay": [
+                                        "Can you say again!",
+                                        "What did you say?."
+                                    ],
+                                    "theysay": [
+                                        "Do you have apple.",
+                                        "T would like to buy some apple."
+                                    ],
+                                    "icon": "https://i.postimg.cc/mgdMdLCP/man5.png",
+                                    "function": null,
+                                    "handling_next": null
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "iamsaying": {
+                        "texttosay": [
+                            "How many do you want?"
+                        ],
+                        "icon": "https://i.postimg.cc/mgdMdLCP/man5.png",
+                        "function": null,
+                        "handling": {
+                            "theysay": [
+                                "I want to take 1 kg apple."
+                            ],
+                            "icon": "https://i.postimg.cc/mgdMdLCP/man5.png",
+                            "function": null,
+                            "handling_next": null
+                        }
+                    }
+                }
+            ],
+            "end": {
+                "iamsaying": {
+                    "texttosay": [
+                        "Here you are.",
+                        "This is yours."
+                    ],
+                    "handling": {
+                        "theysay": [
+                            "Thank's so much."
+                        ],
+                        "icon": "https://i.postimg.cc/mgdMdLCP/man5.png",
+                        "function": null,
+                        "handling_next": [
+                            {
+                                "texttosay": [
+                                    "You are welcome!",
+                                    "Nothing at all."
+                                ],
+                                "theysay": null,
+                                "icon": "https://i.postimg.cc/mgdMdLCP/man5.png",
+                                "function": "end_successfull",
+                                "handling_next": null
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "submit": {
+            "info": [
+                "apple",
+                1
+            ],
+            "submitsyntax": "Apple 1KG"
+        }
+    }
+]
