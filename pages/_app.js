@@ -35,7 +35,7 @@ function MyApp({ Component, pageProps }) {
 
       <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
         <Link href="/">
-          <a className="navbar-brand" >ESL_Game</a>
+          <a className="navbar-brand" >ESL Game</a>
         </Link>
 
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,11 +55,11 @@ function MyApp({ Component, pageProps }) {
             </li> */}
             <li className="nav-item dropdown">
               <Link href="/">
-                <a className="nav-link dropdown-toggle" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                <a className="nav-link dropdown-toggle" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sản phẩm</a>
               </Link>
               <div className="dropdown-menu" aria-labelledby="dropdown03">
                 <Link href="/gamesence">
-                  <a className="dropdown-item" >Game by sence</a>
+                  <a className="dropdown-item" >Giao tiếp theo ngữ cảnh</a>
                 </Link>
                 <Link href="/boardgame">
                   <a className="dropdown-item" >Board Game</a>

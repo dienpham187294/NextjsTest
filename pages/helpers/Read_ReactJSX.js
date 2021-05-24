@@ -37,7 +37,10 @@ function Read_ReactJSX(props) {
                 ut.lang = "en-GB"
                 ut.voice = await speechSynthesis.getVoices()[i]
                 synth.speak(ut);
-            } catch (error) { }
+            } catch (error) {
+
+                console.error();
+            }
         }
 
     }

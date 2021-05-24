@@ -13,31 +13,44 @@ export default function body() {
             <p className={styles.description}>
                 {/* Get started by editing{' '}
           <code className={styles.code}>pages/index.js</code> */}
-          Learning - Playing - Practicing!
-        </p>
+                <br />
+                <h4> Nền tảng trò chơi thực hành tiếng anh giao tiếp!</h4>
 
-            <div className={styles.grid}>
+                <i>Ứng dụng công nghệ nhận diện giọng nói mang đến trải nghiệm thực hành tiếng anh thực sự thú vị và hiệu quả.</i>
+                {/* <br />
+          Ứng dụng công nghệ hiện đại vào giao tiếp hiệu quả. */}
+            </p>
+
+            Tất cả bài học vô đây;
+
+            Tên bài học
+
+            Mô tả:
+
+            Độ khó: Sơ cấp: Trung cấp: Cao cấp:
+
+            {/* <div className={styles.grid}>
                 <Link href="/gamesence" >
                     <a className={styles.card}>
-                        <h2>Game by sence &rarr;</h2>
-                        <p>Game!</p>
+                        <h2>Giao tiếp theo ngữ cảnh &rarr;</h2>
+                        <p>Thực hành giao tiếp theo ngữ cảnh!</p>
                     </a>
                 </Link>
 
 
                 <a href="#" className={styles.card}>
                     <h2>Boardgame &rarr;</h2>
-                    <p>Boardgame!</p>
+                    <p>Trò chơi giúp thực hành tiếng anh giao tiếp!</p>
                 </a>
 
                 <a href="#" className={styles.card}>
-                    <h2>Blog &rarr;</h2>
-                    <p>Share about English!</p>
+                    <h2>Blog học tiếng anh &rarr;</h2>
+                    <p>Phương pháp thực hành tiếng anh hiệu quả!</p>
                 </a>
 
                 <a href="#" className={styles.card}>
                     <h2>Forum &rarr;</h2>
-                    <p>Trao đổi - nhận xét</p>
+                    <p>Nơi cùng trao đổi - nhận xét - góp ý kiến và chia sẻ về thực hành.</p>
                 </a>
 
                 {/* <Link href="/manager" >
@@ -53,7 +66,7 @@ export default function body() {
                     </a>
                 </Link> */}
 
-            </div>
+            {/* </div> */}
         </main>
 
     )
