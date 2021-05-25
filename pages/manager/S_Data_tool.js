@@ -1,7 +1,12 @@
 import { useEffect, useState } from "react"
 
 function DataTool(props) {
-    if (props.Data.length === 0) {
+    //Can read length of underfined
+    try {
+        if (props.Data.length === 0) {
+            return <div>Đang chờ dữ liệu</div>
+        }
+    } catch (error) {
         return <div>Đang chờ dữ liệu</div>
     }
     const [Nameoftable, SET_Nameoftable] = useState(props.Data[0].nameoftable)
@@ -29,7 +34,7 @@ function DataTool(props) {
                 </select>
 
             </div>
-            {Show_Table(props.Data, Nameoftable, props.SET_ArrToSubmit)}
+            {Show_Table(props.Data, Nameoftable)}
 
         </>
     )
@@ -38,7 +43,7 @@ function DataTool(props) {
 export default DataTool
 
 
-function Show_Table(Data, Nameoftable, SET_ArrToSubmit) {
+function Show_Table(Data, Nameoftable) {
     return Data.map((e, index) =>
         <div key={index} style={{ maxHeight: "350px", overflow: "auto" }}>
             {e.nameoftable === Nameoftable ?
@@ -56,10 +61,10 @@ function Show_Table(Data, Nameoftable, SET_ArrToSubmit) {
                                 {eee.map((eeee, indexeeee) =>
                                     <td
                                         style={{ cursor: "pointer" }}
-                                        onDoubleClick={(e) => {
-                                            let temp = e.currentTarget.innerHTML
-                                            SET_ArrToSubmit(theArray => [...theArray, temp]);
-                                        }}
+                                        // onDoubleClick={(e) => {
+                                        //     let temp = e.currentTarget.innerHTML
+                                        //     SET_ArrToSubmit(theArray => [...theArray, temp]);
+                                        // }}
                                         key={indexeeee}>{
                                             Check_ImageOrNot(eeee) ? <img src={eeee} width="60px" /> : eeee
                                         }</td>

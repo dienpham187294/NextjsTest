@@ -13,7 +13,7 @@ function Manager() {
     const [Data_InfoOflession, SET_Data_InfoOflession] = useState([])
     const [Data_TableTool, SET_Data_TableTool] = useState([])
     const [Data_Game, SET_Data_Game] = useState([])
-    const [ArrToSubmit, SET_ArrToSubmit] = useState([])
+
 
     return (
         <div >
@@ -23,7 +23,7 @@ function Manager() {
             </div>
             {PageChange % 4 === 0 ? <UpLoadFile SET_Data_InfoOflession={SET_Data_InfoOflession} SET_Data_TableTool={SET_Data_TableTool} SET_Data_Game={SET_Data_Game} />
                 : PageChange % 4 === 1 ? <InfoLession Data={Data_InfoOflession} />
-                    : PageChange % 4 === 2 ? <DataTool Data={Data_TableTool} SET_ArrToSubmit={SET_ArrToSubmit} />
+                    : PageChange % 4 === 2 ? <DataTool Data={Data_TableTool} />
                         : PageChange % 4 === 3 ? <GamePlay Data={Data_Game} Data_TableTool={Data_TableTool} />
                             : PageChange}
 

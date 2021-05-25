@@ -2,10 +2,9 @@ import React, { useState, useEffect } from 'react';
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
 
 let flag = true
-let SaveInterimTranscript = "";
 export default function Dictaphone(props) {
     const [Message_Regconition, SET_Message_Regconition] = useState("")
-    const { finalTranscript, interimTranscript } = useSpeechRecognition();
+    const { finalTranscript } = useSpeechRecognition();
 
     useEffect(() => {
         if (flag) {
@@ -30,23 +29,21 @@ export default function Dictaphone(props) {
             language: 'en-GB'
         })
     }
+    function Stop_regconition() {
+        SpeechRecognition.stopListening({
+            continuous: false
+        })
+    }
     useEffect(
         () => {
-            props.SET_Info_message(SaveInterimTranscript);
-            SaveInterimTranscript = ""
+            props.SET_Info_message(finalTranscript);
         }, [finalTranscript]
     )
-    useEffect(
-        () => {
-            if (interimTranscript !== "") {
-                SaveInterimTranscript = interimTranscript;
-            }
-        }, [interimTranscript]
-    )
+
     return (
         <>
             <button onClick={() => Start_regconition()} className="btn btn-sm btn-outline-primary">Listen</button>
-            <button onClick={() => SpeechRecognition.stopListening} className="btn btn-sm btn-outline-primary">Stop</button>
+            <button onClick={() => Stop_regconition()} className="btn btn-sm btn-outline-primary">Stop</button>
             <p>{Message_Regconition}</p>
             <p>{finalTranscript}</p>
 

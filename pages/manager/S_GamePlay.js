@@ -5,8 +5,12 @@ import ArrOfPeopeAppear_ReactJSX from "./Gameplay/ArrOfPeopeAppear_ReactJSX"
 
 
 function GamePlay(props) {
-
-    if (props.Data.length === 0) {
+    //Can read length of underfined
+    try {
+        if (props.Data.length === 0) {
+            return <div>Đang chờ dữ liệu</div>
+        }
+    } catch (error) {
         return <div>Đang chờ dữ liệu</div>
     }
 
@@ -14,7 +18,7 @@ function GamePlay(props) {
     const [ALLTable_ReactData] = useState([]);
     const [Info_message, SET_Info_message] = useState(null)
 
-    
+
 
     return (
         <>
@@ -32,7 +36,7 @@ function GamePlay(props) {
                             SET_Info_message={SET_Info_message}
                             ALLTable_ReactData={ALLTable_ReactData}
                             Data_TableTool={props.Data_TableTool}
-                        
+
                         /> : ""}
                 </div>
 

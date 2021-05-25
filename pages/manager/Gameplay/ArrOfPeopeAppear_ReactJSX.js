@@ -21,7 +21,6 @@ function ArrOfPeopeAppear_ReactJSX(props) {
     const [Info_ToSunmit_Reactdata, SET_Info_ToSunmit_Reactdata] = useState(null);
 
 
-    const [ArrToSubmit, SET_ArrToSubmit] = useState([])
     // const [Info_Tool_AfterSearch, SET_Info_Tool_AfterSearch] = useState(null);
     const [Score, SET_Score] = useState(0)
 
@@ -66,7 +65,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                             if (data.robotspeak.length > 0) {
                                 Read_message(data.robotspeak.PickRandom(), VoicePick);
                             }
-                           
+
                             if (data.handling_next.length > 0) {
 
                                 Data_temp_Strickmode.push(data.handling_next)
@@ -261,7 +260,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                 return (
                     <div className="row GameSence_Playing_OneShow">
                         <div className="col-5">
-                            <DataTool Data={props.Data_TableTool} SET_ArrToSubmit={SET_ArrToSubmit} />
+                            <DataTool Data={props.Data_TableTool} />
                         </div>
                         <div className="col-7">
 
@@ -282,7 +281,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                             }} />
                             <hr />
                             <p>Submit Syntax: {Info_ToSunmit_Reactdata}</p>
-                            {ShowArrSubmit()}
+
                             <input onKeyUp={(e) => {
                                 if (e.key === "Enter") {
                                     Submit_Show_OnePeopeAppear_ReactData(e.currentTarget.value)
