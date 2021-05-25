@@ -11,15 +11,12 @@ export default function body() {
                 <h1 className={styles.title}>
                     Welcome to <a href="#">ESL GAME!</a>
                 </h1>
+                <br />
+                <h4> Nền tảng trò chơi thực hành tiếng anh giao tiếp!</h4>
 
-                <p className={styles.description}>
+                <i style={{ textAlign: "center" }}>Ứng dụng công nghệ nhận diện giọng nói mang đến trải nghiệm thực hành tiếng anh thực sự thú vị và hiệu quả.</i>
 
-                    <br />
-                    <h4> Nền tảng trò chơi thực hành tiếng anh giao tiếp!</h4>
 
-                    <i>Ứng dụng công nghệ nhận diện giọng nói mang đến trải nghiệm thực hành tiếng anh thực sự thú vị và hiệu quả.</i>
-
-                </p>
 
 
 

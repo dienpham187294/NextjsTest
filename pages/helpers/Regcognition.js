@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
-
+let Arr_hold_newestInfoMessage = [""];
 let flag = true
 export default function Dictaphone(props) {
     const [Message_Regconition, SET_Message_Regconition] = useState("")
@@ -36,7 +36,14 @@ export default function Dictaphone(props) {
     }
     useEffect(
         () => {
-            props.SET_Info_message(finalTranscript);
+
+            if (Arr_hold_newestInfoMessage[Arr_hold_newestInfoMessage.length - 1] === "") {
+                props.SET_Info_message(finalTranscript)
+            } else {
+                props.SET_Info_message(finalTranscript.replace(Arr_hold_newestInfoMessage[Arr_hold_newestInfoMessage.length - 1] + " ", ""));
+            }
+
+            Arr_hold_newestInfoMessage.push(finalTranscript);
         }, [finalTranscript]
     )
 

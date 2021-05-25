@@ -23,6 +23,7 @@ a:hover {
     border-radius: 6px;
     max-height: 600px;
     overflow: auto;
+    text-align: center;
 }
 
 .GameSence_Playing_Arrpeople {
@@ -33,10 +34,20 @@ a:hover {
 }
 
 .GameSence_Playing_Arrpeople img {
-    width: 80px;
+    width: 60px;
     cursor: pointer;
 }
-
+.GameSence_Playing_Timeout{
+    position: fixed;
+    padding: auto;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    border-radius: 25px;
+    top: 20%;
+    bottom: 20%;
+    left: 20%;
+    right: 20%;
+}
 .GameSence_Playing_OneShow {
     position: absolute;
     border-radius: 6px;

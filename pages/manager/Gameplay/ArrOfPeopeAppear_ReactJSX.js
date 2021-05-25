@@ -1,32 +1,40 @@
 import React, { useEffect, useState } from "react";
 import Read_ReactJSX from "../../../pages/helpers/Read_ReactJSX"
 import DataTool from "../S_Data_tool"
-import parse from 'html-react-parser';
+
 let VoicePick = 1;
-
-// // let flag_Data_normal_mode = true;
-// let Data_handling_middle = [];
-
 
 let State_of_Anwer = ["none"];
 let Data_temp_Strickmode = [];
 let AllData_OfOne = [];
-// let ArrSearch = ["", ""];
+
+
+let flag = true;
 function ArrOfPeopeAppear_ReactJSX(props) {
 
     const [MessagetoRead, SET_MessagetoRead] = useState(null)
     const [Info_StrickAnwers_Reactdata, SET_Info_StrickAnwers_Reactdata] = useState()
-    const [Info_Icon_Reactdata, SET_Info_Icon_Reactdata] = useState(null)
+    const [Info_Icon_Reactdata, SET_Info_Icon_Reactdata] = useState("")
     const [Info_Avatar_Reactdata, SET_Avatar_Reactdata] = useState(null)
     const [Info_ToSunmit_Reactdata, SET_Info_ToSunmit_Reactdata] = useState(null);
 
 
     // const [Info_Tool_AfterSearch, SET_Info_Tool_AfterSearch] = useState(null);
     const [Score, SET_Score] = useState(0)
-
+    const [TimeCount, SET_TimeCount] = useState(600);
 
     useEffect(
         () => {
+            let timer1 = setTimeout(() => SET_TimeCount(C => C - 1), 1000);
+            return () => {
+                clearTimeout(timer1);
+            };
+        }, [TimeCount]
+    );
+
+    useEffect(
+        () => {
+            console.log(props.Info_message)
             try {
                 if (State_of_Anwer[State_of_Anwer.length] !== "none" && props.Info_message !== null) {
                     if (State_of_Anwer[State_of_Anwer.length - 1] === "strictmode") {
@@ -90,6 +98,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                             SET_Info_Icon_Reactdata(data.icon)
                             Submit_check_funtion_indata(data.function);
 
+
                         }
                         //...............
                     }
@@ -107,21 +116,13 @@ function ArrOfPeopeAppear_ReactJSX(props) {
         await SET_MessagetoRead([message, i]);
     }
 
-    function ShowArrSubmit() {
 
-        if (ArrToSubmit.length === 0) {
-            return ""
-        }
-        return ArrToSubmit.map((e, index) =>
-            <span key={index} className="mr-1">{
-                parse(e)
-            }</span>
-        )
-    }
     /*BEGIN ARR TO SHOW */
     async function AddTo_Show_ArrOfPeopeAppear_ReactData(e, index) {
         try {
             if (Info_Avatar_Reactdata === null) {
+
+                props.ArrOfPeopeAppear_ReactData[index].total.status = false;
                 AllData_OfOne.push(e);
                 State_of_Anwer.push("strictmode")
                 Data_temp_Strickmode.push(e.begin.handling_next)
@@ -135,22 +136,12 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                 await SET_Avatar_Reactdata(e.total.image);
                 await SET_Info_ToSunmit_Reactdata(e.total.submitsyntax)
                 if (e.total.gender === "female") {
-                    VoicePick = [1, 2, 7].PickRandom();
+                    VoicePick = [1, 2].PickRandom();
                 } else {
                     VoicePick = [3, 19].PickRandom();
                 }
-                // let Arr_HoldRobotSpeakFirst = [];
-                // e.begin.handling_next.forEach(e => {
-                //     if (e.robotspeakfirst.length > 0) {
-                //         e.robotspeakfirst.forEach(ee => {
-                //             Arr_HoldRobotSpeakFirst.push(ee)
-                //         })
-                //     }
-                // })
-                // if (Arr_HoldRobotSpeakFirst.length > 0) {
-                //     Read_message(Arr_HoldRobotSpeakFirst.PickRandom(), VoicePick)
-                // }
 
+                Read_message(e.total.robotspeakfirst.PickRandom(), VoicePick)
             }
         } catch (error) {
             console.log(error)
@@ -182,24 +173,17 @@ function ArrOfPeopeAppear_ReactJSX(props) {
 
     function Submit_check_funtion_indata(command) {
         try {
-            command.forEach(e => {
-                console.log(e);
-                if (e.end_successfull) {
-                    State_of_Anwer.push("none");
-                    SET_Info_Icon_Reactdata(null);
-                    SET_Score(S => S + 1)
-                }
-                if (e.end_unsuccessfull) {
-                    State_of_Anwer.push("none");
-                    SET_Info_Icon_Reactdata(null);
-                }
-                if (e.showsometext !== "") {
 
-                }
-                if (e.pushtoastrict !== "") {
+            if (command.end_successfull) {
+                State_of_Anwer.push("none");
+                SET_Score(S => S + 1)
+                SET_Avatar_Reactdata(null)
+            }
+            if (command.end_unsuccessfull) {
+                State_of_Anwer.push("none");
+                SET_Avatar_Reactdata(null)
+            }
 
-                }
-            })
         } catch (error) {
             console.log(error)
         }
@@ -223,14 +207,12 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                         Data_temp_Strickmode.push(data.end.handling_next);
                         let arrTemp = []
                         data.end.handling_next.forEach(e => {
-
                             e.manspeak.forEach(ee => {
                                 arrTemp.push(ee)
                             })
                         })
                         SET_Info_StrickAnwers_Reactdata(arrTemp)
                     }
-
                 })
             })
         } catch (error) {
@@ -265,7 +247,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                         <div className="col-7">
 
                             <img alt={Info_Avatar_Reactdata} src={Info_Avatar_Reactdata} width="90px" />
-                            {Info_Icon_Reactdata !== null ?
+                            {Info_Icon_Reactdata !== "" ?
                                 <img alt={Info_Icon_Reactdata} src={Info_Icon_Reactdata} width="60px" />
                                 : null}
 
@@ -273,12 +255,14 @@ function ArrOfPeopeAppear_ReactJSX(props) {
 
                             {Info_StrickAnwers_Reactdata !== null ? Show_Info_StrickAnwers_Reactdata() : ""}
                             <hr />
-                            <input type="text" className="form-control" placeholder="Put your text" onKeyUp={(e) => {
-                                if (e.key === "Enter") {
-                                    props.SET_Info_message(e.currentTarget.value);
-                                    e.currentTarget.value = ""
-                                }
-                            }} />
+                            {Score < 4 ?
+                                <input type="text" className="form-control" placeholder="Put your text" onKeyUp={(e) => {
+                                    if (e.key === "Enter") {
+                                        props.SET_Info_message(e.currentTarget.value);
+                                        e.currentTarget.value = ""
+                                    }
+                                }} />
+                                : ""}
                             <hr />
                             <p>Submit Syntax: {Info_ToSunmit_Reactdata}</p>
 
@@ -307,11 +291,18 @@ function ArrOfPeopeAppear_ReactJSX(props) {
     return (
         <>
             <div className="GameSence_Playing">
-                <p>  Score:  {Score}</p>
+                <p>  Score:  {Score} Time: {TimeCount} s</p>
                 {Show_OnePeopeAppear_ReactData()}
                 {Show_ArrOfPeopeAppear_ReactData(props.ArrOfPeopeAppear_ReactData)}
-
+                {TimeCount < 0 ? <div className="GameSence_Playing_Timeout">
+                    <h1>Time out!</h1>
+                    <h3>{Score}</h3>
+                    <a href="/">
+                        <button className="btn btn-primary">Home</button>
+                    </a>
+                </div> : ""}
             </div>
+
             <Read_ReactJSX MessagetoRead={MessagetoRead} SET_MessagetoRead={SET_MessagetoRead} />
         </>
     )
@@ -401,16 +392,7 @@ function checkMessageReturnNumber(message_API, message_INPUT) {
     }
     return [0, 0]
 }
-function TestArray(string_toparce) {
-    try {
-        if (typeof (JSON.parse(string_toparce).length) === "number") {
-            return true
-        } else { return false }
-    } catch (error) {
 
-        return false
-    }
-}
 Array.prototype.PickRandom = function () {
     return this[Math.floor(Math.random() * this.length)];
 }

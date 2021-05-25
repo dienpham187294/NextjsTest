@@ -1,7 +1,6 @@
-import { useEffect, useLayoutEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 let flag = true;
-let arrVoice = []
 let synth;
 function Read_ReactJSX(props) {
     const [message_speakJSX, SET_message_speakJSX] = useState(null)
@@ -34,7 +33,6 @@ function Read_ReactJSX(props) {
         if (message !== null) {
             try {
                 let ut = await new SpeechSynthesisUtterance(message);
-                ut.lang = "en-GB"
                 ut.voice = await speechSynthesis.getVoices()[i]
                 synth.speak(ut);
             } catch (error) {
