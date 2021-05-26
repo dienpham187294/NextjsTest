@@ -23,12 +23,12 @@ function GamePlay(props) {
     return (
         <>
             <div className="row">
-                <div className="col-2">
+                <div className="col-md-2 sm-12" style={{ maxHeight: "300px", overflow: "auto" }}>
                     <Dictaphone
                         SET_Info_message={SET_Info_message}
                     />
                 </div>
-                <div className="col-9">{
+                <div className="col-md-9 sm-12">{
                     ArrOfPeopeAppear_ReactData !== null ?
                         <ArrOfPeopeAppear_ReactJSX
                             ArrOfPeopeAppear_ReactData={ArrOfPeopeAppear_ReactData}

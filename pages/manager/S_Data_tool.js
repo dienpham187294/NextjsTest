@@ -61,10 +61,18 @@ function Show_Table(Data, Nameoftable) {
                                 {eee.map((eeee, indexeeee) =>
                                     <td
                                         style={{ cursor: "pointer" }}
-                                        // onDoubleClick={(e) => {
-                                        //     let temp = e.currentTarget.innerHTML
-                                        //     SET_ArrToSubmit(theArray => [...theArray, temp]);
-                                        // }}
+                                        onClick={(e) => {
+                                            let TEMP_Targetvalue = e.currentTarget.innerHTML;
+
+
+                                            try {
+                                                let TEMP_inputvalue = document.getElementById("input_submit").value + " " + TEMP_Targetvalue;
+
+                                                document.getElementById("input_submit").value = TEMP_inputvalue;
+                                            } catch (error) {
+                                                console.log(error)
+                                            }
+                                        }}
                                         key={indexeeee}>{
                                             Check_ImageOrNot(eeee) ? <img src={eeee} width="60px" /> : eeee
                                         }</td>

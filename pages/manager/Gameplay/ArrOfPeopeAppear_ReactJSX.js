@@ -241,10 +241,10 @@ function ArrOfPeopeAppear_ReactJSX(props) {
             if (Info_Avatar_Reactdata !== null) {
                 return (
                     <div className="row GameSence_Playing_OneShow">
-                        <div className="col-5">
+                        <div className="col-md-5 sm-12">
                             <DataTool Data={props.Data_TableTool} />
                         </div>
-                        <div className="col-7">
+                        <div className="col-md-7 sm-12">
 
                             <img alt={Info_Avatar_Reactdata} src={Info_Avatar_Reactdata} width="90px" />
                             {Info_Icon_Reactdata !== "" ?
@@ -256,7 +256,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                             {Info_StrickAnwers_Reactdata !== null ? Show_Info_StrickAnwers_Reactdata() : ""}
                             <hr />
                             {Score < 4 ?
-                                <input type="text" className="form-control" placeholder="Put your text" onKeyUp={(e) => {
+                                <input type="text" className="form-control" placeholder="Write instead of voice recognition." onKeyUp={(e) => {
                                     if (e.key === "Enter") {
                                         props.SET_Info_message(e.currentTarget.value);
                                         e.currentTarget.value = ""
@@ -264,13 +264,20 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                                 }} />
                                 : ""}
                             <hr />
-                            <p>Submit Syntax: {Info_ToSunmit_Reactdata}</p>
+                            <p>Syntax: {Info_ToSunmit_Reactdata}</p>
 
-                            <input onKeyUp={(e) => {
+                            <input id="input_submit" onKeyUp={(e) => {
                                 if (e.key === "Enter") {
                                     Submit_Show_OnePeopeAppear_ReactData(e.currentTarget.value)
                                 }
                             }} className="form-control" type="text" placeholder={Info_ToSunmit_Reactdata} />
+                            <input
+                                onClick={() => {
+                                    Submit_Show_OnePeopeAppear_ReactData(document.getElementById("input_submit").value)
+                                }}
+                                className="btn btn-outline-primary" type="button" value="Enter" />
+
+
                             <hr />
                         Score: {Score}
                             <hr />
@@ -292,8 +299,16 @@ function ArrOfPeopeAppear_ReactJSX(props) {
         <>
             <div className="GameSence_Playing">
                 <p>  Score:  {Score} Time: {TimeCount} s</p>
+
+
                 {Show_OnePeopeAppear_ReactData()}
+
+
+
                 {Show_ArrOfPeopeAppear_ReactData(props.ArrOfPeopeAppear_ReactData)}
+
+
+
                 {TimeCount < 0 ? <div className="GameSence_Playing_Timeout">
                     <h1>Time out!</h1>
                     <h3>{Score}</h3>

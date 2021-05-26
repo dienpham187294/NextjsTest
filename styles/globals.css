@@ -57,6 +57,7 @@ a:hover {
     right: 5%;
     top: 5%;
     bottom: 5%;
+    overflow: auto;
 }
 
 .Span_Show_Info_StrickAnwers_Reactdata {
