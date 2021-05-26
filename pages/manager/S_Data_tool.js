@@ -63,12 +63,12 @@ function Show_Table(Data, Nameoftable) {
                                         style={{ cursor: "pointer" }}
                                         onClick={(e) => {
                                             let TEMP_Targetvalue = e.currentTarget.innerHTML;
-
-
                                             try {
-                                                let TEMP_inputvalue = document.getElementById("input_submit").value + " " + TEMP_Targetvalue;
+                                                if (TEMP_Targetvalue.indexOf("<img") === -1) {
+                                                    let TEMP_inputvalue = document.getElementById("input_submit").value + " " + TEMP_Targetvalue;
+                                                    document.getElementById("input_submit").value = TEMP_inputvalue;
+                                                }
 
-                                                document.getElementById("input_submit").value = TEMP_inputvalue;
                                             } catch (error) {
                                                 console.log(error)
                                             }
