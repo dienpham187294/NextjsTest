@@ -58,16 +58,16 @@ function MyApp({ Component, pageProps }) {
                 <a className="nav-link dropdown-toggle" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sản phẩm</a>
               </Link>
               <div className="dropdown-menu" aria-labelledby="dropdown03">
-                <Link href="/gamesence">
-                  <a className="dropdown-item" >Giao tiếp theo ngữ cảnh</a>
+                <Link href="https://app-ericpham.herokuapp.com/">
+                  <a className="dropdown-item" >Link dự phòng 1</a>
                 </Link>
-                <Link href="/boardgame">
+                <Link href="/">
                   <a className="dropdown-item" >Board Game</a>
                 </Link>
-                <Link href="/blog">
+                <Link href="/">
                   <a className="dropdown-item" >Blog</a>
                 </Link>
-                <Link href="/forum">
+                <Link href="/">
                   <a className="dropdown-item">Forum</a>
                 </Link>
               </div>

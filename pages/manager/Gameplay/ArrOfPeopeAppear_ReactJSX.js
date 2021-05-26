@@ -9,7 +9,7 @@ let Data_temp_Strickmode = [];
 let AllData_OfOne = [];
 
 
-let flag = true;
+
 function ArrOfPeopeAppear_ReactJSX(props) {
 
     const [MessagetoRead, SET_MessagetoRead] = useState(null)
@@ -22,7 +22,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
     // const [Info_Tool_AfterSearch, SET_Info_Tool_AfterSearch] = useState(null);
     const [Score, SET_Score] = useState(0)
     const [TimeCount, SET_TimeCount] = useState(600);
-
+    const [VoiceAPIMessage, SET_VoiceAPIMessage] = useState("");
     useEffect(
         () => {
             let timer1 = setTimeout(() => SET_TimeCount(C => C - 1), 1000);
@@ -34,9 +34,10 @@ function ArrOfPeopeAppear_ReactJSX(props) {
 
     useEffect(
         () => {
-            console.log(props.Info_message)
+
             try {
                 if (State_of_Anwer[State_of_Anwer.length] !== "none" && props.Info_message !== null) {
+                    SET_VoiceAPIMessage(props.Info_message)
                     if (State_of_Anwer[State_of_Anwer.length - 1] === "strictmode") {
                         // Buoc 1 lay du lieu cuc bo 
                         let Data_Strict = Data_temp_Strickmode[Data_temp_Strickmode.length - 1]
@@ -282,6 +283,8 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                         Score: {Score}
                             <hr />
                             <button className="btn btn-sm btn-outline-danger" onClick={() => Outof_Show_OnePeopeAppear_ReactData()}>Get out!</button>
+                            <br />
+                            {VoiceAPIMessage}
                         </div>
 
                     </div>
