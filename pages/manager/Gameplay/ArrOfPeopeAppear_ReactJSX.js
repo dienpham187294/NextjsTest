@@ -194,27 +194,31 @@ function ArrOfPeopeAppear_ReactJSX(props) {
             let data = AllData_OfOne[AllData_OfOne.length - 1]
 
             data.total.submit.forEach(eee => {
+                let status_check_submit = true
 
                 eee.forEach(ee => {
-                    let status_check_submit = true
+
                     let text = ee;
                     if (typeof (ee) === "string") {
                         text = ee.toLowerCase()
                     }
+
                     if (e.toLowerCase().indexOf(text) === -1) {
                         status_check_submit = false
                     }
-                    if (status_check_submit) {
-                        Data_temp_Strickmode.push(data.end.handling_next);
-                        let arrTemp = []
-                        data.end.handling_next.forEach(e => {
-                            e.manspeak.forEach(ee => {
-                                arrTemp.push(ee)
-                            })
-                        })
-                        SET_Info_StrickAnwers_Reactdata(arrTemp)
-                    }
+
                 })
+
+                if (status_check_submit) {
+                    Data_temp_Strickmode.push(data.end.handling_next);
+                    let arrTemp = []
+                    data.end.handling_next.forEach(e => {
+                        e.manspeak.forEach(ee => {
+                            arrTemp.push(ee)
+                        })
+                    })
+                    SET_Info_StrickAnwers_Reactdata(arrTemp)
+                }
             })
         } catch (error) {
             console.log(error)
