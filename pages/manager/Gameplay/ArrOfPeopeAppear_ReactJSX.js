@@ -462,11 +462,11 @@ async function Read(message, i) {
     if (message !== null) {
 
         try {
-            let suy = await window.speechSynthesis;
             let ut = await new SpeechSynthesisUtterance(message);
-            ut.voice = await suy.getVoices()[i]
-            suy.speak(ut);
-
+            let synth = await window.speechSynthesis;
+            let voices = await synth.getVoices();
+            ut.voice = await voices[i];
+            synth.speak(ut);
         } catch (error) {
             console.error();
         }
