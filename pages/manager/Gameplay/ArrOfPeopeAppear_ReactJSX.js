@@ -460,12 +460,15 @@ Array.prototype.PickRandom = function () {
 function Read(message, i) {
 
     if (message !== null) {
+        let ut;
         try {
-            let ut = new SpeechSynthesisUtterance(message);
+            ut = new SpeechSynthesisUtterance(message);
             ut.voice = synth.getVoices()[i]
-            synth.speak(ut);
+
         } catch (error) {
             console.error();
+        } finally {
+            synth.speak(ut);
         }
     }
 
