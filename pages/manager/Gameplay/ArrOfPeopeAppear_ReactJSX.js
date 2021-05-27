@@ -462,7 +462,7 @@ function Read(message, i) {
     if (message !== null) {
         try {
             let ut = new SpeechSynthesisUtterance(message);
-            ut.voice = speechSynthesis.getVoices()[i]
+            ut.voice = synth.getVoices()[i]
             synth.speak(ut);
         } catch (error) {
             console.error();
