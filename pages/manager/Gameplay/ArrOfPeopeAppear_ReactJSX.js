@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Read_ReactJSX from "../../../pages/helpers/Read_ReactJSX"
+// import Read_ReactJSX from "../../../pages/helpers/Read_ReactJSX"
 import DataTool from "../S_Data_tool"
 
 let VoicePick = [1];
@@ -8,11 +8,12 @@ let State_of_Anwer = ["none"];
 let Data_temp_Strickmode = [];
 let AllData_OfOne = [];
 
-
+let flag = true;
+let synth;
 
 function ArrOfPeopeAppear_ReactJSX(props) {
 
-    const [MessagetoRead, SET_MessagetoRead] = useState(null)
+    // const [MessagetoRead, SET_MessagetoRead] = useState(null)
     const [Info_StrickAnwers_Reactdata, SET_Info_StrickAnwers_Reactdata] = useState()
     const [Info_Icon_Reactdata, SET_Info_Icon_Reactdata] = useState("")
     const [Info_Avatar_Reactdata, SET_Avatar_Reactdata] = useState(null)
@@ -24,7 +25,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
     const [TimeCount, SET_TimeCount] = useState(600);
     const [VoiceAPIMessage, SET_VoiceAPIMessage] = useState("");
 
-    const [ShowHint, SET_ShowHint] = useState(false);
+    const [ShowHint, SET_ShowHint] = useState(true);
 
     useEffect(
         () => {
@@ -51,6 +52,23 @@ function ArrOfPeopeAppear_ReactJSX(props) {
             }
         }, [Info_StrickAnwers_Reactdata]
     );
+
+
+    useEffect(() => {
+        if (flag) {
+
+            if ('speechSynthesis' in window) {
+                // SET_message_speakJSX("Text-to-speech supported.")
+                synth = window.speechSynthesis;
+            } else {
+                // SET_message_speakJSX('Text-to-speech not supported.');
+                alert("Your browser does not support text-to-speech software! Try Chrome desktop, maybe?")
+            }
+
+            flag = false;
+
+        }
+    })
 
     useEffect(
         () => {
@@ -92,7 +110,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
 
 
                             if (data.robotspeak.length > 0) {
-                                Read_message(data.robotspeak.PickRandom(), VoicePick[VoicePick.length - 1]);
+                                Read(data.robotspeak.PickRandom(), VoicePick[VoicePick.length - 1]);
                             }
 
                             if (data.handling_next.length > 0) {
@@ -132,10 +150,10 @@ function ArrOfPeopeAppear_ReactJSX(props) {
     )
 
 
-    async function Read_message(message, i) {
-        await SET_MessagetoRead(null);
-        await SET_MessagetoRead([message, i]);
-    }
+    // async function Read(message, i) {
+    //     await SET_MessagetoRead(null);
+    //     await Read([message, i]);
+    // }
 
 
     /*BEGIN ARR TO SHOW */
@@ -162,7 +180,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                     VoicePick.push([3, 19].PickRandom());
                 }
 
-                Read_message(e.total.robotspeakfirst.PickRandom(), VoicePick[VoicePick.length - 1])
+                Read(e.total.robotspeakfirst.PickRandom(), VoicePick[VoicePick.length - 1])
             }
         } catch (error) {
             console.log(error)
@@ -345,7 +363,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                 </div> : ""}
             </div>
 
-            <Read_ReactJSX MessagetoRead={MessagetoRead} SET_MessagetoRead={SET_MessagetoRead} />
+            {/* <Read_ReactJSX MessagetoRead={MessagetoRead} SET_MessagetoRead={SET_MessagetoRead} /> */}
         </>
     )
 }
@@ -439,3 +457,16 @@ Array.prototype.PickRandom = function () {
     return this[Math.floor(Math.random() * this.length)];
 }
 
+async function Read(message, i) {
+
+    if (message !== null) {
+        try {
+            let ut = await new SpeechSynthesisUtterance(message);
+            ut.voice = await speechSynthesis.getVoices()[i]
+            synth.speak(ut);
+        } catch (error) {
+            console.error();
+        }
+    }
+
+}
