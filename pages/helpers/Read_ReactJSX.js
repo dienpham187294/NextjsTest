@@ -23,7 +23,7 @@ function Read_ReactJSX(props) {
     useEffect(() => {
         if (props.MessagetoRead !== null) {
             Read(props.MessagetoRead[0], props.MessagetoRead[1])
-            SET_message_speakJSX(props.MessagetoRead[1])
+
             props.SET_MessagetoRead(null)
 
         }
@@ -34,7 +34,11 @@ function Read_ReactJSX(props) {
             try {
                 let ut = await new SpeechSynthesisUtterance(message);
                 ut.voice = await speechSynthesis.getVoices()[i]
-                synth.speak(ut);
+                SET_message_speakJSX(i);
+                setTimeout(() => {
+                    synth.speak(ut);
+                }, 100)
+
             } catch (error) {
                 console.error();
             }
