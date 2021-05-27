@@ -59,7 +59,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
 
             if ('speechSynthesis' in window) {
                 // SET_message_speakJSX("Text-to-speech supported.")
-                synth = window.speechSynthesis;
+                // synth = window.speechSynthesis;
             } else {
                 // SET_message_speakJSX('Text-to-speech not supported.');
                 alert("Your browser does not support text-to-speech software! Try Chrome desktop, maybe?")
@@ -457,18 +457,18 @@ Array.prototype.PickRandom = function () {
     return this[Math.floor(Math.random() * this.length)];
 }
 
-function Read(message, i) {
+async function Read(message, i) {
 
     if (message !== null) {
-        let ut;
+
         try {
-            ut = new SpeechSynthesisUtterance(message);
-            ut.voice = synth.getVoices()[i]
+            let suy = await window.speechSynthesis;
+            let ut = await new SpeechSynthesisUtterance(message);
+            ut.voice = await suy.getVoices()[i]
+            suy.speak(ut);
 
         } catch (error) {
             console.error();
-        } finally {
-            synth.speak(ut);
         }
     }
 
