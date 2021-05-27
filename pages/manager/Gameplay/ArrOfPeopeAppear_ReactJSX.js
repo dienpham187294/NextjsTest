@@ -59,7 +59,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
 
             if ('speechSynthesis' in window) {
                 // SET_message_speakJSX("Text-to-speech supported.")
-                // synth = window.speechSynthesis;
+                synth = window.speechSynthesis;
             } else {
                 // SET_message_speakJSX('Text-to-speech not supported.');
                 alert("Your browser does not support text-to-speech software! Try Chrome desktop, maybe?")
@@ -463,9 +463,7 @@ async function Read(message, i) {
 
         try {
             let ut = await new SpeechSynthesisUtterance(message);
-            let synth = await window.speechSynthesis;
-            let voices = await synth.getVoices();
-            ut.voice = await voices[i];
+            ut.voice = await synth.getVoices()[i];
             synth.speak(ut);
         } catch (error) {
             console.error();
