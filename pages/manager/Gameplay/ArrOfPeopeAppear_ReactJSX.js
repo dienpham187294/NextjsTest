@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Read_ReactJSX from "../../../pages/helpers/Read_ReactJSX"
 import DataTool from "../S_Data_tool"
 
-let VoicePick = 1;
+let VoicePick = [1];
 
 let State_of_Anwer = ["none"];
 let Data_temp_Strickmode = [];
@@ -23,6 +23,9 @@ function ArrOfPeopeAppear_ReactJSX(props) {
     const [Score, SET_Score] = useState(0)
     const [TimeCount, SET_TimeCount] = useState(600);
     const [VoiceAPIMessage, SET_VoiceAPIMessage] = useState("");
+
+    const [ShowHint, SET_ShowHint] = useState(false);
+
     useEffect(
         () => {
             let timer1 = setTimeout(() => SET_TimeCount(C => C - 1), 1000);
@@ -30,6 +33,23 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                 clearTimeout(timer1);
             };
         }, [TimeCount]
+    );
+    useEffect(
+        () => {
+            if (Score > 15) {
+                SET_ShowHint(true)
+                let timer2 = setTimeout(() => SET_ShowHint(false), 3000);
+                return () => {
+                    clearTimeout(timer2);
+                };
+            } else if (Score > 6) {
+                SET_ShowHint(true)
+                let timer3 = setTimeout(() => SET_ShowHint(false), 6000);
+                return () => {
+                    clearTimeout(timer3);
+                };
+            }
+        }, [Info_StrickAnwers_Reactdata]
     );
 
     useEffect(
@@ -72,7 +92,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
 
 
                             if (data.robotspeak.length > 0) {
-                                Read_message(data.robotspeak.PickRandom(), VoicePick);
+                                Read_message(data.robotspeak.PickRandom(), VoicePick[VoicePick.length - 1]);
                             }
 
                             if (data.handling_next.length > 0) {
@@ -137,12 +157,12 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                 await SET_Avatar_Reactdata(e.total.image);
                 await SET_Info_ToSunmit_Reactdata(e.total.submitsyntax)
                 if (e.total.gender === "female") {
-                    VoicePick = [1, 2].PickRandom();
+                    VoicePick.push([1, 2].PickRandom());
                 } else {
-                    VoicePick = [3, 19].PickRandom();
+                    VoicePick.push([3, 19].PickRandom());
                 }
 
-                Read_message(e.total.robotspeakfirst.PickRandom(), VoicePick)
+                Read_message(e.total.robotspeakfirst.PickRandom(), VoicePick[VoicePick.length - 1])
             }
         } catch (error) {
             console.log(error)
@@ -258,7 +278,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
 
                             <hr />
 
-                            {Info_StrickAnwers_Reactdata !== null ? Show_Info_StrickAnwers_Reactdata() : ""}
+                            {Info_StrickAnwers_Reactdata !== null && ShowHint ? Show_Info_StrickAnwers_Reactdata() : ""}
                             <hr />
                             {Score < 4 ?
                                 <input type="text" className="form-control" placeholder="Write instead of voice recognition." onKeyUp={(e) => {

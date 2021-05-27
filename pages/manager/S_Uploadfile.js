@@ -15,7 +15,7 @@ function UpLoadFile(props) {
                             readFile.onload = function (e) {
                                 var contents = e.target.result;
                                 var json = JSON.parse(contents);
-                                props.SET_Data_InfoOflession(json[0])
+                                props.SET_Data_InfoOflession(json)
                                 let ArrDataTool = [];
 
                                 json[1].coerdataoflession.forEach(eee => {
