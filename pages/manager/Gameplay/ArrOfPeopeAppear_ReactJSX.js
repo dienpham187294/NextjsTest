@@ -457,12 +457,12 @@ Array.prototype.PickRandom = function () {
     return this[Math.floor(Math.random() * this.length)];
 }
 
-async function Read(message, i) {
+function Read(message, i) {
 
     if (message !== null) {
         try {
-            let ut = await new SpeechSynthesisUtterance(message);
-            ut.voice = await speechSynthesis.getVoices()[i]
+            let ut = new SpeechSynthesisUtterance(message);
+            ut.voice = speechSynthesis.getVoices()[i]
             synth.speak(ut);
         } catch (error) {
             console.error();
