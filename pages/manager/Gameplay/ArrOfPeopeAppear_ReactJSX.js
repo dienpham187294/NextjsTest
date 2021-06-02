@@ -27,6 +27,14 @@ function ArrOfPeopeAppear_ReactJSX(props) {
 
     const [ShowHint, SET_ShowHint] = useState(true);
 
+    if (flag) {
+        if ('speechSynthesis' in window) {
+            synth = window.speechSynthesis;
+            Read("Ready!", 3)
+        } else { return "" }
+        flag = false;
+    }
+
     useEffect(
         () => {
             let timer1 = setTimeout(() => SET_TimeCount(C => C - 1), 1000);
@@ -54,23 +62,6 @@ function ArrOfPeopeAppear_ReactJSX(props) {
     );
 
 
-    useEffect(() => {
-        if (flag) {
-
-            if ('speechSynthesis' in window) {
-                // SET_message_speakJSX("Text-to-speech supported.")
-                synth = window.speechSynthesis;
-
-                Read("Ready!", 3)
-            } else {
-                // SET_message_speakJSX('Text-to-speech not supported.');
-                alert("Your browser does not support text-to-speech software! Try Chrome desktop, maybe?")
-            }
-
-            flag = false;
-
-        }
-    })
 
     useEffect(
         () => {
