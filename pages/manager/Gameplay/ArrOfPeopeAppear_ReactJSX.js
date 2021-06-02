@@ -60,7 +60,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
             if ('speechSynthesis' in window) {
                 // SET_message_speakJSX("Text-to-speech supported.")
                 synth = window.speechSynthesis;
-                
+
                 Read("Ready!", 3)
             } else {
                 // SET_message_speakJSX('Text-to-speech not supported.');
