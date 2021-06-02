@@ -1,20 +1,18 @@
 import React, { useState, useEffect } from 'react';
+import { useRouter } from 'next/router'
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
 let Arr_hold_newestInfoMessage = [""];
 let flag = true
 export default function Dictaphone(props) {
+    const router = useRouter()
     const [Message_Regconition, SET_Message_Regconition] = useState("")
     const { finalTranscript } = useSpeechRecognition();
 
     useEffect(() => {
         if (flag) {
             if (!SpeechRecognition.browserSupportsSpeechRecognition()) {
+                router.push("/error")
                 return null;
-            }
-
-            if (!SpeechRecognition.browserSupportsSpeechRecognition()) {
-                SET_Message_Regconition("Your browser does not support speech recognition software! Try Chrome desktop, maybe?")
-                alert("Your browser does not support speech recognition software! Try Chrome desktop, maybe?")
             } else {
                 SET_Message_Regconition("Speech recognition software is ready!")
             }

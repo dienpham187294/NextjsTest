@@ -1,6 +1,7 @@
 
 import styles from '../../styles/Home.module.css'
-export default function body() {
+import Manager from "../manager/index"
+export default function Thuchanh() {
 
 
     return (
@@ -8,7 +9,7 @@ export default function body() {
             <main className={styles.main}>
                 <div style={{ textAlign: "center" }}>
                     <h1 className={styles.title}>
-                        Welcome to <a href="#">ESL PRACTICE!</a>
+                        Chọn bài thực hành
                     </h1>
                     <br />
                     <h4> Nền tảng thực hành tiếng anh giao tiếp!</h4>
@@ -19,12 +20,9 @@ export default function body() {
 
 
             </main>
-            <div className="container">
-                <div class="respondiframe">
-                    <iframe class="responsive-iframe" src="https://www.youtube.com/embed/VHV8ap4cLXw"></iframe>
-                </div>
+            <div style={{ height: "800px" }}>
+                <Manager />
             </div>
-
         </>
 
     )
