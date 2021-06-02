@@ -7,15 +7,19 @@ export default function Dictaphone(props) {
     const router = useRouter()
     const [Message_Regconition, SET_Message_Regconition] = useState("")
     const { finalTranscript } = useSpeechRecognition();
-    if (flag) {
-        if (!SpeechRecognition.browserSupportsSpeechRecognition()) {
-            router.push("/error")
-            return null;
-        } else {
-            SET_Message_Regconition("Speech recognition software is ready!")
+
+    useEffect(() => {
+        if (flag) {
+            if (!SpeechRecognition.browserSupportsSpeechRecognition()) {
+                router.push("/error")
+                return "";
+            } else {
+                SET_Message_Regconition("Speech recognition software is ready!")
+            }
+            flag = false;
         }
-        flag = false;
-    }
+
+    });
 
     function Start_regconition() {
         SpeechRecognition.startListening({

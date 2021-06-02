@@ -27,14 +27,17 @@ function ArrOfPeopeAppear_ReactJSX(props) {
 
     const [ShowHint, SET_ShowHint] = useState(true);
 
-    if (flag) {
-        if ('speechSynthesis' in window) {
-            synth = window.speechSynthesis;
-            Read("Ready!", 3)
-        } else { return "" }
-        flag = false;
-    }
 
+
+    useEffect(() => {
+        if (flag) {
+            if ('speechSynthesis' in window) {
+                synth = window.speechSynthesis;
+                Read("Ready!", 3)
+            }
+            flag = false;
+        }
+    })
     useEffect(
         () => {
             let timer1 = setTimeout(() => SET_TimeCount(C => C - 1), 1000);
