@@ -12,7 +12,6 @@ export default function Dictaphone(props) {
         if (flag) {
             if (!SpeechRecognition.browserSupportsSpeechRecognition()) {
                 router.push("/error")
-                return "";
             } else {
                 SET_Message_Regconition("Speech recognition software is ready!")
             }
