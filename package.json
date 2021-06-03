@@ -12,6 +12,7 @@
     "isomorphic-unfetch": "^3.1.0",
     "mongodb": "^3.5.9",
     "next": "latest",
+    "query-string": "^7.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-speech-recognition": "^3.8.0",

@@ -20,8 +20,8 @@ export default function body() {
 
             </main>
             <div className="container">
-                <div class="respondiframe">
-                    <iframe class="responsive-iframe" src="https://www.youtube.com/embed/VHV8ap4cLXw"></iframe>
+                <div className="respondiframe">
+                    <iframe className="responsive-iframe" src="https://www.youtube.com/embed/VHV8ap4cLXw"></iframe>
                 </div>
             </div>
 

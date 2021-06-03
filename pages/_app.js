@@ -62,12 +62,6 @@ function MyApp({ Component, pageProps }) {
                 <Link href="/100-bai-giao-tiep-can-ban">
                   <a className="dropdown-item" >100 bài giao tiếp căn bản</a>
                 </Link>
-                <Link href="/">
-                  <a className="dropdown-item" >Blog</a>
-                </Link>
-                <Link href="/">
-                  <a className="dropdown-item">Forum</a>
-                </Link>
               </div>
             </li>
             <li className="nav-item active">
