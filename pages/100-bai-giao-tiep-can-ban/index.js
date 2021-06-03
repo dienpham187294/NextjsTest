@@ -18,7 +18,8 @@ let arr = [
                 "Good. Do you speak English?",
                 "A little. Are you American?",
                 "Yes.",
-                "Where are you from? I'm from California. Nice to meet you.",
+                "Where are you from?",
+                "I'm from California. Nice to meet you.",
                 "Nice to meet you too."
             ]
         ]
@@ -2204,7 +2205,20 @@ function Index100baigiaotiep() {
     const [tille, SET_tille] = useState("Bài 1: What is your name?")
     const [link, SET_Link] = useState("bai-1-what-is-your-name")
     const [linkyoutube, SET_Linkyoutube] = useState("https://www.youtube.com/embed/VHV8ap4cLXw")
-    const [lession, SET_lession] = useState([])
+    const [lession, SET_lession] = useState([
+        [
+            "Hello.",
+            "Hi.",
+            "How are you?",
+            "I'm good. How are you?",
+            "Good. Do you speak English?",
+            "A little. Are you American?",
+            "Yes.",
+            "Where are you from?",
+            "I'm from California. Nice to meet you.",
+            "Nice to meet you too."
+        ]
+    ])
 
     useEffect(() => {
         if (flag) {
@@ -2272,6 +2286,10 @@ function Index100baigiaotiep() {
             </Head>
             <div className="container mt-3 p-3">
                 <div className="row">
+                    <div className="col-12 text-center">
+                        <p>100 đoạn hội thoại hằng ngày giúp nâng cao trình độ nghe nói và tự tin giao tiếp
+                        với người bản xứ    </p>
+                    </div>
                     <div className="d-lg-none col-12">
                         <select onChange={(ee) => {
                             let arr = ee.currentTarget.value.split("split");
@@ -2289,7 +2307,7 @@ function Index100baigiaotiep() {
                     <div className="d-none d-lg-block col-3">
                         <ul style={{ cursor: "pointer" }}>
                             {arr.map((e, index) =>
-                                <li onClick={() => { SET_tille(e.tille) }} key={index}>
+                                <li style={{ margin: "5px" }} onClick={() => { SET_tille(e.tille) }} key={index}>
                                     <Link href={"/100-bai-giao-tiep-can-ban?p=" + e.link}>
                                         <a>{e.tille}</a>
                                     </Link>
