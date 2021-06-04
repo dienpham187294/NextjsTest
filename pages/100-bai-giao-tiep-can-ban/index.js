@@ -2287,8 +2287,8 @@ function Index100baigiaotiep() {
             <div className="container mt-3 p-3">
                 <div className="row">
                     <div className="col-12 text-center">
-                        <p>100 đoạn hội thoại hằng ngày giúp nâng cao trình độ nghe nói và tự tin giao tiếp
-                        với người bản xứ    </p>
+                        <h5>100 đoạn hội thoại hằng ngày giúp nâng cao trình độ nghe nói và tự tin giao tiếp
+                        với người bản xứ    </h5>
                     </div>
                     <div className="d-lg-none col-12">
                         <select onChange={(ee) => {
