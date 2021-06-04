@@ -2202,8 +2202,8 @@ let arr = [
 ]
 function Index100baigiaotiep() {
     const router = useRouter()
-    const [tille, SET_tille] = useState("Bài 1: What is your name?")
-    const [link, SET_Link] = useState("bai-1-what-is-your-name")
+    const [tille, SET_tille] = useState("Lesson 1: WHERE ARE YOU FROM?")
+    const [link, SET_Link] = useState("lesson-1-where-are-you-from")
     const [linkyoutube, SET_Linkyoutube] = useState("https://www.youtube.com/embed/VHV8ap4cLXw")
     const [lession, SET_lession] = useState([
         [
@@ -2279,16 +2279,16 @@ function Index100baigiaotiep() {
     return (
         <>
             <Head>
-                <title>{"Học tiếng anh online 100 bài giao tiếp căn bản " + link}</title>
+                <title>{"Học tiếng anh online qua 100 bài giao tiếp căn bản " + link}</title>
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <meta name="description" content={"100 Bài giao tiếp căn bản dành cho người mới bắt đầu" + tille} />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <div className="container mt-3 p-3">
                 <div className="row">
-                    <div className="col-12 text-center">
-                        <h5>100 đoạn hội thoại hằng ngày giúp nâng cao trình độ nghe nói và tự tin giao tiếp
-                        với người bản xứ    </h5>
+                    <div className="col-12 text-center p-1">
+                        <h4>Học và thực hành 100 đoạn hội thoại hằng ngày giúp nâng cao trình độ nghe nói và tự tin giao tiếp
+                        với người bản xứ</h4>
                     </div>
                     <div className="d-lg-none col-12">
                         <select onChange={(ee) => {

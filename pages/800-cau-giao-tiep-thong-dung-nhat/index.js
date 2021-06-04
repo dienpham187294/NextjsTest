@@ -3354,7 +3354,9 @@ function Giaotiepcoban() {
                 < link rel="icon" href="/favicon.ico" />
             </Head>
             <div className="container mt-3 p-1">
-
+                <h3>Học và thực hành 800 mẫu câu thông dụng giúp cải thiện khả năng giao tiếp.</h3>
+                <hr />
+               
                 <table className="table table-striped">
                     <thead>
                         <tr>

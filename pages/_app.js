@@ -65,6 +65,9 @@ function MyApp({ Component, pageProps }) {
                 <Link href="/800-cau-giao-tiep-thong-dung-nhat">
                   <a className="dropdown-item" >800 câu giao tiếp thông dụng</a>
                 </Link>
+                <Link href="/20-chu-de-hoc-tieng-anh-qua-hinh-anh">
+                  <a className="dropdown-item" >20 chủ đề học tiếng anh qua hình ảnh</a>
+                </Link>
               </div>
             </li>
             <li className="nav-item active">
@@ -87,7 +90,11 @@ function MyApp({ Component, pageProps }) {
 
 
     <footer className="mt-5 text-center">
-      Powered by Ericpham
+      <hr />
+      <span><i>Học nhiều thực hành ít không bằng học ít thực hành nhiều.</i> </span>
+      <br />
+      <span>Powered by Ericpham</span>
+      <hr />
     </footer>
   </>)
 
