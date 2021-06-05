@@ -3,6 +3,20 @@ import '../styles/globals.css'
 import Link from 'next/link'
 import 'regenerator-runtime/runtime'
 import Head from "next/head";
+
+
+let ArrHoldLinkBaiHoc = [
+  { "link": "100-bai-giao-tiep-can-ban", "name": "100 bài giao tiếp căn bản" },
+  { "link": "800-cau-giao-tiep-thong-dung-nhat", "name": "800 câu giao tiếp thông dụng" },
+  { "link": "20-chu-de-hoc-tieng-anh-qua-hinh-anh", "name": "20 chủ đề học tiếng anh qua hình ảnh" }
+]
+let ArrHoldLinkThucHanh = [
+  { "link": "thuchanh/giao-tiep-cap-do-1", "name": "Giao tiếp căn bản" },
+  { "link": "thuchanh/thuc-hanh-doc-sach", "name": "Thực hành đọc truyện, sách." },
+  { "link": "thuchanh/thuc-hanh-nghe", "name": "Thực hành nghe" },
+  { "link": "thuchanh/thuc-hanh-ngu-phap", "name": "Thực hành ngữ pháp" },
+  { "link": "thuchanh/thuc-hanh-toiec", "name": "Thực hành đề thi TOEIC" },
+]
 function MyApp({ Component, pageProps }) {
 
 
@@ -46,34 +60,29 @@ function MyApp({ Component, pageProps }) {
           <ul className="navbar-nav mr-auto">
             <li className="nav-item dropdown">
               <Link href="/">
-                <a className="nav-link dropdown-toggle" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Link dự phòng</a>
-              </Link>
-              <div className="dropdown-menu" aria-labelledby="dropdown03">
-                <Link href="https://app-ericpham.herokuapp.com/">
-                  <a className="dropdown-item" >Link dự phòng 1</a>
-                </Link>
-              </div>
-            </li>
-            <li className="nav-item dropdown">
-              <Link href="/">
                 <a className="nav-link dropdown-toggle" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Bài học</a>
               </Link>
               <div className="dropdown-menu" aria-labelledby="dropdown03">
-                <Link href="/100-bai-giao-tiep-can-ban">
-                  <a className="dropdown-item" >100 bài giao tiếp căn bản</a>
-                </Link>
-                <Link href="/800-cau-giao-tiep-thong-dung-nhat">
-                  <a className="dropdown-item" >800 câu giao tiếp thông dụng</a>
-                </Link>
-                <Link href="/20-chu-de-hoc-tieng-anh-qua-hinh-anh">
-                  <a className="dropdown-item" >20 chủ đề học tiếng anh qua hình ảnh</a>
-                </Link>
+
+                {ArrHoldLinkBaiHoc.map((e, i) =>
+                  <Link key={i} href={"/" + e.link}>
+                    < a className="dropdown-item" >{e.name}</a>
+                  </Link>
+                )}
               </div>
             </li>
-            <li className="nav-item active">
-              <Link href="/thuchanh">
-                <a className="nav-link">Thực hành</a>
+
+            <li className="nav-item dropdown active">
+              <Link href="/">
+                <a className="nav-link dropdown-toggle" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Thực hành</a>
               </Link>
+              <div className="dropdown-menu" aria-labelledby="dropdown03">
+                {ArrHoldLinkThucHanh.map((e, i) =>
+                  <Link key={i} href={"/" + e.link}>
+                    < a className="dropdown-item" >{e.name}</a>
+                  </Link>
+                )}
+              </div>
             </li>
           </ul>
           <form className="form-inline my-2 my-md-0">
@@ -83,7 +92,7 @@ function MyApp({ Component, pageProps }) {
           </form>
         </div>
       </nav>
-    </header>
+    </header >
 
     <Component {...pageProps} />
 
@@ -95,6 +104,7 @@ function MyApp({ Component, pageProps }) {
       <br />
       <span>Powered by Ericpham</span>
       <hr />
+      <a href="https://app-ericpham.herokuapp.com/">Link dự phòng</a>
     </footer>
   </>)
 
