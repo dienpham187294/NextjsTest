@@ -11,10 +11,10 @@ let ArrHoldLinkBaiHoc = [
   { "link": "20-chu-de-hoc-tieng-anh-qua-hinh-anh", "name": "20 chủ đề học tiếng anh qua hình ảnh" }
 ]
 let ArrHoldLinkThucHanh = [
-  { "link": "thuchanh/giao-tiep-cap-do-1", "name": "Giao tiếp căn bản" },
-  { "link": "thuchanh/thuc-hanh-doc-sach", "name": "Thực hành đọc truyện, sách" },
-  { "link": "thuchanh/thuc-hanh-nghe", "name": "Thực hành nghe" },
-  { "link": "thuchanh/thuc-hanh-ngu-phap", "name": "Thực hành ngữ pháp" },
+  { "link": "thuchanh/giao-tiep-cap-do-1", "name": "Thực hành giao tiếp căn bản nghe và nói với người máy" },
+  { "link": "thuchanh/thuc-hanh-doc-sach-thanh-tieng", "name": "Thực hành đọc truyện, sách thành tiếng" },
+  { "link": "thuchanh/thuc-hanh-nghe-va-lap-lai", "name": "Thực hành nghe và lặp lại các câu" },
+  { "link": "thuchanh/thuc-hanh-ngu-phap", "name": "Thực hành thi các bài ngữ pháp bằng giọng nói." },
   { "link": "thuchanh/thuc-hanh-toiec", "name": "Thực hành đề thi TOEIC" },
 ]
 function MyApp({ Component, pageProps }) {

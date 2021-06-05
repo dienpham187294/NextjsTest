@@ -1,6 +1,6 @@
 
 import { useEffect, useState } from "react"
-import Dictaphone from "../../../pages/helpers/Regcognition"
+import Dictaphone from "../../helpers/Regcognition"
 
 let synth
 
@@ -23,7 +23,7 @@ function GamePlay(props) {
         if (Flag) {
             if ('speechSynthesis' in window) {
                 synth = window.speechSynthesis
-                Read("Ready!")
+                Read("ready.")
             }
             SET_Flag(false)
         }

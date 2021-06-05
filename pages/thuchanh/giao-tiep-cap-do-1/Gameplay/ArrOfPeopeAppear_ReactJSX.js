@@ -33,7 +33,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
         if (flag) {
             if ('speechSynthesis' in window) {
                 synth = window.speechSynthesis;
-                Read("Ready!", 3)
+                Read("ready.", 3)
             }
             flag = false;
         }

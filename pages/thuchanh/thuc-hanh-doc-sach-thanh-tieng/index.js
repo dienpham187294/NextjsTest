@@ -15,7 +15,19 @@ function Manager() {
     return (
 
         <div className="container">
-            <h1>Thực hành đọc sách</h1>
+            <div className="text-justify p-3">
+                <p>
+                    <b>
+                        <i>
+                            Luyện đọc văn bản thành tiếng có thể rèn luyện khả năng phát âm, nâng cao khả năng
+                            cảm nhận được câu nói, văn bản, biết nhấn nhá theo ngữ điệu, văn cảnh
+                            lâu dần sẽ tránh được đọc, nói một cách rời rạc, ngắc ngứ, thiếu liên mạch
+                            gây khó chịu và khó hiểu cho người nghe.
+                        </i>
+                    </b>
+                </p>
+            </div>
+
             <div style={{ textAlign: "center" }} className="mt-1 mb-1">
                 <button className="btn btn-sm btn-outline-primary mr-3" onClick={() => { SET_PageChange(S => S - 1) }}>Back</button>
                 <button className="btn btn-sm btn-outline-primary" onClick={() => { SET_PageChange(S => S + 1) }}>Forward</button>
