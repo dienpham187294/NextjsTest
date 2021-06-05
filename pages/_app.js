@@ -11,7 +11,7 @@ let ArrHoldLinkBaiHoc = [
   { "link": "20-chu-de-hoc-tieng-anh-qua-hinh-anh", "name": "20 chủ đề học tiếng anh qua hình ảnh" }
 ]
 let ArrHoldLinkThucHanh = [
-  { "link": "thuchanh/giao-tiep-cap-do-1", "name": "Thực hành giao tiếp căn bản nghe và nói với người máy" },
+  { "link": "thuchanh/giao-tiep-cap-do-1", "name": "Thực hành giao tiếp căn bản với người máy AI" },
   { "link": "thuchanh/thuc-hanh-doc-sach-thanh-tieng", "name": "Thực hành đọc truyện, sách thành tiếng" },
   { "link": "thuchanh/thuc-hanh-nghe-va-lap-lai", "name": "Thực hành nghe và lặp lại các câu" },
   { "link": "thuchanh/thuc-hanh-ngu-phap", "name": "Thực hành thi các bài ngữ pháp bằng giọng nói." },
@@ -69,6 +69,7 @@ function MyApp({ Component, pageProps }) {
                     < a className="dropdown-item" >{e.name}</a>
                   </Link>
                 )}
+
               </div>
             </li>
 
@@ -76,12 +77,16 @@ function MyApp({ Component, pageProps }) {
               <Link href="/">
                 <a className="nav-link dropdown-toggle" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Thực hành</a>
               </Link>
-              <div className="dropdown-menu" aria-labelledby="dropdown03">
+              <div className="dropdown-menu text-justify" aria-labelledby="dropdown03">
                 {ArrHoldLinkThucHanh.map((e, i) =>
                   <Link key={i} href={"/" + e.link}>
                     < a className="dropdown-item" >{e.name}</a>
                   </Link>
                 )}
+                <hr />
+                <Link key="Timhieu" href="/thuchanh">
+                  < a className="dropdown-item" >Tìm hiểu về trí thông minh nhân tạo, <br /> công nghệ nhận diện giọng nói <br /> và ứng dụng trong thực hành tiếng anh.</a>
+                </Link>
               </div>
             </li>
           </ul>
