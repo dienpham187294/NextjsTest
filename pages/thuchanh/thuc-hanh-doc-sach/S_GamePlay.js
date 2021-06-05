@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react"
 import Dictaphone from "../../../pages/helpers/Regcognition"
 
-
+let synth
 
 function GamePlay(props) {
 
@@ -16,7 +16,31 @@ function GamePlay(props) {
 
     const [Info_message, SET_Info_message] = useState("")
     const [Alert, SET_Alert] = useState(0)
+    const [Flag, SET_Flag] = useState(true)
 
+
+    useEffect(() => {
+        if (Flag) {
+            if ('speechSynthesis' in window) {
+                synth = window.speechSynthesis
+                Read("Ready!")
+            }
+            SET_Flag(false)
+        }
+    })
+
+    async function Read(message) {
+        if (message !== null) {
+            try {
+                let ut = await new SpeechSynthesisUtterance(message);
+                ut.voice = await synth.getVoices()[3];
+                synth.speak(ut);
+            } catch (error) {
+                console.error();
+            }
+        }
+
+    }
     useEffect(() => {
         let Temp_Massage = [" " + Info_message.toLowerCase().split(/[\?#!-(),-.]+/).join("")];
         let Arr = props.Data;
@@ -50,7 +74,12 @@ function GamePlay(props) {
                     {props.Data.map((e, i) =>
                         <div key={i + "1"}>
                             <p key={i}>{e.map((ee, ii) =>
-                                <span key={ii} style={{ backgroundColor: ee.status ? "yellow" : "transparent" }}>{ee.text} </span>
+                                <span
+                                    onClick={() => {
+                                        Read(ee.text)
+                                    }}
+                                    key={ii}
+                                    style={{ backgroundColor: ee.status ? "yellow" : "transparent", cursor: "pointer" }}>{ee.text} </span>
                             )}</p>
                         </div>
                     )}
@@ -65,3 +94,4 @@ function GamePlay(props) {
 
 
 export default GamePlay
+

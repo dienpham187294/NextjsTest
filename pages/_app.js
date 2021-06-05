@@ -12,7 +12,7 @@ let ArrHoldLinkBaiHoc = [
 ]
 let ArrHoldLinkThucHanh = [
   { "link": "thuchanh/giao-tiep-cap-do-1", "name": "Giao tiếp căn bản" },
-  { "link": "thuchanh/thuc-hanh-doc-sach", "name": "Thực hành đọc truyện, sách." },
+  { "link": "thuchanh/thuc-hanh-doc-sach", "name": "Thực hành đọc truyện, sách" },
   { "link": "thuchanh/thuc-hanh-nghe", "name": "Thực hành nghe" },
   { "link": "thuchanh/thuc-hanh-ngu-phap", "name": "Thực hành ngữ pháp" },
   { "link": "thuchanh/thuc-hanh-toiec", "name": "Thực hành đề thi TOEIC" },
