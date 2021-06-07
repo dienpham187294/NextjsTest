@@ -2,8 +2,8 @@
 import { useEffect, useState } from "react"
 import Dictaphone from "../../helpers/Regcognition"
 
-let synth
-
+let synth;
+let arr = [0];
 function GamePlay(props) {
 
     try {
@@ -19,7 +19,7 @@ function GamePlay(props) {
     const [Flag, SET_Flag] = useState(true)
 
     const [TimeCount, SET_TimeCount] = useState(15)
-    const [Index, SET_Index] = useState(0)
+
     const [MessageToRead, SET_MessageToRead] = useState("")
     useEffect(() => {
         if (Flag) {
@@ -54,22 +54,24 @@ function GamePlay(props) {
     );
 
     useEffect(() => {
-
         if (MessageToRead !== "" && checkMessage(Info_message, MessageToRead)) {
-            Read(props.Data[Index]);
-            SET_MessageToRead(props.Data[Index]);
+            let temp = arr[arr.length - 1]
+            Read(props.Data[temp]);
+            SET_MessageToRead(props.Data[temp]);
             SET_TimeCount(15);
-            SET_Index(I => I + 1);
+            arr.push(temp + 1);
             SET_Alert(A => A + 1);
         }
     }, [Info_message])
 
     useEffect(() => {
-        if (TimeCount === 0 && Alert < props.Data.length) {
-            Read(props.Data[Index]);
-            SET_MessageToRead(props.Data[Index])
+        if (!Flag && TimeCount === 0 && props.Data[arr[arr.length - 1]] !== undefined) {
+            let temp = arr[arr.length - 1]
+            Read(props.Data[temp]);
+            SET_MessageToRead(props.Data[temp])
             SET_TimeCount(15);
-            SET_Index(I => I + 1)
+            arr.push(temp + 1);
+
         }
     }, [TimeCount])
 
