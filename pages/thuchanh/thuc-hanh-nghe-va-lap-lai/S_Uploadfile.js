@@ -11,22 +11,8 @@ function UpLoadFile(props) {
                             var readFile = new FileReader();
                             readFile.onload = function (e) {
                                 var contents = e.target.result;
-                                // var json = JSON.parse(contents);
-
-                                let arr = contents.split("\n")
-                                let arrRes = []
-
-                                arr.forEach(e => {
-                                    let arrTemp = (e).split(" ")
-                                    let arrTempFinal = [];
-                                    arrTemp.forEach(ee => {
-
-                                        arrTempFinal.push({ "text": ee.split("\r").join(""), "status": false })
-                                    })
-
-                                    arrRes.push(arrTempFinal)
-                                });
-                                props.SET_Read_Data(arrRes)
+                                var json = JSON.parse(contents);
+                                props.SET_Data(json)
                             };
                             readFile.readAsText(uploadedFile);
                         } else {

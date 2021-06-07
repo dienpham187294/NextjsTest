@@ -13,7 +13,7 @@ let ArrHoldLinkBaiHoc = [
 let ArrHoldLinkThucHanh = [
   { "link": "thuchanh/lam-quen-tu-vung", "name": "Làm quen từ vựng" },
   { "link": "thuchanh/giao-tiep-cap-do-1", "name": "Thực hành giao tiếp căn bản với người máy AI" },
-  { "link": "thuchanh/thuc-hanh-doc-sach-thanh-tieng", "name": "Thực hành đọc truyện, sách thành tiếng" },
+  { "link": "thuchanh/thuc-hanh-doc-sach-thanh-tieng", "name": "Thực hành đọc với công nghệ nhận diện giọng nói" },
   { "link": "thuchanh/thuc-hanh-nghe-va-lap-lai", "name": "Thực hành nghe và lặp lại các câu" },
   { "link": "thuchanh/thuc-hanh-ngu-phap", "name": "Thực hành thi các bài ngữ pháp bằng giọng nói." },
   { "link": "thuchanh/thuc-hanh-toiec", "name": "Thực hành đề thi TOEIC" },

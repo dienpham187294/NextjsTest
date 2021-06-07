@@ -18,7 +18,9 @@ function GamePlay(props) {
     const [Alert, SET_Alert] = useState(0)
     const [Flag, SET_Flag] = useState(true)
 
-
+    const [TimeCount, SET_TimeCount] = useState(15)
+    const [Index, SET_Index] = useState(0)
+    const [MessageToRead, SET_MessageToRead] = useState("")
     useEffect(() => {
         if (Flag) {
             if ('speechSynthesis' in window) {
@@ -41,26 +43,35 @@ function GamePlay(props) {
         }
 
     }
+
+    useEffect(
+        () => {
+            let timer1 = setTimeout(() => SET_TimeCount(C => C - 1), 1000);
+            return () => {
+                clearTimeout(timer1);
+            };
+        }, [TimeCount]
+    );
+
     useEffect(() => {
-        let Temp_Massage = [" " + Info_message.toLowerCase().split(/[\?#!-(),-.]+/).join("")];
-        let Arr = props.Data;
-        Arr.forEach(e => {
-            e.forEach(ee => {
-                if (!ee.status) {
-                    let temp = ee.text.split(/[\?#!-(),-.]+/).join("").toLowerCase();
 
-                    if (Temp_Massage[Temp_Massage.length - 1].indexOf(temp) > -1) {
-                        ee.status = true;
-                        Temp_Massage.push(Temp_Massage[Temp_Massage.length - 1].replace(temp, " "))
-
-                    }
-                }
-            })
-        });
-        props.SET_Read_Data(Arr)
-        SET_Alert(A => A + 1)
+        if (MessageToRead !== "" && checkMessage(Info_message, MessageToRead)) {
+            Read(props.Data[Index]);
+            SET_MessageToRead(props.Data[Index]);
+            SET_TimeCount(15);
+            SET_Index(I => I + 1);
+            SET_Alert(A => A + 1);
+        }
     }, [Info_message])
 
+    useEffect(() => {
+        if (TimeCount === 0 && Alert < props.Data.length) {
+            Read(props.Data[Index]);
+            SET_MessageToRead(props.Data[Index])
+            SET_TimeCount(15);
+            SET_Index(I => I + 1)
+        }
+    }, [TimeCount])
 
     return (
         <div >
@@ -71,18 +82,12 @@ function GamePlay(props) {
                     />
                 </div>
                 <div className="col-6 text-justify">
-                    {props.Data.map((e, i) =>
-                        <div key={i + "1"}>
-                            <p key={i}>{e.map((ee, ii) =>
-                                <span
-                                    onClick={() => {
-                                        Read(ee.text)
-                                    }}
-                                    key={ii}
-                                    style={{ backgroundColor: ee.status ? "yellow" : "transparent", cursor: "pointer" }}>{ee.text} </span>
-                            )}</p>
-                        </div>
-                    )}
+                    <div>
+                        {TimeCount} || Điểm: {Alert} /{props.Data.length}
+                    </div>
+
+                    Lắng nghe và lặp lại.
+                    {/* {JSON.stringify(props.Data)} */}
                 </div>
             </div>
         </div>
@@ -95,3 +100,38 @@ function GamePlay(props) {
 
 export default GamePlay
 
+
+function SortMessageToArray(message) {
+
+
+    let a = message.toLowerCase().split(/[\?#!-().]+\r/).join("")
+    let b = a.toString();
+    let c = b.split(" ");
+
+    let Res = [];
+    c.forEach(e => {
+        e !== "";
+        Res.push(e)
+    })
+    return Res
+
+}
+
+function checkMessage(message_API, message_INPUT) {
+
+    if (message_API === null || message_INPUT === null || message_API === "" || message_INPUT === "") {
+        return false
+    }
+    let numCheckRight = 0;
+    let Allnumtocheck = SortMessageToArray(message_INPUT).length
+    let MessageA = message_API.toLowerCase().split(/[\?#!-().]+\r/).join("")
+    SortMessageToArray(message_INPUT).forEach(e => {
+        if (MessageA.indexOf(e) !== -1) {
+            numCheckRight += 1;
+        }
+    })
+    if (numCheckRight / Allnumtocheck > 2 / 3) {
+        return true
+    }
+    return false
+}

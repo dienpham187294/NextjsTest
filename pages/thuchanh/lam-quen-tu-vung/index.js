@@ -33,12 +33,8 @@ function Manager() {
                 : PageChange % 2 === 1 ? <GamePlay Data={LamQuenData}
                     SET_LamQuenData={SET_LamQuenData} />
                     : PageChange}
-
-
         </div>
-
     )
-
 }
 export default Manager
 
