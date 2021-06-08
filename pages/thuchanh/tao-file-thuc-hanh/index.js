@@ -122,6 +122,11 @@ function Taofilethuchanh() {
                 onClick={() => {
                     downClick(Data_baitap, "bai-tap")
                 }} id="btn">Download</button>
+            <hr />
+            <h5>Link download file mẫu</h5>
+            <a href="https://www.fshare.vn/file/HUJTAMZTUJVK" target="_blank">Link</a>
+
+
         </div>
     )
 }
