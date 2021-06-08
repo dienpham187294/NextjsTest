@@ -7,16 +7,16 @@ function UpLoadFile(props) {
                     try {
                         var uploadedFile = e.currentTarget.files[0];
 
-                        if (uploadedFile) {
+                        if (uploadedFile.name.indexOf(".ericpham") > -1) {
                             var readFile = new FileReader();
                             readFile.onload = function (e) {
                                 var contents = e.target.result;
-                                // var json = JSON.parse(contents);
+                                var json = JSON.parse(contents);
 
-                                let arr = contents.split("\n")
+                                // let arr = contents.split("\n")
                                 let arrRes = []
 
-                                arr.forEach(e => {
+                                json.forEach(e => {
                                     let arrTemp = (e).split(" ")
                                     let arrTempFinal = [];
                                     arrTemp.forEach(ee => {

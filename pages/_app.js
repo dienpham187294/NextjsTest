@@ -88,6 +88,10 @@ function MyApp({ Component, pageProps }) {
                 <Link key="Timhieu" href="/thuchanh">
                   < a className="dropdown-item" >Tìm hiểu về trí thông minh nhân tạo, <br /> công nghệ nhận diện giọng nói <br /> và ứng dụng trong thực hành tiếng anh.</a>
                 </Link>
+                <hr />
+                <Link href={"/thuchanh/tao-file-thuc-hanh"}>
+                  < a className="dropdown-item" >Tạo file thực hành</a>
+                </Link>
               </div>
             </li>
           </ul>

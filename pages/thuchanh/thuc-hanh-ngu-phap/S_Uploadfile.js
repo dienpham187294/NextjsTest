@@ -7,7 +7,7 @@ function UpLoadFile(props) {
                     try {
                         var uploadedFile = e.currentTarget.files[0];
 
-                        if (uploadedFile) {
+                        if (uploadedFile.name.indexOf(".ericpham") > -1) {
                             var readFile = new FileReader();
                             readFile.onload = function (e) {
                                 var contents = e.target.result;
