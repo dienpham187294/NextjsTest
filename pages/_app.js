@@ -93,7 +93,7 @@ function MyApp({ Component, pageProps }) {
           </ul>
           <form className="form-inline my-2 my-md-0">
             <a href="https://forms.gle/iQCgk1w3aSHVgkVc6" target="_blank">
-              <input className="btn btn-primary" type="button" value="Đăng ký học thử" />
+              <input className="btn btn-primary" type="button" value="Đăng ký sử dụng" />
             </a>
           </form>
         </div>
