@@ -19,8 +19,7 @@ function Manager() {
                 <p>
                     <b>
                         <i>
-                            Luyện lắng nghe và lặp lại có thể rèn luyện nghe và phát âm. nâng cao khả năng
-                            phản xạ và ứng đối nhanh chóng, chính xác và đa dạng hơn trong giao tiếp.
+                            Rèn luyện các bài tập ngữ pháp kết hợp thực luyện nói và phát âm.
                         </i>
                     </b>
                 </p>
