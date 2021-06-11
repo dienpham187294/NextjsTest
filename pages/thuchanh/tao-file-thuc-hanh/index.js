@@ -111,7 +111,7 @@ function Taofilethuchanh() {
                     downClick(Data_docvanban, "docvanband")
                 }} id="btn">Download</button>
             <hr />
-            <h5>Lấy file đọc văn bản</h5>
+            <h5>Lấy file nghe và lặp lại</h5>
             <button className="btn btn-outline-primary"
                 onClick={() => {
                     downClick(Data_langnghevalaplai, "langnghevalaplai")

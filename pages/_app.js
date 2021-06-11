@@ -23,7 +23,7 @@ function MyApp({ Component, pageProps }) {
 
   return (<>
     <Head>
-      <title>ESL PRACTICE</title>
+      <title>ENGLISH TOOL</title>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="description" content="Ericpham Product" />
       <link rel="icon" href="/favicon.ico" />
@@ -44,13 +44,13 @@ function MyApp({ Component, pageProps }) {
         src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         crossOrigin="anonymous"
       />
-
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossOrigin="anonymous" referrerPolicy="no-referrer" />
     </Head>
     <header>
 
       <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
         <Link href="/">
-          <a className="navbar-brand" >ESL PRACTICE</a>
+          <a className="navbar-brand" >ENGLISH TOOL</a>
         </Link>
 
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
@@ -84,10 +84,10 @@ function MyApp({ Component, pageProps }) {
                     < a className="dropdown-item" >{e.name}</a>
                   </Link>
                 )}
-                <hr />
+                {/* <hr />
                 <Link key="Timhieu" href="/thuchanh">
                   < a className="dropdown-item" >Tìm hiểu về trí thông minh nhân tạo, <br /> công nghệ nhận diện giọng nói <br /> và ứng dụng trong thực hành tiếng anh.</a>
-                </Link>
+                </Link> */}
                 <hr />
                 <Link href={"/thuchanh/tao-file-thuc-hanh"}>
                   < a className="dropdown-item" >Tạo file thực hành</a>
@@ -96,7 +96,7 @@ function MyApp({ Component, pageProps }) {
             </li>
           </ul>
           <form className="form-inline my-2 my-md-0">
-            <a href="https://forms.gle/iQCgk1w3aSHVgkVc6" target="_blank">
+            <a href="https://forms.gle/yKX6AvwbRoF8VcA59" target="_blank">
               <input className="btn btn-primary" type="button" value="Đăng ký sử dụng" />
             </a>
           </form>
