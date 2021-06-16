@@ -41,7 +41,7 @@ export default ImageSearch
 
 const GetInfo = async (SET_Data, Word) => {
     try {
-        const res = await fetch("https://englishtool.co/api/Image", {
+        const res = await fetch("https://www.englishtool.co/api/Image", {
             method: 'POST',
             headers: {
                 "Accept": "application/json",
