@@ -169,7 +169,7 @@ export default function body() {
                 </div>
                 <hr />
                 <div className="container text-justify mt-4 p-4">
-                    <h1>Công nghệ 4.0 - Trí thông tinh nhân tạo!</h1>
+                    <h1>Công nghệ 4.0 - Trí thông minh nhân tạo!</h1>
                     <br />
                     <i >AI (Artificial Intelligence) hay Trí tuệ nhân tạo là một ngành của khoa học máy tính liên quan đến việc tự động hóa các hành vi thông minh đã không còn quá xa lạ với chúng ta ở thời đại Công nghệ thông tin 4.0.</i>
                     <br /> <br />
@@ -187,11 +187,12 @@ export default function body() {
                         <br />
 
                         <b><i>Việc sử dụng công nghệ nhận diện giọng nói vào dạy và học tiếng anh có thể kể đến nhờ những ưu điểm như:</i></b>
-                        <ul>
-                            <li>Chuẩn hóa phát âm.</li>
-                            <li>Có thể sử dụng mọi lúc mọi nơi.</li>
-                        </ul>
                     </p>
+                    <ul>
+                        <li>Chuẩn hóa phát âm.</li>
+                        <li>Có thể sử dụng mọi lúc mọi nơi.</li>
+                    </ul>
+
                     <p>Ứng dụng thực hành tiếng anh dành cho công tác giảng dạy.</p>
                     <p>
                         Công nghệ thông tin (CNTT) sẽ làm thay đổi nền giáo dục một cách cơ bản và toàn diện.
@@ -200,19 +201,20 @@ export default function body() {
                         <b>Nền tảng thực hành của Ericpham</b> là để đáp ứng nhu cầu ứng dụng công nghệ mới nhất vào trong công tác giảng dạy cho những <b> người làm công tác giảng dạy.</b>
                         <br />
                         Với tiêu chí:
-                        <ul>
-                            <li>Đơn giản, dễ sử dụng và không yêu cầu hiểu biết về công nghệ thông tin.</li>
-                            <li>Có khả năng tùy biến dễ dàng theo nhu cầu, phương pháp dạy cụ thể của từng giáo viên, trung tâm.</li>
-                            <li>Giá rẻ.</li>
-                            <li>Dễ dàng, hiệu quả, tiết kiệm thời gian và công sức hơn so với công tác giảng dạy truyền thống.</li>
-                        </ul>
-                        <h5>
-                            <i>
-                                Chúng tôi luôn nỗ lực tạo ra những ứng dụng đơn giản, dễ sử dụng và giá rẻ để mỗi giáo viên, mỗi trung tâm đều có thể thoải mái
-                                ứng dụng công nghệ vào công việc giảng dạy.
-                            </i>
-                        </h5>
                     </p>
+                    <ul>
+                        <li>Đơn giản, dễ sử dụng và không yêu cầu hiểu biết về công nghệ thông tin.</li>
+                        <li>Có khả năng tùy biến dễ dàng theo nhu cầu, phương pháp dạy cụ thể của từng giáo viên, trung tâm.</li>
+                        <li>Giá rẻ.</li>
+                        <li>Dễ dàng, hiệu quả, tiết kiệm thời gian và công sức hơn so với công tác giảng dạy truyền thống.</li>
+                    </ul>
+                    <b>
+                        <i>
+                            Chúng tôi luôn nỗ lực tạo ra những ứng dụng đơn giản, dễ sử dụng và giá rẻ để mỗi giáo viên, mỗi trung tâm đều có thể thoải mái
+                            ứng dụng công nghệ vào công việc giảng dạy.
+                        </i>
+                    </b>
+
                 </div>
             </div>
 

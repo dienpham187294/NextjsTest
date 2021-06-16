@@ -12,6 +12,7 @@ let ArrHoldLinkBaiHoc = [
 ]
 let ArrHoldLinkThucHanh = [
   { "link": "thuchanh/lam-quen-tu-vung", "name": "Làm quen từ vựng" },
+  { "link": "thuchanh/lam-quen-tu-vung-v1-0-1", "name": "Làm quen từ vựng v1.0.1" },
   { "link": "thuchanh/giao-tiep-cap-do-1", "name": "Thực hành giao tiếp căn bản với người máy AI" },
   { "link": "thuchanh/thuc-hanh-doc-sach-thanh-tieng", "name": "Thực hành đọc với công nghệ nhận diện giọng nói" },
   { "link": "thuchanh/thuc-hanh-nghe-va-lap-lai", "name": "Thực hành nghe và lặp lại các câu" },
@@ -79,6 +80,7 @@ function MyApp({ Component, pageProps }) {
                 <a className="nav-link dropdown-toggle" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Thực hành</a>
               </Link>
               <div className="dropdown-menu text-justify" aria-labelledby="dropdown03">
+                <hr />
                 {ArrHoldLinkThucHanh.map((e, i) =>
                   <Link key={i} href={"/" + e.link}>
                     < a className="dropdown-item" >{e.name}</a>

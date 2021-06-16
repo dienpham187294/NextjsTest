@@ -20,17 +20,7 @@ export default function Dictaphone(props) {
 
     });
 
-    function Start_regconition() {
-        SpeechRecognition.startListening({
-            continuous: true,
-            language: 'en-GB'
-        })
-    }
-    function Stop_regconition() {
-        SpeechRecognition.stopListening({
-            continuous: false
-        })
-    }
+
     useEffect(
         () => {
 
@@ -53,5 +43,18 @@ export default function Dictaphone(props) {
 
         </>
     );
+
+
+    function Start_regconition() {
+        SpeechRecognition.startListening({
+            continuous: true,
+            language: 'en-GB'
+        })
+    }
+    function Stop_regconition() {
+        SpeechRecognition.stopListening({
+            continuous: false
+        })
+    }
 };
 

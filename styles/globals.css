@@ -179,3 +179,13 @@ a:hover {
       border-radius: 10px;
       padding: 24px;
   }
+
+
+  .mapdiv{
+      border: 1px solid black;
+      border-radius: 10px;
+      cursor: pointer;
+      margin: 5px;
+      width: 150px;
+      height: 150px;
+  }

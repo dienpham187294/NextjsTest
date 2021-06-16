@@ -7,14 +7,17 @@
     "start": "next start -p $PORT"
   },
   "dependencies": {
+    "@speechly/speech-recognition-polyfill": "^1.0.0",
     "dotenv": "^9.0.2",
     "html-react-parser": "^1.2.6",
     "isomorphic-unfetch": "^3.1.0",
     "mongodb": "^3.5.9",
     "next": "latest",
+    "owlbot-js": "^2.0.2",
     "query-string": "^7.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-speech": "^1.0.2",
     "react-speech-recognition": "^3.8.0",
     "read-excel-file": "^5.1.0",
     "regenerator-runtime": "^0.13.7"
