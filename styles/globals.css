@@ -159,7 +159,7 @@ a:hover {
       height: 100%;
   }
   .box_featured:hover{
-      background-color: #58ACFA;
+     border: 5px solid blue;
       color: black;
   }
   .lydosohuuwebsiterieng{

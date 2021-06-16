@@ -12,7 +12,7 @@ let ArrHoldLinkBaiHoc = [
 ]
 let ArrHoldLinkThucHanh = [
   { "link": "thuchanh/lam-quen-tu-vung", "name": "Làm quen từ vựng" },
-  { "link": "thuchanh/lam-quen-tu-vung-v1-0-1", "name": "Làm quen từ vựng v1.0.1" },
+  { "link": "thuchanh/lam-quen-tu-vung-v1-0-1", "name": "Thực hành 3000+ từ vựng thông dụng nhất" },
   { "link": "thuchanh/giao-tiep-cap-do-1", "name": "Thực hành giao tiếp căn bản với người máy AI" },
   { "link": "thuchanh/thuc-hanh-doc-sach-thanh-tieng", "name": "Thực hành đọc với công nghệ nhận diện giọng nói" },
   { "link": "thuchanh/thuc-hanh-nghe-va-lap-lai", "name": "Thực hành nghe và lặp lại các câu" },
@@ -60,7 +60,7 @@ function MyApp({ Component, pageProps }) {
 
         <div className="collapse navbar-collapse" id="navbarsExample03">
           <ul className="navbar-nav mr-auto">
-            <li className="nav-item dropdown">
+            {/* <li className="nav-item dropdown">
               <Link href="/">
                 <a className="nav-link dropdown-toggle" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Bài học</a>
               </Link>
@@ -73,7 +73,7 @@ function MyApp({ Component, pageProps }) {
                 )}
 
               </div>
-            </li>
+            </li> */}
 
             <li className="nav-item dropdown active">
               <Link href="/">

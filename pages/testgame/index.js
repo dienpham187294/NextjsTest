@@ -19,21 +19,8 @@ function Taofilethuchanh() {
 
                         if (uploadedFile) {
 
-                            readXlsxFile(uploadedFile, { sheet: "Lam-quen" }).then((data) => {
-                                console.log(data)
-                                // let arrRES = []
-                                // data.forEach((e, i) => {
-                                //     let arrTemp = []
-                                //     e.forEach((ee, ii) => {
-                                //         if (ee === null) {
-                                //             arrTemp.push(ee)
-                                //         } else {
-                                //             arrTemp.push(JSON.parse(ee))
-                                //         }
-                                //     })
-                                //     arrRES.push(arrTemp)
-                                // });
-                                SET_Data(data)
+                            readXlsxFile(uploadedFile, { sheet: "final" }).then((data) => {
+                                console.log(JSON.stringify(data))
                             })
                             readFile.readAsText(uploadedFile);
                         } else {

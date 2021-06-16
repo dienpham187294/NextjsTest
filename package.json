@@ -9,6 +9,7 @@
   "dependencies": {
     "@speechly/speech-recognition-polyfill": "^1.0.0",
     "dotenv": "^9.0.2",
+    "general-search-engine": "^1.4.0",
     "html-react-parser": "^1.2.6",
     "isomorphic-unfetch": "^3.1.0",
     "mongodb": "^3.5.9",

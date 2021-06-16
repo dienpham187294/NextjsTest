@@ -5,12 +5,11 @@ import UpLoadFile from "./S_Uploadfile"
 
 import GamePlay from "./S_GamePlay"
 
-
+import Jsonfile from "../../../util/Testfuntion"
 
 function Manager() {
 
-    const [LamQuenData, SET_LamQuenData] = useState([])
-
+    const [Data, SET_Data] = useState(Jsonfile)
 
     return (
 
@@ -19,35 +18,36 @@ function Manager() {
                 <p>
                     <b>
                         <i>
-                            Làm quen với từ vựng và câu trước khi thực hành.
+                            Thực hành 3000+ từ vựng thông dụng nhất
                         </i>
                     </b>
                 </p>
             </div>
-            <div className="row">
-                <div className="col-4">
-                    <select className="form-control">
-                        <option>
-                            Chọn bài học
-                        </option>
-                    </select>
-                </div>
-                <div className="col-4">
-                    <UpLoadFile SET_LamQuenData={SET_LamQuenData} />
-                </div>
-                <div className="col-4">
-                    Tự tạo file thực hành
-                </div>
-            </div>
-
-
-            <GamePlay
-                Data={LamQuenData}
-                SET_LamQuenData={SET_LamQuenData}
-            />
-
+            {Show_3000Words(Jsonfile)}
         </div>
     )
 }
 export default Manager
 
+function Show_3000Words(Jsonfile) {
+    return (
+        <table className="table table-sm"><tbody>
+            {
+                Jsonfile.map((e, i) =>
+                    <tr key={i}>
+                        {
+                            e.map((ee, ii) =>
+                                <td key={ii} >{ee}</td>
+                            )
+
+                        }
+                        <td>
+                            <input type="checkbox"></input>
+                        </td>
+                    </tr>
+                )
+            }
+        </tbody></table >
+
+    )
+}

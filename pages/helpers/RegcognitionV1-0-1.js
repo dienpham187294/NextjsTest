@@ -33,15 +33,17 @@ function Dictaphone({ Data }) {
     const [message, SET_message] = useState("")
 
     let commands = []
-    Data.forEach(e => {
-        commands.push({
-            command: e,
-            callback: (command) => SET_message(M => M += ` ${command}`),
-            isFuzzyMatch: true,
-            fuzzyMatchingThreshold: 0.2,
-            bestMatchOnly: true
-        })
-    });
+    if (Data !== "") {
+        Data.forEach(e => {
+            commands.push({
+                command: e,
+                callback: (command) => SET_message(M => M += ` ${command}`),
+                isFuzzyMatch: true,
+                fuzzyMatchingThreshold: 0.2,
+                bestMatchOnly: true
+            })
+        });
+    }
     let {
         listening,
         transcript,
