@@ -1,5 +1,5 @@
 import Cors from 'cors'
-
+const gse = require("general-search-engine")
 // Initializing the cors middleware
 const cors = Cors({
     methods: ['GET', 'HEAD'],
