@@ -14,11 +14,57 @@ if (process.brower) {
 
 
 function Dictaphone({ Data }) {
+
+    const [message, SET_message] = useState("")
     try {
         if (flag) {
             if (Data !== "") {
                 console.log("ok");
                 flag = false;
+
+                let commands = []
+
+                Data.forEach(e => {
+                    commands.push({
+                        command: e,
+                        callback: (command) => SET_message(M => M += ` ${command}`),
+                        isFuzzyMatch: true,
+                        fuzzyMatchingThreshold: 0.2,
+                        bestMatchOnly: true
+                    })
+                });
+
+                const {
+                    listening,
+                    transcript,
+                    browserSupportsSpeechRecognition
+                } = useSpeechRecognition({
+                    commands
+                });
+
+                const startListening = () => SpeechRecognition.startListening({ continuous: true });
+
+                if (!browserSupportsSpeechRecognition) {
+                    return <span>Browser doesn't support speech recognition.</span>;
+                }
+
+                return (
+                    <div>
+
+                        <p>Microphone: {listening ? 'on' : 'off'}</p>
+                        <button
+                            onClick={startListening}
+                        >Hold to talk</button>
+                        <p
+                            style={{ height: "50px", border: "1px solid black", overflow: "auto" }}
+                        >{message}</p>
+
+                        {transcript}
+                        <hr />
+
+                    </div>
+                );
+
             } else {
                 console.log("not ok");
                 return "Chưa có dữ liệu"
@@ -28,53 +74,5 @@ function Dictaphone({ Data }) {
     } catch (error) {
         return "Lỗi"
     }
-
-
-    const [message, SET_message] = useState("")
-
-    let commands = []
-    if (Data !== "") {
-        Data.forEach(e => {
-            commands.push({
-                command: e,
-                callback: (command) => SET_message(M => M += ` ${command}`),
-                isFuzzyMatch: true,
-                fuzzyMatchingThreshold: 0.2,
-                bestMatchOnly: true
-            })
-        });
-    }
-    let {
-        listening,
-        transcript,
-        browserSupportsSpeechRecognition
-    } = useSpeechRecognition({
-        commands
-    });
-
-    const startListening = () => SpeechRecognition.startListening({ continuous: true });
-
-    if (!browserSupportsSpeechRecognition) {
-        return <span>Browser doesn't support speech recognition.</span>;
-    }
-
-    return (
-        <div>
-
-            <p>Microphone: {listening ? 'on' : 'off'}</p>
-            <button
-                onClick={startListening}
-            >Hold to talk</button>
-            <p
-                style={{ height: "50px", border: "1px solid black", overflow: "auto" }}
-            >{message}</p>
-
-            {transcript}
-            <hr />
-
-        </div>
-    );
-
-
 };
 export default Dictaphone;
