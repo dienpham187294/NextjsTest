@@ -1,16 +1,11 @@
 
-import NextCors from 'nextjs-cors';
+import Cors from 'cors'
 const gse = require("general-search-engine")
-
+const cors = Cors({
+    methods: ['GET', 'POST'],
+})
 export default async (req, res) => {
-    await NextCors(req, res, {
-        // Options
-        methods: ['GET', 'HEAD', 'PUT', 'PATCH', 'POST', 'DELETE'],
-        origin: '*',
-        optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
-    });
-    // console.log(req.body.Word)
-
+    
     try {
         let petition = await new gse.search()
             .setType("image")

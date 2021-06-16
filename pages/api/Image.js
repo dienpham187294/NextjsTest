@@ -2,7 +2,7 @@ import Cors from 'cors'
 const gse = require("general-search-engine")
 // Initializing the cors middleware
 const cors = Cors({
-    methods: ['GET', 'HEAD'],
+    methods: ['GET', 'POST'],
 })
 
 // Helper method to wait for a middleware to execute before continuing
@@ -23,6 +23,7 @@ async function handler(req, res) {
     // Run the middleware
     await runMiddleware(req, res, cors)
 
+    console.log("11111")
     try {
         let petition = await new gse.search()
             .setType("image")
