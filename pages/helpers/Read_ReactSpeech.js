@@ -18,11 +18,24 @@ function Read(props) {
     //Google UK English Male
 
     useEffect(() => {
+     
         try {
             if (props.MessageToRead[0] !== "") {
                 arrText.push(props.MessageToRead[0]);
-                arrVoice.push(props.MessageToRead[1]);
-                document.getElementsByClassName("rs-play")[0].click()
+                if (props.MessageToRead[1] === 1) {
+                    arrVoice.push("Google UK English Female");
+                } else {
+                    arrVoice.push("Google UK English Male");
+                }
+                setTimeout(() => {
+                    try {
+                        document.getElementsByClassName("rs-play")[0].click()
+                    } catch (error) {
+                        console.log(1)
+                    }
+
+                }, 100)
+
             }
         } catch (error) {
             console.log("")
@@ -30,7 +43,7 @@ function Read(props) {
     }, [props.MessageToRead])
     return (
         <>
-            <div id="test">
+            <div id="test" style={{ display: "none" }}>
                 <Speech
                     text={arrText[arrText.length - 1]}
                     pitch={Pitch}

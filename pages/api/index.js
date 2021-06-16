@@ -3,9 +3,17 @@
 const gse = require("general-search-engine")
 
 export default async (req, res) => {
-    let petition = await new gse.search()
-        .setType("image")
-        .setQuery("impact").run()
 
-    res.status(200).json({ success: true, data: petition })
+    // console.log(req.body.Word)
+
+    try {
+        let petition = await new gse.search()
+            .setType("image")
+            .setQuery(req.body.Word).run()
+
+        res.status(200).json({ success: true, data: petition })
+    } catch (error) {
+        res.status(400).json({ success: false })
+    }
+
 }
