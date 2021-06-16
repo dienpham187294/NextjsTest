@@ -45,7 +45,8 @@ const GetInfo = async (SET_Data, Word) => {
             method: 'PUT',
             headers: {
                 "Accept": "application/json",
-                "Content-Type": "application/json"
+                "Content-Type": "application/json",
+                "Access-Control-Allow-Origin": "*"
             },
             body: JSON.stringify({ Word: Word })
         })
