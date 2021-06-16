@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "@speechly/speech-recognition-polyfill": "^1.0.0",
+    "cors": "^2.8.5",
     "dotenv": "^9.0.2",
     "general-search-engine": "^1.4.0",
     "html-react-parser": "^1.2.6",
