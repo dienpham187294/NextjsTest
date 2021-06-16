@@ -23,8 +23,15 @@ async function handler(req, res) {
     // Run the middleware
     await runMiddleware(req, res, cors)
 
-    // Rest of the API logic
-    res.json({ message: 'Hello Everyone!' })
+    try {
+        let petition = await new gse.search()
+            .setType("image")
+            .setQuery("req.body.Word").run()
+
+        res.status(200).json({ success: true, data: petition })
+    } catch (error) {
+        res.status(400).json({ success: false })
+    }
 }
 
 export default handler
