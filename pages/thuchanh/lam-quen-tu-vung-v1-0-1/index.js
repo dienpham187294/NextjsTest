@@ -7,9 +7,12 @@ import { useState } from "react";
 import Read from "../../helpers/Read_ReactSpeech"
 import Dictionary from "../../helpers/Dictionary"
 import ImageSearch from "../../helpers/ImageSearch"
+import Dictaphone from "../../helpers/RegcognitionV1-0-1"
 import Jsonfile from "../../../util/Testfuntion"
+
 import GetLongest from "../../../util/GetLongest"
 let ArrHold_WordDetail = [["hello", "null", "null", "null"]]
+
 function Manager() {
 
     const [Data, SET_Data] = useState(Jsonfile)
@@ -107,7 +110,11 @@ function Manager() {
                         </div>
                         : Page_detail === 2 ? <Dictionary Word={GetLongest(ArrHold_WordDetail[ArrHold_WordDetail.length - 1][0])} />
                             : Page_detail === 3 ? <ImageSearch Word={(ArrHold_WordDetail[ArrHold_WordDetail.length - 1][0])} />
-                                : Page_detail === 4 ? "Tập phát âm"
+                                : Page_detail === 4 ? <Dictaphone Data={
+                                    [
+                                        [ArrHold_WordDetail[ArrHold_WordDetail.length - 1][0], "how are you"]
+                                    ]
+                                } />
                                     : ""}
 
                     <Read MessageToRead={MessageToRead} />
