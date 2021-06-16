@@ -42,7 +42,7 @@ export default ImageSearch
 const GetInfo = async (SET_Data, Word) => {
     try {
         const res = await fetch("https://englishtool.co/api/Image", {
-            method: 'PUT',
+            method: 'HEAD',
             headers: {
                 "Accept": "application/json",
                 "Content-Type": "application/json",
