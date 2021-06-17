@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react';
-
+import parse from 'html-react-parser';
 function Dictionary(props) {
     const [DefineWord, SET_DefineWord] = useState("")
     const Owlbot = require('owlbot-js');
     const client = Owlbot("ec7bc79a68147ad64fb199f357d001f5428e7ddd");
+
     useEffect(() => {
         try {
             let status = true;
@@ -37,7 +38,7 @@ function Dictionary(props) {
                         <div key={i}>
                             <p>Type: {e.type}</p>
                             <p>Definition: {e.definition}</p>
-                            <p>Example: {e.example}</p>
+                            <p>Example:  {parse(e.example)}</p>
                             <hr />
                         </div>
                     )}
