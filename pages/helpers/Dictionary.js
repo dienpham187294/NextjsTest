@@ -36,9 +36,9 @@ function Dictionary(props) {
                     <p>{DefineWord.pronunciation}</p>
                     {DefineWord.definitions.map((e, i) =>
                         <div key={i}>
-                            <p>Type: {e.type}</p>
-                            <p>Definition: {e.definition}</p>
-                            <p>Example:  {parse(e.example)}</p>
+                            <p><b>Type:</b> {e.type}</p>
+                            <p><b>Definition:</b> {e.definition}</p>
+                            <p><b>Example: </b>    {e.example !== null ? parse("<span>" + e.example + "</span>") : ""}</p>
                             <hr />
                         </div>
                     )}

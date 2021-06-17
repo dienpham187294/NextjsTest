@@ -60,9 +60,9 @@ function MyApp({ Component, pageProps }) {
 
         <div className="collapse navbar-collapse" id="navbarsExample03">
           <ul className="navbar-nav mr-auto">
-            {/* <li className="nav-item dropdown">
+            <li className="nav-item dropdown">
               <Link href="/">
-                <a className="nav-link dropdown-toggle" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Bài học</a>
+                <a className="nav-link dropdown-toggle" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dữ liệu</a>
               </Link>
               <div className="dropdown-menu" aria-labelledby="dropdown03">
 
@@ -71,9 +71,9 @@ function MyApp({ Component, pageProps }) {
                     < a className="dropdown-item" >{e.name}</a>
                   </Link>
                 )}
-
+x
               </div>
-            </li> */}
+            </li>
 
             <li className="nav-item dropdown active">
               <Link href="/">

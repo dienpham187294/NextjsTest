@@ -1,21 +1,18 @@
-
 import { useState } from "react";
-
-// import UpLoadFile from "./S_Uploadfile"
-
-// import GamePlay from "./S_GamePlay"
 import Read from "../../helpers/Read_ReactSpeech"
 import Dictionary from "../../helpers/Dictionary"
 import ImageSearch from "../../helpers/ImageSearch"
 import Dictaphone from "../../helpers/RegcognitionV1-0-1"
 import Jsonfile from "../../../util/Testfuntion"
-
 import GetLongest from "../../../util/GetLongest"
+import PracticeDiv from "./practice"
+
+
 let ArrHold_WordDetail = [["hello", "null", "null", "null"]]
 
 function Manager() {
 
-    const [Data, SET_Data] = useState(Jsonfile.slice(0, 50))
+    const [Data, SET_Data] = useState(Jsonfile.slice(0, 20))
     const [Detail, SET_Detail] = useState(false)
     const [Page_detail, SET_Page_detail] = useState(1)
 
@@ -24,6 +21,9 @@ function Manager() {
     const [Word, SET_Word] = useState("");
     const [MessageListen, SET_MessageListen] = useState("")
 
+
+    const [Practice, SET_Practice] = useState(false)
+    const [Data_Commands, SET_Data_Commands] = useState([])
     return (
 
         <div className="container">
@@ -41,6 +41,7 @@ function Manager() {
                 From:    <input type="number" defaultValue="1" id="begin" />
                 To:    <input type="number" defaultValue="20" id="end" />
                 <input
+                    className="btn btn-outline-primary ml-1"
                     onClick={() => {
                         let beginNumber = document.getElementById("begin").value;
                         let endNumber = document.getElementById("end").value;
@@ -51,11 +52,29 @@ function Manager() {
                         }
                     }}
                     type="button" defaultValue="Search"
+
+                />
+
+                <input
+                    className="btn btn-outline-primary ml-1" type="button" defaultValue="Thực hành"
+                    onClick={() => {
+                        let arr = [];
+                        let arrIn = [];
+                        Data.forEach(e => {
+                            arrIn.push(e[0])
+                        });
+                        arr.push(arrIn);
+                        SET_Data_Commands(arr)
+                        SET_Practice(true)
+                    }}
+
                 />
             </div>
 
             {Show_3000Words()}
-
+            {Practice ?
+                <PracticeDiv SET_Practice={SET_Practice} Data_Commands={Data_Commands} Data={Data} />
+                : ""}
 
             {Detail
                 ? <div
