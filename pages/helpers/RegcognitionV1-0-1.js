@@ -7,14 +7,14 @@ if (process.brower) {
     SpeechRecognition.applyPolyfill(SpeechlySpeechRecognition);
 }
 
-function Dictaphone({ Data }) {
+function Dictaphone({ Data, SET_MessageListen }) {
     const [message, SET_message] = useState("")
     let commands = [];
     try {
         Data.forEach(e => {
             commands.push({
                 command: e,
-                callback: (command) => SET_message(M => M += ` ${command}`),
+                callback: (command) => { SET_MessageListen(M => M += ` ${command}`); SET_message(M => M += ` ${command}`) },
                 isFuzzyMatch: true,
                 fuzzyMatchingThreshold: 0.2,
                 bestMatchOnly: true
@@ -23,7 +23,7 @@ function Dictaphone({ Data }) {
     } catch (error) {
         commands.push({
             command: ["Hi how are you test"],
-            callback: (command) => SET_message(M => M += ` ${command}`),
+            callback: (command) => { SET_MessageListen(M => M += ` ${command}`); SET_message(M => M += ` ${command}`) },
             isFuzzyMatch: true,
             fuzzyMatchingThreshold: 0.2,
             bestMatchOnly: true

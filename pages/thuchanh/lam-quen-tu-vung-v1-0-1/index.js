@@ -15,12 +15,14 @@ let ArrHold_WordDetail = [["hello", "null", "null", "null"]]
 
 function Manager() {
 
-    const [Data, SET_Data] = useState(Jsonfile)
+    const [Data, SET_Data] = useState(Jsonfile.slice(0, 50))
     const [Detail, SET_Detail] = useState(false)
     const [Page_detail, SET_Page_detail] = useState(1)
 
 
     const [MessageToRead, SET_MessageToRead] = useState(["", 1])
+    const [Word, SET_Word] = useState("");
+    const [MessageListen, SET_MessageListen] = useState("")
     return (
 
         <div className="container">
@@ -33,7 +35,31 @@ function Manager() {
                     </b>
                 </p>
             </div>
+
+            <div>
+                From:    <input type="number" defaultValue="1" id="begin" />
+                To:    <input type="number" defaultValue="20" id="end" />
+                <input
+                    onClick={() => {
+
+                        let beginNumber = document.getElementById("begin").value;
+                        let endNumber = document.getElementById("end").value;
+                        console.log(1, beginNumber > 0, endNumber - beginNumber > 0)
+                        if (beginNumber > 0 && endNumber - beginNumber >= 0) {
+
+
+                            let arr = Jsonfile.slice(beginNumber - 1, endNumber);
+                            console.log(arr)
+                            SET_Data(arr)
+                        }
+                    }}
+                    type="button" defaultValue="Search"
+                />
+            </div>
+
             {Show_3000Words()}
+
+
             {Detail
                 ? <div
                     style={{
@@ -92,7 +118,9 @@ function Manager() {
 
                             className="btn btn-sm btn-outline-info">Nghe giọng nam</button>
                         <button onClick={() => {
-                            SET_Detail(false)
+                            SET_Detail(false);
+                            SET_MessageListen("");
+                            SET_Word("")
                         }} className="btn btn-sm btn-outline-danger">Cancel</button>
                     </div>
                     {Page_detail === 1 ?
@@ -108,13 +136,21 @@ function Manager() {
                             </p>
 
                         </div>
-                        : Page_detail === 2 ? <Dictionary Word={GetLongest(ArrHold_WordDetail[ArrHold_WordDetail.length - 1][0])} />
-                            : Page_detail === 3 ? <ImageSearch Word={(ArrHold_WordDetail[ArrHold_WordDetail.length - 1][0])} />
-                                : Page_detail === 4 ? <Dictaphone Data={
-                                    [
-                                        [ArrHold_WordDetail[ArrHold_WordDetail.length - 1][0], "how are you"]
-                                    ]
-                                } />
+                        : Page_detail === 2 ? <Dictionary Word={GetLongest(Word)} />
+                            : Page_detail === 3 ? <ImageSearch Word={Word} />
+                                : Page_detail === 4
+                                    ?
+                                    <div>
+                                        {MessageListen.indexOf(Word) !== -1 ? <h1>Correct</h1> : ""}
+                                        <Dictaphone
+                                            Data={
+                                                [
+                                                    [ArrHold_WordDetail[ArrHold_WordDetail.length - 1][0], "how are you"]
+                                                ]
+                                            }
+                                            SET_MessageListen={SET_MessageListen}
+                                        />
+                                    </div>
                                     : ""}
 
                     <Read MessageToRead={MessageToRead} />
@@ -127,19 +163,10 @@ function Manager() {
 
     function Show_3000Words() {
         return (
-            <table className="table"><tbody>
+            <table className="table table-striped"><tbody>
                 {
-                    Jsonfile.map((e, i) =>
+                    Data.map((e, i) =>
                         <tr key={i}>
-                            <td>
-                                <input type="checkbox"></input>
-                            </td>
-                            {/* {
-                                e.map((ee, ii) =>
-                                    <td key={ii} >{ee}</td>
-                                )
-
-                            } */}
                             <td>
                                 {e[0]}
                             </td>
@@ -150,6 +177,7 @@ function Manager() {
                                 <input
                                     onClick={() => {
                                         ArrHold_WordDetail.push(e);
+                                        SET_Word(e[0])
                                         SET_Detail(true);
                                     }}
                                     className="form-control" type="button" value="Detail" />

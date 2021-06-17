@@ -1,11 +1,15 @@
 import React, { useEffect, useState } from 'react';
-
+import GetInfo from "../../util/GetImage"
 
 function ImageSearch(props) {
     const [ListImage, SET_ListImage] = useState([])
     useEffect(() => {
-        if (props.Word !== "") {
-            GetInfo(SET_ListImage, props.Word)
+        let status = true;
+        if (props.Word !== "" && status) {
+            GetInfo(SET_ListImage, props.Word);
+        }
+        return function cleanup() {
+            status = false
         }
     }, [props.Word])
 
@@ -33,27 +37,6 @@ function ImageSearch(props) {
             return ""
         }
     }
-
-
-
 }
 export default ImageSearch
 
-const GetInfo = async (SET_Data, Word) => {
-    try {
-        const res = await fetch("https://www.englishtool.co/api/Image", {
-            method: 'POST',
-            headers: {
-                "Accept": "application/json",
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify({ Word: Word })
-        })
-        let data = await res.json();
-        SET_Data(data.data)
-
-    } catch (error) {
-        SET_Data(["lỗi"]);
-    }
-
-}

@@ -23,7 +23,6 @@ async function handler(req, res) {
     // Run the middleware
     await runMiddleware(req, res, cors)
 
-    console.log("11111")
     try {
         let petition = await new gse.search()
             .setType("image")

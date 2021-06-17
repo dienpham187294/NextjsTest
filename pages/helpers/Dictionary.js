@@ -6,12 +6,14 @@ function Dictionary(props) {
     const client = Owlbot("ec7bc79a68147ad64fb199f357d001f5428e7ddd");
     useEffect(() => {
         try {
-            if (props.Word.indexOf(" ") === -1) {
+            let status = true;
+            if (props.Word.indexOf(" ") === -1 && status) {
                 client.define(props.Word).then(function (result) {
                     SET_DefineWord(result);
                 });
-            } else {
-                SET_DefineWord(["Không hợp lệ"])
+            }
+            return function cleanup() {
+                status = false
             }
 
         } catch (error) {
