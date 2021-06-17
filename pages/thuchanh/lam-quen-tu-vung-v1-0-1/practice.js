@@ -14,7 +14,7 @@ function PracticeDiv(props) {
 
     const [i, SET_i] = useState(0)
     const [flag, SET_flag] = useState(true)
-    const [arr_HoldQuestion, SET_arr_HoldQuestion] = useState([])
+    const [arr_HoldQuestion, SET_arr_HoldQuestion] = useState(["none"])
     useEffect(
         () => {
             if (flag) {
@@ -101,7 +101,7 @@ function PracticeDiv(props) {
                 }}
             >
                 <h1>{Time}</h1>
-                <h5>Điểm: {Score}/ {props.Data.length}</h5>
+                <h5>Điểm: {Score}/ {arr_HoldQuestion.length}</h5>
 
                 <h5>Từ có ngĩa: {Hint}</h5>
 
