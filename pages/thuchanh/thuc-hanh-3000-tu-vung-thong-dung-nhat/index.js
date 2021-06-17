@@ -73,7 +73,7 @@ function Manager() {
 
             {Show_3000Words()}
             {Practice ?
-                <PracticeDiv SET_Practice={SET_Practice} Data_Commands={Data_Commands} Data={Data} />
+                <PracticeDiv SET_Practice={SET_Practice} Data_Commands={Data_Commands} Data={Data} SET_MessageToRead={SET_MessageToRead} />
                 : ""}
 
             {Detail
@@ -168,10 +168,9 @@ function Manager() {
                                         />
                                     </div>
                                     : ""}
-
-                    <Read MessageToRead={MessageToRead} />
                 </div>
                 : ""}
+            <Read MessageToRead={MessageToRead} />
         </div>
     )
 

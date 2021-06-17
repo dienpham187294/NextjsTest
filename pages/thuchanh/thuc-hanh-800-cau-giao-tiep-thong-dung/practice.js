@@ -1,16 +1,14 @@
 import { useEffect, useState } from "react";
 import Dictaphone from "../../helpers/RegcognitionV1-0-1";
 
-// let flag = true;
-// let arr_HoldQuestion = ["none"]
-// let i = 0
+
 function PracticeDiv(props) {
     const [MessageListen, SET_MessageListen] = useState("")
     const [Time, SET_Time] = useState(5)
-    // const [QuestionNumber, SET_QuestionNumber] = useState(0)
+
     const [Hint, SET_Hint] = useState("");
     const [Score, SET_Score] = useState(0);
-    const [Anwer, SET_Anwer] = useState(0);
+    const [Anwer, SET_Anwer] = useState("");
 
     const [i, SET_i] = useState(0)
     const [flag, SET_flag] = useState(true)
@@ -27,20 +25,19 @@ function PracticeDiv(props) {
 
     useEffect(() => {
 
-        if (MessageListen.indexOf(Anwer) !== -1) {
+        if (MessageListen.indexOf(Sort(Anwer)) !== -1) {
             SET_Score(S => S + 1);
-
             try {
                 if (i > 0) {
-                    props.SET_MessageToRead([arr_HoldQuestion[i - 1][0], 2]);
+                    props.SET_MessageToRead([arr_HoldQuestion[i - 1].EN, 2]);
                     setTimeout(() => {
                         props.SET_MessageToRead(["", 1])
                     }, 100)
                 }
-                if (arr_HoldQuestion[i][3] !== undefined) {
+                if (arr_HoldQuestion[i].EN !== undefined) {
                     SET_Time(15);
-                    SET_Hint(arr_HoldQuestion[i][3]);
-                    SET_Anwer(arr_HoldQuestion[i][0])
+                    SET_Hint(arr_HoldQuestion[i].VN);
+                    SET_Anwer(arr_HoldQuestion[i].EN)
                     SET_i(I => I + 1)
                     SET_MessageListen("")
                     // SET_QuestionNumber(Q => Q + 1);
@@ -54,19 +51,20 @@ function PracticeDiv(props) {
     }, [MessageListen])
     useEffect(() => {
         if (Time === 0) {
+
             try {
                 if (i > 0) {
-                    props.SET_MessageToRead([arr_HoldQuestion[i - 1][0], 2]);
+                    props.SET_MessageToRead([arr_HoldQuestion[i - 1].EN, 2]);
                     setTimeout(() => {
                         props.SET_MessageToRead(["", 1])
                     }, 100)
                 }
-                if (arr_HoldQuestion[i][3] !== undefined) {
+
+                if (arr_HoldQuestion[i].EN !== undefined) {
                     SET_Time(15);
-                    SET_Hint(arr_HoldQuestion[i][3]);
-                    SET_Anwer(arr_HoldQuestion[i][0]);
+                    SET_Hint(arr_HoldQuestion[i].VN);
+                    SET_Anwer(arr_HoldQuestion[i].EN);
                     SET_i(I => I + 1);
-                    // SET_QuestionNumber(Q => Q + 1);
                 }
             } catch (error) {
                 console.log("")
@@ -101,7 +99,7 @@ function PracticeDiv(props) {
                     right: "10px",
                     top: "10px"
                 }}
-                className="btn btn-outline-danger"
+                classEN="btn btn-outline-danger"
                 onClick={() => {
                     props.SET_Practice(false)
                 }}>Thoát</button>
@@ -115,9 +113,9 @@ function PracticeDiv(props) {
                 <h1>{Time}</h1>
                 <h5>Điểm: {Score}/ {arr_HoldQuestion.length}</h5>
 
-                <h5>Đọc từ có nghĩa: {Hint}</h5>
+                <h5>Đọc câu có nghĩa: {Hint} </h5>
 
-
+               
             </div>
 
 
@@ -149,4 +147,8 @@ export default PracticeDiv
 
 Array.prototype.PickRandom = function () {
     return this[Math.floor(Math.random() * this.length)];
+}
+
+function Sort(Str) {
+    return Str.split(/[\?#!-()'.]+/).join("")
 }
