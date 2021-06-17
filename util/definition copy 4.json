@@ -1,0 +1,2750 @@
+[
+    {
+        "definitions": [
+            {
+                "type": "verb",
+                "definition": "obtain in exchange for payment.",
+                "example": "she bought six first-class stamps",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a purchase.",
+                "example": "wine is rarely a good buy in duty-free shops",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "buy",
+        "pronunciation": "bī"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "a person who makes a purchase.",
+                "example": "the typical buyer of this product",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "buyer",
+        "pronunciation": "ˈbī(ə)r"
+    },
+    {
+        "definitions": [
+            {
+                "type": "preposition",
+                "definition": "identifying the agent performing an action:",
+                "example": "the door was opened by my cousin Annie",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "preposition",
+                "definition": "indicating the means of achieving something.",
+                "example": "malaria can be controlled by attacking the parasite",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "preposition",
+                "definition": "indicating the amount or size of a margin.",
+                "example": "the shot missed her by miles",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "preposition",
+                "definition": "indicating a deadline or the end of a particular time period.",
+                "example": "I've got to do this report by Monday",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "preposition",
+                "definition": "indicating location of a physical object beside a place or object.",
+                "example": "remains were discovered by the roadside",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "preposition",
+                "definition": "indicating the period in which something happens.",
+                "example": "this animal always hunts <b>by night</b>",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "preposition",
+                "definition": "concerning; according to.",
+                "example": "anything you do is all right by me",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "preposition",
+                "definition": "used in mild oaths.",
+                "example": "it was the least he could do, by God",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "adverb",
+                "definition": "so as to go past.",
+                "example": "a car flashed by on the other side of the road",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "prefix",
+                "definition": "subordinate; incidental; secondary.",
+                "example": "by-election",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "the transfer of a competitor directly to the next round of a competition in the absence of an assigned opponent.",
+                "example": "he has a bye into the second round",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "variant spelling of bye1.",
+                "example": null,
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "by",
+        "pronunciation": "bī"
+    },
+    {
+        "pronunciation": "ˈaksɪd(ə)nt",
+        "word": "accident",
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "an unfortunate incident that happens unexpectedly and unintentionally, typically resulting in damage or injury.",
+                "example": "he had an accident at the factory",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "an event that happens by chance or that is without apparent or deliberate cause.",
+                "example": "the pregnancy was an accident",
+                "image_url": null,
+                "emoji": null
+            }
+        ]
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "an action or system by which a result is achieved; a method.",
+                "example": "technology seen as a means to bring about emancipation",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "financial resources; income.",
+                "example": "a woman of modest but independent means",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "intend to convey or refer to (a particular thing); signify.",
+                "example": "I don't know what you mean",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "intend (something) to occur or be the case.",
+                "example": "they mean no harm",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "have as a consequence or result.",
+                "example": "the proposals are likely to mean another hundred closures",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "the value obtained by dividing the sum of several quantities by their number; an average.",
+                "example": "acid output was calculated by taking the mean of all three samples",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a condition, quality, or course of action equally removed from two opposite extremes.",
+                "example": "the measure expresses a mean between saving and splashing out",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "means",
+        "pronunciation": "mēnz"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "the transfer of a competitor directly to the next round of a competition in the absence of an assigned opponent.",
+                "example": "he has a bye into the second round",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "bye",
+        "pronunciation": "bī"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "(in the UK, Canada, and other Commonwealth countries) the committee of senior ministers responsible for controlling government policy.",
+                "example": "a cabinet meeting",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a cupboard with drawers or shelves for storing or displaying articles.",
+                "example": "a cocktail cabinet",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "cabinet",
+        "pronunciation": "ˈkab(ə)nət"
+    },
+    {
+        "definitions": [
+            {
+                "type": "verb",
+                "definition": "send a message to (someone) by cablegram.",
+                "example": "he cabled her to cancel all arrangements",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "an insulated wire or wires having a protective casing and used for transmitting electricity or telecommunication signals.",
+                "example": "an underground cable",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a thick rope of wire or hemp used for construction, mooring ships, and towing vehicles.",
+                "example": "steel cables held the convoy together",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "cable",
+        "pronunciation": "ˈkābəl"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "an item of savoury food formed into a flat round shape, and typically baked or fried.",
+                "example": "a starter of goat's cheese and potato cakes",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "(of a thick or sticky substance that hardens when dry) cover and become encrusted on (the surface of an object).",
+                "example": "his clothes were caked in mud",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "an item of soft sweet food made from a mixture of flour, fat, eggs, sugar, and other ingredients, baked and sometimes iced or decorated.",
+                "example": "a fruit cake",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "cake",
+        "pronunciation": "kāk"
+    },
+    {
+        "definitions": [
+            {
+                "type": "verb",
+                "definition": "determine (the amount or number of something) mathematically.",
+                "example": "the program can calculate the number of words that will fit in the space available",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "intend (an action) to have a particular effect.",
+                "example": "his last words were calculated to wound her",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "calculate",
+        "pronunciation": "ˈkalkyəˌlāt"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "a mathematical determination of the amount or number of something.",
+                "example": "finding ways of saving money involves complicated calculations",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "calculation",
+        "pronunciation": "ˌkalkyəˈlāSH(ə)n"
+    },
+    {
+        "definitions": [
+            {
+                "type": "verb",
+                "definition": "give (a baby or animal) a specified name.",
+                "example": "they called their daughter Hannah",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "cry out (a word or words).",
+                "example": "he heard an insistent voice calling his name",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "contact or attempt to contact (a person or number) by phone.",
+                "example": "could I <b>call</b> you <b>back</b> ?",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "order or request the attendance of.",
+                "example": "representatives of all three teams have been called to appear before the Monaco stewards",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "announce or decide that (an event, especially a meeting, election, or strike) is to happen.",
+                "example": "there appeared to be no alternative but to call a general election",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "(of an umpire or other official in a game) pronounce (a ball, stroke, etc.) to be the thing specified.",
+                "example": "the linesman called the ball wide",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a cry made as a summons or to attract someone's attention.",
+                "example": "a nearby fisherman heard their calls for help",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "an instance of speaking to someone on the phone or attempting to contact someone by phone.",
+                "example": "I'll <b>give you a call</b> at around five",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a brief visit, especially one made for social reasons.",
+                "example": "we <b>paid a call on</b> Ben and his family",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "an appeal or demand for something to happen or be done.",
+                "example": "the <b>call for</b> action was welcomed",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "an order or request for someone to be present.",
+                "example": "he was delighted that so many former players had heeded the call to attend the conference",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "(in sport) a decision or ruling made by an umpire or other official, traditionally conveyed by a shout, that the ball has gone out of play or that a rule has been breached.",
+                "example": "he was visibly irritated with the umpire's calls",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "call",
+        "pronunciation": "kôl"
+    },
+    {
+        "definitions": [
+            {
+                "type": "adjective",
+                "definition": "not showing or feeling nervousness, anger, or other strong emotions.",
+                "example": "she had to <b>keep calm</b> at all costs",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "adjective",
+                "definition": "(of the weather) pleasantly free from wind.",
+                "example": "the night was clear and calm",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "the absence of strong emotions; calm feelings.",
+                "example": "his usual calm deserted him",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "the absence of wind.",
+                "example": "in the centre of the storm calm prevailed",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "make (someone) tranquil and quiet; soothe.",
+                "example": "I took him inside and tried to <b>calm</b> him <b>down</b>",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "calm",
+        "pronunciation": "kä(l)m"
+    },
+    null,
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "a device for recording visual images in the form of photographs, film, or video signals.",
+                "example": "she faced the cameras",
+                "image_url": null,
+                "emoji": "📷"
+            }
+        ],
+        "word": "camera",
+        "pronunciation": "ˈkam(ə)rə"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "the supporters of a particular party or doctrine regarded collectively.",
+                "example": "both the liberal and conservative camps were annoyed by his high-handed manner",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "live for a time in a tent, especially while on holiday.",
+                "example": "holiday parks in which you can camp or stay in a chalet",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "adjective",
+                "definition": "(of a man or his manner) ostentatiously and extravagantly effeminate.",
+                "example": "a heavily made-up and highly camp actor",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "deliberately exaggerated and theatrical behaviour or style.",
+                "example": "Hollywood camp",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "(of a man) behave in an ostentatiously effeminate way.",
+                "example": "he <b>camped it up</b> a bit for the cameras",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a place with temporary accommodation of huts, tents, or other structures, typically used by soldiers, refugees, or travelling people.",
+                "example": "an army camp",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "camp",
+        "pronunciation": "kamp"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "a series of military operations intended to achieve a goal, confined to a particular area, or involving a specified type of fighting.",
+                "example": "a desert campaign",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "work in an organized and active way towards a goal.",
+                "example": "people who campaigned against child labour",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "campaign",
+        "pronunciation": "kamˈpān"
+    },
+    null,
+    {
+        "definitions": [
+            {
+                "type": "verb",
+                "definition": "be able to.",
+                "example": "they can run fast",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "can",
+        "pronunciation": "kan"
+    },
+    {
+        "definitions": [
+            {
+                "type": "verb",
+                "definition": "decide or announce that (a planned event) will not take place.",
+                "example": "he was forced to cancel his visit",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "(of a factor or circumstance) neutralize or negate the force or effect of (another).",
+                "example": "the electric fields may cancel each other out",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a mark made on a postage stamp to show that it has been used.",
+                "example": "a stamp franked and with an adhesive cancel",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "cancel",
+        "pronunciation": "ˈkansəl"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "a disease caused by an uncontrolled division of abnormal cells in a part of the body.",
+                "example": "he's got cancer",
+                "image_url": null,
+                "emoji": "♋"
+            }
+        ],
+        "word": "cancer",
+        "pronunciation": "ˈkansər"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "a person who applies for a job or is nominated for election.",
+                "example": "candidates applying for this position should be computer-literate",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "candidate",
+        "pronunciation": "ˈkandiˌdāt"
+    },
+    null,
+    {
+        "definitions": [
+            {
+                "type": "contraction",
+                "definition": "can not.",
+                "example": null,
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "cannot",
+        "pronunciation": null
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "a kind of soft, flat hat without a brim and typically with a peak.",
+                "example": "a man wearing a raincoat and a flat cap",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a protective lid or cover for an object such as a bottle, the point of a pen, or a camera lens.",
+                "example": "a glass bottle with a screw cap",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "an upper limit imposed on spending or borrowing.",
+                "example": "he raised the cap on local authority spending",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "cap",
+        "pronunciation": "kap"
+    },
+    {
+        "definitions": [
+            {
+                "type": "adjective",
+                "definition": "having the ability, fitness, or quality necessary to do or achieve a specified thing.",
+                "example": "I'm quite capable of taking care of myself",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "adjective",
+                "definition": "able to achieve efficiently whatever one has to do; competent.",
+                "example": "she looked enthusiastic and capable",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "capable",
+        "pronunciation": "ˈkāpəb(ə)l"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "the amount that something can produce.",
+                "example": "the company aimed to double its electricity-generating capacity",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "the ability or power to do or understand something.",
+                "example": "I was impressed by her <b>capacity for</b> hard work",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a specified role or position.",
+                "example": "I was engaged in a voluntary capacity",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "the maximum amount that something can contain.",
+                "example": "the capacity of the freezer is 1.1 cubic feet",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "capacity",
+        "pronunciation": "kəˈpasədē"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "the city or town that functions as the seat of government and administrative centre of a country or region.",
+                "example": "Warsaw is the capital of Poland",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "adjective",
+                "definition": "(of an offence or charge) liable to the death penalty.",
+                "example": "murder is the only capital crime in the state",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "adjective",
+                "definition": "(of a letter of the alphabet) large in size and of the form used to begin sentences and names.",
+                "example": "capital letters",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "exclamation",
+                "definition": "used to express approval, satisfaction, or delight.",
+                "example": "That's splendid! Capital!",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "wealth in the form of money or other assets owned by a person or organization or available for a purpose such as starting a company or investing.",
+                "example": "rates of return on invested capital were high",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a letter of the size and form used to begin sentences and names.",
+                "example": "he wrote the name in capitals",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "the distinct, typically broader section at the head of a pillar or column.",
+                "example": "the pillars have moulded capitals",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "capital",
+        "pronunciation": "ˈkapədl"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "(in the US) a police officer in charge of a precinct, ranking below a chief.",
+                "example": null,
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "the leader of a team, especially in sports.",
+                "example": "the cup was presented to the winning team's captain",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "the person in command of a ship.",
+                "example": "he found a vessel whose captain was prepared to sign him on",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "captain",
+        "pronunciation": "ˈkaptən"
+    },
+    {
+        "definitions": [
+            {
+                "type": "verb",
+                "definition": "take into one's possession or control by force.",
+                "example": "the island was captured by Australian forces in 1914",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "record accurately in words or pictures.",
+                "example": "she did a series of sketches, trying to capture all his moods",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "cause (data) to be stored in a computer.",
+                "example": "these allow users to capture, edit, and display geographic data",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "capture",
+        "pronunciation": "ˈkapCHər"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "a road vehicle, typically with four wheels, powered by an internal-combustion engine and able to carry a small number of people.",
+                "example": "we're going <b>by car</b>",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "car",
+        "pronunciation": "kär"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "a programme of events at a race meeting.",
+                "example": "a nine-race card",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "write (something) on a card, especially for indexing.",
+                "example": "he carded 68 in the final round",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a toothed implement or machine for carding wool.",
+                "example": null,
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a piece of thick, stiff paper or thin pasteboard, in particular one used for writing or printing on.",
+                "example": "some notes jotted down on a card",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a playing card.",
+                "example": "a pack of cards",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "comb and clean (raw wool, hemp fibres, or similar material) with a sharp-toothed instrument in order to disentangle the fibres before spinning.",
+                "example": "the wool from the sheep was carded and spun",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "abbreviation",
+                "definition": "Cardinal.",
+                "example": null,
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a small rectangular piece of plastic containing personal data in a machine-readable form and used to obtain cash or credit or to pay for a telephone call, gain entry to a room or building, etc.",
+                "example": "your card cannot be used to withdraw more than your daily limit from cash machines",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "card",
+        "pronunciation": "kärd"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "pasteboard or stiff paper.",
+                "example": "a cardboard box",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "cardboard",
+        "pronunciation": "ˈkärdbôrd"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "the provision of what is necessary for the health, welfare, maintenance, and protection of someone or something.",
+                "example": "the care of the elderly",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "serious attention or consideration applied to doing something correctly or to avoid damage or risk.",
+                "example": "he planned his departure with great care",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "feel concern or interest; attach importance to something.",
+                "example": "they don't <b>care about</b> human life",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "look after and provide for the needs of.",
+                "example": "he has numerous animals to care for",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "care",
+        "pronunciation": "ker"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "the provision of what is necessary for the health, welfare, maintenance, and protection of someone or something.",
+                "example": "the care of the elderly",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "serious attention or consideration applied to doing something correctly or to avoid damage or risk.",
+                "example": "he planned his departure with great care",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "feel concern or interest; attach importance to something.",
+                "example": "they don't <b>care about</b> human life",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "look after and provide for the needs of.",
+                "example": "he has numerous animals to care for",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "care",
+        "pronunciation": "ker"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "an occupation undertaken for a significant period of a person's life and with opportunities for progress.",
+                "example": "he seemed destined for a career as an engineer like his father",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "move swiftly and in an uncontrolled way.",
+                "example": "the coach careered across the road and went through a hedge",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "career",
+        "pronunciation": "kəˈrir"
+    },
+    {
+        "definitions": [
+            {
+                "type": "adjective",
+                "definition": "making sure of avoiding potential danger, mishap, or harm; cautious.",
+                "example": "I begged him to be more careful",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "adjective",
+                "definition": "done with or showing thought and attention.",
+                "example": "a careful consideration of the facts",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "careful",
+        "pronunciation": "ˈkerfəl"
+    },
+    null,
+    {
+        "definitions": [
+            {
+                "type": "adjective",
+                "definition": "not giving sufficient attention or thought to avoiding harm or errors.",
+                "example": "she had been careless and had left the window unlocked",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "careless",
+        "pronunciation": "ˈkerləs"
+    },
+    {
+        "definitions": [
+            {
+                "type": "verb",
+                "definition": "cover with carpet.",
+                "example": "the stairs were carpeted in a lovely shade of red",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a floor covering made from thick woven fabric.",
+                "example": "the house has fitted carpets throughout",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a slender moth marked with undulating bands of colour across the wings.",
+                "example": null,
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "carpet",
+        "pronunciation": "ˈkärpət"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "a tapering orange-coloured root eaten as a vegetable.",
+                "example": "roast lamb with peas and carrots",
+                "image_url": "https://media.owlbot.info/dictionary/images/ccccccccccccccccci.jpg.400x400_q85_box-46,0,229,183_crop_detail.jpg",
+                "emoji": "🥕"
+            }
+        ],
+        "word": "carrot",
+        "pronunciation": "ˈkerət"
+    },
+    {
+        "definitions": [
+            {
+                "type": "verb",
+                "definition": "transfer (a figure) to an adjacent column during an arithmetical operation (e.g. when a column of digit adds up to more than ten).",
+                "example": null,
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "support and move (someone or something) from one place to another.",
+                "example": "medics were carrying a wounded man on a stretcher",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "support the weight of.",
+                "example": "the bridge is capable of carrying even the heaviest loads",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "(of a sound, ball, missile, etc.) reach a specified point.",
+                "example": "his voice carried clearly across the room",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "assume or accept (responsibility or blame).",
+                "example": "they must carry management responsibility for the mess they have got the company into",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "stand and move in a specified way.",
+                "example": "she carried herself straight and with assurance",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "have as a feature or consequence.",
+                "example": "being a combat sport, karate <b>carries with it</b> the risk of injury",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "approve (a proposed measure) by a majority of votes.",
+                "example": "the resolution was carried by a two-to-one majority",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "carry",
+        "pronunciation": "ˈkerē"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "each of the two forms, capital or minuscule, in which a letter of the alphabet may be written or printed.",
+                "example": null,
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "surround in a material or substance.",
+                "example": "the towers are of steel cased in granite",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "an instance of a particular situation; an example of something occurring.",
+                "example": "a case of mistaken identity",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "an instance of a disease, injury, or problem.",
+                "example": "200,000 cases of hepatitis B",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a container designed to hold or protect something.",
+                "example": "a silver cigarette case",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a legal action, especially one to be decided in a court of law.",
+                "example": "a libel case",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "case",
+        "pronunciation": "kās"
+    },
+    {
+        "definitions": [
+            {
+                "type": "verb",
+                "definition": "give or obtain notes or coins for (a cheque or money order).",
+                "example": "the bank cashed her cheque",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "money in coins or notes, as distinct from cheques, money orders, or credit.",
+                "example": "the staff were paid in cash",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "cash",
+        "pronunciation": "kaSH"
+    },
+    {
+        "definitions": [
+            {
+                "type": "verb",
+                "definition": "immobilize (an animal, especially a cow) by using a rope to cause it to fall on its side.",
+                "example": null,
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a pellet regurgitated by a hawk or owl.",
+                "example": null,
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "Hunting",
+                "example": null,
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "cause (light or shadow) to appear on a surface.",
+                "example": "the moon cast a pale light over the cottages",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "discard.",
+                "example": "he jumped in, <b>casting</b> caution <b>to the wind</b>",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "shape (metal or other material) by pouring it into a mould while molten.",
+                "example": "when hammered or cast, bronze could be made into tools",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "register (a vote).",
+                "example": "votes have been cast in 40 per cent of the seats",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "cause (a magic spell) to take effect.",
+                "example": "the witch <b>cast a spell on</b> her to turn her into a beast",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "calculate and record details of (a horoscope).",
+                "example": "you can look at the star chart cast at somebody's birth",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "Hunting",
+                "example": "the dog cast furiously for the vanished rabbit",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "an act of throwing something forcefully.",
+                "example": "he grabbed a spear for a third cast",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "the form or appearance of something, especially someone's features or complexion.",
+                "example": "she had a somewhat masculine cast of countenance",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "the actors taking part in a play, film, or other production.",
+                "example": "he draws sensitive performances from his inexperienced cast",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "assign a part in a play or film to (an actor).",
+                "example": "he was <b>cast as</b> a young knight in her lavish historical epic",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a slight squint.",
+                "example": "he had a cast in one eye",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "an object made by shaping molten metal or similar material in a mould.",
+                "example": "bronze casts of the sculpture",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "(in country dancing) change one's position by moving a certain number of places in a certain direction along the outside of the line in which one is dancing.",
+                "example": "cross the set and cast down one place",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "cast",
+        "pronunciation": null
+    },
+    {
+        "pronunciation": null,
+        "word": "castle",
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "a large building, typically of the medieval period, fortified against attack with thick walls, battlements, towers, and often a moat.",
+                "example": "Edinburgh Castle",
+                "image_url": "https://media.owlbot.info/dictionary/images/kkkkkkkkkkkkkkkkkkkm.jpg.400x400_q85_box-65,0,259,194_crop_detail.jpg",
+                "emoji": "🏰"
+            },
+            {
+                "type": "verb",
+                "definition": "make a special move (no more than once in a game by each player) in which the king is transferred from its original square two squares along the back rank towards a rook on its corner square which is then transferred to the square passed over by the king.",
+                "example": null,
+                "image_url": null,
+                "emoji": null
+            }
+        ]
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "a small domesticated carnivorous mammal with soft fur, a short snout, and retractile claws. It is widely kept as a pet or for catching mice, and many breeds have been developed.",
+                "example": "their pet cat",
+                "image_url": "https://media.owlbot.info/dictionary/images/aaaaaaaaaaaaaaaaac.jpg.400x400_q85_box-42,0,943,900_crop_detail.jpg",
+                "emoji": "🐈"
+            }
+        ],
+        "word": "cat",
+        "pronunciation": null
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "an act of catching something, typically a ball.",
+                "example": "he took a brilliant catch at deep square leg",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a game in which a ball is thrown back and forth between two or more players.",
+                "example": null,
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "intercept and hold (something which has been thrown, propelled, or dropped).",
+                "example": "she threw the bottle into the air and caught it again",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "capture (a person or animal that tries or would try to escape).",
+                "example": "we hadn't caught a single rabbit",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "(of an object) accidentally become entangled or trapped in something.",
+                "example": "a button caught in her hair",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "reach in time and board (a train, bus, or aircraft).",
+                "example": "they caught the 12.15 from Oxford",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "engage (a person's interest or imagination).",
+                "example": "it was the business scheme that had caught his imagination",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "strike (someone) on a part of the body.",
+                "example": "Ben caught him on the chin with an uppercut",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "contract (an illness) through infection or contagion.",
+                "example": "he served in Macedonia, where he caught malaria",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "become ignited and start burning.",
+                "example": "the rafters have caught",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a hidden problem or disadvantage in an apparently ideal situation.",
+                "example": "there's a catch in it somewhere",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "an unevenness in a person's voice caused by emotion.",
+                "example": "there was a catch in Anne's voice",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a device for securing something such as a door, window, or box.",
+                "example": "the window catch was rusty",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "catch",
+        "pronunciation": "kaCH"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "a class or division of people or things regarded as having particular shared characteristics.",
+                "example": "the various categories of research",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "category",
+        "pronunciation": "ˈkadəˌɡôrē"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "a person or thing that gives rise to an action, phenomenon, or condition.",
+                "example": "the cause of the accident is not clear",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a principle, aim, or movement to which one is committed and which one is prepared to defend or advocate.",
+                "example": "she devoted her whole adult life to the cause of deaf people",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a matter to be resolved in a court of law.",
+                "example": "forty-five causes were entered in the list for the March session",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "make (something, especially something bad) happen.",
+                "example": "this disease can cause blindness",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "cause",
+        "pronunciation": "kôz"
+    },
+    {
+        "definitions": [
+            {
+                "type": "verb",
+                "definition": "come or bring to an end.",
+                "example": "the hostilities ceased and normal life was resumed",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "cease",
+        "pronunciation": "sēs"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "an upper limit set on prices, wages, or expenditure.",
+                "example": "the government imposed a wage ceiling of 3 per cent",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "the maximum altitude that a particular aircraft can reach.",
+                "example": "the aircraft's quoted ceiling of 24,000 feet",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "the upper interior surface of a room or other similar compartment.",
+                "example": "the books were stacked from floor to ceiling",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "ceiling",
+        "pronunciation": "ˈsēliNG"
+    },
+    {
+        "definitions": [
+            {
+                "type": "verb",
+                "definition": "publicly acknowledge (a significant or happy day or event) with a social gathering or enjoyable activity.",
+                "example": "they were celebrating their wedding anniversary at a swanky restaurant",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "perform (a religious ceremony), in particular officiate at (the Eucharist).",
+                "example": "he celebrated holy communion",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "honour or praise publicly.",
+                "example": "a film celebrating the actor's career",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "celebrate",
+        "pronunciation": "ˈseləˌbrāt"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "the action of celebrating an important day or event.",
+                "example": "the birth of his son was a cause for celebration",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "celebration",
+        "pronunciation": "ˌseləˈbrāSH(ə)n"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "a small group forming a nucleus of political activity, typically a secret, subversive one.",
+                "example": "terrorist cells",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a device containing electrodes immersed in an electrolyte, used for generating current or for electrolysis.",
+                "example": "a button cell for a quartz watch",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a small room in which a prisoner is locked up or in which a monk or nun sleeps.",
+                "example": "the authorities locked all remaining inmates in their cells",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "the local area covered by one of the short-range transmitters in a cellular telephone system.",
+                "example": null,
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "cell",
+        "pronunciation": "sel"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "a monetary unit in various countries, equal to one hundredth of a dollar, euro, or other decimal currency unit.",
+                "example": "the pound is down two cents at one dollar forty",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "cent",
+        "pronunciation": "sent"
+    },
+    null,
+    {
+        "definitions": [
+            {
+                "type": "adjective",
+                "definition": "at the point or in the area that is in the middle of something.",
+                "example": "the station has a central courtyard",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "adjective",
+                "definition": "of the greatest importance; principal or essential.",
+                "example": "his preoccupation with history is <b>central to</b> his work",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a place with a high concentration of a specified type of person or thing.",
+                "example": "you're in workaholic central here",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "central",
+        "pronunciation": "ˈsentrəl"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "the point that is equally distant from every point on the circumference of a circle or sphere.",
+                "example": "the centre of the ceiling",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "the point from which an activity or process is directed, or on which it is focused.",
+                "example": "the city was <b>a centre of</b> discontent",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "centre",
+        "pronunciation": "ˈsen(t)ər"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "a period of one hundred years.",
+                "example": "a century ago most people walked to work",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a score of a hundred in a sporting event, especially a batsman's score of a hundred runs in cricket.",
+                "example": "he scored the only century of the tour",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a company in the ancient Roman army, originally of a hundred men.",
+                "example": null,
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "century",
+        "pronunciation": "ˈsen(t)SH(ə)rē"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "the ritual observances and procedures required or performed at grand and formal occasions.",
+                "example": "the new Queen was proclaimed with due ceremony",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a formal religious or public occasion, especially one celebrating a particular event, achievement, or anniversary.",
+                "example": "the winners were presented with their prizes at a special ceremony",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "ceremony",
+        "pronunciation": "ˈserəˌmōnē"
+    },
+    {
+        "definitions": [
+            {
+                "type": "pronoun",
+                "definition": "some but not all.",
+                "example": "certain of his works have been edited",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "adjective",
+                "definition": "able to be firmly relied on to happen or be the case.",
+                "example": "it's certain that more changes are in the offing",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "adjective",
+                "definition": "specific but not explicitly named or stated.",
+                "example": "he raised certain personal problems with me",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "certain",
+        "pronunciation": "ˈsərtn"
+    },
+    {
+        "definitions": [
+            {
+                "type": "adverb",
+                "definition": "used to emphasize the speaker's belief that what is said is true.",
+                "example": "the prestigious address certainly adds to the firm's appeal",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "certainly",
+        "pronunciation": "ˈsərtnlē"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "an official document attesting a fact, in particular:",
+                "example": "a certificate of motor insurance",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "an official classification awarded to a cinema film by a board of censors indicating its suitability for a particular age group.",
+                "example": "an 18 certificate",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "certificate",
+        "pronunciation": "sərˈtifəkət"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "a structure of planks projecting horizontally from a sailing ship's sides abreast of the masts, used to widen the basis for the shrouds.",
+                "example": null,
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a sequence of items of the same type forming a line.",
+                "example": "he kept the chain of buckets supplied with water",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "fasten or secure with a chain.",
+                "example": "she chained her bicycle to the railings",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a series of linked metal rings used for fastening or securing something, or for pulling loads.",
+                "example": "he slid the bolts on the front door and put the safety chain across",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a jointed measuring line consisting of linked metal rods.",
+                "example": null,
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "chain",
+        "pronunciation": "CHān"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "the person in charge of a meeting or of an organization (used as a neutral alternative to chairman or chairwoman).",
+                "example": "she's the chair of a research committee",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "act as chairperson of or preside over (an organization, meeting, or public event).",
+                "example": "the debate was chaired by the Archbishop of York",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a separate seat for one person, typically with a back and four legs.",
+                "example": "he sat down on a chair",
+                "image_url": "https://media.owlbot.info/dictionary/images/ddddddddddddddddda.jpg.400x400_q85_box-0,0,223,223_crop_detail.jpg",
+                "emoji": "🪑"
+            },
+            {
+                "type": "noun",
+                "definition": "a professorship.",
+                "example": "he held a chair in physics",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "chair",
+        "pronunciation": "CHer"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "a female chairperson.",
+                "example": null,
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "chairwoman",
+        "pronunciation": null
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "a call to prove or justify something.",
+                "example": "a <b>challenge to</b> the legality of the banning order",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a call to someone to participate in a competitive situation or fight to decide who is superior in terms of ability or strength.",
+                "example": "he accepted the challenge",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "challenge",
+        "pronunciation": null
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "a large room used for formal or public events.",
+                "example": "a council chamber",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "an enclosed space or cavity.",
+                "example": "a burial chamber",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "chamber",
+        "pronunciation": null
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "a possibility of something happening.",
+                "example": "there is a chance of winning the raffle",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "the occurrence of events in the absence of any obvious intention or cause.",
+                "example": "he met his brother <b>by chance</b>",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "adjective",
+                "definition": "fortuitous; accidental.",
+                "example": "a chance meeting",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "do something by accident or without intending to.",
+                "example": "he was very effusive if they chanced to meet",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "chance",
+        "pronunciation": null
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "an order in which a peal of bells can be rung.",
+                "example": null,
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "make or become different.",
+                "example": "a proposal to change the law",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "take or use another instead of.",
+                "example": "she decided to change her name",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "coins as opposed to banknotes.",
+                "example": "a handful of loose change",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "an act or process through which something becomes different.",
+                "example": "the <b>change from</b> a nomadic <b>to</b> an agricultural society",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "change",
+        "pronunciation": "CHānj"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "a length of water wider than a strait, joining two larger areas of water, especially two seas.",
+                "example": "the English Channel",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a band of frequencies used in radio and television transmission, especially as used by a particular station.",
+                "example": "a new television channel",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a method or system for communication or distribution.",
+                "example": "they didn't apply through the proper channels",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "an electric circuit which acts as a path for a signal.",
+                "example": "an audio channel",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "direct towards a particular end or object.",
+                "example": "the council is to channel public funds into training schemes",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "form channels or grooves in.",
+                "example": "pottery with a distinctive channelled decoration",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "channel",
+        "pronunciation": "ˈCHanl"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "a main division of a book, typically with a number or title.",
+                "example": "we will deal with this in chapter eleven",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a distinctive period in history or in a person's life.",
+                "example": "the people are about to begin a new chapter in their history",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "the governing body of a religious community or knightly order.",
+                "example": "land granted by the Dean and Chapter of St Paul's Cathedral",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "chapter",
+        "pronunciation": "ˈCHaptər"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "the mental and moral qualities distinctive to an individual.",
+                "example": "running away was not in keeping with her character",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a person in a novel, play, or film.",
+                "example": "the author's compassionate identification with his characters",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a printed or written letter or symbol.",
+                "example": "the file name must not exceed thirty characters",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "inscribe or write (something).",
+                "example": "you have well charactered him",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "character",
+        "pronunciation": "ˈkerəktər"
+    },
+    {
+        "definitions": [
+            {
+                "type": "adjective",
+                "definition": "typical of a particular person, place, or thing.",
+                "example": "he began with a characteristic attack on extremism",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a feature or quality belonging typically to a person, place, or thing and serving to identify them.",
+                "example": "certain defining characteristics of the school emerge from the study",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "characteristic",
+        "pronunciation": "ˌker(ə)ktəˈristik"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "an ambassador's deputy.",
+                "example": null,
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "demand (an amount) as a price for a service rendered or goods supplied.",
+                "example": "wedding planners may charge an hourly fee of up to Â£150",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "formally accuse (someone) of something, especially an offence under law.",
+                "example": "they were <b>charged with</b> assault",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "entrust (someone) with a task as a duty or responsibility.",
+                "example": "the committee was <b>charged with</b> reshaping the educational system",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "store electrical energy in (a battery or battery-operated device).",
+                "example": "the shaver can be <b>charged up</b> and used while travelling",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "rush forward in attack.",
+                "example": "the plan is to charge headlong at the enemy",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a price asked for goods or services.",
+                "example": "our standard charge for a letter is Â£25",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "an accusation, typically one formally made against a prisoner brought to trial.",
+                "example": "he appeared in court <b>on a charge of</b> attempted murder",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "responsibility for the care or control of someone or something.",
+                "example": "the people <b>in her charge</b> are pupils and not experimental subjects",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "the property of matter that is responsible for electrical phenomena, existing in a positive or negative form.",
+                "example": "I <b>get a</b> real <b>charge out of</b> working hard",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a quantity of explosive to be detonated in order to fire a gun or similar weapon.",
+                "example": "smaller charges, fired on three minute fuses lit by hand",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a headlong rush forward, typically in attack.",
+                "example": "a cavalry charge",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "charge",
+        "pronunciation": "CHärj"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "an organization set up to provide help and raise money for those in need.",
+                "example": "the charity provides practical help for homeless people",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "the voluntary giving of help, typically in the form of money, to those in need.",
+                "example": "the care of the poor must not be left to private charity",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "kindness and tolerance in judging others.",
+                "example": "she found it hard to look on her mother with much charity",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "charity",
+        "pronunciation": "ˈCHerədē"
+    },
+    {
+        "definitions": [
+            {
+                "type": "verb",
+                "definition": "make a map of (an area).",
+                "example": "Cook charted the coasts and waters of New Zealand",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "(of a record) sell enough copies to enter the music charts at a particular position.",
+                "example": "the record will probably chart at about No. 74",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a sheet of information in the form of a table, graph, or diagram.",
+                "example": "the doctor recorded her blood pressure on a chart",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "chart",
+        "pronunciation": "CHärt"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "the part of a gun enclosing the bore.",
+                "example": null,
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a groove or furrow cut in the face of a wall or other surface to receive a pipe or wire.",
+                "example": null,
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "pursue in order to catch or catch up with.",
+                "example": "police chased the stolen car through the city",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "drive or cause to go in a specified direction.",
+                "example": "she chased him <b>out of</b> the house",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "try to obtain (something owed or required).",
+                "example": "the company employs people to <b>chase up</b> debts",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "an act of pursuing someone or something.",
+                "example": "they captured the youths after a brief chase",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "engrave (metal, or a design on metal).",
+                "example": "a miniature container with a delicately chased floral design",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "(in letterpress printing) a metal frame for holding the composed type and blocks being printed at one time.",
+                "example": null,
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "chase",
+        "pronunciation": "CHās"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "a small Old World songbird of the thrush family, with black, white, and brown coloration and a harsh call.",
+                "example": null,
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "talk in a friendly and informal way.",
+                "example": "she chatted to her mother on the phone every day",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "an informal conversation.",
+                "example": "he dropped in for a chat",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "chat",
+        "pronunciation": "CHat"
+    },
+    {
+        "definitions": [
+            {
+                "type": "adjective",
+                "definition": "low in price, especially in relation to similar items or services.",
+                "example": "local buses were reliable and cheap",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "adjective",
+                "definition": "of little worth because achieved in a discreditable way requiring little effort.",
+                "example": "her moment of cheap triumph",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "adverb",
+                "definition": "at or for a low price.",
+                "example": "a house that was <b>going cheap</b> because of the war",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "cheap",
+        "pronunciation": "CHēp"
+    },
+    {
+        "definitions": [
+            {
+                "type": "verb",
+                "definition": "act dishonestly or unfairly in order to gain an advantage.",
+                "example": "she always <b>cheats at</b> cards",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "avoid (something undesirable) by luck or skill.",
+                "example": "she cheated death in a spectacular crash",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a person who behaves dishonestly in order to gain an advantage.",
+                "example": "he called the principal witness a liar and a cheat",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "cheat",
+        "pronunciation": "CHēt"
+    },
+    {
+        "definitions": [
+            {
+                "type": "verb",
+                "definition": "(in poker) choose not to make a bet when called upon, allowing another player to do so instead.",
+                "example": null,
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "(of a hound) pause to make sure of or regain a scent.",
+                "example": null,
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "Chess",
+                "example": null,
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a token of identification for left luggage.",
+                "example": null,
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a counter used as a stake in a gambling game.",
+                "example": null,
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a crack or flaw in timber.",
+                "example": null,
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "exclamation",
+                "definition": "used by a chess player to announce that the opponent's king has been placed in check.",
+                "example": null,
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "stop or slow the progress of (something, typically something undesirable).",
+                "example": "efforts were made to check the disease",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "mark or click on (a box) in order to select a particular option on a form, questionnaire, etc.",
+                "example": "users who want privacy should check the box that prevents your files from being shared",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "Chess",
+                "example": "he moves his knight to check my king again",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "an examination to test or ascertain accuracy, quality, or satisfactory condition.",
+                "example": "a campaign calling for regular checks on gas appliances",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a stopping or slowing of progress.",
+                "example": "there was no check to the expansion of the market",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a pattern of small squares.",
+                "example": "a fine black-and-white check",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "adjective",
+                "definition": "having a checked pattern.",
+                "example": "a blue check T-shirt",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "an order to a bank to pay a stated sum from the drawer's account, written on a specially printed form.",
+                "example": "they presented him with a <b>cheque for</b> Â£4,000",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a part of a piano which catches the hammer and prevents it retouching the strings.",
+                "example": null,
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "examine (something) in order to determine its accuracy, quality, or condition, or to detect the presence of something.",
+                "example": "customs officers have the right to check all luggage",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "check",
+        "pronunciation": "CHek"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "either side of the face below the eye.",
+                "example": "tears rolled down her cheeks",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "cheek",
+        "pronunciation": "CHēk"
+    },
+    {
+        "definitions": [
+            {
+                "type": "adjective",
+                "definition": "noticeably happy and optimistic.",
+                "example": "how can she be so cheerful at six o'clock in the morning?",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "cheerful",
+        "pronunciation": "ˈCHirfəl"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "a food made from the pressed curds of milk, firm and elastic or soft and semi-liquid in texture.",
+                "example": "grated cheese",
+                "image_url": null,
+                "emoji": "🧀"
+            }
+        ],
+        "word": "cheese",
+        "pronunciation": "CHēz"
+    },
+    {
+        "definitions": [
+            {
+                "type": "adjective",
+                "definition": "relating to chemistry, or the interactions of substances as studied in chemistry.",
+                "example": "the chemical composition of the atmosphere",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "chemical",
+        "pronunciation": "ˈkemək(ə)l"
+    },
+    null,
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "the branch of science concerned with the substances of which matter is composed, the investigation of their properties and reactions, and the use of such reactions to form new substances.",
+                "example": "<span>plural noun: <b>chemistries</b></span>",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "chemistry",
+        "pronunciation": "ˈkeməstrē"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "an order to a bank to pay a stated sum from the drawer's account, written on a specially printed form.",
+                "example": "they presented him with a <b>cheque for</b> Â£4,000",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "cheque",
+        "pronunciation": "CHek"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "the front surface of a person's or animal's body between the neck and the stomach.",
+                "example": "she crossed her arms across her chest",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "propel (the ball) by means of one's chest.",
+                "example": "he chested the ball down",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a large strong box, typically made of wood and used for storage or transport.",
+                "example": "an oak chest",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "chest",
+        "pronunciation": "CHest"
+    },
+    {
+        "definitions": [
+            {
+                "type": "verb",
+                "definition": "bite and work (food) in the mouth with the teeth, especially to make it easier to swallow.",
+                "example": "he was chewing a mouthful of toast",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a repeated biting or gnawing of something.",
+                "example": "the dog was enjoying a quiet chew of his bone",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "chew",
+        "pronunciation": "CHo͞o"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "a domestic fowl kept for its eggs or meat, especially a young one.",
+                "example": "rationing was still in force and most people kept chickens",
+                "image_url": "https://media.owlbot.info/dictionary/images/iiiiiiiiiiiiiiiiiiip.jpg.400x400_q85_box-81,0,990,909_crop_detail.jpg",
+                "emoji": "🐔"
+            }
+        ],
+        "word": "chicken",
+        "pronunciation": "ˈCHikən"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "a leader or ruler of a people or clan.",
+                "example": "the chief of the village",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "adjective",
+                "definition": "most important.",
+                "example": "the chief reason for the spending cuts",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "chief",
+        "pronunciation": "CHēf"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "a young human being below the age of puberty or below the legal age of majority.",
+                "example": "she'd been playing tennis since she was a child",
+                "image_url": null,
+                "emoji": "🧒"
+            }
+        ],
+        "word": "child",
+        "pronunciation": "CHīld"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "the protruding part of the face below the mouth, formed by the apex of the lower jaw.",
+                "example": "grey stubble covered his cheeks and chin",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "chin",
+        "pronunciation": "CHin"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "a small piece of something removed in the course of chopping, cutting, or breaking a hard material such as wood or stone.",
+                "example": "granite chips",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "chip",
+        "pronunciation": "CHip"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "a food in the form of a paste or solid block made from roasted and ground cacao seeds, typically sweetened and eaten as confectionery.",
+                "example": "a bar of chocolate",
+                "image_url": null,
+                "emoji": "🍫"
+            }
+        ],
+        "word": "chocolate",
+        "pronunciation": null
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "an act of choosing between two or more possibilities.",
+                "example": "the <b>choice between</b> good and evil",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "adjective",
+                "definition": "(especially of food) of very good quality.",
+                "example": "he picked some choice early plums",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "adjective",
+                "definition": "(of words or language) rude and abusive.",
+                "example": "he had a few choice words at his command",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "choice",
+        "pronunciation": null
+    }
+]

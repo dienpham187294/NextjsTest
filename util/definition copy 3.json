@@ -1,0 +1,2795 @@
+[
+    {
+        "pronunciation": "bend",
+        "word": "bend",
+        "definitions": [
+            {
+                "type": "verb",
+                "definition": "shape or force (something straight) into a curve or angle.",
+                "example": "the wire has to be bent back tightly",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "(of a person) incline the body downwards from the vertical.",
+                "example": "she <b>bent down</b> and yanked out the flex",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "force or be forced to submit.",
+                "example": "they want to <b>bend</b> me <b>to</b> their will",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "direct (one's attention or energies) to a task.",
+                "example": "Eric <b>bent</b> all his efforts <b>to</b> persuading them to donate some blankets",
+                "image_url": null,
+                "emoji": null
+            }
+        ]
+    },
+    {
+        "definitions": [
+            {
+                "type": "preposition",
+                "definition": "extending or directly underneath.",
+                "example": "a 2.5-mile tunnel beneath the Alps",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "preposition",
+                "definition": "at a lower level or layer than.",
+                "example": "beneath this floor there's a cellar",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "adverb",
+                "definition": "extending or directly underneath something.",
+                "example": "a house built on stilts to allow air to circulate beneath",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "adverb",
+                "definition": "at a lower level or layer.",
+                "example": "upper layers can be removed to reveal internal parts beneath",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "beneath",
+        "pronunciation": "bəˈnēTH"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "an advantage or profit gained from something.",
+                "example": "enjoy the benefits of being a member",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a payment made by the state or an insurance scheme to someone entitled to receive it.",
+                "example": "part-time jobs supplemented by means-tested benefits",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "an event such as a concert or game, intended to raise money for a particular player or charity.",
+                "example": "the social season was highlighted by debutante balls and charity benefits",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "benefit",
+        "pronunciation": "ˈbenəfit"
+    },
+    null,
+    {
+        "definitions": [
+            {
+                "type": "preposition",
+                "definition": "at the side of; next to.",
+                "example": "he sat beside me in the front seat",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "preposition",
+                "definition": "in addition to; apart from.",
+                "example": "he commissioned work from other artists beside Minton",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "beside",
+        "pronunciation": "bəˈsīd"
+    },
+    {
+        "definitions": [
+            {
+                "type": "verb",
+                "definition": "risk a sum of money or valued item against someone else's on the basis of the outcome of an unpredictable event such as a race or game.",
+                "example": "he <b>bet on</b> baseball games",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "an act of betting a sum of money.",
+                "example": "she had <b>a bet on</b> the Derby",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "bet",
+        "pronunciation": "bet"
+    },
+    "\n<!doctype html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n    <meta name=\"description\" content=\"OwlBot is a HTTP API for English vocabularies' definitions \" />\n    <meta name=\"keywords\" content=\"Dictionary, English, API, definition, meaning, pronunciation, dictionary API\" />\n    <meta name=\"robots\" content=\"noindex\">\n    <meta name=\"googlebot\" content=\"noindex\">\n    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\" integrity=\"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\" crossorigin=\"anonymous\">\n    <link href=\"https://fonts.googleapis.com/css?family=Ubuntu+Mono\" rel=\"stylesheet\">\n    <link id=\"favicon\" rel=\"icon\" href=\"/static/dictionary/img/favicon.png\">\n    <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js\"></script>\n    <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js\"></script>\n    <title>Error 404 (Not found)😱</title>\n  <script async src='/cdn-cgi/bm/cv/669835187/api.js'></script></head>\n  <body>\n    <div class=\"container\">\n      <div>\n    <img src=\"/static/dictionary/img/owlbot.png\" style=\"margin: auto; max-width: 50%; width: 160px; display: block\" alt=\"OwlBot is an english dictionary API\"/>\n</div>\n      <div class=\"row\">\n        <div class=\"col-sm-8 offset-sm-2 col-md-6 offset-md-3\" style=\"padding: 40px 0;\">\n          <input type=\"text\" name=\"word\" class=\"form-control\" id=\"search\" style=\"border-radius: 20px;\" placeholder=\"Try another word 🕵️\"/>\n        </div>\n      </div>\n      <div class=\"row\">\n        <div class=\"col-sm-10 offset-sm-1\" style=\"text-align: center\">\n          <img src=\"/static/dictionary/img/404-photo.png\" style=\"max-width: 100%\" />\n        </div>\n      </div>\n    </div>\n    <!-- Global site tag (gtag.js) - Google Analytics -->\n    <script async src=\"https://www.googletagmanager.com/gtag/js?id=UA-80200f867-1\"></script>\n    <script>\n      $('input[type=text]').keypress(function(e){\n        if(e.which == 13) {\n          var word = e.target.value;\n          location.assign(\"https://owlbot.info/?q=\"+word);\n        }\n      });\n      var search = document.getElementById(\"search\");\n      search.focus();\n      search.select();\n      window.dataLayer = window.dataLayer || [];\n      function gtag(){dataLayer.push(arguments);}\n      gtag('js', new Date());\n\n      gtag('config', 'UA-80200867-1');\n    </script>\n  <script type=\"text/javascript\">(function(){window['__CF$cv$params']={r:'6609b98bf8d81d6f',m:'ed9af8882621ca91d03290b5f18811cb3d1d9b1c-1623906137-1800-AdKMkmQLYwXPhzWnP56a6LNvtPu2y/bCInwQ8YEXCITITEUX9rxVAmhRvCdKHo5fRzhEQJRoitQhbYzF7Y4CgrqPaICoK5JldQemsf+s4Nm2zoP4jqVmXSabboEL5i7vQkxMeq7mHmJPiKzf8Rzac6Q=',s:[0x3ef61fb3d8,0x4c28a69486],}})();</script></body>\n</html>",
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "the action of gambling money on the outcome of a race, game, or other unpredictable event.",
+                "example": "football pools and other forms of betting",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "betting",
+        "pronunciation": "ˈbediNG"
+    },
+    {
+        "definitions": [
+            {
+                "type": "preposition",
+                "definition": "at, into, or across the space separating (two objects or regions).",
+                "example": "the border between Mexico and the United States",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "preposition",
+                "definition": "in the period separating (two points in time).",
+                "example": "they snack between meals",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "between",
+        "pronunciation": "bəˈtwēn"
+    },
+    {
+        "definitions": [
+            {
+                "type": "preposition & adverb",
+                "definition": "at or to the further side of.",
+                "example": "he pointed to a spot beyond the concealing trees",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "preposition & adverb",
+                "definition": "having progressed or achieved more than (a specified stage or level).",
+                "example": "we need to get beyond square one",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "preposition & adverb",
+                "definition": "to or in a degree or condition where a specified action is impossible.",
+                "example": "the landscape has changed beyond recognition",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "preposition & adverb",
+                "definition": "apart from; except.",
+                "example": "beyond telling us that she was well educated, he has nothing to say about her",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "the unknown, especially in references to life after death.",
+                "example": "messages from the beyond",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "preposition & adverb",
+                "definition": "happening or continuing after (a specified time, stage, or event).",
+                "example": "training beyond the age of 14",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "beyond",
+        "pronunciation": "bēˈänd"
+    },
+    {
+        "definitions": [
+            {
+                "type": "verb",
+                "definition": "ride a bicycle.",
+                "example": "they spent the holidays bicycling around the beautiful Devonshire countryside",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a vehicle consisting of two wheels held in a frame one behind the other, propelled by pedals and steered with handlebars attached to the front wheel.",
+                "example": null,
+                "image_url": null,
+                "emoji": "🚲"
+            }
+        ],
+        "word": "bicycle",
+        "pronunciation": "ˈbīsək(ə)l"
+    },
+    {
+        "definitions": [
+            {
+                "type": "verb",
+                "definition": "offer (a certain price) for something, especially at an auction.",
+                "example": "a consortium of dealers bid a world record price for a snuff box",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "make an effort or attempt to achieve.",
+                "example": "she's now bidding to become a top female model",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "an offer of a price, especially at an auction.",
+                "example": "at the fur tables, several buyers make bids for the pelts",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "an attempt or effort to achieve something.",
+                "example": "he <b>made a bid for</b> power in 1984",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "utter (a greeting or farewell) to.",
+                "example": "James bade a tearful farewell to his parents",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "bid",
+        "pronunciation": "bid"
+    },
+    {
+        "definitions": [
+            {
+                "type": "adjective",
+                "definition": "of considerable size or extent.",
+                "example": "her big hazel eyes",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "adjective",
+                "definition": "of considerable importance or seriousness.",
+                "example": "it's a big decision",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "praise or recommend something highly.",
+                "example": "the record's been on the streets a while now, but it's certainly still worth bigging up",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "big",
+        "pronunciation": "biɡ"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "the point of an anchor fluke.",
+                "example": null,
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "(of birds, especially doves) stroke bill with bill during courtship.",
+                "example": null,
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "the police.",
+                "example": null,
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a printed or written statement of the money owed for goods or services.",
+                "example": "the bill for their meal came to Â£17",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a draft of a proposed law presented to parliament for discussion.",
+                "example": "a debate over the civil rights bill",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a programme of entertainment at a theatre or cinema.",
+                "example": "she was <b>top of the bill</b> at America's leading vaudeville house",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "list (a person or event) in a programme.",
+                "example": "they were billed to appear but did not show up",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "send a bill to (someone).",
+                "example": "we shall be billing them for the damage caused",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a narrow promontory.",
+                "example": "Portland Bill",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a poster or handbill.",
+                "example": "he has been hard at work bill posting in a poster and sticker campaign",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a medieval weapon like a halberd with a hook instead of a blade.",
+                "example": null,
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "the beak of a bird, especially when it is slender, flattened, or weak, or belongs to a web-footed bird or a bird of the pigeon family.",
+                "example": "a bird's bill",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "bill",
+        "pronunciation": "bil"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "a receptacle in which to deposit rubbish.",
+                "example": "a compost bin",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "bin",
+        "pronunciation": "bin"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "the study of living organisms, divided into many specialized fields that cover their morphology, physiology, anatomy, behaviour, origin, and distribution.",
+                "example": "the biology of the Chesapeake Bay",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "biology",
+        "pronunciation": "bīˈäləjē"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "a warm-blooded egg-laying vertebrate animal distinguished by the possession of feathers, wings, a beak, and typically by being able to fly.",
+                "example": "the valley is teeming with bird life",
+                "image_url": null,
+                "emoji": "🐦"
+            }
+        ],
+        "word": "bird",
+        "pronunciation": "bərd"
+    },
+    {
+        "definitions": [
+            {
+                "type": "verb",
+                "definition": "give birth to (a baby or other young).",
+                "example": "she birthed five children within ten years",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "the emergence of a baby or other young from the body of its mother; the start of life as a physically separate being.",
+                "example": "he was blind from birth",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "birth",
+        "pronunciation": "bərTH"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "the anniversary of the day on which a person was born, typically treated as an occasion for celebration and the giving of gifts.",
+                "example": "his twenty-ninth birthday",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "birthday",
+        "pronunciation": "ˈbərTHˌdā"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "porcelain or other pottery which has been fired but not glazed.",
+                "example": "biscuit ware",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "biscuit",
+        "pronunciation": "ˈbiskit"
+    },
+    {
+        "pronunciation": "bit",
+        "word": "bit",
+        "definitions": [
+            {
+                "type": "verb",
+                "definition": "put a bit into the mouth of (a horse).",
+                "example": null,
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a unit of information expressed as either a 0 or 1 in binary notation.",
+                "example": null,
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a small piece, part, or quantity of something.",
+                "example": "give the duck <b>a bit of</b> bread",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "use the teeth to cut into (something).",
+                "example": "the woman's arm was <b>bitten off</b> by an alligator",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "(of a tool, tyre, boot, etc.) grip or take hold on a surface.",
+                "example": "once on the slab, my boots failed to bite",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a tool or piece for boring or drilling.",
+                "example": "a drill bit",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a mouthpiece, typically made of metal, which is attached to a bridle and used to control a horse.",
+                "example": null,
+                "image_url": null,
+                "emoji": null
+            }
+        ]
+    },
+    {
+        "definitions": [
+            {
+                "type": "verb",
+                "definition": "use the teeth to cut into (something).",
+                "example": "the woman's arm was <b>bitten off</b> by an alligator",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "(of a tool, tyre, boot, etc.) grip or take hold on a surface.",
+                "example": "once on the slab, my boots failed to bite",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "an act of biting something in order to eat it.",
+                "example": "Stephen ate a hot dog in three big bites",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a piece cut off by biting.",
+                "example": "Robyn took a large bite out of her sandwich",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a sharp or pungent flavour.",
+                "example": "a fresh, lemony bite",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "bite",
+        "pronunciation": "bīt"
+    },
+    {
+        "definitions": [
+            {
+                "type": "adjective",
+                "definition": "having a sharp, pungent taste or smell; not sweet.",
+                "example": "raw berries have an intensely bitter flavour",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "adjective",
+                "definition": "feeling or showing anger, hurt, or resentment because of bad experiences or a sense of unjust treatment.",
+                "example": "I don't feel jealous or bitter",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "adjective",
+                "definition": "painful or unpleasant to accept or contemplate.",
+                "example": "today's decision has come as a bitter blow",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "adjective",
+                "definition": "(of wind or weather) intensely cold.",
+                "example": "a bitter February night",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "alcohol flavoured with bitter plant extracts, used as an additive in cocktails or as a medicinal substance to promote appetite or digestion.",
+                "example": "a dash of bitters",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "bitter",
+        "pronunciation": "ˈbidər"
+    },
+    {
+        "definitions": [
+            {
+                "type": null,
+                "definition": "having a harsh, disagreeably acrid taste, like that of aspirin, quinine, wormwood, or aloes. producing one of the four basic taste sensations; not sour, sweet, or salt. hard to bear; grievous; distressful: a bitter sorrow. causing pain; piercing; stinging:",
+                "example": null,
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "bitterly",
+        "pronunciation": "ˈbidərlē"
+    },
+    {
+        "definitions": [
+            {
+                "type": "adjective",
+                "definition": "belonging to or denoting any human group having dark-coloured skin, especially of African or Australian Aboriginal ancestry.",
+                "example": "black adolescents of Jamaican descent",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "adjective",
+                "definition": "of the very darkest colour owing to the absence of or complete absorption of light; the opposite of white.",
+                "example": "black smoke",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "black",
+        "pronunciation": "blak"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "the flat cutting edge of a knife, saw, or other tool or weapon.",
+                "example": "cut cleanly using a sharp blade",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "blade",
+        "pronunciation": "blād"
+    },
+    {
+        "definitions": [
+            {
+                "type": "verb",
+                "definition": "feel or declare that (someone or something) is responsible for a fault or wrong.",
+                "example": "the inquiry <b>blamed</b> the train driver <b>for</b> the accident",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "responsibility for a fault or wrong.",
+                "example": "his players had to <b>take the blame for</b> the defeat",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "blame",
+        "pronunciation": "blām"
+    },
+    {
+        "definitions": [
+            {
+                "type": "adjective",
+                "definition": "(of a surface or background) unrelieved by decorative or other features; bare, empty, or plain.",
+                "example": "a blank wall",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "adjective",
+                "definition": "showing a lack of comprehension or reaction.",
+                "example": "we were met by blank looks",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "adjective",
+                "definition": "complete; absolute (used emphatically with negative force).",
+                "example": "he was met with a blank refusal to discuss the issue",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a space left to be filled in a document.",
+                "example": "leave blanks to type in the appropriate names",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "an object which has no mark or design on it, in particular:",
+                "example": null,
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a dash written instead of a word or letter, especially instead of an obscenity or profanity.",
+                "example": null,
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "make (something) blank or empty.",
+                "example": "electronic countermeasures <b>blanked out</b> the radar signals",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "adjective",
+                "definition": "used euphemistically in place of an adjective regarded as obscene, profane, or abusive.",
+                "example": "show the miserable blank-blank Englishman how to fight this war",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "an empty space or period of time, especially in terms of a lack of knowledge or understanding.",
+                "example": "my mind was a total blank",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a cartridge containing gunpowder but no bullet, used for training or as a signal.",
+                "example": null,
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "blank",
+        "pronunciation": "blaNGk"
+    },
+    null,
+    {
+        "definitions": [
+            {
+                "type": "adjective",
+                "definition": "unable to see because of injury, disease, or a congenital condition.",
+                "example": "a blind man with a stick",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "adjective",
+                "definition": "lacking perception, awareness, or judgement.",
+                "example": "a blind acceptance of the status quo",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "adjective",
+                "definition": "concealed or closed, in particular:",
+                "example": "two trucks collided on a blind curve in the road",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "blind",
+        "pronunciation": "blīnd"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "a large quantity or allocation of things regarded as a unit.",
+                "example": "<b>a block of</b> shares",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "an obstacle to the normal progress or functioning of something.",
+                "example": "substantial demands for time off may constitute <b>a block to</b> career advancement",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a flat area of something, especially a solid area of colour.",
+                "example": "cover the eyelid with a neutral <b>block of</b> colour",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a large solid piece of hard material, especially rock, stone, or wood, typically with flat surfaces on each side.",
+                "example": "a block of marble",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "block",
+        "pronunciation": "bläk"
+    },
+    {
+        "definitions": [
+            {
+                "type": "adjective",
+                "definition": "(chiefly of hair) fair or pale yellow.",
+                "example": "her long blonde hair",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a woman with blonde hair.",
+                "example": "her hair was yellowânot any shade of blonde, but yellow",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "blonde",
+        "pronunciation": "bländ"
+    },
+    {
+        "definitions": [
+            {
+                "type": "verb",
+                "definition": "Hunting",
+                "example": null,
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a member of a North American Indian people belonging to the Blackfoot Confederacy.",
+                "example": null,
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "violence involving bloodshed.",
+                "example": "a commando operation full of blood and danger",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "fiery or passionate temperament.",
+                "example": "a ritual that fires up his blood",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "family background; descent or lineage.",
+                "example": "she must have Irish blood in her",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "initiate (someone) in a particular activity.",
+                "example": "clubs are too slow to blood young players",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "the red liquid that circulates in the arteries and veins of humans and other vertebrate animals, carrying oxygen to and carbon dioxide from the tissues of the body.",
+                "example": "drops of blood",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "blood",
+        "pronunciation": "bləd"
+    },
+    {
+        "pronunciation": null,
+        "word": "blow",
+        "definitions": [
+            {
+                "type": "verb",
+                "definition": "(of flies) lay eggs in or on (something).",
+                "example": null,
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "(of wind) move creating an air current.",
+                "example": "a cold breeze was blowing in off the sea",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "(of a person) expel air through pursed lips.",
+                "example": "Willie took a deep breath, and blew",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "(of an explosion or explosive device) displace violently or send flying.",
+                "example": "the blast had blown the windows out of the van",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a strong wind.",
+                "example": "we're in for a bit of a blow",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "produce flowers or be in flower.",
+                "example": "I know a bank where the wild thyme blows",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "the state or period of flowering.",
+                "example": "stocks in fragrant blow",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a powerful stroke with a hand, weapon, or hard object.",
+                "example": "he received a blow to the skull",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "an act of blowing an instrument.",
+                "example": "a number of blows on the whistle",
+                "image_url": null,
+                "emoji": null
+            }
+        ]
+    },
+    {
+        "definitions": [
+            {
+                "type": "adjective",
+                "definition": "of a colour intermediate between green and violet, as of the sky or sea on a sunny day.",
+                "example": "the clear blue sky",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "blue",
+        "pronunciation": null
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "a group of people constituted as the decision-making body of an organization.",
+                "example": "he sits on the board of directors",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "the provision of regular meals when one stays somewhere, in return for payment or services.",
+                "example": "board and lodging",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "get on or into (a ship, aircraft, or other vehicle).",
+                "example": "we boarded the plane for Oslo",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "live and receive regular meals in a house in return for payment or services.",
+                "example": "the cousins boarded for a while with Ruby",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "cover or seal a window or building with pieces of wood.",
+                "example": "the shop was still boarded up",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "ride on a snowboard.",
+                "example": "when we're not boarding, we're skiing",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a long, thin, flat piece of wood or other hard material, used for floors or other building purposes.",
+                "example": "loose boards creaked as I walked on them",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a thin, flat piece of wood or other stiff material used for various purposes, in particular:",
+                "example": "teachers talk and write on the board",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "board",
+        "pronunciation": "bôrd"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "a small vessel for travelling over water, propelled by oars, sails, or an engine.",
+                "example": "a fishing boat",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a gravy boat or sauce boat.",
+                "example": null,
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "boat",
+        "pronunciation": "bōt"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "(in pottery) a clay used for making the main part of ceramic ware, as distinct from a glaze.",
+                "example": null,
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "the main or central part of something, especially a building or text.",
+                "example": "the main <b>body of</b> the house was built in 1625",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a large amount or collection of something.",
+                "example": "a rich <b>body of</b> Canadian folklore",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a full or substantial quality of flavour in wine.",
+                "example": "best of all, this wine has body and finish",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "build the bodywork of (a motor vehicle).",
+                "example": "an era when automobiles were bodied over wooden frames",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "the physical structure, including the bones, flesh, and organs, of a person or an animal.",
+                "example": "it's important to keep your body in good condition",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "the main section of a motor vehicle or aircraft.",
+                "example": "the factory had produced more car bodies than needed",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "body",
+        "pronunciation": "ˈbädē"
+    },
+    {
+        "definitions": [
+            {
+                "type": "verb",
+                "definition": "(with reference to a liquid) reach or cause to reach the temperature at which it bubbles and turns to vapour.",
+                "example": "we asked people to boil their drinking water",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "subject (something) to the heat of boiling liquid, in particular:",
+                "example": "boil the potatoes until well done",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "(of the sea or clouds) be turbulent and stormy.",
+                "example": "a huge cliff with the black sea boiling below",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "the temperature at which a liquid bubbles and turns to vapour.",
+                "example": "<b>bring</b> the sauce <b>to the boil</b> and simmer for 10 minutes",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "Fishing",
+                "example": "a boil from a fish in a pool",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "an inflamed pus-filled swelling on the skin, caused typically by the infection of a hair follicle.",
+                "example": "a girl with a boil on her nose",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "boil",
+        "pronunciation": "boil"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "a thing resembling a bomb in shape, in particular:",
+                "example": "<span>noun: <b>volcanic bomb</b></span><span>; plural noun: <b>volcanic bombs</b></span>",
+                "image_url": null,
+                "emoji": "💣"
+            },
+            {
+                "type": "noun",
+                "definition": "a container filled with explosive or incendiary material, designed to explode on impact or when detonated by a timing, proximity, or remote-control device.",
+                "example": "a bomb attack",
+                "image_url": null,
+                "emoji": "💣"
+            }
+        ],
+        "word": "bomb",
+        "pronunciation": "bäm"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "any of the pieces of hard whitish tissue making up the skeleton in humans and other vertebrates.",
+                "example": "his injuries included many broken bones",
+                "image_url": null,
+                "emoji": "🦴"
+            }
+        ],
+        "word": "bone",
+        "pronunciation": "bōn"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "a bound set of blank sheets for writing in.",
+                "example": "an accounts book",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a set of tickets, stamps, matches, samples of cloth, etc., bound together.",
+                "example": "a pattern book",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "the first six tricks taken by the declarer in a hand of bridge, after which further tricks count towards fulfilling the contract.",
+                "example": null,
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "reserve (accommodation, a place, etc.); buy (a ticket) in advance.",
+                "example": "I have booked a table at the Swan",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "make an official note of the personal details of (a person who has broken a law or rule).",
+                "example": "the cop booked me and took me down to the station",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a written or printed work consisting of pages glued or sewn together along one side and bound in covers.",
+                "example": "a book of selected poems",
+                "image_url": null,
+                "emoji": "🕮"
+            }
+        ],
+        "word": "book",
+        "pronunciation": "bo͝ok"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "a sturdy item of footwear covering the foot and ankle, and sometimes also the lower leg.",
+                "example": "a pair of walking boots",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "boot",
+        "pronunciation": "bo͞ot"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "a line separating two countries, administrative divisions, or other areas.",
+                "example": "Panama's western border with Costa Rica",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "the edge or boundary of something, or the part near it.",
+                "example": "the northern border of their distribution area",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a decorative strip around the edge of something.",
+                "example": "she stitched a border on to one of the plain white saris",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "form an edge along or beside (something).",
+                "example": "a pool bordered by palm trees",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "(of a country or area) be adjacent to (another country or area).",
+                "example": "regions bordering Azerbaijan",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "come close to or be developing into (an extreme condition).",
+                "example": "Sam arrived in a state of excitement bordering on hysteria",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "border",
+        "pronunciation": "ˈbôrdər"
+    },
+    {
+        "definitions": [
+            {
+                "type": "verb",
+                "definition": "(of an athlete or racehorse) push another competitor out of the way.",
+                "example": null,
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "make (a hole) in something with a tool or by digging.",
+                "example": "bore a hole in the wall to pass the cable through",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "bore",
+        "pronunciation": "bôr"
+    },
+    {
+        "definitions": [
+            {
+                "type": "verb",
+                "definition": "(of an athlete or racehorse) push another competitor out of the way.",
+                "example": null,
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "adjective",
+                "definition": "not interesting; tedious.",
+                "example": "I've got a boring job in an office",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "make (a hole) in something with a tool or by digging.",
+                "example": "bore a hole in the wall to pass the cable through",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "cause (someone) to feel weary and uninterested by dull talk or behaviour.",
+                "example": "she is too polite to bore us with anecdotes",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "boring",
+        "pronunciation": "ˈbôriNG"
+    },
+    "\n<!doctype html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n    <meta name=\"description\" content=\"OwlBot is a HTTP API for English vocabularies' definitions \" />\n    <meta name=\"keywords\" content=\"Dictionary, English, API, definition, meaning, pronunciation, dictionary API\" />\n    <meta name=\"robots\" content=\"noindex\">\n    <meta name=\"googlebot\" content=\"noindex\">\n    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\" integrity=\"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\" crossorigin=\"anonymous\">\n    <link href=\"https://fonts.googleapis.com/css?family=Ubuntu+Mono\" rel=\"stylesheet\">\n    <link id=\"favicon\" rel=\"icon\" href=\"/static/dictionary/img/favicon.png\">\n    <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js\"></script>\n    <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js\"></script>\n    <title>Error 404 (Not found)😱</title>\n  <script async src='/cdn-cgi/bm/cv/669835187/api.js'></script></head>\n  <body>\n    <div class=\"container\">\n      <div>\n    <img src=\"/static/dictionary/img/owlbot.png\" style=\"margin: auto; max-width: 50%; width: 160px; display: block\" alt=\"OwlBot is an english dictionary API\"/>\n</div>\n      <div class=\"row\">\n        <div class=\"col-sm-8 offset-sm-2 col-md-6 offset-md-3\" style=\"padding: 40px 0;\">\n          <input type=\"text\" name=\"word\" class=\"form-control\" id=\"search\" style=\"border-radius: 20px;\" placeholder=\"Try another word 🕵️\"/>\n        </div>\n      </div>\n      <div class=\"row\">\n        <div class=\"col-sm-10 offset-sm-1\" style=\"text-align: center\">\n          <img src=\"/static/dictionary/img/404-photo.png\" style=\"max-width: 100%\" />\n        </div>\n      </div>\n    </div>\n    <!-- Global site tag (gtag.js) - Google Analytics -->\n    <script async src=\"https://www.googletagmanager.com/gtag/js?id=UA-80200f867-1\"></script>\n    <script>\n      $('input[type=text]').keypress(function(e){\n        if(e.which == 13) {\n          var word = e.target.value;\n          location.assign(\"https://owlbot.info/?q=\"+word);\n        }\n      });\n      var search = document.getElementById(\"search\");\n      search.focus();\n      search.select();\n      window.dataLayer = window.dataLayer || [];\n      function gtag(){dataLayer.push(arguments);}\n      gtag('js', new Date());\n\n      gtag('config', 'UA-80200867-1');\n    </script>\n  <script type=\"text/javascript\">(function(){window['__CF$cv$params']={r:'6609bc428fcb1d6f',m:'db65971613ec1473739f966179d898b0fe5c4aa7-1623906248-1800-AWpmpcN5ZZr14e+tWsJVYC4BRjOTRN+yxyCcm4evaqH9b3WeEwtGQczUU9/ZL45bN+sZBnEbSaDnqv0y1YH7fcxQz/Yls93HttNp+3YDyZtHhI8LTCfL/c3JGQZhFCilN2mcy9qXHKFUpPk8cGJdPC4=',s:[0x34a828a7fb,0xbcec95e47c],}})();</script></body>\n</html>",
+    {
+        "definitions": [
+            {
+                "type": "verb",
+                "definition": "take and use (something belonging to someone else) with the intention of returning it.",
+                "example": "he had <b>borrowed</b> a car <b>from</b> one of his colleagues",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "borrow",
+        "pronunciation": "ˈbärō"
+    },
+    {
+        "definitions": [
+            {
+                "type": "abbreviation",
+                "definition": "Bureau of State Security.",
+                "example": null,
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "give (someone) orders in a domineering manner.",
+                "example": "you're always <b>bossing</b> us <b>about</b>",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a cow.",
+                "example": null,
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "adjective",
+                "definition": "excellent; outstanding.",
+                "example": "she's a real boss chick",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a stud on the centre of a shield.",
+                "example": null,
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a person who is in charge of a worker or organization.",
+                "example": "her boss offered her promotion",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "boss",
+        "pronunciation": null
+    },
+    {
+        "definitions": [
+            {
+                "type": "predeterminer, determiner, & pronoun",
+                "definition": "used for emphasis to refer to two people or things, regarded and identified together.",
+                "example": "both his parents indulged him",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "both",
+        "pronunciation": null
+    },
+    {
+        "definitions": [
+            {
+                "type": "verb",
+                "definition": "take the trouble to do something.",
+                "example": "scientists rarely <b>bother with</b> such niceties",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "(of a circumstance or event) worry, disturb, or upset (someone).",
+                "example": "secrecy is an issue which bothers journalists",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "effort, trouble, or difficulty.",
+                "example": "he saved me the bother of having to come up with a speech",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "exclamation",
+                "definition": "used to express mild irritation or impatience.",
+                "example": "âBother!â she muttered",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "bother",
+        "pronunciation": null
+    },
+    {
+        "definitions": [
+            {
+                "type": "verb",
+                "definition": "place (drinks or other liquid) in bottles for storage.",
+                "example": "the wine was bottled in 1997",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a glass or plastic container with a narrow neck, used for storing drinks or other liquids.",
+                "example": "he opened the bottle of beer",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "bottle",
+        "pronunciation": null
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "the lowest point or part of something.",
+                "example": "the bottom of the page",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "bottom",
+        "pronunciation": null
+    },
+    {
+        "pronunciation": "bound",
+        "word": "bound",
+        "definitions": [
+            {
+                "type": "verb",
+                "definition": "walk or run with leaping strides.",
+                "example": "Louis came <b>bounding down</b> the stairs",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a leaping movement towards or over something.",
+                "example": "I went up the steps in two effortless bounds",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a territorial limit; a boundary.",
+                "example": "the ancient bounds of the forest",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "form the boundary of; enclose.",
+                "example": "the ground was bounded by a main road on one side and a meadow on the other",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "adjective",
+                "definition": "going or ready to go towards a specified place.",
+                "example": "an express train <b>bound for</b> Edinburgh",
+                "image_url": null,
+                "emoji": null
+            }
+        ]
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "a spell or turn of bowling in cricket.",
+                "example": null,
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a wooden or hard rubber ball, slightly asymmetrical so that it runs on a curved course, used in the game of bowls.",
+                "example": null,
+                "image_url": "https://media.owlbot.info/dictionary/images/iiiiiiiiiiiiiiiiiiiy.jpg.400x400_q85_box-218,0,1037,821_crop_detail.jpg",
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "roll (a ball or other round object) along the ground.",
+                "example": "she snatched her hat off and bowled it ahead of her",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a round, deep dish or basin used for food or liquid.",
+                "example": "a mixing bowl",
+                "image_url": "https://media.owlbot.info/dictionary/images/iiiiiiiiiiiiiiiiiiiz.jpg.400x400_q85_box-25,0,219,194_crop_detail.jpg",
+                "emoji": null
+            }
+        ],
+        "word": "bowl",
+        "pronunciation": "bōl"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "a container with a flat base and sides, typically square or rectangular and having a lid.",
+                "example": "a cigarette box",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "an area or space enclosed within straight lines, in particular:",
+                "example": "tick the box on the coupon",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "box",
+        "pronunciation": "bäks"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "a male child or youth.",
+                "example": "a four-year-old boy",
+                "image_url": null,
+                "emoji": "👦"
+            },
+            {
+                "type": "exclamation",
+                "definition": "used to express strong feelings, especially of excitement or admiration.",
+                "example": "oh boy, that's wonderful!",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a man, especially a young or relatively young one.",
+                "example": "I was the new boy at the office",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "boy",
+        "pronunciation": "bɔɪ"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "an organ of soft nervous tissue contained in the skull of vertebrates, functioning as the coordinating centre of sensation and intellectual and nervous activity.",
+                "example": "a brain tumour",
+                "image_url": null,
+                "emoji": "🧠"
+            },
+            {
+                "type": "noun",
+                "definition": "intellectual capacity.",
+                "example": "I didn't have enough brains for the sciences",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "hit (someone) hard on the head with an object.",
+                "example": "she brained me with a rolling pin",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "brain",
+        "pronunciation": "brān"
+    },
+    {
+        "definitions": [
+            {
+                "type": "verb",
+                "definition": "(of a road or path) divide into one or more subdivisions.",
+                "example": "follow this track south until it <b>branches into</b> two",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "(of a tree or plant) bear or send out branches.",
+                "example": "this rose has a tendency to branch and spread at the top",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a part of a tree which grows out from the trunk or from a bough.",
+                "example": "Sophie was in the branches of a tree eating an apple",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "branch",
+        "pronunciation": "bran(t)SH"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "a type of product manufactured by a particular company under a particular name.",
+                "example": "a new brand of soap powder",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a piece of burning or smouldering wood.",
+                "example": "he took two burning brands from the fire",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "an identifying mark burned on livestock or (especially in former times) criminals or slaves with a branding iron.",
+                "example": "the brand on a sheep identifies it as mine",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "brand",
+        "pronunciation": "brand"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "an American Indian warrior.",
+                "example": null,
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "adjective",
+                "definition": "ready to face and endure danger or pain; showing courage.",
+                "example": "she was very brave about the whole thing",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "brave",
+        "pronunciation": "brāv"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "food made of flour, water, and yeast mixed together and baked.",
+                "example": "a loaf of bread",
+                "image_url": null,
+                "emoji": "🍞"
+            }
+        ],
+        "word": "bread",
+        "pronunciation": "bred"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "a bud or shoot sprouting from a stem.",
+                "example": null,
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "interrupt (a continuity, sequence, or course).",
+                "example": "the new government broke the pattern of growth",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "fail to observe (a law, regulation, or agreement).",
+                "example": "the council says it will prosecute traders who break the law",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "crush the emotional strength, spirit, or resistance of.",
+                "example": "the idea was to better the prisoners, not to break them",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "undergo a change or enter a new state, in particular:",
+                "example": "the weather broke and thunder rumbled through a leaden sky",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "(of news or a scandal) suddenly become public.",
+                "example": "since the news broke I've received thousands of wonderful letters",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "an interruption of continuity or uniformity.",
+                "example": "the magazine has been published without a break since 1950",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a gap or opening.",
+                "example": "the track bends left through a break in the hedge",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "an instance of breaking something, or the point where something is broken.",
+                "example": "he was stretchered off with a break to the leg",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a rush or dash in a particular direction, especially by an attacking player or team.",
+                "example": "Norwich scored on a rare break with 11 minutes left",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "Snooker",
+                "example": "a break of 83 put him in front for the first time",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "separate into pieces as a result of a blow, shock, or strain.",
+                "example": "the rope broke with a loud snap",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "(chiefly of an attacking player or team, or of a military force) make a rush or dash in a particular direction.",
+                "example": "Mitchell won possession and broke quickly, allowing Hughes to score",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a pause in work or during an activity or event.",
+                "example": "I need a <b>break from</b> mental activity",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "break",
+        "pronunciation": "brāk"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "a meal eaten in the morning, the first of the day.",
+                "example": "a breakfast of bacon and eggs",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "breakfast",
+        "pronunciation": "ˈbrekfəst"
+    },
+    {
+        "definitions": [
+            {
+                "type": "verb",
+                "definition": "face and move forwards against or through (something).",
+                "example": "I watched him breast the wave",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "breast",
+        "pronunciation": "brest"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "the air taken into or expelled from the lungs.",
+                "example": "I was gasping for breath",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "breath",
+        "pronunciation": "breTH"
+    },
+    {
+        "definitions": [
+            {
+                "type": "verb",
+                "definition": "take air into the lungs and then expel it, especially as a regular physiological process.",
+                "example": "she was breathing deeply",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "breathe",
+        "pronunciation": "brēT͟H"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "the process of taking air into and expelling it from the lungs.",
+                "example": "his breathing was shallow",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "breathing",
+        "pronunciation": "ˈbrēT͟HiNG"
+    },
+    {
+        "definitions": [
+            {
+                "type": "verb",
+                "definition": "(of animals) mate and then produce offspring.",
+                "example": "toads are said to return to the pond of their birth to breed",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a stock of animals or plants within a species having a distinctive appearance and typically having been developed by deliberate selection.",
+                "example": "the big continental breeds are eagerly being imported by British farmers",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "breed",
+        "pronunciation": "brēd"
+    },
+    {
+        "pronunciation": "brik",
+        "word": "brick",
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "a small rectangular block typically made of fired or sun-dried clay, used in building.",
+                "example": "this mill was built of brick",
+                "image_url": null,
+                "emoji": "🧱"
+            }
+        ]
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "the elevated, enclosed platform on a ship from which the captain and officers direct operations.",
+                "example": "Talbot stepped across the two gunwales and made his way up to the bridge",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a structure carrying a road, path, railway, etc. across a river, road, or other obstacle.",
+                "example": "a bridge across the River Thames",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "bridge",
+        "pronunciation": "brij"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "a letter from the Pope to a person or community on a matter of discipline.",
+                "example": null,
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "adjective",
+                "definition": "of short duration; not lasting for long.",
+                "example": "the president made a brief working visit to Moscow",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "adjective",
+                "definition": "(of a piece of clothing) not covering much of the body; scanty.",
+                "example": "Alison sported a pair of extremely brief black shorts",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "brief",
+        "pronunciation": "brēf"
+    },
+    {
+        "definitions": [
+            {
+                "type": "adverb",
+                "definition": "for a short time; fleetingly.",
+                "example": "he worked briefly as a lawyer",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "briefly",
+        "pronunciation": "ˈbrēflē"
+    },
+    {
+        "definitions": [
+            {
+                "type": "adjective",
+                "definition": "giving out or reflecting much light; shining.",
+                "example": "the sun was dazzlingly bright",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "adjective",
+                "definition": "intelligent and quick-witted.",
+                "example": "she was amiable, but not very bright",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "adjective",
+                "definition": "cheerful and lively.",
+                "example": "at breakfast she would be persistently bright and chirpy",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "adjective",
+                "definition": "(of sound) clear, vibrant, and typically high-pitched.",
+                "example": "her voice is fresh and bright",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "adverb",
+                "definition": "brightly.",
+                "example": "a full moon shining bright",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "bold and vivid colours.",
+                "example": "a choice of colours from pastels through to brights",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "bright",
+        "pronunciation": "brīt"
+    },
+    {
+        "definitions": [
+            {
+                "type": null,
+                "definition": "bright, brilliant, radiant, luminous, lustrous mean shining or glowing with light. bright implies emitting or reflecting a high degree of light. brilliant implies intense often sparkling brightness.",
+                "example": null,
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "brightly",
+        "pronunciation": "ˈbrītlē"
+    },
+    {
+        "definitions": [
+            {
+                "type": "adjective",
+                "definition": "(of light or colour) very bright.",
+                "example": "brilliant sunshine illuminated the scene",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "adjective",
+                "definition": "exceptionally clever or talented.",
+                "example": "he was quite brilliant and was promoted almost at once",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a diamond of brilliant cut.",
+                "example": "an elegant necklace with four rows of brilliants",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "brilliant",
+        "pronunciation": "ˈbrilyənt"
+    },
+    {
+        "definitions": [
+            {
+                "type": "verb",
+                "definition": "take or go with (someone or something) to a place.",
+                "example": "she brought Luke home from hospital",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "cause (someone or something) to be in a particular state or condition.",
+                "example": "an economic policy that would have <b>brought</b> the country <b>to</b> bankruptcy",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "bring",
+        "pronunciation": "briNG"
+    },
+    {
+        "definitions": [
+            {
+                "type": "adjective",
+                "definition": "having a distance larger than usual from side to side; wide.",
+                "example": "a broad staircase",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "adjective",
+                "definition": "covering a large number and wide scope of subjects.",
+                "example": "the company has a broad range of experience",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "adjective",
+                "definition": "general; without detail.",
+                "example": "a broad outline of the legal framework for pension schemes",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "adjective",
+                "definition": "somewhat coarse and indecent.",
+                "example": "the broad humour has been toned down",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a woman.",
+                "example": "I get drunk, follow the pretty broads, and make a fool of myself",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "adjective",
+                "definition": "(of a regional accent) very noticeable and strong.",
+                "example": "the words had a distinct tang of broad Lancashire",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "broad",
+        "pronunciation": null
+    },
+    {
+        "definitions": [
+            {
+                "type": "verb",
+                "definition": "transmit (a programme or some information) by radio or television.",
+                "example": "the announcement was broadcast live",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "scatter (seeds) by hand or machine rather than placing in drills or rows.",
+                "example": "the second method is to broadcast the seeds together with not more than 1 kg to the acre of rapeseed",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a radio or television programme or transmission.",
+                "example": "the Queen's annual Christmas TV broadcast",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "adjective",
+                "definition": "relating to radio or television programmes.",
+                "example": "a broadcast journalist",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "broadcast",
+        "pronunciation": null
+    },
+    {
+        "definitions": [
+            {
+                "type": "adverb",
+                "definition": "in general and without considering minor details.",
+                "example": "the climate is broadly similar in the two regions",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "adverb",
+                "definition": "widely and openly.",
+                "example": "he was grinning broadly",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "broadly",
+        "pronunciation": null
+    },
+    {
+        "definitions": [
+            {
+                "type": "adjective",
+                "definition": "having been broken.",
+                "example": "he had a broken arm",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "adjective",
+                "definition": "(of a person) having given up all hope; despairing.",
+                "example": "he went to his grave a broken man",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "adjective",
+                "definition": "having breaks or gaps in continuity.",
+                "example": "a broken white line across the road",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "adjective",
+                "definition": "having an uneven and rough surface.",
+                "example": "he pressed onwards over the broken ground",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "separate into pieces as a result of a blow, shock, or strain.",
+                "example": "the rope broke with a loud snap",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "interrupt (a continuity, sequence, or course).",
+                "example": "the new government broke the pattern of growth",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "fail to observe (a law, regulation, or agreement).",
+                "example": "the council says it will prosecute traders who break the law",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "crush the emotional strength, spirit, or resistance of.",
+                "example": "the idea was to better the prisoners, not to break them",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "undergo a change or enter a new state, in particular:",
+                "example": "the weather broke and thunder rumbled through a leaden sky",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "(of news or a scandal) suddenly become public.",
+                "example": "since the news broke I've received thousands of wonderful letters",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "(chiefly of an attacking player or team, or of a military force) make a rush or dash in a particular direction.",
+                "example": "Mitchell won possession and broke quickly, allowing Hughes to score",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "broken",
+        "pronunciation": null
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "a man or boy in relation to other sons and daughters of his parents.",
+                "example": "he recognized her from her strong resemblance to her brother",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "exclamation",
+                "definition": "used to express annoyance or surprise.",
+                "example": "oh brother!",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "brother",
+        "pronunciation": "ˈbrəT͟Hər"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "brown colour or pigment.",
+                "example": "the brown of his eyes",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "adjective",
+                "definition": "of a colour produced by mixing red, yellow, and blue, as of dark wood or rich soil.",
+                "example": "an old brown coat",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "brown",
+        "pronunciation": "broun"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "a light and fleeting touch.",
+                "example": "the lightest brush of his lips against her cheek",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "the bushy tail of a fox.",
+                "example": "a fox's brush",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "an implement with a handle and a block of bristles, hair, or wire, used especially for cleaning, applying a liquid or powder to a surface, or arranging the hair.",
+                "example": "a shaving brush",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a drumstick with long wire bristles, used to make a soft hissing sound on drums or cymbals.",
+                "example": null,
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "brush",
+        "pronunciation": "brəSH"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "a marine mollusc that typically has a thin scroll-like shell.",
+                "example": null,
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "used to refer to a good or fortunate situation that is isolated from reality or unlikely to last.",
+                "example": "we both lived in a bubble, the kind provided by occupying a privileged pied-Ã -terre in Greenwich Village",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a transparent domed cover or enclosure.",
+                "example": "piglets born into a sterile bubble",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "(of a liquid) form rising bubbles of gas or air.",
+                "example": "a pot of coffee bubbled away on the stove",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a thin sphere of liquid enclosing air or another gas.",
+                "example": "we'd shake up a piece of soap in a tin of warm water and blow bubbles",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "bubble",
+        "pronunciation": "ˈbəb(ə)l"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "an estimate of income and expenditure for a set period of time.",
+                "example": "keep within the household budget",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "budget",
+        "pronunciation": "ˈbəjət"
+    },
+    {
+        "definitions": [
+            {
+                "type": "verb",
+                "definition": "construct (something) by putting parts or material together.",
+                "example": "the ironworks were built in 1736",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "make or become stronger or more intense.",
+                "example": "we <b>built up</b> confidence in our abilities",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "the proportions of a person's or animal's body.",
+                "example": "she was of medium height and slim build",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "the style or form of construction of something, especially a vehicle.",
+                "example": "the car's high specification and impressive build quality",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "build",
+        "pronunciation": "bild"
+    },
+    {
+        "definitions": [
+            {
+                "type": "verb",
+                "definition": "construct (something) by putting parts or material together.",
+                "example": "the ironworks were built in 1736",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "make or become stronger or more intense.",
+                "example": "we <b>built up</b> confidence in our abilities",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a structure with a roof and walls, such as a house or factory.",
+                "example": "the church is a plain red brick building",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "the action or trade of constructing something.",
+                "example": "the building of motorways",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "building",
+        "pronunciation": "ˈbildiNG"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "a metal projectile for firing from a rifle, revolver, or other small firearm, typically cylindrical and pointed, and sometimes containing an explosive.",
+                "example": "the ball sped across the grass like a bullet",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "bullet",
+        "pronunciation": "ˈbo͝olət"
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "a number of things, typically of the same kind, growing or fastened together.",
+                "example": "<b>a bunch of</b> grapes",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "collect or fasten into a compact group.",
+                "example": "she bunched the needles together",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "bunch",
+        "pronunciation": "bən(t)SH"
+    },
+    {
+        "definitions": [
+            {
+                "type": "verb",
+                "definition": "produce (a CD or DVD) by copying from an original or master copy.",
+                "example": null,
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a small stream.",
+                "example": null,
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "(of a fire) flame or glow while consuming a material such as coal or wood.",
+                "example": "a fire burned and crackled cheerfully in the grate",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "be or cause to be destroyed by fire.",
+                "example": "he watched his restaurant <b>burn to the ground</b>",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "be entirely possessed by (a desire or an emotion).",
+                "example": "Martha was burning with curiosity",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "an injury caused by exposure to heat or flame.",
+                "example": "he was treated in hospital for <b>burns to</b> his hands",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "consumption of a type of fuel as an energy source.",
+                "example": "natural gas produces the cleanest burn of the lot",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "burn",
+        "pronunciation": "bərn"
+    },
+    {
+        "definitions": [
+            {
+                "type": "verb",
+                "definition": "past and past participle of burn1.",
+                "example": null,
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "burnt",
+        "pronunciation": "bərn"
+    },
+    {
+        "definitions": [
+            {
+                "type": "verb",
+                "definition": "separate (continuous stationery) into single sheets.",
+                "example": null,
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "break open or apart suddenly and violently, especially as a result of an impact or internal pressure.",
+                "example": "one of the balloons burst",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "issue suddenly and uncontrollably.",
+                "example": "the words <b>burst from</b> him in an angry rush",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "suddenly begin doing or producing something.",
+                "example": "Sophie <b>burst out laughing</b>",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "an instance of breaking or splitting as a result of internal pressure or puncturing; an explosion.",
+                "example": "the mortar bursts were further away than before",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a sudden brief outbreak.",
+                "example": "a burst of activity",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a period of continuous and intense effort.",
+                "example": "he sailed 474 miles in one 24-hour burst",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "burst",
+        "pronunciation": "bərst"
+    },
+    {
+        "definitions": [
+            {
+                "type": "verb",
+                "definition": "put or hide underground.",
+                "example": "he buried the box in the back garden",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "cover (someone or something) completely.",
+                "example": "the countryside has been buried under layers of concrete",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "bury",
+        "pronunciation": null
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "a shrub or clump of shrubs with stems of moderate length.",
+                "example": "a rose bush",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "(especially in Australia and Africa) wild or uncultivated country.",
+                "example": "they have to spend a night camping in the bush",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a luxuriant growth of thick hair or fur.",
+                "example": "a childish face with a bush of bright hair",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "bush",
+        "pronunciation": null
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "Theatre",
+                "example": null,
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a person's regular occupation, profession, or trade.",
+                "example": "experts who typically conduct their business over the Internet",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "commercial activity.",
+                "example": "firms who want to <b>do business with</b> Japan",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "business",
+        "pronunciation": null
+    },
+    {
+        "definitions": [
+            {
+                "type": "adjective",
+                "definition": "having a great deal to do.",
+                "example": "he had been too busy to enjoy himself",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "adjective",
+                "definition": "excessively detailed or decorated.",
+                "example": "the lavish set designs are a little too busy",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "verb",
+                "definition": "keep oneself occupied.",
+                "example": "she <b>busied herself with</b> her new home",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "noun",
+                "definition": "a police officer.",
+                "example": "I was picked up by the busies for possession",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "busy",
+        "pronunciation": null
+    },
+    {
+        "definitions": [
+            {
+                "type": "conjunction",
+                "definition": "used to indicate the impossibility of anything other than what is being stated.",
+                "example": "one <b>cannot but</b> sympathize",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "conjunction",
+                "definition": "used to introduce a response expressing a feeling such as surprise or anger.",
+                "example": "but that's an incredible saving!",
+                "image_url": null,
+                "emoji": null
+            },
+            {
+                "type": "conjunction",
+                "definition": "used to introduce a phrase or clause contrasting with what has already been mentioned.",
+                "example": "he stumbled but didn't fall",
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "but",
+        "pronunciation": null
+    },
+    {
+        "definitions": [
+            {
+                "type": "noun",
+                "definition": "a pale yellow edible fatty substance made by churning cream and used as a spread or in cooking.",
+                "example": null,
+                "image_url": null,
+                "emoji": null
+            }
+        ],
+        "word": "butter",
+        "pronunciation": "ˈbədər"
+    }
+]

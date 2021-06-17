@@ -1,11 +1,6 @@
-
-import Cors from 'cors'
 const gse = require("general-search-engine")
-const cors = Cors({
-    methods: ['GET', 'POST'],
-})
 export default async (req, res) => {
-    
+
     try {
         let petition = await new gse.search()
             .setType("image")

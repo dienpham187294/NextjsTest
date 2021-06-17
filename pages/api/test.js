@@ -22,16 +22,21 @@ function runMiddleware(req, res, fn) {
 async function handler(req, res) {
     // Run the middleware
     await runMiddleware(req, res, cors)
+    const { id } = req.query;
 
-    try {
-        let petition = await new gse.search()
-            .setType("image")
-            .setQuery(req.body.Word).run()
+    await new gse.search()
+        .setType("image")
+        .setQuery(id).run()
+        .then(function (result) {
+            res.status(200).json({ success: true, data: result })
+        })
+        .catch(function (error) {
+            res.status(200).json({ success: true, data: error })
+        })
 
-        res.status(200).json({ success: true, data: petition })
-    } catch (error) {
-        res.status(400).json({ success: false })
-    }
+
+    // .catch (res.status(400).json({ success: false }))
+
 }
 
 export default handler

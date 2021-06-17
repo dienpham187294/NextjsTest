@@ -23,6 +23,7 @@ function Manager() {
     const [MessageToRead, SET_MessageToRead] = useState(["", 1])
     const [Word, SET_Word] = useState("");
     const [MessageListen, SET_MessageListen] = useState("")
+
     return (
 
         <div className="container">
@@ -41,15 +42,11 @@ function Manager() {
                 To:    <input type="number" defaultValue="20" id="end" />
                 <input
                     onClick={() => {
-
                         let beginNumber = document.getElementById("begin").value;
                         let endNumber = document.getElementById("end").value;
                         console.log(1, beginNumber > 0, endNumber - beginNumber > 0)
                         if (beginNumber > 0 && endNumber - beginNumber >= 0) {
-
-
                             let arr = Jsonfile.slice(beginNumber - 1, endNumber);
-                            console.log(arr)
                             SET_Data(arr)
                         }
                     }}
