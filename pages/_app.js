@@ -12,7 +12,18 @@ let ArrHoldLinkBaiHoc = [
 ]
 let ArrHoldLinkThucHanh = [
   { "link": "thuchanh/lam-quen-tu-vung", "name": "Làm quen từ vựng" },
-  { "link": "thuchanh/lam-quen-tu-vung-v1-0-1", "name": "Thực hành 3000+ từ vựng thông dụng nhất" },
+  { "link": "thuchanh/thuc-hanh-3000-tu-vung-thong-dung-nhat", "name": "Thực hành 3000+ từ vựng thông dụng nhất" },
+  { "link": "thuchanh/thuc-hanh-3000-tu-vung-thong-dung-nhat", "name": "Thực hành từ vựng không giới hạn với CustomFile" },
+  { "link": "thuchanh/thuc-hanh-3000-tu-vung-thong-dung-nhat", "name": "Thực hành 23+ chủ đề với 800+ từ vựng với hình ảnh minh họa" },
+  { "link": "thuchanh/thuc-hanh-3000-tu-vung-thong-dung-nhat", "name": "Thực hành từ vựng với hình ảnh minh họa không giới hạn với CustomFile" },
+  { "link": "thuchanh/thuc-hanh-3000-tu-vung-thong-dung-nhat", "name": "Thực hành 800+ câu giao tiếp thông dụng nhất" },
+  { "link": "thuchanh/thuc-hanh-3000-tu-vung-thong-dung-nhat", "name": "Thực hành các câu giao tiếp không giới hạn với CustomFile" },
+  { "link": "thuchanh/thuc-hanh-3000-tu-vung-thong-dung-nhat", "name": "Thực hành 100+ bài hội thoại giao tiếp thông dụng nhất" },
+  { "link": "thuchanh/thuc-hanh-3000-tu-vung-thong-dung-nhat", "name": "Thực hành hội thoại giao tiếp không giới hạn với CustomFile" },
+  { "link": "thuchanh/thuc-hanh-3000-tu-vung-thong-dung-nhat", "name": "Thực hành 20+ trò chơi giao tiếp" },
+  { "link": "thuchanh/thuc-hanh-3000-tu-vung-thong-dung-nhat", "name": "Thực hành trò chơi giao tiếp không giới hạn với CustomFile" },
+  { "link": "thuchanh/thuc-hanh-3000-tu-vung-thong-dung-nhat", "name": "Thực hành đọc 50+ mẫu truyện, sách hay" },
+  { "link": "thuchanh/thuc-hanh-3000-tu-vung-thong-dung-nhat", "name": "Thực hành đọc truyện, sách hay không giới hạn với CustomFile" },
   { "link": "thuchanh/giao-tiep-cap-do-1", "name": "Thực hành giao tiếp căn bản với người máy AI" },
   { "link": "thuchanh/thuc-hanh-doc-sach-thanh-tieng", "name": "Thực hành đọc với công nghệ nhận diện giọng nói" },
   { "link": "thuchanh/thuc-hanh-nghe-va-lap-lai", "name": "Thực hành nghe và lặp lại các câu" },
@@ -71,7 +82,7 @@ function MyApp({ Component, pageProps }) {
                     < a className="dropdown-item" >{e.name}</a>
                   </Link>
                 )}
-x
+                x
               </div>
             </li>
 
