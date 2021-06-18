@@ -14,7 +14,7 @@ let synth;
 function ArrOfPeopeAppear_ReactJSX(props) {
 
     // const [MessagetoRead, SET_MessagetoRead] = useState(null)
-    const [Info_StrickAnwers_Reactdata, SET_Info_StrickAnwers_Reactdata] = useState()
+    const [Info_StrickAnwers_Reactdata, SET_Info_StrickAnwers_Reactdata] = useState(["hi how are you"])
     const [Info_Icon_Reactdata, SET_Info_Icon_Reactdata] = useState("")
     const [Info_Avatar_Reactdata, SET_Avatar_Reactdata] = useState(null)
     const [Info_ToSunmit_Reactdata, SET_Info_ToSunmit_Reactdata] = useState(null);
@@ -27,7 +27,10 @@ function ArrOfPeopeAppear_ReactJSX(props) {
 
     const [ShowHint, SET_ShowHint] = useState(true);
 
+    useEffect(() => {
+        props.SET_Data_Commands(Info_StrickAnwers_Reactdata)
 
+    }, [Info_StrickAnwers_Reactdata])
 
     useEffect(() => {
         if (flag) {
@@ -318,7 +321,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
 
 
                             <hr />
-                        Score: {Score}
+                            Score: {Score}
                             <hr />
                             <button className="btn btn-sm btn-outline-danger" onClick={() => Outof_Show_OnePeopeAppear_ReactData()}>Get out!</button>
                             <br />

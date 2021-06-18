@@ -1,6 +1,6 @@
 
 import { useEffect, useState } from "react"
-import Dictaphone from "../../../pages/helpers/Regcognition"
+import Dictaphone from "../../../pages/helpers/RegcognitionV1-0-1AI"
 import ArrOfPeopeAppear_ReactJSX from "./Gameplay/ArrOfPeopeAppear_ReactJSX"
 
 
@@ -18,6 +18,7 @@ function GamePlay(props) {
     const [ALLTable_ReactData] = useState([]);
     const [Info_message, SET_Info_message] = useState(null)
 
+    const [Data_Commands, SET_Data_Commands] = useState(["hi how are you"])
 
 
     return (
@@ -25,7 +26,14 @@ function GamePlay(props) {
             <div className="row">
                 <div className="col-md-2 sm-12" style={{ maxHeight: "300px", overflow: "auto" }}>
                     <Dictaphone
-                        SET_Info_message={SET_Info_message}
+                        Data={Data_Commands}
+                    />
+                    <input
+                        style={{ display: "none" }}
+                        onClick={() => {
+                            SET_Info_message($("#messageRes").val())
+                        }}
+                        type="button" id="messageResBtn"
                     />
                 </div>
                 <div className="col-md-9 sm-12">{
@@ -36,7 +44,7 @@ function GamePlay(props) {
                             SET_Info_message={SET_Info_message}
                             ALLTable_ReactData={ALLTable_ReactData}
                             Data_TableTool={props.Data_TableTool}
-
+                            SET_Data_Commands={SET_Data_Commands}
                         /> : ""}
                 </div>
 

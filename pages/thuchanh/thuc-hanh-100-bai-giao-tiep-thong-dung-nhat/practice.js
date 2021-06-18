@@ -20,27 +20,6 @@ function PracticeDiv(props) {
         SET_AlertChange(C => C + 1)
     }, [props.Data])
 
-    // useEffect(() => {
-    //     let inter = setInterval(() => {
-    //         let i = parseInt($("#numberID").val()) - 1;
-
-    //         if (i === -1) {
-    //             // ReadMessage(GetFinal(dataTotal)[GetFinal(dataJustOne)])
-    //             if (GetFinal(dataJustOne) + 1 < GetFinal(dataTotal).length) {
-    //                 dataJustOne.push(GetFinal(dataJustOne) + 2)
-    //                 props.SET_Data_Commands(GetFinal(dataTotal)[GetFinal(dataJustOne)])
-    //                 SetAlert(SET_AlertChange);
-    //                 i = 15;
-    //             }
-
-    //         }
-    //         $("#numberID").val(i)
-    //     }, 1000)
-    //     return () => {
-    //         clearTimeout(inter);
-    //     };
-    // })
-
     return (
         <div style={{
             position: "fixed",
