@@ -76,7 +76,7 @@ function PracticeDiv(props) {
             </div>
 
 
-            {JSON.stringify(GetFinal(dataTotal)[GetFinal(dataJustOne)])}
+            {/* {JSON.stringify(GetFinal(dataTotal)[GetFinal(dataJustOne)])} */}
             <hr />
             <b>Điểm:</b>  {GetFinal(Score)}
             <hr />

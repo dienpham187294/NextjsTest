@@ -1,10 +1,7 @@
 import { useState } from "react";
 import Read from "../../helpers/Read_ReactSpeech"
-// import Dictionary from "../../helpers/Dictionary"
-// import ImageSearch from "../../helpers/ImageSearch"
-// import Dictaphone from "../../helpers/RegcognitionV1-0-1"
+import ReadMessage from "../../../util/ReadMessage";
 import tuvung800cau from "../../../util/800cau"
-// import GetLongest from "../../../util/GetLongest"
 import PracticeDiv from "./practice"
 
 
@@ -63,10 +60,10 @@ function Manager() {
             {Show_chude()}
 
             {Practice ?
-                <PracticeDiv Data={Data} Data_Commands={Data_Commands} SET_MessageToRead={SET_MessageToRead} SET_Practice={SET_Practice} />
+                <PracticeDiv Data={Data} Data_Commands={Data_Commands} SET_Data_Commands={SET_Data_Commands} SET_Practice={SET_Practice} />
                 : ""}
 
-            <Read MessageToRead={MessageToRead} />
+            <Read />
 
 
         </div>
@@ -83,10 +80,7 @@ function Manager() {
                         {Data.map((e, i) =>
                             <tr
                                 onClick={() => {
-                                    SET_MessageToRead([e.EN, 2]);
-                                    setTimeout(() => {
-                                        SET_MessageToRead(["", 2]);
-                                    }, 100)
+                                    ReadMessage(e.EN, 2)
                                 }}
                                 style={{
                                     cursor: "pointer"

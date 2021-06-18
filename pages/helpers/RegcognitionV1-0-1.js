@@ -40,7 +40,7 @@ function Dictaphone({ Data }) {
         >Click to talk</button>
         <input type="text" id="messageRes" defaultValue="" />
         {transcript}
-        {JSON.stringify(Data)}
+        {/* {JSON.stringify(Data)} */}
     </div>
     );
 };
