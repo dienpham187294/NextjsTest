@@ -1,16 +1,13 @@
 import { useState } from "react";
 import Read from "../../helpers/Read_ReactSpeech"
-// import Dictionary from "../../helpers/Dictionary"
-// import ImageSearch from "../../helpers/ImageSearch"
-// import Dictaphone from "../../helpers/RegcognitionV1-0-1"
+import ReadMessage from "../../../util/ReadMessage";
 import baigiaotiep from "../../../util/100baigiaotiep"
-// import GetLongest from "../../../util/GetLongest"
+
 import PracticeDiv from "./practice"
 
 
 function Manager() {
     const [Data, SET_Data] = useState(baigiaotiep[0])
-    const [MessageToRead, SET_MessageToRead] = useState(["", 1])
     const [Practice, SET_Practice] = useState(false)
     const [Data_Commands, SET_Data_Commands] = useState([])
 
@@ -35,8 +32,8 @@ function Manager() {
                     className="btn btn-outline-primary ml-1"
                     onClick={() => {
                         let e = document.getElementById("chonchude").value;
-                        if (e < baigiaotiep.length) {
-                            SET_Data(baigiaotiep[e])
+                        if (e - 1 < baigiaotiep.length) {
+                            SET_Data(baigiaotiep[e - 1])
                         }
                     }}
                     type="button" defaultValue="Chọn"
@@ -45,27 +42,19 @@ function Manager() {
 
                 <input
                     onClick={() => {
-                        let arrTemp = [];
-                        Data.lession[0].forEach((e, i) => {
-                            if (i % 2 === 1) {
-                                arrTemp.push(e)
-                            }
-                        })
-                        
-                        SET_Data_Commands(arrTemp)
                         SET_Practice(true)
                     }}
-                    className="btn btn-outline-primary ml-1" type="button" defaultValue="Thực hành"
+                    className="btn btn-outline-primary ml-1" type="button" defaultValue="Thực hành đọc sau"
                 />
             </div>
 
             {Show_chude()}
 
             {Practice ?
-                <PracticeDiv Data={Data} Data_Commands={Data_Commands} SET_MessageToRead={SET_MessageToRead} SET_Practice={SET_Practice} />
+                <PracticeDiv Data={Data} Data_Commands={Data_Commands} SET_Data_Commands={SET_Data_Commands} SET_Practice={SET_Practice} />
                 : ""}
 
-            <Read MessageToRead={MessageToRead} />
+            <Read />
 
 
         </div>
@@ -80,18 +69,15 @@ function Manager() {
                 <h5>{Data.tille}</h5>
                 <hr />
                 <div>
-                    {Data.lession[0].map((e, i) =>
-                        <>
+                    {Data.lession.map((e, i) =>
+                        <div key={i}>
                             <p
                                 onClick={() => {
-                                    SET_MessageToRead([e, 2]);
-                                    setTimeout(() => {
-                                        SET_MessageToRead(["", 2]);
-                                    }, 100)
+                                    ReadMessage(e, 2)
                                 }}
                                 style={{ cursor: "pointer" }}
                             >{i % 2 !== 1 ? <b>{e}</b> : e}</p>
-                        </>
+                        </div>
                     )}
                 </div>
                 <hr />
