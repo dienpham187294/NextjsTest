@@ -3,13 +3,13 @@ import Read from "../../helpers/Read_ReactSpeech"
 // import Dictionary from "../../helpers/Dictionary"
 // import ImageSearch from "../../helpers/ImageSearch"
 // import Dictaphone from "../../helpers/RegcognitionV1-0-1"
-import tuvung800cau from "../../../util/800cau"
+import baigiaotiep from "../../../util/100baigiaotiep"
 // import GetLongest from "../../../util/GetLongest"
 import PracticeDiv from "./practice"
 
 
 function Manager() {
-    const [Data, SET_Data] = useState(tuvung800cau.slice(0, 20))
+    const [Data, SET_Data] = useState(baigiaotiep[0])
     const [MessageToRead, SET_MessageToRead] = useState(["", 1])
     const [Practice, SET_Practice] = useState(false)
     const [Data_Commands, SET_Data_Commands] = useState([])
@@ -23,36 +23,35 @@ function Manager() {
                 <p>
                     <b>
                         <i>
-                            Thực hành 23+ chủ đề với 800+ từ vựng với hình ảnh sinh động
+                            Thực hành 100 đoạn giao tiếp thông dụng
                         </i>
                     </b>
                 </p>
             </div>
 
             <div>
-                From:    <input type="number" defaultValue="1" id="begin" />
-                To:    <input type="number" defaultValue="20" id="end" />
+                Chọn chủ đề:    <input id="chonchude" type="number" defaultValue="1" />
                 <input
                     className="btn btn-outline-primary ml-1"
                     onClick={() => {
-                        let beginNumber = document.getElementById("begin").value;
-                        let endNumber = document.getElementById("end").value;
-                        console.log(1, beginNumber > 0, endNumber - beginNumber > 0)
-                        if (beginNumber > 0 && endNumber - beginNumber >= 0) {
-                            let arr = tuvung800cau.slice(beginNumber - 1, endNumber);
-                            SET_Data(arr)
+                        let e = document.getElementById("chonchude").value;
+                        if (e < baigiaotiep.length) {
+                            SET_Data(baigiaotiep[e])
                         }
                     }}
-                    type="button" defaultValue="Search"
+                    type="button" defaultValue="Chọn"
 
                 />
 
                 <input
                     onClick={() => {
                         let arrTemp = [];
-                        Data.forEach(e => {
-                            arrTemp.push(e.EN)
+                        Data.lession[0].forEach((e, i) => {
+                            if (i % 2 === 1) {
+                                arrTemp.push(e)
+                            }
                         })
+                        
                         SET_Data_Commands(arrTemp)
                         SET_Practice(true)
                     }}
@@ -77,27 +76,25 @@ function Manager() {
     function Show_chude() {
         return (
             <div>
-
-                <table className="table table-striped">
-                    <tbody>
-                        {Data.map((e, i) =>
-                            <tr
+                <hr />
+                <h5>{Data.tille}</h5>
+                <hr />
+                <div>
+                    {Data.lession[0].map((e, i) =>
+                        <>
+                            <p
                                 onClick={() => {
-                                    SET_MessageToRead([e.EN, 2]);
+                                    SET_MessageToRead([e, 2]);
                                     setTimeout(() => {
                                         SET_MessageToRead(["", 2]);
                                     }, 100)
                                 }}
-                                style={{
-                                    cursor: "pointer"
-                                }}
-                                key={i}>
-                                <td>{e.EN}</td>
-                                <td>{e.VN}</td>
-                            </tr>
-                        )}
-                    </tbody>
-                </table>
+                                style={{ cursor: "pointer" }}
+                            >{i % 2 !== 1 ? <b>{e}</b> : e}</p>
+                        </>
+                    )}
+                </div>
+                <hr />
             </div>
         )
     }

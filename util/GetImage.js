@@ -2,7 +2,7 @@ const GetInfo = async (SET_Data, Word) => {
     //http://localhost:3000/api
     //https://www.englishtool.co/api
     try {
-        const res = await fetch("https://www.englishtool.co/api/" + Word, {
+        const res = await fetch("http://localhost:3000/api/" + Word, {
             method: 'GET',
             headers: {
                 "Accept": "application/json",

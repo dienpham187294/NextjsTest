@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import dynamic from 'next/dynamic'
+import { async } from 'regenerator-runtime';
 const Speech = dynamic(
     () => {
         return import('react-speech')
@@ -10,52 +11,45 @@ const Speech = dynamic(
 let arrText = ["Hi"];
 let arrVoice = ["Google UK English Female"];
 function Read(props) {
-    // const [MessageToRead, SET_MessageToRead] = useState("I have all properties set to their default")
-    const [Pitch, SET_Pitch] = useState(1)
-    const [Rate, SET_Rate] = useState(1)
-    const [Volume, SET_Volume] = useState(1)
-    // const [Voice, SET_Voice] = useState("Google UK English Female")
-    //Google UK English Male
-
+    const [Alert, SET_Alert] = useState(0)
     useEffect(() => {
-     
-        try {
-            if (props.MessageToRead[0] !== "") {
-                arrText.push(props.MessageToRead[0]);
-                if (props.MessageToRead[1] === 1) {
-                    arrVoice.push("Google UK English Female");
-                } else {
-                    arrVoice.push("Google UK English Male");
-                }
-                setTimeout(() => {
-                    try {
-                        document.getElementsByClassName("rs-play")[0].click()
-                    } catch (error) {
-                        console.log(1)
-                    }
 
-                }, 100)
-
-            }
-        } catch (error) {
-            console.log("")
-        }
-    }, [props.MessageToRead])
+    }, [Alert])
     return (
-        <>
+        <div style={{display:"none"}}>
+
+            <input type="text" id="SpeechText" defaultValue="hi" />
+            <input type="text" id="SpeechVoice" defaultValue="Google UK English Female" />
+            <input
+                onClick={() => {
+                    arrText.push($("#SpeechText").val());
+                
+
+                }}
+                type="button" id="SpeechTextBtn"
+            />
+            <input
+                onClick={() => {
+                    arrVoice.push($("#SpeechVoice").val());
+                   
+                    SET_Alert(A => A + 1)
+                }}
+                type="button" id="SpeechVoiceBtn"
+            />
             <div id="test" style={{ display: "none" }}>
                 <Speech
                     text={arrText[arrText.length - 1]}
-                    pitch={Pitch}
-                    rate={Rate}
-                    volume={Volume}
+                    pitch={1}
+                    rate={1}
+                    volume={1}
                     lang="en-GB"
                     voice={arrVoice[arrVoice.length - 1]}
                     textAsButton={true}
                     displayText="Hello"
                 />
             </div>
-        </>
+        </div>
     )
 }
 export default Read
+

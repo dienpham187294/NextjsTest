@@ -15,15 +15,15 @@ let ArrHoldLinkThucHanh = [
   { "link": "thuchanh/thuc-hanh-3000-tu-vung-thong-dung-nhat", "name": "Thực hành 3000+ từ vựng thông dụng nhất" },
   { "link": "thuchanh/thuc-hanh-3000-tu-vung-thong-dung-nhat-khong-gioi-han-voi-customfile", "name": "Thực hành từ vựng không giới hạn với CustomFile" },
   { "link": "thuchanh/thuc-hanh-23-chu-de-800-tu-vung-voi-hinh-anh", "name": "Thực hành 23+ chủ đề với 800+ từ vựng với hình ảnh minh họa" },
-  { "link": "thuchanh/thuc-hanh-3000-tu-vung-thong-dung-nhat", "name": "Thực hành từ vựng với hình ảnh minh họa không giới hạn với CustomFile" },
+  { "link": "thuchanh/#", "name": "Thực hành từ vựng với hình ảnh minh họa không giới hạn với CustomFile" },
   { "link": "thuchanh/thuc-hanh-800-cau-giao-tiep-thong-dung", "name": "Thực hành 800+ câu giao tiếp thông dụng nhất" },
-  { "link": "thuchanh/thuc-hanh-3000-tu-vung-thong-dung-nhat", "name": "Thực hành các câu giao tiếp không giới hạn với CustomFile" },
-  { "link": "thuchanh/thuc-hanh-3000-tu-vung-thong-dung-nhat", "name": "Thực hành 100+ bài hội thoại giao tiếp thông dụng nhất" },
-  { "link": "thuchanh/thuc-hanh-3000-tu-vung-thong-dung-nhat", "name": "Thực hành hội thoại giao tiếp không giới hạn với CustomFile" },
+  { "link": "thuchanh/#", "name": "Thực hành các câu giao tiếp không giới hạn với CustomFile" },
+  { "link": "thuchanh/thuc-hanh-100-bai-giao-tiep-thong-dung-nhat", "name": "Thực hành 100+ bài hội thoại giao tiếp thông dụng nhất" },
+  { "link": "thuchanh/#", "name": "Thực hành hội thoại giao tiếp không giới hạn với CustomFile" },
   { "link": "thuchanh/thuc-hanh-3000-tu-vung-thong-dung-nhat", "name": "Thực hành 20+ trò chơi giao tiếp với người máy AI" },
-  { "link": "thuchanh/thuc-hanh-3000-tu-vung-thong-dung-nhat", "name": "Thực hành trò chơi giao tiếp với người máy AI không giới hạn với CustomFile" },
-  { "link": "thuchanh/thuc-hanh-3000-tu-vung-thong-dung-nhat", "name": "Thực hành đọc 50+ mẫu truyện, sách hay" },
-  { "link": "thuchanh/thuc-hanh-3000-tu-vung-thong-dung-nhat", "name": "Thực hành đọc truyện, sách hay không giới hạn với CustomFile" },
+  { "link": "thuchanh/#", "name": "Thực hành trò chơi giao tiếp với người máy AI không giới hạn với CustomFile" },
+  { "link": "thuchanh/#", "name": "Thực hành đọc 50+ mẫu truyện, sách hay" },
+  { "link": "thuchanh/#", "name": "Thực hành đọc truyện, sách hay không giới hạn với CustomFile" },
   // { "link": "thuchanh/giao-tiep-cap-do-1", "name": "Thực hành giao tiếp căn bản với người máy AI" },
   // { "link": "thuchanh/thuc-hanh-doc-sach-thanh-tieng", "name": "Thực hành đọc với công nghệ nhận diện giọng nói" },
   // { "link": "thuchanh/thuc-hanh-nghe-va-lap-lai", "name": "Thực hành nghe và lặp lại các câu" },
@@ -82,7 +82,7 @@ function MyApp({ Component, pageProps }) {
                     < a className="dropdown-item" >{e.name}</a>
                   </Link>
                 )}
-                x
+                
               </div>
             </li>
 
@@ -122,12 +122,12 @@ function MyApp({ Component, pageProps }) {
 
 
     <footer className="mt-5 text-center">
-      <hr />
-      <span><i>Học nhiều thực hành ít không bằng học ít thực hành nhiều.</i> </span>
+      {/* <hr />
+      <span><i>Học nhiều thực hành ít không bằng học ít thực hành nhiều.</i> </span> */}
       <br />
       <span>Powered by Ericpham</span>
-      <hr />
-      <a href="https://app-ericpham.herokuapp.com/">Link dự phòng</a>
+      {/* <hr />
+      <a href="https://app-ericpham.herokuapp.com/">Link dự phòng</a> */}
     </footer>
   </>)
 

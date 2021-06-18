@@ -6,9 +6,9 @@ import Dictaphone from "../../helpers/RegcognitionV1-0-1"
 import Jsonfile from "../../../util/Testfuntion"
 import GetLongest from "../../../util/GetLongest"
 import PracticeDiv from "./practice"
+import ReadMessage from "../../../util/ReadMessage"
 
-
-let ArrHold_WordDetail = [["hello", "null", "null", "null"]]
+let ArrHold = [["hello", "null", "null", "null"]]
 
 function Manager() {
 
@@ -17,7 +17,6 @@ function Manager() {
     const [Page_detail, SET_Page_detail] = useState(1)
 
 
-    const [MessageToRead, SET_MessageToRead] = useState(["", 1])
     const [Word, SET_Word] = useState("");
     const [MessageListen, SET_MessageListen] = useState("")
 
@@ -45,7 +44,6 @@ function Manager() {
                     onClick={() => {
                         let beginNumber = document.getElementById("begin").value;
                         let endNumber = document.getElementById("end").value;
-                        console.log(1, beginNumber > 0, endNumber - beginNumber > 0)
                         if (beginNumber > 0 && endNumber - beginNumber >= 0) {
                             let arr = Jsonfile.slice(beginNumber - 1, endNumber);
                             SET_Data(arr)
@@ -58,13 +56,11 @@ function Manager() {
                 <input
                     className="btn btn-outline-primary ml-1" type="button" defaultValue="Thực hành"
                     onClick={() => {
-                        let arr = [];
                         let arrIn = [];
                         Data.forEach(e => {
                             arrIn.push(e[0])
                         });
-                        arr.push(arrIn);
-                        SET_Data_Commands(arr)
+                        SET_Data_Commands(arrIn)
                         SET_Practice(true)
                     }}
 
@@ -73,7 +69,7 @@ function Manager() {
 
             {Show_3000Words()}
             {Practice ?
-                <PracticeDiv SET_Practice={SET_Practice} Data_Commands={Data_Commands} Data={Data} SET_MessageToRead={SET_MessageToRead} />
+                <PracticeDiv SET_Practice={SET_Practice} SET_Data_Commands={SET_Data_Commands} Data_Commands={Data_Commands} Data={Data} />
                 : ""}
 
             {Detail
@@ -117,19 +113,13 @@ function Manager() {
                             className="btn btn-sm btn-outline-primary">Tập phát âm</button>
                         <button
                             onClick={() => {
-                                SET_MessageToRead([ArrHold_WordDetail[ArrHold_WordDetail.length - 1][0], 1]);
-                                setTimeout(() => {
-                                    SET_MessageToRead(["", 1]);
-                                }, 100)
+                                ReadMessage(ArrHold[ArrHold.length - 1][0], 1)
                             }}
 
                             className="btn btn-sm btn-outline-info">Nghe giọng nữ</button>
                         <button
                             onClick={() => {
-                                SET_MessageToRead([ArrHold_WordDetail[ArrHold_WordDetail.length - 1][0], 2]);
-                                setTimeout(() => {
-                                    SET_MessageToRead(["", 1]);
-                                }, 100)
+                                ReadMessage(ArrHold[ArrHold.length - 1][0], 2)
                             }}
 
                             className="btn btn-sm btn-outline-info">Nghe giọng nam</button>
@@ -141,14 +131,14 @@ function Manager() {
                     </div>
                     {Page_detail === 1 ?
                         <div className="text-center">
-                            <h1>{ArrHold_WordDetail[ArrHold_WordDetail.length - 1][0]}</h1>
+                            <h1>{ArrHold[ArrHold.length - 1][0]}</h1>
                             <p>
-                                {ArrHold_WordDetail[ArrHold_WordDetail.length - 1][1]}
+                                {ArrHold[ArrHold.length - 1][1]}
                             </p>
                             <p>
-                                {ArrHold_WordDetail[ArrHold_WordDetail.length - 1][2]}
+                                {ArrHold[ArrHold.length - 1][2]}
                             </p> <p>
-                                {ArrHold_WordDetail[ArrHold_WordDetail.length - 1][3]}
+                                {ArrHold[ArrHold.length - 1][3]}
                             </p>
 
                         </div>
@@ -161,7 +151,7 @@ function Manager() {
                                         <Dictaphone
                                             Data={
                                                 [
-                                                    [ArrHold_WordDetail[ArrHold_WordDetail.length - 1][0], "how are you"]
+                                                    [ArrHold[ArrHold.length - 1][0], "how are you"]
                                                 ]
                                             }
                                             SET_MessageListen={SET_MessageListen}
@@ -170,7 +160,11 @@ function Manager() {
                                     : ""}
                 </div>
                 : ""}
-            <Read MessageToRead={MessageToRead} />
+
+            <div>
+                <Read />
+            </div>
+
         </div>
     )
 
@@ -191,7 +185,7 @@ function Manager() {
                             <td>
                                 <input
                                     onClick={() => {
-                                        ArrHold_WordDetail.push(e);
+                                        ArrHold.push(e);
                                         SET_Word(e[0])
                                         SET_Detail(true);
                                     }}
