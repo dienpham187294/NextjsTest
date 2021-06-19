@@ -59,9 +59,18 @@ function RandomInt(min, max) {
 
 
 function ConvertFileToObject(GameData) {
-    let Numberofelementwanttopick = 30;
+    let Numberofelementwanttopick
+    let Numberpickeachone
+    if (GameData.length <= 30) {
+        Numberofelementwanttopick = 30;
+        Numberpickeachone = Math.floor(Numberofelementwanttopick / NumberofChance)
+    } else {
+        Numberofelementwanttopick = GameData.length;
+        Numberpickeachone = 1
+    }
+
     let NumberofChance = GameData.length;
-    let Numberpickeachone = Math.floor(Numberofelementwanttopick / NumberofChance)
+
     let ARRRES = []
     GameData.forEach(e => {
         let i = e.DataInput.length - Numberpickeachone - 1;
