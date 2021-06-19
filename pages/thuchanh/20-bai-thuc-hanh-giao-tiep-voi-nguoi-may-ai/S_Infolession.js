@@ -57,7 +57,7 @@ function InfoLession(props) {
 
     return (
         <>
-            <div style={{ marginLeft: "50%", transform: "translateX(-50%)", border: "1px solid black", borderRadius: "10px", padding: "20px", marginTop: "20px", marginBottom: "50px" }}>
+            <div style={{ border: "1px solid black", borderRadius: "10px", padding: "20px", marginTop: "20px", marginBottom: "50px" }}>
 
                 <h1>{props.Data[0].nameoflession}</h1>
                 <p>Mô tả: {props.Data[0].description}</p>
