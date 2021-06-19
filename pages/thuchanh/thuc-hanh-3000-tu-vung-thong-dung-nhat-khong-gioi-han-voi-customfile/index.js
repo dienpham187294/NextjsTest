@@ -3,7 +3,7 @@ import Read from "../../helpers/Read_ReactSpeech"
 import Dictionary from "../../helpers/Dictionary"
 import ImageSearch from "../../helpers/ImageSearch"
 import Dictaphone from "../../helpers/RegcognitionV1-0-1"
-import Jsonfile from "../../../util/Testfuntion"
+// import Jsonfile from "../../../util/Testfuntion"
 import GetLongest from "../../../util/GetLongest"
 import PracticeDiv from "./practice"
 
@@ -12,7 +12,7 @@ let ArrHold_WordDetail = [["hello", "null", "null", "null"]]
 
 function Manager() {
 
-    const [Data, SET_Data] = useState(Jsonfile.slice(0, 20))
+    const [Data, SET_Data] = useState([])
     const [Detail, SET_Detail] = useState(false)
     const [Page_detail, SET_Page_detail] = useState(1)
 
@@ -31,12 +31,14 @@ function Manager() {
                 <p>
                     <b>
                         <i>
-                            Thực hành 3000+ từ vựng thông dụng nhất
+                            Thực hành từ vựng không giới hạn với Customfile
                         </i>
                     </b>
                 </p>
             </div>
-
+            <hr />
+            {UpLoadFile()}
+            <hr />
             <div>
                 From:    <input type="number" defaultValue="1" id="begin" />
                 To:    <input type="number" defaultValue="20" id="end" />
@@ -209,4 +211,39 @@ function Manager() {
 
 
 export default Manager
+
+function UpLoadFile() {
+    return (
+        <div>
+            <div>
+                <input className="form-control" onChange={e => {
+                    try {
+                        // var uploadedFile = e.currentTarget.files[0];
+
+                        // if (uploadedFile.name.indexOf(".ericpham") > -1) {
+                        //     // console.log(uploadedFile.name)
+                        //     var readFile = new FileReader();
+                        //     readFile.onload = function (e) {
+                        //         var contents = e.target.result;
+
+                        //         var json = JSON.parse(contents);
+                        //         let arrRead = []
+                        //         json.Read.forEach(e => {
+                        //             arrRead.push({ "text": e, "status": false })
+                        //         });
+                        //         props.SET_LamQuenData({ "Read": arrRead, "Listen": json.Listen })
+                        //     };
+                        //     readFile.readAsText(uploadedFile);
+                        // } else {
+                        //     console.log("Failed to load file");
+                        // }
+                    } catch (error) {
+                        console.log("Failed to load file");
+                    }
+                }} type="file" />
+            </div>
+
+        </div>
+    )
+}
 

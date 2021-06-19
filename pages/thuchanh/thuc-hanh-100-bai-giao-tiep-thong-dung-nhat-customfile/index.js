@@ -1,13 +1,11 @@
 import { useState } from "react";
 import Read from "../../helpers/Read_ReactSpeech"
 import ReadMessage from "../../../util/ReadMessage";
-import tuvung800cau from "../../../util/800cau"
 import PracticeDiv from "./practice"
 
 
 function Manager() {
-    const [Data, SET_Data] = useState(tuvung800cau.slice(0, 20))
-    const [MessageToRead, SET_MessageToRead] = useState(["", 1])
+    const [Data, SET_Data] = useState([])
     const [Practice, SET_Practice] = useState(false)
     const [Data_Commands, SET_Data_Commands] = useState([])
 
@@ -20,7 +18,7 @@ function Manager() {
                 <p>
                     <b>
                         <i>
-                            Thực hành 800+ câu giao tiếp thông dụng nhất
+                            Thực hành các đoạn giao tiếp thông dụng với CustomFile
                         </i>
                     </b>
                 </p>
@@ -29,33 +27,24 @@ function Manager() {
             {UpLoadFile()}
             <hr />
             <div>
-                From:    <input type="number" defaultValue="1" id="begin" />
-                To:    <input type="number" defaultValue="20" id="end" />
+                Chọn chủ đề:    <input id="chonchude" type="number" defaultValue="1" />
                 <input
                     className="btn btn-outline-primary ml-1"
                     onClick={() => {
-                        let beginNumber = document.getElementById("begin").value;
-                        let endNumber = document.getElementById("end").value;
-                        console.log(1, beginNumber > 0, endNumber - beginNumber > 0)
-                        if (beginNumber > 0 && endNumber - beginNumber >= 0) {
-                            let arr = tuvung800cau.slice(beginNumber - 1, endNumber);
-                            SET_Data(arr)
+                        let e = document.getElementById("chonchude").value;
+                        if (e - 1 < baigiaotiep.length) {
+                            SET_Data(baigiaotiep[e - 1])
                         }
                     }}
-                    type="button" defaultValue="Search"
+                    type="button" defaultValue="Chọn"
 
                 />
 
                 <input
                     onClick={() => {
-                        let arrTemp = [];
-                        Data.forEach(e => {
-                            arrTemp.push(e.EN)
-                        })
-                        SET_Data_Commands(arrTemp)
                         SET_Practice(true)
                     }}
-                    className="btn btn-outline-primary ml-1" type="button" defaultValue="Thực hành"
+                    className="btn btn-outline-primary ml-1" type="button" defaultValue="Thực hành đọc sau"
                 />
             </div>
 
@@ -74,28 +63,32 @@ function Manager() {
 
 
     function Show_chude() {
-        return (
-            <div>
 
-                <table className="table table-striped">
-                    <tbody>
-                        {Data.map((e, i) =>
-                            <tr
-                                onClick={() => {
-                                    ReadMessage(e.EN, 2)
-                                }}
-                                style={{
-                                    cursor: "pointer"
-                                }}
-                                key={i}>
-                                <td>{e.EN}</td>
-                                <td>{e.VN}</td>
-                            </tr>
+        try {
+            return (
+                <div>
+                    <hr />
+                    <h5>{Data.tille}</h5>
+                    <hr />
+                    <div>
+                        {Data.lession.map((e, i) =>
+                            <div key={i}>
+                                <p
+                                    onClick={() => {
+                                        ReadMessage(e, 2)
+                                    }}
+                                    style={{ cursor: "pointer" }}
+                                >{i % 2 !== 1 ? <b>{e}</b> : e}</p>
+                            </div>
                         )}
-                    </tbody>
-                </table>
-            </div>
-        )
+                    </div>
+                    <hr />
+                </div>
+            )
+        } catch (error) {
+            return ""
+        }
+
     }
 }
 

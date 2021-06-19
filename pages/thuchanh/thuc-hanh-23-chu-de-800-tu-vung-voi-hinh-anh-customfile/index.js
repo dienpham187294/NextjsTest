@@ -1,12 +1,11 @@
 import { useState } from "react";
 import Read from "../../helpers/Read_ReactSpeech"
 import ReadMessage from "../../../util/ReadMessage";
-import tuvung800cau from "../../../util/800cau"
 import PracticeDiv from "./practice"
 
 
 function Manager() {
-    const [Data, SET_Data] = useState(tuvung800cau.slice(0, 20))
+    const [Data, SET_Data] = useState([])
     const [MessageToRead, SET_MessageToRead] = useState(["", 1])
     const [Practice, SET_Practice] = useState(false)
     const [Data_Commands, SET_Data_Commands] = useState([])
@@ -20,7 +19,7 @@ function Manager() {
                 <p>
                     <b>
                         <i>
-                            Thực hành 800+ câu giao tiếp thông dụng nhất
+                            Thực hành các chủ đề từ vựng kèm hình ảnh sinh động với CustomFile
                         </i>
                     </b>
                 </p>
@@ -29,20 +28,16 @@ function Manager() {
             {UpLoadFile()}
             <hr />
             <div>
-                From:    <input type="number" defaultValue="1" id="begin" />
-                To:    <input type="number" defaultValue="20" id="end" />
+                Chọn chủ đề:    <input id="chonchude" type="number" defaultValue="1" />
                 <input
                     className="btn btn-outline-primary ml-1"
                     onClick={() => {
-                        let beginNumber = document.getElementById("begin").value;
-                        let endNumber = document.getElementById("end").value;
-                        console.log(1, beginNumber > 0, endNumber - beginNumber > 0)
-                        if (beginNumber > 0 && endNumber - beginNumber >= 0) {
-                            let arr = tuvung800cau.slice(beginNumber - 1, endNumber);
-                            SET_Data(arr)
+                        let e = document.getElementById("chonchude").value;
+                        if (e < tuvunghinhanh.length) {
+                            SET_Data(tuvunghinhanh[e])
                         }
                     }}
-                    type="button" defaultValue="Search"
+                    type="button" defaultValue="Chọn"
 
                 />
 
@@ -50,7 +45,7 @@ function Manager() {
                     onClick={() => {
                         let arrTemp = [];
                         Data.forEach(e => {
-                            arrTemp.push(e.EN)
+                            arrTemp.push(e.name)
                         })
                         SET_Data_Commands(arrTemp)
                         SET_Practice(true)
@@ -76,24 +71,26 @@ function Manager() {
     function Show_chude() {
         return (
             <div>
-
-                <table className="table table-striped">
-                    <tbody>
-                        {Data.map((e, i) =>
-                            <tr
-                                onClick={() => {
-                                    ReadMessage(e.EN, 2)
-                                }}
-                                style={{
-                                    cursor: "pointer"
-                                }}
-                                key={i}>
-                                <td>{e.EN}</td>
-                                <td>{e.VN}</td>
-                            </tr>
-                        )}
-                    </tbody>
-                </table>
+                {Data.map((ee, indexee) =>
+                    <div
+                        onClick={() => {
+                            ReadMessage(ee.name, 2)
+                        }}
+                        style={{
+                            display: "inline-block",
+                            width: "fit-content",
+                            margin: "2%",
+                            border: "1px solid green",
+                            borderRadius: "10px",
+                            padding: "10px",
+                            cursor: "pointer"
+                        }}
+                        key={indexee + "1"}>
+                        <img alt={ee.name} src={ee.image} width="100px" />
+                        <br />
+                        {ee.name}
+                    </div>
+                )}
             </div>
         )
     }

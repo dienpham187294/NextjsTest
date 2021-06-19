@@ -15,11 +15,11 @@ let ArrHoldLinkThucHanh = [
   { "link": "thuchanh/thuc-hanh-3000-tu-vung-thong-dung-nhat", "name": "Thực hành 3000+ từ vựng thông dụng nhất" },
   { "link": "thuchanh/thuc-hanh-3000-tu-vung-thong-dung-nhat-khong-gioi-han-voi-customfile", "name": "Thực hành từ vựng không giới hạn với CustomFile" },
   { "link": "thuchanh/thuc-hanh-23-chu-de-800-tu-vung-voi-hinh-anh", "name": "Thực hành 23+ chủ đề với 800+ từ vựng với hình ảnh minh họa" },
-  { "link": "thuchanh/#", "name": "Thực hành từ vựng với hình ảnh minh họa không giới hạn với CustomFile" },
+  { "link": "thuchanh/thuc-hanh-23-chu-de-800-tu-vung-voi-hinh-anh-customfile", "name": "Thực hành từ vựng với hình ảnh minh họa không giới hạn với CustomFile" },
   { "link": "thuchanh/thuc-hanh-800-cau-giao-tiep-thong-dung", "name": "Thực hành 800+ câu giao tiếp thông dụng nhất" },
-  { "link": "thuchanh/#", "name": "Thực hành các câu giao tiếp không giới hạn với CustomFile" },
+  { "link": "thuchanh/thuc-hanh-800-cau-giao-tiep-thong-dung-customfile", "name": "Thực hành các câu giao tiếp không giới hạn với CustomFile" },
   { "link": "thuchanh/thuc-hanh-100-bai-giao-tiep-thong-dung-nhat", "name": "Thực hành 100+ bài hội thoại giao tiếp thông dụng nhất" },
-  { "link": "thuchanh/#", "name": "Thực hành hội thoại giao tiếp không giới hạn với CustomFile" },
+  { "link": "thuchanh/thuc-hanh-100-bai-giao-tiep-thong-dung-nhat-customfile", "name": "Thực hành hội thoại giao tiếp không giới hạn với CustomFile" },
   { "link": "thuchanh/20-bai-thuc-hanh-giao-tiep-voi-nguoi-may-ai", "name": "Thực hành 20+ trò chơi giao tiếp với người máy AI" },
   { "link": "thuchanh/thuc-hanh-giao-tiep-nguoi-may-ai-customfile", "name": "Thực hành trò chơi giao tiếp với người máy AI không giới hạn với CustomFile" },
   // { "link": "thuchanh/#", "name": "Thực hành đọc 50+ mẫu truyện, sách hay" },
@@ -82,7 +82,7 @@ function MyApp({ Component, pageProps }) {
                     < a className="dropdown-item" >{e.name}</a>
                   </Link>
                 )}
-                
+
               </div>
             </li>
 

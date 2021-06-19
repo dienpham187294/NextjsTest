@@ -1,12 +1,11 @@
 import { useState } from "react";
 import Read from "../../helpers/Read_ReactSpeech"
 import ReadMessage from "../../../util/ReadMessage";
-import tuvung800cau from "../../../util/800cau"
 import PracticeDiv from "./practice"
 
 
 function Manager() {
-    const [Data, SET_Data] = useState(tuvung800cau.slice(0, 20))
+    const [Data, SET_Data] = useState([])
     const [MessageToRead, SET_MessageToRead] = useState(["", 1])
     const [Practice, SET_Practice] = useState(false)
     const [Data_Commands, SET_Data_Commands] = useState([])
@@ -20,7 +19,7 @@ function Manager() {
                 <p>
                     <b>
                         <i>
-                            Thực hành 800+ câu giao tiếp thông dụng nhất
+                            Thực hành các câu giao tiếp thông dụng với CustomFile
                         </i>
                     </b>
                 </p>
