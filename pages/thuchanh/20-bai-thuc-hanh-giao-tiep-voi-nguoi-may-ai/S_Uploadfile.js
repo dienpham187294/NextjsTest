@@ -1,50 +1,53 @@
-
+import { pick } from "query-string";
+import { useEffect, useState } from "react";
+import baithuchanhgiaotiep from "../../../util/20baithuchanhgiaotiep"
+import SetAlert from "../../../util/SetAlert"
 function UpLoadFile(props) {
+    const [Data_20baithuchanh] = useState(baithuchanhgiaotiep)
+    function Fnpick(arrPick) {
+        try {
+            props.SET_Data_InfoOflession(arrPick)
+            let ArrDataTool = [];
+            arrPick[1].coerdataoflession.forEach(eee => {
 
+                if (eee.Tabletool.length > 0) {
+                    eee.Tabletool.forEach(eeee => {
+                        ArrDataTool.push(eeee)
+                    })
+                }
+            });
 
+            props.SET_Data_TableTool(ArrDataTool)
 
+            let GameData = [];
+            arrPick[1].coerdataoflession.forEach(eee => {
+                GameData.push({ "template": eee.template, "ArrToReplace": eee.ArrToReplace, "DataInput": eee.DataInput })
+            });
+
+            props.SET_Data_Game(ConvertFileToObject(GameData))
+
+            props.SET_PageChange(P => P + 1);
+
+        } catch (error) {
+            console.log(error);
+        }
+    }
     return (
         <div>
-            <div>
-                <input className="form-control" onChange={e => {
-                    try {
-                        var uploadedFile = e.currentTarget.files[0];
+            <table className="table table-striped"><tbody>
 
-                        if (uploadedFile) {
-                            var readFile = new FileReader();
-                            readFile.onload = function (e) {
-                                var contents = e.target.result;
-                                var json = JSON.parse(contents);
-                                props.SET_Data_InfoOflession(json)
-                                let ArrDataTool = [];
-
-                                json[1].coerdataoflession.forEach(eee => {
-
-                                    if (eee.Tabletool.length > 0) {
-                                        eee.Tabletool.forEach(eeee => {
-                                            ArrDataTool.push(eeee)
-                                        })
-                                    }
-                                });
-
-                                props.SET_Data_TableTool(ArrDataTool)
-
-                                let GameData = [];
-                                json[1].coerdataoflession.forEach(eee => {
-                                    GameData.push({ "template": eee.template, "ArrToReplace": eee.ArrToReplace, "DataInput": eee.DataInput })
-                                });
-
-                                props.SET_Data_Game(ConvertFileToObject(GameData))
-                            };
-                            readFile.readAsText(uploadedFile);
-                        } else {
-                            console.log("Failed to load file");
-                        }
-                    } catch (error) {
-                        console.log("Failed to load file");
-                    }
-                }} type="file" />
-            </div>
+                {Data_20baithuchanh.map((e, i) =>
+                    <tr key={i}>
+                        <td>{e[0].nameoflession}</td>
+                        <td
+                            onClick={() => {
+                                Fnpick(e)
+                            }}
+                            style={{ cursor: "pointer" }}
+                        >Chọn bài học</td>
+                    </tr>
+                )}
+            </tbody></table>
         </div>
     )
 }
@@ -63,13 +66,14 @@ function ConvertFileToObject(GameData) {
     let Numberpickeachone
     if (GameData.length <= 30) {
         Numberofelementwanttopick = 30;
+        let NumberofChance = GameData.length;
         Numberpickeachone = Math.floor(Numberofelementwanttopick / NumberofChance)
     } else {
         Numberofelementwanttopick = GameData.length;
         Numberpickeachone = 1
     }
 
-    let NumberofChance = GameData.length;
+
 
     let ARRRES = []
     GameData.forEach(e => {

@@ -41,7 +41,7 @@ function UpLoadFile(props) {
                             console.log("Failed to load file");
                         }
                     } catch (error) {
-                        console.log("Failed to load file");
+                        console.log("Sai dữ liệu");
                     }
                 }} type="file" />
             </div>
@@ -63,13 +63,14 @@ function ConvertFileToObject(GameData) {
     let Numberpickeachone
     if (GameData.length <= 30) {
         Numberofelementwanttopick = 30;
+        let NumberofChance = GameData.length;
         Numberpickeachone = Math.floor(Numberofelementwanttopick / NumberofChance)
     } else {
         Numberofelementwanttopick = GameData.length;
         Numberpickeachone = 1
     }
 
-    let NumberofChance = GameData.length;
+    
 
     let ARRRES = []
     GameData.forEach(e => {
