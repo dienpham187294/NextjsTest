@@ -1,8 +1,10 @@
+import Linkapi from "./Linkapi";
+
 const GetInfo = async (SET_Data, Word) => {
     //http://localhost:3000/api
     //https://www.englishtool.co/api
     try {
-        const res = await fetch("https://www.englishtool.co/api/" + Word, {
+        const res = await fetch(Linkapi + "api/" + Word, {
             method: 'GET',
             headers: {
                 "Accept": "application/json",
