@@ -1,6 +1,7 @@
 import { connectToDatabase } from '../../../util/mongodb'
 const nodemailer = require("nodemailer");
 import Linkapi from '../../../util/Linkapi';
+import { async } from 'regenerator-runtime';
 export default async (req, res) => {
     const { mail, n } = req.query;
     const { method } = req.query;
@@ -18,10 +19,10 @@ export default async (req, res) => {
                 expired: Date.now() + 15 * 24 * 60 * 60
             })
             const data1 = await db.collection("users").find({ mail: mail }).toArray();
-            codangkytaikhoanmoi(mail, n)
+            codangkytaikhoanmoi(mail, n, 0)
             res.status(200).json({ success: true, data: data1 })
         } else {
-            codangkytaikhoanmoi(mail, n)
+            codangkytaikhoanmoi(mail, n, 0)
             res.status(200).json({ success: true, data: data })
         }
 
@@ -32,9 +33,9 @@ export default async (req, res) => {
 }
 
 
-function codangkytaikhoanmoi(mail, n) {
+async function codangkytaikhoanmoi(mail, n, i) {
 
-    var transporter = nodemailer.createTransport({
+    var transporter = await nodemailer.createTransport({
         service: 'gmail',
         auth: {
             user: 'dienpham187294@gmail.com',
@@ -42,7 +43,7 @@ function codangkytaikhoanmoi(mail, n) {
         }
     });
 
-    var mailOptions = {
+    var mailOptions = await {
         from: 'dienpham187294@gmail.com',
         to: mail,
         subject: 'Xác thực tài khoản EnglishTool',
@@ -54,7 +55,9 @@ function codangkytaikhoanmoi(mail, n) {
 
     transporter.sendMail(mailOptions, function (error, info) {
         if (error) {
-            console.log(error);
+            if (i === 0) {
+                codangkytaikhoanmoi(mail, n, 1)
+            }
         } else {
             console.log('Email sent: ' + info.response);
         }
