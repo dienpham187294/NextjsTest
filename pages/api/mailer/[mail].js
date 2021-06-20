@@ -2,9 +2,11 @@ import { connectToDatabase } from '../../../util/mongodb'
 const nodemailer = require("nodemailer");
 import Linkapi from '../../../util/Linkapi';
 export default async (req, res) => {
-    const { mail } = req.query;
+    const { mail, n } = req.query;
     const { method } = req.query;
     const { db } = await connectToDatabase();
+
+
 
     try {
         // codangkytaikhoanmoi(mail)
@@ -16,10 +18,10 @@ export default async (req, res) => {
                 expired: Date.now() + 15 * 24 * 60 * 60
             })
             const data1 = await db.collection("users").find({ mail: mail }).toArray();
-            codangkytaikhoanmoi(mail, data1[0]["_id"])
+            codangkytaikhoanmoi(mail, n)
             res.status(200).json({ success: true, data: data1 })
         } else {
-            codangkytaikhoanmoi(mail, data[0]["_id"])
+            codangkytaikhoanmoi(mail, n)
             res.status(200).json({ success: true, data: data })
         }
 
@@ -30,7 +32,7 @@ export default async (req, res) => {
 }
 
 
-function codangkytaikhoanmoi(mail, _id) {
+function codangkytaikhoanmoi(mail, n) {
 
     var transporter = nodemailer.createTransport({
         service: 'gmail',
@@ -45,9 +47,8 @@ function codangkytaikhoanmoi(mail, _id) {
         to: mail,
         subject: 'Xác thực tài khoản EnglishTool',
         html: `<div style={}>
-            <h1> Xác thực tài khoản tại EnglishTool</h1>
-       
-        <a href="` + Linkapi + "main/xacthuc?mail=" + mail + `&token=` + _id + `epdp` + Date.now() + `" target="_blank"><h1>Link xác thực</h1></a>
+            <h1> Mã xác thực tài khoản</h1>
+            <h1>`+ n + `</h1>
     </div >`
     };
 

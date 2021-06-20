@@ -46,6 +46,7 @@ function MyApp({ Component, pageProps }) {
       clearInterval(inter)
     }
     else {
+
       // if (flag) {
       //   inter = setTimeout(() => {
       //     SET_CheckPage(true)
@@ -142,14 +143,19 @@ function MyApp({ Component, pageProps }) {
       </nav>
     </header >
     <div style={{ display: "none" }}>
-      <input type="text" id="AddCookiesId" defaultValue="dienpham" />
+      <p id="TEXT"></p>
       <input onClick={() => {
         try {
-          setCookie("ericpham", $("#AddCookiesId").val(), 5);
+          setCookie("ericpham", $("#TEXT").text(), 5);
+          setTimeout(() => {
+            if (!checkCookie("eripham")) {
+              setCookie("ericpham", $("#TEXT").text(), 5);
+            }
+          }, 200)
         } catch (error) {
           console.log(1)
         }
-      }} type="button" id="AddCookieBtn" defaultValue="Add" />
+      }} type="button" id="ADD" defaultValue="Add" />
       <input onClick={() => {
         delettCookie("ericpham");
         setTimeout(() => {
@@ -158,7 +164,7 @@ function MyApp({ Component, pageProps }) {
           }
         }, 200)
 
-      }} type="button" id="DeleteCookieBtn" defaultValue="D" />
+      }} type="button" id="DElETE" defaultValue="D" />
     </div>
 
 
@@ -186,13 +192,21 @@ function MyApp({ Component, pageProps }) {
 
   function Show_Dangnhap() {
     if (Cookie !== "") {
-      return (<a href="/main/detail">
-        <input className="btn btn-primary" type="button" value={getCookie("ericpham").split("@")[0]} />
-      </a>)
+      return (
+        <Link href="/main/detail">
+          <a>
+            <input className="btn btn-primary" type="button" value={getCookie("ericpham").split("@")[0]} />
+          </a>
+        </Link>
+      )
     } else {
-      return (<a href="/main/dangnhap">
-        <input className="btn btn-primary" type="button" value="Đăng nhập" />
-      </a>)
+      return (
+        <Link href="/main/dangnhap">
+          <a >
+            <input id="dangnhapbtn" className="btn btn-primary" type="button" value="Đăng nhập" />
+          </a>
+        </Link>
+      )
     }
   }
 }
