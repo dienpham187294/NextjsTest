@@ -7,16 +7,29 @@ function Detail() {
 
     return (
         <div>
-            <h5>Tài khoản: {getCookie("ericpham").split("epdp")[0]}</h5>
-            <h5>{ShowExpried(getCookie("ericpham").split("epdp")[1])}</h5>
+            <h5>Tài khoản: {ShowEmail(getCookie("ericpham"))}</h5>
+            <h5>{ShowExpried(getCookie("ericpham"))}</h5>
         </div>
     )
+    function ShowEmail(e) {
 
-    function ShowExpried(e) {
-        if (parseInt(e) - Date.now(0) < 0) {
-            return "Đã hết thời gian sử dụng."
+        try {
+            return e.split("epdp")[0]
+        } catch (error) {
+            return ""
         }
-        return (<span> "Thời gian sử dụng: "{Math.floor(parseInt(e) - Date.now(0) / (24 * 60 * 60))}</span>)
+
+    }
+    function ShowExpried(e) {
+        try {
+            if (parseInt(e) - Date.now(0) < 0) {
+                return "Đã hết thời gian sử dụng."
+            }
+            return (<span> "Thời gian sử dụng: "{Math.floor(parseInt(e) - Date.now(0) / (24 * 60 * 60))}</span>)
+        } catch (error) {
+            return ""
+        }
+
     }
 }
 
