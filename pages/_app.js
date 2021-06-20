@@ -8,6 +8,8 @@ import { checkCookie, delettCookie, getCookie, setCookie } from "../util/functio
 import { useEffect, useState } from 'react';
 import $ from "jquery"
 import Getfinal from "../util/GetFinal"
+import { GetServerSideProps } from 'next'
+import { data } from 'browserslist';
 let ArrHoldLinkBaiHoc = [
   { "link": "100-bai-giao-tiep-can-ban", "name": "100 bài giao tiếp căn bản" },
   { "link": "800-cau-giao-tiep-thong-dung-nhat", "name": "800 câu giao tiếp thông dụng" },
@@ -34,30 +36,29 @@ let ArrHoldLinkThucHanh = [
   // { "link": "thuchanh/thuc-hanh-toiec", "name": "Thực hành đề thi TOEIC" },
 ]
 let flag = true;
+let inter
 function MyApp({ Component, pageProps }) {
   const [Cookie, SET_Cookie] = useState("")
   const [CheckPage, SET_CheckPage] = useState(false)
-
   useEffect(() => {
     if (checkCookie("ericpham")) {
       SET_Cookie(getCookie("ericpham"));
-      console.log('checktrue')
-    } else {
-      console.log('checknottrue')
-      if (flag) {
-        let inter = setTimeout(() => {
-          SET_CheckPage(true)
-        }, 30000);;
-        flag = false
-        return () => {
-          clearTimeout(inter);
-        };
-      }
+      clearInterval(inter)
+    }
+    else {
+      // if (flag) {
+      //   inter = setTimeout(() => {
+      //     SET_CheckPage(true)
+      //   }, 30000);;
+      //   flag = false
+      //   return () => {
+      //     clearTimeout(inter);
+      //   };
+      // }
     }
   })
-
-
   return (<>
+
     <Head>
       <title>ENGLISH TOOL</title>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -140,6 +141,29 @@ function MyApp({ Component, pageProps }) {
         </div>
       </nav>
     </header >
+    <div style={{ display: "none" }}>
+      <input type="text" id="AddCookiesId" defaultValue="dienpham" />
+      <input onClick={() => {
+        try {
+          setCookie("ericpham", $("#AddCookiesId").val(), 5);
+        } catch (error) {
+          console.log(1)
+        }
+      }} type="button" id="AddCookieBtn" defaultValue="Add" />
+      <input onClick={() => {
+        delettCookie("ericpham");
+        setTimeout(() => {
+          if (checkCookie("eripham")) {
+            delettCookie("ericpham");
+          }
+        }, 200)
+
+      }} type="button" id="DeleteCookieBtn" defaultValue="D" />
+    </div>
+
+
+
+
     {
       CheckPage ? <div>{CheckPay()}</div> : ""
     }
@@ -161,7 +185,6 @@ function MyApp({ Component, pageProps }) {
 
 
   function Show_Dangnhap() {
-
     if (Cookie !== "") {
       return (<a href="/main/detail">
         <input className="btn btn-primary" type="button" value={getCookie("ericpham").split("@")[0]} />
@@ -172,35 +195,60 @@ function MyApp({ Component, pageProps }) {
       </a>)
     }
   }
-
-  function CheckPay() {
-    return (
-      <div
-        style={{
-          position: "fixed",
-          border: "1px solid black",
-          borderRadius: "20px",
-          backgroundColor: "white",
-          width: "50%",
-          minWidth: "365px",
-          height: "365px",
-          marginLeft: "50%",
-          zIndex: "1",
-          transform: "translateX(-50%)",
-          textAlign: "center"
-        }}
-      >
-
-
-        <hr />
-        Bạn chưa đăng nhập vào hệ thống!
-        <hr />
-        <a href="/main/dangnhap">
-          <input className="btn btn-primary" type="button" value="Đăng nhập" />
-        </a>
-      </div>
-    )
-  }
 }
 
 export default MyApp
+
+
+
+
+
+function FnCheckCookie() {
+  console.log("abc")
+  if (checkCookie("ericpham")) {
+    SET_Cookie(getCookie("ericpham"));
+    console.log("abcdf")
+  }
+  else {
+    if (flag) {
+      let inter = setTimeout(() => {
+        SET_CheckPage(true)
+      }, 30000);;
+      flag = false
+      return () => {
+        clearTimeout(inter);
+      };
+    }
+  }
+}
+
+
+
+function CheckPay() {
+  return (
+    <div
+      style={{
+        position: "fixed",
+        border: "1px solid black",
+        borderRadius: "20px",
+        backgroundColor: "white",
+        width: "50%",
+        minWidth: "365px",
+        height: "365px",
+        marginLeft: "50%",
+        zIndex: "1",
+        transform: "translateX(-50%)",
+        textAlign: "center"
+      }}
+    >
+
+
+      <hr />
+      Bạn chưa đăng nhập vào hệ thống!
+      <hr />
+      <a href="/main/dangnhap">
+        <input className="btn btn-primary" type="button" value="Đăng nhập" />
+      </a>
+    </div>
+  )
+}

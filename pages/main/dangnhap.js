@@ -11,7 +11,7 @@ function Dangky() {
     const [Message, SET_Message] = useState("")
     useEffect(() => {
         if (checkCookie("ericpham")) {
-            router.push("/main/detail")
+            router.push("/")
         }
     })
 

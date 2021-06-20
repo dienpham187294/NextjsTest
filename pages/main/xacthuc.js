@@ -2,6 +2,7 @@ import { useRouter } from 'next/router'
 import Linkapi from '../../util/Linkapi';
 import { setCookie } from "../../util/functionCookies"
 import { useEffect, useState } from 'react';
+import $ from "jquery"
 function Xacthuc() {
     const [Message, SET_Message] = useState("1")
     const router = useRouter()
@@ -15,9 +16,8 @@ function Xacthuc() {
 
                     SET_Message("Xác thực thành công");
                     let arrTemp = res.split("-exipired:");
-
-                    setCookie("ericpham", mail + "expr" + arrTemp[1], 3)
-
+                    $("#AddCookiesId").val(mail + "expr" + arrTemp[1])
+                    $("#AddCookieBtn").click()
                     setTimeout(() => {
                         router.push("/");
                     }, 3000)

@@ -36,7 +36,7 @@ export default function body() {
                     </div>
                 </div>
                 <hr />
-                <div>
+                {/* <div>
                     <h1 className="text-center text-primary">Hỗ trợ dùng thử 3 tháng không mất phí bản quyền</h1>
                     <div className="row">
                         <div className="col-12 hotrotragop">
@@ -53,7 +53,7 @@ export default function body() {
                     </div>
 
                 </div>
-                <hr />
+                <hr /> */}
                 <div>
                     <div className="text-center text-primary">
                         <h2>Bảng giá dịch vụ</h2>
