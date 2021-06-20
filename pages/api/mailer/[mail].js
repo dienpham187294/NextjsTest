@@ -22,14 +22,14 @@ export default async (req, res) => {
             sendmail(mail, n, 0);
             setTimeout(() => {
                 res.status(200).json({ success: true, data: data1 });
-            }, 2000)
+            }, 3000)
 
         } else {
             sendmail(mail, n, 0);
             setTimeout(() => {
                 res.status(200).json({ success: true, data: data });
-            }, 2000)
-
+            }, 3000)
+           
         }
 
     } catch (error) {
