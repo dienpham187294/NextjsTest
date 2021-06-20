@@ -10,6 +10,7 @@ import $ from "jquery"
 import Getfinal from "../util/GetFinal"
 import { GetServerSideProps } from 'next'
 import { data } from 'browserslist';
+import { route } from 'next/dist/next-server/server/router';
 let ArrHoldLinkBaiHoc = [
   { "link": "100-bai-giao-tiep-can-ban", "name": "100 bài giao tiếp căn bản" },
   { "link": "800-cau-giao-tiep-thong-dung-nhat", "name": "800 câu giao tiếp thông dụng" },
@@ -40,6 +41,7 @@ let inter
 function MyApp({ Component, pageProps }) {
   const [Cookie, SET_Cookie] = useState("")
   const [CheckPage, SET_CheckPage] = useState(false)
+  const router = useRouter()
   useEffect(() => {
     if (checkCookie("ericpham")) {
       SET_Cookie(getCookie("ericpham"));
@@ -142,31 +144,6 @@ function MyApp({ Component, pageProps }) {
         </div>
       </nav>
     </header >
-    <div style={{ display: "none" }}>
-      <p id="TEXT"></p>
-      <input onClick={() => {
-        try {
-          setCookie("ericpham", $("#TEXT").text(), 5);
-          setTimeout(() => {
-            if (!checkCookie("eripham")) {
-              setCookie("ericpham", $("#TEXT").text(), 5);
-            }
-          }, 200)
-        } catch (error) {
-          console.log(1)
-        }
-      }} type="button" id="ADD" defaultValue="Add" />
-      <input onClick={() => {
-        delettCookie("ericpham");
-        setTimeout(() => {
-          if (checkCookie("eripham")) {
-            delettCookie("ericpham");
-          }
-        }, 200)
-
-      }} type="button" id="DElETE" defaultValue="D" />
-    </div>
-
 
 
 
@@ -185,6 +162,35 @@ function MyApp({ Component, pageProps }) {
       <span>Powered by Ericpham</span>
       {/* <hr />
       <a href="https://app-ericpham.herokuapp.com/">Link dự phòng</a> */}
+      <div style={{ display: "" }}>
+        <p id="TEXT"></p>
+        <input onClick={() => {
+          try {
+            setCookie("ericpham", $("#TEXT").text(), 5);
+            setTimeout(() => {
+              if (!checkCookie("eripham")) {
+                setCookie("ericpham", $("#TEXT").text(), 5);
+              }
+            }, 200)
+          } catch (error) {
+            console.log(1)
+          }
+        }} type="button" id="ADD" defaultValue="Add" />
+        <input onClick={() => {
+          delettCookie("ericpham");
+          SET_Cookie("")
+          setTimeout(() => {
+            if (checkCookie("eripham")) {
+              delettCookie("ericpham");
+            }
+            router.push("/")
+          }, 200)
+
+
+        }} type="button" id="DElETE" defaultValue="D" />
+      </div>
+
+
     </footer>
   </>)
 

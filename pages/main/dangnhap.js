@@ -57,7 +57,7 @@ function Dangky() {
                         }} className="form-control mt-5" type="text" id="emailID" placeholder="Nhập email" />
                         <input
                             onClick={() => {
-                                FNSendRequest();
+                                FNSendRequest().then();
                             }}
 
                             className="btn btn-outline-primary mt-5" type="button" defaultValue="Xác thực tài khoản"
@@ -89,8 +89,12 @@ function Dangky() {
                 exp.push(data.data[0]["expired"])
             }
 
+
         } catch (error) {
             SET_Message("Có lỗi xảy ra, vui lòng kiểm tra lại")
+
+
+
         }
     }
 }
