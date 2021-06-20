@@ -26,7 +26,7 @@ function Dictaphone({ Data }) {
     } = useSpeechRecognition({
         commands
     });
-    const startListening = () => SpeechRecognition.startListening({ continuous: true });
+    const startListening = () => SpeechRecognition.startListening({ continuous: true, language: 'en-GB' });
 
     if (!browserSupportsSpeechRecognition) {
         return <span>Browser doesn't support speech recognition.</span>;
