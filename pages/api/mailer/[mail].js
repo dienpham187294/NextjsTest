@@ -10,7 +10,7 @@ export default async (req, res) => {
 
 
     try {
-        // codangkytaikhoanmoi(mail)
+        // sendmail(mail)
         const data = await db.collection("users").find({ mail: mail }).toArray();
         if (data.length === 0) {
             await db.collection("users").insertOne({
@@ -19,23 +19,29 @@ export default async (req, res) => {
                 expired: Date.now() + 15 * 24 * 60 * 60
             })
             const data1 = await db.collection("users").find({ mail: mail }).toArray();
-            codangkytaikhoanmoi(mail, n, 0)
-            res.status(200).json({ success: true, data: data1 })
+            sendmail(mail, n, 0);
+            setTimeout(() => {
+                res.status(200).json({ success: true, data: data1 });
+            }, 2000)
+
         } else {
-            codangkytaikhoanmoi(mail, n, 0)
-            res.status(200).json({ success: true, data: data })
+            sendmail(mail, n, 0);
+            setTimeout(() => {
+                res.status(200).json({ success: true, data: data });
+            }, 2000)
+
         }
 
     } catch (error) {
-        res.status(400).json({ success: false })
+        res.status(400).json({ success: false });
     }
 
 }
 
 
-async function codangkytaikhoanmoi(mail, n, i) {
+async function sendmail(mail, n, i) {
 
-    var transporter = await nodemailer.createTransport({
+    let transporter = await nodemailer.createTransport({
         service: 'gmail',
         auth: {
             user: 'dienpham187294@gmail.com',
@@ -43,7 +49,7 @@ async function codangkytaikhoanmoi(mail, n, i) {
         }
     });
 
-    var mailOptions = await {
+    let mailOptions = await {
         from: 'dienpham187294@gmail.com',
         to: mail,
         subject: 'Xác thực tài khoản EnglishTool',
@@ -56,7 +62,9 @@ async function codangkytaikhoanmoi(mail, n, i) {
     transporter.sendMail(mailOptions, function (error, info) {
         if (error) {
             if (i === 0) {
-                codangkytaikhoanmoi(mail, n, 1)
+                setTimeout(() => {
+                    sendmail(mail, n, 1)
+                }, 2000)
             }
         } else {
             console.log('Email sent: ' + info.response);
