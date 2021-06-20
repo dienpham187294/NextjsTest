@@ -1,10 +1,19 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { async } from "regenerator-runtime";
+import { checkCookie } from "../../util/functionCookies";
 import Linkapi from "../../util/Linkapi"
+import { useRouter } from 'next/router'
 let email = ""
 
 function Dangky() {
+    const router = useRouter()
+
     const [Message, SET_Message] = useState("")
+    useEffect(() => {
+        if (checkCookie("ericpham")) {
+            router.push("/main/detail")
+        }
+    })
 
     return (
         <div style={{ width: "100%", textAlign: "center" }}>

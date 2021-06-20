@@ -13,7 +13,7 @@ export default async (req, res) => {
             await db.collection("users").insertOne({
                 mail: mail,
                 password: mail,
-                expired: Date.now()
+                expired: Date.now() + 15 * 24 * 60 * 60
             })
             const data1 = await db.collection("users").find({ mail: mail }).toArray();
             codangkytaikhoanmoi(mail, data1[0]["_id"])
@@ -47,7 +47,7 @@ function codangkytaikhoanmoi(mail, _id) {
         html: `<div style={}>
             <h1> Xác thực tài khoản tại EnglishTool</h1>
        
-        <a href="` + Linkapi + "main/xacthuc?mail=" + mail + `&token=` + _id + `" target="_blank"><h1>Link xác thực</h1></a>
+        <a href="` + Linkapi + "main/xacthuc?mail=" + mail + `&token=` + _id + `epdp` + Date.now() + `" target="_blank"><h1>Link xác thực</h1></a>
     </div >`
     };
 

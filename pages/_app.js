@@ -3,8 +3,11 @@ import '../styles/globals.css'
 import Link from 'next/link'
 import 'regenerator-runtime/runtime'
 import Head from "next/head";
-
-
+import { useRouter } from 'next/router'
+import { checkCookie, delettCookie, getCookie, setCookie } from "../util/functionCookies"
+import { useEffect, useState } from 'react';
+import $ from "jquery"
+import Getfinal from "../util/GetFinal"
 let ArrHoldLinkBaiHoc = [
   { "link": "100-bai-giao-tiep-can-ban", "name": "100 bài giao tiếp căn bản" },
   { "link": "800-cau-giao-tiep-thong-dung-nhat", "name": "800 câu giao tiếp thông dụng" },
@@ -30,7 +33,28 @@ let ArrHoldLinkThucHanh = [
   // { "link": "thuchanh/thuc-hanh-ngu-phap", "name": "Thực hành thi các bài ngữ pháp bằng giọng nói." },
   // { "link": "thuchanh/thuc-hanh-toiec", "name": "Thực hành đề thi TOEIC" },
 ]
+let flag = true;
 function MyApp({ Component, pageProps }) {
+  const [Cookie, SET_Cookie] = useState("")
+  const [CheckPage, SET_CheckPage] = useState(false)
+
+  useEffect(() => {
+    if (checkCookie("ericpham")) {
+      SET_Cookie(getCookie("ericpham"));
+      console.log('checktrue')
+    } else {
+      console.log('checknottrue')
+      if (flag) {
+        let inter = setTimeout(() => {
+          SET_CheckPage(true)
+        }, 30000);;
+        flag = false
+        return () => {
+          clearTimeout(inter);
+        };
+      }
+    }
+  })
 
 
   return (<>
@@ -109,13 +133,16 @@ function MyApp({ Component, pageProps }) {
             </li>
           </ul>
           <form className="form-inline my-2 my-md-0">
-            <a href="/main/dangnhap">
-              <input className="btn btn-primary" type="button" value="Đăng nhập" />
-            </a>
+
+            {Show_Dangnhap()}
+
           </form>
         </div>
       </nav>
     </header >
+    {
+      CheckPage ? <div>{CheckPay()}</div> : ""
+    }
 
     <Component {...pageProps} />
 
@@ -131,6 +158,49 @@ function MyApp({ Component, pageProps }) {
     </footer>
   </>)
 
+
+
+  function Show_Dangnhap() {
+
+    if (Cookie !== "") {
+      return (<a href="/main/detail">
+        <input className="btn btn-primary" type="button" value={getCookie("ericpham").split("@")[0]} />
+      </a>)
+    } else {
+      return (<a href="/main/dangnhap">
+        <input className="btn btn-primary" type="button" value="Đăng nhập" />
+      </a>)
+    }
+  }
+
+  function CheckPay() {
+    return (
+      <div
+        style={{
+          position: "fixed",
+          border: "1px solid black",
+          borderRadius: "20px",
+          backgroundColor: "white",
+          width: "50%",
+          minWidth: "365px",
+          height: "365px",
+          marginLeft: "50%",
+          zIndex: "1",
+          transform: "translateX(-50%)",
+          textAlign: "center"
+        }}
+      >
+
+
+        <hr />
+        Bạn chưa đăng nhập vào hệ thống!
+        <hr />
+        <a href="/main/dangnhap">
+          <input className="btn btn-primary" type="button" value="Đăng nhập" />
+        </a>
+      </div>
+    )
+  }
 }
 
 export default MyApp
