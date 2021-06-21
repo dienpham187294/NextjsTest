@@ -9,6 +9,17 @@ function Detail() {
         <div>
             <h5>Tài khoản: {ShowEmail(getCookie("ericpham"))}</h5>
             <h5>{ShowExpried(getCookie("ericpham"))}</h5>
+            <hr />
+            <input
+
+                onClick={() => {
+                    try {
+                        $("#DElETE").click()
+                    } catch (error) {
+                        console.log("error")
+                    }
+                }}
+                type="button" className="btn btn-ouline-danger" defaultValue="Đăng xuất" />
         </div>
     )
     function ShowEmail(e) {

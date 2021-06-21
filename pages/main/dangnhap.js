@@ -10,7 +10,8 @@ let exp = [];
 let flag = true;
 function Dangky() {
     const router = useRouter()
-    const [Message, SET_Message] = useState("")
+    const [Message, SET_Message] = useState("");
+    const [Count, SET_Count] = useState(0)
     useEffect(() => {
         if (flag) {
             if (checkCookie("ericpham")) {
@@ -47,10 +48,13 @@ function Dangky() {
                 {Message === "Vui lòng kiểm tra hộp thư email để xác thực tài khoản." ?
                     <input onChange={(e) => {
                         Xacthuc(e.currentTarget.value);
+                       
                     }} className="form-control mt-5" type="text" id="maxacthuc" placeholder="Nhập mã xác thực" />
 
-                    :
+                    : ""}
 
+
+                {Message === "" ?
                     <div>
                         <input onChange={(e) => {
                             email = e.currentTarget.value;
@@ -58,12 +62,12 @@ function Dangky() {
                         <input
                             onClick={() => {
                                 FNSendRequest().then();
+                                SET_Message("Vui lòng chờ trong giây lát.")
                             }}
 
                             className="btn btn-outline-primary mt-5" type="button" defaultValue="Xác thực tài khoản"
                         />
-                    </div>
-                }
+                    </div> : " "}
 
 
                 <hr />
@@ -93,7 +97,9 @@ function Dangky() {
         } catch (error) {
             SET_Message("Có lỗi xảy ra, vui lòng kiểm tra lại")
 
-
+            setTimeout(() => {
+                SET_Message("")
+            }, 2000)
 
         }
     }
