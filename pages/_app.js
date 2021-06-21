@@ -48,16 +48,15 @@ function MyApp({ Component, pageProps }) {
       clearInterval(inter)
     }
     else {
-
-      // if (flag) {
-      //   inter = setTimeout(() => {
-      //     SET_CheckPage(true)
-      //   }, 30000);;
-      //   flag = false
-      //   return () => {
-      //     clearTimeout(inter);
-      //   };
-      // }
+      if (flag) {
+        inter = setTimeout(() => {
+          SET_CheckPage(true)
+        }, 180000);;
+        flag = false
+        return () => {
+          clearTimeout(inter);
+        };
+      }
     }
   })
   return (<>

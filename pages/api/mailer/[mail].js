@@ -29,7 +29,7 @@ export default async (req, res) => {
             setTimeout(() => {
                 res.status(200).json({ success: true, data: data });
             }, 3000)
-           
+
         }
 
     } catch (error) {

@@ -54,7 +54,7 @@ export default function body() {
 
                 </div>
                 <hr /> */}
-                <div>
+                {/* <div>
                     <div className="text-center text-primary">
                         <h2>Bảng giá dịch vụ</h2>
                     </div>
@@ -166,7 +166,7 @@ export default function body() {
                     <div>
                         Chúng tôi cung cấp các dịch vụ về edit video và hỗ trợ quản lí website (Đăng bài, edit và đăng tải video) với giá rẻ cho các anh chị sử dụng dịch vụ tại Ericpham.
                     </div>
-                </div>
+                </div> */}
                 <hr />
                 <div className="container text-justify mt-4 p-4">
                     <h1>Công nghệ 4.0 - Trí thông minh nhân tạo!</h1>
