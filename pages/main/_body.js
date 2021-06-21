@@ -11,9 +11,12 @@ export default function body() {
                     <div className="col-lg-6 md-6 sm-12">
                         <main >
                             <div style={{ textAlign: "center" }}>
-                                <h1 className="text-primary">
+                                <h1
+                                    className="text-light bg-dark "
+                                    style={{ letterSpacing: "4px" }}
+                                >
                                     <i>
-                                        ENGLISH TOOL
+                                        ENGLISH  <span style={{ color: "yellow" }}>TOOL</span>
                                     </i>
                                 </h1>
                                 <br />

@@ -89,7 +89,9 @@ function MyApp({ Component, pageProps }) {
 
       <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
         <Link href="/">
-          <a className="navbar-brand" >ENGLISH TOOL</a>
+          <a className="navbar-brand" >
+            <i>ENGLISH  <span style={{ color: "yellow" }}>TOOL</span></i>
+          </a>
         </Link>
 
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
