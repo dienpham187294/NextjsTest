@@ -161,7 +161,7 @@ function MyApp({ Component, pageProps }) {
       <span>Powered by Ericpham</span>
       {/* <hr />
       <a href="https://app-ericpham.herokuapp.com/">Link dự phòng</a> */}
-      <div style={{ display: "" }}>
+      <div style={{ display: "none" }}>
         <p id="TEXT"></p>
         <input onClick={() => {
           try {
