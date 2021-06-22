@@ -33,11 +33,16 @@ export default [
         "tille": "Chủ đề 3: WHAT’S YOUR NAME?",
         "lession": [
 
-            "Excuse me, what's your name? My name is Jessica. What's yours? John.",
+            "Excuse me, what's your name?", 
+            "My name is Jessica. What's yours?", 
+            "John.",
             "You speak English very well.",
             "Thank you.",
             "Do you know what time it is?",
-            "Sure. It's 5:10PM. What did you say? I said it's 5:10PM. Thanks.",
+            "Sure. It's 5:10PM.",
+            "What did you say?", 
+            "I said it's 5:10PM.", 
+            " Thanks.",
             "You're welcome."
         ]
 
@@ -51,7 +56,9 @@ export default [
             "I'm looking for the airport. Can you tell me how to get there?",
             "No, sorry. I don't know.",
             "I think I can take the subway to the airport. Do you know where the subway is?",
-            "Sure, it's over there. Where? I don't see it. Across the street.",
+            "Sure, it's over there.",
+            "Where? I don't see it.",
+            "Across the street.",
             "Oh, I see it now. Thanks.",
             "No problem.",
             "Do you know if there's a restroom around here?",
@@ -66,7 +73,8 @@ export default [
         "tille": "Chủ đề 5: I’M HUNGRY",
         "lession": [
 
-            "Hi Sarah, how are you? Fine, how are you doing? OK.",
+            "Hi Sarah, how are you?",
+            "Fine, how are you doing? OK.",
             "What do you want to do?",
             "I'm hungry. I'd like to eat something.",
             "Where do you want to go?",

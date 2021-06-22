@@ -12,12 +12,11 @@ import { GetServerSideProps } from 'next'
 import { data } from 'browserslist';
 import { route } from 'next/dist/next-server/server/router';
 let ArrHoldLinkBaiHoc = [
-  { "link": "100-bai-giao-tiep-can-ban", "name": "100 bài giao tiếp căn bản" },
-  { "link": "800-cau-giao-tiep-thong-dung-nhat", "name": "800 câu giao tiếp thông dụng" },
-  { "link": "20-chu-de-hoc-tieng-anh-qua-hinh-anh", "name": "20 chủ đề học tiếng anh qua hình ảnh" }
+  { "link": "baihoc/100-bai-giao-tiep-can-ban", "name": "100 bài giao tiếp căn bản" },
+  { "link": "baihoc/800-cau-giao-tiep-thong-dung-nhat", "name": "800 câu giao tiếp thông dụng" },
+  { "link": "baihoc/20-chu-de-hoc-tieng-anh-qua-hinh-anh", "name": "20 chủ đề học tiếng anh qua hình ảnh" }
 ]
 let ArrHoldLinkThucHanh = [
-  // { "link": "thuchanh/lam-quen-tu-vung", "name": "Làm quen từ vựng" },
   { "link": "thuchanh/thuc-hanh-3000-tu-vung-thong-dung-nhat", "name": "Thực hành 3000+ từ vựng thông dụng nhất" },
   { "link": "thuchanh/thuc-hanh-3000-tu-vung-thong-dung-nhat-khong-gioi-han-voi-customfile", "name": "Thực hành từ vựng không giới hạn với CustomFile" },
   { "link": "thuchanh/thuc-hanh-23-chu-de-800-tu-vung-voi-hinh-anh", "name": "Thực hành 23+ chủ đề với 800+ từ vựng với hình ảnh minh họa" },
@@ -27,14 +26,7 @@ let ArrHoldLinkThucHanh = [
   { "link": "thuchanh/thuc-hanh-100-bai-giao-tiep-thong-dung-nhat", "name": "Thực hành 100+ bài hội thoại giao tiếp thông dụng nhất" },
   { "link": "thuchanh/thuc-hanh-100-bai-giao-tiep-thong-dung-nhat-customfile", "name": "Thực hành hội thoại giao tiếp không giới hạn với CustomFile" },
   { "link": "thuchanh/20-bai-thuc-hanh-giao-tiep-voi-nguoi-may-ai", "name": "Thực hành 20+ trò chơi giao tiếp với người máy AI" },
-  { "link": "thuchanh/thuc-hanh-giao-tiep-nguoi-may-ai-customfile", "name": "Thực hành trò chơi giao tiếp với người máy AI không giới hạn với CustomFile" },
-  // { "link": "thuchanh/#", "name": "Thực hành đọc 50+ mẫu truyện, sách hay" },
-  // { "link": "thuchanh/#", "name": "Thực hành đọc truyện, sách hay không giới hạn với CustomFile" },
-  // { "link": "thuchanh/giao-tiep-cap-do-1", "name": "Thực hành giao tiếp căn bản với người máy AI" },
-  // { "link": "thuchanh/thuc-hanh-doc-sach-thanh-tieng", "name": "Thực hành đọc với công nghệ nhận diện giọng nói" },
-  // { "link": "thuchanh/thuc-hanh-nghe-va-lap-lai", "name": "Thực hành nghe và lặp lại các câu" },
-  // { "link": "thuchanh/thuc-hanh-ngu-phap", "name": "Thực hành thi các bài ngữ pháp bằng giọng nói." },
-  // { "link": "thuchanh/thuc-hanh-toiec", "name": "Thực hành đề thi TOEIC" },
+  { "link": "thuchanh/thuc-hanh-giao-tiep-nguoi-may-ai-customfile", "name": "Thực hành trò chơi giao tiếp với người máy AI không giới hạn với CustomFile" }
 ]
 let flag = true;
 let inter

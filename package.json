@@ -20,6 +20,7 @@
     "nextjs-cors": "^1.0.5",
     "nodemailer": "^6.6.2",
     "owlbot-js": "^2.0.2",
+    "pixi.js": "^6.0.4",
     "query-string": "^7.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
