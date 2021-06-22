@@ -149,6 +149,7 @@ function MyApp({ Component, pageProps }) {
 
 
     <footer className="mt-5 text-center">
+      <div id="sound"></div>
       {/* <hr />
       <span><i>Học nhiều thực hành ít không bằng học ít thực hành nhiều.</i> </span> */}
       <br />
