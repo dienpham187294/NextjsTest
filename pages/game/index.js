@@ -88,7 +88,7 @@ function MyComponent() {
 
 
 
-            let sprite = PIXI.Sprite.from('https://i.postimg.cc/ZYvK89Lk/Untitled-1.jpg');
+            let sprite = PIXI.Sprite.from('https://i.postimg.cc/SRWCVcf4/man2.png');
             sprite.width = 30;
             sprite.height = 30;
             sprite.x = 99;
@@ -153,7 +153,7 @@ function MyComponent() {
 
     }, []);
     return (
-        <div style={{ width: "100%", textAlign: "center" }}>
+        <div style={{ width: "100%", textAlign: "center", marginTop: "10px" }}>
             <div ref={ref} />
 
             {ShowSide === "" ? "" :
@@ -187,8 +187,30 @@ function MyComponent() {
                         >
                             <button className="btn btn-info">Exit</button>
                         </div>
+                        <div style={{
+                            width: "800px",
+                            height: "600px",
+                            border: "1px solid black",
+                            borderRadius: "10px",
+                            marginTop: "10px",
+                            backgroundColor: "white",
+                       
+                            marginLeft: "50%",
+                            transform: "translateX(-50%)"
+                        }}
+                            className="row"
+                        >
+                            <div className="col-6 pt-5" >
+                                {Show_image()}
+                            </div>
+                            <div className="col-6 pt-5">
+                                    <ul>
+                                        <li>Go inside</li>
+                                        <li>Exit</li>
+                                    </ul>
+                            </div>
 
-                        {Show_image()}
+                        </div>
 
                     </div>
                 </div>

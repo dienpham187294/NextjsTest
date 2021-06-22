@@ -128,6 +128,17 @@ function MyApp({ Component, pageProps }) {
                 </Link>
               </div>
             </li>
+            <li className="nav-item dropdown active">
+              <Link href="/">
+                <a className="nav-link dropdown-toggle" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Game</a>
+              </Link>
+              <div className="dropdown-menu text-justify" aria-labelledby="dropdown03">
+                <hr />
+                <Link href={"/game"}>
+                  < a className="dropdown-item" >Ká Town</a>
+                </Link>
+              </div>
+            </li>
           </ul>
           <form className="form-inline my-2 my-md-0">
 
