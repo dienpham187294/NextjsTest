@@ -21,8 +21,7 @@ function Dictaphone({ Data }) {
     }, [Data])
     const {
         listening,
-        transcript,
-        browserSupportsSpeechRecognition
+        transcript
     } = useSpeechRecognition({
         commands
     });
@@ -31,9 +30,7 @@ function Dictaphone({ Data }) {
 
     });
 
-    if (!browserSupportsSpeechRecognition) {
-        return <span>Browser doesn't support speech recognition.</span>;
-    }
+
 
     return (<div>
 

@@ -2,51 +2,25 @@ import React, { useRef, useEffect, useState } from "react";
 import { async } from "regenerator-runtime";
 import GetFinal from "../../util/GetFinal"
 import SetAlert from "../../util/SetAlert"
-import Sound from "../../util/sound"
+import Read_ReactSpeech from "../helpers/Read_ReactSpeech"
+import arrNPC from "../../util/game/arrNpc"
+import Dictaphone from "../helpers/RegcognitionV1-0-1AI"
+import Show_RightSide from "../../util/game/showrightside"
+import Xuly from "../../util/game/xuly"
+import Xylyhandling from "../../util/game/xulyhandling"
+import ButtonDictaphone from "../../util/game/ButtonDictaphone"
 let arrLocation = [{ x: 0, y: 0 }];
-
 let arrXuly = [{}]
+let arrDataHandling = [];
 
-let arrNPC = [
-    {
-        "x": 25,
-        "y": 380,
-        "width": 100,
-        "height": 120,
-        "xuly":
-        {
-            "Showhinh": "https://i.postimg.cc/dQym97VH/Address.jpg",
-            "soundfirst": "mixkit-ominous-drums-227.wav"
-        }
-    },
-    {
-        "x": 185,
-        "y": 95,
-        "width": 60,
-        "height": 55,
-        "xuly":
-        {
-            "Showhinh": "https://i.postimg.cc/d1vPYkN6/Main-House.jpg",
-            "soundfirst": "mixkit-video-game-treasure-2066.wav"
-        }
-    }
-    ,
-    {
-        "x": 275,
-        "y": 200,
-        "width": 45,
-        "height": 50,
-        "xuly":
-        {
-            "Showhinh": "https://i.postimg.cc/dQym97VH/Address.jpg",
-            "soundfirst": "mixkit-video-game-treasure-2066.wav"
-        }
-    }
-]
 function MyComponent() {
     const ref = useRef(null);
     const [ShowSide, SET_ShowSide] = useState("")
     const [AlertChange, SET_AlertChange] = useState(0)
+    //////////
+    const [Data_Commands, SET_Data_Commands] = useState(["hi first"])
+    const [Check_MessageApiChange, SET_Check_MessageApiChange] = useState(0)
+    //////////
     useEffect(() => {
         // On first render create our application
         try {
@@ -75,18 +49,12 @@ function MyComponent() {
                     Yuse = e.layerY - (e.layerY + sprite.y) % 3
                 }
                 arrLocation.push({ x: Xuse, y: Yuse });
-
-
-                console.log(GetFinal(arrLocation))
                 try {
                     ticker.start();
                 } catch (error) {
 
                 }
             });
-
-
-
 
             let sprite = PIXI.Sprite.from('https://i.postimg.cc/SRWCVcf4/man2.png');
             sprite.width = 30;
@@ -102,8 +70,6 @@ function MyComponent() {
             // ticker.start();
             function animated() {
                 try {
-
-
                     if (sprite.x < GetFinal(arrLocation)["x"]) {
                         sprite.x += 3
                     }
@@ -128,7 +94,7 @@ function MyComponent() {
                                 (GetFinal(arrLocation)["y"] < e.y + e.height)
                             ) {
                                 arrXuly.push(e.xuly)
-                                Xuly()
+                                Xuly(SET_ShowSide, SetAlert, SET_Data_Commands, arrXuly, SET_AlertChange)
                             }
                         })
                         ticker.stop();
@@ -149,90 +115,37 @@ function MyComponent() {
         } catch (error) {
             console.log(error)
         }
-
-
     }, []);
+
+    useEffect(() => {
+        let Datahandling = $("#messageRes").val()
+        Xylyhandling(Datahandling)
+
+    }, [Check_MessageApiChange])
+
     return (
         <div style={{ width: "100%", textAlign: "center", marginTop: "10px" }}>
+
+            <hr />
             <div ref={ref} />
-
+            <hr />
+            <div>
+                <Dictaphone Data={Data_Commands} />
+                {ButtonDictaphone(SetAlert, SET_Check_MessageApiChange)}
+            </div>
+            <hr />
             {ShowSide === "" ? "" :
-                <div>
-                    <div
-                        style={{
-                            position: "absolute",
-                            width: "100%",
-                            height: "1000px",
-                            backgroundColor: "black",
-                            top: "5px",
-                            opacity: "0.5"
-                        }}
-                    > </div>
-                    <div
-                        id="myDIV"
-                        style={{
-                            width: "100%",
-                            textAlign: "center",
-                            position: "fixed",
-                            top: "1%",
-                            bottom: "1%"
-                        }}>
-                        <div style={{
-                            width: "100%",
-                            textAlign: "center"
-                        }}
-                            onClick={() => {
-                                SET_ShowSide("")
-                            }}
-                        >
-                            <button className="btn btn-info">Exit</button>
-                        </div>
-                        <div style={{
-                            width: "800px",
-                            height: "600px",
-                            border: "1px solid black",
-                            borderRadius: "10px",
-                            marginTop: "10px",
-                            backgroundColor: "white",
-                       
-                            marginLeft: "50%",
-                            transform: "translateX(-50%)"
-                        }}
-                            className="row"
-                        >
-                            <div className="col-6 pt-5" >
-                                {Show_image()}
-                            </div>
-                            <div className="col-6 pt-5">
-                                    <ul>
-                                        <li>Go inside</li>
-                                        <li>Exit</li>
-                                    </ul>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
+                Show_RightSide({ SET_ShowSide, arrXuly, Data_Commands })
             }
-
+            <Read_ReactSpeech />
         </div>
     )
-
-
-    async function Xuly() {
-        SET_ShowSide("1")
-        SetAlert(SET_AlertChange);
-        Sound(GetFinal(arrXuly)["soundfirst"]);
-    }
-
-    function Show_image() {
-        try {
-            return <img src={GetFinal(arrXuly)["Showhinh"]} width="300px" />
-        } catch (error) {
-            return null
-        }
-    }
 }
 
 export default MyComponent
+
+Array.prototype.PickRandom = function () {
+    return this[Math.floor(Math.random() * this.length)];
+}
+
+

@@ -9,6 +9,9 @@ if (process.brower) {
     SpeechRecognition.applyPolyfill(SpeechlySpeechRecognition);
 }
 let commands = [];
+
+
+
 function Dictaphone({ Data }) {
     useEffect(() => {
         commands = [{
@@ -21,26 +24,22 @@ function Dictaphone({ Data }) {
     }, [Data])
     const {
         listening,
-        transcript,
-        browserSupportsSpeechRecognition
+        transcript
     } = useSpeechRecognition({
         commands
     });
     const startListening = () => SpeechRecognition.startListening({ continuous: true, language: 'en-GB' });
 
-    if (!browserSupportsSpeechRecognition) {
-        return <span>Browser doesn't support speech recognition.</span>;
-    }
+
 
     return (<div>
-
         <p>Microphone: {listening ? 'on' : 'off'}</p>
         <button
             onClick={startListening}
         >Click to talk</button>
         <input type="text" id="messageRes" defaultValue="" />
-        {transcript}
-        {JSON.stringify(Data)}
+        <div>{transcript}</div>
+        <div>{JSON.stringify(Data)}</div>
     </div>
     );
 };
