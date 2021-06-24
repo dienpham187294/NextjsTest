@@ -1,0 +1,88 @@
+[
+    {
+        "x": 185,
+        "y": 95,
+        "width": 60,
+        "height": 55,
+        "xuly": {
+            "Showhinh": "https://i.postimg.cc/B6Y7Syf1/Avatar-1.jpg",
+            "sound1st": "mixkit-video-game-treasure-2066.wav",
+            "robotspeak1st": [
+                "Hi. May i help you",
+                "hello. may i help you"
+            ],
+            "robotgender": 2,
+            "funtionXuly": [],
+            "handling_next": []
+        }
+    },
+    {
+        "location": [
+            0,
+            0
+        ],
+        "manspeak": [
+            "Get request."
+        ],
+        "voice": 2,
+        "robotspeak": [
+            "What kind of request do you want?"
+        ],
+        "funtionXuly": [
+            {}
+        ],
+        "handling_next": []
+    },
+    {
+        "location": [
+            0,
+            0
+        ],
+        "manspeak": [
+            "Get request."
+        ],
+        "voice": 2,
+        "robotspeak": [
+            "What kind of request do you want?"
+        ],
+        "funtionXuly": [
+            {}
+        ],
+        "handling_next": []
+    },
+    {
+        "location": [
+            0,
+            0
+        ],
+        "manspeak": [
+            "Get request."
+        ],
+        "voice": 2,
+        "robotspeak": [
+            "What kind of request do you want?"
+        ],
+        "funtionXuly": [
+            {}
+        ],
+        "handling_next": []
+    },
+    {
+        "location": [
+            0,
+            0,
+            1
+        ],
+        "manspeak": [
+            "Get request."
+        ],
+        "voice": 2,
+        "robotspeak": [
+            "What kind of request do you want?"
+        ],
+        "funtionXuly": [
+            {}
+        ],
+        "handling_next": []
+    }
+]

@@ -9,9 +9,10 @@ import Show_RightSide from "../../util/game/showrightside"
 import Xuly from "../../util/game/xuly"
 import Xylyhandling from "../../util/game/xulyhandling"
 import ButtonDictaphone from "../../util/game/ButtonDictaphone"
+
 let arrLocation = [{ x: 0, y: 0 }];
 let arrXuly = [{}]
-let arrDataHandling = [];
+let Arrhandling_next = ["none"];
 
 function MyComponent() {
     const ref = useRef(null);
@@ -20,6 +21,9 @@ function MyComponent() {
     //////////
     const [Data_Commands, SET_Data_Commands] = useState(["hi first"])
     const [Check_MessageApiChange, SET_Check_MessageApiChange] = useState(0)
+    const [Data_handlingNext, SET_Data_handlingNext] = useState([])
+
+    const [ImageLeftSide, SET_ImageLeftSide] = useState("")
     //////////
     useEffect(() => {
         // On first render create our application
@@ -48,6 +52,7 @@ function MyComponent() {
                 } else {
                     Yuse = e.layerY - (e.layerY + sprite.y) % 3
                 }
+                console.log(Xuse, Yuse)
                 arrLocation.push({ x: Xuse, y: Yuse });
                 try {
                     ticker.start();
@@ -56,7 +61,7 @@ function MyComponent() {
                 }
             });
 
-            let sprite = PIXI.Sprite.from('https://i.postimg.cc/SRWCVcf4/man2.png');
+            let sprite = PIXI.Sprite.from('https://i.postimg.cc/28nB0R6j/Avatar-2.jpg');
             sprite.width = 30;
             sprite.height = 30;
             sprite.x = 99;
@@ -94,7 +99,10 @@ function MyComponent() {
                                 (GetFinal(arrLocation)["y"] < e.y + e.height)
                             ) {
                                 arrXuly.push(e.xuly)
-                                Xuly(SET_ShowSide, SetAlert, SET_Data_Commands, arrXuly, SET_AlertChange)
+                                Arrhandling_next.push(e.xuly["handling_next"])
+                                SET_Data_handlingNext(e.xuly["handling_next"])
+                                SET_ImageLeftSide(e.xuly["Showhinh"])
+                                Xuly(SET_ShowSide, SetAlert, SET_Data_Commands, arrXuly, SET_AlertChange, SET_ImageLeftSide)
                             }
                         })
                         ticker.stop();
@@ -118,9 +126,8 @@ function MyComponent() {
     }, []);
 
     useEffect(() => {
-        let Datahandling = $("#messageRes").val()
-        Xylyhandling(Datahandling)
-
+        let MessageApi = $("#messageRes").val()
+        Xylyhandling(MessageApi, GetFinal(Arrhandling_next), Data_handlingNext, SET_Data_handlingNext, SET_Data_Commands, SET_ImageLeftSide)
     }, [Check_MessageApiChange])
 
     return (
@@ -129,13 +136,19 @@ function MyComponent() {
             <hr />
             <div ref={ref} />
             <hr />
-            <div>
+            <div style={{
+                position: "fixed",
+                width: "300px",
+                left: "1px",
+                top: "100px",
+                zIndex: 1
+            }}>
                 <Dictaphone Data={Data_Commands} />
                 {ButtonDictaphone(SetAlert, SET_Check_MessageApiChange)}
             </div>
             <hr />
             {ShowSide === "" ? "" :
-                Show_RightSide({ SET_ShowSide, arrXuly, Data_Commands })
+                Show_RightSide({ SET_ShowSide, arrXuly, Data_Commands, ImageLeftSide })
             }
             <Read_ReactSpeech />
         </div>

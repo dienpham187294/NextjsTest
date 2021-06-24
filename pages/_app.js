@@ -16,6 +16,12 @@ let ArrHoldLinkBaiHoc = [
   { "link": "baihoc/800-cau-giao-tiep-thong-dung-nhat", "name": "800 câu giao tiếp thông dụng" },
   { "link": "baihoc/20-chu-de-hoc-tieng-anh-qua-hinh-anh", "name": "20 chủ đề học tiếng anh qua hình ảnh" }
 ]
+let arrVersion1 = [
+  { "link": "thuchanh/version01/lam-quen-tu-vung", "name": "Làm quen từ vựng với CustomFile" },
+  { "link": "thuchanh/version01/thuc-hanh-doc-sach-thanh-tieng", "name": "Đọc thành tiếng với CustomFile" },
+  { "link": "thuchanh/version01/thuc-hanh-nghe-va-lap-lai", "name": "Nghe và lặp lại với CustomFile" },
+  { "link": "thuchanh/version01/thuc-hanh-ngu-phap", "name": "Làm bài tập với CustomFile" }
+]
 let ArrHoldLinkThucHanh = [
   { "link": "thuchanh/thuc-hanh-3000-tu-vung-thong-dung-nhat", "name": "Thực hành 3000+ từ vựng thông dụng nhất" },
   { "link": "thuchanh/thuc-hanh-3000-tu-vung-thong-dung-nhat-khong-gioi-han-voi-customfile", "name": "Thực hành từ vựng không giới hạn với CustomFile" },
@@ -112,16 +118,21 @@ function MyApp({ Component, pageProps }) {
                 <a className="nav-link dropdown-toggle" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Thực hành</a>
               </Link>
               <div className="dropdown-menu text-justify" aria-labelledby="dropdown03">
+                <i>Version 0.1</i>
+                <hr />
+                {arrVersion1.map((e, i) =>
+                  <Link key={i} href={"/" + e.link}>
+                    < a className="dropdown-item" >{e.name}</a>
+                  </Link>
+                )}
+                <hr />
+                <i>Version 0.2</i>
                 <hr />
                 {ArrHoldLinkThucHanh.map((e, i) =>
                   <Link key={i} href={"/" + e.link}>
                     < a className="dropdown-item" >{e.name}</a>
                   </Link>
                 )}
-                {/* <hr />
-                <Link key="Timhieu" href="/thuchanh">
-                  < a className="dropdown-item" >Tìm hiểu về trí thông minh nhân tạo, <br /> công nghệ nhận diện giọng nói <br /> và ứng dụng trong thực hành tiếng anh.</a>
-                </Link> */}
                 <hr />
                 <Link href={"/thuchanh/tao-file-thuc-hanh"}>
                   < a className="dropdown-item" >Tạo CustomFile - Thực hành không giới hạn theo ý muốn</a>

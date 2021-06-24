@@ -37,9 +37,11 @@ function Dictaphone({ Data }) {
         <button
             onClick={startListening}
         >Click to talk</button>
-        <input type="text" id="messageRes" defaultValue="" />
-        <div>{transcript}</div>
+        <input disabled type="text" id="messageRes" defaultValue="" />
+        <hr />
         <div>{JSON.stringify(Data)}</div>
+        <hr />
+        <div>{transcript}</div>
     </div>
     );
 };

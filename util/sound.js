@@ -3,7 +3,7 @@ import { async } from "regenerator-runtime";
 export default async function Sound(str) {
     try {
         var x = await document.createElement("AUDIO");
-
+        x.setAttribute("class", "soundClass")
         if (x.canPlayType("audio/mpeg")) {
             x.setAttribute("src", "/sound/" + str);
         } else {

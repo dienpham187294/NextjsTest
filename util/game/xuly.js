@@ -1,11 +1,13 @@
 import GetFinal from "../GetFinal"
 import Sound from "../sound"
 import ReadMessage from "../ReadMessage"
-export default async function Xuly(SET_ShowSide, SetAlert, SET_Data_Commands, arrXuly, SET_AlertChange) {
+import funtionxuly from "./funtionxuly"
+import GetDataCommands from "./GetDataCommands"
+export default async function Xuly(SET_ShowSide, SetAlert, SET_Data_Commands, arrXuly, SET_AlertChange, SET_ImageLeftSide) {
     try {
+        funtionxuly(GetFinal(arrXuly)["funtionXuly"], SET_ImageLeftSide)
         SET_ShowSide("1")
         SetAlert(SET_AlertChange);
-
         Sound(GetFinal(arrXuly)["sound1st"]);
         setTimeout(() => {
             try {
@@ -14,15 +16,10 @@ export default async function Xuly(SET_ShowSide, SetAlert, SET_Data_Commands, ar
 
             }
         }, 2000);
-        let arr1 = [];
-        GetFinal(arrXuly)["handling_next"].forEach(e => {
-            e.manspeak.forEach(ee => {
-                arr1.push(ee)
-            })
-        })
-        SET_Data_Commands(arr1)
+        SET_Data_Commands(GetDataCommands(GetFinal(arrXuly)["handling_next"]))
     } catch (error) {
         console.log(error)
     }
 
 }
+

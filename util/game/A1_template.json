@@ -1,0 +1,20 @@
+{
+    "location": [
+        0,
+        0
+    ],
+    "manspeak": [
+        "I want to get request."
+    ],
+    "voice": 2,
+    "robotspeak": [
+        "That ok"
+    ],
+    "funtionXuly": [
+        {
+            "type": "getRequest",
+            "data": "https://i.postimg.cc/B6Y7Syf1/Avatar-1.jpg"
+        }
+    ],
+    "handling_next": []
+}

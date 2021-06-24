@@ -1,5 +1,4 @@
-import Show_image from "./Show_image"
-import GetFinal from "../GetFinal"
+import Show_image from "./Show_image" 
 export default function Show_RightSide(props) {
     try {
         return (
@@ -29,6 +28,17 @@ export default function Show_RightSide(props) {
                     }}
                         onClick={() => {
                             props.SET_ShowSide("")
+                            try {
+                                let arr = document.getElementsByClassName("soundClass");
+                                if (arr.length > 0) {
+                                    if (!arr[arr.length - 1].paused) {
+                                        arr[arr.length - 1].pause()
+                                    }
+                                }
+
+                            } catch (error) {
+                                console.log(error)
+                            }
                         }}
                     >
                         <button className="btn btn-info">Exit</button>
@@ -46,14 +56,36 @@ export default function Show_RightSide(props) {
                         className="row"
                     >
                         <div className="col-6 pt-5" >
-                            {Show_image(GetFinal(props.arrXuly)["Showhinh"])}
+                            <div style={{
+                                position: "absolute",
+                                width: "380px",
+                                top: "5px",
+                                backgroundColor: "white",
+                                border: "1px solid black",
+                                borderRadius: "5px"
+                            }} id="addImageID"></div>
+
+                            {Show_image(props.ImageLeftSide)}
+
                         </div>
                         <div className="col-6 pt-5 text-left">
-                            <ul>
+                            {/* <ul style={{
+                                maxHeight: "300px",
+                                overflow: "auto"
+                            }}>
                                 {props.Data_Commands.map((e, i) =>
                                     <li key={i}>{e}</li>
                                 )}
-                            </ul>
+                            </ul> */}
+                            <div
+                                style={{
+                                    height: "450px",
+                                    overflow: "auto"
+                                }}
+                                id="addCustomItem">
+
+                            </div>
+
                         </div>
 
                     </div>
