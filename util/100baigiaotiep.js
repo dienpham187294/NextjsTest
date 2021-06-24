@@ -25,7 +25,9 @@ export default [
             "A little, but not very well.",
             "How long have you been here?",
             "2 months.",
-            "What do you do for work?", "I'm a student. How about you? ", "I'm a student too."
+            "What do you do for work?",
+            "I'm a student. How about you?",
+            "I'm a student too."
         ]
 
     },
@@ -33,15 +35,15 @@ export default [
         "tille": "Chủ đề 3: WHAT’S YOUR NAME?",
         "lession": [
 
-            "Excuse me, what's your name?", 
-            "My name is Jessica. What's yours?", 
+            "Excuse me, what's your name?",
+            "My name is Jessica. What's yours?",
             "John.",
             "You speak English very well.",
             "Thank you.",
             "Do you know what time it is?",
             "Sure. It's 5:10PM.",
-            "What did you say?", 
-            "I said it's 5:10PM.", 
+            "What did you say?",
+            "I said it's 5:10PM.",
             " Thanks.",
             "You're welcome."
         ]
@@ -74,7 +76,8 @@ export default [
         "lession": [
 
             "Hi Sarah, how are you?",
-            "Fine, how are you doing? OK.",
+            "Fine, how are you doing?",
+            "OK.",
             "What do you want to do?",
             "I'm hungry. I'd like to eat something.",
             "Where do you want to go?",
@@ -93,7 +96,9 @@ export default [
             "No, I'm full.",
             "Do you want something to drink?",
             "Yes, I'd like some coffee.",
-            "Sorry, I don't have any coffee. That's OK. I'll have a glass of water. A small glass, or a big one?",
+            "Sorry, I don't have any coffee.",
+            "That's OK. I'll have a glass of water.",
+            "A small glass, or a big one?",
             "Small please. Here you go. Thanks.",
             "You're welcome."
         ]
@@ -122,16 +127,24 @@ export default [
         "tille": "Chủ đề 8: CHOOSING A TIME TO MEET",
         "lession": [
 
-            "Jennifer, would you like to have dinner with me? Yes. That would be nice. When do you want to go? Is today OK?",
+            "Jennifer, would you like to have dinner with me?",
+            "Yes. That would be nice. When do you want to go? Is today OK?",
             "Sorry, I can't go today.",
             "How about tomorrow night?",
             "Ok. What time?",
-            "Is 9:00PM all right? I think that's too late. Is 6:00PM OK?",
+            "Is 9:00PM all right?",
+            "I think that's too late.",
+            "Is 6:00PM OK?",
             "Yes, that's good. Where would you like to go?",
             "The Italian restaurant on 5th street.",
             "Oh, I don't like that Restaurant. I don't want to go there.",
             "How about the Korean restaurant next to it?",
-            "OK, I like that place.",
+            "OK, I like that place."]
+    },
+
+    {
+        "tille": "Chủ đề 9: WHEN DO YOU WANT TO GO?",
+        "lession": [
             "Hi Mark.",
             "Hi.",
             "What are you planning to do today?",
@@ -158,6 +171,7 @@ export default [
             "Hello sir, welcome to the French Garden Restaurant. How many?",
             "One.",
             "Right this way. Please have a seat. Your waitress will be with you in a moment.",
+            "ok",
             "Hello sir, would you like to order now?",
             "Yes please.",
             "What would you like to drink?",
@@ -220,8 +234,12 @@ export default [
             "Why?",
             "I'm sick.",
             "Sorry to hear that.",
-            "It’s OK. It’s not serious. That's good. How's your wife? She's good.",
-            "Is she in America now? No, she's not here yet. Where is she?",
+            "It’s OK. It’s not serious.",
+            "That's good. How's your wife?",
+            "She's good.",
+            "Is she in America now?",
+            "No, she's not here yet.",
+            "Where is she?",
             "She's in Canada with our kids.",
             "I see. I have to go now. Please tell your wife I said hi.",
             "OK, I'll talk to you later.",
@@ -244,7 +262,9 @@ export default [
             "What do you teach?",
             "I teach English.",
             "Where?",
-            "At a high school in New Jersey. That's nice. How old are you? I'm 32."
+            "At a high school in New Jersey. That's nice.",
+            "How old are you?",
+            "I'm 32."
         ]
 
     },
@@ -299,7 +319,9 @@ export default [
             "Excuse me. Do you know how to get to the mall?",
             "Sure, I used to work there. Go straight for about a mile, then turn left at the light. The mall will be on the right.",
             "Do you know the address?",
-            "Yes, the address is 541 Main street. Can you write it down for me please? No problem.",
+            "Yes, the address is 541 Main street.",
+            "Can you write it down for me please?",
+            "No problem.",
             "Is it faster if I take Highland avenue?",
             "No, that way is longer. There are more stop lights on that street.",
             "I think you're right. Thank you."
@@ -313,10 +335,14 @@ export default [
             "What's today's date?",
             "It's July 5th.",
             "When are you going on vacation?",
-            "I'm leaving on Sunday. We're going to Canada. Really? The day after tomorrow? That's very soon. Yeah I know.",
+            "I'm leaving on Sunday. We're going to Canada.",
+            "Really? The day after tomorrow? That's very soon.",
+            "Yeah I know.",
             "How long are you going to stay there?",
             "About 2 weeks.",
-            "When are you coming back? I'm coming back on the 17th. Alright. Have a nice trip."
+            "When are you coming back?",
+            "I'm coming back on the 17th.",
+            "Alright. Have a nice trip."
         ]
 
     },
@@ -329,7 +355,9 @@ export default [
             "What does she do for work?",
             "She's a lawyer.",
             "Is she American?",
-            "No, but she speaks English fluently. She's really tall. Do you know her? Yes, I know her. We're friends.",
+            "No, but she speaks English fluently.",
+            "She's really tall. Do you know her?",
+            "Yes, I know her. We're friends.",
             "Who's that man standing next to her?",
             "Which man?",
             "That short guy on her right. What's his name?",
@@ -351,7 +379,9 @@ export default [
             "Brian, do you know how to speak English?",
             "Yes.",
             "Where did you learn?",
-            "I learned in college. You speak really well. Thank you.",
+            "I learned in college.",
+            "You speak really well.",
+            "Thank you.",
             "How long have you been in the US?",
             "3 weeks.",
             "Is your wife with you?",
@@ -423,7 +453,9 @@ export default [
             "‘Laptop’. Did I pronounce that correctly?",
             "Yes, that's right. That's very good.",
             "Thanks. And this word? How do you pronounce this?",
-            "That word is pronounced ‘kitchen’. Thanks so much. You're a good teacher. Thanks."
+            "That word is pronounced ‘kitchen’.",
+            "Thanks so much. You're a good teacher.",
+            "Thanks."
         ]
 
     },
@@ -435,7 +467,9 @@ export default [
             "Not good. I lost my wallet.",
             "Oh, that's too bad. Was it stolen?",
             "No, I think it came out of my pocket when I was in the taxi.",
-            "Is there anything I can do? Can I borrow some money? Sure, how much do you need? About 50 dollars.",
+            "Is there anything I can do?",
+            "Can I borrow some money?",
+            "Sure, how much do you need? About 50 dollars.",
             "That's no problem.",
             "Thanks. I'll pay you back on Friday.",
             "That'll be fine. Here you are.",
@@ -475,7 +509,9 @@ export default [
         "tille": "Chủ đề 26: FAMILY TRIP",
         "lession": [
 
-            "David, what have you been up to lately? I went on a trip with my family last week. Really? Where did you go?",
+            "David, what have you been up to lately?",
+            "I went on a trip with my family last week.",
+            "Really? Where did you go?",
             "We went to Europe.",
             "What cities did you go to?",
             "London, Paris and a few other smaller cities.",
@@ -494,7 +530,8 @@ export default [
 
             "Sarah, what did you do today?",
             "I went shopping.",
-            "Did you buy anything? Yes, I bought a few things. What did you buy?",
+            "Did you buy anything?",
+            "Yes, I bought a few things. What did you buy?",
             "I bought this coat. Do you like it?",
             "Yeah, I like it a lot. It's very pretty. Where did you buy it?",
             "At the mall on 5th street.",
@@ -513,7 +550,9 @@ export default [
             "Paul, what kind of music do you like to listen to?",
             "All kinds, but mostly Pop, rock and classical. Why?",
             "I have tickets to a show. Do you want to go with me?",
-            "What kind of music is it? Pop. It's Mariah Carey. When is it?",
+            "What kind of music is it?",
+            "Pop. It's Mariah Carey.",
+            "When is it?",
             "At 8PM tomorrow night.",
             "Yeah, I'd like to go. Do you think we should have dinner first?",
             "Yes, that's a good idea.",
@@ -532,7 +571,9 @@ export default [
             "Sure. First we'll go buy a newspaper and then we'll go to the library.",
             "Are we going to walk or drive?",
             "The weather is really nice today. Let's walk.",
-            "The weather is good now, but I think it's suppose to rain this afternoon. Alright, then let's take an umbrella. Is your brother coming with us? No, he's still sleeping.",
+            "The weather is good now, but I think it's suppose to rain this afternoon.",
+            "Alright, then let's take an umbrella. Is your brother coming with us?",
+            "No, he's still sleeping.",
             "Wow, it's already 10:00AM. He must have been up late last night.",
             "Yeah, he didn't come home until 12:00AM.",
             "I hope he can come later.",
@@ -546,7 +587,9 @@ export default [
         "tille": "Chủ đề 30: WHERE DO YOUR PARENTS LIVE?",
         "lession": [
 
-            "Hi Melissa, are you going home this weekend? No, not this weekend. I have too much work to do. Where do your parents live?",
+            "Hi Melissa, are you going home this weekend?",
+            "No, not this weekend. I have too much work to do.",
+            "Where do your parents live?",
             "My father lives in Washington DC.",
             "How about your mother?",
             "My mother died two years ago.",
@@ -592,13 +635,16 @@ export default [
         "tille": "Chủ đề 32: PAYING FOR DINNER",
         "lession": [
 
-            "Excuse me. Check please. OK, how was everything? Very nice. Thank you.",
+            "Excuse me. Check please.",
+            "OK, how was everything?",
+            "Very nice. Thank you.",
             "Would you like this to-go?",
             "Yes, can you put it in a plastic bag?",
             "Sure, no problem. Here you are. That'll be 25 dollars.",
             "Do you take credit cards?",
             "Yes, we accept Visa and MasterCard.",
-            "OK, here you are. Thanks. I'll be right back. OK.",
+            "OK, here you are.",
+            "Thanks. I'll be right back. OK.",
             "Here's your receipt.",
             "Thank you.",
             "You're welcome. Please come again."
@@ -610,8 +656,12 @@ export default [
         "lession": [
 
             "Next please. Hello. How can I help you?",
-            "I'd like to buy a ticket to New York. Would you like one way or round trip? Round trip.",
-            "When will you be leaving? When does the next plane leave? In about 2 hours.",
+            "I'd like to buy a ticket to New York.",
+            "Would you like one way or round trip?",
+            "Round trip.",
+            "When will you be leaving?",
+            "When does the next plane leave?",
+            "In about 2 hours.",
             "I'd like a ticket for that flight please.",
             "First class or coach?",
             "Coach. OK, let me check availability. I'm sorry. Tickets for that flight are sold out.",
@@ -627,7 +677,6 @@ export default [
     {
         "tille": "Chủ đề 34: PUTTING THINGS IN ORDER",
         "lession": [
-
             "Michelle, Can you help me clean things up before we go?",
             "Sure. Where should I put this cup?",
             "Which cup?",
@@ -635,9 +684,13 @@ export default [
             "Put it on top of the table.",
             "How about this fruit?",
             "Oh, that goes in the refrigerator.",
-            "And those pencils? What should I do with them? Bring those upstairs and put them in the bedroom. How about this pen?",
+            "And those pencils? What should I do with them?",
+            "Bring those upstairs and put them in the bedroom.",
+            "How about this pen?",
             "Give it to me. I need to use it.",
-            "What do you want me to do with that paper over there? You can throw that away. I don't need it anymore. The trash is full.",
+            "What do you want me to do with that paper over there?",
+            "You can throw that away. I don't need it anymore.",
+            "The trash is full.",
             "Alright, then please put it in a bag and take it outside.",
             "OK. Now what?",
             "I think we're finished. Can you please turn off the lights and shut the door?",
@@ -649,7 +702,9 @@ export default [
         "tille": "Chủ đề 35 – AT THE RESTAURANT",
         "lession": [
 
-            "This looks like a nice restaurant. Yeah, it is. I come here all the time. Let’s sit over there.",
+            "This looks like a nice restaurant.",
+            "Yeah, it is. I come here all the time.",
+            "Let’s sit over there.",
             "OK.",
             "Can you pass me a menu please.",
             "Sure. What are you going to have to drink?",
@@ -718,7 +773,9 @@ export default [
             "Oh, I see. Where’sMexico?",
             "Mexico is south of theUnited States.",
             "How about Connecticut? Where’s that?",
-            "Connecticut is east ofNew York. What state is west of Pennsylvania? Ohio.",
+            "Connecticut is east ofNew York.",
+            "What state is west of Pennsylvania?",
+            "Ohio.",
             "OK, Where’s Los Angeles?",
             "Los Angeles is inCalifornia. It’s southeast of San Francisco.",
             "Where’s Boston.",
@@ -733,7 +790,9 @@ export default [
         "lession": [
 
             "Hi Maria, did you have breakfast yet?",
-            "Yes, I ate at the hotel with my son and my husband. Oh, they have good food there. What did you have? I had some cereal, fried eggs and orange juice.",
+            "Yes, I ate at the hotel with my son and my husband.",
+            "Oh, they have good food there. What did you have?",
+            "I had some cereal, fried eggs and orange juice.",
             "How was it?",
             "The food didn’t taste very good, and actually I don’t feel very well now.",
             "That’s too bad. Do you want to take a break?",
@@ -746,11 +805,12 @@ export default [
     {
         "tille": "Chủ đề 40: GOING TO THE MOVIES",
         "lession": [
-
             "Ann, what do you want to do tonight?",
             "I’d like to go see a movie.",
             "I heard Titanic is playing at the movie theater.",
-            "Oh, I’ve heard that’s a good movie. What time does it start? 6:30PM. It’s a long movie. I think it lasts for about 3 hours. Will you come and pick me up?",
+            "Oh, I’ve heard that’s a good movie. What time does it start?",
+            "6:30PM. It’s a long movie. I think it lasts for about 3 hours.",
+            "Will you come and pick me up?",
             "What time?",
             "I think we should get there early because they might be sold out. Is 5:00PM OK?",
             "Yes, that’ll be fine. I’ll meet you at your house at 5:00PM.",
