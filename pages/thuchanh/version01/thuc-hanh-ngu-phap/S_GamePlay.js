@@ -29,19 +29,6 @@ function GamePlay(props) {
 
     const [End, SET_End] = useState(false)
 
-    async function Read(message) {
-        if (message !== null) {
-            try {
-                let ut = await new SpeechSynthesisUtterance(message);
-                ut.voice = await synth.getVoices()[3];
-                synth.speak(ut);
-            } catch (error) {
-                console.error();
-            }
-        }
-
-    }
-
     useEffect(
         () => {
             let timer1 = setTimeout(() => SET_TimeCount(C => C - 1), 1000);

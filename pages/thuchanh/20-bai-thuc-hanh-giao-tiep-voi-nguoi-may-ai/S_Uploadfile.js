@@ -1,9 +1,10 @@
 import { pick } from "query-string";
 import { useEffect, useState } from "react";
 import baithuchanhgiaotiep from "../../../util/20baithuchanhgiaotiep"
+import baithuchanhgiaotiep1 from "../../../util/20baithuchanhgiaotiep1"
 import SetAlert from "../../../util/SetAlert"
 function UpLoadFile(props) {
-    const [Data_20baithuchanh] = useState(baithuchanhgiaotiep)
+    const [Data_20baithuchanh] = useState(baithuchanhgiaotiep.concat(baithuchanhgiaotiep1))
     function Fnpick(arrPick) {
         try {
             props.SET_Data_InfoOflession(arrPick)

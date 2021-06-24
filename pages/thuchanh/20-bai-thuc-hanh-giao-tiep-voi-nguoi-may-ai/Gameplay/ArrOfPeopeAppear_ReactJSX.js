@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from "react";
 // import Read_ReactJSX from "../../../pages/helpers/Read_ReactJSX"
 import DataTool from "../S_Data_tool"
-
+import Read_ReactSpeech from "../../../helpers/Read_ReactSpeech"
+import ReadMessage from "../../../../util/ReadMessage"
 let VoicePick = [1];
 
 let State_of_Anwer = ["none"];
 let Data_temp_Strickmode = [];
 let AllData_OfOne = [];
 
-let flag = true;
-let synth;
+
 
 function ArrOfPeopeAppear_ReactJSX(props) {
 
@@ -32,15 +32,6 @@ function ArrOfPeopeAppear_ReactJSX(props) {
 
     }, [Info_StrickAnwers_Reactdata])
 
-    useEffect(() => {
-        if (flag) {
-            if ('speechSynthesis' in window) {
-                synth = window.speechSynthesis;
-                Read("ready.", 3)
-            }
-            flag = false;
-        }
-    })
     useEffect(
         () => {
             let timer1 = setTimeout(() => SET_TimeCount(C => C - 1), 1000);
@@ -109,7 +100,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
 
 
                             if (data.robotspeak.length > 0) {
-                                Read(data.robotspeak.PickRandom(), VoicePick[VoicePick.length - 1]);
+                                ReadMessage(data.robotspeak.PickRandom(), VoicePick[VoicePick.length - 1]);
                             }
 
                             if (data.handling_next.length > 0) {
@@ -174,12 +165,12 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                 await SET_Avatar_Reactdata(e.total.image);
                 await SET_Info_ToSunmit_Reactdata(e.total.submitsyntax)
                 if (e.total.gender === "female") {
-                    VoicePick.push([1, 2].PickRandom());
+                    VoicePick.push(1);
                 } else {
-                    VoicePick.push([3, 19].PickRandom());
+                    VoicePick.push(2);
                 }
 
-                Read(e.total.robotspeakfirst.PickRandom(), VoicePick[VoicePick.length - 1])
+                ReadMessage(e.total.robotspeakfirst.PickRandom(), VoicePick[VoicePick.length - 1])
             }
         } catch (error) {
             console.log(error)
@@ -361,7 +352,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                     </a>
                 </div> : ""}
             </div>
-
+            <Read_ReactSpeech />
             {/* <Read_ReactJSX MessagetoRead={MessagetoRead} SET_MessagetoRead={SET_MessagetoRead} /> */}
         </>
     )
@@ -406,27 +397,6 @@ function SortMessageToArray(message) {
 
 }
 
-function checkMessage(message_API, message_INPUT) {
-
-    if (message_API === null || message_INPUT === null || message_API === "" || message_INPUT === "") {
-        return false
-    }
-    let numCheckRight = 0;
-    let Allnumtocheck = SortMessageToArray(message_INPUT).length
-
-    SortMessageToArray(message_INPUT).forEach(e => {
-        if (message_API.indexOf(e) !== -1) {
-            numCheckRight += 1;
-
-        }
-    })
-
-    if (numCheckRight / Allnumtocheck > 2 / 3) {
-        return true
-    }
-    return false
-}
-
 function checkMessageReturnNumber(message_API, message_INPUT) {
 
     if (message_API === null || message_INPUT === null || message_API === "" || message_INPUT === "") {
@@ -456,17 +426,3 @@ Array.prototype.PickRandom = function () {
     return this[Math.floor(Math.random() * this.length)];
 }
 
-async function Read(message, i) {
-
-    if (message !== null) {
-
-        try {
-            let ut = await new SpeechSynthesisUtterance(message);
-            ut.voice = await synth.getVoices()[i];
-            synth.speak(ut);
-        } catch (error) {
-            console.error();
-        }
-    }
-
-}

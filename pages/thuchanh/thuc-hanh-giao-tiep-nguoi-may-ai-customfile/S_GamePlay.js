@@ -1,6 +1,6 @@
 
 import { useEffect, useState } from "react"
-import Dictaphone from "../../../pages/helpers/RegcognitionV1-0-1AI"
+import Dictaphone from "../../../pages/helpers/RegcognitionV1-0-1AI0.5"
 import ArrOfPeopeAppear_ReactJSX from "./Gameplay/ArrOfPeopeAppear_ReactJSX"
 
 
