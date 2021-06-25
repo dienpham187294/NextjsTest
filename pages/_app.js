@@ -191,7 +191,7 @@ function MyApp({ Component, pageProps }) {
                 <a className="nav-link dropdown-toggle" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Video Thực hành</a>
               </Link>
               <div className="dropdown-menu text-justify" aria-labelledby="dropdown03">
-                <i>Các video thực hành thực tế</i>
+                <i>Các video thực hành</i>
                 <hr />
                 {arrVideothuchanh.map((e, i) =>
                   <Link key={i} href={"/" + e.link}>

@@ -1,5 +1,7 @@
 import Body from "./main/_body"
-export default function Home() {
+function Home() {
+
+  // console.log("note", note)
   return (
     <div className="container-fluid">
       <Body />
@@ -7,3 +9,10 @@ export default function Home() {
   )
 }
 
+// export async function getServerSideProps(context) {
+//   return {
+//     props: { note: { "note": 1 } }, // will be passed to the page component as props
+//   }
+// }
+
+export default Home
