@@ -16,23 +16,38 @@ let ArrHoldLinkBaiHoc = [
   { "link": "baihoc/800-cau-giao-tiep-thong-dung-nhat", "name": "800 câu giao tiếp thông dụng" },
   { "link": "baihoc/20-chu-de-hoc-tieng-anh-qua-hinh-anh", "name": "20 chủ đề học tiếng anh qua hình ảnh" }
 ]
+let arrVersion1FileSanco = [
+  { "link": "thuchanh/version01/#", "name": "Đọc thành tiếng với hơn 200 bài báo và truyện" },
+]
 let arrVersion1 = [
   { "link": "thuchanh/version01/lam-quen-tu-vung", "name": "Làm quen từ vựng với CustomFile" },
   { "link": "thuchanh/version01/thuc-hanh-doc-sach-thanh-tieng", "name": "Đọc thành tiếng với CustomFile" },
   { "link": "thuchanh/version01/thuc-hanh-nghe-va-lap-lai", "name": "Nghe và lặp lại với CustomFile" },
   { "link": "thuchanh/version01/thuc-hanh-ngu-phap", "name": "Làm bài tập với CustomFile" }
 ]
-let ArrHoldLinkThucHanh = [
+let arrDulieuSanCo = [
   { "link": "thuchanh/thuc-hanh-3000-tu-vung-thong-dung-nhat", "name": "Thực hành 3000+ từ vựng thông dụng nhất" },
-  { "link": "thuchanh/thuc-hanh-3000-tu-vung-thong-dung-nhat-khong-gioi-han-voi-customfile", "name": "Thực hành từ vựng không giới hạn với CustomFile" },
   { "link": "thuchanh/thuc-hanh-23-chu-de-800-tu-vung-voi-hinh-anh", "name": "Thực hành 23+ chủ đề với 800+ từ vựng với hình ảnh minh họa" },
-  { "link": "thuchanh/thuc-hanh-23-chu-de-800-tu-vung-voi-hinh-anh-customfile", "name": "Thực hành từ vựng với hình ảnh minh họa không giới hạn với CustomFile" },
   { "link": "thuchanh/thuc-hanh-800-cau-giao-tiep-thong-dung", "name": "Thực hành 800+ câu giao tiếp thông dụng nhất" },
-  { "link": "thuchanh/thuc-hanh-800-cau-giao-tiep-thong-dung-customfile", "name": "Thực hành các câu giao tiếp không giới hạn với CustomFile" },
   { "link": "thuchanh/thuc-hanh-100-bai-giao-tiep-thong-dung-nhat", "name": "Thực hành 100+ bài hội thoại giao tiếp thông dụng nhất" },
+  { "link": "thuchanh/20-bai-thuc-hanh-giao-tiep-voi-nguoi-may-ai", "name": "Thực hành 20+ trò chơi giao tiếp với người máy AI" }
+]
+let ArrHoldLinkThucHanh = [
+
+  { "link": "thuchanh/thuc-hanh-3000-tu-vung-thong-dung-nhat-khong-gioi-han-voi-customfile", "name": "Thực hành từ vựng không giới hạn với CustomFile" },
+
+  { "link": "thuchanh/thuc-hanh-23-chu-de-800-tu-vung-voi-hinh-anh-customfile", "name": "Thực hành từ vựng với hình ảnh minh họa không giới hạn với CustomFile" },
+
+  { "link": "thuchanh/thuc-hanh-800-cau-giao-tiep-thong-dung-customfile", "name": "Thực hành các câu giao tiếp không giới hạn với CustomFile" },
+
   { "link": "thuchanh/thuc-hanh-100-bai-giao-tiep-thong-dung-nhat-customfile", "name": "Thực hành hội thoại giao tiếp không giới hạn với CustomFile" },
-  { "link": "thuchanh/20-bai-thuc-hanh-giao-tiep-voi-nguoi-may-ai", "name": "Thực hành 20+ trò chơi giao tiếp với người máy AI" },
+
   { "link": "thuchanh/thuc-hanh-giao-tiep-nguoi-may-ai-customfile", "name": "Thực hành trò chơi giao tiếp với người máy AI không giới hạn với CustomFile" }
+]
+
+let arrVideothuchanh = [
+  { "link": "thuchanh/#", "name": "Thực hành đọc sách, truyện thành tiếng" },
+  { "link": "thuchanh/#", "name": "Thực hành chơi game giao tiếp với người máy AI" }
 ]
 let flag = true;
 let inter
@@ -103,16 +118,13 @@ function MyApp({ Component, pageProps }) {
                 <a className="nav-link dropdown-toggle" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dữ liệu</a>
               </Link>
               <div className="dropdown-menu" aria-labelledby="dropdown03">
-
                 {ArrHoldLinkBaiHoc.map((e, i) =>
                   <Link key={i} href={"/" + e.link}>
                     < a className="dropdown-item" >{e.name}</a>
                   </Link>
                 )}
-
               </div>
             </li>
-
             <li className="nav-item dropdown active">
               <Link href="/">
                 <a className="nav-link dropdown-toggle" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Thực hành</a>
@@ -120,6 +132,14 @@ function MyApp({ Component, pageProps }) {
               <div className="dropdown-menu text-justify" aria-labelledby="dropdown03">
                 <i>Version 0.1</i>
                 <hr />
+                <i>Thực hành với file sẵn có</i>
+                {arrVersion1FileSanco.map((e, i) =>
+                  <Link key={i} href={"/" + e.link}>
+                    < a className="dropdown-item" >{e.name}</a>
+                  </Link>
+                )}
+                <hr />
+                <i>Thực hành với CustomFile</i>
                 {arrVersion1.map((e, i) =>
                   <Link key={i} href={"/" + e.link}>
                     < a className="dropdown-item" >{e.name}</a>
@@ -128,6 +148,14 @@ function MyApp({ Component, pageProps }) {
                 <hr />
                 <i>Version 0.2</i>
                 <hr />
+                <i>Thực hành với dữ liệu sẵn có</i>
+                {arrDulieuSanCo.map((e, i) =>
+                  <Link key={i} href={"/" + e.link}>
+                    < a className="dropdown-item" >{e.name}</a>
+                  </Link>
+                )}
+                <hr />
+                <i>Thực hành với CustomFile</i>
                 {ArrHoldLinkThucHanh.map((e, i) =>
                   <Link key={i} href={"/" + e.link}>
                     < a className="dropdown-item" >{e.name}</a>
@@ -141,13 +169,35 @@ function MyApp({ Component, pageProps }) {
             </li>
             <li className="nav-item dropdown active">
               <Link href="/">
-                <a className="nav-link dropdown-toggle" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Game</a>
+                <a className="nav-link dropdown-toggle" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Game offline</a>
               </Link>
               <div className="dropdown-menu text-justify" aria-labelledby="dropdown03">
                 <hr />
                 <Link href={"/game"}>
                   < a className="dropdown-item" >Ká Town</a>
                 </Link>
+              </div>
+            </li>
+            <li className="nav-item dropdown disable">
+              <Link href="/">
+                <a className="nav-link dropdown-toggle" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Game online</a>
+              </Link>
+              <div className="dropdown-menu text-justify" aria-labelledby="dropdown03">
+                <hr />
+              </div>
+            </li>
+            <li className="nav-item dropdown active">
+              <Link href="/">
+                <a className="nav-link dropdown-toggle" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Video Thực hành</a>
+              </Link>
+              <div className="dropdown-menu text-justify" aria-labelledby="dropdown03">
+                <i>Các video thực hành thực tế</i>
+                <hr />
+                {arrVideothuchanh.map((e, i) =>
+                  <Link key={i} href={"/" + e.link}>
+                    < a className="dropdown-item" >{e.name}</a>
+                  </Link>
+                )}
               </div>
             </li>
           </ul>
