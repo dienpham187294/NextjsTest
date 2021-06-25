@@ -210,11 +210,12 @@ export default function body() {
                     <p>
                         Công nghệ thông tin (CNTT) sẽ làm thay đổi nền giáo dục một cách cơ bản và toàn diện.
                         Nhu cầu ứng dụng công nghệ để nâng cao hiệu quả, hiệu suất công việc là một trong những nhu cầu cấp thiết.
-                        <hr />
-                        <h5 style={{ backgroundColor: "black", color: "white", padding: "15px" }}> <b>Nền tảng thực hành của Ericpham</b> là để đáp ứng nhu cầu ứng dụng công nghệ mới nhất vào công tác giảng dạy</h5> .
-                        <br />
-                        <br />
                     </p>
+                    <hr />
+                    <h5 style={{ backgroundColor: "black", color: "white", padding: "15px" }}> <b>Nền tảng thực hành của Ericpham</b> là để đáp ứng nhu cầu ứng dụng công nghệ mới nhất vào công tác giảng dạy</h5> .
+                    <br />
+                    <br />
+
                     <hr />
                     <ul>
                         <li>Đơn giản, dễ sử dụng, không yêu cầu hiểu biết về công nghệ thông tin.</li>

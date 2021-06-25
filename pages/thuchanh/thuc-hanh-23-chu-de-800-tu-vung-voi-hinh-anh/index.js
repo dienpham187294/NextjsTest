@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Read from "../../helpers/Read_ReactSpeech"
 import ReadMessage from "../../../util/ReadMessage";
-import tuvunghinhanh from "../../../util/tuvunghinhanh"
+import tuvunghinhanh from "../../../util/filedulieu/tuvunghinhanh"
 import PracticeDiv from "./practice"
 
 

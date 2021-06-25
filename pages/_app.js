@@ -17,7 +17,7 @@ let ArrHoldLinkBaiHoc = [
   { "link": "baihoc/20-chu-de-hoc-tieng-anh-qua-hinh-anh", "name": "20 chủ đề học tiếng anh qua hình ảnh" }
 ]
 let arrVersion1FileSanco = [
-  { "link": "thuchanh/version01/#", "name": "Đọc thành tiếng với hơn 200 bài báo và truyện" },
+  { "link": "thuchanh/version01/thuc-hanh-doc-sach-thanh-tieng-filedulieu", "name": "Đọc báo International Vnexpress mỗi ngày" },
 ]
 let arrVersion1 = [
   { "link": "thuchanh/version01/lam-quen-tu-vung", "name": "Làm quen từ vựng với CustomFile" },

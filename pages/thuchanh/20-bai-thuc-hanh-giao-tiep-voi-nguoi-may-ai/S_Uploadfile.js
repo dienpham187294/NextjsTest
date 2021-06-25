@@ -1,7 +1,7 @@
 import { pick } from "query-string";
 import { useEffect, useState } from "react";
-import baithuchanhgiaotiep from "../../../util/20baithuchanhgiaotiep"
-import baithuchanhgiaotiep1 from "../../../util/20baithuchanhgiaotiep1"
+import baithuchanhgiaotiep from "../../../util/filedulieu/20baithuchanhgiaotiep"
+import baithuchanhgiaotiep1 from "../../../util/filedulieu/20baithuchanhgiaotiep1"
 import SetAlert from "../../../util/SetAlert"
 function UpLoadFile(props) {
     const [Data_20baithuchanh] = useState(baithuchanhgiaotiep.concat(baithuchanhgiaotiep1))
