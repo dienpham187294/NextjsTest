@@ -87,7 +87,7 @@ function PracticeDiv(props) {
                 style={{ display: "none" }}
                 onClick={() => {
                     if (Check2String($("#messageRes").val(), GetFinal(dataTotal)[GetFinal(dataJustOne)]["EN"])) {
-                        Sound("mixkit-video-game-treasure-2066.wav")
+                        // Sound("mixkit-video-game-treasure-2066.wav")
 
                         ReadMessage(GetFinal(dataTotal)[GetFinal(dataJustOne)]["EN"])
 

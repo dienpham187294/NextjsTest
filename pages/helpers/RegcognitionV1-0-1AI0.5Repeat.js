@@ -16,13 +16,13 @@ function Dictaphone({ Data }) {
             command: Data,
             callback: (command) => { console.log(command), writeMessage(`${command}`) },
             isFuzzyMatch: true,
-            fuzzyMatchingThreshold: 0.5,
+            fuzzyMatchingThreshold: 0.3,
             bestMatchOnly: false
         }]
     }, [Data])
     const {
         listening,
-        transript
+        transcript
     } = useSpeechRecognition({
         commands
     });
@@ -34,10 +34,8 @@ function Dictaphone({ Data }) {
             onClick={startListening}
         >Click to talk</button>
         <input disabled type="text" id="messageRes" defaultValue="" />
-        {/* <hr />
-        <div>{JSON.stringify(Data)}</div> */}
         <hr />
-        <div>{transript}</div>
+        <div>{transcript}</div>
     </div>
     );
 };
