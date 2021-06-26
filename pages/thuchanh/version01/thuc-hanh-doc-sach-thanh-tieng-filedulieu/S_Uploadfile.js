@@ -3,15 +3,12 @@ import { async } from "regenerator-runtime";
 import Filejson from "../../../../util/filedulieu/200baidoc"
 import Linkapi from "../../../../util/Linkapi"
 import { checkCookie, getCookie } from "../../../../util/functionCookies"
-// import connectToDatabase from "../../../../util/mongodb"
-// import { GetServerSideProps } from 'next'
-
-let status = true;
 
 function UpLoadFile(props) {
     const [Data, SET_Data] = useState(Filejson)
     const [Insert, SET_Insert] = useState(false)
     const [Message, SET_Message] = useState("")
+    const [status, SET_status] = useState(true)
     useEffect(() => {
 
         if (status) {
@@ -21,9 +18,7 @@ function UpLoadFile(props) {
                     SET_Insert(true)
                 }
             }
-
-
-            status = false
+            SET_status(false)
         }
     })
 
@@ -31,27 +26,28 @@ function UpLoadFile(props) {
 
     function Fn_Pick(contents) {
         try {
-            var json = contents;
+            let json = contents;
             let arrRes = []
+            let arrDataCommands = []
+            let arrImage = []
             json.forEach(e => {
-                let arrTemp = (e).split(" ")
+                arrImage.push(e.img)
+                let arrTemp = (e.text).split(". ")
                 let arrTempFinal = [];
                 arrTemp.forEach(ee => {
-                    arrTempFinal.push({ "text": ee.split("\r").join(""), "status": false })
+                    arrTempFinal.push({ "text": ee, "status": false })
+                    arrDataCommands.push(ee);
                 })
                 arrRes.push(arrTempFinal)
             });
+
+            props.SET_ImageData(arrImage)
+
             props.SET_Read_Data(arrRes)
 
-            let arrDataCommands = []
-            json.forEach(e => {
-                let arrTemp = (e).split(". ")
-                arrTemp.forEach(ee => {
-                    arrDataCommands.push(ee)
-                })
-            });
-
             props.SET_Data_Commands(arrDataCommands)
+
+            props.SET_PageChange(P => P + 1)
 
         } catch (error) {
             console.log("Failed to load file");
@@ -152,7 +148,6 @@ async function GetReadingNews(SET_Data, Filejson) {
 async function pushNews(input, SET_Message, Filejson, SET_Data) {
     try {
         let data = JSON.parse(input)
-        console.log(data, Filejson)
         const res = await fetch(Linkapi + "api/readnews/push", {
             method: 'POST',
             headers: {

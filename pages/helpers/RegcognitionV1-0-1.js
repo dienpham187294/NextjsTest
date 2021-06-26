@@ -21,7 +21,7 @@ function Dictaphone({ Data }) {
     }, [Data])
     const {
         listening,
-        transcript
+        finalTranscript
     } = useSpeechRecognition({
         commands
     });
@@ -39,7 +39,7 @@ function Dictaphone({ Data }) {
             onClick={startListening}
         >Click to talk</button>
         <input type="text" id="messageRes" defaultValue="" />
-        {transcript}
+        {finalTranscript}
         {/* {JSON.stringify(Data)} */}
     </div>
     );
