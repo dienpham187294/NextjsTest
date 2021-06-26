@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
-import Dictaphone from "../../helpers/RegcognitionV1-0-1";
+import Dictaphone from "../../helpers/RegcognitionV1-0-1AI0.5Repeat";
 import $ from "jquery";
 import DaoArray from "../../../util/DaoArray"
 import GetFinal from "../../../util/GetFinal"
 import SetAlert from "../../../util/SetAlert"
 import Check2String from "../../../util/Check2String"
 import ReadMessage from "../../../util/ReadMessage"
-
+import Sound from "../../../util/sound"
 let dataTotal = [["none"]]
 let dataJustOne = ["EN"]
 let Score = ["EN"]
@@ -85,9 +85,12 @@ function PracticeDiv(props) {
             <input
                 style={{ display: "none" }}
                 onClick={() => {
-
                     if (Check2String($("#messageRes").val(), GetFinal(dataTotal)[GetFinal(dataJustOne)]["EN"])) {
+                        Sound("mixkit-video-game-treasure-2066.wav")
+
                         ReadMessage(GetFinal(dataTotal)[GetFinal(dataJustOne)]["EN"])
+
+
                         Score.push(GetFinal(Score) + 1);
                         if (GetFinal(dataJustOne) + 1 < GetFinal(dataTotal).length) {
                             dataJustOne.push(GetFinal(dataJustOne) + 1)
