@@ -80,7 +80,8 @@ function PracticeDiv(props) {
             <hr />
             <b>Điểm:</b>  {GetFinal(Score)}
             <hr />
-            <b>Đọc từ có nghĩa:</b>   {Show(GetFinal(dataTotal)[GetFinal(dataJustOne)])}
+            <b>Đọc từ có nghĩa:</b>
+            <h3>{Show(GetFinal(dataTotal)[GetFinal(dataJustOne)])}</h3>
             <hr />
             <input
                 style={{ display: "none" }}
