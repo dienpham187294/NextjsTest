@@ -22,13 +22,11 @@ function Dictaphone({ Data }) {
     }, [Data])
     const {
         listening,
-        finalTranscript
+        transript
     } = useSpeechRecognition({
         commands
     });
     const startListening = () => SpeechRecognition.startListening({ continuous: true, language: 'en-GB' });
-
-
 
     return (<div>
         <p>Microphone: {listening ? 'on' : 'off'}</p>
@@ -39,7 +37,7 @@ function Dictaphone({ Data }) {
         {/* <hr />
         <div>{JSON.stringify(Data)}</div> */}
         <hr />
-        <div>{finalTranscript}</div>
+        <div>{transript}</div>
     </div>
     );
 };
