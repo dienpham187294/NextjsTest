@@ -6,6 +6,7 @@ import Read_ReactSpeech from "../../../helpers/Read_ReactSpeech"
 import Check2String from "../../../../util/Check2String"
 import DivNotCookieFixed from "../../../../util/DivNotCookieFixed"
 import DivNotCookieNormal from "../../../../util/DivNotCookieNormal"
+import { delettCookie, getCookie } from "../../../../util/functionCookies"
 function GamePlay(props) {
 
     try {
@@ -39,6 +40,19 @@ function GamePlay(props) {
 
     return (
         <div >
+
+            <div>
+                <button onClick={() => {
+                    delettCookie("ericpham");
+                }}>
+                    delete
+                </button>
+                <button onClick={() => {
+                    alert(getCookie("ericpham"));
+                }}>
+                    get
+                </button>
+            </div>
             <div style={{ width: "100%", textAlign: "center" }}>
                 <button onClick={() => { SET_FullScreen(true) }} className="btn btn-outline-info">
                     FullScreen
@@ -145,11 +159,18 @@ function GamePlay(props) {
                     </div>
                 </div>
                 : ""}
+
+
+
+
             <Read_ReactSpeech />
             <button style={{ display: "none" }} onClick={() => {
                 SET_Info_message($("#messageRes").val())
             }} id="messageResBtn">
             </button>
+
+
+
         </div >
     )
 }

@@ -1,3 +1,4 @@
+import { Transform } from "stream"
 import { checkCookie, getCookie } from "./functionCookies"
 
 export default function DivNotCookie() {
@@ -9,12 +10,14 @@ export default function DivNotCookie() {
         return (
             <div style={{
                 position: "absolute",
-                width: "98%",
+                width: "90%",
                 height: "3000px",
                 top: "10%",
                 backgroundColor: "white",
                 opacity: "0.9",
-                textAlign: "center"
+                textAlign: "center",
+                marginLeft: "50%",
+                transform: "translate(-50%)"
             }}>
                 <div
                     style={{

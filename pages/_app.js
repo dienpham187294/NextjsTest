@@ -247,17 +247,31 @@ function MyApp({ Component, pageProps }) {
             console.log(1)
           }
         }} type="button" id="ADD" defaultValue="Add" />
-        <input onClick={() => {
-          delettCookie("ericpham");
-          setTimeout(() => {
-            if (checkCookie("eripham")) {
-              delettCookie("ericpham");
-            } else { SET_Cookie("") }
-            router.push("/")
-          }, 1000)
-
-
-        }} type="button" id="DElETE" defaultValue="D" />
+        <div>
+          <input onClick={() => {
+            delettCookie("ericpham");
+            setTimeout(() => {
+              if (checkCookie("ericpham")) {
+                delettCookie("ericpham");
+              } else {
+                SET_Cookie("");
+                route.push("/")
+              }
+            }, 1000)
+          }} type="button" id="DElETE" defaultValue="Đăng xuất" />
+        </div>
+        <div>
+          <button onClick={() => {
+            delettCookie("ericpham");
+          }}>
+            delete
+          </button>
+          <button onClick={() => {
+            alert(getCookie("ericpham"));
+          }}>
+            get
+          </button>
+        </div>
       </div>
 
 
@@ -269,11 +283,14 @@ function MyApp({ Component, pageProps }) {
   function Show_Dangnhap() {
     if (Cookie !== "") {
       return (
-        <Link href="/main/detail">
-          <a>
-            <input className="btn btn-primary" type="button" value={getCookie("ericpham").split("@")[0]} />
-          </a>
-        </Link>
+        <>
+          <Link href="/main/detail">
+            <a>
+              <input className="btn btn-primary" type="button" value={getCookie("ericpham").split("@")[0]} />
+            </a>
+          </Link>
+
+        </>
       )
     } else {
       return (
@@ -290,55 +307,3 @@ function MyApp({ Component, pageProps }) {
 export default MyApp
 
 
-
-
-
-function FnCheckCookie() {
-  console.log("abc")
-  if (checkCookie("ericpham")) {
-    SET_Cookie(getCookie("ericpham"));
-    console.log("abcdf")
-  }
-  else {
-    if (flag) {
-      let inter = setTimeout(() => {
-        SET_CheckPage(true)
-      }, 30000);;
-      flag = false
-      return () => {
-        clearTimeout(inter);
-      };
-    }
-  }
-}
-
-
-
-function CheckPay() {
-  return (
-    <div
-      style={{
-        position: "fixed",
-        border: "1px solid black",
-        borderRadius: "20px",
-        backgroundColor: "white",
-        width: "50%",
-        minWidth: "365px",
-        height: "365px",
-        marginLeft: "50%",
-        zIndex: "1",
-        transform: "translateX(-50%)",
-        textAlign: "center"
-      }}
-    >
-
-
-      <hr />
-      Bạn chưa đăng nhập vào hệ thống!
-      <hr />
-      <a href="/main/dangnhap">
-        <input className="btn btn-primary" type="button" value="Đăng nhập" />
-      </a>
-    </div>
-  )
-}

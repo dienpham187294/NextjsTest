@@ -10,9 +10,9 @@ function setCookie(cname, cvalue, exdays) {
 }
 
 function delettCookie(cname) {
-    if (process.browser) {
-        setCookie(cname, '', -1);
-    }
+  
+    setCookie(cname, '', -1);
+ 
 }
 
 function getCookie(cname) {
@@ -33,19 +33,19 @@ function getCookie(cname) {
 }
 
 function checkCookie(name) {
-    if (process.browser) {
-        var username = getCookie(name);
-        if (username !== "") {
-            return true;
-            /* alert("Welcome again " + username);*/
-        } else {
-            /* username = prompt("Please enter your name:", "");
-             if (username != "" && username != null) {
-                 setCookie("username", username, 365); 
-             } */
-            return false;
-        }
+   
+    var username = getCookie(name);
+    if (username !== "") {
+        return true;
+        /* alert("Welcome again " + username);*/
+    } else {
+        /* username = prompt("Please enter your name:", "");
+         if (username != "" && username != null) {
+             setCookie("username", username, 365); 
+         } */
+        return false;
     }
+  
 }
 
 export { setCookie, delettCookie, getCookie, checkCookie }
