@@ -22,10 +22,8 @@ export default function DivNotCookie() {
                         marginTop: "30px",
                         backgroundColor: "white",
                         border: "1px solid green",
-                        borderRadius: "15px",
-                        padding: "15px"
+                        borderRadius: "15px"
                     }}
-
                 >
                     <hr />
                     Đăng nhập để tiếp tục!
