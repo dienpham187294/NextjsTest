@@ -57,10 +57,13 @@ let inter
 function MyApp({ Component, pageProps }) {
   const [Cookie, SET_Cookie] = useState("")
   const [CheckPage, SET_CheckPage] = useState(false)
+  const [Status, SET_Status] = useState(true)
   const router = useRouter()
   useEffect(() => {
-    if (checkCookie("ericpham")) {
+
+    if (Status && checkCookie("ericpham")) {
       SET_Cookie(getCookie("ericpham"));
+      SET_Status(false)
     }
   })
   return (<>
@@ -250,13 +253,12 @@ function MyApp({ Component, pageProps }) {
         <div>
           <input onClick={() => {
             delettCookie("ericpham");
+            SET_Cookie("");
             setTimeout(() => {
               if (checkCookie("ericpham")) {
                 delettCookie("ericpham");
-              } else {
-                SET_Cookie("");
-                route.push("/")
               }
+              router.push("/")
             }, 1000)
           }} type="button" id="DElETE" defaultValue="Đăng xuất" />
         </div>

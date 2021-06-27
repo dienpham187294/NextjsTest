@@ -10,14 +10,15 @@ export default function DivNotCookie() {
         return (
             <div style={{
                 position: "absolute",
-                width: "90%",
+                left: "15px",
+                right: "15px",
                 height: "3000px",
                 top: "10%",
                 backgroundColor: "white",
                 opacity: "0.9",
                 textAlign: "center",
-                marginLeft: "50%",
-                transform: "translate(-50%)"
+                // marginLeft: "50%",
+                // transform: "translateX(-50%)"
             }}>
                 <div
                     style={{
