@@ -27,12 +27,16 @@ function Dictaphone({ Data }) {
         commands
     });
     const startListening = () => SpeechRecognition.startListening({ continuous: true, language: 'en-GB' });
-
+    const stopListening = () => SpeechRecognition.stopListening({ continuous: false, language: 'en-GB' });
     return (<div>
         <p>Microphone: {listening ? 'on' : 'off'}</p>
         <button
             onClick={startListening}
         >Click to talk</button>
+        <button
+            className="ml-3"
+            onClick={stopListening}
+        >Click to stop</button>
         <input disabled type="text" id="messageRes" defaultValue="" />
         <hr />
         <div>{transcript}</div>

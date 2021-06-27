@@ -4,7 +4,8 @@ import Dictaphone from "../../../helpers/RegcognitionV1-0-1AI0.5ReadPaper"
 import ReadMessage from "../../../../util/ReadMessage"
 import Read_ReactSpeech from "../../../helpers/Read_ReactSpeech"
 import Check2String from "../../../../util/Check2String"
-
+import DivNotCookieFixed from "../../../../util/DivNotCookieFixed"
+import DivNotCookieNormal from "../../../../util/DivNotCookieNormal"
 function GamePlay(props) {
 
     try {
@@ -82,7 +83,7 @@ function GamePlay(props) {
                             )}
                         </div>
                     )}
-
+                    {DivNotCookieNormal()}
                 </div>
 
             </div>
@@ -126,21 +127,23 @@ function GamePlay(props) {
                         </button>
                     </div>
                     <hr />
-                    {props.Data.map((e, i) =>
-                        <div key={i}>
+                    <div>
+                        {props.Data.map((e, i) =>
+                            <div key={i}>
 
-                            {props.ImageData[i] !== ""
-                                ?
-                                <div style={{ width: "100%", textAlign: "center" }}>
-                                    <img style={{ maxWidth: "800px", width: "100%" }} alt={props.ImageData[i]} src={props.ImageData[i]} />
-                                </div>
-                                : ""}
-                            {e.map((ee, ii) =>
-                                <p key={ii}>{<span style={{ backgroundColor: ee.status ? "yellow" : "transparent" }}> {ee.text} </span>}</p>
-                            )}
-                        </div>
-                    )}
-
+                                {props.ImageData[i] !== ""
+                                    ?
+                                    <div style={{ width: "100%", textAlign: "center" }}>
+                                        <img style={{ maxWidth: "800px", width: "100%" }} alt={props.ImageData[i]} src={props.ImageData[i]} />
+                                    </div>
+                                    : ""}
+                                {e.map((ee, ii) =>
+                                    <p key={ii}>{<span style={{ backgroundColor: ee.status ? "yellow" : "transparent" }}> {ee.text} </span>}</p>
+                                )}
+                            </div>
+                        )}
+                        {DivNotCookieFixed()}
+                    </div>
                 </div>
                 : ""}
             <Read_ReactSpeech />

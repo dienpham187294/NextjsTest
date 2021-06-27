@@ -29,7 +29,7 @@ function Dictaphone({ Data }) {
         continuous: true, language: 'en-GB'
 
     });
-
+    const stopListening = () => SpeechRecognition.stopListening({ continuous: false, language: 'en-GB' });
 
 
     return (<div>
@@ -38,6 +38,10 @@ function Dictaphone({ Data }) {
         <button
             onClick={startListening}
         >Click to talk</button>
+        <button
+            className="ml-3"
+            onClick={stopListening}
+        >Click to stop</button>
         <input type="text" id="messageRes" defaultValue="" />
         {finalTranscript}
         {/* {JSON.stringify(Data)} */}

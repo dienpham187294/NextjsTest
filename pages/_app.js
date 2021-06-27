@@ -61,18 +61,6 @@ function MyApp({ Component, pageProps }) {
   useEffect(() => {
     if (checkCookie("ericpham")) {
       SET_Cookie(getCookie("ericpham"));
-      clearInterval(inter)
-    }
-    else {
-      if (flag) {
-        inter = setTimeout(() => {
-          SET_CheckPage(true)
-        }, 180000);;
-        flag = false
-        return () => {
-          clearTimeout(inter);
-        };
-      }
     }
   })
   return (<>
@@ -232,10 +220,7 @@ function MyApp({ Component, pageProps }) {
 
 
 
-    {
-      CheckPage ? <div>{CheckPay()}</div> : ""
-    }
-
+  
     <Component {...pageProps} />
 
 
