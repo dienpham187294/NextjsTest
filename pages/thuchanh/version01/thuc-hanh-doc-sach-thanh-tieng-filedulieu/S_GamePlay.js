@@ -22,18 +22,7 @@ function GamePlay(props) {
     const [FullScreen, SET_FullScreen] = useState(false)
     useEffect(() => {
         if (Info_message !== "") {
-            let Arr = props.Data;
-            Arr.forEach(e => {
-                e.forEach(ee => {
-                    if (!ee.status) {
-                        if (Check2String(Info_message, ee.text)) {
-                            ee.status = true;
-                        }
-                    }
-                })
-            });
-            props.SET_Read_Data(Arr)
-            SET_Alert(A => A + 1)
+
         }
     }, [Info_message])
 
@@ -152,7 +141,27 @@ function GamePlay(props) {
 
             <Read_ReactSpeech />
             <button style={{ display: "none" }} onClick={() => {
-                SET_Info_message($("#messageRes").val())
+
+
+                let Arr = props.Data;
+                let arrDataComnandsNew = []
+
+                Arr.forEach(e => {
+                    e.forEach(ee => {
+                        if (!ee.status) {
+                            if (Check2String($("#messageRes").val(), ee.text)) {
+                                ee.status = true;
+                            } else {
+                                arrDataComnandsNew.push(ee.text);
+                            }
+
+                        }
+                    })
+                });
+                props.SET_Data_Commands(arrDataComnandsNew)
+                props.SET_Read_Data(Arr)
+                SET_Alert(A => A + 1)
+
             }} id="messageResBtn">
             </button>
 

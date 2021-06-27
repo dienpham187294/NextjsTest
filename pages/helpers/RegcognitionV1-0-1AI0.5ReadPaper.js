@@ -17,7 +17,7 @@ function Dictaphone({ Data }) {
             callback: (command) => { console.log(command), writeMessage(`${command}`) },
             isFuzzyMatch: true,
             fuzzyMatchingThreshold: 0.5,
-            bestMatchOnly: false
+            bestMatchOnly: true
         }]
     }, [Data])
     const {
@@ -44,6 +44,7 @@ function Dictaphone({ Data }) {
         <div>{JSON.stringify(Data)}</div> */}
         <hr />
         <div>{transcript}</div>
+
     </div>
     );
 };

@@ -16,8 +16,8 @@ function Dictaphone({ Data }) {
             command: Data,
             callback: (command) => { console.log(command), writeMessage(`${command}`) },
             isFuzzyMatch: true,
-            fuzzyMatchingThreshold: 0.3,
-            bestMatchOnly: false
+            fuzzyMatchingThreshold: 0.5,
+            bestMatchOnly: true
         }]
     }, [Data])
     const {
@@ -40,6 +40,8 @@ function Dictaphone({ Data }) {
         <input disabled type="text" id="messageRes" defaultValue="" />
         <hr />
         <div>{transcript}</div>
+
+       
     </div>
     );
 };
