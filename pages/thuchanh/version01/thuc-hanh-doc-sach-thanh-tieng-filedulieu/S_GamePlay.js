@@ -40,19 +40,6 @@ function GamePlay(props) {
 
     return (
         <div >
-
-            <div>
-                <button onClick={() => {
-                    delettCookie("ericpham");
-                }}>
-                    delete
-                </button>
-                <button onClick={() => {
-                    alert(getCookie("ericpham"));
-                }}>
-                    get
-                </button>
-            </div>
             <div style={{ width: "100%", textAlign: "center" }}>
                 <button onClick={() => { SET_FullScreen(true) }} className="btn btn-outline-info">
                     FullScreen

@@ -52,20 +52,21 @@ let arrVideothuchanh = [
   { "link": "thuchanh/#", "name": "Thực hành đọc sách, truyện thành tiếng" },
   { "link": "thuchanh/#", "name": "Thực hành chơi game giao tiếp với người máy AI" }
 ]
-let flag = true;
-let inter
+// let flag = true;
+// let inter
 function MyApp({ Component, pageProps }) {
   const [Cookie, SET_Cookie] = useState("")
-  const [CheckPage, SET_CheckPage] = useState(false)
-  const [Status, SET_Status] = useState(true)
+  const [Status, SET_Status] = useState(0)
   const router = useRouter()
   useEffect(() => {
-
-    if (Status && checkCookie("ericpham")) {
-      SET_Cookie(getCookie("ericpham"));
-      SET_Status(false)
+    if (Status <= 5) {
+      if (checkCookie("ericpham")) {
+        SET_Cookie(getCookie("ericpham"));
+      }
+      SET_Status(S => S + 1)
+      console.log(Status)
     }
-  })
+  }, [Status])
   return (<>
 
     <Head>
@@ -241,10 +242,13 @@ function MyApp({ Component, pageProps }) {
         <input onClick={() => {
           try {
             setCookie("ericpham", $("#TEXT").text(), 5);
+            SET_Cookie($("#TEXT").text());
             setTimeout(() => {
               if (!checkCookie("eripham")) {
                 setCookie("ericpham", $("#TEXT").text(), 5);
               }
+
+              router.push("/")
             }, 200)
           } catch (error) {
             console.log(1)
