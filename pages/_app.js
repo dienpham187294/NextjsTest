@@ -220,7 +220,7 @@ function MyApp({ Component, pageProps }) {
 
 
 
-  
+
     <Component {...pageProps} />
 
 
@@ -249,13 +249,12 @@ function MyApp({ Component, pageProps }) {
         }} type="button" id="ADD" defaultValue="Add" />
         <input onClick={() => {
           delettCookie("ericpham");
-          SET_Cookie("")
           setTimeout(() => {
             if (checkCookie("eripham")) {
               delettCookie("ericpham");
-            }
+            } else { SET_Cookie("") }
             router.push("/")
-          }, 200)
+          }, 1000)
 
 
         }} type="button" id="DElETE" defaultValue="D" />

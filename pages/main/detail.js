@@ -14,6 +14,7 @@ function Detail() {
 
                 onClick={() => {
                     try {
+                        delettCookie("ericpham");
                         $("#DElETE").click()
                     } catch (error) {
                         console.log("error")

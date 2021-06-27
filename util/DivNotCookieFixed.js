@@ -9,7 +9,7 @@ export default function DivNotCookie() {
         return (
             <div style={{
                 position: "absolute",
-                width: "100%",
+                width: "98%",
                 height: "3000px",
                 top: "10%",
                 backgroundColor: "white",
