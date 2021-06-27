@@ -92,14 +92,13 @@ function GamePlay(props) {
                 <div
                     style={{
                         position: "fixed",
-                        right: "5px",
-                        left: "5px",
-                        top: "5px",
-                        bottom: "5px",
+                        right: "0px",
+                        left: "0px",
+                        top: "0px",
+                        bottom: "0px",
                         border: "5px solid green",
                         borderRadius: "15px",
                         backgroundColor: "white",
-                        padding: "30px",
                         fontSize: "large",
                         overflow: "auto"
                     }}
@@ -127,7 +126,7 @@ function GamePlay(props) {
                         </button>
                     </div>
                     <hr />
-                    <div>
+                    <div style={{ margin: "30px" }}>
                         {props.Data.map((e, i) =>
                             <div key={i}>
 
