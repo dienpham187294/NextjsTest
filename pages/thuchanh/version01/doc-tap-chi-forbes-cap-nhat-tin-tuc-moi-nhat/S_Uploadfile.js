@@ -38,8 +38,11 @@ function UpLoadFile(props) {
                 let arrTemp = (e.text).split(". ")
                 let arrTempFinal = [];
                 arrTemp.forEach(ee => {
-                    arrTempFinal.push({ "text": ee, "status": false })
-                    arrDataCommands.push(ee);
+                    if (ee !== "") {
+                        arrTempFinal.push({ "text": ee, "status": false })
+                        arrDataCommands.push(ee);
+                    }
+
                 })
                 arrRes.push(arrTempFinal)
             });
@@ -134,7 +137,7 @@ async function GetReadingNews(SET_Data) {
             }
         })
         let data = await res.json();
-       
+
         SET_Data(data.data)
     } catch (error) {
         console.log(error)

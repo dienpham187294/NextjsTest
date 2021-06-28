@@ -16,17 +16,8 @@ function GamePlay(props) {
     } catch (error) {
         return <div>Lỗi dữ liệu nhập vào. Kiểm tra lại file dữ liệu</div>
     }
-
-    const [Info_message, SET_Info_message] = useState("")
     const [Alert, SET_Alert] = useState(0)
     const [FullScreen, SET_FullScreen] = useState(false)
-    useEffect(() => {
-        if (Info_message !== "") {
-
-        }
-    }, [Info_message])
-
-
     return (
         <div >
             <div style={{ width: "100%", textAlign: "center" }}>
@@ -143,26 +134,29 @@ function GamePlay(props) {
 
             <Read_ReactSpeech />
             <button style={{ display: "none" }} onClick={() => {
+                console.log("onclick")
+                if ($("#messageRes").val() !== "") {
+                    let Arr = props.Data;
+                    let arrDataComnandsNew = []
 
+                    Arr.forEach(e => {
+                        e.forEach(ee => {
+                            if (!ee.status) {
+                                if (Check2String($("#messageRes").val(), ee.text)) {
+                                    ee.status = true;
+                                } else {
+                                    arrDataComnandsNew.push(ee.text);
+                                }
 
-                let Arr = props.Data;
-                let arrDataComnandsNew = []
-
-                Arr.forEach(e => {
-                    e.forEach(ee => {
-                        if (!ee.status) {
-                            if (Check2String($("#messageRes").val(), ee.text)) {
-                                ee.status = true;
-                            } else {
-                                arrDataComnandsNew.push(ee.text);
                             }
+                        })
+                    });
+                    props.SET_Data_Commands(arrDataComnandsNew)
+                    props.SET_Read_Data(Arr)
+                    SET_Alert(A => A + 1)
+                }
 
-                        }
-                    })
-                });
-                props.SET_Data_Commands(arrDataComnandsNew)
-                props.SET_Read_Data(Arr)
-                SET_Alert(A => A + 1)
+
 
             }} id="messageResBtn">
             </button>

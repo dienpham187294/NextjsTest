@@ -143,27 +143,28 @@ function GamePlay(props) {
 
             <Read_ReactSpeech />
             <button style={{ display: "none" }} onClick={() => {
+                console.log("onclick")
+                if ($("#messageRes").val() !== "") {
 
+                    let Arr = props.Data;
+                    let arrDataComnandsNew = []
 
-                let Arr = props.Data;
-                let arrDataComnandsNew = []
+                    Arr.forEach(e => {
+                        e.forEach(ee => {
+                            if (!ee.status) {
+                                if (Check2String($("#messageRes").val(), ee.text)) {
+                                    ee.status = true;
+                                } else {
+                                    arrDataComnandsNew.push(ee.text);
+                                }
 
-                Arr.forEach(e => {
-                    e.forEach(ee => {
-                        if (!ee.status) {
-                            if (Check2String($("#messageRes").val(), ee.text)) {
-                                ee.status = true;
-                            } else {
-                                arrDataComnandsNew.push(ee.text);
                             }
-
-                        }
-                    })
-                });
-                props.SET_Data_Commands(arrDataComnandsNew)
-                props.SET_Read_Data(Arr)
-                SET_Alert(A => A + 1)
-
+                        })
+                    });
+                    props.SET_Data_Commands(arrDataComnandsNew)
+                    props.SET_Read_Data(Arr)
+                    SET_Alert(A => A + 1)
+                }
             }} id="messageResBtn">
             </button>
 

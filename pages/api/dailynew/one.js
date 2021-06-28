@@ -16,7 +16,6 @@ export default async (req, res) => {
                         ArrHoldRes.push({ "text": e.textContent, "img": imgtop })
                     } else {
                         ArrHoldRes.push({ "text": e.textContent })
-                        ArrHoldRes.push({ "text": e.textContent })
                     }
 
                 })

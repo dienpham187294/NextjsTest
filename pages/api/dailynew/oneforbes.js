@@ -6,19 +6,17 @@ export default async (req, res) => {
     try {
         await axios.get(link)
             .then((response) => {
-                const dom = new jsdom.JSDOM(response.data);
 
+                let data = response.data.split("S.").join("S").split("m.").join("m")
+                const dom = new jsdom.JSDOM(data);
                 let main = dom.window.document.querySelector("main");
                 let imgtop = main.querySelector("progressive-image").getAttribute("src")
-
-
                 let ARRTemp = main.querySelectorAll("p");
                 let ArrHoldRes = []
                 ARRTemp.forEach((e, i) => {
                     if (i === 0) {
                         ArrHoldRes.push({ "text": e.textContent, "img": imgtop })
                     } else {
-                        ArrHoldRes.push({ "text": e.textContent })
                         ArrHoldRes.push({ "text": e.textContent })
                     }
 

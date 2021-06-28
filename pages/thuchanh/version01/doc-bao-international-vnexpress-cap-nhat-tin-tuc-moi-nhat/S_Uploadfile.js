@@ -10,7 +10,6 @@ function UpLoadFile(props) {
 
     const [XemTructiep, SET_XemTructiep] = useState("")
     useEffect(() => {
-
         if (status) {
             GetReadingNews(SET_Data)
             SET_status(false)
@@ -21,7 +20,7 @@ function UpLoadFile(props) {
 
     async function Fn_Pick(href) {
         try {
-            console.log(href)
+
             const res = await fetch(Linkapi + "api/dailynew/one?link=" + href, {
                 method: 'GET',
                 headers: {
@@ -179,15 +178,12 @@ async function GetReadingNews(SET_Data) {
         let arrNews = [];
         let arrNotNews = [];
         data.data.forEach(e => {
-            console.log(e)
             if (e["href"].indexOf("/news/news") > -1) {
                 arrNews.push(e)
             } else {
                 arrNotNews.push(e)
             }
         })
-
-
         SET_Data(arrNews.concat(arrNotNews))
     } catch (error) {
         console.log("e")
