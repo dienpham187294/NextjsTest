@@ -19,7 +19,6 @@ let ArrHoldLinkBaiHoc = [
 let ArrMobieFile = [
   { "link": "thuchanh/version01/doc-bao-international-vnexpress-cap-nhat-tin-tuc-moi-nhat", "name": "Đọc báo International Vnexpress - Cập nhật tin tức mới nhất" },
   { "link": "thuchanh/version01/doc-tap-chi-forbes-cap-nhat-tin-tuc-moi-nhat", "name": "Đọc tạp chí Forbes - Cập nhật tin tức mới nhất" },
-  { "link": "thuchanh/version01/doc-bao-cnn-cap-nhat-tin-tuc-moi-nhat", "name": "Đọc Báo CNN - Cập nhật tin tức mới nhất" },
   { "link": "thuchanh/version01/doc-truyen-tranh-giai-tri-thu-gian", "name": "Đọc truyện tranh - Giải trí thư giãn" },
   { "link": "thuchanh/version01/doc-sach-da-dang-cac-linh-vuc", "name": "Đọc sách đa dạng các lĩnh vực" },
   { "link": "thuchanh/thuc-hanh-800-cau-giao-tiep-thong-dung", "name": "Thực hành 800+ câu giao tiếp thông dụng nhất" },

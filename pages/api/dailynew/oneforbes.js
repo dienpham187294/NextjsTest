@@ -7,9 +7,12 @@ export default async (req, res) => {
         await axios.get(link)
             .then((response) => {
                 const dom = new jsdom.JSDOM(response.data);
-                let imgtop = dom.window.document.querySelector(".thumb_detail_top").querySelector("img").getAttribute("src")
 
-                let ARRTemp = dom.window.document.querySelectorAll("p")
+                let main = dom.window.document.querySelector("main");
+                let imgtop = main.querySelector("progressive-image").getAttribute("src")
+
+
+                let ARRTemp = main.querySelectorAll("p");
                 let ArrHoldRes = []
                 ARRTemp.forEach((e, i) => {
                     if (i === 0) {
@@ -21,6 +24,7 @@ export default async (req, res) => {
 
                 })
                 arr.push(ArrHoldRes)
+
             });
 
         res.status(200).json({ success: true, data: arr[arr.length - 1] })
