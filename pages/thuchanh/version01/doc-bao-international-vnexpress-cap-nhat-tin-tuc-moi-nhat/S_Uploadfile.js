@@ -83,10 +83,13 @@ function UpLoadFile(props) {
                     <iframe
                         style={{
                             position: "fixed",
-                            left: "20%",
                             top: "5%",
                             width: "60%",
-                            height: "800px"
+                            minWidth: "370px",
+                            height: "800px",
+                            overflow: "auto",
+                            backgroundColor: "white"
+
                         }}
                         src={XemTructiep}
                     />
@@ -107,13 +110,23 @@ export default UpLoadFile
 function Show_Jsonfile(Filejson, Fn_Pick, SET_XemTructiep) {
 
     try {
+
+        let d = new Date();
+        let n = d.getUTCDate();
+        let m = d.getMonth();
+        let y = d.getUTCFullYear();
         return (
             <div> <table className="table table-striped">
                 <thead>
-                    <tr>
-                        <td><b>Báo VNExpress hôm nay</b></td>
-                        <td>Xem bài gốc</td>
-                        <td>Select to read</td>
+                    <tr style={{
+                        backgroundColor: "black",
+                        color: "white",
+                        fontSize: "large",
+                        letterSpacing: "4px"
+                    }}>
+                        <td><b>Báo VnExpress - {n} / {m} / {y}</b></td>
+                        <td></td>
+                        <td></td>
                     </tr>
                 </thead>
                 <tbody>
@@ -121,7 +134,7 @@ function Show_Jsonfile(Filejson, Fn_Pick, SET_XemTructiep) {
                     {Filejson.map((e, i) =>
 
                         <tr key={i}>
-                            <td>{e.title}</td>
+                            <td><b>{e.title}</b> </td>
                             <td><button
                                 className="btn btn-outline-info"
                                 onClick={() => {
@@ -163,7 +176,19 @@ async function GetReadingNews(SET_Data) {
             }
         })
         let data = await res.json();
-        SET_Data(data.data)
+        let arrNews = [];
+        let arrNotNews = [];
+        data.data.forEach(e => {
+            console.log(e)
+            if (e["href"].indexOf("/news/news") > -1) {
+                arrNews.push(e)
+            } else {
+                arrNotNews.push(e)
+            }
+        })
+
+
+        SET_Data(arrNews.concat(arrNotNews))
     } catch (error) {
         console.log("e")
     }

@@ -17,7 +17,11 @@ let ArrHoldLinkBaiHoc = [
   { "link": "baihoc/20-chu-de-hoc-tieng-anh-qua-hinh-anh", "name": "20 chủ đề học tiếng anh qua hình ảnh" }
 ]
 let ArrMobieFile = [
-  { "link": "thuchanh/version01/thuc-hanh-doc-sach-thanh-tieng-filedulieu", "name": "Đọc báo International Vnexpress mỗi ngày" },
+  { "link": "thuchanh/version01/doc-bao-international-vnexpress-cap-nhat-tin-tuc-moi-nhat", "name": "Đọc báo International Vnexpress - Cập nhật tin tức mới nhất" },
+  { "link": "thuchanh/version01/doc-tap-chi-forbes-cap-nhat-tin-tuc-moi-nhat", "name": "Đọc tạp chí Forbes - Cập nhật tin tức mới nhất" },
+  { "link": "thuchanh/version01/doc-bao-cnn-cap-nhat-tin-tuc-moi-nhat", "name": "Đọc Báo CNN - Cập nhật tin tức mới nhất" },
+  { "link": "thuchanh/version01/doc-truyen-tranh-giai-tri-thu-gian", "name": "Đọc truyện tranh - Giải trí thư giãn" },
+  { "link": "thuchanh/version01/doc-sach-da-dang-cac-linh-vuc", "name": "Đọc sách đa dạng các lĩnh vực" },
   { "link": "thuchanh/thuc-hanh-800-cau-giao-tiep-thong-dung", "name": "Thực hành 800+ câu giao tiếp thông dụng nhất" },
 
 
@@ -133,12 +137,24 @@ function MyApp({ Component, pageProps }) {
                   marginLeft: "5%"
                 }}>Phần có thể sử dụng trên điện thoại</i>
                 <hr />
-                <i>Thực hành với file sẵn có</i>
-                {ArrMobieFile.map((e, i) =>
-                  <Link key={i} href={"/" + e.link}>
-                    < a className="dropdown-item" >{e.name}</a>
-                  </Link>
-                )}
+                <i style={{
+                  backgroundColor: "black",
+                  color: "yellow",
+                  padding: "5px",
+                  letterSpacing: "3px"
+                }}>Đọc sách, báo 10p mỗi ngày với công nghệ AI</i>
+                <br />
+                <i>Rèn luyện phát âm - Nâng cao kiến thức</i>
+                <hr />
+                <div style={{
+                  backgroundColor: "#E6E6E6"
+                }}>
+                  {ArrMobieFile.map((e, i) =>
+                    <Link key={i} href={"/" + e.link}>
+                      < a className="dropdown-item" >{e.name}</a>
+                    </Link>
+                  )}
+                </div>
                 <hr />
                 <i>Thực hành với CustomFile</i>
                 {ArrMobieCustomfile.map((e, i) =>
