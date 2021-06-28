@@ -123,7 +123,7 @@ function MyApp({ Component, pageProps }) {
                 )}
               </div>
             </li>
-            <li className="nav-item dropdown active">
+            <li className="nav-item dropdown active setMaxWidthli"  >
               <Link href="/">
                 <a className="nav-link dropdown-toggle" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Thực hành</a>
               </Link>
@@ -150,7 +150,7 @@ function MyApp({ Component, pageProps }) {
                 }}>
                   {ArrMobieFile.map((e, i) =>
                     <Link key={i} href={"/" + e.link}>
-                      < a className="dropdown-item" >{e.name}</a>
+                      <a className="dropdown-item" >{e.name}</a>
                     </Link>
                   )}
                 </div>
