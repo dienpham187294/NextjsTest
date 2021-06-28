@@ -120,7 +120,7 @@ function GamePlay(props) {
                                     </div>
                                     : ""}
                                 {e.map((ee, ii) =>
-                                    <p key={ii}>{<span style={{ backgroundColor: ee.status ? "yellow" : "transparent" }}> {ee.text} </span>}</p>
+                                    <p key={ii}>{<span style={{ backgroundColor: ee.status ? "yellow" : "transparent" }}> {ee.text}. </span>}</p>
                                 )}
                             </div>
                         )}
