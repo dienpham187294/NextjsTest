@@ -1,6 +1,5 @@
 export default async function ReadMessage(text, voiceNum) {
     try {
-
         await $("#SpeechText").val(text)
         await $("#SpeechTextBtn")[0].click();
 
@@ -11,12 +10,9 @@ export default async function ReadMessage(text, voiceNum) {
             await $("#SpeechVoice").val("Google UK English Male")
             await $("#SpeechVoiceBtn")[0].click();
         }
-
         setTimeout(() => {
             $(".rs-play")[0].click()
         }, 100)
-
-
     } catch (error) {
         console.log("e")
     }

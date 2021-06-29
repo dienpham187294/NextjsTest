@@ -9,12 +9,17 @@ if (process.brower) {
     SpeechRecognition.applyPolyfill(SpeechlySpeechRecognition);
 }
 let commands = [];
-
+let ArrMessage = []
 function Dictaphone({ Data }) {
+    const [AllMessage, SET_AllMessage] = useState([])
+    const [ShowSide, SET_ShowSide] = useState(false)
     useEffect(() => {
         commands = [{
             command: Data,
-            callback: (command) => { console.log(command), writeMessage(`${command}`) },
+            callback: (command) => {
+                SET_AllMessage(prevArray => [...prevArray, `${command}`]);
+                writeMessage(`${command}`)
+            },
             isFuzzyMatch: true,
             fuzzyMatchingThreshold: 0.2,
             bestMatchOnly: true
@@ -22,13 +27,29 @@ function Dictaphone({ Data }) {
     }, [Data])
     const {
         listening,
-        transcript
     } = useSpeechRecognition({
         commands
     });
     const startListening = () => SpeechRecognition.startListening({ continuous: true, language: 'en-GB' });
     const stopListening = () => SpeechRecognition.stopListening({ continuous: false, language: 'en-GB' });
+    async function writeMessage(massgage) {
+        try {
+            ArrMessage.push(massgage);
+            await $("#messageRes").val(massgage);
+            await $("#messageResBtn").click();
+            setTimeout(() => {
+                try {
+                    let id = (AllMessage.length - 1) + 'p_dictaphone'
+                    document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+                } catch (error) {
 
+                }
+
+            }, 100)
+        } catch (error) {
+            console.log("e")
+        }
+    }
 
     return (<div>
         <p>Microphone: {listening ? 'on' : 'off'}</p>
@@ -39,23 +60,50 @@ function Dictaphone({ Data }) {
             className="ml-3"
             onClick={stopListening}
         >Click to stop</button>
+        <button
+            className="ml-3"
+            onClick={() => {
+                SET_ShowSide(true)
+            }}
+        >Turn On Side Bar</button>
         <input disabled type="text" id="messageRes" defaultValue="" />
         {/* <hr />
         <div>{JSON.stringify(Data)}</div> */}
         <hr />
-        <div>{transcript}</div>
+        <div>{AllMessage.map((e, i) =>
+            <p key={i} style={{ backgroundColor: i === AllMessage.length - 1 ? "yellow" : "transparent" }} >{e}</p>
+        )}</div>
+        {
+            ShowSide ?
+                <div
+                    id="Dictaphone_div_Sidebar"
+                    style={{
+                        position: "fixed",
+                        width: "30%",
+                        top: "1px",
+                        left: "1px",
+                        bottom: "20%",
+                        overflow: "hidden"
+                    }}
+                >
 
+                    <button
+                        className="ml-3"
+                        onClick={() => {
+                            SET_ShowSide(false)
+                        }}
+                    >Turn off Side Bar</button>
+
+
+                    {AllMessage.map((e, i) =>
+                        <p key={i} id={i + "p_dictaphone"} style={{ backgroundColor: i === AllMessage.length - 1 ? "yellow" : "transparent" }} >{e}</p>
+                    )}
+                </div>
+                : ""
+        }
     </div>
     );
 };
 export default Dictaphone;
 
 
-async function writeMessage(massgage) {
-    try {
-        await $("#messageRes").val(massgage);
-        await $("#messageResBtn").click();
-    } catch (error) {
-        console.log("e")
-    }
-}

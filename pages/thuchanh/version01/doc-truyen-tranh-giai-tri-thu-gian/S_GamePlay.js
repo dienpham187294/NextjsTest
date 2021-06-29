@@ -6,7 +6,7 @@ import Read_ReactSpeech from "../../../helpers/Read_ReactSpeechSlow"
 import Check2String from "../../../../util/Check2String"
 import DivNotCookieFixed from "../../../../util/DivNotCookieFixed"
 import DivNotCookieNormal from "../../../../util/DivNotCookieNormal"
-
+let arrTextRead = [{ "text": "none", status: false }]
 function GamePlay(props) {
 
     try {
@@ -27,7 +27,7 @@ function GamePlay(props) {
             </div>
 
             <div className="row">
-                <div className="col-6" style={{ maxHeight: "300px", overflow: "auto" }}>
+                <div className="col-6" >
                     <Dictaphone
                         Data={props.Data_Commands}
                     />
@@ -35,8 +35,7 @@ function GamePlay(props) {
                 </div>
                 <div className="col-6 text-justify" onMouseUp={() => {
                     try {
-                        var txt = "";
-
+                        let txt;
                         if (window.getSelection) {
                             txt = window.getSelection();
                         }
@@ -45,7 +44,10 @@ function GamePlay(props) {
                         } else if (document.selection) {
                             txt = document.selection.createRange().text;
                         }
-                        ReadMessage(txt, [1, 2].PickRandom())
+                        if (txt.toString() !== "") {
+                            ReadMessage(txt, [1, 2].PickRandom())
+                        }
+
 
                     } catch (error) {
                         console.log(error)
@@ -61,7 +63,7 @@ function GamePlay(props) {
                                 </div>
                                 : ""}
                             {e.map((ee, ii) =>
-                                <p key={ii}>{<span style={{ backgroundColor: ee.status ? "yellow" : "transparent" }}> {ee.text}. </span>}</p>
+                                <p key={ii}>{<span style={{ backgroundColor: ee.status ? "yellow" : "#EEEBEB" }}> {ee.text}</span>}.</p>
                             )}
                         </div>
                     )}
@@ -120,7 +122,7 @@ function GamePlay(props) {
                                     </div>
                                     : ""}
                                 {e.map((ee, ii) =>
-                                    <p key={ii}>{<span style={{ backgroundColor: ee.status ? "yellow" : "transparent" }}> {ee.text}. </span>}</p>
+                                    <p key={ii}>{<span style={{ backgroundColor: ee.status ? "yellow" : "#EEEBEB" }}> {ee.text}</span>}.</p>
                                 )}
                             </div>
                         )}
