@@ -133,7 +133,7 @@ function Show_Jsonfile(Filejson, Fn_Pick, SET_XemTructiep) {
                     {Filejson.map((e, i) =>
 
                         <tr key={i}>
-                            <td><b>{e.title}</b> </td>
+                            <td><b>{e.title}</b> <hr /> <i>{e.description}</i>  </td>
                             <td>  <img alt={e.title} src={e.img} width="250px" /></td>
                             <td>
                                 <button
