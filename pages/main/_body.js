@@ -1,6 +1,5 @@
-
-import styles from '../../styles/Home.module.css'
-
+import Arr_href_Mobile from "../../util/filedulieu/href/reading_mobile"
+import Link from 'next/link'
 export default function body() {
 
 
@@ -41,11 +40,30 @@ export default function body() {
                     </div>
                     <div className="col-lg-6 md-6 sm-12 p-5">
                         <div className="respondiframe">
-                            <iframe className="responsive-iframe" src="https://www.youtube.com/embed/VHV8ap4cLXw"></iframe>
+                            <iframe className="responsive-iframe" src="https://www.youtube.com/embed/GCrLhtA6Kxk    "></iframe>
                         </div>
                     </div>
                 </div>
                 <hr />
+                <div style={{ width: "100%", textAlign: "center" }}>
+                    <h3
+                        style={{ backgroundColor: "black", color: "yellow", padding: "15px" }}
+                    >Đọc sách, báo tiếng anh 10 phút mỗi ngày : Cải thiện tiếng anh - Nâng cao kiến thức.</h3>
+                    {Arr_href_Mobile.map((e, i) =>
+                        <div style={{ width: "300px", height: "100%", display: "inline-block", border: "4px solid black", margin: "5px", borderRadius: "20px", padding: "10px", backgroundColor: "#EAE8E8" }} key={i}>
+                            <div style={{ height: "50px" }}><b>{e.name}</b></div>
+                            <hr />
+                            <img src={e.img} alt={e.name} width="100%" />
+                            <hr />
+                            <div style={{ width: "100%", backgroundColor: "black" }}>
+                                <Link href={"/" + e.link}>
+                                    <i style={{ cursor: "pointer", color: "yellow" }}>Đọc ngay</i>
+                                </Link>
+                            </div>
+                        </div>
+                    )}
+                </div>
+
                 {/* <div>
                     <h1 className="text-center text-primary">Hỗ trợ dùng thử 3 tháng không mất phí bản quyền</h1>
                     <div className="row">
@@ -177,7 +195,7 @@ export default function body() {
                         Chúng tôi cung cấp các dịch vụ về edit video và hỗ trợ quản lí website (Đăng bài, edit và đăng tải video) với giá rẻ cho các anh chị sử dụng dịch vụ tại Ericpham.
                     </div>
                 </div> */}
-                <hr />
+                < hr />
                 <div className="container text-justify mt-4 p-4">
                     <h1>Công nghệ 4.0 - Trí thông minh nhân tạo!</h1>
                     <br />

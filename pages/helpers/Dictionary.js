@@ -11,7 +11,11 @@ function Dictionary(props) {
             if (props.Word.indexOf(" ") === -1 && status) {
                 client.define(props.Word).then(function (result) {
                     SET_DefineWord(result);
-                });
+                }).catch(
+                    function (error) {
+                        console.log(error)
+                    }
+                );
             }
             return function cleanup() {
                 status = false

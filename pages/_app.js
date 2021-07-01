@@ -7,24 +7,13 @@ import { useRouter } from 'next/router'
 import { checkCookie, delettCookie, getCookie, setCookie } from "../util/functionCookies"
 import { useEffect, useState } from 'react';
 import $ from "jquery"
-import Getfinal from "../util/GetFinal"
-import { GetServerSideProps } from 'next'
-import { data } from 'browserslist';
-import { route } from 'next/dist/next-server/server/router';
+import ArrMobieFile from "../util/filedulieu/href/reading_mobile"
 let ArrHoldLinkBaiHoc = [
   { "link": "baihoc/100-bai-giao-tiep-can-ban", "name": "100 bài giao tiếp căn bản" },
   { "link": "baihoc/800-cau-giao-tiep-thong-dung-nhat", "name": "800 câu giao tiếp thông dụng" },
   { "link": "baihoc/20-chu-de-hoc-tieng-anh-qua-hinh-anh", "name": "20 chủ đề học tiếng anh qua hình ảnh" }
 ]
-let ArrMobieFile = [
-  { "link": "thuchanh/version01/doc-bao-international-vnexpress-cap-nhat-tin-tuc-moi-nhat", "name": "Đọc báo International Vnexpress - Cập nhật tin tức mới nhất" },
-  { "link": "thuchanh/version01/doc-tap-chi-forbes-cap-nhat-tin-tuc-moi-nhat", "name": "Đọc tạp chí Forbes - Cập nhật tin tức mới nhất" },
-  { "link": "thuchanh/version01/doc-truyen-tranh-giai-tri-thu-gian", "name": "Đọc truyện tranh - Giải trí thư giãn" },
-  { "link": "thuchanh/version01/doc-bao-vietnamnews-travel", "name": "Đọc chuyên mục du lịch Vietnamnews - Khám phá Việt Nam" },
-  { "link": "thuchanh/thuc-hanh-800-cau-giao-tiep-thong-dung", "name": "Thực hành 800+ câu giao tiếp thông dụng nhất" },
 
-
-]
 let ArrMobieCustomfile = [
 
   { "link": "thuchanh/version01/thuc-hanh-doc-sach-thanh-tieng", "name": "Đọc thành tiếng với CustomFile" },
@@ -55,21 +44,23 @@ let arrVideothuchanh = [
   { "link": "thuchanh/#", "name": "Thực hành đọc sách, truyện thành tiếng" },
   { "link": "thuchanh/#", "name": "Thực hành chơi game giao tiếp với người máy AI" }
 ]
-// let flag = true;
-// let inter
+let cookieshold = "";
+let status = 0
 function MyApp({ Component, pageProps }) {
-  const [Cookie, SET_Cookie] = useState("")
-  const [Status, SET_Status] = useState(0)
+  const [Cookie, SET_Cookie] = useState(cookieshold)
+
   const router = useRouter()
+
   useEffect(() => {
-    if (Status <= 5) {
+    if (status <= 5) {
       if (checkCookie("ericpham")) {
-        SET_Cookie(getCookie("ericpham"));
+        cookieshold = getCookie("ericpham");
+        SET_Cookie(getCookie("ericpham"))
       }
-      SET_Status(S => S + 1)
-      console.log(Status)
+      status += 1
+      console.log(getCookie("ericpham"), "appjs")
     }
-  }, [Status])
+  })
   return (<>
 
     <Head>
@@ -246,12 +237,9 @@ function MyApp({ Component, pageProps }) {
 
     <footer className="mt-5 text-center">
       <div id="sound"></div>
-      {/* <hr />
-      <span><i>Học nhiều thực hành ít không bằng học ít thực hành nhiều.</i> </span> */}
       <br />
       <span>Powered by Ericpham</span>
-      {/* <hr />
-      <a href="https://app-ericpham.herokuapp.com/">Link dự phòng</a> */}
+
       <div style={{ display: "none" }}>
         <p id="TEXT"></p>
         <input onClick={() => {

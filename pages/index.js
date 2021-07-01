@@ -1,7 +1,9 @@
 import Body from "./main/_body"
-function Home() {
 
-  // console.log("note", note)
+
+function Home({ cookies }) {
+
+  console.log(cookies)
   return (
     <div className="container-fluid">
       <Body />
@@ -9,10 +11,11 @@ function Home() {
   )
 }
 
-// export async function getServerSideProps(context) {
-//   return {
-//     props: { note: { "note": 1 } }, // will be passed to the page component as props
-//   }
-// }
-
+Home.getInitialProps = async (context) => {
+  try {
+    return { cookies: context.req.cookies }
+  } catch (error) {
+    return { cookies: null }
+  }
+}
 export default Home

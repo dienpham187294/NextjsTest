@@ -1,27 +1,13 @@
 import { useEffect, useState } from "react";
 import { async } from "regenerator-runtime";
-// import Filejson from "../../../../util/filedulieu/200baidoc"
 import Linkapi from "../../../../util/Linkapi"
-import { checkCookie, getCookie } from "../../../../util/functionCookies"
 import jsondata from "../../../../util/filedulieu/travelVietnamnews/50baidulich"
 function UpLoadFile(props) {
     const [Data, SET_Data] = useState(jsondata)
-    // const [status, SET_status] = useState(true)
-
-    const [XemTructiep, SET_XemTructiep] = useState("")
-    // useEffect(() => {
-    //     if (status) {
-    //         GetReadingNews(SET_Data)
-    //         SET_status(false)
-    //     }
-    // })
-
-
-
     async function Fn_Pick(href) {
         try {
 
-            const res = await fetch(Linkapi + "api/dailynew/one?link=" + href, {
+            const res = await fetch(Linkapi + "api/vietnamtravel/one?link=" + href, {
                 method: 'GET',
                 headers: {
                     "Accept": "application/json",
@@ -61,39 +47,7 @@ function UpLoadFile(props) {
 
     return (
         <div>
-            {Show_Jsonfile(Data, Fn_Pick, SET_XemTructiep)}
-            {XemTructiep !== ""
-                ? <div>
-                    <button
-                        style={{
-                            position: "fixed",
-                            top: "10%",
-                            right: "25%",
-                            zIndex: 1,
-                            width: "150px"
-                        }}
-                        className="btn btn-danger"
-                        onClick={() => {
-                            SET_XemTructiep("")
-                        }}
-                    >
-                        Thoát
-                    </button>
-                    <iframe
-                        style={{
-                            position: "fixed",
-                            top: "5%",
-                            width: "60%",
-                            minWidth: "370px",
-                            height: "800px",
-                            overflow: "auto",
-                            backgroundColor: "white"
-
-                        }}
-                        src={XemTructiep}
-                    />
-                </div>
-                : ""}
+            {Show_Jsonfile(Data, Fn_Pick)}
         </div>
     )
 
@@ -106,7 +60,7 @@ export default UpLoadFile
 
 
 
-function Show_Jsonfile(Filejson, Fn_Pick, SET_XemTructiep) {
+function Show_Jsonfile(Filejson, Fn_Pick) {
 
     try {
 
@@ -157,30 +111,5 @@ function Show_Jsonfile(Filejson, Fn_Pick, SET_XemTructiep) {
 
 
 
-
-async function GetReadingNews(SET_Data) {
-    try {
-        const res = await fetch(Linkapi + "api/dailynew", {
-            method: 'GET',
-            headers: {
-                "Accept": "application/json",
-                "Content-Type": "application/json"
-            }
-        })
-        let data = await res.json();
-        let arrNews = [];
-        let arrNotNews = [];
-        data.data.forEach(e => {
-            if (e["href"].indexOf("/news/news") > -1) {
-                arrNews.push(e)
-            } else {
-                arrNotNews.push(e)
-            }
-        })
-        SET_Data(arrNews.concat(arrNotNews))
-    } catch (error) {
-        console.log("e")
-    }
-}
 
 

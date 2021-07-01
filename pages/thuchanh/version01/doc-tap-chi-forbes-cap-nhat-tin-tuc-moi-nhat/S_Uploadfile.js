@@ -2,18 +2,14 @@ import { useEffect, useState } from "react";
 import { async } from "regenerator-runtime";
 // import Filejson from "../../../../util/filedulieu/200baidoc"
 import Linkapi from "../../../../util/Linkapi"
-import { checkCookie, getCookie } from "../../../../util/functionCookies"
-
+let status = true
+let arrHoldeFirstTime;
 function UpLoadFile(props) {
-    const [Data, SET_Data] = useState([])
-    const [status, SET_status] = useState(true)
-
-    const [XemTructiep, SET_XemTructiep] = useState("")
+    const [Data, SET_Data] = useState(arrHoldeFirstTime)
     useEffect(() => {
-
         if (status) {
             GetReadingNews(SET_Data)
-            SET_status(false)
+            status = false
         }
     })
 
@@ -64,7 +60,7 @@ function UpLoadFile(props) {
 
     return (
         <div>
-            {Show_Jsonfile(Data, Fn_Pick, SET_XemTructiep)}
+            {Show_Jsonfile(Data, Fn_Pick)}
         </div>
     )
 
@@ -77,7 +73,7 @@ export default UpLoadFile
 
 
 
-function Show_Jsonfile(Filejson, Fn_Pick, SET_XemTructiep) {
+function Show_Jsonfile(Filejson, Fn_Pick) {
 
     try {
 
@@ -120,7 +116,7 @@ function Show_Jsonfile(Filejson, Fn_Pick, SET_XemTructiep) {
             </div>
         )
     } catch (error) {
-        return "error"
+        return "Loading......"
     }
 }
 
@@ -137,7 +133,7 @@ async function GetReadingNews(SET_Data) {
             }
         })
         let data = await res.json();
-
+        arrHoldeFirstTime = data.data
         SET_Data(data.data)
     } catch (error) {
         console.log(error)

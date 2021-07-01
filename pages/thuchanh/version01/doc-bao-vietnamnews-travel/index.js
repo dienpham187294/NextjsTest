@@ -5,8 +5,6 @@ import UpLoadFile from "./S_Uploadfile"
 
 import GamePlay from "./S_GamePlay"
 
-
-
 function Manager() {
     const [PageChange, SET_PageChange] = useState(0)
     const [Read_Data, SET_Read_Data] = useState([])

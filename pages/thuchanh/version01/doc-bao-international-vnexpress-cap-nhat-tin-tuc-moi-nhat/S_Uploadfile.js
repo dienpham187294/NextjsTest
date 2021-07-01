@@ -3,21 +3,18 @@ import { async } from "regenerator-runtime";
 // import Filejson from "../../../../util/filedulieu/200baidoc"
 import Linkapi from "../../../../util/Linkapi"
 import { checkCookie, getCookie } from "../../../../util/functionCookies"
-
+import { data } from "cheerio/lib/api/attributes";
+let status = true
+let arrHoldeFirstTime;
 function UpLoadFile(props) {
-    const [Data, SET_Data] = useState([])
-    const [status, SET_status] = useState(true)
-
+    const [Data, SET_Data] = useState(arrHoldeFirstTime)
     const [XemTructiep, SET_XemTructiep] = useState("")
     useEffect(() => {
         if (status) {
-            GetReadingNews(SET_Data)
-            SET_status(false)
+            GetReadingNews(SET_Data);
+            status = false
         }
     })
-
-
-
     async function Fn_Pick(href) {
         try {
 
@@ -158,7 +155,7 @@ function Show_Jsonfile(Filejson, Fn_Pick, SET_XemTructiep) {
             </div>
         )
     } catch (error) {
-        return "error"
+        return "Loading......"
     }
 }
 
@@ -184,6 +181,7 @@ async function GetReadingNews(SET_Data) {
                 arrNotNews.push(e)
             }
         })
+        arrHoldeFirstTime = arrNews.concat(arrNotNews);
         SET_Data(arrNews.concat(arrNotNews))
     } catch (error) {
         console.log("e")
