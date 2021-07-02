@@ -108,28 +108,13 @@ function GamePlay(props) {
                     }}
                     onMouseUp={() => {
                         Handle_Onselect(SET_Popup)
-                    }}>
+                    }}
+                    onTouchEnd={
+                        () => { Handle_Onselect(SET_Popup) }
+                    }
+                >
+
                     <div style={{ width: "100%", textAlign: "center" }}>
-                        <button
-                            style={{
-                                position: "fixed",
-                                bottom: "1px",
-                                left: "45%"
-                            }}
-                            onClick={() => { SET_Page_To_Read(P => P - 1) }}
-                            className="btn btn-info">
-                            Back
-                        </button>
-                        <button
-                            style={{
-                                position: "fixed",
-                                bottom: "1px",
-                                right: "45%"
-                            }}
-                            onClick={() => { SET_Page_To_Read(P => P + 1) }}
-                            className="btn btn-info  ml-3">
-                            Next
-                        </button>
                         <div >
                             <button onClick={() => { SET_Sreen(false) }} className="btn btn-outline-info btn-sm">
                                 Mở bảng tùy chỉnh
@@ -142,7 +127,7 @@ function GamePlay(props) {
                                 Thoát
                             </button>
 
-                            <div style={{ maxWidth: "800px", textAlign: "left", marginLeft: "50%", transform: "translateX(-50%)" }}>
+                            <div style={{ maxWidth: "800px", width: "100%", textAlign: "left", marginLeft: "50%", transform: "translateX(-50%)" }}>
                                 {props.Data.map((e, i) =>
                                     <div key={i} >
                                         {i >= Page_To_Read * 2 && i < Page_To_Read * 2 + 2 ?
@@ -162,11 +147,23 @@ function GamePlay(props) {
                                                     )
 
                                                 }
-
                                             </div>
                                             : ""}
                                     </div>
                                 )}
+
+                                <div style={{ width: "100%", textAlign: "center" }}>
+                                    <button
+                                        onClick={() => { SET_Page_To_Read(P => P - 1) }}
+                                        className="btn btn-info">
+                                        Back
+                                    </button>
+                                    <button
+                                        onClick={() => { SET_Page_To_Read(P => P + 1) }}
+                                        className="btn btn-info  ml-3">
+                                        Next
+                                    </button>
+                                </div>
                                 {DivNotCookieFixed()}
                             </div>
                         </div>
@@ -212,7 +209,8 @@ function GamePlay(props) {
                         border: "1px solid green",
                         borderRadius: "10px",
                         padding: "15px",
-                        maxWidth: "20%",
+                        width: "20%",
+                        minWidth: "250px",
                         maxHeight: "100%",
                         backgroundColor: "white",
                         overflow: "auto"
