@@ -11,7 +11,12 @@ export default async function ReadMessage(text, voiceNum) {
             await $("#SpeechVoiceBtn")[0].click();
         }
         setTimeout(() => {
-            $(".rs-play")[0].click()
+            try {
+                $(".rs-play")[0].click()
+            } catch (error) {
+                console.log("eclick undefined")
+            }
+
         }, 100)
     } catch (error) {
         console.log("e")

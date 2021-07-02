@@ -17,7 +17,7 @@ function UpLoadFile(props) {
             let data = await res.json();
             let json = data.data;
             let arrRes = []
-            let arrDataCommands = []
+            // let arrDataCommands = []
             let arrImage = []
             json.forEach(e => {
                 arrImage.push(e.img)
@@ -25,7 +25,7 @@ function UpLoadFile(props) {
                 let arrTempFinal = [];
                 arrTemp.forEach(ee => {
                     arrTempFinal.push({ "text": ee, "status": false })
-                    arrDataCommands.push(ee);
+                    // arrDataCommands.push(ee);
                 })
                 arrRes.push(arrTempFinal)
             });
@@ -34,7 +34,7 @@ function UpLoadFile(props) {
 
             props.SET_Read_Data(arrRes)
 
-            props.SET_Data_Commands(arrDataCommands)
+            // props.SET_Data_Commands(arrDataCommands)
 
             props.SET_PageChange(P => P + 1)
 
@@ -61,9 +61,7 @@ export default UpLoadFile
 
 
 function Show_Jsonfile(Filejson, Fn_Pick) {
-
     try {
-
         let d = new Date();
         let n = d.getUTCDate();
         let m = d.getUTCMonth() + 1;
@@ -77,18 +75,21 @@ function Show_Jsonfile(Filejson, Fn_Pick) {
                         fontSize: "large",
                         letterSpacing: "4px"
                     }}>
-                        <td><b>Mục du lịch - Vietnamnews - {n} / {m} / {y}</b></td>
-                        <td></td>
+                        <td><b>Khám phá Việt Nam - Vietnamnews - {n} / {m} / {y}</b></td>
                         <td></td>
                     </tr>
                 </thead>
                 <tbody>
 
                     {Filejson.map((e, i) =>
-
                         <tr key={i}>
-                            <td><b>{e.title}</b> <hr /> <i>{e.description}</i>  </td>
-                            <td>  <img alt={e.title} src={e.img} width="250px" /></td>
+                            <td>
+                                <b>{e.title}</b>
+                                <hr />
+                                <img alt={e.title} src={e.img} width="250px" />
+                                <hr />
+                                <i>{e.description}</i>
+                            </td>
                             <td>
                                 <button
                                     className="btn btn-outline-primary"

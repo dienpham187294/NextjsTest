@@ -27,10 +27,10 @@ function Manager() {
                 </p>
             </div>
 
-            <div style={{ textAlign: "center" }} className="mt-1 mb-1">
+            {/* <div style={{ textAlign: "center" }} className="mt-1 mb-1">
                 <button className="btn btn-sm btn-outline-primary mr-3" onClick={() => { SET_PageChange(S => S - 1) }}>Back</button>
                 <button className="btn btn-sm btn-outline-primary" onClick={() => { SET_PageChange(S => S + 1) }}>Forward</button>
-            </div>
+            </div> */}
             {PageChange % 2 === 0
                 ?
                 <UpLoadFile
@@ -46,6 +46,7 @@ function Manager() {
                         Data_Commands={Data_Commands}
                         SET_Read_Data={SET_Read_Data}
                         ImageData={ImageData}
+                        SET_PageChange={SET_PageChange}
                     />
                     : PageChange}
 

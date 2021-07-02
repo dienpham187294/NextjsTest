@@ -1,5 +1,6 @@
 import axios from "axios"
 import jsdom from "jsdom"
+
 export default async (req, res) => {
     const { link } = req.query
     let arr = ["none"]
@@ -29,13 +30,14 @@ export default async (req, res) => {
                     } else {
                         num = e.length
                     }
-
-                    ArrP.push(
-                        {
-                            "text": e.textContent.split("\n").join("").split("\t").join(""),
-                            "index": All.innerHTML.indexOf(e.innerHTML.slice(5, num))
-                        }
-                    )
+                    if (e.textContent.length !== 3) {
+                        ArrP.push(
+                            {
+                                "text": e.textContent.split("\n").join("").split("\t").join(""),
+                                "index": All.innerHTML.indexOf(e.innerHTML.slice(5, num))
+                            }
+                        )
+                    }
                 })
                 for (let i = 0; i < ArrP.length - 2; i++) {
                     for (let j = 0; j < arrImg.length - 1; j++) {

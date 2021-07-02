@@ -1,6 +1,6 @@
 import ReadMessage from "../ReadMessage"
 
-export default function Handle_Onselect() {
+export default function Handle_Onselect(SET_Show_Popup) {
     try {
         let txt;
         if (window.getSelection) {
@@ -13,11 +13,14 @@ export default function Handle_Onselect() {
         }
         if (txt.toString() !== "") {
             ReadMessage(txt, [1, 2].PickRandom());
+            SET_Show_Popup(txt.toString())
             try {
                 document.getElementById("DictionarySearch").innerText = txt.toString()
             } catch (error) {
                 console.log(error)
             }
+        } else {
+            SET_Show_Popup("")
         }
     } catch (error) {
         console.log(error)
