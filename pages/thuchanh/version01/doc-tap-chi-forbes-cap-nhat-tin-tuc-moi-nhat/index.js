@@ -48,6 +48,7 @@ function Manager() {
                         Data_Commands={Data_Commands}
                         SET_Read_Data={SET_Read_Data}
                         ImageData={ImageData}
+                        SET_PageChange={SET_PageChange}
                     />
                     : PageChange}
 

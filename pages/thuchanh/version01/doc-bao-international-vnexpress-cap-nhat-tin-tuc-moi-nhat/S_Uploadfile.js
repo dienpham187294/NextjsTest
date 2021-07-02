@@ -8,7 +8,6 @@ let status = true
 let arrHoldeFirstTime;
 function UpLoadFile(props) {
     const [Data, SET_Data] = useState(arrHoldeFirstTime)
-    const [XemTructiep, SET_XemTructiep] = useState("")
     useEffect(() => {
         if (status) {
             GetReadingNews(SET_Data);
@@ -28,7 +27,7 @@ function UpLoadFile(props) {
             let data = await res.json();
             let json = data.data;
             let arrRes = []
-            let arrDataCommands = []
+            // let arrDataCommands = []
             let arrImage = []
             json.forEach(e => {
                 arrImage.push(e.img)
@@ -36,7 +35,7 @@ function UpLoadFile(props) {
                 let arrTempFinal = [];
                 arrTemp.forEach(ee => {
                     arrTempFinal.push({ "text": ee, "status": false })
-                    arrDataCommands.push(ee);
+                    // arrDataCommands.push(ee);
                 })
                 arrRes.push(arrTempFinal)
             });
@@ -45,7 +44,7 @@ function UpLoadFile(props) {
 
             props.SET_Read_Data(arrRes)
 
-            props.SET_Data_Commands(arrDataCommands)
+            // props.SET_Data_Commands(arrDataCommands)
 
             props.SET_PageChange(P => P + 1)
 
@@ -58,39 +57,7 @@ function UpLoadFile(props) {
 
     return (
         <div>
-            {Show_Jsonfile(Data, Fn_Pick, SET_XemTructiep)}
-            {XemTructiep !== ""
-                ? <div>
-                    <button
-                        style={{
-                            position: "fixed",
-                            top: "10%",
-                            right: "25%",
-                            zIndex: 1,
-                            width: "150px"
-                        }}
-                        className="btn btn-danger"
-                        onClick={() => {
-                            SET_XemTructiep("")
-                        }}
-                    >
-                        Thoát
-                    </button>
-                    <iframe
-                        style={{
-                            position: "fixed",
-                            top: "5%",
-                            width: "60%",
-                            minWidth: "370px",
-                            height: "800px",
-                            overflow: "auto",
-                            backgroundColor: "white"
-
-                        }}
-                        src={XemTructiep}
-                    />
-                </div>
-                : ""}
+            {Show_Jsonfile(Data, Fn_Pick)}
         </div>
     )
 
@@ -103,7 +70,7 @@ export default UpLoadFile
 
 
 
-function Show_Jsonfile(Filejson, Fn_Pick, SET_XemTructiep) {
+function Show_Jsonfile(Filejson, Fn_Pick) {
 
     try {
 
@@ -121,7 +88,7 @@ function Show_Jsonfile(Filejson, Fn_Pick, SET_XemTructiep) {
                         letterSpacing: "4px"
                     }}>
                         <td><b>Báo VnExpress - {n} / {m} / {y}</b></td>
-                        <td></td>
+
                         <td></td>
                     </tr>
                 </thead>
@@ -131,14 +98,6 @@ function Show_Jsonfile(Filejson, Fn_Pick, SET_XemTructiep) {
 
                         <tr key={i}>
                             <td><b>{e.title}</b> </td>
-                            <td><button
-                                className="btn btn-outline-info"
-                                onClick={() => {
-                                    SET_XemTructiep(e.href)
-                                }}
-                            >
-                                Xem bài gốc
-                            </button></td>
                             <td>
                                 <button
                                     className="btn btn-outline-primary"

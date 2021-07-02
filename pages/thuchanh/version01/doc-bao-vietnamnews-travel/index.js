@@ -5,12 +5,17 @@ import UpLoadFile from "./S_Uploadfile"
 
 import GamePlay from "./S_GamePlay"
 
+const obj = {
+    "Link_Fetch_Api": "api/vietnamtravel/one?link=",
+    "Name_Of_Table": "Khám phá Việt Nam - Vietnamnews"
+}
+
 function Manager() {
     const [PageChange, SET_PageChange] = useState(0)
     const [Read_Data, SET_Read_Data] = useState([])
     const [ImageData, SET_ImageData] = useState([])
+    const [Data_Info_intinial, SET_Data_Info_intinial] = useState(obj)
     const [Data_Commands, SET_Data_Commands] = useState([])
-
     return (
 
         <div className="container">
@@ -26,11 +31,10 @@ function Manager() {
                     </b>
                 </p>
             </div>
-
-            {/* <div style={{ textAlign: "center" }} className="mt-1 mb-1">
+            <div style={{ textAlign: "center" }} className="mt-1 mb-1">
                 <button className="btn btn-sm btn-outline-primary mr-3" onClick={() => { SET_PageChange(S => S - 1) }}>Back</button>
                 <button className="btn btn-sm btn-outline-primary" onClick={() => { SET_PageChange(S => S + 1) }}>Forward</button>
-            </div> */}
+            </div>
             {PageChange % 2 === 0
                 ?
                 <UpLoadFile
@@ -38,6 +42,8 @@ function Manager() {
                     SET_Data_Commands={SET_Data_Commands}
                     SET_PageChange={SET_PageChange}
                     SET_ImageData={SET_ImageData}
+                    Link_Fetch_Api={Data_Info_intinial["Link_Fetch_Api"]}
+                    Name_Of_Table={Data_Info_intinial["Name_Of_Table"]}
                 />
                 : PageChange % 2 === 1
                     ? <GamePlay

@@ -7,9 +7,7 @@ import DivNotCookieFixed from "../../../../util/DivNotCookieFixed"
 import Sound from "../../../../util/Sound/Get_sound_reading"
 import musicfile from '../../../../util/filedulieu/musicfile/musicfile';
 import Handle_Onselect from "../../../../util/Handle_Onselect/Handle_Onselect"
-import Dictionary from "../../../helpers/DictionaryReadPage"
-import GetLongest from "../../../../util/GetLongest"
-import ImageSearch from "../../../helpers/ImageSearch"
+import Dictionary_with_image from "../../../helpers/Dictionary_with_image"
 function GamePlay(props) {
     try {
         if (props.Data.length === 0) {
@@ -127,7 +125,7 @@ function GamePlay(props) {
                                 Thoát
                             </button>
 
-                            <div style={{ maxWidth: "800px", width: "100%", textAlign: "left", marginLeft: "50%", transform: "translateX(-50%)" }}>
+                            <div style={{ maxWidth: "800px", width: "100%", textAlign: "left", marginLeft: "50%", transform: "translateX(-50%)", padding: "5px" }}>
                                 {props.Data.map((e, i) =>
                                     <div key={i} >
                                         {i >= Page_To_Read * 2 && i < Page_To_Read * 2 + 2 ?
@@ -174,6 +172,7 @@ function GamePlay(props) {
                 </div>
 
                 : ""}
+            <Dictionary_with_image Popup={Popup} />
             <Read_ReactSpeech />
             <button style={{ display: "none" }} onClick={() => {
                 console.log("onclick")
@@ -198,34 +197,6 @@ function GamePlay(props) {
                 }
             }} id="messageResBtn">
             </button>
-
-            {Popup !== "" ?
-                <div
-                    style={{
-                        zIndex: 2,
-                        position: "fixed",
-                        left: "2%",
-                        top: "2%",
-                        border: "1px solid green",
-                        borderRadius: "10px",
-                        padding: "15px",
-                        width: "20%",
-                        minWidth: "250px",
-                        maxHeight: "100%",
-                        backgroundColor: "white",
-                        overflow: "auto"
-                    }}
-
-                >
-                    {Popup}
-                    <hr />
-                    <Dictionary Word={GetLongest(Popup)} />
-                    <hr />
-                    < ImageSearch Word={Popup} />
-                    <hr />
-                </div>
-                : null}
-
         </div >
     )
 }

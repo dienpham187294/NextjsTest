@@ -1,9 +1,6 @@
 import { useEffect, useState } from "react";
 import { async } from "regenerator-runtime";
 import Filejson from "../../../../util/filedulieu/truyentranh/01"
-import Linkapi from "../../../../util/Linkapi"
-import { checkCookie, getCookie } from "../../../../util/functionCookies"
-
 function UpLoadFile(props) {
     const [Data, SET_Data] = useState(Filejson)
 
@@ -12,18 +9,15 @@ function UpLoadFile(props) {
         try {
             let json = data;
             let arrRes = []
-            let arrDataCommands = []
+            // let arrDataCommands = []
             let arrImage = []
             json.forEach(e => {
                 arrImage.push(e.img)
                 let arrTemp = (e.text).split(". ")
                 let arrTempFinal = [];
                 arrTemp.forEach(ee => {
-                    if (ee !== "") {
-                        arrTempFinal.push({ "text": ee, "status": false })
-                        arrDataCommands.push(ee);
-                    }
-
+                    arrTempFinal.push({ "text": ee, "status": false })
+                    // arrDataCommands.push(ee);
                 })
                 arrRes.push(arrTempFinal)
             });
@@ -32,7 +26,7 @@ function UpLoadFile(props) {
 
             props.SET_Read_Data(arrRes)
 
-            props.SET_Data_Commands(arrDataCommands)
+            // props.SET_Data_Commands(arrDataCommands)
 
             props.SET_PageChange(P => P + 1)
 
@@ -84,7 +78,11 @@ function Show_Jsonfile(Filejson, Fn_Pick) {
                     {Filejson.map((e, i) =>
 
                         <tr key={i}>
-                            <td><b>{e.title}</b> </td>
+                            <td>
+                                <b>{e.title}</b>
+                                <hr />
+                                <img alt={e.title} src={e.img} width="250px" />
+                            </td>
                             <td>
                                 <button
                                     className="btn btn-outline-primary"

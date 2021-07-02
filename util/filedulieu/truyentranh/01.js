@@ -1,6 +1,7 @@
 export default [
     {
         "title": "HIDE-AND-SEEK",
+        "img": "https://i.postimg.cc/T2L1RQJB/001-HIDE-AND-SEEK-Free-Childrens-Book-By-Monkey-Pen-01.jpg",
         "data": [
             {
                 "img": "https://i.postimg.cc/T2L1RQJB/001-HIDE-AND-SEEK-Free-Childrens-Book-By-Monkey-Pen-01.jpg",
@@ -114,6 +115,7 @@ export default [
     },
     {
         "title": "GINGER-THE-GIRAFFE ",
+        "img": "https://i.postimg.cc/ryRC6qB2/002-GINGER-THE-GIRAFFE-Free-Childrens-Book-By-Monkey-Pen-01.jpg",
         "data": [
             {
                 "img": "https://i.postimg.cc/ryRC6qB2/002-GINGER-THE-GIRAFFE-Free-Childrens-Book-By-Monkey-Pen-01.jpg",
@@ -182,7 +184,8 @@ export default [
         ]
     },
     {
-        "title": "DOING-MY-CHORES",
+        "title": "DOING-MY-CHORES ",
+        "img": "https://i.postimg.cc/qM5NpKym/003-DOING-MY-CHORES-Free-Childrens-Book-By-Monkey-Pen-01.jpg",
         "data": [
             {
                 "img": "https://i.postimg.cc/qM5NpKym/003-DOING-MY-CHORES-Free-Childrens-Book-By-Monkey-Pen-01.jpg",
@@ -265,8 +268,10 @@ export default [
                 "text": ""
             }
         ]
-    }, {
-        "title": "ABE-THE-SERVICE-DOG",
+    },
+    {
+        "title": "ABE-THE-SERVICE -DOG",
+        "img": "https://i.postimg.cc/XYN611pm/004-ABE-THE-SERVICE-DOG-Free-Childrens-Book-By-Monkey-Pen-01.jpg",
         "data": [
             {
                 "img": "https://i.postimg.cc/XYN611pm/004-ABE-THE-SERVICE-DOG-Free-Childrens-Book-By-Monkey-Pen-01.jpg",
@@ -371,7 +376,8 @@ export default [
         ]
     },
     {
-        "title": "SUNNY-MEADOWS-WOODLAND-SCHOOL",
+        "title": "SUNNY-MEADOWS-W OODLAND-SCHOOL",
+        "img": "https://i.postimg.cc/k4H573t2/005-SUNNY-MEADOWS-WOODLAND-SCHOOL-Free-Childrens-Book-By-Monkey-Pen-01.jpg",
         "data": [
             {
                 "img": "https://i.postimg.cc/k4H573t2/005-SUNNY-MEADOWS-WOODLAND-SCHOOL-Free-Childrens-Book-By-Monkey-Pen-01.jpg",
@@ -433,6 +439,7 @@ export default [
     },
     {
         "title": "TOOTH-FAIRY",
+        "img": "https://i.postimg.cc/QdKXzQGD/006-TOOTH-FAIRY-Free-Childrens-Book-By-Monkey-Pen-01.jpg",
         "data": [
             {
                 "img": "https://i.postimg.cc/QdKXzQGD/006-TOOTH-FAIRY-Free-Childrens-Book-By-Monkey-Pen-01.jpg",
@@ -521,7 +528,8 @@ export default [
         ]
     },
     {
-        "title": "HAMMY-THE-HAMSTER",
+        "title": "HAMMY-THE-HAMST ER",
+        "img": "https://i.postimg.cc/VLkf1yMz/007-HAMMY-THE-HAMSTER-Free-Childrens-Book-By-Monkey-Pen-01.jpg",
         "data": [
             {
                 "img": "https://i.postimg.cc/VLkf1yMz/007-HAMMY-THE-HAMSTER-Free-Childrens-Book-By-Monkey-Pen-01.jpg",
@@ -590,7 +598,8 @@ export default [
         ]
     },
     {
-        "title": "THE-CASE-OF-THE-MISSING-SMILE",
+        "title": "THE-CASE-OF-THE -MISSING-SMILE",
+        "img": "https://i.postimg.cc/hjN5Yd9J/008-THE-CASE-OF-THE-MISSING-SMILE-01.jpg",
         "data": [
             {
                 "img": "https://i.postimg.cc/hjN5Yd9J/008-THE-CASE-OF-THE-MISSING-SMILE-01.jpg",
@@ -696,6 +705,7 @@ export default [
     },
     {
         "title": "HOMEWORK-YUCK",
+        "img": "https://i.postimg.cc/1tWqRGWt/009-HOMEWORK-YUCK-Free-Childrens-Book-By-Monkey-Pen-01.jpg",
         "data": [
             {
                 "img": "https://i.postimg.cc/1tWqRGWt/009-HOMEWORK-YUCK-Free-Childrens-Book-By-Monkey-Pen-01.jpg",
@@ -800,7 +810,8 @@ export default [
         ]
     },
     {
-        "title": "CAPTAIN-FANTASTIC",
+        "title": "CAPTAIN-FANTAST IC",
+        "img": "https://i.postimg.cc/Kvg2mtQ8/010-CAPTAIN-FANTASTIC-Free-Childrens-Book-By-Monkey-Pen-01.jpg",
         "data": [
             {
                 "img": "https://i.postimg.cc/Kvg2mtQ8/010-CAPTAIN-FANTASTIC-Free-Childrens-Book-By-Monkey-Pen-01.jpg",

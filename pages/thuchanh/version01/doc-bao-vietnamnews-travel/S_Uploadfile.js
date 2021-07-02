@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
 import { async } from "regenerator-runtime";
 import Linkapi from "../../../../util/Linkapi"
-import jsondata from "../../../../util/filedulieu/travelVietnamnews/50baidulich"
+import jsondata from "../../../../util/filedulieu/travelVietnamnews/50baidulich";
+
 function UpLoadFile(props) {
     const [Data, SET_Data] = useState(jsondata)
     async function Fn_Pick(href) {
         try {
-
-            const res = await fetch(Linkapi + "api/vietnamtravel/one?link=" + href, {
+            const res = await fetch(Linkapi + props.Link_Fetch_Api + href, {
                 method: 'GET',
                 headers: {
                     "Accept": "application/json",
@@ -42,12 +42,9 @@ function UpLoadFile(props) {
             console.log("Failed to load file");
         }
     }
-
-
-
     return (
         <div>
-            {Show_Jsonfile(Data, Fn_Pick)}
+            {Show_Jsonfile(Data, Fn_Pick, props.Name_Of_Table)}
         </div>
     )
 
@@ -60,7 +57,7 @@ export default UpLoadFile
 
 
 
-function Show_Jsonfile(Filejson, Fn_Pick) {
+function Show_Jsonfile(Filejson, Fn_Pick, Name_Of_Table) {
     try {
         let d = new Date();
         let n = d.getUTCDate();
@@ -75,7 +72,7 @@ function Show_Jsonfile(Filejson, Fn_Pick) {
                         fontSize: "large",
                         letterSpacing: "4px"
                     }}>
-                        <td><b>Khám phá Việt Nam - Vietnamnews - {n} / {m} / {y}</b></td>
+                        <td><b>{Name_Of_Table} - {n} / {m} / {y}</b></td>
                         <td></td>
                     </tr>
                 </thead>

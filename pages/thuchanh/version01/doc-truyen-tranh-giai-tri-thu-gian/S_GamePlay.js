@@ -1,78 +1,96 @@
 
 import { useEffect, useState } from "react"
-import Dictaphone from "../../../helpers/RegcognitionV1-0-1AI0.2ReadPaper"
-import ReadMessage from "../../../../util/ReadMessage"
+import Dictaphone from "../../../helpers/RegcognitionV1-0-1AI0.2ReadPaperTravel"
 import Read_ReactSpeech from "../../../helpers/Read_ReactSpeechSlow"
 import Check2String from "../../../../util/Check2String"
 import DivNotCookieFixed from "../../../../util/DivNotCookieFixed"
-import DivNotCookieNormal from "../../../../util/DivNotCookieNormal"
-let arrTextRead = [{ "text": "none", status: false }]
+import Sound from "../../../../util/Sound/Get_sound_reading"
+import musicfile from '../../../../util/filedulieu/musicfile/musicfile';
+import Handle_Onselect from "../../../../util/Handle_Onselect/Handle_Onselect"
+import Dictionary_with_image from "../../../helpers/Dictionary_with_image"
 function GamePlay(props) {
-
     try {
         if (props.Data.length === 0) {
-            return <div>Đang chờ dữ liệu</div>
+            return <div>Vui lòng chọn bài đọc - Back để quay lại chọn bài</div>
         }
     } catch (error) {
         return <div>Lỗi dữ liệu nhập vào. Kiểm tra lại file dữ liệu</div>
     }
     const [Alert, SET_Alert] = useState(0)
-    const [FullScreen, SET_FullScreen] = useState(false)
-    return (
-        <div >
-            <div style={{ width: "100%", textAlign: "center" }}>
-                <button onClick={() => { SET_FullScreen(true) }} className="btn btn-outline-info">
-                    FullScreen
-                </button>
-            </div>
 
+    const [Page_To_Read, SET_Page_To_Read] = useState(0)
+
+    const [Sreen, SET_Sreen] = useState(false)
+
+    const [Popup, SET_Popup] = useState("")
+    useEffect(() => {
+        let ArrComands = []
+        console.log(props.Data.slice(Page_To_Read * 1, Page_To_Read * 1 + 1))
+        props.Data.slice(Page_To_Read * 1, Page_To_Read * 1 + 1).forEach(e => {
+            e.forEach(ee => {
+                ArrComands.push(ee.text)
+            })
+        })
+        props.SET_Data_Commands(ArrComands)
+    }, [Page_To_Read])
+
+    useEffect(() => {
+        console.log(Popup)
+    }, [Popup])
+    return (
+
+        <div >
             <div className="row">
-                <div className="col-6" >
+                <div className="col-12 mb-5">
+                    <div className="col-12">
+                        <button onClick={() => { SET_Sreen(true) }} className="btn btn-outline-info btn-sm">
+                            Bắt đầu đọc
+                        </button>
+                        <button onClick={() => {
+                            SET_Sreen(false);
+                            props.SET_PageChange(0)
+                        }} className="btn btn-outline-danger btn-sm ml-5">
+                            Trở về chọn bài đọc
+                        </button>
+                    </div>
+
+                </div>
+
+
+                <div className="col-12">
                     <Dictaphone
                         Data={props.Data_Commands}
                     />
-                    <i><b>Bôi đen từng chữ hoặc nguyên câu để nghe máy đọc.</b></i>
                 </div>
-                <div className="col-6 text-justify" onMouseUp={() => {
-                    try {
-                        let txt;
-                        if (window.getSelection) {
-                            txt = window.getSelection();
+                <div className="col-12">
+                    <i>Chọn nhạc để nghe trong lúc đọc</i>
+                    <select onChange={(e) => {
+                        let Arr = document.getElementsByClassName("soundClass");
+                        if (Arr.length > 0) {
+                            Arr[Arr.length - 1].pause()
                         }
-                        else if (document.getSelection) {
-                            txt = document.getSelection();
-                        } else if (document.selection) {
-                            txt = document.selection.createRange().text;
-                        }
-                        if (txt.toString() !== "") {
-                            ReadMessage(txt, [1, 2].PickRandom())
-                        }
-
-
-                    } catch (error) {
-                        console.log(error)
-                    }
-                }}>
-                    {props.Data.map((e, i) =>
-                        <div key={i}>
-
-                            {props.ImageData[i] !== ""
-                                ?
-                                <div style={{ width: "100%", textAlign: "center" }}>
-                                    <img style={{ maxWidth: "800px", width: "100%" }} alt={props.ImageData[i]} src={props.ImageData[i]} />
-                                </div>
-                                : ""}
-                            {e.map((ee, ii) =>
-                                <p key={ii}>{<span style={{ backgroundColor: ee.status ? "yellow" : "#EEEBEB" }}> {ee.text}</span>}.</p>
-                            )}
-                        </div>
-                    )}
-                    {DivNotCookieNormal()}
+                        Sound(e.currentTarget.value)
+                    }} className="form-control" defaultValue="music">
+                        <option value="music">Chọn nhạc</option>
+                        {musicfile.map((e, i) =>
+                            <option key={i} value={e.link}>{e.name}</option>
+                        )}
+                        <option value="off">Off Music</option>
+                    </select>
+                </div>
+                <div className="col-12 mt-5">
+                    <i> Sử dụng: Tùy chỉnh <b> độ chính xác và chế độ đọc</b> phù hợp. Đọc một hoặc nhiều câu có ( <span style={{ backgroundColor: "#EEEBEB" }}>phần màu đậm</span>), <b>dừng quãng khoảng một tí</b>  để máy lắng nghe rồi đọc tiếp. </i>
+                    <i><b>Bôi đen để nghe máy đọc và tra từ điển hình ảnh.</b></i>
                 </div>
 
             </div>
-            {FullScreen ?
 
+
+
+
+
+
+            {Sreen ?
                 <div
                     style={{
                         position: "fixed",
@@ -88,85 +106,98 @@ function GamePlay(props) {
                         textJustify: "auto"
                     }}
                     onMouseUp={() => {
-                        try {
-                            var txt = "";
+                        Handle_Onselect(SET_Popup)
+                    }}
+                    onTouchEnd={
+                        () => { Handle_Onselect(SET_Popup) }
+                    }
+                >
 
-                            if (window.getSelection) {
-                                txt = window.getSelection();
-                            }
-                            else if (document.getSelection) {
-                                txt = document.getSelection();
-                            } else if (document.selection) {
-                                txt = document.selection.createRange().text;
-                            }
-                            ReadMessage(txt, [1, 2].PickRandom())
-
-                        } catch (error) {
-                            console.log(error)
-                        }
-                    }}>
                     <div style={{ width: "100%", textAlign: "center" }}>
-                        <button onClick={() => { SET_FullScreen(false) }} className="btn btn-outline-info">
-                            FullScreen-Exit
-                        </button>
+                        <div >
+                            <button onClick={() => { SET_Sreen(false) }} className="btn btn-outline-info btn-sm">
+                                Mở bảng tùy chỉnh
+                            </button>
+                            <button onClick={() => {
+                                SET_Popup("")
+                                SET_Sreen(false);
+                                props.SET_PageChange(0)
+                            }} className="btn btn-outline-danger btn-sm ml-5">
+                                Thoát
+                            </button>
+
+                            <div style={{ maxWidth: "800px", width: "100%", textAlign: "left", marginLeft: "50%", transform: "translateX(-50%)", padding: "5px" }}>
+                                {props.Data.map((e, i) =>
+                                    <div key={i} >
+                                        {i >= Page_To_Read * 1 && i < Page_To_Read * 1 + 1 ?
+                                            <div>
+                                                {
+                                                    props.ImageData[i] !== ""
+                                                        ?
+                                                        <div style={{ width: "100%" }}>
+                                                            <img style={{ maxWidth: "400px", width: "100%" }} alt={props.ImageData[i]} src={props.ImageData[i]} />
+                                                        </div>
+                                                        : ""
+                                                }
+                                                {
+
+                                                    e.map((ee, ii) =>
+                                                        <p key={ii}>{<span style={{ padding: "5px", backgroundColor: ee.status ? "yellow" : "#EEEBEB" }}> {ee.text}</span>}.</p>
+                                                    )
+
+                                                }
+                                            </div>
+                                            : ""}
+                                    </div>
+                                )}
+
+                                <div style={{ width: "100%", textAlign: "center" }}>
+                                    <button
+                                        onClick={() => { SET_Page_To_Read(P => P - 1) }}
+                                        className="btn btn-info">
+                                        Back
+                                    </button>
+                                    <button
+                                        onClick={() => { SET_Page_To_Read(P => P + 1) }}
+                                        className="btn btn-info  ml-3">
+                                        Next
+                                    </button>
+                                </div>
+                                {DivNotCookieFixed()}
+                            </div>
+                        </div>
+
                     </div>
                     <hr />
-                    <div style={{ margin: "30px" }}>
-                        {props.Data.map((e, i) =>
-                            <div key={i}>
 
-                                {props.ImageData[i] !== ""
-                                    ?
-                                    <div style={{ width: "100%", textAlign: "center" }}>
-                                        <img style={{ maxWidth: "800px", width: "100%" }} alt={props.ImageData[i]} src={props.ImageData[i]} />
-                                    </div>
-                                    : ""}
-                                {e.map((ee, ii) =>
-                                    <p key={ii}>{<span style={{ backgroundColor: ee.status ? "yellow" : "#EEEBEB" }}> {ee.text}</span>}.</p>
-                                )}
-                            </div>
-                        )}
-                        {DivNotCookieFixed()}
-                    </div>
                 </div>
+
                 : ""}
-
-
-
-
+            <Dictionary_with_image Popup={Popup} />
             <Read_ReactSpeech />
             <button style={{ display: "none" }} onClick={() => {
                 console.log("onclick")
                 if ($("#messageRes").val() !== "") {
                     let Arr = props.Data;
                     let arrDataComnandsNew = []
-                    let i = 0
                     Arr.forEach(e => {
                         e.forEach(ee => {
                             if (!ee.status) {
                                 if (Check2String($("#messageRes").val(), ee.text)) {
                                     ee.status = true;
                                 } else {
-                                    if (i < 10) {
-                                        arrDataComnandsNew.push(ee.text);
-                                        i++;
-                                    }
+                                    arrDataComnandsNew.push(ee.text);
                                 }
+
                             }
                         })
                     });
-                    props.SET_Data_Commands(arrDataComnandsNew)
+                    // props.SET_Data_Commands(arrDataComnandsNew)
                     props.SET_Read_Data(Arr)
                     SET_Alert(A => A + 1)
                 }
-
-
-
             }} id="messageResBtn">
             </button>
-
-
-
         </div >
     )
 }
