@@ -131,17 +131,8 @@ async function GetReadingNews(SET_Data) {
             }
         })
         let data = await res.json();
-        let arrNews = [];
-        let arrNotNews = [];
-        data.data.forEach(e => {
-            if (e["href"].indexOf("/news/news") > -1) {
-                arrNews.push(e)
-            } else {
-                arrNotNews.push(e)
-            }
-        })
-        arrHoldeFirstTime = arrNews.concat(arrNotNews);
-        SET_Data(arrNews.concat(arrNotNews))
+
+        SET_Data(data.data)
     } catch (error) {
         console.log("e")
     }
