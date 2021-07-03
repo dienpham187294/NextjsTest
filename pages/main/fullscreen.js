@@ -11,7 +11,10 @@ export default function Fullsreen() {
                     elem.mozRequestFullScreen();
                 } else if (elem.webkitRequestFullScreen) {
                     elem.webkitRequestFullScreen();
+                } else {
+                    alert(1)
                 }
+                alert(2)
             }}>
                 requestFullscreenc
             </button>
