@@ -14,7 +14,7 @@ export default function Fullsreen() {
                 } else {
                     alert(1)
                 }
-                alert(2)
+              
             }}>
                 requestFullscreenc
             </button>
