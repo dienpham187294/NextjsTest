@@ -29,8 +29,8 @@ function Manager(props) {
                 </p>
             </div>
 
-            <div style={{ textAlign: "center" }} className="mt-1 mb-1">
-                <button style={{ float: "left" }} className="btn  btn-warning mr-3"
+            <div className="mt-1 mb-1">
+                <button className="btn btn-warning mr-3"
                     onClick={() => {
                         if (PageChange !== 0) {
                             SET_PageChange(S => S - 1)

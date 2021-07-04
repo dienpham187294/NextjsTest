@@ -7,26 +7,20 @@ import { useRouter } from 'next/router'
 import { checkCookie, delettCookie, getCookie, setCookie } from "../util/functionCookies"
 import { useEffect, useState } from 'react';
 import $ from "jquery"
-
-let cookieshold = "";
-let status = 0
 function MyApp({ Component, pageProps }) {
-  const [Cookie, SET_Cookie] = useState(cookieshold)
-
+  const [Cookie, SET_Cookie] = useState("");
+  const [Status, SET_Status] = useState(0)
   const router = useRouter()
-
   useEffect(() => {
-    if (status <= 5) {
-      if (checkCookie("ericpham")) {
-        cookieshold = getCookie("ericpham");
-        SET_Cookie(getCookie("ericpham"))
-      }
-      status += 1
-      console.log(getCookie("ericpham"), "appjs")
+    console.log(Status)
+    try {
+      document.getElementById("Text_Cookies").value = getCookie("ericpham")
+      SET_Cookie(getCookie("ericpham"));
+    } catch (error) {
+      console.log(error)
     }
-  })
+  }, [Status])
   return (<>
-
     <Head>
       <title>ENGLISH TOOL</title>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -109,54 +103,18 @@ function MyApp({ Component, pageProps }) {
 
 
     <footer className="mt-5 text-center">
+      <div style={{ display: "none" }}>
+        <p id="Text_Cookies"> </p>
+        <button
+          id="SET_STATUS"
+          onClick={() => {
+            SET_Status(S => S + 1)
+          }}
+        ></button>
+      </div>
       <div id="sound"></div>
       <br />
       <span>Powered by Ericpham</span>
-
-      <div style={{ display: "none" }}>
-        <p id="TEXT"></p>
-        <input onClick={() => {
-          try {
-            setCookie("ericpham", $("#TEXT").text(), 1);
-            SET_Cookie($("#TEXT").text());
-            setTimeout(() => {
-              if (!checkCookie("eripham")) {
-                setCookie("ericpham", $("#TEXT").text(), 1);
-              }
-
-              router.push("/")
-            }, 200)
-          } catch (error) {
-            console.log(1)
-          }
-        }} type="button" id="ADD" defaultValue="Add" />
-        <div>
-          <input onClick={() => {
-            delettCookie("ericpham");
-            SET_Cookie("");
-            setTimeout(() => {
-              if (checkCookie("ericpham")) {
-                delettCookie("ericpham");
-              }
-              router.push("/")
-            }, 1000)
-          }} type="button" id="DElETE" defaultValue="Đăng xuất" />
-        </div>
-        <div>
-          <button onClick={() => {
-            delettCookie("ericpham");
-          }}>
-            delete
-          </button>
-          <button onClick={() => {
-            alert(getCookie("ericpham"));
-          }}>
-            get
-          </button>
-        </div>
-      </div>
-
-
     </footer>
   </>)
 

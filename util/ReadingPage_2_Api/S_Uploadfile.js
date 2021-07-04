@@ -15,7 +15,7 @@ function UpLoadFile(props) {
     })
     async function Fn_Pick(href) {
         try {
-
+            props.SET_PageChange(P => P + 1)
             const res = await fetch(Linkapi + props.OBJ_Data_Input["Link_GETAPI_One"] + href, {
                 method: 'GET',
                 headers: {
@@ -45,7 +45,7 @@ function UpLoadFile(props) {
 
             // props.SET_Data_Commands(arrDataCommands)
 
-            props.SET_PageChange(P => P + 1)
+
 
         } catch (error) {
             console.log("Failed to load file");
@@ -78,45 +78,37 @@ function Show_Jsonfile(Filejson, Fn_Pick, OBJ_Data_Input) {
         let m = d.getUTCMonth() + 1;
         let y = d.getUTCFullYear();
         return (
-            <div> <table className="table table-striped">
-                <thead>
-                    <tr style={{
-                        backgroundColor: "black",
-                        color: "white",
-                        fontSize: "large",
-                        letterSpacing: "4px"
-                    }}>
-                        <td><b>{OBJ_Data_Input["Name_of_table"]} - {n} / {m} / {y} - {Filejson.length} bài. </b></td>
 
-                        <td></td>
-                    </tr>
-                </thead>
-                <tbody>
-
-                    {Filejson.map((e, i) =>
-
-                        <tr key={i}>
-                            <td>
-                                #{e.hagtag}
-                                <br />
-                                <b>{e.title}</b>
-                                {Show_Img(e.img)}
-                                <hr />
-                                <i>{e.description}</i>
-                            </td>
-                            <td>
-                                <button
-                                    className="btn btn-outline-primary"
-                                    onClick={() => {
-                                        Fn_Pick(e.href)
-                                    }}
-                                >
-                                    Đọc
-                                </button>
-                            </td>
-                        </tr>
-                    )}
-                </tbody></table>
+            <div>
+                <div style={{
+                    backgroundColor: "black",
+                    color: "white",
+                    fontSize: "large",
+                    letterSpacing: "4px"
+                }}><b>{OBJ_Data_Input["Name_of_table"]} - {n} / {m} / {y} - {Filejson.length} bài. </b>
+                </div>
+                {Filejson.map((e, i) =>
+                    <div key={i} className="row">
+                        <div className="col-8">
+                            #{e.hagtag}
+                            <br />
+                            <b>{e.title}</b>
+                            {Show_Img(e.img)}
+                            <hr />
+                            <i>{e.description}</i>
+                        </div>
+                        <div className="col-4">
+                            <button
+                                className="btn btn-outline-primary"
+                                onClick={() => {
+                                    Fn_Pick(e.href)
+                                }}
+                            >
+                                Đọc
+                            </button>
+                        </div>
+                    </div>
+                )}
             </div>
         )
     } catch (error) {
@@ -152,7 +144,7 @@ function Show_Img(src) {
             return (
                 <>
                     <hr />
-                    <img src={src} alt={src} />
+                    <img width="100%" src={src} alt={src} />
                 </>
             )
         } else {

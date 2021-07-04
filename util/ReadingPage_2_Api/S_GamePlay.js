@@ -12,7 +12,7 @@ import Click_full_Screen from "../fullscreen/fullscreen"
 function GamePlay(props) {
     try {
         if (props.Data.length === 0) {
-            return <div>Vui lòng chọn bài đọc - Back để quay lại chọn bài</div>
+            return <div>Đang tải dữ liệu ....</div>
         }
     } catch (error) {
         return <div>Lỗi dữ liệu nhập vào. Kiểm tra lại file dữ liệu</div>
@@ -43,7 +43,7 @@ function GamePlay(props) {
             <div className="row">
                 <div className="col-12 mb-5">
                     <div className="col-12">
-                        <button onClick={() => { SET_Sreen(true); Click_full_Screen("ReadingPage") }} className="btn btn-outline-info btn-sm">
+                        <button onClick={() => { SET_Sreen(true); Click_full_Screen("ReadingPage") }} className="btn btn-info">
                             Bắt đầu đọc
                         </button>
                         <button onClick={() => {
@@ -52,8 +52,33 @@ function GamePlay(props) {
                         }} className="btn btn-outline-danger btn-sm ml-5">
                             Trở về chọn bài đọc
                         </button>
-                    </div>
+                        <hr />
+                        <b>Tips: </b>
+                        <i>Bật lắng nghe giọng nói
+                            <span
+                                style={{ backgroundColor: "yellow", padding: "0 15px" }}
+                            >Click to talk.
+                            </span>
+                            Chọn các thông số
+                            <span
+                                style={{ backgroundColor: "yellow", padding: "0 15px" }}
+                            >Độ chính xác
+                            </span>
+                            và
+                            <span
+                                style={{ backgroundColor: "yellow", padding: "0 15px" }}
+                            >Chế độ đọc.
+                            </span>
+                            Bạn có thể chọn một đoạn nhạc nhẹ để nghe trong lúc đọc.
+                            <br />
+                            Bấm  <span
+                                style={{ backgroundColor: "yellow", padding: "0 15px" }}
+                            >Bắt đầu đọc
+                            </span> để bắt đầu. Chúc bạn có một đoạn thời gian vui vẻ.
+                            <br />
 
+                        </i>
+                    </div>
                 </div>
 
 
@@ -78,8 +103,8 @@ function GamePlay(props) {
                         <option value="off">Off Music</option>
                     </select>
                 </div>
-                <div className="col-12 mt-5">
-                    <i> Sử dụng: Tùy chỉnh <b> độ chính xác và chế độ đọc</b> phù hợp. Đọc một hoặc nhiều câu có ( <span style={{ backgroundColor: "#EEEBEB" }}>phần màu đậm</span>), <b>dừng quãng khoảng một tí</b>  để máy lắng nghe rồi đọc tiếp. </i>
+                <div className="col-12 mt-5 mb-5">
+                    <i><b>Tips:</b>  Tùy chỉnh <b> độ chính xác và chế độ đọc</b> phù hợp. Đọc một hoặc nhiều câu có ( <span style={{ backgroundColor: "#EEEBEB" }}>phần màu đậm</span>), <b>dừng quãng khoảng một tí</b>  để máy lắng nghe rồi đọc tiếp. </i>
                     <i><b>Bôi đen để nghe máy đọc và tra từ điển hình ảnh.</b></i>
                 </div>
 
@@ -157,15 +182,15 @@ function GamePlay(props) {
                             </div>
                             <div style={{ width: "100%", textAlign: "center" }}>
                                 <button
-                                    style={{ position: "fixed", top: "45%", left: "10px" }}
+                                    style={{ position: "absolute", bottom: "5%", left: "10px" }}
                                     onClick={() => { SET_Page_To_Read(P => P - 1) }}
-                                    className="btn btn-info">
+                                    className="btn btn-outline-info">
                                     Back
                                 </button>
                                 <button
-                                    style={{ position: "fixed", top: "45%", right: "10px" }}
+                                    style={{ position: "absolute", bottom: "5%", right: "10px" }}
                                     onClick={() => { SET_Page_To_Read(P => P + 1) }}
-                                    className="btn btn-info  ml-3">
+                                    className="btn btn-outline-info  ml-3">
                                     Next
                                 </button>
                             </div>

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { async } from "regenerator-runtime";
-import { checkCookie } from "../../util/functionCookies";
+import { checkCookie, getCookie, setCookie } from "../../util/functionCookies";
 import Linkapi from "../../util/Linkapi"
 import { useRouter } from 'next/router'
 import GetFinal from "../../util/GetFinal"
@@ -11,7 +11,6 @@ let flag = 0;
 function Dangky() {
     const router = useRouter()
     const [Message, SET_Message] = useState("");
-    const [Count, SET_Count] = useState(0)
     useEffect(() => {
         if (flag < 5) {
             if (checkCookie("ericpham")) {
@@ -23,13 +22,8 @@ function Dangky() {
     async function Xacthuc(e) {
         if (e.indexOf(GetFinal(numberCheck)) > -1) {
             let text = await email + "epdp" + GetFinal(exp);
-            await $("#TEXT").text(text);
-            await $("#ADD").click();
-
-            setTimeout(() => {
-                router.push("/")
-            }, 1000);
-
+            setCookie("ericpham", text, 1)
+            document.getElementById("SET_STATUS").click()
         }
     }
     return (

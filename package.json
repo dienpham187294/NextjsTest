@@ -20,6 +20,7 @@
     "jsdom": "^16.6.0",
     "mongodb": "^3.5.9",
     "next": "latest",
+    "next-cookies": "^2.0.3",
     "nextjs-cors": "^1.0.5",
     "nodemailer": "^6.6.2",
     "owlbot-js": "^2.0.2",

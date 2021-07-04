@@ -1,10 +1,6 @@
 import { checkCookie, delettCookie, getCookie } from "../../util/functionCookies"
 
-
-
 function Detail() {
-
-
     return (
         <div>
             <h5>Tài khoản: {ShowEmail(getCookie("ericpham"))}</h5>
@@ -15,9 +11,9 @@ function Detail() {
                 onClick={() => {
                     try {
                         delettCookie("ericpham");
-                        $("#DElETE").click()
+                        document.getElementById("SET_STATUS").click()
                     } catch (error) {
-                        console.log("error")
+                        console.log(error)
                     }
                 }}
                 type="button" className="btn btn-ouline-danger" defaultValue="Đăng xuất" />

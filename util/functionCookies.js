@@ -1,22 +1,24 @@
 function setCookie(cname, cvalue, exdays) {
 
-    if (process.browser) {
+    try {
         var d = new Date();
         d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
         var expires = "expires=" + d.toUTCString();
         document.cookie = cname + "=" + cvalue + "; " + expires;
+    } catch (error) {
+        console.log(error)
     }
 
 }
 
 function delettCookie(cname) {
-  
+
     setCookie(cname, '', -1);
- 
+
 }
 
 function getCookie(cname) {
-    if (process.browser) {
+    try {
         var name = cname + "=";
         var ca = document.cookie.split(';');
         for (var i = 0; i < ca.length; i++) {
@@ -29,23 +31,25 @@ function getCookie(cname) {
             }
         }
         return "";
+    } catch (error) {
+        console.log(error)
     }
+
 }
 
 function checkCookie(name) {
-   
-    var username = getCookie(name);
-    if (username !== "") {
-        return true;
-        /* alert("Welcome again " + username);*/
-    } else {
-        /* username = prompt("Please enter your name:", "");
-         if (username != "" && username != null) {
-             setCookie("username", username, 365); 
-         } */
-        return false;
+    try {
+        var username = getCookie(name);
+        if (username !== "") {
+            return true;
+        } else {
+            return false;
+        }
+
+    } catch (error) {
+        console.log(error)
     }
-  
+
 }
 
 export { setCookie, delettCookie, getCookie, checkCookie }

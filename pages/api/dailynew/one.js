@@ -54,7 +54,7 @@ export default async (req, res) => {
                         try {
                             e.text = ARR_Sub_IMG[i].text
                         } catch (error) {
-                            e.text = "Photos by VnEpress"
+                            e.text = "Photos by VnExpress"
                         }
 
                     })
