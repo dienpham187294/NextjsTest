@@ -7,19 +7,18 @@ import GetFinal from "../../util/GetFinal"
 let email = "";
 let numberCheck = [RandomInt(1001, 9999)];
 let exp = [];
-let flag = true;
+let flag = 0;
 function Dangky() {
     const router = useRouter()
     const [Message, SET_Message] = useState("");
     const [Count, SET_Count] = useState(0)
     useEffect(() => {
-        if (flag) {
+        if (flag < 5) {
             if (checkCookie("ericpham")) {
                 router.push("/")
             }
-            flag = false
         }
-
+        flag += 1
     })
     async function Xacthuc(e) {
         if (e.indexOf(GetFinal(numberCheck)) > -1) {
@@ -48,7 +47,7 @@ function Dangky() {
                 {Message === "Vui lòng kiểm tra hộp thư email để xác thực tài khoản." ?
                     <input onChange={(e) => {
                         Xacthuc(e.currentTarget.value);
-                       
+
                     }} className="form-control mt-5" type="text" id="maxacthuc" placeholder="Nhập mã xác thực" />
 
                     : ""}

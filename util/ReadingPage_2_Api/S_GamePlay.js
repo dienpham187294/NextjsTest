@@ -1,13 +1,14 @@
 
 import { useEffect, useState } from "react"
-import Dictaphone from "../../../helpers/RegcognitionV1-0-1AI0.2ReadPaperTravel"
-import Read_ReactSpeech from "../../../helpers/Read_ReactSpeechSlow"
-import Check2String from "../../../../util/Check2String"
-import DivNotCookieFixed from "../../../../util/DivNotCookieFixed"
-import Sound from "../../../../util/Sound/Get_sound_reading"
-import musicfile from '../../../../util/filedulieu/musicfile/musicfile';
-import Handle_Onselect from "../../../../util/Handle_Onselect/Handle_Onselect"
-import Dictionary_with_image from "../../../helpers/Dictionary_with_image"
+import Dictaphone from "../../pages/helpers/RegcognitionV1-0-1AI0.2ReadPaperTravel"
+import Read_ReactSpeech from "../../pages/helpers/Read_ReactSpeechSlow"
+import Check2String from "../Check2String"
+import DivNotCookieFixed from "../DivNotCookieFixed"
+import Sound from "../Sound/Get_sound_reading"
+import musicfile from '../filedulieu/musicfile/musicfile';
+import Handle_Onselect from "../Handle_Onselect/Handle_Onselect"
+import Dictionary_with_image from "../../pages/helpers/Dictionary_with_image"
+import Click_full_Screen from "../fullscreen/fullscreen"
 function GamePlay(props) {
     try {
         if (props.Data.length === 0) {
@@ -25,7 +26,7 @@ function GamePlay(props) {
     const [Popup, SET_Popup] = useState("")
     useEffect(() => {
         let ArrComands = []
-        props.Data.slice(Page_To_Read * 2, Page_To_Read * 2 + 2).forEach(e => {
+        props.Data.slice(Page_To_Read * props.OBJ_Data_Input["Number_of_Div_To_Read"], Page_To_Read * props.OBJ_Data_Input["Number_of_Div_To_Read"] + props.OBJ_Data_Input["Number_of_Div_To_Read"]).forEach(e => {
             e.forEach(ee => {
                 ArrComands.push(ee.text)
             })
@@ -38,11 +39,11 @@ function GamePlay(props) {
     }, [Popup])
     return (
 
-        <div >
+        <div id="ReadingPage" style={{ backgroundColor: "white", overflow: "auto" }} >
             <div className="row">
                 <div className="col-12 mb-5">
                     <div className="col-12">
-                        <button onClick={() => { SET_Sreen(true) }} className="btn btn-outline-info btn-sm">
+                        <button onClick={() => { SET_Sreen(true); Click_full_Screen("ReadingPage") }} className="btn btn-outline-info btn-sm">
                             Bắt đầu đọc
                         </button>
                         <button onClick={() => {
@@ -128,7 +129,8 @@ function GamePlay(props) {
                             <div style={{ maxWidth: "800px", width: "100%", textAlign: "left", marginLeft: "50%", transform: "translateX(-50%)", padding: "5px" }}>
                                 {props.Data.map((e, i) =>
                                     <div key={i} >
-                                        {i >= Page_To_Read * 2 && i < Page_To_Read * 2 + 2 ?
+                                        {i >= Page_To_Read * props.OBJ_Data_Input["Number_of_Div_To_Read"]
+                                            && i < Page_To_Read * props.OBJ_Data_Input["Number_of_Div_To_Read"] + props.OBJ_Data_Input["Number_of_Div_To_Read"] ?
                                             <div>
                                                 {
                                                     props.ImageData[i] !== ""
@@ -150,19 +152,22 @@ function GamePlay(props) {
                                     </div>
                                 )}
 
-                                <div style={{ width: "100%", textAlign: "center" }}>
-                                    <button
-                                        onClick={() => { SET_Page_To_Read(P => P - 1) }}
-                                        className="btn btn-info">
-                                        Back
-                                    </button>
-                                    <button
-                                        onClick={() => { SET_Page_To_Read(P => P + 1) }}
-                                        className="btn btn-info  ml-3">
-                                        Next
-                                    </button>
-                                </div>
+
                                 {DivNotCookieFixed()}
+                            </div>
+                            <div style={{ width: "100%", textAlign: "center" }}>
+                                <button
+                                    style={{ position: "fixed", top: "45%", left: "10px" }}
+                                    onClick={() => { SET_Page_To_Read(P => P - 1) }}
+                                    className="btn btn-info">
+                                    Back
+                                </button>
+                                <button
+                                    style={{ position: "fixed", top: "45%", right: "10px" }}
+                                    onClick={() => { SET_Page_To_Read(P => P + 1) }}
+                                    className="btn btn-info  ml-3">
+                                    Next
+                                </button>
                             </div>
                         </div>
 
@@ -171,7 +176,8 @@ function GamePlay(props) {
 
                 </div>
 
-                : ""}
+                : ""
+            }
             <Dictionary_with_image Popup={Popup} />
             <Read_ReactSpeech />
             <button style={{ display: "none" }} onClick={() => {

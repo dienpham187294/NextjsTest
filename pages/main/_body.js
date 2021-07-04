@@ -1,5 +1,9 @@
-import Arr_href_Mobile from "../../util/filedulieu/href/reading_mobile"
+import Arr_href_Mobile_ReadingPage from "../../util/filedulieu/href/reading_mobile"
+import Arr_href_Mobile_VocabularyPage from "../../util/filedulieu/href/vocabulary"
+import Arr_href_Mobile_Customfile from "../../util/filedulieu/href/customfile"
+import Arr_href_Mobile_Game from "../../util/filedulieu/href/game"
 import Link from 'next/link'
+import Show_Menu_Inbody from "../../util/filedulieu/href/Show_Menu_Inbody"
 export default function body() {
 
 
@@ -44,157 +48,16 @@ export default function body() {
                         </div>
                     </div>
                 </div>
-                <hr />
-                <div style={{ width: "100%", textAlign: "center" }}>
-                    <h3
-                        style={{ backgroundColor: "black", color: "yellow", padding: "15px" }}
-                    >Đọc sách, báo tiếng anh 10 phút mỗi ngày : Cải thiện tiếng anh - Nâng cao kiến thức.</h3>
-                    {Arr_href_Mobile.map((e, i) =>
-                        <div style={{ width: "300px", height: "100%", display: "inline-block", border: "4px solid black", margin: "5px", borderRadius: "20px", padding: "10px", backgroundColor: "#EAE8E8" }} key={i}>
-                            <div style={{ height: "50px" }}><b>{e.name}</b></div>
-                            <hr />
-                            <img src={e.img} alt={e.name} width="100%" />
-                            <hr />
-                            <div style={{ width: "100%", backgroundColor: "black" }}>
-                                <Link href={"/" + e.link}>
-                                    <i style={{ cursor: "pointer", color: "yellow" }}>Đọc ngay</i>
-                                </Link>
-                            </div>
-                        </div>
-                    )}
-                </div>
+                <hr id="ReadingPage" />
+                {Show_Menu_Inbody(Arr_href_Mobile_ReadingPage, "Hàng ngàn bài sách, báo, truyện tranh với công nghệ nhận diện giọng nói và từ điển hình ảnh.")}
+                < hr />
+                <hr id="VocabularyPage" />
+                {Show_Menu_Inbody(Arr_href_Mobile_VocabularyPage, "Rèn luyện từ mới, các câu thông dụng với công nghệ nhận diện giọng nói và từ điển hình ảnh.")}
+                < hr id="Trochoi" />
+                {Show_Menu_Inbody(Arr_href_Mobile_Game, "Chơi game bằng giọng nói giúp tăng cường hứng phấn cho não bộ ghi nhớ hiệu quả")}
+                < hr id="CustomPage" />
+                {Show_Menu_Inbody(Arr_href_Mobile_Customfile, "CustomFile là file do người dùng tự tạo để thực hành nội dung theo ý muốn")}
 
-                {/* <div>
-                    <h1 className="text-center text-primary">Hỗ trợ dùng thử 3 tháng không mất phí bản quyền</h1>
-                    <div className="row">
-                        <div className="col-12 hotrotragop">
-                            <h3>  Hỗ trợ máy tính bàn trả góp</h3>
-                            <h1 className="text-primary">Lãi suất 0% - 3 tháng</h1>
-                            <h4> Cam kết thu hồi <i className="text-primary">100% giá máy</i>  nếu không hài lòng về dịch vụ sau 3 tháng dùng thử.</h4>
-                        </div>
-                        <div className="text-center p-2" style={{ width: "100%" }}>
-                            <a href="https://forms.gle/yKX6AvwbRoF8VcA59" target="_blank">
-                                <button className="btn btn-outline-primary">Đăng ký ngay</button>
-                            </a>
-
-                        </div>
-                    </div>
-
-                </div>
-                <hr /> */}
-                {/* <div>
-                    <div className="text-center text-primary">
-                        <h2>Bảng giá dịch vụ</h2>
-                    </div>
-                    <div className="row">
-                        <div className="col-lg-4 mt-4 mt-lg-0">
-                            <div className="box_featured">
-                                <h3>Dùng thử</h3>
-                                <p>Miễn Phí<sup></sup><span>/ 90 ngày</span></p>
-                                <ul>
-                                    <li><i className="fas fa-check"></i> Công cụ thực hành cơ bản (Từ mới, đọc, nghe, lặp lại, bài tập)</li>
-                                    <li><i className="fas fa-check"></i> Video hướng dẫn sử dụng các công cụ</li>
-                                    <li><i className="fas fa-times-circle"></i>Hỗ trợ tận nơi hàng tháng về sử dụng các công cụ</li>
-                                    <li><i className="fas fa-times-circle"></i>Mỗi tháng hỗ trợ làm 10 file bài thực hành nâng cao theo yêu cầu hoặc cung cấp miễn phí 5 bài thực hành.</li>
-                                    <li><i className="fas fa-times-circle"></i> Công cụ trò chơi thực hành nâng cao</li>
-                                    <li><i className="fas fa-times-circle"></i>Cập nhật các công cụ mới nhất</li>
-                                    <li><i className="fas fa-times-circle"></i> Được cung cấp các công cụ thực hành đặc quyền duy nhất hoặc Thiết kế công cụ thực hành độc quyền theo yêu cầu của khách hàng</li>
-                                </ul>
-                                <a href="https://forms.gle/yKX6AvwbRoF8VcA59" target="_blank">
-                                    <button className="btn btn-outline-primary">Đăng ký ngay</button>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div className="col-lg-4 mt-4 mt-lg-0">
-                            <div className="box_featured">
-                                <h3>Gold</h3>
-                                <p>1.200.000 <sup>VNĐ</sup><span> /1 năm</span></p>
-                                <ul>
-                                    <li><i className="fas fa-check"></i> Công cụ thực hành cơ bản (Từ mới, đọc, nghe, lặp lại, bài tập)</li>
-                                    <li><i className="fas fa-check"></i> Video hướng dẫn sử dụng các công cụ</li>
-                                    <li><i className="fas fa-times-circle"></i>Hỗ trợ tận nơi hàng tháng về sử dụng các công cụ</li>
-                                    <li><i className="fas fa-times-circle"></i>Mỗi tháng hỗ trợ làm 10 file bài thực hành nâng cao theo yêu cầu hoặc cung cấp miễn phí 5 bài thực hành.</li>
-                                    <li><i className="fas fa-times-circle"></i> Công cụ trò chơi thực hành nâng cao</li>
-                                    <li><i className="fas fa-times-circle"></i>Cập nhật các công cụ mới nhất</li>
-                                    <li><i className="fas fa-times-circle"></i> Được cung cấp các công cụ thực hành đặc quyền duy nhất hoặc Thiết kế công cụ thực hành độc quyền theo yêu cầu của khách hàng</li>
-                                </ul>
-                                <a href="https://forms.gle/yKX6AvwbRoF8VcA59" target="_blank">
-                                    <button className="btn btn-outline-primary">Đăng ký ngay</button>
-                                </a>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 mt-4 mt-lg-0">
-                            <div className="box_featured">
-                                <h3>Primium</h3>
-                                <p>3.600.000 <sup>VNĐ</sup><span> /1 năm</span></p>
-                                <ul>
-                                    <li><i className="fas fa-check"></i> Công cụ thực hành cơ bản (Từ mới, đọc, nghe, lặp lại, bài tập)</li>
-                                    <li><i className="fas fa-check"></i> Video hướng dẫn sử dụng các công cụ</li>
-                                    <li><i className="fas fa-check"></i>Hỗ trợ tận nơi hàng tháng về sử dụng các công cụ</li>
-                                    <li><i className="fas fa-check"></i>Mỗi tháng hỗ trợ làm 20 file bài thực hành nâng cao hoặc cung cấp miễn phí 15 bài thực hành.</li>
-                                    <li><i className="fas fa-check"></i> Công cụ trò chơi thực hành nâng cao</li>
-                                    <li><i className="fas fa-check"></i>Cập nhật các công cụ mới nhất</li>
-                                    <li><i className="fas fa-check"></i> Được cung cấp các công cụ thực hành đặc quyền duy nhất hoặc Thiết kế công cụ thực hành độc quyền theo yêu cầu của khách hàng</li>
-                                </ul>
-                                <br />
-                                <a href="https://forms.gle/yKX6AvwbRoF8VcA59" target="_blank">
-                                    <button className="btn btn-outline-primary">Đăng ký ngay</button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <hr />
-                <div>
-                    <div className="text-center ">
-                        <h2 className="text-primary">Nâng cấp tên website giá siêu rẻ - ưu đãi cực lớn</h2>
-
-                        <div className="lydosohuuwebsiterieng">
-                            <h4>4 lý do tại sao bạn nên sở hữu website riêng ngay hôm nay:</h4>
-                            <ul>
-                                <li>Là kênh giới thiệu sản phẩm của bạn</li>
-                                <li>Làm cho doanh nghiệp của bạn “tin cậy và chuyên nghiệp” hơn</li>
-                                <li>Là kênh truyền thông chính thức đến khách hàng</li>
-                                <li>Là kênh bán hàng tự động 24/7 của bạn</li>
-                            </ul>
-                        </div>
-                        <div className="text-left">
-                            <h1>Chỉ với <b className="text-primary">4tr900 VNĐ</b> bạn đã sở hữu một <b className="text-primary">tên website riêng</b> của bạn.</h1>
-                            <br />
-
-
-                            Hỗ trợ đầy đủ các chức năng:
-                            <ul>
-                                <li>Hình ảnh quảng cáo và giới thiệu dịch vụ</li>
-                                <li>Đăng bài học và các video thực hành</li>
-                                <li>Hỗ trợ và cập nhật hằng tuần các ứng dụng công nghệ nhận diện giọng nói mới nhất</li>
-                                <li>Quản lí trang thông tin chi tiết và nhanh chóng</li>
-                            </ul>
-                            <h5 className="text-primary">
-                                Ngoài ra bạn sẽ được tặng ngay một năm sử dụng dịch vụ GOLD và 1 năm miễn phí hỗ trợ quản lí website (Đăng bài, edit và đăng tải video).
-                            </h5>
-
-                            <div className="text-center p-2" style={{ width: "100%" }}>
-                                <a href="https://forms.gle/yKX6AvwbRoF8VcA59" target="_blank">
-                                    <button className="btn btn-outline-primary">Đăng ký ngay</button>
-                                </a>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <hr />
-
-                <div>
-                    <div className="text-center ">
-                        <h2 className="text-primary">Hỗ trợ edit video - Quản lý website</h2>
-                    </div>
-                    <div>
-                        Chúng tôi cung cấp các dịch vụ về edit video và hỗ trợ quản lí website (Đăng bài, edit và đăng tải video) với giá rẻ cho các anh chị sử dụng dịch vụ tại Ericpham.
-                    </div>
-                </div> */}
                 < hr />
                 <div className="container text-justify mt-4 p-4">
                     <h1>Công nghệ 4.0 - Trí thông minh nhân tạo!</h1>

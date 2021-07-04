@@ -7,43 +7,7 @@ import { useRouter } from 'next/router'
 import { checkCookie, delettCookie, getCookie, setCookie } from "../util/functionCookies"
 import { useEffect, useState } from 'react';
 import $ from "jquery"
-import ArrMobieFile from "../util/filedulieu/href/reading_mobile"
-let ArrHoldLinkBaiHoc = [
-  { "link": "baihoc/100-bai-giao-tiep-can-ban", "name": "100 bài giao tiếp căn bản" },
-  { "link": "baihoc/800-cau-giao-tiep-thong-dung-nhat", "name": "800 câu giao tiếp thông dụng" },
-  { "link": "baihoc/20-chu-de-hoc-tieng-anh-qua-hinh-anh", "name": "20 chủ đề học tiếng anh qua hình ảnh" }
-]
 
-let ArrMobieCustomfile = [
-
-  { "link": "thuchanh/version01/thuc-hanh-doc-sach-thanh-tieng", "name": "Đọc thành tiếng với CustomFile" },
-  { "link": "thuchanh/thuc-hanh-800-cau-giao-tiep-thong-dung-customfile", "name": "Thực hành các câu giao tiếp không giới hạn với CustomFile" },
-
-]
-let ArrLaptopFile = [
-  { "link": "thuchanh/thuc-hanh-3000-tu-vung-thong-dung-nhat", "name": "Thực hành 3000+ từ vựng thông dụng nhất" },
-  { "link": "thuchanh/thuc-hanh-23-chu-de-800-tu-vung-voi-hinh-anh", "name": "Thực hành 23+ chủ đề với 800+ từ vựng với hình ảnh minh họa" },
-
-  { "link": "thuchanh/thuc-hanh-100-bai-giao-tiep-thong-dung-nhat", "name": "Thực hành 100+ bài hội thoại giao tiếp thông dụng nhất" },
-  { "link": "thuchanh/20-bai-thuc-hanh-giao-tiep-voi-nguoi-may-ai", "name": "Thực hành 20+ trò chơi giao tiếp với người máy AI" }
-]
-let ArrLaptopCustomFile = [
-  { "link": "thuchanh/version01/lam-quen-tu-vung", "name": "Làm quen từ vựng với CustomFile" },
-  { "link": "thuchanh/version01/thuc-hanh-nghe-va-lap-lai", "name": "Nghe và lặp lại với CustomFile" },
-  { "link": "thuchanh/version01/thuc-hanh-ngu-phap", "name": "Làm bài tập với CustomFile" },
-  { "link": "thuchanh/thuc-hanh-3000-tu-vung-thong-dung-nhat-khong-gioi-han-voi-customfile", "name": "Thực hành từ vựng không giới hạn với CustomFile" },
-  { "link": "thuchanh/thuc-hanh-23-chu-de-800-tu-vung-voi-hinh-anh-customfile", "name": "Thực hành từ vựng với hình ảnh minh họa không giới hạn với CustomFile" },
-
-
-  { "link": "thuchanh/thuc-hanh-100-bai-giao-tiep-thong-dung-nhat-customfile", "name": "Thực hành hội thoại giao tiếp không giới hạn với CustomFile" },
-
-  { "link": "thuchanh/thuc-hanh-giao-tiep-nguoi-may-ai-customfile", "name": "Thực hành trò chơi giao tiếp với người máy AI không giới hạn với CustomFile" }
-]
-
-let arrVideothuchanh = [
-  { "link": "thuchanh/#", "name": "Thực hành đọc sách, truyện thành tiếng" },
-  { "link": "thuchanh/#", "name": "Thực hành chơi game giao tiếp với người máy AI" }
-]
 let cookieshold = "";
 let status = 0
 function MyApp({ Component, pageProps }) {
@@ -102,121 +66,30 @@ function MyApp({ Component, pageProps }) {
 
         <div className="collapse navbar-collapse" id="navbarsExample03">
           <ul className="navbar-nav mr-auto">
-            <li className="nav-item dropdown">
-              <Link href="/">
-                <a className="nav-link dropdown-toggle" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dữ liệu</a>
+            <li className="nav-item active">
+              <Link href="/#VocabularyPage">
+                <a className="nav-link">Vocabulary 4.0</a>
               </Link>
-              <div className="dropdown-menu" aria-labelledby="dropdown03">
-                {ArrHoldLinkBaiHoc.map((e, i) =>
-                  <Link key={i} href={"/" + e.link}>
-                    < a className="dropdown-item" >{e.name}</a>
-                  </Link>
-                )}
-              </div>
             </li>
-            <li className="nav-item dropdown active setMaxWidthli"  >
-              <Link href="/">
-                <a className="nav-link dropdown-toggle" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Thực hành</a>
+            <li className="nav-item active">
+              <Link href="/#ReadingPage">
+                <a className="nav-link">Reading 4.0</a>
               </Link>
-              <div className="dropdown-menu text-justify" aria-labelledby="dropdown03">
-                <i style={{
-                  backgroundColor: "black",
-                  color: "white",
-                  letterSpacing: "4px",
-                  padding: "5px",
-                  marginLeft: "5%"
-                }}>Phần có thể sử dụng trên điện thoại</i>
-                <hr />
-                <i style={{
-                  backgroundColor: "black",
-                  color: "yellow",
-                  padding: "5px",
-                  letterSpacing: "3px"
-                }}>Đọc sách, báo 10p mỗi ngày với công nghệ AI</i>
-                <br />
-                <i>Rèn luyện phát âm - Nâng cao kiến thức</i>
-                <hr />
-                <div style={{
-                  backgroundColor: "#E6E6E6"
-                }}>
-                  {ArrMobieFile.map((e, i) =>
-                    <Link key={i} href={"/" + e.link}>
-                      <a className="dropdown-item" >{e.name}</a>
-                    </Link>
-                  )}
-                </div>
-                <hr />
-                <i>Thực hành với CustomFile</i>
-                {ArrMobieCustomfile.map((e, i) =>
-                  <Link key={i} href={"/" + e.link}>
-                    < a className="dropdown-item" >{e.name}</a>
-                  </Link>
-                )}
-                <hr />
-                <i
-                  style={{
-                    backgroundColor: "black",
-                    color: "white",
-                    letterSpacing: "4px",
-                    padding: "5px",
-                    marginLeft: "5%"
-                  }}
-                >Phần chỉ sử dụng trên máy tính</i>
-                <hr />
-                <i>Thực hành với file sẵn có</i>
-                {ArrLaptopFile.map((e, i) =>
-                  <Link key={i} href={"/" + e.link}>
-                    < a className="dropdown-item" >{e.name}</a>
-                  </Link>
-                )}
-                <hr />
-                <i>Thực hành với CustomFile</i>
-                {ArrLaptopCustomFile.map((e, i) =>
-                  <Link key={i} href={"/" + e.link}>
-                    < a className="dropdown-item" >{e.name}</a>
-                  </Link>
-                )}
-                <hr />
-                <Link href={"/thuchanh/tao-file-thuc-hanh"}>
-                  < a className="dropdown-item" >Tạo CustomFile - Thực hành không giới hạn theo ý muốn</a>
-                </Link>
-              </div>
             </li>
-            <li className="nav-item dropdown active">
-              <Link href="/">
-                <a className="nav-link dropdown-toggle" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Game offline</a>
+            <li className="nav-item active">
+              <Link href="/#ReadingPage">
+                <a className="nav-link">Conversation 4.0</a>
               </Link>
-              <div className="dropdown-menu text-justify" aria-labelledby="dropdown03">
-                <i
-                  style={{ margin: "5px", padding: "5px" }}
-                >Chỉ sử dụng trên máy tính</i>
-                <hr />
-                <Link href={"/game"}>
-                  < a className="dropdown-item" >Ká Town</a>
-                </Link>
-              </div>
             </li>
-            <li className="nav-item dropdown disable">
-              <Link href="/">
-                <a className="nav-link dropdown-toggle" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Game online</a>
+            <li className="nav-item active">
+              <Link href="/#Trochoi">
+                <a className="nav-link">Trò chơi</a>
               </Link>
-              <div className="dropdown-menu text-justify" aria-labelledby="dropdown03">
-                <hr />
-              </div>
             </li>
-            <li className="nav-item dropdown active">
-              <Link href="/">
-                <a className="nav-link dropdown-toggle" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Video Thực hành</a>
+            <li className="nav-item active">
+              <Link href="/#CustomPage">
+                <a className="nav-link">CustomFile</a>
               </Link>
-              <div className="dropdown-menu text-justify" aria-labelledby="dropdown03">
-                <i>Các video thực hành</i>
-                <hr />
-                {arrVideothuchanh.map((e, i) =>
-                  <Link key={i} href={"/" + e.link}>
-                    < a className="dropdown-item" >{e.name}</a>
-                  </Link>
-                )}
-              </div>
             </li>
           </ul>
           <form className="form-inline my-2 my-md-0">
@@ -244,11 +117,11 @@ function MyApp({ Component, pageProps }) {
         <p id="TEXT"></p>
         <input onClick={() => {
           try {
-            setCookie("ericpham", $("#TEXT").text(), 5);
+            setCookie("ericpham", $("#TEXT").text(), 1);
             SET_Cookie($("#TEXT").text());
             setTimeout(() => {
               if (!checkCookie("eripham")) {
-                setCookie("ericpham", $("#TEXT").text(), 5);
+                setCookie("ericpham", $("#TEXT").text(), 1);
               }
 
               router.push("/")

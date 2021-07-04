@@ -92,7 +92,7 @@ function Dictaphone({ Data }) {
                     }
                 }}
                 className="form-control bg-light mt-1"
-                defaultValue={true}>
+                defaultValue={false}>
                 <option value={true}>Đọc từng câu một</option>
                 <option value={false}>Đọc nhiều câu một lúc</option>
             </select>

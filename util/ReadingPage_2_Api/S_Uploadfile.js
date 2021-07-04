@@ -1,23 +1,22 @@
+import { prop } from "cheerio/lib/api/attributes";
 import { useEffect, useState } from "react";
 import { async } from "regenerator-runtime";
-// import Filejson from "../../../../util/filedulieu/200baidoc"
-import Linkapi from "../../../../util/Linkapi"
-import { checkCookie, getCookie } from "../../../../util/functionCookies"
-import { data } from "cheerio/lib/api/attributes";
-let status = true
-let arrHoldeFirstTime;
+import Linkapi from "../Linkapi"
+let status = ["none"]
+let arrHoldeFirstTime_2_Api;
 function UpLoadFile(props) {
-    const [Data, SET_Data] = useState(arrHoldeFirstTime)
+    const [Data, SET_Data] = useState(arrHoldeFirstTime_2_Api)
     useEffect(() => {
-        if (status) {
-            GetReadingNews(SET_Data);
-            status = false
+        if (status[status.length - 1] !== props.OBJ_Data_Input["Link_GETAPI_One"]) {
+            SET_Data("")
+            GetReadingNews(SET_Data, props.OBJ_Data_Input);
+            status.push(props.OBJ_Data_Input["Link_GETAPI_One"])
         }
     })
     async function Fn_Pick(href) {
         try {
 
-            const res = await fetch(Linkapi + "api/dailynew/one?link=" + href, {
+            const res = await fetch(Linkapi + props.OBJ_Data_Input["Link_GETAPI_One"] + href, {
                 method: 'GET',
                 headers: {
                     "Accept": "application/json",
@@ -57,7 +56,7 @@ function UpLoadFile(props) {
 
     return (
         <div>
-            {Show_Jsonfile(Data, Fn_Pick)}
+            {Show_Jsonfile(Data, Fn_Pick, props.OBJ_Data_Input)}
         </div>
     )
 
@@ -70,7 +69,7 @@ export default UpLoadFile
 
 
 
-function Show_Jsonfile(Filejson, Fn_Pick) {
+function Show_Jsonfile(Filejson, Fn_Pick, OBJ_Data_Input) {
 
     try {
 
@@ -87,7 +86,7 @@ function Show_Jsonfile(Filejson, Fn_Pick) {
                         fontSize: "large",
                         letterSpacing: "4px"
                     }}>
-                        <td><b>Báo VnExpress - {n} / {m} / {y}</b></td>
+                        <td><b>{OBJ_Data_Input["Name_of_table"]} - {n} / {m} / {y} - {Filejson.length} bài. </b></td>
 
                         <td></td>
                     </tr>
@@ -97,7 +96,14 @@ function Show_Jsonfile(Filejson, Fn_Pick) {
                     {Filejson.map((e, i) =>
 
                         <tr key={i}>
-                            <td><b>{e.title}</b> </td>
+                            <td>
+                                #{e.hagtag}
+                                <br />
+                                <b>{e.title}</b>
+                                {Show_Img(e.img)}
+                                <hr />
+                                <i>{e.description}</i>
+                            </td>
                             <td>
                                 <button
                                     className="btn btn-outline-primary"
@@ -121,9 +127,9 @@ function Show_Jsonfile(Filejson, Fn_Pick) {
 
 
 
-async function GetReadingNews(SET_Data) {
+async function GetReadingNews(SET_Data, OBJ_Data_Input) {
     try {
-        const res = await fetch(Linkapi + "api/dailynew", {
+        const res = await fetch(Linkapi + OBJ_Data_Input["Link_GETAPI_ALL"], {
             method: 'GET',
             headers: {
                 "Accept": "application/json",
@@ -131,7 +137,7 @@ async function GetReadingNews(SET_Data) {
             }
         })
         let data = await res.json();
-
+        arrHoldeFirstTime_2_Api = data.data;
         SET_Data(data.data)
     } catch (error) {
         console.log("e")
@@ -139,3 +145,21 @@ async function GetReadingNews(SET_Data) {
 }
 
 
+function Show_Img(src) {
+
+    try {
+        if (src !== "") {
+            return (
+                <>
+                    <hr />
+                    <img src={src} alt={src} />
+                </>
+            )
+        } else {
+            return null
+        }
+    } catch (error) {
+        return null
+    }
+
+}

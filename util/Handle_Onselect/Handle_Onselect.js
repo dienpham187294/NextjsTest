@@ -14,11 +14,11 @@ export default function Handle_Onselect(SET_Show_Popup) {
         if (txt.toString() !== "") {
             ReadMessage(txt, [1, 2].PickRandom());
             SET_Show_Popup(txt.toString())
-            try {
-                document.getElementById("DictionarySearch").innerText = txt.toString()
-            } catch (error) {
-                console.log(error)
-            }
+            // try {
+            //     document.getElementById("DictionarySearch").innerText = txt.toString()
+            // } catch (error) {
+            //     console.log(error)
+            // }
         } else {
             SET_Show_Popup("")
         }
