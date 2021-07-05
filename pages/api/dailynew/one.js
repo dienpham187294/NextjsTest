@@ -108,7 +108,7 @@ export default async (req, res) => {
 
                     arr.push(Arr_Temp1)
                 } catch (error) {
-                    console.log(error)
+                    console.log("error_ IN_GETNEWS")
                 }
             });
         // console.log(response.data);

@@ -3,19 +3,21 @@ import '../styles/globals.css'
 import Link from 'next/link'
 import 'regenerator-runtime/runtime'
 import Head from "next/head";
-import { useRouter } from 'next/router'
-import { checkCookie, delettCookie, getCookie, setCookie } from "../util/functionCookies"
+// import { useRouter } from 'next/router'
+import { getCookie } from "../util/functionCookies"
 import { useEffect, useState } from 'react';
-import $ from "jquery"
+import Linkapi from "../util/Linkapi"
+// import $ from "jquery"
 function MyApp({ Component, pageProps }) {
   const [Cookie, SET_Cookie] = useState("");
   const [Status, SET_Status] = useState(0)
-  const router = useRouter()
+  // const router = useRouter()
   useEffect(() => {
     console.log(Status)
     try {
-      document.getElementById("Text_Cookies").value = getCookie("ericpham")
+      document.getElementById("Text_Cookies").innerText = getCookie("ericpham")
       SET_Cookie(getCookie("ericpham"));
+      GET_Buycode_FROM_DATABASE(getCookie("ericpham"))
     } catch (error) {
       console.log(error)
     }
@@ -104,7 +106,8 @@ function MyApp({ Component, pageProps }) {
 
     <footer className="mt-5 text-center">
       <div style={{ display: "none" }}>
-        <p id="Text_Cookies"> </p>
+        <p id="Text_Cookies"> ===</p>
+        <p id="Text_Cookies_Buycode">=== </p>
         <button
           id="SET_STATUS"
           onClick={() => {
@@ -126,7 +129,7 @@ function MyApp({ Component, pageProps }) {
         <>
           <Link href="/main/detail">
             <a>
-              <input className="btn btn-primary" type="button" value={getCookie("ericpham").split("@")[0]} />
+              <input className="btn btn-primary" type="button" value={"Tài khoản của bạn"} />
             </a>
           </Link>
 
@@ -147,3 +150,19 @@ function MyApp({ Component, pageProps }) {
 export default MyApp
 
 
+async function GET_Buycode_FROM_DATABASE(mail) {
+  try {
+    const res = await fetch(Linkapi + "api/GET_Buycode?mail=" + mail, {
+      method: 'GET',
+      headers: {
+        "Accept": "application/json",
+        "Content-Type": "application/json"
+      }
+    })
+    let data = await res.json();
+    console.log(data)
+    document.getElementById("Text_Cookies_Buycode").innerText = data.data
+  } catch (error) {
+    console.log(error)
+  }
+}

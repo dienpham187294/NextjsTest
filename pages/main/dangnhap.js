@@ -21,7 +21,7 @@ function Dangky() {
     })
     async function Xacthuc(e) {
         if (e.indexOf(GetFinal(numberCheck)) > -1) {
-            let text = await email + "epdp" + GetFinal(exp);
+            let text = await email;
             setCookie("ericpham", text, 1)
             document.getElementById("SET_STATUS").click()
         }
@@ -84,6 +84,7 @@ function Dangky() {
             if (data.success) {
                 SET_Message("Vui lòng kiểm tra hộp thư email để xác thực tài khoản.");
                 exp.push(data.data[0]["expired"])
+
             }
 
 

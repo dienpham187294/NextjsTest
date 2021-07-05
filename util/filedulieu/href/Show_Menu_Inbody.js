@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Payment from './payment'
 export default function Show_Menu_Inbody(Arr, HeaderString) {
     try {
         return (
@@ -17,7 +18,7 @@ export default function Show_Menu_Inbody(Arr, HeaderString) {
                         <p>Giá: {e.price}</p>
                         {e.price !== "Miễn phí" ?
                             <p>
-                                <Link href={"/"}>
+                                <Link href={"/main/price"}>
                                     <button className="btn btn-small btn-outline-dark"> Chọn mua</button>
                                 </Link>
                             </p>
@@ -30,6 +31,7 @@ export default function Show_Menu_Inbody(Arr, HeaderString) {
                         </Link>
                     </div>
                 )}
+                <Payment />
             </div>
         )
     } catch (error) {

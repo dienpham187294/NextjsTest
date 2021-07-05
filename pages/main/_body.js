@@ -1,7 +1,4 @@
-import Arr_href_Mobile_ReadingPage from "../../util/filedulieu/href/reading_mobile"
-import Arr_href_Mobile_VocabularyPage from "../../util/filedulieu/href/vocabulary"
-import Arr_href_Mobile_Customfile from "../../util/filedulieu/href/customfile"
-import Arr_href_Mobile_Game from "../../util/filedulieu/href/game"
+import All_href_link from "../../util/filedulieu/href/All_href_link"
 import Link from 'next/link'
 import Show_Menu_Inbody from "../../util/filedulieu/href/Show_Menu_Inbody"
 export default function body() {
@@ -49,14 +46,14 @@ export default function body() {
                     </div>
                 </div>
                 <hr id="ReadingPage" />
-                {Show_Menu_Inbody(Arr_href_Mobile_ReadingPage, "Hàng ngàn bài sách, báo, truyện tranh với công nghệ nhận diện giọng nói và từ điển hình ảnh.")}
+                {Show_Menu_Inbody(All_href_link["reading_mobile"], "Hàng ngàn bài sách, báo, truyện tranh với công nghệ nhận diện giọng nói và từ điển hình ảnh.")}
                 < hr />
                 <hr id="VocabularyPage" />
-                {Show_Menu_Inbody(Arr_href_Mobile_VocabularyPage, "Rèn luyện từ mới, các câu thông dụng với công nghệ nhận diện giọng nói và từ điển hình ảnh.")}
+                {Show_Menu_Inbody(All_href_link["vocabulary"], "Rèn luyện từ mới, các câu thông dụng với công nghệ nhận diện giọng nói và từ điển hình ảnh.")}
                 < hr id="Trochoi" />
-                {Show_Menu_Inbody(Arr_href_Mobile_Game, "Chơi game bằng giọng nói giúp tăng cường hứng phấn cho não bộ ghi nhớ hiệu quả")}
+                {Show_Menu_Inbody(All_href_link["game"], "Chơi game bằng giọng nói giúp tăng cường hứng phấn cho não bộ ghi nhớ hiệu quả")}
                 < hr id="CustomPage" />
-                {Show_Menu_Inbody(Arr_href_Mobile_Customfile, "CustomFile là file do người dùng tự tạo để thực hành nội dung theo ý muốn")}
+                {Show_Menu_Inbody(All_href_link["customfile"], "CustomFile là file do người dùng tự tạo để thực hành nội dung theo ý muốn")}
 
                 < hr />
                 <div className="container text-justify mt-4 p-4">

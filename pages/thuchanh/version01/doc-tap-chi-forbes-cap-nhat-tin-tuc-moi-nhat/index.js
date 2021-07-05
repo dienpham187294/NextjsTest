@@ -1,11 +1,5 @@
 import IndexDiv from "../../../../util/ReadingPage_2_Api/index"
-
+import List_data_input_to_index_read from "../../../../util/ReadingPage_2_Api/List_data_input_to_index_read"
 export default function Index() {
-    const OBJ_Data_Input = {
-        Link_GETAPI_ALL: "api/dailynew/forbes",
-        Link_GETAPI_One: "api/dailynew/oneforbes?link=",
-        Name_of_table: "Tạp chí Forbes",
-        Number_of_Div_To_Read: 3
-    }
-    return (<IndexDiv OBJ_Data_Input={OBJ_Data_Input} />)
+    return (<IndexDiv OBJ_Data_Input={List_data_input_to_index_read["forbes"]} />)
 }

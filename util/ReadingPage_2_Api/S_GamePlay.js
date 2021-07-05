@@ -3,12 +3,12 @@ import { useEffect, useState } from "react"
 import Dictaphone from "../../pages/helpers/RegcognitionV1-0-1AI0.2ReadPaperTravel"
 import Read_ReactSpeech from "../../pages/helpers/Read_ReactSpeechSlow"
 import Check2String from "../Check2String"
-import DivNotCookieFixed from "../DivNotCookieFixed"
 import Sound from "../Sound/Get_sound_reading"
 import musicfile from '../filedulieu/musicfile/musicfile';
 import Handle_Onselect from "../Handle_Onselect/Handle_Onselect"
 import Dictionary_with_image from "../../pages/helpers/Dictionary_with_image"
 import Click_full_Screen from "../fullscreen/fullscreen"
+import Cookies_ReadingPage from "../Cookies/Cookies_ReadingPage"
 function GamePlay(props) {
     try {
         if (props.Data.length === 0) {
@@ -43,7 +43,7 @@ function GamePlay(props) {
             <div className="row">
                 <div className="col-12 mb-5">
                     <div className="col-12">
-                        <button onClick={() => { SET_Sreen(true); Click_full_Screen("ReadingPage") }} className="btn btn-info">
+                        <button onClick={() => { SET_Sreen(true) }} className="btn btn-info">
                             Bắt đầu đọc
                         </button>
                         <button onClick={() => {
@@ -107,7 +107,18 @@ function GamePlay(props) {
                     <i><b>Tips:</b>  Tùy chỉnh <b> độ chính xác và chế độ đọc</b> phù hợp. Đọc một hoặc nhiều câu có ( <span style={{ backgroundColor: "#EEEBEB" }}>phần màu đậm</span>), <b>dừng quãng khoảng một tí</b>  để máy lắng nghe rồi đọc tiếp. </i>
                     <i><b>Bôi đen để nghe máy đọc và tra từ điển hình ảnh.</b></i>
                 </div>
-
+                <div className="text-justify p-3">
+                    <p>
+                        <b>
+                            <i>
+                                Luyện đọc văn bản thành tiếng có thể rèn luyện khả năng phát âm, nâng cao khả năng
+                                cảm nhận được câu nói, văn bản, biết nhấn nhá theo ngữ điệu, văn cảnh
+                                lâu dần sẽ tránh được đọc, nói một cách rời rạc, ngắc ngứ, thiếu liên mạch
+                                gây khó chịu và khó hiểu cho người nghe.
+                            </i>
+                        </b>
+                    </p>
+                </div>
             </div>
 
 
@@ -139,19 +150,24 @@ function GamePlay(props) {
                 >
 
                     <div style={{ width: "100%", textAlign: "center" }}>
+
                         <div >
-                            <button onClick={() => { SET_Sreen(false) }} className="btn btn-outline-info btn-sm">
+                            <button onClick={() => { Click_full_Screen("ReadingPage") }} className="btn btn-outline-info btn-sm">
+                                FullScreen
+                            </button>
+                            <button onClick={() => { SET_Sreen(false) }} className="btn btn-outline-info btn-sm ml-1">
                                 Mở bảng tùy chỉnh
                             </button>
                             <button onClick={() => {
                                 SET_Popup("")
                                 SET_Sreen(false);
                                 props.SET_PageChange(0)
-                            }} className="btn btn-outline-danger btn-sm ml-5">
+                            }} className="btn btn-outline-danger btn-sm ml-1">
                                 Thoát
                             </button>
 
                             <div style={{ maxWidth: "800px", width: "100%", textAlign: "left", marginLeft: "50%", transform: "translateX(-50%)", padding: "5px" }}>
+                                {Cookies_ReadingPage(props.OBJ_Data_Input["Buycode"])}
                                 {props.Data.map((e, i) =>
                                     <div key={i} >
                                         {i >= Page_To_Read * props.OBJ_Data_Input["Number_of_Div_To_Read"]
@@ -178,12 +194,16 @@ function GamePlay(props) {
                                 )}
 
 
-                                {DivNotCookieFixed()}
+
                             </div>
                             <div style={{ width: "100%", textAlign: "center" }}>
                                 <button
                                     style={{ position: "absolute", bottom: "5%", left: "10px" }}
-                                    onClick={() => { SET_Page_To_Read(P => P - 1) }}
+                                    onClick={() => {
+                                        if (Page_To_Read !== 0) {
+                                            SET_Page_To_Read(P => P - 1)
+                                        }
+                                    }}
                                     className="btn btn-outline-info">
                                     Back
                                 </button>

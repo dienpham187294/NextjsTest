@@ -16,7 +16,8 @@ export default async (req, res) => {
             await db.collection("users").insertOne({
                 mail: mail,
                 password: mail,
-                expired: Date.now() + 15 * 24 * 60 * 60
+                expired: Date.now() + 15 * 24 * 60 * 60,
+                buycode: ""
             })
             const data1 = await db.collection("users").find({ mail: mail }).toArray();
             sendmail(mail, n, 0);
