@@ -6,7 +6,6 @@ import GetFinal from "../../../util/GetFinal"
 import SetAlert from "../../../util/SetAlert"
 import Check2String from "../../../util/Check2String"
 import ReadMessage from "../../../util/ReadMessage"
-import DivNotCookieFixed from "../../../util/DivNotCookieFixed"
 let dataTotal = [["none"]]
 let dataJustOne = ["EN"]
 let Score = ["EN"]
@@ -110,8 +109,6 @@ function PracticeDiv(props) {
             <Dictaphone
                 Data={props.Data_Commands}
             />
-            {DivNotCookieFixed()}
-
         </div>
     )
 }
