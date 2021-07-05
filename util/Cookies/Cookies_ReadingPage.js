@@ -1,5 +1,5 @@
 import List_ID from "../List_IDs/List_IDs"
-
+import Link from 'next/link'
 
 export default function Cookies_ReadingPage(BUYCODE) {
     // setTimeout(()=>{})
@@ -23,7 +23,9 @@ export default function Cookies_ReadingPage(BUYCODE) {
                         opacity: "0.9"
                     }}
                 >
-                    <button className="btn btn-warning mt-5">Mua ngay</button>
+                    <Link href={"/main/price"}>
+                        <button className="btn btn-warning mt-5">Mua ngay</button>
+                    </Link>
                 </div>
             )
         } else {
