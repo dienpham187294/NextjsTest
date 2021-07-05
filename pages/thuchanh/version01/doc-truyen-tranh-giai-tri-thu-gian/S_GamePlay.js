@@ -3,7 +3,7 @@ import { useEffect, useState } from "react"
 import Dictaphone from "../../../helpers/RegcognitionV1-0-1AI0.2ReadPaperTravel"
 import Read_ReactSpeech from "../../../helpers/Read_ReactSpeechSlow"
 import Check2String from "../../../../util/Check2String"
-import DivNotCookieFixed from "../../../../util/DivNotCookieFixed"
+
 import Sound from "../../../../util/Sound/Get_sound_reading"
 import musicfile from '../../../../util/filedulieu/musicfile/musicfile';
 import Handle_Onselect from "../../../../util/Handle_Onselect/Handle_Onselect"
@@ -163,7 +163,7 @@ function GamePlay(props) {
                                         Next
                                     </button>
                                 </div>
-                                {DivNotCookieFixed()}
+                               
                             </div>
                         </div>
 
