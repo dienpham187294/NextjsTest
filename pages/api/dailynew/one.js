@@ -63,59 +63,60 @@ export default async (req, res) => {
                         return a.location - b.location;
                     }))
                 } catch (error) {
-                    console.log(error)
-                }
-                try {
-                    let Arr_hold2 = []
-                    let Main2 = dom.window.document.querySelector("#detail_page_photo");
-                    let Title_post = Main2.querySelector(".title_post");
-                    Arr_hold2.push({
-                        "text": Title_post.textContent.split('\"').join("").split('\n').join(""),
-                        "location": Main2.innerHTML.indexOf(Title_post.innerHTML)
-                    })
-                    let Lead_post_detail = Main2.querySelector(".lead_news_photo_detail");
-                    Arr_hold2.push({
-                        "text": Lead_post_detail.textContent.split('\"').join("").split('\n').join(""),
-                        "location": Main2.innerHTML.indexOf(Lead_post_detail.innerHTML)
-                    })
-                    let Arr_Image = Main2.querySelectorAll("img");
-                    Arr_Image.forEach((e, i) => {
-                        if (i % 2 === 0) {
+                    try {
+                        let Arr_hold2 = []
+                        let Main2 = dom.window.document.querySelector("#detail_page_photo");
+                        let Title_post = Main2.querySelector(".title_post");
+                        Arr_hold2.push({
+                            "text": SORT_API(Title_post.textContent),
+                            "location": Main2.innerHTML.indexOf(Title_post.innerHTML)
+                        })
+                        let Lead_post_detail = Main2.querySelector(".lead_news_photo_detail");
+                        Arr_hold2.push({
+                            "text": SORT_API(Lead_post_detail.textContent),
+                            "location": Main2.innerHTML.indexOf(Lead_post_detail.innerHTML)
+                        })
+                        let Arr_Image = Main2.querySelectorAll("img");
+                        Arr_Image.forEach((e, i) => {
+                            if (i % 2 === 0) {
+                                Arr_hold2.push(
+                                    {
+                                        "img": e.getAttribute("src"),
+                                        "location": Main2.innerHTML.indexOf(e.getAttribute("src")),
+                                        "text": "Photos by VnExpress"
+                                    }
+                                )
+                            }
+                        })
+                        let Arr_Text = Main2.querySelectorAll("p");
+                        Arr_Text.forEach((e, i) => {
                             Arr_hold2.push(
                                 {
-                                    "img": e.getAttribute("src"),
-                                    "location": Main2.innerHTML.indexOf(e.getAttribute("src")),
-                                    "text": "Photos by VnExpress"
+                                    "text": SORT_API(e.textContent),
+                                    "location": Main2.innerHTML.indexOf(e.innerHTML),
                                 }
                             )
-                        }
-                    })
-                    let Arr_Text = Main2.querySelectorAll("p");
-                    Arr_Text.forEach((e, i) => {
 
-                        Arr_hold2.push(
-                            {
-                                "text": e.textContent,
-                                "location": Main2.innerHTML.indexOf(e.innerHTML),
-                            }
-                        )
-
-                    })
-                    let Arr_Temp1 = Arr_hold2.sort(function (a, b) {
-                        return a.location - b.location;
-                    })
+                        })
+                        let Arr_Temp1 = Arr_hold2.sort(function (a, b) {
+                            return a.location - b.location;
+                        })
 
 
-                    arr.push(Arr_Temp1)
-                } catch (error) {
-                    console.log("error_ IN_GETNEWS")
+                        arr.push(Arr_Temp1)
+                    } catch (error) {
+                        console.log("error_ IN_GETNEWS")
+                    }
                 }
             });
-        // console.log(response.data);
+
         res.status(200).json({ success: true, data: arr[arr.length - 1] })
     } catch (error) {
         console.log(error)
         res.status(400).json({ success: false })
     }
 
+}
+function SORT_API(input) {
+    return input.split('\"').join("").split('\n').join("").split('.m.').join(".m").split('.S.').join(".S").split('"').join('')
 }

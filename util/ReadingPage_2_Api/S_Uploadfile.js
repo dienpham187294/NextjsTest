@@ -26,15 +26,16 @@ function UpLoadFile(props) {
             let data = await res.json();
             let json = data.data;
             let arrRes = []
-            // let arrDataCommands = []
+
             let arrImage = []
             json.forEach(e => {
                 arrImage.push(e.img)
                 let arrTemp = (e.text).split(". ")
                 let arrTempFinal = [];
                 arrTemp.forEach(ee => {
-                    arrTempFinal.push({ "text": ee, "status": false })
-                    // arrDataCommands.push(ee);
+                    if (ee !== "") {
+                        arrTempFinal.push({ "text": ee, "status": false })
+                    }
                 })
                 arrRes.push(arrTempFinal)
             });
