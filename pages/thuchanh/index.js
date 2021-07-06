@@ -1,5 +1,15 @@
+import { useEffect, useState } from "react"
 
 export default function Thuchanh() {
+    const [Status, SET_Status] = useState(0)
+
+    useEffect(() => {
+        console.log(1)
+    
+    }, [Status])
+
+
+
     return (
         <>
             <div className="container text-justify mt-4 p-4">
@@ -48,6 +58,8 @@ export default function Thuchanh() {
                     </h5>
                 </p>
             </div>
+          
         </>
     )
 }
+

@@ -88,18 +88,18 @@ function Show_Jsonfile(Filejson, Fn_Pick, OBJ_Data_Input) {
                 }}><b>{OBJ_Data_Input["Name_of_table"]} - {n} / {m} / {y} - {Filejson.length} bài. </b>
                 </div>
                 {Filejson.map((e, i) =>
-                    <div key={i} className="row">
-                        <div className="col-8">
-                            #{e.hagtag}
+                    <div key={i} className="row mt-4">
+                        <div className="col-9">
+                            <span style={{ color: 'blue' }}>#{e.hagtag}</span>
                             <br />
                             <b>{e.title}</b>
                             {Show_Img(e.img)}
                             <hr />
                             <i>{e.description}</i>
                         </div>
-                        <div className="col-4">
+                        <div className="col-3">
                             <button
-                                className="btn btn-outline-primary"
+                                className="btn btn-sm btn-outline-primary"
                                 onClick={() => {
                                     Fn_Pick(e.href)
                                 }}
@@ -144,7 +144,7 @@ function Show_Img(src) {
             return (
                 <>
                     <hr />
-                    <img width="100%" src={src} alt={src} />
+                    <img width="350px" src={src} alt={src} />
                 </>
             )
         } else {

@@ -4,17 +4,20 @@ import { connectToDatabase } from '../../../util/mongodb'
 export default async (req, res) => {
     const { db } = await connectToDatabase();
     const { mail, buycode } = req.query
-    console.log(mail, buycode)
     try {
         const data = await db.collection("users").find({ mail: mail }).toArray()
-        // let temp = data.buycode + buycode + '124'
-        let temp = data[0].buycode + buycode
-        console.log(temp, "buycode")
+        let Output_CodeAndTime;
+        let Time_365sDay = Date.now() + 365 * 24 * 60 * 60 * 1000
+        try {
+            Output_CodeAndTime = data[0].buycode + buycode + Time_365sDay + "epdp";
+        } catch (error) {
+            Output_CodeAndTime = buycode + Time_365sDay + "epdp";
+        }
         await db.collection("users").updateOne(
             { mail: mail },
             {
                 $set: {
-                    buycode: temp
+                    buycode: Output_CodeAndTime
                 }
             },
             {

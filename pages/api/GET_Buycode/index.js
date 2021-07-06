@@ -6,7 +6,14 @@ export default async (req, res) => {
     const { mail } = req.query
     try {
         const data = await db.collection("users").find({ mail: mail }).toArray()
-        res.status(200).json({ success: true, data: data[0].buycode })
+        let Output = "";
+        try {
+            Output = data[0].buycode
+        } catch (error) {
+            console.log("e")
+        }
+
+        res.status(200).json({ success: true, data: Output })
     } catch (error) {
         console.log(error)
         res.status(400).json({ success: false })

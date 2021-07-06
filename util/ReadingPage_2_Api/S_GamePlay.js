@@ -196,23 +196,25 @@ function GamePlay(props) {
 
 
                             </div>
-                            <div style={{ width: "100%", textAlign: "center" }}>
-                                <button
-                                    style={{ position: "absolute", bottom: "5%", left: "10px" }}
-                                    onClick={() => {
-                                        if (Page_To_Read !== 0) {
-                                            SET_Page_To_Read(P => P - 1)
-                                        }
-                                    }}
-                                    className="btn btn-outline-info">
-                                    Back
-                                </button>
-                                <button
-                                    style={{ position: "absolute", bottom: "5%", right: "10px" }}
-                                    onClick={() => { SET_Page_To_Read(P => P + 1) }}
-                                    className="btn btn-outline-info  ml-3">
-                                    Next
-                                </button>
+                            <div className="row">
+                                <div className="col-6">
+                                    <button
+                                        onClick={() => {
+                                            if (Page_To_Read !== 0) {
+                                                SET_Page_To_Read(P => P - 1)
+                                            }
+                                        }}
+                                        className="btn btn-outline-info">
+                                        Back
+                                    </button>
+                                </div>
+                                <div className="col-6">
+                                    <button
+                                        onClick={() => { SET_Page_To_Read(P => P + 1) }}
+                                        className="btn btn-outline-info  ml-3">
+                                        Next
+                                    </button>
+                                </div>
                             </div>
                         </div>
 
