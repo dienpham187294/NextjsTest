@@ -140,9 +140,7 @@ function MyApp({ Component, pageProps }) {
       <div id="sound"></div>
       <br />
       <span>Powered by Ericpham</span>
-      <div id="fb-root"></div>
-      <div id="fb-customer-chat" className="fb-customerchat">
-      </div>
+    
     </footer>
   </>)
 
