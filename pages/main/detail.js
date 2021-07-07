@@ -1,5 +1,6 @@
 import { delettCookie, getCookie } from "../../util/Cookies/functionCookies"
-import ALL_Href_GET_BUYCODE from "../../util/filedulieu/href/All_href_link"
+import ALL_Href_GET_BUYCODE from "../../util/APP_BODY_NAVIGATION/All_href_link"
+
 import List_IDs from "../../util/List_IDs/List_IDs"
 import { useEffect, useState } from "react";
 import Link from 'next/link'

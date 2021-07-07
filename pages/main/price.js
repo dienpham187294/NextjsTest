@@ -1,4 +1,4 @@
-import ALL_Href_GET_BUYCODE from "../../util/filedulieu/href/All_href_link"
+import ALL_Href_GET_BUYCODE from "../../util/APP_BODY_NAVIGATION/All_href_link"
 export default function Price() {
 
 
