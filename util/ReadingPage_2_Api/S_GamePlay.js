@@ -133,13 +133,12 @@ function GamePlay(props) {
                         right: "0px",
                         left: "0px",
                         top: "0px",
-                        bottom: "0px",
+                        height: "1000px",
                         border: "5px solid green",
                         borderRadius: "15px",
                         backgroundColor: "white",
                         fontSize: "large",
-                        overflowY: "auto",
-                        overflowX: "hidden",
+                        overflow: "hidden",
                         textJustify: "auto"
                     }}
                     onMouseUp={() => {
@@ -193,30 +192,29 @@ function GamePlay(props) {
                                             : ""}
                                     </div>
                                 )}
-
-
+                                <div className="row">
+                                    <div className="col-6">
+                                        <button
+                                            onClick={() => {
+                                                if (Page_To_Read !== 0) {
+                                                    SET_Page_To_Read(P => P - 1)
+                                                }
+                                            }}
+                                            className="btn btn-outline-info">
+                                            Back
+                                        </button>
+                                    </div>
+                                    <div className="col-6">
+                                        <button
+                                            onClick={() => { SET_Page_To_Read(P => P + 1) }}
+                                            className="btn btn-outline-info">
+                                            Next
+                                        </button>
+                                    </div>
+                                </div>
 
                             </div>
-                            <div className="row">
-                                <div className="col-6">
-                                    <button
-                                        onClick={() => {
-                                            if (Page_To_Read !== 0) {
-                                                SET_Page_To_Read(P => P - 1)
-                                            }
-                                        }}
-                                        className="btn btn-outline-info">
-                                        Back
-                                    </button>
-                                </div>
-                                <div className="col-6">
-                                    <button
-                                        onClick={() => { SET_Page_To_Read(P => P + 1) }}
-                                        className="btn btn-outline-info  ml-3">
-                                        Next
-                                    </button>
-                                </div>
-                            </div>
+
                         </div>
 
                     </div>
