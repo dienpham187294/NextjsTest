@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Read from "../../helpers/Read_ReactSpeech"
-import ReadMessage from "../../../util/ReadMessage";
+import Read from "../../../helpers/Read_ReactSpeech"
+import ReadMessage from "../../../../util/Read/ReadMessage";
 import PracticeDiv from "./practice"
 
 
