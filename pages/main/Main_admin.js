@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import Cookies_Admin from "../../util/Cookies/Cookies_Admin"
-import Linkapi from "../../util/Linkapi"
+import Linkapi from "../../util/api/Linkapi"
 import { useRouter } from 'next/router'
 import { async } from "regenerator-runtime"
 import ALL_Href_GET_BUYCODE from "../../util/filedulieu/href/All_href_link"

@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { async } from "regenerator-runtime";
 import { checkCookie, getCookie, setCookie } from "../../util/Cookies/functionCookies";
-import Linkapi from "../../util/Linkapi"
+import Linkapi from "../../util/api/Linkapi"
 import { useRouter } from 'next/router'
-import GetFinal from "../../util/GetFinal"
+import GetFinal from "../../util/rarely_use/GetFinal"
 let email = "";
 let numberCheck = [RandomInt(1001, 9999)];
 let exp = [];
