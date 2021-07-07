@@ -15,7 +15,7 @@ export default async (req, res) => {
                 let ArrHoldRes = []
                 ARRTemp.forEach((e, i) => {
                     if (i === 0) {
-                        ArrHoldRes.push({ "text": e.textContent, "img": imgtop })
+                        ArrHoldRes.push({ "text": "Image", "img": imgtop })
                     } else {
                         ArrHoldRes.push({ "text": e.textContent })
                     }

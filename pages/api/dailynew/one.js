@@ -12,19 +12,19 @@ export default async (req, res) => {
                     let Main = dom.window.document.querySelector(".main_fck_detail");
                     let Title_post = Main.querySelector(".title_post");
                     ArrHoldRes.push({
-                        "text": Title_post.textContent.split('\"').join("").split('\n').join(""),
+                        "text": SORT_API(Title_post.textContent),
                         "location": Main.innerHTML.indexOf(Title_post.innerHTML)
                     })
                     let Lead_post_detail = Main.querySelector(".lead_post_detail");
                     ArrHoldRes.push({
-                        "text": Lead_post_detail.textContent.split('\"').join("").split('\n').join(""),
+                        "text": SORT_API(Lead_post_detail.textContent),
                         "location": Main.innerHTML.indexOf(Lead_post_detail.innerHTML)
                     })
                     let Normal = Main.querySelectorAll(".Normal");
                     Normal.forEach((e) => {
                         ArrHoldRes.push(
                             {
-                                "text": e.textContent.split('\"').join("").split('\n').join(""),
+                                "text": SORT_API(e.textContent),
                                 "location": Main.innerHTML.indexOf(e.innerHTML)
                             }
                         )
@@ -45,7 +45,7 @@ export default async (req, res) => {
                     Image.forEach((e) => {
                         ARR_Sub_IMG.push(
                             {
-                                "text": e.textContent.split('\"').join(""),
+                                "text": SORT_API(e.textContent),
                                 "location": Main.innerHTML.indexOf(e.innerHTML)
                             }
                         )
