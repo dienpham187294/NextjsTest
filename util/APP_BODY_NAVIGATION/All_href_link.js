@@ -44,7 +44,7 @@ export default {
             "img": "https://i.postimg.cc/brTZfvmX/PTS-FORBES.jpg",
             "price": "49.000VNĐ/năm",
             "youtube": "",
-            "buycode": "R0004"
+            "buycode": "R0005"
         }
     ],
     "vocabulary": [
