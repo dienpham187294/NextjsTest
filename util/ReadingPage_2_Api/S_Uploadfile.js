@@ -6,6 +6,7 @@ let status = ["none"]
 let arrHoldeFirstTime_2_Api;
 function UpLoadFile(props) {
     const [Data, SET_Data] = useState(arrHoldeFirstTime_2_Api)
+    const [Check_CSS, SET_Check_CSS] = useState(0)
     useEffect(() => {
         if (status[status.length - 1] !== props.OBJ_Data_Input["Link_GETAPI_One"]) {
             SET_Data("")
@@ -13,6 +14,14 @@ function UpLoadFile(props) {
             status.push(props.OBJ_Data_Input["Link_GETAPI_One"])
         }
     })
+    useEffect(() => {
+        try {
+            document.querySelector("body").style.overflowX = "hidden";
+            document.querySelector("body").style.overflowY = "auto";
+        } catch (error) {
+            console.log("e")
+        }
+    }, [Check_CSS])
     async function Fn_Pick(href) {
         try {
             props.SET_PageChange(P => P + 1)
