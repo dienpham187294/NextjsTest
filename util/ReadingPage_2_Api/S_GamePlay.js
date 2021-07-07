@@ -37,9 +37,20 @@ function GamePlay(props) {
     useEffect(() => {
         console.log(Popup)
     }, [Popup])
-    return (
 
-        <div id="ReadingPage" style={{ backgroundColor: "white", overflow: "auto" }} >
+    useEffect(() => {
+        try {
+            if (Sreen) {
+                document.getElementById("ReadingPage").style.overflowY = "hidden"
+            } else {
+                document.getElementById("ReadingPage").style.overflowY = "auto"
+            }
+        } catch (error) {
+            console.log("e")
+        }
+    }, [Sreen])
+    return (
+        <div id="ReadingPage" style={{ backgroundColor: "white", overflowY: "auto", overflowX: "hidden" }} >
             <div className="row">
                 <div className="col-12 mb-5">
                     <div className="col-12">
@@ -133,12 +144,13 @@ function GamePlay(props) {
                         right: "0px",
                         left: "0px",
                         top: "0px",
-                        height: "1000px",
+                        bottom: "0px",
                         border: "5px solid green",
                         borderRadius: "15px",
                         backgroundColor: "white",
                         fontSize: "large",
-                        overflow: "hidden",
+                        overflowY: "auto",
+                        overflowX: "hidden",
                         textJustify: "auto"
                     }}
                     onMouseUp={() => {
