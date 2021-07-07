@@ -46,5 +46,23 @@ export default {
         Name_of_table: "Small Business/Entrepreneurs",
         Number_of_Div_To_Read: 3,
         Buycode: "R0005"
+    },
+    "food-drink": {
+        GET_LINK_ONLINE: true,
+        Link_GETAPI_ALL: "api/dailynew/FoodDrink",
+        GET_LINK_ONE_STATUS: true,
+        Link_GETAPI_One: "api/dailynew/oneforbes?link=",
+        Name_of_table: "Business: Food and Drink",
+        Number_of_Div_To_Read: 3,
+        Buycode: "R0006"
+    },
+    "HollywoodEntertainment": {
+        GET_LINK_ONLINE: true,
+        Link_GETAPI_ALL: "api/dailynew/HollywoodEntertainment",
+        GET_LINK_ONE_STATUS: true,
+        Link_GETAPI_One: "api/dailynew/oneforbes?link=",
+        Name_of_table: "Hollywood & Entertainment",
+        Number_of_Div_To_Read: 3,
+        Buycode: "R0007"
     }
 }

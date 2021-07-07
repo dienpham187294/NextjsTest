@@ -45,6 +45,23 @@ export default {
             "price": "49.000VNĐ/năm",
             "youtube": "",
             "buycode": "R0005"
+        },
+        {
+            "link": "thuchanh/reading/business-food-and-drink",
+            "name": "Business: Food&Drink -" + n + "/" + m + "/" + y,
+            "img": "https://i.postimg.cc/brTZfvmX/PTS-FORBES.jpg",
+            "price": "49.000VNĐ/năm",
+            "youtube": "",
+            "buycode": "R0006"
+        }
+        ,
+        {
+            "link": "thuchanh/reading/hollywood-entertainment",
+            "name": "Hollywood&Entertainment -" + n + "/" + m + "/" + y,
+            "img": "https://i.postimg.cc/brTZfvmX/PTS-FORBES.jpg",
+            "price": "49.000VNĐ/năm",
+            "youtube": "",
+            "buycode": "R0007"
         }
     ],
     "vocabulary": [
