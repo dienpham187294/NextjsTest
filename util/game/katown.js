@@ -1,6 +1,6 @@
-import GetFinal from "../GetFinal";
-import Sound from "../sound"
-import ReadMessage from "../ReadMessage"
+import GetFinal from "../rarely_use/GetFinal";
+import Sound from "../Sound/sound"
+import ReadMessage from "../Read/ReadMessage"
 import arrNPC from "./arrNpc"
 let arrLocation = [{ x: 0, y: 0 }];
 export default function FN_SetPixi(PIXI, ref) {

@@ -1,6 +1,6 @@
-import GetFinal from "../GetFinal"
-import Sound from "../sound"
-import ReadMessage from "../ReadMessage"
+import GetFinal from "../rarely_use/GetFinal"
+import Sound from "../Sound/sound"
+import ReadMessage from "../Read/ReadMessage"
 import funtionxuly from "./funtionxuly"
 import GetDataCommands from "./GetDataCommands"
 export default async function Xuly(SET_ShowSide, SetAlert, SET_Data_Commands, arrXuly, SET_AlertChange, SET_ImageLeftSide) {

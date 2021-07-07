@@ -1,8 +1,7 @@
 import { async } from "regenerator-runtime";
 import GetDataCommands from "./GetDataCommands";
 import funtionxuly from "./funtionxuly";
-import GetFinal from "../GetFinal";
-import ReadMessage from "../ReadMessage";
+import ReadMessage from "../Read/ReadMessage";
 export default async function Xylyhandling(MessageApi, handling_next, Data_handlingNext, SET_Data_handlingNext, SET_Data_Commands, SET_ImageLeftSide) {
     try {
         console.log(MessageApi)
