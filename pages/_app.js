@@ -3,17 +3,15 @@ import '../styles/globals.css'
 import Link from 'next/link'
 import 'regenerator-runtime/runtime'
 import Head from "next/head";
-// import { useRouter } from 'next/router'
-import { getCookie } from "../util/functionCookies"
+import { getCookie } from "../util/Cookies/functionCookies"
 import { useEffect, useState } from 'react';
-import Linkapi from "../util/Linkapi"
-// import $ from "jquery"
+import Linkapi from "../util/api/Linkapi"
+
 function MyApp({ Component, pageProps }) {
   const [Cookie, SET_Cookie] = useState("");
   const [Status, SET_Status] = useState(0)
-  // const router = useRouter()
+ 
   useEffect(() => {
-    console.log(Status)
     try {
       document.getElementById("Text_Cookies").innerText = getCookie("ericpham")
       SET_Cookie(getCookie("ericpham"));

@@ -1,6 +1,6 @@
-import All_href_link from "../../util/filedulieu/href/All_href_link"
+import All_href_link from "../../util/APP_BODY_NAVIGATION/All_href_link"
 import Link from 'next/link'
-import Show_Menu_Inbody from "../../util/filedulieu/href/Show_Menu_Inbody"
+import Show_Menu_Inbody from "../../util/APP_BODY_NAVIGATION/Show_Menu_Inbody"
 export default function body() {
 
 
@@ -29,11 +29,11 @@ export default function body() {
                                     }}
                                 > Công nghệ Nhận diện giọng nói!</h3>
                                 <div style={{ textAlign: "left" }}>
-                                    <ul>
-                                        <li> <b><i>Ứng dụng công nghệ 4.0 - Nhận diện giọng nói - Trí thông minh nhân tạo AI.</i></b></li>
-                                        <li><b><i>Xu hướng học tập với công nghệ cao mọi lúc mợi nơi.</i></b></li>
-                                        <li><b><i>Đơn giản, thú vị, hiệu quả và tiết kiệm chi phí.</i></b></li>
-                                    </ul>
+
+                                    <p> <i>Ứng dụng công nghệ 4.0:<br /> <span style={{ backgroundColor: "black", color: "yellow", padding: "0 3px" }}> Nhận diện giọng nói - Từ điển hình ảnh sinh động - Đọc khi bôi đen từ.</span></i></p>
+                                    <p><b><i>Xu hướng học tập với công nghệ cao mọi lúc mợi nơi.</i></b></p>
+                                    <p><b><i>Đơn giản, thú vị, hiệu quả và tiết kiệm chi phí.</i></b></p>
+
                                 </div>
                                 <i >Ứng dụng công nghệ nhận diện giọng nói mang đến trải nghiệm thực hành tiếng anh thực sự thú vị và hiệu quả.</i>
                             </div>
@@ -46,14 +46,14 @@ export default function body() {
                     </div>
                 </div>
                 <hr id="ReadingPage" />
-                {Show_Menu_Inbody(All_href_link["reading_mobile"], "Hàng ngàn bài sách, báo, truyện tranh với công nghệ nhận diện giọng nói và từ điển hình ảnh.")}
+                {Show_Menu_Inbody(All_href_link["reading_mobile"], "Dùng tiếng anh mỗi ngày: Đọc thông tin hữu ích.")}
                 < hr />
                 <hr id="VocabularyPage" />
-                {Show_Menu_Inbody(All_href_link["vocabulary"], "Rèn luyện từ mới, các câu thông dụng với công nghệ nhận diện giọng nói và từ điển hình ảnh.")}
+                {Show_Menu_Inbody(All_href_link["vocabulary"], "Học tiếng anh: Từ vựng")}
                 < hr id="Trochoi" />
-                {Show_Menu_Inbody(All_href_link["game"], "Chơi game bằng giọng nói giúp tăng cường hứng phấn cho não bộ ghi nhớ hiệu quả")}
+                {Show_Menu_Inbody(All_href_link["game"], "Dùng tiếng anh mỗi ngày: Chơi game")}
                 < hr id="CustomPage" />
-                {Show_Menu_Inbody(All_href_link["customfile"], "CustomFile là file do người dùng tự tạo để thực hành nội dung theo ý muốn")}
+                {Show_Menu_Inbody(All_href_link["customfile"], "Tự tạo Customfile theo ý muốn")}
 
                 < hr />
                 <div className="container text-justify mt-4 p-4">

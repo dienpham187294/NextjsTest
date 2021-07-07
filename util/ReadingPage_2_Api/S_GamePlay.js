@@ -2,11 +2,11 @@
 import { useEffect, useState } from "react"
 import Dictaphone from "../../pages/helpers/RegcognitionV1-0-1AI0.2ReadPaperTravel"
 import Read_ReactSpeech from "../../pages/helpers/Read_ReactSpeechSlow"
-import Check2String from "../Check2String"
+import Check2String from "../String_tool/Check2String"
 import Sound from "../Sound/Get_sound_reading"
 import musicfile from '../filedulieu/musicfile/musicfile';
 import Handle_Onselect from "../Handle_Onselect/Handle_Onselect"
-import Dictionary_with_image from "../../pages/helpers/Dictionary_with_image"
+import Dictionary_with_image from "../../pages/helpers/IMAGE/Dictionary_with_image"
 import Click_full_Screen from "../fullscreen/fullscreen"
 import Cookies_ReadingPage from "../Cookies/Cookies_ReadingPage"
 function GamePlay(props) {

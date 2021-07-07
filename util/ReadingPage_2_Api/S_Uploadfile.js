@@ -1,7 +1,7 @@
 import { prop } from "cheerio/lib/api/attributes";
 import { useEffect, useState } from "react";
 import { async } from "regenerator-runtime";
-import Linkapi from "../Linkapi"
+import Linkapi from "../api/Linkapi"
 let status = ["none"]
 let arrHoldeFirstTime_2_Api;
 function UpLoadFile(props) {
@@ -10,8 +10,14 @@ function UpLoadFile(props) {
     useEffect(() => {
         if (status[status.length - 1] !== props.OBJ_Data_Input["Link_GETAPI_One"]) {
             SET_Data("")
-            GetReadingNews(SET_Data, props.OBJ_Data_Input);
-            status.push(props.OBJ_Data_Input["Link_GETAPI_One"])
+
+            if (props.OBJ_Data_Input["GET_LINK_ONLINE"]) {
+                GetReadingNews(SET_Data, props.OBJ_Data_Input);
+                status.push(props.OBJ_Data_Input["Link_GETAPI_One"])
+            } else {
+                arrHoldeFirstTime_2_Api = props.OBJ_Data_Input["Link_GETAPI_ALL"]
+                SET_Data(props.OBJ_Data_Input["Link_GETAPI_ALL"])
+            }
         }
     })
     useEffect(() => {
@@ -35,7 +41,6 @@ function UpLoadFile(props) {
             let data = await res.json();
             let json = data.data;
             let arrRes = []
-
             let arrImage = []
             json.forEach(e => {
                 arrImage.push(e.img)
@@ -48,15 +53,29 @@ function UpLoadFile(props) {
                 })
                 arrRes.push(arrTempFinal)
             });
-
             props.SET_ImageData(arrImage)
-
             props.SET_Read_Data(arrRes)
-
-            // props.SET_Data_Commands(arrDataCommands)
-
-
-
+        } catch (error) {
+            console.log("Failed to load file");
+        }
+    }
+    async function Fn_Pick1(data) {
+        try {
+            let json = data;
+            let arrRes = []
+            let arrImage = []
+            json.forEach(e => {
+                arrImage.push(e.img)
+                let arrTemp = (e.text).split(". ")
+                let arrTempFinal = [];
+                arrTemp.forEach(ee => {
+                    arrTempFinal.push({ "text": ee, "status": false })
+                })
+                arrRes.push(arrTempFinal)
+            });
+            props.SET_ImageData(arrImage)
+            props.SET_Read_Data(arrRes)
+            props.SET_PageChange(P => P + 1)
         } catch (error) {
             console.log("Failed to load file");
         }
@@ -66,7 +85,7 @@ function UpLoadFile(props) {
 
     return (
         <div>
-            {Show_Jsonfile(Data, Fn_Pick, props.OBJ_Data_Input)}
+            {Show_Jsonfile(Data, Fn_Pick, Fn_Pick1, props.OBJ_Data_Input)}
         </div>
     )
 
@@ -79,7 +98,7 @@ export default UpLoadFile
 
 
 
-function Show_Jsonfile(Filejson, Fn_Pick, OBJ_Data_Input) {
+function Show_Jsonfile(Filejson, Fn_Pick, Fn_Pick1, OBJ_Data_Input) {
 
     try {
 
@@ -111,7 +130,13 @@ function Show_Jsonfile(Filejson, Fn_Pick, OBJ_Data_Input) {
                             <button
                                 className="btn btn-sm btn-outline-primary"
                                 onClick={() => {
-                                    Fn_Pick(e.href)
+                                    if (OBJ_Data_Input["GET_LINK_ONE_STATUS"]) {
+                                        Fn_Pick(e.href)
+                                    } else {
+                                        Fn_Pick1(e.data)
+                                    }
+
+
                                 }}
                             >
                                 Đọc
