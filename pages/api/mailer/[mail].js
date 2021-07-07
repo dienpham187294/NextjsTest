@@ -1,6 +1,6 @@
 import { connectToDatabase } from '../../../util/mongodb'
 const nodemailer = require("nodemailer");
-import Linkapi from '../../../util/Linkapi';
+import Linkapi from '../../../util/api/Linkapi';
 import { async } from 'regenerator-runtime';
 export default async (req, res) => {
     const { mail, n } = req.query;
