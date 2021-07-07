@@ -180,7 +180,7 @@ function GamePlay(props) {
                                 Thoát
                             </button>
 
-                            <div style={{ maxWidth: "800px", width: "100%", textAlign: "justify", textJustify: "inter-word", marginLeft: "50%", transform: "translateX(-50%)", padding: "5px" }}>
+                            <div style={{ maxWidth: "800px", width: "100%", textAlign: "justify", textJustify: "inter-word", marginLeft: "50%", transform: "translateX(-50%)", padding: "10px" }}>
                                 {Cookies_ReadingPage(props.OBJ_Data_Input["Buycode"])}
                                 {props.Data.map((e, i) =>
                                     <div key={i} >
