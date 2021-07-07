@@ -138,7 +138,8 @@ function GamePlay(props) {
                         borderRadius: "15px",
                         backgroundColor: "white",
                         fontSize: "large",
-                        overflow: "auto",
+                        overflowY: "auto",
+                        overflowX: "hidden",
                         textJustify: "auto"
                     }}
                     onMouseUp={() => {
