@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { async } from "regenerator-runtime";
-import { checkCookie, getCookie, setCookie } from "../../util/functionCookies";
+import { checkCookie, getCookie, setCookie } from "../../util/Cookies/functionCookies";
 import Linkapi from "../../util/Linkapi"
 import { useRouter } from 'next/router'
 import GetFinal from "../../util/GetFinal"
