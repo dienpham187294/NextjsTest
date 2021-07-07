@@ -36,6 +36,15 @@ export default {
         Link_GETAPI_One: "",
         Name_of_table: "Truyện tranh",
         Number_of_Div_To_Read: 1,
-        Buycode: "R0003"
+        Buycode: "R0004"
+    },
+    "small-business": {
+        GET_LINK_ONLINE: true,
+        Link_GETAPI_ALL: "api/dailynew/Entrepreneurs",
+        GET_LINK_ONE_STATUS: true,
+        Link_GETAPI_One: "api/dailynew/oneforbes?link=",
+        Name_of_table: "Small Business/Entrepreneurs",
+        Number_of_Div_To_Read: 3,
+        Buycode: "R0005"
     }
 }

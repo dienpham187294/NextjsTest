@@ -8,12 +8,12 @@ function UpLoadFile(props) {
     const [Data, SET_Data] = useState(arrHoldeFirstTime_2_Api)
     const [Check_CSS, SET_Check_CSS] = useState(0)
     useEffect(() => {
-        if (status[status.length - 1] !== props.OBJ_Data_Input["Link_GETAPI_One"]) {
+        if (status[status.length - 1] !== props.OBJ_Data_Input["Link_GETAPI_ALL"]) {
             SET_Data("")
 
             if (props.OBJ_Data_Input["GET_LINK_ONLINE"]) {
                 GetReadingNews(SET_Data, props.OBJ_Data_Input);
-                status.push(props.OBJ_Data_Input["Link_GETAPI_One"])
+                status.push(props.OBJ_Data_Input["Link_GETAPI_ALL"])
             } else {
                 arrHoldeFirstTime_2_Api = props.OBJ_Data_Input["Link_GETAPI_ALL"]
                 SET_Data(props.OBJ_Data_Input["Link_GETAPI_ALL"])

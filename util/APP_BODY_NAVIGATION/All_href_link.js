@@ -29,11 +29,20 @@ export default {
             "youtube": "",
             "buycode": "R0003"
         },
+
         {
             "link": "thuchanh/reading/kham-pha-viet-nam",
             "name": "Khám phá Việt Nam (450 bài viết)",
             "img": "https://i.postimg.cc/sxyMLW99/DULICHVN-PTS.jpg",
             "price": "99.000VNĐ/trọn đời",
+            "youtube": "",
+            "buycode": "R0004"
+        },
+        {
+            "link": "thuchanh/reading/small-business-entrepreneurs",
+            "name": "Small Business / Entrepreneurs -" + n + "/" + m + "/" + y,
+            "img": "https://i.postimg.cc/brTZfvmX/PTS-FORBES.jpg",
+            "price": "49.000VNĐ/năm",
             "youtube": "",
             "buycode": "R0004"
         }
