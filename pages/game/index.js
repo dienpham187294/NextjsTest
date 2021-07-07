@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import { async } from "regenerator-runtime";
-import GetFinal from "../../util/GetFinal"
-import SetAlert from "../../util/SetAlert"
+import GetFinal from "../../util/rarely_use/GetFinal"
+import SetAlert from "../../util/rarely_use/SetAlert"
 import Read_ReactSpeech from "../helpers/Read_ReactSpeech"
 import arrNPC from "../../util/game/arrNpc"
 import Dictaphone from "../helpers/RegcognitionV1-0-1AI"
