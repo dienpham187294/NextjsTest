@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Dictaphone from "../../helpers/RegcognitionV1-0-1";
+import Dictaphone from "../../../helpers/RegcognitionV1-0-1";
 import $ from "jquery";
 import GetFinal from "../../../../util/rarely_use/GetFinal"
 import SetAlert from "../../../../util/rarely_use/SetAlert"
