@@ -1,12 +1,12 @@
 import { useState } from "react";
-import Read from "../../helpers/Read_ReactSpeech"
-import Dictionary from "../../helpers/Dictionary"
-import ImageSearch from "../../helpers/ImageSearch"
-import Dictaphone from "../../helpers/RegcognitionV1-0-1"
-import Jsonfile from "../../../util/filedulieu/3000tuthongdung/tuvung3000thongdung"
-import GetLongest from "../../../util/GetLongest"
+import Read from "../../../helpers/Read_ReactSpeech"
+import Dictionary from "../../../helpers/Dictionary"
+import ImageSearch from "../../../helpers/IMAGE/ImageSearch"
+import Dictaphone from "../../../helpers/RegcognitionV1-0-1"
+import Jsonfile from "../../../../util/filedulieu/3000tuthongdung/tuvung3000thongdung"
+import GetLongest from "../../../../util/rarely_use/GetLongest"
 import PracticeDiv from "./practice"
-import ReadMessage from "../../../util/ReadMessage"
+import ReadMessage from "../../../../util/Read/ReadMessage"
 
 let ArrHold = [["hello", "null", "null", "null"]]
 
