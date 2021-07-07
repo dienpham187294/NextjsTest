@@ -41,16 +41,18 @@ function GamePlay(props) {
     useEffect(() => {
         try {
             if (Sreen) {
-                document.getElementById("ReadingPage").style.overflowY = "hidden"
+                document.querySelector("body").style.overflowX = "hidden";
+                document.querySelector("body").style.overflowY = "hidden";
             } else {
-                document.getElementById("ReadingPage").style.overflowY = "auto"
+                document.querySelector("body").style.overflowX = "hidden";
+                document.querySelector("body").style.overflowY = "auto";
             }
         } catch (error) {
             console.log("e")
         }
     }, [Sreen])
     return (
-        <div id="ReadingPage" style={{ backgroundColor: "white", overflowY: "auto", overflowX: "hidden" }} >
+        <div id="ReadingPage" style={{ backgroundColor: "white" }} >
             <div className="row">
                 <div className="col-12 mb-5">
                     <div className="col-12">
