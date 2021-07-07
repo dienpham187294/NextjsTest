@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Dictaphone from "../../helpers/RegcognitionV1-0-1";
+import Dictaphone from "../../../helpers/RegcognitionV1-0-1";
 
 // let flag = true;
 // let arr_HoldQuestion = ["none"]

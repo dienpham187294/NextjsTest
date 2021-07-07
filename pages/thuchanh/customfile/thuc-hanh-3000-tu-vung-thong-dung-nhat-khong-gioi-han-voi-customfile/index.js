@@ -1,10 +1,9 @@
 import { useState } from "react";
-import Read from "../../helpers/Read_ReactSpeech"
-import Dictionary from "../../helpers/Dictionary"
-import ImageSearch from "../../helpers/ImageSearch"
-import Dictaphone from "../../helpers/RegcognitionV1-0-1"
-// import Jsonfile from "../../../util/Testfuntion"
-import GetLongest from "../../../util/GetLongest"
+import Read from "../../../helpers/Read_ReactSpeech"
+import Dictionary from "../../../helpers/Dictionary"
+import ImageSearch from "../../../helpers/IMAGE/ImageSearch"
+import Dictaphone from "../../../helpers/RegcognitionV1-0-1"
+import GetLongest from "../../../../util/rarely_use/GetLongest"
 import PracticeDiv from "./practice"
 
 

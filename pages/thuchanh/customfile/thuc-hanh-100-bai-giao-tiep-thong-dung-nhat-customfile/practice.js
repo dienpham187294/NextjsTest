@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import Dictaphone from "../../../helpers/RegcognitionV1-0-1";
 import $ from "jquery";
-import GetFinal from "../../../../util/GetFinal"
-import SetAlert from "../../../../util/SetAlert"
-import Check2String from "../../../../util/Check2String"
-import ReadMessage from "../../../../util/ReadMessage"
+import GetFinal from "../../../../util/rarely_use/GetFinal"
+import SetAlert from "../../../../util/rarely_use/SetAlert"
+import Check2String from "../../../../util/String_tool/Check2String"
+import ReadMessage from "../../../../util/Read/ReadMessage"
 
 let dataTotal = [["none"]]
 let dataJustOne = ["name"]
