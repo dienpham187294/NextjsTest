@@ -7,7 +7,7 @@ import List_IDs from "../List_IDs/List_IDs"
 import sound from "../Sound/sound"
 export default function Show_Demo_Sentence_Basic(OBJ_INPUT) {
     const [Data_Learn, SET_Data_Learn] = useState("")
-    const [Data_Commands, SET_Data_Commands] = useState("")
+    const [Data_Commands, SET_Data_Commands] = useState("====")
     const [Docthu, SET_Docthu] = useState("")
     const [Read_ready, SET_Read_ready] = useState("none")
     try {
@@ -108,7 +108,7 @@ export default function Show_Demo_Sentence_Basic(OBJ_INPUT) {
                         if (Check2String($("#messageRes").val(), Data_Commands)) {
                             SET_Docthu("A");
                             sound("mixkit-video-game-treasure-2066.wav");
-                            SET_Data_Commands("")
+                            SET_Data_Commands("====")
                         }
 
                     }
