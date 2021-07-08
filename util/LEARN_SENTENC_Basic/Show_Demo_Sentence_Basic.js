@@ -4,7 +4,6 @@ import ReadMessage from "../Read/ReadMessage"
 import Dictaphone from "../../pages/helpers/RegcognitionV1-0-1AI0.2ReadPaperTravel"
 import Check2String from "../String_tool/Check2String"
 import List_IDs from "../List_IDs/List_IDs"
-import sound from "../Sound/sound"
 export default function Show_Demo_Sentence_Basic(OBJ_INPUT) {
     const [Data_Learn, SET_Data_Learn] = useState("")
     const [Data_Commands, SET_Data_Commands] = useState("====")
@@ -107,7 +106,7 @@ export default function Show_Demo_Sentence_Basic(OBJ_INPUT) {
                     if ($("#messageRes").val() !== "") {
                         if (Check2String($("#messageRes").val(), Data_Commands)) {
                             SET_Docthu("A");
-                            sound("mixkit-video-game-treasure-2066.wav");
+                            ReadMessage("Great", 2);
                             SET_Data_Commands("====")
                         }
 
