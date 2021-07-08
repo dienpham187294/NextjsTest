@@ -6,4 +6,5 @@ export default {
     "Button_DangNhap": "dangnhapbtn",
     "Sound": "sound",
     "BUTTON_CLICK_TO_TALK": "A782021",
+    "BUTTON_APPEAR_AFTER_READ_READY": "B782021",
 }

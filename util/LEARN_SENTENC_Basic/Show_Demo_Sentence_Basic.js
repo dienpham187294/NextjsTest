@@ -9,6 +9,7 @@ export default function Show_Demo_Sentence_Basic(OBJ_INPUT) {
     const [Data_Learn, SET_Data_Learn] = useState("")
     const [Data_Commands, SET_Data_Commands] = useState("")
     const [Docthu, SET_Docthu] = useState("")
+    const [Read_ready, SET_Read_ready] = useState("none")
     try {
         return (
             <div>
@@ -57,7 +58,9 @@ export default function Show_Demo_Sentence_Basic(OBJ_INPUT) {
                             Phiên âm: <br />
                             <h3>{Data_Learn.IPA}</h3>
                             <hr />
-                            <button className="btn btn-info"
+                            <button
+                                style={{ display: Read_ready }}
+                                className="btn btn-info"
                                 onClick={() => {
                                     ReadMessage(Data_Learn.EN, 1)
                                 }}
@@ -97,6 +100,7 @@ export default function Show_Demo_Sentence_Basic(OBJ_INPUT) {
                 <Dictaphone
                     Data={Data_Commands}
                 />
+                <button id={List_IDs["BUTTON_APPEAR_AFTER_READ_READY"]} onClick={() => { SET_Read_ready("initial") }} ></button>
                 <Read_ReactSpeech />
                 <button style={{ display: "none" }} onClick={() => {
                     console.log("onclick")
@@ -104,10 +108,12 @@ export default function Show_Demo_Sentence_Basic(OBJ_INPUT) {
                         if (Check2String($("#messageRes").val(), Data_Commands)) {
                             SET_Docthu("A");
                             sound("mixkit-video-game-treasure-2066.wav");
+                            SET_Data_Commands("")
                         }
 
                     }
                 }} id="messageResBtn"></button>
+
             </div>
         )
     } catch (error) {
