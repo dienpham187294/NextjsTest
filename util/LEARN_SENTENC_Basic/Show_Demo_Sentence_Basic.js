@@ -103,7 +103,7 @@ export default function Show_Demo_Sentence_Basic(OBJ_INPUT) {
                     if ($("#messageRes").val() !== "") {
                         if (Check2String($("#messageRes").val(), Data_Commands)) {
                             SET_Docthu("A");
-                            sound("Tieng-vo-tay-www_nhacchuongvui_com.mp3");
+                            sound("mixkit-video-game-treasure-2066.wav");
                         }
 
                     }
