@@ -1,8 +1,18 @@
 import All_href_link from "../../util/APP_BODY_NAVIGATION/All_href_link"
 import Link from 'next/link'
 import Show_Menu_Inbody from "../../util/APP_BODY_NAVIGATION/Show_Menu_Inbody"
+import { useEffect, useState } from "react"
 export default function body() {
+    const [Status, SET_Status] = useState(0);
 
+    useEffect(() => {
+        try {
+            document.querySelector("body").style.overflowX = "hidden";
+            document.querySelector("body").style.overflowY = "auto";
+        } catch (error) {
+            console.log("e")
+        }
+    }, [Status])
 
     return (
         <>

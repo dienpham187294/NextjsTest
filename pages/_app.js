@@ -10,7 +10,7 @@ import Linkapi from "../util/api/Linkapi"
 function MyApp({ Component, pageProps }) {
   const [Cookie, SET_Cookie] = useState("");
   const [Status, SET_Status] = useState(0)
- 
+
   useEffect(() => {
     try {
       document.getElementById("Text_Cookies").innerText = getCookie("ericpham")
