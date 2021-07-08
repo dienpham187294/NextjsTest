@@ -16,7 +16,7 @@ export default async (req, res) => {
                             if (e.parentNode.parentNode.getAttribute("class") !== "byline__author-group") {
                                 ArrHoldRes.push(
                                     {
-                                        "hagtag": "Small-business/Entrepreneurs",
+                                        "hagtag": "HollywoodEntertainment",
                                         "title": e.parentNode.parentNode.textContent,
                                         "href": e.parentNode.parentNode.querySelector("a").getAttribute("href")
                                     }
