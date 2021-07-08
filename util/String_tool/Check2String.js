@@ -5,7 +5,7 @@ export default function Check2String(message_API, message_INPUT) {
         if (message_API.toLowerCase().indexOf(message_INPUT.split(/[\?#!-()',`.]+/).join("").toLowerCase()) > -1) {
             return true
         }
-        if (message_API.toLowerCase().indexOf(message_INPUT.split(/[\?#!-()',.]+/).join("").toLowerCase()) > -1) {
+        if (message_API.split(/[\?#!-()',.]+/).join("").toLowerCase().indexOf(message_INPUT.split(/[\?#!-()',.]+/).join("").toLowerCase()) > -1) {
             return true
         }
     } catch (error) {
