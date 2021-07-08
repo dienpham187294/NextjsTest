@@ -66,7 +66,7 @@ export default {
     ],
     "vocabulary": [
         {
-            "link": "",
+            "link": "thuchanh/vocabulary/thuc-hanh-3000-tu-vung-thong-dung-nhat",
             "name": "3000 từ vựng thông dụng nhất",
             "img": "https://i.postimg.cc/2y1kGr3q/3000-tu-thong-dung-nhat.jpg",
             "price": "Miễn phí",
@@ -82,8 +82,17 @@ export default {
             "buycode": "V002"
         },
         {
-            "link": "",
+            "link": "thuchanh/vocabulary/thuc-hanh-100-bai-giao-tiep-thong-dung-nhat",
             "name": "100 bài giao tiếp thông dụng",
+            "img": "https://i.postimg.cc/xTRQmX6s/100-bai-giao-tiep-thong-dung.jpg",
+            "price": "Miễn phí",
+            "youtube": "",
+            "buycode": "V003"
+
+        },
+        {
+            "link": "thuchanh/vocabulary/thuc-hanh-23-chu-de-800-tu-vung-voi-hinh-anh",
+            "name": "23 chủ đề từ vựng với hình ảnh",
             "img": "https://i.postimg.cc/xTRQmX6s/100-bai-giao-tiep-thong-dung.jpg",
             "price": "Miễn phí",
             "youtube": "",
