@@ -8,7 +8,6 @@ export default function Show_Demo_Sentence_Basic(OBJ_INPUT) {
     const [Data_Learn, SET_Data_Learn] = useState("")
     const [Data_Commands, SET_Data_Commands] = useState("====")
     const [Docthu, SET_Docthu] = useState("")
-    const [Read_ready, SET_Read_ready] = useState("none")
     try {
         return (
             <div>
@@ -55,18 +54,19 @@ export default function Show_Demo_Sentence_Basic(OBJ_INPUT) {
                             <h1>{Data_Learn.VN}</h1>
                             <h1>{Data_Learn.EN}</h1>
                             Phiên âm: <br />
-                            <h3>{Data_Learn.IPA}</h3>
+                            <h1>{Data_Learn.IPA}</h1>
                             <hr />
                             <button
-                                style={{ display: Read_ready }}
-                                className="btn btn-info"
+                                className="btn btn-warning"
+                                style={{ fontSize: "larger", padding: "20px" }}
                                 onClick={() => {
                                     ReadMessage(Data_Learn.EN, 1)
                                 }}
                             >Nghe máy đọc</button>
                             <hr />
                             <button
-                                className="btn btn-info"
+                                className="btn btn-warning"
+                                style={{ fontSize: "larger", padding: "20px" }}
                                 onClick={() => {
                                     SET_Data_Commands(Data_Learn.EN);
                                     SET_Docthu("Docthu")
@@ -79,7 +79,8 @@ export default function Show_Demo_Sentence_Basic(OBJ_INPUT) {
                             >Đọc thử</button>
                             <hr />
                             <button
-                                className="btn btn-info"
+                                className="btn btn-warning"
+                                style={{ fontSize: "larger", padding: "20px" }}
                                 onClick={() => {
                                     SET_Data_Learn("");
                                     SET_Docthu("")
@@ -99,7 +100,7 @@ export default function Show_Demo_Sentence_Basic(OBJ_INPUT) {
                 <Dictaphone
                     Data={Data_Commands}
                 />
-                <button id={List_IDs["BUTTON_APPEAR_AFTER_READ_READY"]} onClick={() => { SET_Read_ready("initial") }} ></button>
+
                 <Read_ReactSpeech />
                 <button style={{ display: "none" }} onClick={() => {
                     console.log("onclick")

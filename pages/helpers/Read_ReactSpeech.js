@@ -12,17 +12,8 @@ const Speech = dynamic(
 let arrText = ["Hi"];
 let arrVoice = ["Google UK English Female"];
 function Read(props) {
-    const [Status, SET_Status] = useState(0)
     const [Alert, SET_Alert] = useState(0)
     useEffect(() => {
-        try {
-            document.getElementById(List_IDs["BUTTON_APPEAR_AFTER_READ_READY"]).click()
-        } catch (error) {
-            console.log("e")
-        }
-    }, [Status])
-    useEffect(() => {
-
     }, [Alert])
     return (
         <div style={{ display: "none" }}>
