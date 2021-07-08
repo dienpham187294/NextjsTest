@@ -12,7 +12,7 @@ export default function Show_Menu_Inbody(Arr, HeaderString) {
                         <div style={{ height: "50px" }}><b>{e.name}</b></div>
                         <hr />
                         <i style={{ fontSize: "small" }}>Ứng dụng công nghệ nhận diện giọng nói</i>
-                        <img src={e.img} alt={e.name} width="100%" />
+                        {e.img !== "" ? <img src={e.img} alt={e.name} width="100%" /> : null}
                         <hr />
                         <p>{e.price !== "" ? e.price : null}</p>
                         {!(e.price === "Miễn phí" || e.price === "") ?

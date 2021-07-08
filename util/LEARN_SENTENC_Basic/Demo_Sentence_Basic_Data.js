@@ -5,30 +5,30 @@ export default {
             {
                 "VN": "Chào buổi sáng!",
                 "EN": "Good morning!",
-                "IPA": "guđ mo-ning",
+                "IPA": "gút mo ning",
             },
             {
                 "VN": "Chào buổi chiều!",
                 "EN": "Good afternoon",
-                "IPA": "guđ a-f-tđ-nun",
+                "IPA": "gút áp tơ nun",
             }
             ,
             {
                 "VN": "Thật vui được gặp anh",
                 "EN": "Nice to meet you.",
-                "IPA": "nai-s tu mit jíu",
+                "IPA": "nai tru mít diu",
             }
             ,
             {
                 "VN": "Hôm nay anh cảm thấy thế nào?",
                 "EN": "How do you feel today?",
-                "IPA": "hao đu jiu fu tu-đêi",
+                "IPA": "hao đu diu phiu tru đây",
             }
             ,
             {
                 "VN": "Xin chào!",
                 "EN": "How are you?",
-                "IPA": "hao a jiu",
+                "IPA": "hao a diu",
             }
         ]
     }
