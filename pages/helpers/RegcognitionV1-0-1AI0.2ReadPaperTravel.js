@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { createSpeechlySpeechRecognition } from '@speechly/speech-recognition-polyfill';
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
-// import GetFinal from "../../util/GetFinal";
-// import Check2String from '../../util/Check2String';
+import List_IDs from '../../util/List_IDs/List_IDs';
 
 
 import $ from "jquery";
@@ -53,7 +52,9 @@ function Dictaphone({ Data }) {
     return (<div style={{ textAlign: "justify" }} >
         <p>
             Microphone: {listening ? <span style={{ color: "white", backgroundColor: "blue", padding: "5px" }}>On</span> : <span style={{ color: "white", backgroundColor: "red", padding: "5px" }}>Off</span>}
-            <button className="btn btn-sm btn-outline-info ml-5"
+            <button
+                id={List_IDs["BUTTON_CLICK_TO_TALK"]}
+                className="btn btn-sm btn-outline-info ml-5"
                 onClick={startListening}
             >Click to Talk</button>
             <button

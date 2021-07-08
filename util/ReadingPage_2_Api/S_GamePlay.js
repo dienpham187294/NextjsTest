@@ -9,6 +9,7 @@ import Handle_Onselect from "../Handle_Onselect/Handle_Onselect"
 import Dictionary_with_image from "../../pages/helpers/IMAGE/Dictionary_with_image"
 import Click_full_Screen from "../fullscreen/fullscreen"
 import Cookies_ReadingPage from "../Cookies/Cookies_ReadingPage"
+import List_IDs from "../List_IDs/List_IDs"
 function GamePlay(props) {
     try {
         if (props.Data.length === 0) {
@@ -56,7 +57,15 @@ function GamePlay(props) {
             <div className="row">
                 <div className="col-12 mb-5">
                     <div className="col-12">
-                        <button onClick={() => { SET_Sreen(true) }} className="btn btn-info">
+                        <button
+                            onClick={() => {
+                                SET_Sreen(true);
+                                try {
+                                    document.getElementById(List_IDs["BUTTON_CLICK_TO_TALK"]).click()
+                                } catch (error) {
+                                    console.log("e")
+                                }
+                            }} className="btn btn-info">
                             Bắt đầu đọc
                         </button>
                         <button onClick={() => {

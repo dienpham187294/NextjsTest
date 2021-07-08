@@ -4,6 +4,16 @@ let m = d.getUTCMonth() + 1;
 let y = d.getUTCFullYear();
 
 export default {
+    "demo": [
+        {
+            "link": "thuchanh/dung-thu/10-cau-thong-dung-nhat",
+            "name": "Học 5 câu căn thông dụng nhất (1)",
+            "img": "",
+            "price": "",
+            "youtube": "",
+            "buycode": "R0001"
+        }
+    ],
     "reading_mobile": [
         {
             "link": "thuchanh/reading/doc-bao-international-vnexpress-cap-nhat-tin-tuc-moi-nhat",

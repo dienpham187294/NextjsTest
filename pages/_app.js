@@ -6,6 +6,7 @@ import Head from "next/head";
 import { getCookie } from "../util/Cookies/functionCookies"
 import { useEffect, useState } from 'react';
 import Linkapi from "../util/api/Linkapi"
+import List_IDs from "../util/List_IDs/List_IDs"
 
 function MyApp({ Component, pageProps }) {
   const [Cookie, SET_Cookie] = useState("");
@@ -129,8 +130,8 @@ function MyApp({ Component, pageProps }) {
 
     <footer className="mt-5 text-center">
       <div style={{ display: "none" }}>
-        <p id="Text_Cookies"> ===</p>
-        <p id="Text_Cookies_Buycode">=== </p>
+        <p id={List_IDs["GET_Cookies"]}> ===</p>
+        <p id={List_IDs["Text_Cookies_Buycode"]}>=== </p>
         <button
           id="SET_STATUS"
           onClick={() => {
@@ -138,7 +139,7 @@ function MyApp({ Component, pageProps }) {
           }}
         ></button>
       </div>
-      <div id="sound"></div>
+      <div id={List_IDs["Sound"]}></div>
       <br />
       <span>Powered by Ericpham</span>
 
@@ -163,7 +164,7 @@ function MyApp({ Component, pageProps }) {
       return (
         <Link href="/main/dangnhap">
           <a >
-            <input id="dangnhapbtn" className="btn btn-primary" type="button" value="Đăng nhập" />
+            <input id={List_IDs["Button_DangNhap"]} className="btn btn-primary" type="button" value="Đăng nhập" />
           </a>
         </Link>
       )

@@ -14,13 +14,14 @@ export default function Show_Menu_Inbody(Arr, HeaderString) {
                         <i style={{ fontSize: "small" }}>Ứng dụng công nghệ nhận diện giọng nói</i>
                         <img src={e.img} alt={e.name} width="100%" />
                         <hr />
-                        <p>Giá: {e.price}</p>
-                        {e.price !== "Miễn phí" ?
+                        <p>{e.price !== "" ? e.price : null}</p>
+                        {!(e.price === "Miễn phí" || e.price === "") ?
                             <Link href={"/main/price"}>
                                 <button className="btn btn-sm btn-outline-dark"> Chọn mua</button>
                             </Link>
                             : null}
-                        <button className="btn btn-sm btn-outline-dark ml-2">Video</button>
+                        {e.youtube !== "" ? <button className="btn btn-sm btn-outline-dark ml-2">Video</button> : null}
+
                         <hr />
                         <Link href={"/" + e.link}>
                             <div style={{ width: "100%", backgroundColor: "black", cursor: "pointer" }}>
