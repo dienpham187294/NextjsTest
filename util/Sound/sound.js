@@ -5,13 +5,11 @@ export default async function Sound(str) {
 
         if (document.getElementById(str) !== null) {
             document.getElementById(str).play();
-
         } else {
-
             let x = await document.createElement("AUDIO");
             x.setAttribute("class", "soundClass")
             x.setAttribute("id", str)
-            x.setAttribute("preload ", "auto")
+            x.setAttribute("preload", "auto")
             if (x.canPlayType("audio/mpeg")) {
                 x.setAttribute("src", "/sound/" + str);
             } else {
