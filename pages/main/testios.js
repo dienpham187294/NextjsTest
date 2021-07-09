@@ -32,7 +32,7 @@ export default function tets(params) {
                     msg.text = text;
 
                     msg.onend = function (e) {
-                        document.getElementById("test").innerText = ('Finished in ' + event.elapsedTime + ' seconds.' + $('#voices').val() + typeof ($('#voices').val()));
+                        document.getElementById("test").innerText = ('Finished in ' + event.elapsedTime + ' seconds.' + $('#voices').val() + typeof ($('#voices').val()) + voices[$('#voices').val()].name);
                     };
 
                     speechSynthesis.speak(msg);
