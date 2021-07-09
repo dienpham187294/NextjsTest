@@ -1,7 +1,5 @@
 
 import { useEffect } from "react"
-
-let arr = 0
 export default function tets(params) {
 
     useEffect(() => {
@@ -28,13 +26,13 @@ export default function tets(params) {
                     var text = $('#message').val();
                     var msg = new SpeechSynthesisUtterance();
                     var voices = window.speechSynthesis.getVoices();
-                    msg.voice = voices[arr];
+                    msg.voice = voices[$('#voices').val()];
                     msg.rate = $('#rate').val() / 10;
                     msg.pitch = $('#pitch').val();
                     msg.text = text;
 
                     msg.onend = function (e) {
-                        console.log('Finished in ' + event.elapsedTime + ' seconds.');
+                        document.getElementById("test").innerText = ('Finished in ' + event.elapsedTime + ' seconds.' + $('#voices').val() + typeof ($('#voices').val()));
                     };
 
                     speechSynthesis.speak(msg);
@@ -48,9 +46,7 @@ export default function tets(params) {
         <div>
             <div className="container">
                 <hr />
-                <button onClick={() => {
-                    arr++
-                }}>Cộng lên</button>
+                <p id="test"></p>
                 <div className="row">
                     <nav>
                         <div className="nav-wrapper">
