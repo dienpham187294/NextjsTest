@@ -7,7 +7,7 @@ import { getCookie } from "../util/Cookies/functionCookies"
 import { useEffect, useState } from 'react';
 import Linkapi from "../util/api/Linkapi"
 import List_IDs from "../util/List_IDs/List_IDs"
-
+// import $ from "jquery"
 function MyApp({ Component, pageProps }) {
   const [Cookie, SET_Cookie] = useState("");
   const [Status, SET_Status] = useState(0)
@@ -70,7 +70,10 @@ function MyApp({ Component, pageProps }) {
         src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         crossOrigin="anonymous"
       />
+
+      {/* <script src="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.1/js/materialize.min.js"></script>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossOrigin="anonymous" referrerPolicy="no-referrer" />
+      <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.1/css/materialize.min.css" /> */}
     </Head>
     <header>
 
@@ -143,7 +146,6 @@ function MyApp({ Component, pageProps }) {
       <div id={List_IDs["Sound"]}></div>
       <br />
       <span>Powered by Ericpham</span>
-
     </footer>
   </>)
 
