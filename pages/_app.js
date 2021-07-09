@@ -8,11 +8,18 @@ import { useEffect, useState } from 'react';
 import Linkapi from "../util/api/Linkapi"
 import List_IDs from "../util/List_IDs/List_IDs"
 // import $ from "jquery"
+const { detect } = require('detect-browser');
 function MyApp({ Component, pageProps }) {
   const [Cookie, SET_Cookie] = useState("");
   const [Status, SET_Status] = useState(0)
-
+  const browser = detect();
   useEffect(() => {
+    if (browser) {
+      console.log(browser.name);
+      console.log(browser.version);
+      console.log(browser.os);
+      document.getElementById("browsername").innerText = browser.name
+    }
     try {
       document.getElementById("Text_Cookies").innerText = getCookie("ericpham")
       SET_Cookie(getCookie("ericpham"));
@@ -77,7 +84,6 @@ function MyApp({ Component, pageProps }) {
 
     </Head>
     <header>
-
       <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
         <Link href="/">
           <a className="navbar-brand" >
@@ -133,7 +139,9 @@ function MyApp({ Component, pageProps }) {
 
 
 
+
     <footer className="mt-5 text-center">
+      <p id="browsername"></p>
       <div style={{ display: "none" }}>
         <p id={List_IDs["GET_Cookies"]}> ===</p>
         <p id={List_IDs["Text_Cookies_Buycode"]}>=== </p>
