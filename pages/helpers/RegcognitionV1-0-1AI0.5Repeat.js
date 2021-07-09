@@ -29,7 +29,8 @@ function Dictaphone({ Data }) {
     const startListening = () => SpeechRecognition.startListening({ continuous: true, language: 'en-GB' });
     const stopListening = () => SpeechRecognition.stopListening({ continuous: false, language: 'en-GB' });
     return (<div>
-        <p>Microphone: {listening ? 'on' : 'off'}</p>
+        <p>Microphone: {listening ? <img src="https://i.postimg.cc/1z95rjPs/Listening.gif" alt="voice-regconition" width="40px" /> : 'off'}  </p>
+
         <button
             onClick={startListening}
         >Click to talk</button>
@@ -41,7 +42,7 @@ function Dictaphone({ Data }) {
         <hr />
         <div>{transcript}</div>
 
-       
+
     </div>
     );
 };

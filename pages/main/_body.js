@@ -56,7 +56,7 @@ export default function body() {
                     </div>
                 </div>
                 <hr id="DungThu" />
-                {Show_Menu_Inbody(All_href_link["demo"], "Dùng thử.")}
+                {Show_Menu_Inbody(All_href_link["demo"], "Dùng thử")}
                 <hr id="ReadingPage" />
                 {Show_Menu_Inbody(All_href_link["reading_mobile"], "Dùng tiếng anh mỗi ngày: Đọc thông tin hữu ích.")}
                 < hr />

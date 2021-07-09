@@ -29,6 +29,15 @@ export default {
         Number_of_Div_To_Read: 3,
         Buycode: "R0003"
     },
+    "vietnamenews_travel_demo": {
+        GET_LINK_ONLINE: false,
+        Link_GETAPI_ALL: [json_all_Vietnamtravel[0]],
+        GET_LINK_ONE_STATUS: true,
+        Link_GETAPI_One: "api/vietnamtravel/one?link=",
+        Name_of_table: "Khám phá việt nam",
+        Number_of_Div_To_Read: 3,
+        Buycode: "R0003"
+    },
     "50-bai-truyen-tranh": {
         GET_LINK_ONLINE: false,
         Link_GETAPI_ALL: json_truyentranh,

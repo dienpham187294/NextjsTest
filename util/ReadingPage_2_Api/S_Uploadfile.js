@@ -136,7 +136,6 @@ function Show_Jsonfile(Filejson, Fn_Pick, Fn_Pick1, OBJ_Data_Input) {
                                         Fn_Pick1(e.data)
                                     }
 
-
                                 }}
                             >
                                 Đọc

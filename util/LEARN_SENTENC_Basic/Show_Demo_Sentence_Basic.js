@@ -10,7 +10,7 @@ export default function Show_Demo_Sentence_Basic(OBJ_INPUT) {
     const [Docthu, SET_Docthu] = useState("")
     try {
         return (
-            <div>
+            <div className="container">
                 <div
                     style={{
                         position: "fixed",
@@ -77,6 +77,10 @@ export default function Show_Demo_Sentence_Basic(OBJ_INPUT) {
                                     }
                                 }}
                             >Đọc thử</button>
+                            {Docthu === "" ? null
+                                : Docthu === "Docthu" ? <img src="https://i.postimg.cc/1z95rjPs/Listening.gif" alt="https://i.postimg.cc/1z95rjPs/Listening.gif" width="100px" />
+                                    : <h1>Chính Xác - Chúc mừng</h1>
+                            }
                             <hr />
                             <button
                                 className="btn btn-warning"
@@ -88,10 +92,7 @@ export default function Show_Demo_Sentence_Basic(OBJ_INPUT) {
                             >Học câu khác</button>
                             <hr />
                             <div>
-                                {Docthu === "" ? null
-                                    : Docthu === "Docthu" ? <img src="https://i.postimg.cc/YSxSrKQW/Voice-Recording-Animation.gif" width="100%" />
-                                        : <h1>Chính Xác - Chúc mừng</h1>
-                                }
+
 
                             </div>
                         </div>

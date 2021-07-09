@@ -3,16 +3,10 @@ import Read from "../../../helpers/Read_ReactSpeech"
 import ReadMessage from "../../../../util/Read/ReadMessage";
 import tuvung800cau from "../../../../util/filedulieu/800cau"
 import PracticeDiv from "./practice"
-
-
 function Manager() {
     const [Data, SET_Data] = useState(tuvung800cau.slice(0, 20))
-    const [MessageToRead, SET_MessageToRead] = useState(["", 1])
     const [Practice, SET_Practice] = useState(false)
     const [Data_Commands, SET_Data_Commands] = useState([])
-
-
-
     return (
 
         <div className="container">
@@ -110,7 +104,6 @@ function UpLoadFile() {
                 <input className="form-control" onChange={e => {
                     try {
                         // var uploadedFile = e.currentTarget.files[0];
-
                         // if (uploadedFile.name.indexOf(".ericpham") > -1) {
                         //     // console.log(uploadedFile.name)
                         //     var readFile = new FileReader();

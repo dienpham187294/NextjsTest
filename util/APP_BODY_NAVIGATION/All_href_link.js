@@ -6,13 +6,31 @@ let y = d.getUTCFullYear();
 export default {
     "demo": [
         {
-            "link": "thuchanh/dung-thu/10-cau-thong-dung-nhat",
-            "name": "Học 5 câu thông dụng nhất (1)",
+            "link": "thuchanh/dung-thu/doc-thu-kham-pha-viet-nam",
+            "name": "Đọc- Khám phá việt nam",
             "img": "",
             "price": "",
             "youtube": "",
-            "buycode": "R0001"
-        }
+            "buycode": "DE0001"
+        },
+        {
+            "link": "thuchanh/dung-thu/5-cau-thong-dung-moi-ngay",
+            "name": "5 câu giao tiếp thông dụng ngày " + n + "/" + m + "/" + y,
+            "img": "",
+            "price": "",
+            "youtube": "",
+            "buycode": "DE0001"
+        },
+        {
+            "link": "thuchanh/dung-thu/10-cau-thong-dung-nhat",
+            "name": "Học 5 câu thông dụng nhất(1)",
+            "img": "",
+            "price": "",
+            "youtube": "",
+            "buycode": "DE0001"
+        },
+
+
     ],
     "reading_mobile": [
         {

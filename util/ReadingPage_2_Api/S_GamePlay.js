@@ -56,8 +56,9 @@ function GamePlay(props) {
         <div id="ReadingPage" style={{ backgroundColor: "white" }} >
             <div className="row">
                 <div className="col-12 mb-5">
-                    <div className="col-12">
+                    <div className="col-12" style={{ textAlign: "center" }}>
                         <button
+                            style={{ padding: "25px" }}
                             onClick={() => {
                                 SET_Sreen(true);
                                 try {
@@ -65,9 +66,10 @@ function GamePlay(props) {
                                 } catch (error) {
                                     console.log("e")
                                 }
-                            }} className="btn btn-info">
-                            Bắt đầu đọc
-                        </button>
+                            }} className="btn btn-danger">
+                            <b>Bắt đầu đọc</b>
+                        </button></div>
+                    <div className="col-12">
                         <button onClick={() => {
                             SET_Sreen(false);
                             props.SET_PageChange(0)
@@ -175,7 +177,8 @@ function GamePlay(props) {
                     <div style={{ width: "100%", textAlign: "center" }}>
 
                         <div >
-                            <button onClick={() => { Click_full_Screen("ReadingPage") }} className="btn btn-outline-info btn-sm">
+                            <img src="https://i.postimg.cc/1z95rjPs/Listening.gif" alt="voice-regconition" width="40px" />
+                            <button onClick={() => { Click_full_Screen("ReadingPage") }} className="btn btn-outline-info btn-sm ml-1">
                                 FullScreen
                             </button>
                             <button onClick={() => { SET_Sreen(false) }} className="btn btn-outline-info btn-sm ml-1">
@@ -235,7 +238,7 @@ function GamePlay(props) {
                                         </button>
                                     </div>
                                 </div>
-
+                                <div> <i style={{ fontSize: "small" }}>Tips: Đọc dứt khoát từng câu một - Bôi đen để tra từ điển hình ảnh và nghe máy đọc</i></div>
                             </div>
 
                         </div>
