@@ -1,10 +1,11 @@
 
 import { useEffect } from "react"
-
+let arr = 0
 export default function tets(params) {
+
     useEffect(() => {
         $(function () {
-          
+
             if ('speechSynthesis' in window) {
                 speechSynthesis.onvoiceschanged = function () {
                     var $voicelist = $('#voices');
@@ -26,7 +27,7 @@ export default function tets(params) {
                     var text = $('#message').val();
                     var msg = new SpeechSynthesisUtterance();
                     var voices = window.speechSynthesis.getVoices();
-                    msg.voice = voices[$('#voices').val()];
+                    msg.voice = voices[arr];
                     msg.rate = $('#rate').val() / 10;
                     msg.pitch = $('#pitch').val();
                     msg.text = text;
@@ -45,6 +46,9 @@ export default function tets(params) {
     return (
         <div>
             <div class="container">
+                <button onClick={() => {
+                    arr++
+                }}>Cộng lên</button>
                 <div class="row">
                     <nav>
                         <div class="nav-wrapper">
