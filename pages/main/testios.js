@@ -26,7 +26,8 @@ export default function tets(params) {
                     var text = $('#message').val();
                     var msg = new SpeechSynthesisUtterance();
                     var voices = window.speechSynthesis.getVoices();
-                    msg.voice = voices[$('#voices').val()];
+                    // msg.voice = voices[$('#voices').val()];
+                    msg.voice = voices["0"];
                     msg.rate = $('#rate').val() / 10;
                     msg.pitch = $('#pitch').val();
                     msg.text = text;
