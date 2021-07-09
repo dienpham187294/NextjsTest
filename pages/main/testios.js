@@ -1,5 +1,6 @@
 
 import { useEffect } from "react"
+
 let arr = 0
 export default function tets(params) {
 
@@ -46,6 +47,7 @@ export default function tets(params) {
     return (
         <div>
             <div class="container">
+                <hr />
                 <button onClick={() => {
                     arr++
                 }}>Cộng lên</button>
