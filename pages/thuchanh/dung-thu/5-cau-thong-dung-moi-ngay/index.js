@@ -20,7 +20,7 @@ function INDEX_5caumoingay() {
                 <p>
                     <b>
                         <i>
-                            Thực hành 5 / 800+ câu giao tiếp thông dụng nhất
+                            Thực hành 5 / 800+ câu giao tiếp thông dụng nhất (5 câu mới mỗi ngày)
                         </i>
                     </b>
                 </p>
