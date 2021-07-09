@@ -32,7 +32,7 @@ export default function tets() {
                     msg.text = text;
 
                     msg.onend = function (e) {
-                        document.getElementById("test").innerText = ('Finished in ' + event.elapsedTime + ' seconds.' + StrNum + typeof (StrNum) + voices[$('#voices').val()].name);
+                        // document.getElementById("test").innerText = ('Finished in ' + event.elapsedTime + ' seconds.' + StrNum + typeof (StrNum) + voices[$('#voices').val()].name);
                     };
 
                     speechSynthesis.speak(msg);
@@ -47,21 +47,16 @@ export default function tets() {
             <div className="container">
                 <hr />
                 <p id="Strnum"></p>
-                <button
-                    onClick={() => {
-                        document.getElementById("Strnum").innerText = StrNum + typeof (StrNum);
-                    }}
-                >CheckStringNum
-                </button>
+
                 <input type="number" id="number" />
                 <button
 
                     onClick={() => {
-                        StrNum = parseInt(document.getElementById("number").value)
+                        StrNum = parseInt(document.getElementById("number").value); document.getElementById("Strnum").innerText = StrNum + typeof (StrNum);
                     }}> Số</button>
                 <button
                     onClick={() => {
-                        StrNum = (document.getElementById("number").value).toString()
+                        StrNum = (document.getElementById("number").value).toString(); document.getElementById("Strnum").innerText = StrNum + typeof (StrNum);
                     }}
 
                 >Chữ</button>
