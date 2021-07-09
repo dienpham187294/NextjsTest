@@ -1,39 +1,38 @@
 
 import { useEffect } from "react"
-export default function tets(params) {
-
+let StrNum = 0;
+export default function tets() {
     useEffect(() => {
         $(function () {
 
             if ('speechSynthesis' in window) {
-                speechSynthesis.onvoiceschanged = function () {
-                    var $voicelist = $('#voices');
+                // speechSynthesis.onvoiceschanged = function () {
+                //     var $voicelist = $('#voices');
 
-                    if ($voicelist.find('option').length == 0) {
-                        speechSynthesis.getVoices().forEach(function (voice, index) {
-                            var $option = $('<option>')
-                                .val(index)
-                                .html(voice.name + (voice.default ? ' (default)' : ''));
+                //     if ($voicelist.find('option').length == 0) {
+                //         speechSynthesis.getVoices().forEach(function (voice, index) {
+                //             var $option = $('<option>')
+                //                 .val(index)
+                //                 .html(voice.name + (voice.default ? ' (default)' : ''));
 
-                            $voicelist.append($option);
-                        });
+                //             $voicelist.append($option);
+                //         });
 
-                        // $voicelist.material_select();
-                    }
-                }
+                //         // $voicelist.material_select();
+                //     }
+                // }
 
                 $('#speak').click(function () {
                     var text = $('#message').val();
                     var msg = new SpeechSynthesisUtterance();
                     var voices = window.speechSynthesis.getVoices();
-                    // msg.voice = voices[$('#voices').val()];
-                    msg.voice = voices["0"];
+                    msg.voice = voices[StrNum];
                     msg.rate = $('#rate').val() / 10;
                     msg.pitch = $('#pitch').val();
                     msg.text = text;
 
                     msg.onend = function (e) {
-                        document.getElementById("test").innerText = ('Finished in ' + event.elapsedTime + ' seconds.' + $('#voices').val() + typeof ($('#voices').val()) + voices[$('#voices').val()].name);
+                        document.getElementById("test").innerText = ('Finished in ' + event.elapsedTime + ' seconds.' + StrNum + typeof (StrNum) + voices[$('#voices').val()].name);
                     };
 
                     speechSynthesis.speak(msg);
@@ -47,6 +46,25 @@ export default function tets(params) {
         <div>
             <div className="container">
                 <hr />
+                <p id="Strnum"></p>
+                <button
+                    onClick={() => {
+                        document.getElementById("Strnum").innerText = StrNum + typeof (StrNum);
+                    }}
+                >CheckStringNum
+                </button>
+                <input type="number" id="number" />
+                <button
+
+                    onClick={() => {
+                        StrNum = parseInt(document.getElementById("number").value)
+                    }}> Số</button>
+                <button
+                    onClick={() => {
+                        StrNum = (document.getElementById("number").value).toString()
+                    }}
+
+                >Chữ</button>
                 <p id="test"></p>
                 <div className="row">
                     <nav>
