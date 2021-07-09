@@ -70,7 +70,7 @@ export default {
             "link": "thuchanh/reading/small-business-entrepreneurs",
             "name": "Small Business / Entrepreneurs -" + n + "/" + m + "/" + y,
             "img": "https://i.postimg.cc/brTZfvmX/PTS-FORBES.jpg",
-            "price": "49.000VNĐ/năm",
+            "price": "99.000VNĐ/năm",
             "youtube": "",
             "buycode": "R0005"
         },
@@ -78,7 +78,7 @@ export default {
             "link": "thuchanh/reading/business-food-and-drink",
             "name": "Business: Food&Drink -" + n + "/" + m + "/" + y,
             "img": "https://i.postimg.cc/brTZfvmX/PTS-FORBES.jpg",
-            "price": "49.000VNĐ/năm",
+            "price": "99.000VNĐ/năm",
             "youtube": "",
             "buycode": "R0006"
         }
@@ -87,7 +87,7 @@ export default {
             "link": "thuchanh/reading/hollywood-entertainment",
             "name": "Hollywood&Entertainment -" + n + "/" + m + "/" + y,
             "img": "https://i.postimg.cc/brTZfvmX/PTS-FORBES.jpg",
-            "price": "49.000VNĐ/năm",
+            "price": "99.000VNĐ/năm",
             "youtube": "",
             "buycode": "R0007"
         }
@@ -97,7 +97,7 @@ export default {
             "link": "thuchanh/vocabulary/thuc-hanh-3000-tu-vung-thong-dung-nhat",
             "name": "3000 từ vựng thông dụng nhất",
             "img": "https://i.postimg.cc/2y1kGr3q/3000-tu-thong-dung-nhat.jpg",
-            "price": "Miễn phí",
+            "price": "199.000VNĐ/năm",
             "youtube": "",
             "buycode": "V001"
         },
@@ -106,14 +106,14 @@ export default {
             "name": "Thực hành 800+ câu giao tiếp thông dụng nhất",
             "img": "https://i.postimg.cc/7ZQTLfww/800-CAUGIAOTIEP-PTS.jpg",
             "price": "Miễn phí",
-            "youtube": "",
+            "youtube": "99.000VNĐ/năm",
             "buycode": "V002"
         },
         {
             "link": "thuchanh/vocabulary/thuc-hanh-100-bai-giao-tiep-thong-dung-nhat",
             "name": "100 bài giao tiếp thông dụng",
             "img": "https://i.postimg.cc/xTRQmX6s/100-bai-giao-tiep-thong-dung.jpg",
-            "price": "Miễn phí",
+            "price": "99.000VNĐ/năm",
             "youtube": "",
             "buycode": "V003"
 
@@ -122,7 +122,7 @@ export default {
             "link": "thuchanh/vocabulary/thuc-hanh-23-chu-de-800-tu-vung-voi-hinh-anh",
             "name": "23 chủ đề từ vựng với hình ảnh",
             "img": "https://i.postimg.cc/xTRQmX6s/100-bai-giao-tiep-thong-dung.jpg",
-            "price": "Miễn phí",
+            "price": "99.000VNĐ/năm",
             "youtube": "",
             "buycode": "V003"
 
@@ -133,7 +133,7 @@ export default {
             "link": "thuchanh/game/20-bai-thuc-hanh-giao-tiep-voi-nguoi-may-ai",
             "name": "Hơn 20 Trò chơi giao tiếp giả định với người máy AI",
             "img": "https://i.postimg.cc/MGMffqpR/PTS-VNEXPRESS.jpg",
-            "price": "Miễn phí",
+            "price": "199.000VNĐ/năm",
             "youtube": "",
             "buycode": "G001"
         }
