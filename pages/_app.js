@@ -51,6 +51,7 @@ function MyApp({ Component, pageProps }) {
       <title>ENGLISH TOOL</title>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="description" content="Ericpham Product" />
+      <meta name="facebook-domain-verification" content="4v65nvfymyec6nthr2m2l2rbcvo7kp" />
       <link rel="icon" href="/favicon.ico" />
       <link
         rel="stylesheet"
