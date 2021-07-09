@@ -43,7 +43,7 @@ function Read(props) {
                     rate={1}
                     volume={1}
                     lang="en-GB"
-                  
+                    voice={arrVoice[arrVoice.length - 1]}
                     textAsButton={true}
                     displayText="Hello"
                 />
