@@ -31,8 +31,5 @@ export default {
                 "IPA": "hao a diu",
             }
         ]
-    }
-
-
-
+    },
 }

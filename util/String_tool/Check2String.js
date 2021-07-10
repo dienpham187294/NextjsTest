@@ -1,18 +1,18 @@
-
+const stringSimilarity = require("string-similarity");
 
 export default function Check2String(message_API, message_INPUT) {
     try {
-        if (message_API.toLowerCase().indexOf(message_INPUT.split(/[\?#!-()',`.]+/).join("").toLowerCase()) > -1) {
-            return true
-        }
-        if (message_API.split(/[\?#!-:()',.]+/).join("").toLowerCase().indexOf(message_INPUT.split(/[\?#!-:()',.]+/).join("").toLowerCase()) > -1) {
-            return true
-        }
+        let status = false
+        message_API.split("epdp").forEach(e => {
+            if (stringSimilarity.compareTwoStrings(e, message_INPUT) > 0.8) {
+                status = true
+            }
+        });
+
+        return status
+
     } catch (error) {
+        console.log(error, "check2string")
         return false
     }
-
-
-    return false
-
 }

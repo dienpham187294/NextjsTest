@@ -2,8 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { createSpeechlySpeechRecognition } from '@speechly/speech-recognition-polyfill';
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
 import List_IDs from '../../util/List_IDs/List_IDs';
-
-
 import $ from "jquery";
 import { async } from 'regenerator-runtime';
 const appId = '6b82e0d7-8610-45b8-96cd-22f51d4c50f1';
@@ -24,7 +22,7 @@ function Dictaphone({ Data }) {
         commands = [{
             command: Data,
             callback: (command) => {
-                Str_to_Check += " " + `${command}`;
+                Str_to_Check += "epdp" + `${command}`;
                 console.log(Str_to_Check);
                 writeMessage(Str_to_Check);
             },
