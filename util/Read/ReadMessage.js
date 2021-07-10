@@ -5,7 +5,7 @@ export default async function ReadMessage(text, voiceNum) {
                 if ('speechSynthesis' in window) {
                     let msg = new SpeechSynthesisUtterance();
                     let voices = window.speechSynthesis.getVoices();
-                    msg.voice = voices[voiceNum + 5];
+                    msg.voice = voices[voiceNum + 4];
                     msg.rate = 1;
                     msg.pitch = 1;
                     msg.text = text;
@@ -43,10 +43,4 @@ export default async function ReadMessage(text, voiceNum) {
     } catch (error) {
         console.log("eF")
     }
-
-
-
-
-
-
 }
