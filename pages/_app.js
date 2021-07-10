@@ -7,8 +7,10 @@ import { getCookie } from "../util/Cookies/functionCookies"
 import { useEffect, useState } from 'react';
 import Linkapi from "../util/api/Linkapi"
 import List_IDs from "../util/List_IDs/List_IDs"
+import { async } from 'regenerator-runtime';
 // import $ from "jquery"
 const { detect } = require('detect-browser');
+let StrNum = 0;
 function MyApp({ Component, pageProps }) {
   const [Cookie, SET_Cookie] = useState("");
   const [Status, SET_Status] = useState(0)
@@ -142,6 +144,79 @@ function MyApp({ Component, pageProps }) {
 
     <footer className="mt-5 text-center">
       <p id="browsername"></p>
+      <div className="container">
+        <hr />
+        <p id="Strnum"></p>
+
+        <input type="number" id="number" />
+        <button
+
+          onClick={() => {
+            StrNum = parseInt(document.getElementById("number").value); document.getElementById("Strnum").innerText = StrNum + typeof (StrNum);
+          }}> Số</button>
+        <button
+          onClick={() => {
+            StrNum = (document.getElementById("number").value).toString(); document.getElementById("Strnum").innerText = StrNum + typeof (StrNum);
+          }}
+
+        >Chữ</button>
+        <p id="test"></p>
+        <div className="row">
+          {/* <nav>
+            <div className="nav-wrapper">
+              <div className="col s12">
+                <a href="#" className="brand-logo">Text to speech example</a>
+              </div>
+            </div>
+          </nav> */}
+        </div>
+
+        <div className="row">
+          {/* <label>Choose voice</label>
+            <select id="voices"></select> */}
+        </div>
+        <div className="row">
+          <div className="col s6">
+            <label>Rate</label>
+            <p className="range-field">
+              <input type="range" id="rate" min="1" max="100" value="10" />
+            </p>
+          </div>
+          <div className="col s6">
+            <label>Pitch</label>
+            <p className="range-field">
+              <input type="range" id="pitch" min="0" max="2" value="1" />
+            </p>
+          </div>
+        </div>
+        <div className="row">
+          <div className="input-field col s12">
+            <textarea id="message" ></textarea>
+            <label>Write message</label>
+          </div>
+        </div>
+        <button id="speak"
+          onClick={() => {
+            // if ('speechSynthesis' in window) {
+            var text = $('#message').val();
+            var msg = new SpeechSynthesisUtterance();
+            var voices = window.speechSynthesis.getVoices();
+            msg.voice = voices[StrNum];
+            msg.rate = $('#rate').val() / 10;
+            msg.pitch = $('#pitch').val();
+            msg.text = text;
+
+            // msg.onend = function (e) {
+            //   // document.getElementById("test").innerText = ('Finished in ' + event.elapsedTime + ' seconds.' + StrNum + typeof (StrNum) + voices[$('#voices').val()].name);
+            // };
+            speechSynthesis.speak(msg);
+            // }
+          }}
+
+
+        >Speak</button>
+
+      </div>
       <div style={{ display: "none" }}>
         <p id={List_IDs["GET_Cookies"]}> ===</p>
         <p id={List_IDs["Text_Cookies_Buycode"]}>=== </p>
@@ -203,3 +278,4 @@ async function GET_Buycode_FROM_DATABASE(mail) {
     console.log(error)
   }
 }
+
