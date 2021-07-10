@@ -1,22 +1,16 @@
 export default async function ReadMessage(text, voiceNum) {
     try {
-        if ($("#ID_TEXT_BROWSERNAME").val() === "ios") {
-
+        if ($("#ID_TEXT_BROWSERNAME").text() === "ios") {
             try {
-                $('#message').val(text);
-                if (voiceNum === 1) {
-                    $("#number").val("5")
-                } else {
-                    $("#number").val("6")
+                if ('speechSynthesis' in window) {
+                    let msg = new SpeechSynthesisUtterance();
+                    let voices = window.speechSynthesis.getVoices();
+                    msg.voice = voices[voiceNum + 5];
+                    msg.rate = 1;
+                    msg.pitch = 1;
+                    msg.text = text;
+                    speechSynthesis.speak(msg);
                 }
-                setTimeout(() => {
-                    try {
-                        $("#BTN_speak_IOS").click()
-                    } catch (error) {
-                        console.log("eclick undefined")
-                    }
-
-                }, 100)
             } catch (error) {
                 console.log("e")
             }
@@ -47,7 +41,7 @@ export default async function ReadMessage(text, voiceNum) {
 
         }
     } catch (error) {
-        console.log("e")
+        console.log("eF")
     }
 
 

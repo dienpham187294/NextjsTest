@@ -142,33 +142,8 @@ function MyApp({ Component, pageProps }) {
 
 
     <footer className="mt-5 text-center">
-      <p id="ID_TEXT_BROWSERNAME"></p>
-      <div className="container">
-        <hr />
-        <input type="range" id="rate" min="1" max="100" value="10" />
-        <input type="range" id="pitch" min="0" max="2" value="1" />
-        <input type="text" id="message" />
-        <button id="BTN_speak_IOS"
-          onClick={() => {
-            // if ('speechSynthesis' in window) {
-            var text = $('#message').val();
-            var msg = new SpeechSynthesisUtterance();
-            var voices = window.speechSynthesis.getVoices();
-            msg.voice = voices[$("#number").val()];
-            msg.rate = $('#rate').val() / 10;
-            msg.pitch = $('#pitch').val();
-            msg.text = text;
-
-            // msg.onend = function (e) {
-            //   // document.getElementById("test").innerText = ('Finished in ' + event.elapsedTime + ' seconds.' + StrNum + typeof (StrNum) + voices[$('#voices').val()].name);
-            // };
-            speechSynthesis.speak(msg);
-
-          }}
-        >Speak</button>
-
-      </div>
       <div style={{ display: "none" }}>
+        <p id="ID_TEXT_BROWSERNAME"></p>
         <p id={List_IDs["GET_Cookies"]}> ===</p>
         <p id={List_IDs["Text_Cookies_Buycode"]}>=== </p>
         <button
