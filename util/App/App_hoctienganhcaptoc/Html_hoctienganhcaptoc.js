@@ -43,7 +43,7 @@ export default function Show_Demo_Sentence_Basic(OBJ_INPUT) {
 
                     {Name === "" ? "Loading..." :
                         <div>
-                            <b>Xin chào: {Name}</b>
+                            {/* <b>Xin chào: {Name}</b> */}
                             <select onChange={(e) => {
                                 SET_Data_use(OBJ_INPUT[e.currentTarget.value])
                             }} className="form-control">
