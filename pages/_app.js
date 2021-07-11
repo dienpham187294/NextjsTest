@@ -19,7 +19,7 @@ function MyApp({ Component, pageProps }) {
       console.log(browser.name);
       console.log(browser.version);
       console.log(browser.os);
-      document.getElementById("ID_TEXT_BROWSERNAME").innerText = browser.name
+      document.getElementById("ID_TEXT_BROWSERNAME").innerText = browser.name + browser.version + browser.os
     }
     try {
       document.getElementById("Text_Cookies").innerText = getCookie("ericpham")
@@ -78,11 +78,6 @@ function MyApp({ Component, pageProps }) {
         src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         crossOrigin="anonymous"
       />
-
-      {/* <script src="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.1/js/materialize.min.js"></script>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossOrigin="anonymous" referrerPolicy="no-referrer" />
-      <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.1/css/materialize.min.css" /> */}
-
     </Head>
     <header>
       <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
@@ -142,8 +137,8 @@ function MyApp({ Component, pageProps }) {
 
 
     <footer className="mt-5 text-center">
+
       <div style={{ display: "none" }}>
-        <p id="ID_TEXT_BROWSERNAME"></p>
         <p id={List_IDs["GET_Cookies"]}> ===</p>
         <p id={List_IDs["Text_Cookies_Buycode"]}>=== </p>
         <button
@@ -155,7 +150,7 @@ function MyApp({ Component, pageProps }) {
       </div>
       <div id={List_IDs["Sound"]}></div>
       <br />
-      <span>Powered by Ericpham</span>
+      <span>Powered by Ericpham</span>|<span id="ID_TEXT_BROWSERNAME"></span>
     </footer>
   </>)
 

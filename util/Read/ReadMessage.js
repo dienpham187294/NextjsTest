@@ -1,6 +1,6 @@
 export default async function ReadMessage(text, voiceNum) {
     try {
-        if ($("#ID_TEXT_BROWSERNAME").text() === "ios") {
+        if ($("#ID_TEXT_BROWSERNAME").text().indexOf("ios") !== -1) {
             try {
                 if ('speechSynthesis' in window) {
                     let msg = new SpeechSynthesisUtterance();
