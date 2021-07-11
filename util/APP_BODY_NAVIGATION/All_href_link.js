@@ -37,7 +37,7 @@ export default {
             "link": "thuchanh/reading/doc-bao-international-vnexpress-cap-nhat-tin-tuc-moi-nhat",
             "name": "DailyNews VnExpress - " + n + "/" + m + "/" + y,
             "img": "https://i.postimg.cc/MGMffqpR/PTS-VNEXPRESS.jpg",
-            "price": "59.000VNĐ/năm",
+            "price": "99.000VNĐ/năm",
             "youtube": "",
             "buycode": "R0001"
         },
@@ -45,7 +45,7 @@ export default {
             "link": "thuchanh/reading/doc-tap-chi-forbes-cap-nhat-tin-tuc-moi-nhat",
             "name": "DailyNews Forbes - " + n + "/" + m + "/" + y,
             "img": "https://i.postimg.cc/brTZfvmX/PTS-FORBES.jpg",
-            "price": "59.000VNĐ/năm",
+            "price": "99.000VNĐ/năm",
             "youtube": "",
             "buycode": "R0002"
         },
@@ -53,7 +53,7 @@ export default {
             "link": "thuchanh/reading/doc-truyen-tranh-giai-tri-thu-gian",
             "name": "10 bài truyện tranh",
             "img": "https://i.postimg.cc/HxbJ3z5k/PTS-TRUYENTRANH.jpg",
-            "price": "59.000VNĐ/trọn đời",
+            "price": "99.000VNĐ/năm",
             "youtube": "",
             "buycode": "R0003"
         },
@@ -62,7 +62,7 @@ export default {
             "link": "thuchanh/reading/kham-pha-viet-nam",
             "name": "Khám phá Việt Nam (450 bài viết)",
             "img": "https://i.postimg.cc/sxyMLW99/DULICHVN-PTS.jpg",
-            "price": "99.000VNĐ/trọn đời",
+            "price": "99.000VNĐ/năm",
             "youtube": "",
             "buycode": "R0004"
         },
@@ -105,8 +105,8 @@ export default {
             "link": "thuchanh/vocabulary/thuc-hanh-800-cau-giao-tiep-thong-dung",
             "name": "Thực hành 800+ câu giao tiếp thông dụng nhất",
             "img": "https://i.postimg.cc/7ZQTLfww/800-CAUGIAOTIEP-PTS.jpg",
-            "price": "Miễn phí",
-            "youtube": "99.000VNĐ/năm",
+            "price": "99.000VNĐ/năm",
+            "youtube": "",
             "buycode": "V002"
         },
         {
