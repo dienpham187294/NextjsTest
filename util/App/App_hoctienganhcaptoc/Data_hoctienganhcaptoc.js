@@ -749,5 +749,100 @@ export default [
                 "IPA": "jiu-đ bet-tờ s-tây ơ wêi from i"
             }
         ]
+    },
+    {
+        "title": "Khen ngợi",
+        "data": [
+            {
+                "EN": "Aren't you the lucky one! ",
+                "VN": "Ảnh thật may mắn!",
+                "IPA": "an-t jiu dd lac-ki oan"
+            },
+            {
+                "EN": "Breathtaking!",
+                "VN": "Đẹp quá!",
+                "IPA": "bret-tek-king"
+            },
+            {
+                "EN": "How clever/ lucky you  are!",
+                "VN": "Anh thật thông minh/ may mắn.",
+                "IPA": "hao kle-vd/ lac-ki jiu a"
+            },
+            {
+                "EN": "I do think it's charming.",
+                "VN": "Tôi chắc chắn nó sẽ làm mọi người phải say mê.",
+                "IPA": "ai du thing-k itz cham-ming"
+            },
+            {
+                "EN": "It looks nice. ",
+                "VN": "Trông thật tuyệt vời.",
+                "IPA": "it luks nais"
+            },
+            {
+                "EN": "I really must express my  admiration for your  performance",
+                "VN": "Tôi thực sự ước ao có được tài năng biểu diễn như anh.",
+                "IPA": "ai ria-li md-st iks-p-res mai dd-mi-ray-san for jio pd-fom-man-z"
+            },
+            {
+                "EN": "You speak very good  English. You really  deserve the highest praise.",
+                "VN": "Anh nói tiếng Anh rất giỏi, đáng được khen ngợi.",
+                "IPA": "jiu s-pich-k ưe-ri gud ing-lich. jiu ria-li đi-zơu dơ hai-its p-rêis"
+            },
+            {
+                "EN": "My compliments on your success.",
+                "VN": "Xin chúc mừng thành Xin chúc mừng thành",
+                "IPA": "mai com-pli-mânts on jio sdk-ses"
+            },
+            {
+                "EN": "You are quite good with  your hands.",
+                "VN": "Ảnh thật khéo tay.",
+                "IPA": "jiu a koai gud witd jio hen-dz"
+            },
+            {
+                "EN": "You have good taste!",
+                "VN": "Anh thật có con mắt thẩm mỹ!",
+                "IPA": "jiu he-vd gud tei-st"
+            },
+            {
+                "EN": "Lucky of you!",
+                "VN": "Anh thật may mắn!",
+                "IPA": "lac-ki df jiu"
+            },
+            {
+                "EN": "You look cool in that  shirt!",
+                "VN": "Ảnh mặc chiếc áo đó trông thật bảnh bao!",
+                "IPA": "Ảnh mặc chiếc áo đó trông thật bảnh bao!"
+            },
+            {
+                "EN": "Super!",
+                "VN": "Đẹp quá!",
+                "IPA": "siu-pơ"
+            },
+            {
+                "EN": "Wonderful!",
+                "VN": "Tuyệt vời!",
+                "IPA": "woăn-đơ-ful"
+            },
+            {
+                "EN": "Oh, you look great!",
+                "VN": "Ô, trông anh thật tuyệt!",
+                "IPA": "ÔU, jiu luk g-rết"
+            },
+            {
+                "EN": "Your thesis is excellent.",
+                "VN": "Bài luận văn của anh thật xuất sắc",
+                "IPA": "jio thi-sis iz ếk-sơ-lầnt"
+            },
+            {
+                "EN": "You're doing great!",
+                "VN": "Anh làm rất tốt!",
+                "IPA": "jiu-a đuing g-rết"
+            },
+            {
+                "EN": "That was quite an  evening.",
+                "VN": "Buổi dạ hội thật tuyệt vời.",
+                "IPA": "dat wơz koai ơn i-vi-ning.  "
+            }
+        ]
     }
 ]

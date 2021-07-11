@@ -1,141 +1,137 @@
 
-let strinout = `Be careful! 
+let strinout = `Aren't you the lucky one! 
 
-Coi chừng!
+Ảnh thật may mắn!
 
-bi ke-ful
+an-t jiu dd lac-ki oan
 
-Be careful of the banana skin.
+Breathtaking!
 
-cẩn thận vỏ chuối.
+Đẹp quá!
 
-bi ke-ful ơp de bơ-na-nờ s-kin
+bret-tek-king
 
-Be ready for the traffic! 
+How clever/ lucky you 
+are!
 
-Coi chừng xe!
+Anh thật thông minh/
+may mắn.
 
-bi ret-đi for de tre-fik
+hao kle-vd/ lac-ki jiu a
 
-Beware of dogs! 
+I do think it's charming.
 
-Coi chừng có chó!
+Tôi chắc chắn nó sẽ làm
+mọi người phải say mê.
 
-bi woe ơf doog-z
+ai du thing-k itz chamming
 
-Behave yourself!
+It looks nice. 
 
-Ngay thẳng một chút!
+Trông thật tuyệt vời.
 
-bi-hei-v jio-seo-lf
+it luks nais
 
-Be on your guard 
-against pickpocket!
+I really must express my 
+admiration for your 
+performance
 
-Đề phòng trộm cướp!
+Tôi thực sự ước ao có
+được tài năng biểu diễn
+như anh.
 
-bi on jio ga-dt d-genst
-pich-poc-kit
+ai ria-li md-st iks-p-res
+mai dd-mi-ray-san for
+jio pd-fom-man-z
 
-Be careful not to stain 
-your clothes.
+You speak very good 
+English. You really 
+deserve the highest praise.
 
-Cẩn thận đừng làm bẩn
-áo
+Anh nói tiếng Anh rất
+giỏi, đáng được khen
+ngợi.
 
-bi ke-ful not tu s-ten jio
-k-lau-ds
+jiu s-pich-k ưe-ri gud
+ing-lich. jiu ria-li đi-zơu
+dơ hai-its p-rêis
 
-Be sure not to attempt 
-to guess a girl's mind.
+My compliments on your success.
 
-Tuyệt đối đừng có ý độ
-phỏng đoán tấm lòng
-của con gái.
+Xin chúc mừng thành Xin chúc mừng thành
 
-bi sud not tu at-tem-pt
-tu get-s dgdn-s mai-d
+mai com-pli-mânts on jio
+sdk-ses
 
-Be aware! Danger is 
-here.
+You are quite good with 
+your hands.
 
-Coi chừng! Chỗ này
-nguy hiểm.
+Ảnh thật khéo tay.
 
-bi d-woe! Den-chờ iz hiơ
+jiu a koai gud witd jio
+hen-dz
 
-Don't get fresh! 
+You have good taste!
 
-Không dược bừa bãi!
+Anh thật có con mắt
+thẩm mỹ!
 
-dont get f-ret
+jiu he-vd gud tei-st
 
-Don't lose your head! 
+Lucky of you!
 
-Không dược mê muội!
+Anh thật may mắn!
 
-dont lu-z jio hed
+lac-ki df jiu
 
-Don’t try any tricks!
+You look cool in that 
+shirt!
 
-Đừng giở trò!
+Ảnh mặc chiếc áo đó
+trông thật bảnh bao!
 
-đônt troai e-ni trich-ks
+Ảnh mặc chiếc áo đó
+trông thật bảnh bao!
 
-Mind out! 
+Super!
 
-Cẩn thậnl
+Đẹp quá!
 
-mai-đ aot
+siu-pơ
 
-Mind the wet paint!
+Wonderful!
 
-Chú ý, sơn chưa khô/
+Tuyệt vời!
 
-mai-đ dơ woét pêint
+woăn-đơ-ful
 
-Look out! 
+Oh, you look great!
 
-Cẩn thận!
+Ô, trông anh thật tuyệt!
 
-luk ao-t
+ÔU, jiu luk g-rết
 
-Mind your own business!
+Your thesis is excellent.
 
-Đừng nhiều chuyện!
+Bài luận văn của anh
+thật xuất sắc
 
-mai-đ jio ôn bi-zi-nis
+jio thi-sis iz ếk-sơ-lầnt
 
-Watch out!
+You're doing great!
 
-Chú ý!
+Anh làm rất tốt!
 
-wat-ch ao-t
+jiu-a đuing g-rết
 
-Watch your step! 
+That was quite an 
+evening.
 
-Đi đường cẩn thận!
+Buổi dạ hội thật tuyệt
+vời.
 
-goat-ch jio s-tep
-
-Watch yourself!
-
-Chú ý hơnỉ
-
-wat-ch h jio-seo-lf
-
-You stay out of it! 
-
-Anh đừng tham gia vào
-chuyện này!
-
-jiu s-tay ao-t <jf it
-
-You'd better stay a way from it. 
-
-Tốt nhất anh tránh xa nó.
-
-jiu-đ bet-tờ s-tây ơ wêi from i`
+dat wơz koai ơn i-vining.
+ `
 export default async (req, res) => {
     try {
         let arrFN = [];
