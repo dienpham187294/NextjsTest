@@ -122,7 +122,7 @@ export default async (req, res) => {
             arrFN.push({
                 "EN": arr[i],
                 "VN": arr2[i / 2],
-                "IPA": arr[i + 1],
+                "IPA": arr[i + 1]
             })
         }
         res.status(200).json({ success: true, data: arrFN })
