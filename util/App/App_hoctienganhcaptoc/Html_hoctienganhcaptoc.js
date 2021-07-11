@@ -17,11 +17,11 @@ export default function Show_Demo_Sentence_Basic(OBJ_INPUT) {
     useEffect(() => {
         setTimeout(() => {
             const parsed = queryString.parse(window.location.search);
-            // alert(parsed["token"])
+            alert(parsed["token"])
             // if (parsed["token"].indexOf("187") !== -1 && parsed["token"].indexOf("294") !== -1) {
             alert("Welcome " + parsed["name"])
             try {
-                if (parsed["name"] !== undefined && parsed["name"].length > 3) { SET_Name(parsed["name"]) }
+                { SET_Name(parsed["name"]) }
             } catch (error) {
                 console.log("e")
             }
