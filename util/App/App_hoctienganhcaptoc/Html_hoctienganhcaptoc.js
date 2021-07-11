@@ -15,16 +15,17 @@ export default function Show_Demo_Sentence_Basic(OBJ_INPUT) {
     const [ARanking, SET_Ranking] = useState([])
     const [Status, SET_Status] = useState(0)
     useEffect(() => {
-        const parsed = queryString.parse(location.search);
-        if (parsed["token"].indexOf("187") !== -1 && parsed["token"].indexOf("294") !== -1) {
-            try {
-                if (parsed["name"] !== undefined && parsed["name"].length > 3) { SET_Name(parsed["name"]) }
-            } catch (error) {
-                console.log("e")
+        setTimeout(() => {
+            const parsed = queryString.parse(location.search);
+            if (parsed["token"].indexOf("187") !== -1 && parsed["token"].indexOf("294") !== -1) {
+                try {
+                    if (parsed["name"] !== undefined && parsed["name"].length > 3) { SET_Name(parsed["name"]) }
+                } catch (error) {
+                    console.log("e")
+                }
             }
-
-        }
-        GET_Ranking(SET_Ranking)
+            GET_Ranking(SET_Ranking)
+        }, 2000)
     }, [Status])
     try {
         return (
@@ -45,7 +46,7 @@ export default function Show_Demo_Sentence_Basic(OBJ_INPUT) {
                     }}>
                     <hr />
 
-                    {Name === "" ? "Sai địa chỉ" :
+                    {Name === "" ? "Loading..." :
                         <div>
                             <b>Xin chào: {Name}</b>
                             <select onChange={(e) => {
