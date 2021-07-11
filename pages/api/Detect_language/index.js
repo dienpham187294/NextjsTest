@@ -1,182 +1,142 @@
-// import { connectToDatabase } from '../../../util/mongodb'
-// // const nodemailer = require("nodemailer");
-const LanguageDetect = require('languagedetect');
-let strinout = `Glad to know/ meet you.
 
-Rất vui được làm quen (gặp) với anh.
+let strinout = `Be careful! 
 
-g-leđ tu nôu / mit jiu
+Coi chừng!
 
-Hi! 
+bi ke-ful
 
-Xin chào!
+Be careful of the banana skin.
 
-hai
+cẩn thận vỏ chuối.
 
-Happy to know you. 
+bi ke-ful ơp de bơ-na-nờ s-kin
 
-Rất vui được làm quen với anh. 
+Be ready for the traffic! 
 
-He-pi tu nôu jiu
+Coi chừng xe!
 
-How do you do? 
+bi ret-đi for de tre-fik
 
-Xin chào.
+Beware of dogs! 
 
-Hao đu jiu đu?
+Coi chừng có chó!
 
-I’m glad to meet you.
+bi woe ơf doog-z
 
-Rất vui được gặp anh.
+Behave yourself!
 
-am g-leđ tu mit jiu
+Ngay thẳng một chút!
 
-I’m delighted to know you
+bi-hei-v jio-seo-lf
 
-Rất vui được biết anh.
+Be on your guard 
+against pickpocket!
 
-am đi-lai-tiđ tu nôu jiu.
+Đề phòng trộm cướp!
 
-I’m very pleased to make your acquaintance.
+bi on jio ga-dt d-genst
+pich-poc-kit
 
-Được biết anh tôi rất vui.
+Be careful not to stain 
+your clothes.
 
-am ve-ri pli-zđ tu mêk
-ịio ơk-quên-tâns
+Cẩn thận đừng làm bẩn
+áo
 
-I’ve heard so much 
-about you.
+bi ke-ful not tu s-ten jio
+k-lau-ds
 
-Nghe danh dã lâu.
+Be sure not to attempt 
+to guess a girl's mind.
 
-ai-vd hdd sou match dbao-t jiu.
+Tuyệt đối đừng có ý độ
+phỏng đoán tấm lòng
+của con gái.
 
-It’s pleasure to meet 
-you.
+bi sud not tu at-tem-pt
+tu get-s dgdn-s mai-d
 
-Rất vui dược gặp anh.
+Be aware! Danger is 
+here.
 
-itz ple-sd tu mit jiu.
+Coi chừng! Chỗ này
+nguy hiểm.
 
-Nice to meet you.
+bi d-woe! Den-chờ iz hiơ
 
-Được gặp anh tôi rất
-vui.
+Don't get fresh! 
 
-nai-s tu mit jiu
+Không dược bừa bãi!
 
-Yes, I think I do.
+dont get f-ret
 
-Vâng, tôi nghĩ tôi biết.
+Don't lose your head! 
 
-jes, ai thinh-k ai du.
+Không dược mê muội!
 
-No, I don’t think so, how 
-do you do?
+dont lu-z jio hed
 
-Không, tôi nghĩ không
-phải như vậy, xin chào.
+Don’t try any tricks!
 
-nou, ai dont thinh-k sou,
-hao du jiu du?
+Đừng giở trò!
 
-Yes, I think we have, 
-haven’t we?
+đônt troai e-ni trich-ks
 
-Vâng, tôi nghĩ chúng ta
-đã gặp nhau, đúng
-không?
+Mind out! 
 
-jes, ai thinh-k guy he-vd,
-he-vdnt, wi?
+Cẩn thậnl
 
-It’s a great pleasure to 
-have the honour of 
-making your 
-acquaintance.
+mai-đ aot
 
-Rất hân hạnh dược làm
-quen với anh.
+Mind the wet paint!
 
-itz g-ret ple-sd tu he-v dd o-nơ ơf mêch-king jio ơkquên-tâns
+Chú ý, sơn chưa khô/
 
-It’s a privilege to know you. 
+mai-đ dơ woét pêint
 
-Rất vinh hạnh được biết anh.
+Look out! 
 
-itz ơpri-vi-li-dz tu nôu
-jiu.`
+Cẩn thận!
+
+luk ao-t
+
+Mind your own business!
+
+Đừng nhiều chuyện!
+
+mai-đ jio ôn bi-zi-nis
+
+Watch out!
+
+Chú ý!
+
+wat-ch ao-t
+
+Watch your step! 
+
+Đi đường cẩn thận!
+
+goat-ch jio s-tep
+
+Watch yourself!
+
+Chú ý hơnỉ
+
+wat-ch h jio-seo-lf
+
+You stay out of it! 
+
+Anh đừng tham gia vào
+chuyện này!
+
+jiu s-tay ao-t <jf it
+
+You'd better stay a way from it. 
+
+Tốt nhất anh tránh xa nó.
+
+jiu-đ bet-tờ s-tây ơ wêi from i`
 export default async (req, res) => {
-
-    // const lngDetector = new LanguageDetect();
-    // // const { db } = await connectToDatabase();
-    // // lngDetector.detect('nam', 2)
-    // try {
-    //     let ARR_output = [];
-    //     let ARR_output_VN = [];
-    //     let Arr_ouput_Arr = []
-    //     ARR_Input.forEach(e => {
-    //         let Obj = lngDetector.detect(e, 1)
-    //         try {
-    //             if (Obj[0][0] === "vietnamese") {
-    //                 ARR_output_VN.push({
-    //                     "intinial": e,
-    //                     "detect": Obj[0][0]
-    //                 })
-    //             } else {
-    //                 ARR_output.push({
-    //                     "intinial": e,
-    //                     "detect": Obj[0][0]
-    //                 })
-    //             }
-    //         } catch (error) {
-    //             console.log(error)
-    //         }
-
-    //     })
-    //     let j = -1
-    //     for (let i = 0; i < ARR_output.length; i++) {
-    //         let e = ARR_output[i]["intinial"].charAt(0);
-    //         if (e !== e.toLowerCase()) {
-    //             j++;
-    //             Arr_ouput_Arr[j] = []
-    //         }
-    //         Arr_ouput_Arr[j].push(ARR_output[i]["intinial"]);
-    //     }
-    //     let arrR = []
-    //     Arr_ouput_Arr.forEach((e, e_i) => {
-    //         let EN = ""
-    //         let IPA = ""
-    //         let i = 0
-    //         e.forEach((ee) => {
-    //             let finalChart = ee.split(" ").join("").slice(-1);
-    //             if ((finalChart === "." || finalChart === '?' || finalChart === '!') && i === 0) {
-    //                 i = 1
-    //             }
-    //             if (i === 2) {
-    //                 IPA += ee
-    //             }
-    //             if (i === 0) {
-    //                 EN += ee
-    //             }
-    //             if (i === 1) {
-    //                 EN += ee;
-    //                 i = 2
-    //             }
-    //         })
-    //         let VN_FN = "";
-    //         try {
-    //             VN_FN = ARR_output_VN[e_i]["intinial"]
-    //         } catch (error) {
-    //             console.log("e")
-    //         }
-    //         arrR.push({ "EN": EN, "IPA": IPA, "VN": VN_FN })
-    //     })
-    //     res.status(200).json({ success: true, data: arrR })
-    // } catch (error) {
-    //     console.log(error)
-    //     res.status(400).json({ success: false })
-    // }
     try {
         let arrFN = [];
         let arr = strinout.split("\n\n")
@@ -189,6 +149,7 @@ export default async (req, res) => {
         }
         res.status(200).json({ success: true, data: arrFN })
     } catch (error) {
+        console.log(error)
         res.status(400).json({ success: false })
     }
 
