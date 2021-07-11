@@ -17,7 +17,12 @@ export default function Show_Demo_Sentence_Basic(OBJ_INPUT) {
     useEffect(() => {
         const parsed = queryString.parse(location.search);
         if (parsed["token"].indexOf("187") !== -1 && parsed["token"].indexOf("294") !== -1) {
-            SET_Name(parsed["name"])
+            try {
+                if (parsed["name"] !== undefined && parsed["name"].length > 3) { SET_Name(parsed["name"]) }
+            } catch (error) {
+                console.log("e")
+            }
+
         }
         GET_Ranking(SET_Ranking)
     }, [Status])
@@ -204,7 +209,7 @@ async function GET_Ranking(SET_Ranking) {
 }
 async function Push_Ranking(Name, SET_Ranking) {
     try {
-        if (Name !== "") {
+        if (Name.length > 3) {
             const res = await fetch(Linkapi + "api/Xep_hang/Push_ranking?name=" + Name, {
                 method: 'GET',
                 headers: {
@@ -224,7 +229,7 @@ function Show_ranking(Arr) {
         return (
             <div>
                 {Arr.map((e, i) =>
-                    <p>Hạng {i + 1}-  {e["name"]} - Số điểm: {e["score"]}</p>
+                    <p key={i}>Hạng {i + 1}-  {e["name"]} - Số điểm: {e["score"]}</p>
                 )}
             </div>
         )
