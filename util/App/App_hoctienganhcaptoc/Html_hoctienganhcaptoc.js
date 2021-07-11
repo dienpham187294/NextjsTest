@@ -17,16 +17,9 @@ export default function Show_Demo_Sentence_Basic(OBJ_INPUT) {
     useEffect(() => {
         setTimeout(() => {
             const parsed = queryString.parse(window.location.search);
-            alert(parsed["token"])
-            // if (parsed["token"].indexOf("187") !== -1 && parsed["token"].indexOf("294") !== -1) {
-            alert("Welcome " + parsed["name"])
-            try {
-                { SET_Name(parsed["name"]) }
-            } catch (error) {
-                console.log("e")
+            if (parsed["token"].indexOf("187") !== -1 && parsed["token"].indexOf("294") !== -1) {
+                SET_Name("DIENPHAM")
             }
-            // }
-            GET_Ranking(SET_Ranking)
         }, 2000)
     }, [Status])
     try {
@@ -157,12 +150,6 @@ export default function Show_Demo_Sentence_Basic(OBJ_INPUT) {
                         </div>
                     }
                     <hr />
-
-                    <h5>Bảng xếp hạng</h5>
-                    <i>Đọc đúng mỗi câu tính là một điểm</i>
-                    <hr />
-                    {Show_ranking(ARanking)}
-                    <div></div>
                 </div>
                 <Dictaphone
                     Data={Data_Commands}
@@ -195,48 +182,4 @@ Array.prototype.PickRandom = function () {
 }
 
 
-async function GET_Ranking(SET_Ranking) {
-    try {
-        const res = await fetch(Linkapi + "api/Xep_hang", {
-            method: 'GET',
-            headers: {
-                "Accept": "application/json",
-                "Content-Type": "application/json"
-            }
-        })
-        let data = await res.json();
-        SET_Ranking(data["data"])
-    } catch (error) {
-        console.log(error)
-    }
-}
-async function Push_Ranking(Name, SET_Ranking) {
-    try {
-        if (Name.length > 3) {
-            const res = await fetch(Linkapi + "api/Xep_hang/Push_ranking?name=" + Name, {
-                method: 'GET',
-                headers: {
-                    "Accept": "application/json",
-                    "Content-Type": "application/json"
-                }
-            })
-            let data = await res.json();
-            SET_Ranking(data["data"])
-        }
-    } catch (error) {
-        console.log(error)
-    }
-}
-function Show_ranking(Arr) {
-    try {
-        return (
-            <div>
-                {Arr.map((e, i) =>
-                    <p key={i}>Hạng {i + 1}-  {e["name"]} - Số điểm: {e["score"]}</p>
-                )}
-            </div>
-        )
-    } catch (error) {
-        return ""
-    }
-}
+
