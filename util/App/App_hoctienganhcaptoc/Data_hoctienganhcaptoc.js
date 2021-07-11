@@ -3,42 +3,42 @@ export default [
         "title": "Chào hỏi",
         "data": [
             {
-                "EN": "Afternoon! ",
+                "EN": "Afternoon!",
                 "IPA": "a-f-td-nun",
                 "VN": "Chào anh! (Buổi chiều)"
             },
             {
-                "EN": "Evening! ",
+                "EN": "Evening!",
                 "IPA": "i-vi-ning",
                 "VN": "Chào anh! (Buổi tối)"
             },
             {
-                "EN": "Good morning! ",
+                "EN": "Good morning!",
                 "IPA": "gud mo-ning",
                 "VN": "Chào buổi sáng!"
             },
             {
-                "EN": "Good afternoon. ",
+                "EN": "Good afternoon.",
                 "IPA": "gud a-f-td-nun",
                 "VN": "Chào buổi chiều!"
             },
             {
-                "EN": "Good evening! ",
+                "EN": "Good evening!",
                 "IPA": "gud i-vi-ning",
                 "VN": "Chào buổi tối!"
             },
             {
-                "EN": "Glad to see you again. ",
+                "EN": "Glad to see you again.",
                 "IPA": "gled tu si jiu d-gen",
                 "VN": "Rất vui lại được gặp anh."
             },
             {
-                "EN": "Nice to meet you. ",
+                "EN": "Nice to meet you.",
                 "IPA": "nai-s tu mit jiu",
                 "VN": "Thật vui được gặp anh."
             },
             {
-                "EN": "Morning! ",
+                "EN": "Morning!",
                 "IPA": "mo-ning",
                 "VN": "Chào buổi sáng!"
             },
@@ -48,22 +48,22 @@ export default [
                 "VN": "Rất vui lại được gặp anh."
             },
             {
-                "EN": "Hello! ",
+                "EN": "Hello!",
                 "IPA": "",
                 "VN": "Chào anh!"
             },
             {
-                "EN": "Hi! ",
-                "IPA": "hai ",
+                "EN": "Hi!",
+                "IPA": "hai",
                 "VN": "Chào anh!"
             },
             {
-                "EN": "Hi there! ",
-                "IPA": "hai de ",
+                "EN": "Hi there!",
+                "IPA": "hai de",
                 "VN": "Xin chào!"
             },
             {
-                "EN": "How are you? ",
+                "EN": "How are you?",
                 "IPA": "hao a jiu",
                 "VN": "Xin chào!"
             },
@@ -73,19 +73,19 @@ export default [
                 "VN": "Lâu rồi không gặp!"
             },
             {
-                "EN": "Long time no see. ",
+                "EN": "Long time no see.",
                 "IPA": "loong tham nâu si",
                 "VN": "Lâu rồi không gặp."
             },
             {
-                "EN": "How do you do! ",
+                "EN": "How do you do!",
                 "IPA": "hao đu jiu đu",
                 "VN": "Chào anh! (Gặp mặt lần đầu)"
             },
             {
-                "EN": "How do you feel today? ",
+                "EN": "How do you feel today?",
                 "IPA": "hao đu jiu fu tu-đêi",
-                "VN": "Hôm nay anh cảm thấy thế nào? "
+                "VN": "Hôm nay anh cảm thấy thế nào?"
             },
             {
                 "EN": "What brings you here today?",
@@ -108,42 +108,42 @@ export default [
                 "VN": "Anh khoẻ không?"
             },
             {
-                "EN": "How are you doing? ",
+                "EN": "How are you doing?",
                 "IPA": "hao a jiu đu-ing?",
                 "VN": "Anh sống như thế nào?"
             },
             {
-                "EN": "How are you keeping? ",
+                "EN": "How are you keeping?",
                 "IPA": "hao a jiu kip-ping?",
                 "VN": "Anh sống như thế nào?"
             },
             {
-                "EN": "How’s everything? ",
+                "EN": "How’s everything?",
                 "IPA": "haoz e-ve-ri-thing?",
                 "VN": "Gần đây thế nào?"
             },
             {
-                "EN": "How’s life? ",
+                "EN": "How’s life?",
                 "IPA": "haoz lai-ph",
                 "VN": "Sông thế nào?"
             },
             {
-                "EN": "How’s things? ",
+                "EN": "How’s things?",
                 "IPA": "haoz thing-z?",
                 "VN": "Gần đây thế nào?"
             },
             {
-                "EN": "What are you doingthese days? ",
+                "EN": "What are you doingthese days?",
                 "IPA": "wat a jiu đu-ing diz đêiz?",
                 "VN": "Những ngày này anh bận gì?"
             },
             {
-                "EN": "Nothing special. ",
+                "EN": "Nothing special.",
                 "IPA": "na-thing spe-sơl",
                 "VN": "Không có chuyện gì đặc biệt."
             },
             {
-                "EN": "Surviving, thanks. ",
+                "EN": "Surviving, thanks.",
                 "IPA": "sơ-vai-ving, thanh-ks",
                 "VN": "Củng tạm, cảm ơn."
             }
@@ -218,9 +218,9 @@ export default [
                 "IPA": "let mi in-trơ-điu-s maiseo-lf, bai dơ guây."
             },
             {
-                "EN": "May I introduce myself:Donald Emory. ",
+                "EN": "May I introduce myself:Donald Emory.",
                 "VN": "Xin cho phép tôi tự giới thiệu: tôi là Donald Emory",
-                "IPA": "Mêi ai in-trơ-điu-s mai-seo-lf Đô-na-ld E-mơ-r\n"
+                "IPA": "Mêi ai in-trơ-điu-s mai-seo-lf Đô-na-ld E-mơ-r"
             }
         ]
     },
@@ -233,17 +233,17 @@ export default [
                 "IPA": "g-leđ tu nôu / mit jiu"
             },
             {
-                "EN": "Hi! ",
+                "EN": "Hi!",
                 "VN": "Xin chào!",
                 "IPA": "hai"
             },
             {
-                "EN": "Happy to know you. ",
-                "VN": "Rất vui được làm quen với anh. ",
+                "EN": "Happy to know you.",
+                "VN": "Rất vui được làm quen với anh.",
                 "IPA": "He-pi tu nôu jiu"
             },
             {
-                "EN": "How do you do? ",
+                "EN": "How do you do?",
                 "VN": "Xin chào.",
                 "IPA": "Hao đu jiu đu?"
             },
@@ -298,7 +298,7 @@ export default [
                 "IPA": "itz g-ret ple-sd tu he-v dd o-nơ ơf mêch-king jio ơkquên-tâns"
             },
             {
-                "EN": "It’s a privilege to know you. ",
+                "EN": "It’s a privilege to know you.",
                 "VN": "Rất vinh hạnh được biết anh.",
                 "IPA": "itz ơpri-vi-li-dz tu nôu jiu."
             }
@@ -358,17 +358,17 @@ export default [
                 "IPA": "dont gi-vcf it d se-can thot"
             },
             {
-                "EN": "Don’t let it distress you. ",
+                "EN": "Don’t let it distress you.",
                 "VN": "Đừng buồn về chuyện này.",
                 "IPA": "dont let it dis-trets jiu"
             },
             {
-                "EN": "Don’t let it worry you. ",
+                "EN": "Don’t let it worry you.",
                 "VN": "Đừng giằn vặt vì chuyện đó.",
                 "IPA": "dont let ito wud-ri jiu"
             },
             {
-                "EN": "Don’t take it too hard. ",
+                "EN": "Don’t take it too hard.",
                 "VN": "Đừng quá nghĩ ngợi.",
                 "IPA": "dont tek it thu hat-d"
             },
@@ -378,7 +378,7 @@ export default [
                 "IPA": "đônt tếk it tu hat"
             },
             {
-                "EN": "I shouldn’t worry, if I were you. ",
+                "EN": "I shouldn’t worry, if I were you.",
                 "VN": "Nếu tôi là anh, tôi sẽ không lo lắng.",
                 "IPA": "ai shut-đần wuô-ri, if ai wơ ju"
             },
@@ -388,22 +388,22 @@ export default [
                 "IPA": "am sua it-l be ôl rai-t"
             },
             {
-                "EN": "I’m sure things will turn out all right. ",
+                "EN": "I’m sure things will turn out all right.",
                 "VN": "Tôi tin cuối cùng sự việc sẽ tốt hơn",
                 "IPA": "am sua thingz wil tơn-ao-t ôl rai-t"
             },
             {
-                "EN": "It really isn’t worth mentioning. ",
+                "EN": "It really isn’t worth mentioning.",
                 "VN": "Chuyện này không đáng nhắc đến.",
                 "IPA": "it ria-li i-zần wơd mensần-nin"
             },
             {
-                "EN": "It is not as bad as all that. ",
+                "EN": "It is not as bad as all that.",
                 "VN": "Vẫn không tệ như thế.",
                 "IPA": "it iz nót ez bed ez dat"
             },
             {
-                "EN": "Please don’t worry. ",
+                "EN": "Please don’t worry.",
                 "VN": "Xin đừng lo.",
                 "IPA": "pli-z đônt wo-ri"
             },
@@ -433,29 +433,29 @@ export default [
                 "IPA": "de, de"
             },
             {
-                "EN": "Try not to worry. ",
+                "EN": "Try not to worry.",
                 "VN": "Hãy cố thoải mái.",
                 "IPA": "troai not tu Uìô-ri"
             },
             {
-                "EN": "You were just unlucky. ",
+                "EN": "You were just unlucky.",
                 "VN": "Chỉ là sô' anh không may mà thôi",
                 "IPA": "jiu wơ jat-st ăn-lắc-ki"
             },
             {
-                "EN": "You need have no fears. ",
+                "EN": "You need have no fears.",
                 "VN": "Anh không cần lo lắng.",
                 "IPA": "jiu nid he-ươ nâu fia-z"
             },
             {
-                "EN": "Well, you know it’s happened to me. ",
+                "EN": "Well, you know it’s happened to me.",
                 "VN": "Được rồi, anh biết tôi củng mong gặp chuyện này",
                 "IPA": "woeol, jiu nâu itz hep-pân-đ tu mi"
             },
             {
                 "EN": "You’re not alone there, I have that trouble, too.",
                 "VN": "Không phải chỉ mình anh xui xẻo như vậy. Tôi củng gặp rắc này.",
-                "IPA": "jiu-a not Ơ-Lon de, ai he-vơ dat tro-bồ, thu  "
+                "IPA": "jiu-a not Ơ-Lon de, ai he-vơ dat tro-bồ, thu "
             }
         ]
     }
@@ -464,22 +464,22 @@ export default [
         "title": "Đồng ý",
         "data": [
             {
-                "EN": "By all means. ",
+                "EN": "By all means.",
                 "VN": "Đương nhiên có thể.",
                 "IPA": "bai ôl minz"
             },
             {
-                "EN": "Certainly. ",
+                "EN": "Certainly.",
                 "VN": "Đương nhiên,",
                 "IPA": "sơ-tần-li"
             },
             {
-                "EN": "Certainly I will. ",
+                "EN": "Certainly I will.",
                 "VN": "Tất nhiên tôi sẽ.",
                 "IPA": "sơ-tần-li ai wil"
             },
             {
-                "EN": "I'd be happy to help you. ",
+                "EN": "I'd be happy to help you.",
                 "VN": "Tôi rất sẵn lòng giúp anh.",
                 "IPA": "ai-đ bỉ hep-pi tu he-lp jiu"
             },
@@ -489,7 +489,7 @@ export default [
                 "IPA": "ai si nâu ob-jêc-sần wat-sôu-e-vơ"
             },
             {
-                "EN": "I see no reason why not. ",
+                "EN": "I see no reason why not.",
                 "VN": "Tôi không thấy có lý do gì mà không làm như vậy.",
                 "IPA": "ai si nâu ri-zừn woai not"
             },
@@ -520,7 +520,7 @@ export default [
             },
             {
                 "EN": "Yes, I will.",
-                "VN": "Văng, tôi sẽ.",
+                "VN": "Vâng, tôi sẽ.",
                 "IPA": "jes, ai wil"
             },
             {
@@ -536,7 +536,7 @@ export default [
             {
                 "EN": "Yes, I don’t see why not.",
                 "VN": "Vâng, tại sao không muốn cơ chứ?",
-                "IPA": "ịes, ai đôn si woai not "
+                "IPA": "ịes, ai đôn si woai not"
             }
         ]
     }, {
@@ -568,14 +568,14 @@ export default [
                 "IPA": "am not sua ai ken, ak-tua-li"
             },
             {
-                "EN": "I wouldn't be willing. ",
+                "EN": "I wouldn't be willing.",
                 "VN": "Tôi không muốn.",
                 "IPA": "ai wuđ-dần bi wil-ling"
             },
             {
                 "EN": "To be honest, I’d be rather reluctant to see a film.",
                 "VN": "Nói thực, tôi rất không muôn đi xem phim.",
-                "IPA": "tu bi o-nist, ai-đ bi ra-dơ ri-lắc-tần tu si ơfi-lm "
+                "IPA": "tu bi o-nist, ai-đ bi ra-dơ ri-lắc-tần tu si ơfi-lm"
             }
         ]
     },
@@ -589,7 +589,7 @@ export default [
                 "IPA": "đônt get jio hôp-s thu hai"
             },
             {
-                "EN": "Fat chance. ",
+                "EN": "Fat chance.",
                 "VN": "Cơ hội rất ít.",
                 "IPA": "fet tran-s"
             },
@@ -619,7 +619,7 @@ export default [
                 "IPA": "am ra-dơ đao-ful woe-dơ wi-l get de on tham."
             },
             {
-                "EN": "I have to say I'm rather skeptical. ",
+                "EN": "I have to say I'm rather skeptical.",
                 "VN": "Tôi phải nói là tôi tương đối nghi ngờ.",
                 "IPA": "ai he-vơ tu sây am ra-dơ s-kep-ti-kờ"
             },
@@ -629,14 +629,14 @@ export default [
                 "IPA": "nâu wêi"
             },
             {
-                "EN": "The accident is doomed to happen. ",
+                "EN": "The accident is doomed to happen.",
                 "VN": "Sự cố này chắc chắn sẽ xảy ra.",
                 "IPA": "dơ ach-si-dần-t iz đum-đ tu hep-pần"
             },
             {
                 "EN": "To tell you the truth, I'm rather pessimistic about it.",
                 "VN": "Nói thực, tôi tương đối bi quan về chuyện này.",
-                "IPA": "tu theo-l jiu dơ truđ, am ra-dơpe-si-mi-s-tik ơbao-t it. "
+                "IPA": "tu theo-l jiu dơ truđ, am ra-dơpe-si-mi-s-tik ơbao-t it."
             }
         ]
     }
@@ -644,7 +644,7 @@ export default [
         "title": "Nhắc nhở",
         "data": [
             {
-                "EN": "Be careful! ",
+                "EN": "Be careful!",
                 "VN": "Coi chừng!",
                 "IPA": "bi ke-ful"
             },
@@ -654,12 +654,12 @@ export default [
                 "IPA": "bi ke-ful ơp de bơ-na-nờ s-kin"
             },
             {
-                "EN": "Be ready for the traffic! ",
+                "EN": "Be ready for the traffic!",
                 "VN": "Coi chừng xe!",
                 "IPA": "bi ret-đi for de tre-fik"
             },
             {
-                "EN": "Beware of dogs! ",
+                "EN": "Beware of dogs!",
                 "VN": "Coi chừng có chó!",
                 "IPA": "bi woe ơf doog-z"
             },
@@ -689,13 +689,13 @@ export default [
                 "IPA": "bi d-woe! Den-chờ iz hiơ"
             },
             {
-                "EN": "Don't get fresh! ",
-                "VN": "Không dược bừa bãi!",
+                "EN": "Don't get fresh!",
+                "VN": "Không được bừa bãi!",
                 "IPA": "dont get f-ret"
             },
             {
-                "EN": "Don't lose your head! ",
-                "VN": "Không dược mê muội!",
+                "EN": "Don't lose your head!",
+                "VN": "Không được mê muội!",
                 "IPA": "dont lu-z jio hed"
             },
             {
@@ -704,7 +704,7 @@ export default [
                 "IPA": "đônt troai e-ni trich-ks"
             },
             {
-                "EN": "Mind out! ",
+                "EN": "Mind out!",
                 "VN": "Cẩn thậnl",
                 "IPA": "mai-đ aot"
             },
@@ -714,7 +714,7 @@ export default [
                 "IPA": "mai-đ dơ woét pêint"
             },
             {
-                "EN": "Look out! ",
+                "EN": "Look out!",
                 "VN": "Cẩn thận!",
                 "IPA": "luk ao-t"
             },
@@ -729,7 +729,7 @@ export default [
                 "IPA": "wat-ch ao-t"
             },
             {
-                "EN": "Watch your step! ",
+                "EN": "Watch your step!",
                 "VN": "Đi đường cẩn thận!",
                 "IPA": "goat-ch jio s-tep"
             },
@@ -739,12 +739,12 @@ export default [
                 "IPA": "wat-ch h jio-seo-lf"
             },
             {
-                "EN": "You stay out of it! ",
+                "EN": "You stay out of it!",
                 "VN": "Anh đừng tham gia vào chuyện này!",
                 "IPA": "jiu s-tay ao-t <jf it"
             },
             {
-                "EN": "You'd better stay a way from it. ",
+                "EN": "You'd better stay a way from it.",
                 "VN": "Tốt nhất anh tránh xa nó.",
                 "IPA": "jiu-đ bet-tờ s-tây ơ wêi from i"
             }
@@ -754,7 +754,7 @@ export default [
         "title": "Khen ngợi",
         "data": [
             {
-                "EN": "Aren't you the lucky one! ",
+                "EN": "Aren't you the lucky one!",
                 "VN": "Ảnh thật may mắn!",
                 "IPA": "an-t jiu dd lac-ki oan"
             },
@@ -774,7 +774,7 @@ export default [
                 "IPA": "ai du thing-k itz cham-ming"
             },
             {
-                "EN": "It looks nice. ",
+                "EN": "It looks nice.",
                 "VN": "Trông thật tuyệt vời.",
                 "IPA": "it luks nais"
             },
@@ -841,7 +841,177 @@ export default [
             {
                 "EN": "That was quite an  evening.",
                 "VN": "Buổi dạ hội thật tuyệt vời.",
-                "IPA": "dat wơz koai ơn i-vi-ning.  "
+                "IPA": "dat wơz koai ơn i-vi-ning. "
+            }
+        ]
+    },
+    {
+        "title": "Đáp lại",
+        "data": [
+            {
+                "EN": "Cut it out!",
+                "VN": " Đừng nói mò!",
+                "IPA": "cắt it ao-t"
+            },
+            {
+                "EN": "I'm just very lucky.",
+                "VN": "Tôi chỉ may mắn mà thôi.",
+                "IPA": "am ja-st ve-ri lắc-ki"
+            },
+            {
+                "EN": "I'm flattered.",
+                "VN": "Quá khen",
+                "IPA": "am flet-tờ-đ"
+            },
+            {
+                "EN": "Oh, you flatter me.",
+                "VN": "ồ, quá khen.",
+                "IPA": "ôu, jiu flet-tờ mi"
+            },
+            {
+                "EN": "It's very nice of you to  say so.",
+                "VN": "Cảm ơn anh nói như vậy.",
+                "IPA": "itz ve-ri nais ơf jiu tu sêi sou"
+            },
+            {
+                "EN": "Oh, I have a lot to learn  yet.",
+                "VN": "ồ, tôi còn phải học tập rất nhiều.",
+                "IPA": "ÔU, ai he-V Ơ lot tu lơn jet"
+            },
+            {
+                "EN": "Oh, it’s nothing.",
+                "VN": "ồ, không có gì.",
+                "IPA": "ÔU, itz na-thing"
+            },
+            {
+                "EN": "Oh, thank you very  much.",
+                "VN": "ồ, cảm ơn.",
+                "IPA": "ÔU, thanh-k jiu ve-ri match"
+            },
+            {
+                "EN": "Thank you, but I really  think the credit should  go to my teacher.",
+                "VN": "Cảm ơn, nhưng quả thực tôi cảm thấy điều này phải qua về công lao của thày giáo tôi.",
+                "IPA": "thanh-k jiu, bât ai ria-li thinh-k dơ c-re-đits Silt gôu tu mai ti-chơ."
+            },
+            {
+                "EN": "Thank you, you over  praise me.",
+                "VN": "Cảm ơn, anh quá khen.",
+                "IPA": "thanh-k jiu ,jiu ÔU-VƠ prêi mi"
+            },
+            {
+                "EN": "Thank you very much for saying so.",
+                "VN": "Cảm ơn anh nói vậy.",
+                "IPA": "thanh-k jiu ve-ri match for sêi-ing sôu"
+            },
+            {
+                "EN": "Thanks, it's nothing  special.",
+                "VN": "Cảm ơn, không có gì đặc biệt.",
+                "IPA": "thanh-ks, itz na-thing spe-sơl."
+            },
+            {
+                "EN": "Oh, it was nothing. Anyone could have done  it, really.",
+                "VN": "Ô, không có gì. Ai củng làm như vậy, thật đấy.",
+                "IPA": "ÔU, it wơz na-thing. Eni\u0002oăn cuđ he-vơ đản it, ria\u0002li"
+            },
+            {
+                "EN": "Thank you, but it's not really all that good.",
+                "VN": "Cảm ơn anh, nhưng quả thực tôi không tốt như thế",
+                "IPA": "thanh-k jiu, bât itz not ria-li ôl det guđ."
+            }
+        ]
+    },
+    {
+        "title": "Chúc tụng"
+        , "data": [
+            {
+                "EN": "All the best in your new job.",
+                "VN": "Chúc anh thuận lợi trên cương vị mới.",
+                "IPA": "ol do bets in jio niu job"
+            },
+            {
+                "EN": "All the very best!",
+                "VN": "Chúc vạn sự như ý!",
+                "IPA": "ol dơ ve-ri best"
+            },
+            {
+                "EN": "Bless you!",
+                "VN": "Chúc mừng anh!",
+                "IPA": "b-les jiu"
+            },
+            {
+                "EN": "Every success in your new career.",
+                "VN": "Chúc anh luôn thuận lợitrong sự nghiệp mới",
+                "IPA": "e-ve-ri sdkses in jio niukd-ri-d"
+            },
+            {
+                "EN": "Every success with you.",
+                "VN": "Chúc anh thành côngtrong mọi lĩnh vực",
+                "IPA": "e-ve-ri sdkses witd jiu"
+            },
+            {
+                "EN": "Enjoy your trip!",
+                "VN": "Chúc chuyến đi vui vẻ!",
+                "IPA": "in-joi jio trip"
+            },
+            {
+                "EN": "Enjoy yourself!",
+                "VN": "Chúc anh sống vui vẻ!",
+                "IPA": "in-joi jio seo-lf"
+            },
+            {
+                "EN": "Good luck!",
+                "VN": "Chúc anh may mắn!",
+                "IPA": "gud lak"
+            },
+            {
+                "EN": "Good luck with you.",
+                "VN": "Chúc anh may mắn",
+                "IPA": "gut-d lak witd jiu"
+            },
+            {
+                "EN": "Have a good time.",
+                "VN": "Chúc vui vẻ.",
+                "IPA": "he-v d gud tham"
+            },
+            {
+                "EN": "Have a nice day.",
+                "VN": "Chúc một ngày vui vẻ",
+                "IPA": "he-v ơ nais đêi"
+            },
+            {
+                "EN": "I wish you success.",
+                "VN": "Chúc anh thành công",
+                "IPA": "ai wis jiu sơk-ses"
+            },
+            {
+                "EN": "ai wis jiu sơk-ses",
+                "VN": "Chúc anh thành công",
+                "IPA": "mêi jiu e-ve-ri sơk-ses"
+            },
+            {
+                "EN": "I wish you every success.",
+                "VN": "Chúc anh thuận lợi.",
+                "IPA": "ai wis jiu e-ve-ri sơk-ses"
+            },
+            {
+                "EN": "The best of luck.",
+                "VN": "Chúc anh may mắn",
+                "IPA": "dơ be-st ơflăk"
+            },
+            {
+                "EN": "The very best luck with you.",
+                "VN": "Chúc anh gặp may.",
+                "IPA": "dơ ưe-ri be-st lăk luitd jiu"
+            },
+            {
+                "EN": "Would you give Mr.Frank my best whishes?",
+                "VN": "Xin gửi lời chúc tới ông Frank giúp tôi được không?",
+                "IPA": "ut jiu gi-vơ mi-stơ Ph- ranh-k mai best wi-sis"
+            },
+            {
+                "EN": "The best wishes to your family",
+                "VN": "Cho tôi gửi lời chúc tới toàn thể gia đình.",
+                "IPA": "dơ best wi-sis tu jio fe-mi-li"
             }
         ]
     }

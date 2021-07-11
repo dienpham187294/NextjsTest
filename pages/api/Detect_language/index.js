@@ -1,146 +1,128 @@
 
-let strinout = `Aren't you the lucky one! 
+let strinout = `All the best in your new job. 
 
-Ảnh thật may mắn!
+ol do bets in jio niu job
 
-an-t jiu dd lac-ki oan
+All the very best! 
 
-Breathtaking!
+ol dơ ve-ri best
 
-Đẹp quá!
+Bless you! 
 
-bret-tek-king
+b-les jiu
 
-How clever/ lucky you 
-are!
+Every success in your 
+new career.
 
-Anh thật thông minh/
-may mắn.
+e-ve-ri sdkses in jio niu
+kd-ri-d
 
-hao kle-vd/ lac-ki jiu a
+Every success with you. 
 
-I do think it's charming.
+e-ve-ri sdkses witd jiu
 
-Tôi chắc chắn nó sẽ làm
-mọi người phải say mê.
+Enjoy your trip! 
 
-ai du thing-k itz chamming
+in-joi jio trip
 
-It looks nice. 
+Enjoy yourself! 
 
-Trông thật tuyệt vời.
+in-joi jio seo-lf
 
-it luks nais
+Good luck! 
 
-I really must express my 
-admiration for your 
-performance
+gud lak
 
-Tôi thực sự ước ao có
-được tài năng biểu diễn
-như anh.
+Good luck with you. 
 
-ai ria-li md-st iks-p-res
-mai dd-mi-ray-san for
-jio pd-fom-man-z
+gut-d lak witd jiu
 
-You speak very good 
-English. You really 
-deserve the highest praise.
+Have a good time.
 
-Anh nói tiếng Anh rất
-giỏi, đáng được khen
-ngợi.
+he-v d gud tharn
 
-jiu s-pich-k ưe-ri gud
-ing-lich. jiu ria-li đi-zơu
-dơ hai-its p-rêis
+Have a nice day. 
 
-My compliments on your success.
+he-v ơ nais đêi
 
-Xin chúc mừng thành Xin chúc mừng thành
+I wish you success. 
 
-mai com-pli-mânts on jio
-sdk-ses
+ai wis jiu sơk-ses
 
-You are quite good with 
-your hands.
+ai wis jiu sơk-ses
 
-Ảnh thật khéo tay.
+mêi jiu e-ve-ri sơk-ses
 
-jiu a koai gud witd jio
-hen-dz
+I wish you every success. 
 
-You have good taste!
+ai wis jiu e-ve-ri sơk-ses
 
-Anh thật có con mắt
-thẩm mỹ!
+The best of luck.
 
-jiu he-vd gud tei-st
+dơ be-st ơflăk
 
-Lucky of you!
+The very best luck with you.
 
-Anh thật may mắn!
+dơ ưe-ri be-st lăk luitd jiu
 
-lac-ki df jiu
+Would you give Mr.Frank my best whishes? 
 
-You look cool in that 
-shirt!
+ut jiu gi-vơ mi-stơ Ph- ranh-k mai best wi-sis
 
-Ảnh mặc chiếc áo đó
-trông thật bảnh bao!
+The best wishes to your family
 
-Ảnh mặc chiếc áo đó
-trông thật bảnh bao!
+dơ best wi-sis tu jio fe-mi-li
+==
+Chúc anh thuận lợi trên cương vị mới.
 
-Super!
+Chúc vạn sự như ý!
 
-Đẹp quá!
+Chúc mừng anh!
 
-siu-pơ
+Chúc anh luôn thuận lợi
+trong sự nghiệp mới
 
-Wonderful!
+Chúc anh thành công
+trong mọi lĩnh vực
 
-Tuyệt vời!
+Chúc chuyến đi vui vẻ!
 
-woăn-đơ-ful
+Chúc anh sống vui vẻ!
 
-Oh, you look great!
+Chúc anh may mắn!
 
-Ô, trông anh thật tuyệt!
+Chúc anh may mắn
 
-ÔU, jiu luk g-rết
+Chúc vui vẻ.
 
-Your thesis is excellent.
+Chúc một ngày vui vẻ
 
-Bài luận văn của anh
-thật xuất sắc
+Chúc anh thành công
 
-jio thi-sis iz ếk-sơ-lầnt
+Chúc anh thành công
 
-You're doing great!
+Chúc anh thuận lợi.
 
-Anh làm rất tốt!
+Chúc anh may mắn
 
-jiu-a đuing g-rết
+Chúc anh gặp may.
 
-That was quite an 
-evening.
+Xin gửi lời chúc tới ông Frank giúp tôi được không?
 
-Buổi dạ hội thật tuyệt
-vời.
-
-dat wơz koai ơn i-vining.
- `
+Cho tôi gửi lời chúc tới toàn thể gia đình.
+`
 export default async (req, res) => {
     try {
         let arrFN = [];
-        let arr = strinout.split("\n\n")
-        for (let i = 0; i < arr.length; i += 3) {
+        let Arr1 = strinout.split("==")
+
+        let arr = Arr1[0].split("\n\n")
+        let arr2 = Arr1[1].split("\n\n")
+        for (let i = 0; i < arr.length; i += 2) {
             arrFN.push({
-                "EN": arr[i].split("\n").join(" "),
-                "VN": arr[i + 1].split("\n").join(" "),
-                "IPA": arr[i + 2].split("\n").join(" "),
+                "EN": arr[i],
+                "VN": arr2[i / 2],
+                "IPA": arr[i + 1],
             })
         }
         res.status(200).json({ success: true, data: arrFN })
