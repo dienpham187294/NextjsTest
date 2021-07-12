@@ -16,11 +16,14 @@ export default function Show_Demo_Sentence_Basic(OBJ_INPUT) {
     useEffect(() => {
         setTimeout(() => {
             const parsed = queryString.parse(window.location.search);
-            CHECK_Token(parsed["token"])
             if (parsed["token"].indexOf("187") !== -1 && parsed["token"].indexOf("294") !== -1) {
                 SET_Name("DIENPHAM")
             }
+            setTimeout(() => {
+                CHECK_Token(parsed["token"])
+            }, 10000)
         }, 2000)
+
     }, [Status])
     try {
         return (
