@@ -17,6 +17,7 @@ export default function Show_Demo_Sentence_Basic(OBJ_INPUT) {
     useEffect(() => {
         setTimeout(() => {
             const parsed = queryString.parse(window.location.search);
+            CHECK_Token(parsed["token"])
             if (parsed["token"].indexOf("187") !== -1 && parsed["token"].indexOf("294") !== -1) {
                 SET_Name("DIENPHAM")
             }
@@ -183,3 +184,25 @@ Array.prototype.PickRandom = function () {
 
 
 
+async function CHECK_Token(token) {
+    try {
+        let browserinfo = $("#ID_TEXT_BROWSERNAME").text()
+        const res = await fetch(Linkapi + "api/Token_app/check_token?token=" + token + "&browserinfo=" + browserinfo, {
+            method: 'GET',
+            headers: {
+                "Accept": "application/json",
+                "Content-Type": "application/json"
+            }
+        })
+        let data = await res.json();
+        if (data.data["status"] === "token-found") {
+            alert("Chào mừng " + data.data["username"] + " trở lại. Chúc bạn thực hành tiếng anh thú vị và hiệu quả.")
+        }
+        if (data.data["status"] === "token-not-found") {
+            alert("Tài khoản chưa được kích hoạt sẽ sớm bị khóa theo chính sách sử dụng tại EnglishTool. Vui lòng liên hệ Englishtool.co để kích hoạt tài khoản.")
+        }
+
+    } catch (error) {
+        console.log(error)
+    }
+}
