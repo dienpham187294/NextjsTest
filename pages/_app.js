@@ -10,16 +10,14 @@ import List_IDs from "../util/List_IDs/List_IDs"
 import { async } from 'regenerator-runtime';
 // import $ from "jquery"
 const { detect } = require('detect-browser');
+const ip = require('ip');
 function MyApp({ Component, pageProps }) {
   const [Cookie, SET_Cookie] = useState("");
   const [Status, SET_Status] = useState(0)
   const browser = detect();
   useEffect(() => {
     if (browser) {
-      console.log(browser.name);
-      console.log(browser.version);
-      console.log(browser.os);
-      document.getElementById("ID_TEXT_BROWSERNAME").innerText = browser.name + browser.version + browser.os
+      document.getElementById("ID_TEXT_BROWSERNAME").innerText = browser.name + browser.version + browser.os + ip.address()
     }
     try {
       document.getElementById("Text_Cookies").innerText = getCookie("ericpham")
