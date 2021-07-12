@@ -12,7 +12,6 @@ export default function Show_Demo_Sentence_Basic(OBJ_INPUT) {
     const [Docthu, SET_Docthu] = useState("")
     const [Data_use, SET_Data_use] = useState(OBJ_INPUT[0])
     const [Name, SET_Name] = useState("")
-    const [ARanking, SET_Ranking] = useState([])
     const [Status, SET_Status] = useState(0)
     useEffect(() => {
         setTimeout(() => {
@@ -157,16 +156,11 @@ export default function Show_Demo_Sentence_Basic(OBJ_INPUT) {
                 />
                 <Read_ReactSpeech />
                 <button style={{ display: "none" }} onClick={() => {
-                    console.log("onclick");
-                    console.log(Data_Commands);
-                    console.log($("#messageRes").val());
-                    console.log(Check2String($("#messageRes").val(), Data_Commands))
                     if ($("#messageRes").val() !== "" && Docthu === "Docthu") {
                         if (Check2String($("#messageRes").val(), Data_Commands)) {
                             SET_Docthu("A");
                             ReadMessage("Great", [1, 2].PickRandom());
                             SET_Data_Commands("====")
-                            Push_Ranking(Name, SET_Ranking)
                         }
                     }
                 }} id="messageResBtn"></button>
@@ -186,7 +180,7 @@ Array.prototype.PickRandom = function () {
 
 async function CHECK_Token(token) {
     try {
-        let browserinfo = $("#ID_TEXT_BROWSERNAME").text()
+        let browserinfo = $("#ID_TEXT_BROWSERNAME").text() + $("#Detect_device").text()
         const res = await fetch(Linkapi + "api/Token_app/check_token?token=" + token + "&browserinfo=" + browserinfo, {
             method: 'GET',
             headers: {
