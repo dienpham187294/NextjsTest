@@ -1,115 +1,113 @@
 
-let strinout = `All the best in your new job. 
+let strinout = `I can't be certain/sure 
 
-ol do bets in jio niu job
+ai kan-t bi sơ tần/ Sua
 
-All the very best! 
+I can't decide.
 
-ol dơ ve-ri best
+ai kan-t di-sai-d
 
-Bless you! 
+I can't say for 
+certain/sure
 
-b-les jiu
+ai kan-t sei for sơtan / sua
 
-Every success in your 
-new career.
+I can’t make up my mind
 
-e-ve-ri sdkses in jio niu
-kd-ri-d
+ai kan-t mek dp mai mai
+d
 
-Every success with you. 
+I'm not too sure of it. 
 
-e-ve-ri sdkses witd jiu
+am not thu sud df it. 
 
-Enjoy your trip! 
+I find it hard to come to a conclusion
 
-in-joi jio trip
+ai fai-đ it hat tu kăm tu
+ơ kơn-k-lu-zần
 
-Enjoy yourself! 
+I'm afraid I can't be certain about it. 
 
-in-joi jio seo-lf
+am ơ-ph-rêđ ai kan-t bi
+sơ-tần ơ-bao it
 
-Good luck! 
+I'm afraid I can't be positive about the place where the meeting will be held.
 
-gud lak
+am ơ-f-rếđ ai can-t bi pozơ-tiv ơ-bao dơplêi-s woe
+dơ mit-ting wil bi heo-lđ
 
-Good luck with you. 
+It's hard to tell
 
-gut-d lak witd jiu
+itz hađ tu theo-l
 
-Have a good time.
+I'm not at all convinced. 
 
-he-v d gud tharn
+am not ơt ôl kơn-vin-sđ
 
-Have a nice day. 
+I'm in two minds about which way to take. 
 
-he-v ơ nais đêi
+am in thu mai-đs ơ-bao-t
+wich wêi tu tếk
 
-I wish you success. 
+There's some doubt in my mind.
 
-ai wis jiu sơk-ses
+dez săm đao-bt in mai
+mai-đ
 
-ai wis jiu sơk-ses
+I'm still in the dark. 
 
-mêi jiu e-ve-ri sơk-ses
+am stil in dơ đak
 
-I wish you every success. 
+Let's leave it to chance
 
-ai wis jiu e-ve-ri sơk-ses
+letz li-vơ it tu tran-s. 
 
-The best of luck.
+I wonder if I can pass the exam. 
 
-dơ be-st ơflăk
+ai wan-đơ if ai ken pas
+di ik-zem.
 
-The very best luck with you.
+I feel in such a muddle.
 
-dơ ưe-ri be-st lăk luitd jiu
+ai fit in săt-ch ơ măđ-đờ
 
-Would you give Mr.Frank my best whishes? 
+I have my doubt about that
 
-ut jiu gi-vơ mi-stơ Ph- ranh-k mai best wi-sis
-
-The best wishes to your family
-
-dơ best wi-sis tu jio fe-mi-li
+ai he-uơ mai đao- bt ơbao de
 ==
-Chúc anh thuận lợi trên cương vị mới.
+Tôi không thể khẳng định
 
-Chúc vạn sự như ý!
+Tôi không thể quyết định
 
-Chúc mừng anh!
+Tôi nói không đúng.
 
-Chúc anh luôn thuận lợi
-trong sự nghiệp mới
+Tôi không quyết tâm nổi
 
-Chúc anh thành công
-trong mọi lĩnh vực
+Việc này tôi không nắm vững lắm
 
-Chúc chuyến đi vui vẻ!
+Tôi thấy rất khó kết luận.
 
-Chúc anh sống vui vẻ!
+Việc này chắc tôi không thể khắng định.
 
-Chúc anh may mắn!
+Có lẽ tôi không thể dám chắc địa điểm tổ chức hội nghị.
 
-Chúc anh may mắn
+Rất khó nói.
 
-Chúc vui vẻ.
+Tôi không dám khẳng định
 
-Chúc một ngày vui vẻ
+Tôi không biết lựa chọn con đường nào.
 
-Chúc anh thành công
+Tôi có chút hoài nghi.
 
-Chúc anh thành công
+Tôi vẫn chưa rõ lắm.
 
-Chúc anh thuận lợi.
+Chúng ta cứ tin vào số phận
 
-Chúc anh may mắn
+Tồỉ không biết có thể thi qua kỳ thi này không
 
-Chúc anh gặp may.
+Tôi thấy trong đầu thật rối rắm
 
-Xin gửi lời chúc tới ông Frank giúp tôi được không?
-
-Cho tôi gửi lời chúc tới toàn thể gia đình.
+Việc này tôi hơi nghi ngờ
 `
 export default async (req, res) => {
     try {
