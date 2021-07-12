@@ -8,9 +8,11 @@ import { useEffect, useState } from 'react';
 import Linkapi from "../util/api/Linkapi"
 import List_IDs from "../util/List_IDs/List_IDs"
 import { async } from 'regenerator-runtime';
+
 // import $ from "jquery"
 const { detect } = require('detect-browser');
 const ip = require('ip');
+
 function MyApp({ Component, pageProps }) {
   const [Cookie, SET_Cookie] = useState("");
   const [Status, SET_Status] = useState(0)
@@ -19,6 +21,7 @@ function MyApp({ Component, pageProps }) {
     if (browser) {
       document.getElementById("ID_TEXT_BROWSERNAME").innerText = browser.name + browser.version + browser.os + ip.address()
     }
+
     try {
       document.getElementById("Text_Cookies").innerText = getCookie("ericpham")
       SET_Cookie(getCookie("ericpham"));
@@ -148,7 +151,7 @@ function MyApp({ Component, pageProps }) {
       </div>
       <div id={List_IDs["Sound"]}></div>
       <br />
-      <span>Powered by Ericpham</span>|<span id="ID_TEXT_BROWSERNAME"></span>
+      <span>Powered by Ericpham</span>|<span id="ID_TEXT_BROWSERNAME"></span><span id="Detect_device"></span>
     </footer>
   </>)
 
@@ -191,8 +194,8 @@ async function GET_Buycode_FROM_DATABASE(mail) {
       }
     })
     let data = await res.json();
-    console.log(data)
-    document.getElementById("Text_Cookies_Buycode").innerText = data.data
+    document.getElementById("Text_Cookies_Buycode").innerText = data.data["buycode"]
+    $("#Detect_device").text(data.data["detect_device"])
   } catch (error) {
     console.log(error)
   }
