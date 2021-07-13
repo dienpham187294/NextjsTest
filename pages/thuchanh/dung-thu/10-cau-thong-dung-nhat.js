@@ -4,7 +4,7 @@ export default function Index_10cauthongdungnhat() {
     return (
         <div>
             <Head>
-                <title>Học giao tiếp cực kì cơ bản - dễ học</title>
+                <title>Học giao tiếp cực kì cơ bản - dễ học- Dành cho người chỉ cần học ít</title>
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <meta name="description" content="Một sản phẩm của Ericpham" />
             </Head>
