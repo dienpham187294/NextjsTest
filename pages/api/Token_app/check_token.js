@@ -6,12 +6,17 @@ export default async (req, res) => {
     const { token, browserinfo } = req.query;
     try {
         const data = await db.collection("token_app").find({ token: token }).toArray()
-        let Status = ""
-        let username = ""
+        let Status = "";
+        let username = "";
+        let Data_list_sentences;
         try {
             if (data.length !== 0) {
                 Status = "token-found"
-                username = data[0]["name"]
+                username = data[0]["name"];
+                if (data[0]["list_sentences"] !== undefined) {
+                    Data_list_sentences = data[0]["list_sentences"]
+                }
+
                 let ARR_1 = []
                 ARR_1.push(browserinfo);
                 let Arr_browserinfo;
@@ -49,7 +54,7 @@ export default async (req, res) => {
             console.log(error)
             Status = "token-not-found-error"
         }
-        res.status(200).json({ success: true, data: { "status": Status, "username": username } })
+        res.status(200).json({ success: true, data: { "status": Status, "username": username, "Data_list_sentences": Data_list_sentences } })
     } catch (error) {
         res.status(400).json({ success: false })
     }
