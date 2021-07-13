@@ -5,6 +5,7 @@ import Dictaphone from "../../../pages/helpers/RegcognitionV1-0-1AI0.2ReadPaperT
 import Check2String from "../../String_tool/Check2String"
 import List_IDs from "../../List_IDs/List_IDs"
 import Linkapi from "../../api/Linkapi"
+
 const queryString = require('query-string');
 export default function Show_Demo_Sentence_Basic() {
     const [Data_Learn, SET_Data_Learn] = useState("")
