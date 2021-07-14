@@ -16,9 +16,8 @@ export default function Show_Demo_Sentence_Basic(OBJ_INPUT) {
     useEffect(() => {
         setTimeout(() => {
             const parsed = queryString.parse(window.location.search);
-            CHECK_Token(parsed["token"])
-            if (parsed["token"].indexOf("187") !== -1 && parsed["token"].indexOf("294") !== -1) {
-                SET_Name("DIENPHAM")
+            if (parsed["token"] !== undefined) {
+                CHECK_Token(parsed["token"], SET_Name)
             }
         }, 5000)
     }, [Status])
@@ -41,9 +40,9 @@ export default function Show_Demo_Sentence_Basic(OBJ_INPUT) {
                     }}>
                     <hr />
 
-                    {Name === "" ? "Loading..." :
+                    {Name === "" ? "Xin chờ 5s..." :
                         <div>
-                            {/* <b>Xin chào: {Name}</b> */}
+                            <b>{Name}</b>
                             <select onChange={(e) => {
                                 SET_Data_use(OBJ_INPUT[e.currentTarget.value])
                             }} className="form-control">
@@ -178,7 +177,7 @@ Array.prototype.PickRandom = function () {
 
 
 
-async function CHECK_Token(token) {
+async function CHECK_Token(token, SET_Name) {
     try {
         let browserinfo = $("#ID_TEXT_BROWSERNAME").text() + $("#Detect_device").text()
         const res = await fetch(Linkapi + "api/Token_app/check_token?token=" + token + "&browserinfo=" + browserinfo, {
@@ -190,10 +189,11 @@ async function CHECK_Token(token) {
         })
         let data = await res.json();
         if (data.data["status"] === "token-found") {
-            alert("Chào mừng " + data.data["username"] + " trở lại. Chúc bạn thực hành tiếng anh thú vị và hiệu quả.")
+            SET_Name("Xin chào " + data.data["username"]);
+            // alert("Xin chào " + data.data["username"] + ". Chúc bạn thực hành tiếng anh thú vị và hiệu quả.")
         }
         if (data.data["status"] === "token-not-found") {
-            alert("Tài khoản chưa được kích hoạt sẽ sớm bị khóa theo chính sách sử dụng tại EnglishTool. Vui lòng liên hệ Englishtool.co để kích hoạt tài khoản.")
+            alert("Tài khoản chưa được kích hoạt. Vui lòng liên hệ Englishtool.co để kích hoạt tài khoản.")
         }
 
     } catch (error) {

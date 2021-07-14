@@ -140,6 +140,7 @@ function MyApp({ Component, pageProps }) {
     <footer className="mt-5 text-center">
 
       <div style={{ display: "none" }}>
+        <span id="ID_TEXT_BROWSERNAME"></span><span id="Detect_device"></span>
         <p id={List_IDs["GET_Cookies"]}> ===</p>
         <p id={List_IDs["Text_Cookies_Buycode"]}>=== </p>
         <button
@@ -151,7 +152,9 @@ function MyApp({ Component, pageProps }) {
       </div>
       <div id={List_IDs["Sound"]}></div>
       <br />
-      <span>Powered by Ericpham</span>|<span id="ID_TEXT_BROWSERNAME"></span><span id="Detect_device"></span>
+      <Link href="/main/Main_admin">
+        <a>Powered by Ericpham</a>
+      </Link>
     </footer>
   </>)
 

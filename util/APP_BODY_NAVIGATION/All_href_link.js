@@ -29,8 +29,6 @@ export default {
             "youtube": "",
             "buycode": "DE0001"
         },
-
-
     ],
     "reading_mobile": [
         {
