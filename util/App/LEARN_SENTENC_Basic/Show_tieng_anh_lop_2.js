@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import Read_ReactSpeech from "../../../pages/helpers/Read_ReactSpeech"
 import ReadMessage from "../../Read/ReadMessage"
-import Dictaphone from "../../../pages/helpers/RegcognitionV1-0-1AI0.2ReadPaperTravel"
+import Dictaphone from "../../../pages/helpers/RegcognitionV1-0-1AI0.2LearnBasic"
 import Check2String from "../../String_tool/Check2String"
 import List_IDs from "../../List_IDs/List_IDs"
 import Linkapi from "../../api/Linkapi"

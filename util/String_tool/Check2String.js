@@ -4,8 +4,8 @@ export default function Check2String(message_API, message_INPUT) {
     try {
         let status = false
         message_API.split("epdp").forEach(e => {
-            console.log(stringSimilarity.compareTwoStrings(e, message_INPUT))
-            if (stringSimilarity.compareTwoStrings(e, message_INPUT) > 0.7) {
+            console.log(stringSimilarity.compareTwoStrings(e.toLowerCase(), message_INPUT.toLowerCase().split("'").join("")))
+            if (stringSimilarity.compareTwoStrings(e.toLowerCase(), message_INPUT.toLowerCase().split("'").join("")) > 0.7) {
                 status = true
             }
         });

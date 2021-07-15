@@ -21,29 +21,29 @@ export default [
         "img": "https://i.postimg.cc/Hs33X86D/S-ch-l-p-2-1-05.jpg",
         "data": [
             {
-                "EN": "one ",
+                "EN": "1",
                 "IPA": "wʌn",
-                "VN": "số một"
+                "VN": "số một/one"
             },
             {
-                "EN": "two ",
+                "EN": "2",
                 "IPA": "tuː",
-                "VN": "số hai"
+                "VN": "số hai/two"
             },
             {
-                "EN": "three ",
+                "EN": "three",
                 "IPA": "θriː",
                 "VN": "số ba"
             },
             {
-                "EN": "four ",
+                "EN": "4",
                 "IPA": "fɔːr",
-                "VN": "số bốn"
+                "VN": "số bốn/four"
             },
             {
-                "EN": "five ",
+                "EN": "5",
                 "IPA": "/faiv/",
-                "VN": "số năm"
+                "VN": "số năm/five"
             },
             {
                 "EN": "six",
@@ -51,24 +51,24 @@ export default [
                 "VN": "số sáu"
             },
             {
-                "EN": "seven",
+                "EN": "7",
                 "IPA": "'sev.ən",
-                "VN": "số bảy"
+                "VN": "số bảy/seven"
             },
             {
-                "EN": "eight",
+                "EN": "8",
                 "IPA": "eɪt",
-                "VN": "số tám"
+                "VN": "số tám/eight"
             },
             {
-                "EN": "nine",
+                "EN": "9",
                 "IPA": "naɪn",
-                "VN": "số chín"
+                "VN": "số chín/nine"
             },
             {
-                "EN": "ten ",
+                "EN": "10",
                 "IPA": "ten",
-                "VN": "số mười"
+                "VN": "số mười/ten"
             },
             {
                 "EN": "How old are you?",
@@ -76,8 +76,8 @@ export default [
                 "IPA": "haʊ əʊld ɑːr juː"
             },
             {
-                "EN": "I'm five.",
-                "VN": "Tôi 5 tuổi.",
+                "EN": "I'm 5",
+                "VN": "Tôi 5 tuổi./I'm five.",
                 "IPA": "ˌaɪˈem faɪv"
             }
         ]
@@ -91,8 +91,8 @@ export default [
                 "IPA": "haʊ əʊld ɑːr juː"
             },
             {
-                "EN": "I'm five.",
-                "VN": "Tôi 5 tuổi.",
+                "EN": "I'm 5",
+                "VN": "Tôi 5 tuổi./I'm five",
                 "IPA": "ˌaɪˈem faɪv"
             }
         ]
@@ -155,12 +155,12 @@ export default [
                 "VN": "hạnh phúc, vui vẻ"
             },
             {
-                "EN": "sad ",
+                "EN": "sad",
                 "IPA": "saed",
                 "VN": "buồn"
             },
             {
-                "EN": "fine ",
+                "EN": "fine",
                 "IPA": "faɪn",
                 "VN": "khỏe, tốt"
             },
@@ -265,17 +265,17 @@ export default [
                 "VN": "đói bụng"
             },
             {
-                "EN": "thirsty ",
+                "EN": "thirsty",
                 "IPA": "ˈθɝː.sti",
                 "VN": "khát nước"
             },
             {
-                "EN": "What's your name? ",
+                "EN": "What's your name?",
                 "IPA": "wɑːts jɔːr neɪm",
                 "VN": "Bạn tên gì?"
             },
             {
-                "EN": "My name is Vinh? ",
+                "EN": "My name is Vinh?",
                 "IPA": "mai neɪm iz Vinh",
                 "VN": "Tôi tên là Vinh"
             },
@@ -286,12 +286,12 @@ export default [
         "img": "https://i.postimg.cc/VL7BdQNz/S-ch-l-p-2-1-16.jpg",
         "data": [
             {
-                "EN": "What's your name? ",
+                "EN": "What's your name?",
                 "IPA": "wɑːts jɔːr neɪm",
                 "VN": "Bạn tên gì?"
             },
             {
-                "EN": "My name is Vinh? ",
+                "EN": "My name is Vinh?",
                 "IPA": "mai neɪm iz Vinh",
                 "VN": "Tôi tên là Vinh"
             },
@@ -317,7 +317,7 @@ export default [
                 "VN": "hình chữ nhật"
             },
             {
-                "EN": "triangle ",
+                "EN": "triangle",
                 "IPA": "ˈtraɪ.æŋ.ɡəl",
                 "VN": "hình tam giác"
             },
@@ -396,7 +396,7 @@ export default [
                 "VN": "đây là  câu hỏi"
             },
             {
-                "EN": "What's your name? ",
+                "EN": "What's your name?",
                 "IPA": "wɑːts jɔːr neɪm",
                 "VN": "Bạn tên gì?"
             },
@@ -421,17 +421,17 @@ export default [
                 "VN": "chán nản"
             },
             {
-                "EN": "sad ",
+                "EN": "sad",
                 "IPA": "saed",
                 "VN": "buồn"
             },
             {
-                "EN": "What's your name? ",
+                "EN": "What's your name?",
                 "IPA": "wɑːts jɔːr neɪm",
                 "VN": "Bạn tên gì?"
             },
             {
-                "EN": "My name's Lan? ",
+                "EN": "My name's Lan?",
                 "IPA": "mai neɪm's Lan",
                 "VN": "Tôi tên là Lan"
             },
@@ -456,14 +456,14 @@ export default [
         "img": "https://i.postimg.cc/1RBDjhwD/S-ch-l-p-2-1-23.jpg",
         "data": [
             {
-                "EN": "eleven ",
+                "EN": "eleven",
                 "IPA": "ɪˈlev.ən",
                 "VN": "số mười một"
             },
             {
                 "EN": "Twelve books.",
                 "VN": "Mười hai cuốn sách.",
-                "IPA": "twelv bʊks "
+                "IPA": "twelv bʊks"
             },
             {
                 "EN": "thirteen",
@@ -471,7 +471,7 @@ export default [
                 "VN": "số mười ba"
             },
             {
-                "EN": "fourteen ",
+                "EN": "fourteen",
                 "IPA": "ˌfɔːˈtiːn",
                 "VN": "số mười bốn"
             },
@@ -657,7 +657,7 @@ export default [
                 "VN": "con thỏ"
             },
             {
-                "EN": "robot ",
+                "EN": "robot",
                 "IPA": "'roưbot",
                 "VN": "người máy"
             },
@@ -765,7 +765,7 @@ export default [
         "img": "https://i.postimg.cc/L4W8XxMr/S-ch-l-p-2-1-37.jpg",
         "data": [
             {
-                "EN": "tiger ",
+                "EN": "tiger",
                 "IPA": "ˈtaɪ.ɡɚ",
                 "VN": "con hổ"
             },
@@ -955,7 +955,7 @@ export default [
         "img": "https://i.postimg.cc/NGZ2VsL9/S-ch-l-p-2-1-47.jpg",
         "data": [
             {
-                "EN": "T-shirt ",
+                "EN": "T-shirt",
                 "IPA": "ˈtiː.ʃɝːt",
                 "VN": "áo thun"
             },
@@ -1035,12 +1035,12 @@ export default [
         "img": "https://i.postimg.cc/YCHGrd6t/S-ch-l-p-2-1-49.jpg",
         "data": [
             {
-                "EN": "vest ",
+                "EN": "vest",
                 "IPA": "vest",
                 "VN": "áo gi lê"
             },
             {
-                "EN": "violin ",
+                "EN": "violin",
                 "IPA": "ˌvaɪəˈlɪn",
                 "VN": "vĩ cầm, đàn vi-ô-lông"
             },
@@ -1209,7 +1209,7 @@ export default [
             {
                 "EN": "Yes, I can.",
                 "VN": "Vâng tôi có thể.",
-                "IPA": "jes i kæn "
+                "IPA": "jes i kæn"
             },
             {
                 "EN": "Can you see the plane?",
@@ -1219,7 +1219,7 @@ export default [
             {
                 "EN": "Yes, I can.",
                 "VN": "Vâng tôi có thể.",
-                "IPA": "jes i kæn "
+                "IPA": "jes i kæn"
             },
         ]
     },
@@ -1237,12 +1237,12 @@ export default [
                 "VN": "cái hộp, cái thùng"
             },
             {
-                "EN": "yo-yo ",
+                "EN": "yo-yo",
                 "IPA": "'jou jou",
                 "VN": "trò chơi yo-yo"
             },
             {
-                "EN": "yogurt ",
+                "EN": "yogurt",
                 "IPA": "ˈjoʊ.ɡɚt",
                 "VN": "sữa chua"
             },
@@ -1279,7 +1279,7 @@ export default [
             {
                 "EN": "Yes, I can.",
                 "VN": "Vâng tôi có thể.",
-                "IPA": "jes i kæn "
+                "IPA": "jes i kæn"
             },
             {
                 "EN": "Can you see the plane?",
@@ -1289,7 +1289,7 @@ export default [
             {
                 "EN": "Yes, I can.",
                 "VN": "Vâng tôi có thể.",
-                "IPA": "jes i kæn "
+                "IPA": "jes i kæn"
             },
         ]
     },
@@ -1297,12 +1297,12 @@ export default [
         "img": "https://i.postimg.cc/t4qqvwdn/S-ch-l-p-2-2-09.jpg",
         "data": [
             {
-                "EN": "eraser ",
+                "EN": "eraser",
                 "IPA": "ɪˈreɪ.zər",
                 "VN": "cục tẩy"
             },
             {
-                "EN": "ruler ",
+                "EN": "ruler",
                 "IPA": "'ruilar",
                 "VN": "thước kẻ"
             },
@@ -1357,7 +1357,7 @@ export default [
         "img": "https://i.postimg.cc/bvdzpnBz/S-ch-l-p-2-2-11.jpg",
         "data": [
             {
-                "EN": "zebra ",
+                "EN": "zebra",
                 "IPA": "ˈziː.brə",
                 "VN": "con ngựa vằn"
             },
@@ -1457,7 +1457,7 @@ export default [
         "img": "https://i.postimg.cc/cCGZRb4H/S-ch-l-p-2-2-15.jpg",
         "data": [
             {
-                "EN": "Thursday ",
+                "EN": "Thursday",
                 "IPA": "ˈθɝːz.deɪ",
                 "VN": "thứ năm"
             },
@@ -1598,8 +1598,8 @@ export default [
                 "IPA": "ˌaɪˈem fɔːr"
             },
             {
-                "EN": "I'm five.",
-                "VN": "Tôi 5 tuổi.",
+                "EN": "I'm 5",
+                "VN": "Tôi 5 tuổi/I'm five",
                 "IPA": "ˌaɪˈem faɪv"
             },
             {
@@ -1655,7 +1655,7 @@ export default [
             {
                 "EN": "Twelve books.",
                 "VN": "Mười hai cuốn sách.",
-                "IPA": "twelv bʊks "
+                "IPA": "twelv bʊks"
             },
             {
                 "EN": "How many rectangles are there?",
@@ -1795,7 +1795,7 @@ export default [
             {
                 "EN": "Yes, I can.",
                 "VN": "Vâng tôi có thể.",
-                "IPA": "jes i kæn "
+                "IPA": "jes i kæn"
             },
             {
                 "EN": "Can you see the boat?",
@@ -1815,7 +1815,7 @@ export default [
             {
                 "EN": "Yes, I can.",
                 "VN": "Vâng tôi có thể.",
-                "IPA": "jes i kæn "
+                "IPA": "jes i kæn"
             },
             {
                 "EN": "Can you see the motorbike?",
@@ -1923,12 +1923,12 @@ export default [
                 "VN": "đóng sách lại"
             },
             {
-                "EN": "count ",
+                "EN": "count",
                 "IPA": "kaʊnt",
                 "VN": "đếm"
             },
             {
-                "EN": "draw ",
+                "EN": "draw",
                 "IPA": "drɔː",
                 "VN": "vẽ"
             },
@@ -1958,9 +1958,9 @@ export default [
                 "VN": "bút sáp màu"
             },
             {
-                "EN": "eight",
+                "EN": "8",
                 "IPA": "eɪt",
-                "VN": "số tám"
+                "VN": "số tám/eight"
             },
             {
                 "EN": "eighteen",
@@ -1968,12 +1968,12 @@ export default [
                 "VN": "số mười tám"
             },
             {
-                "EN": "eleven ",
+                "EN": "eleven",
                 "IPA": "ɪˈlev.ən",
                 "VN": "số mười một"
             },
             {
-                "EN": "eraser ",
+                "EN": "eraser",
                 "IPA": "ɪˈreɪ.zər",
                 "VN": "cục tẩy"
             },
@@ -1983,19 +1983,19 @@ export default [
                 "VN": "số mười lăm"
             },
             {
-                "EN": "fine ",
+                "EN": "fine",
                 "IPA": "faɪn",
                 "VN": "khỏe, tốt"
             },
             {
-                "EN": "five ",
+                "EN": "5",
                 "IPA": "/faiv/",
-                "VN": "số năm"
+                "VN": "số năm/five"
             },
             {
-                "EN": "four ",
+                "EN": "4",
                 "IPA": "fɔːr",
-                "VN": "số bốn"
+                "VN": "số bốn/four"
             },
         ]
     },
@@ -2003,7 +2003,7 @@ export default [
         "img": "https://i.postimg.cc/DZL3wPdK/S-ch-l-p-2-2-23.jpg",
         "data": [
             {
-                "EN": "fourteen ",
+                "EN": "fourteen",
                 "IPA": "ˌfɔːˈtiːn",
                 "VN": "số mười bốn"
             },
@@ -2028,7 +2028,7 @@ export default [
                 "VN": "tuyệt vời"
             },
             {
-                "EN": "hands down ",
+                "EN": "hands down",
                 "IPA": "hasndz daʊn",
                 "VN": "hạ tay xuống"
             },
@@ -2083,9 +2083,9 @@ export default [
                 "VN": "âm nhạc"
             },
             {
-                "EN": "nine",
+                "EN": "9",
                 "IPA": "naɪn",
-                "VN": "số chín"
+                "VN": "số chín/nine"
             },
             {
                 "EN": "nineteen",
@@ -2118,9 +2118,9 @@ export default [
                 "VN": "được, tốt"
             },
             {
-                "EN": "one ",
+                "EN": "1",
                 "IPA": "wʌn",
-                "VN": "số một"
+                "VN": "số một/one"
             },
         ]
     },
@@ -2215,17 +2215,17 @@ export default [
                 "VN": "đi xe (đạp), cưỡi lên"
             },
             {
-                "EN": "robot ",
+                "EN": "robot",
                 "IPA": "'roưbot",
                 "VN": "người máy"
             },
             {
-                "EN": "ruler ",
+                "EN": "ruler",
                 "IPA": "'ruilar",
                 "VN": "thước kẻ"
             },
             {
-                "EN": "sad ",
+                "EN": "sad",
                 "IPA": "saed",
                 "VN": "buồn"
             },
@@ -2245,9 +2245,9 @@ export default [
                 "VN": "biển"
             },
             {
-                "EN": "seven",
+                "EN": "7",
                 "IPA": "'sev.ən",
-                "VN": "số bảy"
+                "VN": "số bảy/seven"
             },
         ]
     },
@@ -2311,12 +2311,12 @@ export default [
                 "VN": "số mười sáu"
             },
             {
-                "EN": "ten ",
+                "EN": "10",
                 "IPA": "ten",
-                "VN": "số mười"
+                "VN": "số mười/ten"
             },
             {
-                "EN": "thirsty ",
+                "EN": "thirsty",
                 "IPA": "ˈθɝː.sti",
                 "VN": "khát nước"
             },
@@ -2331,7 +2331,7 @@ export default [
                 "VN": "thức ăn nhẹ"
             },
             {
-                "EN": "three ",
+                "EN": "three",
                 "IPA": "θriː",
                 "VN": "số ba"
             },
@@ -2346,7 +2346,7 @@ export default [
                 "VN": "đôi tất, vớ"
             },
             {
-                "EN": "Thursday ",
+                "EN": "Thursday",
                 "IPA": "ˈθɝːz.deɪ",
                 "VN": "thứ năm"
             },
@@ -2361,7 +2361,7 @@ export default [
                 "VN": "đánh vần"
             },
             {
-                "EN": "tiger ",
+                "EN": "tiger",
                 "IPA": "ˈtaɪ.ɡɚ",
                 "VN": "con hổ"
             },
@@ -2371,7 +2371,7 @@ export default [
                 "VN": "con quay"
             },
             {
-                "EN": "triangle ",
+                "EN": "triangle",
                 "IPA": "ˈtraɪ.æŋ.ɡəl",
                 "VN": "hình tam giác"
             },
@@ -2382,7 +2382,7 @@ export default [
         "data": [
 
             {
-                "EN": "T-shirt ",
+                "EN": "T-shirt",
                 "IPA": "ˈtiː.ʃɝːt",
                 "VN": "áo thun"
             },
@@ -2398,23 +2398,23 @@ export default [
             },
             {
                 "EN": "twelve",
-                "IPA": "twelv ",
+                "IPA": "twelv",
                 "VN": "số mười hai"
             },
             {
-                "EN": "yogurt ",
+                "EN": "yogurt",
                 "IPA": "ˈjoʊ.ɡɚt",
                 "VN": "sữa chua"
             },
             {
-                "EN": "twenty ",
+                "EN": "twenty",
                 "IPA": "'twenti",
                 "VN": "số hai mươi"
             },
             {
-                "EN": "two ",
+                "EN": "2",
                 "IPA": "tuː",
-                "VN": "số hai"
+                "VN": "số hai/two"
             },
             {
                 "EN": "umbrella",
@@ -2427,12 +2427,12 @@ export default [
                 "VN": "chú, bác, cậu, dượng"
             },
             {
-                "EN": "vest ",
+                "EN": "vest",
                 "IPA": "vest",
                 "VN": "áo gi lê"
             },
             {
-                "EN": "violin ",
+                "EN": "violin",
                 "IPA": "ˌvaɪəˈlɪn",
                 "VN": "vĩ cầm, đàn vi-ô-lông"
             },
@@ -2452,12 +2452,12 @@ export default [
                 "VN": "cửa sổ"
             },
             {
-                "EN": "yo-yo ",
+                "EN": "yo-yo",
                 "IPA": "'jou jou",
                 "VN": "trò chơi yo-yo"
             },
             {
-                "EN": "zebra ",
+                "EN": "zebra",
                 "IPA": "ˈziː.brə",
                 "VN": "con ngựa vằn"
             },

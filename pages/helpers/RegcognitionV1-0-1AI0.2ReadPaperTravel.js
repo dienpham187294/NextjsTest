@@ -13,8 +13,8 @@ let commands = [];
 let ArrMessage = []
 let Str_to_Check = ""
 function Dictaphone({ Data }) {
-    const [fuzzyMatchingThreshold, SET_fuzzyMatchingThreshold] = useState(0.4)
-    const [Style, SET_Style] = useState(true)
+    const [fuzzyMatchingThreshold, SET_fuzzyMatchingThreshold] = useState(0.5)
+    const [Style, SET_Style] = useState(false)
     const [OpenSetting, SET_OpenSetting] = useState(0)
     useEffect(() => {
         Str_to_Check = "";
@@ -31,11 +31,16 @@ function Dictaphone({ Data }) {
             bestMatchOnly: Style
         }]
     }, [Data, fuzzyMatchingThreshold, Style])
+
+
     const {
         listening, transcript
     } = useSpeechRecognition({
         commands
     });
+    useEffect(() => {
+        console.log(transcript, "transcript")
+    }, [transcript])
     const startListening = () => SpeechRecognition.startListening({ continuous: true, language: 'en-GB' });
     const stopListening = () => SpeechRecognition.stopListening({ continuous: false, language: 'en-GB' });
     async function writeMessage(message) {
@@ -69,7 +74,7 @@ function Dictaphone({ Data }) {
                     SET_fuzzyMatchingThreshold(e.currentTarget.value)
                 }}
                 className="form-control bg-light mt-1"
-                defaultValue="0.4">
+                defaultValue="0.5">
                 <option value="0.1">10%</option>
                 <option value="0.2">20%</option>
                 <option value="0.3">30%</option>
@@ -91,7 +96,7 @@ function Dictaphone({ Data }) {
                     }
                 }}
                 className="form-control bg-light mt-1"
-                defaultValue={false}>
+                defaultValue={true}>
                 <option value={true}>Đọc từng câu một</option>
                 <option value={false}>Đọc nhiều câu một lúc</option>
             </select>
@@ -100,74 +105,3 @@ function Dictaphone({ Data }) {
     );
 };
 export default Dictaphone;
-
-
-// import GetLongest from '../../util/GetLongest';
-// import Dictionary from './Dictionary';
-// import ImageSearch from './ImageSearch';
-
-
-// {
-//     ShowSide ?
-
-//         <div
-//             id="Dictaphone_div_Sidebar"
-//             style={{
-//                 position: "fixed",
-//                 width: "19%",
-//                 top: "1px",
-//                 left: "0.5%",
-//                 bottom: "1px",
-//                 overflow: "auto",
-//                 padding: "3px",
-//                 backgroundColor: "white",
-//                 border: "5px solid green",
-//                 borderRadius: "5px",
-//                 zIndex: 2
-//             }}
-//         >
-
-//             <button
-//                 className="ml-3"
-//                 onClick={() => {
-//                     SET_ShowSide(false)
-//                 }}
-//             >Turn off Side Bar</button>
-//             <hr />
-//             <button
-//                 onClick={() => {
-//                     SET_Word(document.getElementById("DictionarySearch").innerText)
-//                 }}
-//             >Look up</button>
-//             <button
-//                 onClick={() => {
-//                     document.getElementById("DictionarySearch").innerText = "";
-//                     SET_Word("")
-//                 }}
-//             >Clear</button>
-//             <div id="DictionarySearch"></div>
-//             {Word !== "" ?
-//                 <>
-//                     <Dictionary Word={GetLongest(Word)} />
-//                     < ImageSearch Word={Word} />
-//                 </>
-//                 : null}
-
-//             <hr />
-//             {AllMessage.map((e, i) =>
-//                 <p key={i} id={i + "p_dictaphone"} style={{ backgroundColor: i === AllMessage.length - 1 ? "yellow" : "transparent" }} >{e}</p>
-//             )}
-//         </div>
-//         : ""
-// }   function scrolldown() {
-//     setTimeout(() => {
-//         try {
-//             let id = (AllMessage.length - 1) + 'p_dictaphone'
-//             document.getElementById(id).scrollIntoView({ behavior: "smooth" });
-//         } catch (error) {
-
-//         }
-
-//     }, 100)
-
-// }
