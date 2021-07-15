@@ -3,10 +3,14 @@ import Read from "../../../helpers/Read_ReactSpeech"
 import ReadMessage from "../../../../util/Read/ReadMessage";
 import tuvung800cau from "../../../../util/filedulieu/800cau"
 import PracticeDiv from "./practice"
-function Manager() {
+import Cookies_checking from "../../../../util/Cookies/Cookies_checking"
+import Dictionary_with_image from "../../../helpers/IMAGE/Dictionary_with_image";
+function Index_800cauthongdung() {
     const [Data, SET_Data] = useState(tuvung800cau.slice(0, 20))
     const [Practice, SET_Practice] = useState(false)
     const [Data_Commands, SET_Data_Commands] = useState([])
+    const [Learn_detail, SET_Learn_detail] = useState("")
+    const [Popup, SET_Popup] = useState("")
     return (
 
         <div className="container">
@@ -20,7 +24,7 @@ function Manager() {
                 </p>
             </div>
             <hr />
-            {UpLoadFile()}
+
             <hr />
             <div>
                 From:    <input type="number" defaultValue="1" id="begin" />
@@ -52,15 +56,38 @@ function Manager() {
                     className="btn btn-outline-primary ml-1" type="button" defaultValue="Thực hành"
                 />
             </div>
-
+            <b>Từ điển hình ảnh</b>
+            <p>{Learn_detail.split(" ").map((e, i) =>
+                <span
+                    key={i}
+                    style={{
+                        border: "2px solid green",
+                        padding: "0 3px",
+                        marginLeft: "15px",
+                        cursor: "pointer"
+                    }}
+                    onClick={() => {
+                        SET_Popup(e)
+                    }}
+                >{e}</span>)}</p>
+            {/* <b>Từ điển hình ảnh</b>
+            <p>{Learn_detail.split(" ").map((e, i) =>
+                <span
+                    style={{
+                        border: "2px solid green",
+                        padding: "0 3px",
+                        marginLeft: "15px",
+                        cursor: "pointer"
+                    }}
+                >{e}</span>)}</p> */}
+            {Cookies_checking("V002")}
             {Show_chude()}
 
             {Practice ?
                 <PracticeDiv Data={Data} Data_Commands={Data_Commands} SET_Data_Commands={SET_Data_Commands} SET_Practice={SET_Practice} />
                 : ""}
-
             <Read />
-
+            <Dictionary_with_image Popup={Popup} />
 
         </div>
     )
@@ -77,6 +104,7 @@ function Manager() {
                             <tr
                                 onClick={() => {
                                     ReadMessage(e.EN, 2)
+                                    SET_Learn_detail(e.EN)
                                 }}
                                 style={{
                                     cursor: "pointer"
@@ -94,40 +122,6 @@ function Manager() {
 }
 
 
-export default Manager
+export default Index_800cauthongdung
 
-
-function UpLoadFile() {
-    return (
-        <div>
-            <div>
-                <input className="form-control" onChange={e => {
-                    try {
-                        // var uploadedFile = e.currentTarget.files[0];
-                        // if (uploadedFile.name.indexOf(".ericpham") > -1) {
-                        //     // console.log(uploadedFile.name)
-                        //     var readFile = new FileReader();
-                        //     readFile.onload = function (e) {
-                        //         var contents = e.target.result;
-
-                        //         var json = JSON.parse(contents);
-                        //         let arrRead = []
-                        //         json.Read.forEach(e => {
-                        //             arrRead.push({ "text": e, "status": false })
-                        //         });
-                        //         props.SET_LamQuenData({ "Read": arrRead, "Listen": json.Listen })
-                        //     };
-                        //     readFile.readAsText(uploadedFile);
-                        // } else {
-                        //     console.log("Failed to load file");
-                        // }
-                    } catch (error) {
-                        console.log("Failed to load file");
-                    }
-                }} type="file" />
-            </div>
-
-        </div>
-    )
-}
 

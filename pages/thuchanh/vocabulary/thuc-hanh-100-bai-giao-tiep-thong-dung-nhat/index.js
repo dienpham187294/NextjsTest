@@ -2,7 +2,7 @@ import { useState } from "react";
 import Read from "../../../helpers/Read_ReactSpeech"
 import ReadMessage from "../../../../util/Read/ReadMessage";
 import baigiaotiep from "../../../../util/filedulieu/100baigiaotiep"
-
+import Cookies_ReadingPage from "../../../../util/Cookies/Cookies_ReadingPage"
 import PracticeDiv from "./practice"
 
 
@@ -47,7 +47,7 @@ function Manager() {
                     className="btn btn-outline-primary ml-1" type="button" defaultValue="Thực hành đọc sau"
                 />
             </div>
-
+            {Cookies_ReadingPage("V003")}
             {Show_chude()}
 
             {Practice ?

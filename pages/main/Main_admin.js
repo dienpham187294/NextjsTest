@@ -54,22 +54,6 @@ export default function ADMIN() {
                 {SHOW_CHECK(Data, Check_BuyCode)}
             </div>
             <hr />
-            <input type="text" id="Admin_ID_TEXT_NAME" placeholder="Nhập tên" />
-            <button
-                onClick={() => {
-                    let a1 = ""
-                    let a = 187
-                    let b = Date.now()
-                    let c = 294
-                    let d = Date.now()
-                    let F1 = ("https://www.englishtool.co/thuchanh/app/tieng-anh-cap-toc?token=1" + a + b + c + d)
-                    let F2 = ("&name=" + $("#Admin_ID_TEXT_NAME").val().split(" ").join("%20"))
-                    $("#ADMIN_ID_TEXT_LINKAPP").text(F1 + F2)
-
-                }}
-            >Create</button>
-            <p id="ADMIN_ID_TEXT_LINKAPP"></p>
-            <hr />
             {Show_Token_app(Data_token_app)}
         </div>
     )
@@ -171,9 +155,20 @@ function SHOW_CHECK(Data, Check_BuyCode) {
         return (
             <div>
                 {Arr_KEY.map((e, i) =>
-                    <p key={i}>{Data[Check_BuyCode][e]}</p>
+                    <p key={i}>  {e !== "buycode" ? Data[Check_BuyCode][e] : null}</p>
                 )}
+                {showlistbuycode(Data[Check_BuyCode]["buycode"])}
             </div>
+        )
+    } catch (error) {
+        return null
+    }
+}
+
+function showlistbuycode(listbuycode) {
+    try {
+        return listbuycode.split("epdp").map((e, i) =>
+            <p>{e}</p>
         )
     } catch (error) {
         return null

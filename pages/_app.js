@@ -8,8 +8,6 @@ import { useEffect, useState } from 'react';
 import Linkapi from "../util/api/Linkapi"
 import List_IDs from "../util/List_IDs/List_IDs"
 import { async } from 'regenerator-runtime';
-
-// import $ from "jquery"
 const { detect } = require('detect-browser');
 const ip = require('ip');
 
@@ -21,7 +19,6 @@ function MyApp({ Component, pageProps }) {
     if (browser) {
       document.getElementById("ID_TEXT_BROWSERNAME").innerText = browser.name + browser.version + browser.os + ip.address()
     }
-
     try {
       document.getElementById("Text_Cookies").innerText = getCookie("ericpham")
       SET_Cookie(getCookie("ericpham"));
@@ -31,7 +28,6 @@ function MyApp({ Component, pageProps }) {
     }
     setTimeout(() => {
       try {
-        console.log(1)
         const chatbox = document.getElementById('fb-customer-chat');
         chatbox.setAttribute("page_id", "106237278271751");
         chatbox.setAttribute("attribution", "setup_tool");
@@ -50,7 +46,7 @@ function MyApp({ Component, pageProps }) {
           fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
       } catch (error) {
-        console.log(error)
+        console.log(error, "facebook message")
       }
     }, 3000)
 

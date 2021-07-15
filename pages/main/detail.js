@@ -72,7 +72,7 @@ function Show_KhoahocDaDangky(Data) {
     try {
         return (
             <div>
-                Các khóa học của bạn:
+                Sản phẩm đã mua:
                 <hr />
                 {Data.map((e, i) =>
                     <div key={i} style={{

@@ -22,7 +22,7 @@ function Dangky() {
     async function Xacthuc(e) {
         if (e.indexOf(GetFinal(numberCheck)) > -1) {
             let text = await email;
-            setCookie("ericpham", text, 1)
+            setCookie("ericpham", text, 10)
             document.getElementById("SET_STATUS").click()
         }
     }

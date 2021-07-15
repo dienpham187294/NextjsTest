@@ -3,7 +3,7 @@ import Read from "../../../helpers/Read_ReactSpeech"
 import ReadMessage from "../../../../util/Read/ReadMessage";
 import tuvunghinhanh from "../../../../util/filedulieu/tuvunghinhanh"
 import PracticeDiv from "./practice"
-
+import Cookies_ReadingPage from "../../../../util/Cookies/Cookies_ReadingPage"
 
 function Manager() {
     const [Data, SET_Data] = useState(tuvunghinhanh[0])
@@ -52,7 +52,7 @@ function Manager() {
                     className="btn btn-outline-primary ml-1" type="button" defaultValue="Thực hành"
                 />
             </div>
-
+            {Cookies_ReadingPage("V004")}
             {Show_chude()}
 
             {Practice ?

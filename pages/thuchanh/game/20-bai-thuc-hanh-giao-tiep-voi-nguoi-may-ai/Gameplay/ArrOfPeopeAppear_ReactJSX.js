@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import DataTool from "../S_Data_tool"
 import Read_ReactSpeech from "../../../../helpers/Read_ReactSpeech"
 import ReadMessage from "../../../../../util/Read/ReadMessage"
+import Cookies_ReadingPage from "../../../../../util/Cookies/Cookies_ReadingPage"
 let VoicePick = [1];
 
 let State_of_Anwer = ["none"];
@@ -332,6 +333,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
 
     return (
         <>
+            {Cookies_ReadingPage("G001")}
             <div className="GameSence_Playing">
                 <p>  Score:  {Score} Time: {TimeCount} s</p>
 

@@ -20,15 +20,7 @@ export default {
             "price": "",
             "youtube": "",
             "buycode": "DE0001"
-        },
-        {
-            "link": "thuchanh/dung-thu/10-cau-thong-dung-nhat",
-            "name": "Học 5 câu thông dụng nhất(1)",
-            "img": "",
-            "price": "",
-            "youtube": "",
-            "buycode": "DE0001"
-        },
+        }
     ],
     "reading_mobile": [
         {

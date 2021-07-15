@@ -7,7 +7,7 @@ import Jsonfile from "../../../../util/filedulieu/3000tuthongdung/tuvung3000thon
 import GetLongest from "../../../../util/rarely_use/GetLongest"
 import PracticeDiv from "./practice"
 import ReadMessage from "../../../../util/Read/ReadMessage"
-
+import Cookies_ReadingPage from "../../../../util/Cookies/Cookies_ReadingPage"
 let ArrHold = [["hello", "null", "null", "null"]]
 
 function Manager() {
@@ -66,12 +66,11 @@ function Manager() {
 
                 />
             </div>
-
+            {Cookies_ReadingPage("V001")}
             {Show_3000Words()}
             {Practice ?
                 <PracticeDiv SET_Practice={SET_Practice} SET_Data_Commands={SET_Data_Commands} Data_Commands={Data_Commands} Data={Data} />
                 : ""}
-
             {Detail
                 ? <div
                     style={{
