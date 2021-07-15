@@ -7,19 +7,35 @@ import List_IDs from "../../List_IDs/List_IDs"
 import Linkapi from "../../api/Linkapi"
 import Dictionary_with_image from "../../../pages/helpers/IMAGE/Dictionary_with_image"
 const queryString = require('query-string');
-export default function Show_Demo_Sentence_Basic(OBJ_INPUT) {
+export default function Show_Tieng_anh_lop_1(Dulieu_tieng_anh_lop_1) {
+
     const [Data_Learn, SET_Data_Learn] = useState("")
+
     const [Data_Commands, SET_Data_Commands] = useState("====")
+
     const [Docthu, SET_Docthu] = useState("")
-    const [Data_use, SET_Data_use] = useState(OBJ_INPUT[0])
+
+    const [Data_use, SET_Data_use] = useState(Dulieu_tieng_anh_lop_1[0].data)
+
     const [Name, SET_Name] = useState("")
+
     const [Status, SET_Status] = useState(0)
+
+    const [Num_page, SET_Num_page] = useState(0)
+
     const [Popup, SET_Popup] = useState("")
     useEffect(() => {
         setTimeout(() => {
             const parsed = queryString.parse(window.location.search);
+
             if (parsed["token"] !== undefined) {
-                CHECK_Token(parsed["token"], SET_Name)
+                if (parsed["token"].indexOf("giao-khoa-lop-2") === -1) {
+                    alert("Tài khoản không hợp lệ (token không tồn tại). Vui lòng nhắn tin englishtool.co để nhận được trợ giúp.")
+                } else {
+                    CHECK_Token(parsed["token"], SET_Name)
+                }
+            } else {
+                alert("Cần token để sử dụng. Vui lòng nhắn tin englishtool.co để nhận được trợ giúp. Xin cảm ơn")
             }
         }, 5000)
     }, [Status])
@@ -43,24 +59,23 @@ export default function Show_Demo_Sentence_Basic(OBJ_INPUT) {
                     <hr />
 
                     {Name === "" ? "Xin chờ 5s..." :
-                        <div>
-                            <b>{Name}</b>
-                            <select onChange={(e) => {
-                                SET_Data_use(OBJ_INPUT[e.currentTarget.value])
-                            }} className="form-control">
-                                {OBJ_INPUT.map((e, i) =>
-                                    <option value={i} key={i}>
-                                        {e.title}
-                                    </option>
+                        <div className="container">
+                            <h3> {Name}.</h3>
+                            <hr />
+                            <select id="SelectID" onChange={(e) => {
+                                SET_Num_page(e.currentTarget.value)
+                            }}>
+                                <option>Chọn trang</option>
+                                {Dulieu_tieng_anh_lop_1.map((e, i) =>
+                                    <option key={i} value={i}>{i + 1}</option>
                                 )}
                             </select>
+                            <hr />
                             {Data_Learn === ""
                                 ?
                                 <div>
-                                    <h1>{Data_use["title"]}</h1>
-                                    <hr />
                                     <h3 style={{ backgroundColor: "black", color: "yellow", padding: "5px" }}>Bấm chọn câu muốn học</h3>
-                                    {Data_use["data"].map((e, i) =>
+                                    {Dulieu_tieng_anh_lop_1[Num_page].data.map((e, i) =>
                                         <div
                                             key={i}
                                             style={{
@@ -72,7 +87,7 @@ export default function Show_Demo_Sentence_Basic(OBJ_INPUT) {
                                                 cursor: "pointer"
                                             }}
                                             onClick={() => {
-                                                SET_Data_Learn(Data_use["data"][i]);
+                                                SET_Data_Learn(Dulieu_tieng_anh_lop_1[Num_page].data[i]);
                                                 try {
                                                     document.getElementById(List_IDs["BUTTON_CLICK_TO_TALK"]).click()
                                                 } catch (error) {
@@ -80,10 +95,13 @@ export default function Show_Demo_Sentence_Basic(OBJ_INPUT) {
                                                 }
                                             }}
                                         >
+
                                             <h3>{e.VN}</h3>
                                             <i>{e.EN}</i>
                                         </div>
                                     )}
+                                    <hr />
+                                    <img src={Dulieu_tieng_anh_lop_1[Num_page].img} alt={Dulieu_tieng_anh_lop_1[Num_page].img} width="100%" />
                                 </div>
                                 :
                                 <div className="text-justify">
@@ -143,22 +161,25 @@ export default function Show_Demo_Sentence_Basic(OBJ_INPUT) {
                                     >Học câu khác</button>
                                     <hr />
                                     <div>
-                                        <b>Từ điển hình ảnh:</b>
-                                        <br />
-                                        {Data_Learn.EN.split(" ").map((e, i) =>
-                                            <div
-                                                style={{
-                                                    border: "5px solid green",
-                                                    padding: "5px",
-                                                    cursor: "pointer",
-                                                    display: "inline-block",
-                                                    marginLeft: "10px"
-                                                }}
-                                                onClick={() => { SET_Popup(e) }}
-                                                key={i}>
-                                                {e}
-                                            </div>
-                                        )}
+                                        <div>
+                                            <b>Từ điển hình ảnh:</b>
+                                            <br />
+                                            {Data_Learn.EN.split(" ").map((e, i) =>
+                                                <div
+                                                    style={{
+                                                        border: "5px solid green",
+                                                        padding: "5px",
+                                                        cursor: "pointer",
+                                                        display: "inline-block",
+                                                        marginLeft: "10px"
+                                                    }}
+                                                    onClick={() => { SET_Popup(e) }}
+                                                    key={i}>
+                                                    {e}
+                                                </div>
+                                            )}
+                                        </div>
+
                                     </div>
                                 </div>
                             }
@@ -206,13 +227,11 @@ async function CHECK_Token(token, SET_Name) {
         })
         let data = await res.json();
         if (data.data["status"] === "token-found") {
-            SET_Name("Xin chào " + data.data["username"]);
-            // alert("Xin chào " + data.data["username"] + ". Chúc bạn thực hành tiếng anh thú vị và hiệu quả.")
+            SET_Name("Xin chào " + data.data["username"] + ". Chúc " + data.data["username"] + " học tiếng anh vui vẻ.")
         }
         if (data.data["status"] === "token-not-found") {
-            alert("Tài khoản chưa được kích hoạt. Vui lòng liên hệ Englishtool.co để kích hoạt tài khoản.")
+            alert("Tài khoản không tồn tại. Vui lòng nhắn tin vào page để được trợ giúp. Xin cảm ơn!")
         }
-
     } catch (error) {
         console.log(error)
     }

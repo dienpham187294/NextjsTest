@@ -5,6 +5,7 @@ import Dictaphone from "../../../pages/helpers/RegcognitionV1-0-1AI0.2ReadPaperT
 import Check2String from "../../String_tool/Check2String"
 import List_IDs from "../../List_IDs/List_IDs"
 import Linkapi from "../../api/Linkapi"
+import Dictionary_with_image from "../../../pages/helpers/IMAGE/Dictionary_with_image"
 const queryString = require('query-string');
 export default function Show_Tieng_anh_lop_1(Dulieu_tieng_anh_lop_1) {
 
@@ -21,6 +22,8 @@ export default function Show_Tieng_anh_lop_1(Dulieu_tieng_anh_lop_1) {
     const [Status, SET_Status] = useState(0)
 
     const [Num_page, SET_Num_page] = useState(0)
+
+    const [Popup, SET_Popup] = useState("")
     useEffect(() => {
         setTimeout(() => {
             const parsed = queryString.parse(window.location.search);
@@ -71,8 +74,6 @@ export default function Show_Tieng_anh_lop_1(Dulieu_tieng_anh_lop_1) {
                             {Data_Learn === ""
                                 ?
                                 <div>
-                                    <img src={Dulieu_tieng_anh_lop_1[Num_page].img} alt={Dulieu_tieng_anh_lop_1[Num_page].img} width="100%" />
-                                    <hr />
                                     <h3 style={{ backgroundColor: "black", color: "yellow", padding: "5px" }}>Bấm chọn câu muốn học</h3>
                                     {Dulieu_tieng_anh_lop_1[Num_page].data.map((e, i) =>
                                         <div
@@ -99,6 +100,8 @@ export default function Show_Tieng_anh_lop_1(Dulieu_tieng_anh_lop_1) {
                                             <i>{e.EN}</i>
                                         </div>
                                     )}
+                                    <hr />
+                                    <img src={Dulieu_tieng_anh_lop_1[Num_page].img} alt={Dulieu_tieng_anh_lop_1[Num_page].img} width="100%" />
                                 </div>
                                 :
                                 <div className="text-justify">
@@ -158,7 +161,24 @@ export default function Show_Tieng_anh_lop_1(Dulieu_tieng_anh_lop_1) {
                                     >Học câu khác</button>
                                     <hr />
                                     <div>
-
+                                        <div>
+                                            <b>Từ điển hình ảnh:</b>
+                                            <br />
+                                            {Data_Learn.EN.split(" ").map((e, i) =>
+                                                <div
+                                                    style={{
+                                                        border: "5px solid green",
+                                                        padding: "5px",
+                                                        cursor: "pointer",
+                                                        display: "inline-block",
+                                                        marginLeft: "10px"
+                                                    }}
+                                                    onClick={() => { SET_Popup(e) }}
+                                                    key={i}>
+                                                    {e}
+                                                </div>
+                                            )}
+                                        </div>
 
                                     </div>
                                 </div>
@@ -170,6 +190,7 @@ export default function Show_Tieng_anh_lop_1(Dulieu_tieng_anh_lop_1) {
                 <Dictaphone
                     Data={Data_Commands}
                 />
+                <Dictionary_with_image Popup={Popup} />
                 <Read_ReactSpeech />
                 <button style={{ display: "none" }} onClick={() => {
                     if ($("#messageRes").val() !== "" && Docthu === "Docthu") {

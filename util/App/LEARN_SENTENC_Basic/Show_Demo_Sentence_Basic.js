@@ -5,6 +5,7 @@ import Dictaphone from "../../../pages/helpers/RegcognitionV1-0-1AI0.2ReadPaperT
 import Check2String from "../../String_tool/Check2String"
 import List_IDs from "../../List_IDs/List_IDs"
 import Linkapi from "../../api/Linkapi"
+import Dictionary_with_image from "../../../pages/helpers/IMAGE/Dictionary_with_image"
 const queryString = require('query-string');
 export default function Show_Demo_Sentence_Basic() {
     const [Data_Learn, SET_Data_Learn] = useState("")
@@ -13,6 +14,7 @@ export default function Show_Demo_Sentence_Basic() {
     const [Data_use, SET_Data_use] = useState([])
     const [Name, SET_Name] = useState("")
     const [Status, SET_Status] = useState(0)
+    const [Popup, SET_Popup] = useState("")
     useEffect(() => {
         setTimeout(() => {
             const parsed = queryString.parse(window.location.search);
@@ -131,7 +133,24 @@ export default function Show_Demo_Sentence_Basic() {
                                     >Học câu khác</button>
                                     <hr />
                                     <div>
-
+                                        <div>
+                                            <b>Từ điển hình ảnh:</b>
+                                            <br />
+                                            {Data_Learn.EN.split(" ").map((e, i) =>
+                                                <div
+                                                    style={{
+                                                        border: "5px solid green",
+                                                        padding: "5px",
+                                                        cursor: "pointer",
+                                                        display: "inline-block",
+                                                        marginLeft: "10px"
+                                                    }}
+                                                    onClick={() => { SET_Popup(e) }}
+                                                    key={i}>
+                                                    {e}
+                                                </div>
+                                            )}
+                                        </div>
 
                                     </div>
                                 </div>
@@ -143,6 +162,7 @@ export default function Show_Demo_Sentence_Basic() {
                 <Dictaphone
                     Data={Data_Commands}
                 />
+                <Dictionary_with_image Popup={Popup} />
                 <Read_ReactSpeech />
                 <button style={{ display: "none" }} onClick={() => {
                     if ($("#messageRes").val() !== "" && Docthu === "Docthu") {
