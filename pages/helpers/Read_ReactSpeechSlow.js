@@ -40,7 +40,7 @@ function Read(props) {
                 <Speech
                     text={arrText[arrText.length - 1]}
                     pitch={1}
-                    rate={0.9}
+                    rate={0.6}
                     volume={1}
                     lang="en-GB"
                     voice={arrVoice[arrVoice.length - 1]}

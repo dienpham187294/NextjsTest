@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import Read_ReactSpeech from "../../../pages/helpers/Read_ReactSpeech"
+import Read_ReactSpeech from "../../../pages/helpers/Read_ReactSpeechSlow"
 import ReadMessage from "../../Read/ReadMessage"
 import Dictaphone from "../../../pages/helpers/RegcognitionV1-0-1AI0.2LearnBasic"
 import Check2String from "../../String_tool/Check2String"
@@ -7,7 +7,7 @@ import List_IDs from "../../List_IDs/List_IDs"
 import Linkapi from "../../api/Linkapi"
 import Dictionary_with_image from "../../../pages/helpers/IMAGE/Dictionary_with_image"
 const queryString = require('query-string');
-export default function Show_Tieng_anh_lop_1(Dulieu_tieng_anh_lop_1) {
+export default function Show_Tieng_anh_lop_1(Dulieu_tieng_anh_lop_1, tokenCheck) {
 
     const [Data_Learn, SET_Data_Learn] = useState("")
 
@@ -27,9 +27,8 @@ export default function Show_Tieng_anh_lop_1(Dulieu_tieng_anh_lop_1) {
     useEffect(() => {
         setTimeout(() => {
             const parsed = queryString.parse(window.location.search);
-
             if (parsed["token"] !== undefined) {
-                if (parsed["token"].indexOf("giao-khoa-lop-1") === -1) {
+                if (!(parsed["token"].includes(tokenCheck))) {
                     alert("Tài khoản không hợp lệ (token không tồn tại). Vui lòng nhắn tin englishtool.co để nhận được trợ giúp.")
                 } else {
                     CHECK_Token(parsed["token"], SET_Name)
@@ -58,9 +57,9 @@ export default function Show_Tieng_anh_lop_1(Dulieu_tieng_anh_lop_1) {
                     }}>
                     <hr />
 
-                    {Name === "" ? "Xin chờ 5s..." :
+                    {Name === "" ? <h2>Xin chờ 5s...</h2> :
                         <div className="container">
-                            <h3> {Name}.</h3>
+                            <h3> {Name}</h3>
                             <hr />
                             <select id="SelectID" onChange={(e) => {
                                 SET_Num_page(e.currentTarget.value)

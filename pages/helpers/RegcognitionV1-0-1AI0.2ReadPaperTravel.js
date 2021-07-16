@@ -13,8 +13,8 @@ let commands = [];
 let ArrMessage = []
 let Str_to_Check = ""
 function Dictaphone({ Data }) {
-    const [fuzzyMatchingThreshold, SET_fuzzyMatchingThreshold] = useState(0.5)
-    const [Style, SET_Style] = useState(false)
+    const [fuzzyMatchingThreshold, SET_fuzzyMatchingThreshold] = useState(0.4)
+    const [Style, SET_Style] = useState(true)
     const [OpenSetting, SET_OpenSetting] = useState(0)
     useEffect(() => {
         Str_to_Check = "";

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import Read_ReactSpeech from "../../../pages/helpers/Read_ReactSpeech"
+import Read_ReactSpeech from "../../../pages/helpers/Read_ReactSpeechSlow"
 import ReadMessage from "../../Read/ReadMessage"
 import Dictaphone from "../../../pages/helpers/RegcognitionV1-0-1AI0.2ReadPaperTravel"
 import Check2String from "../../String_tool/Check2String"
