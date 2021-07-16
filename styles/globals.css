@@ -28,6 +28,7 @@ a:hover {
     max-height: 600px;
     overflow: auto;
     text-align: center;
+    
 }
 
 .GameSence_Playing_Arrpeople {
@@ -62,6 +63,7 @@ a:hover {
     top: 5%;
     bottom: 5%;
     overflow: auto;
+    z-index: 2;
 }
 
 .Span_Show_Info_StrickAnwers_Reactdata {

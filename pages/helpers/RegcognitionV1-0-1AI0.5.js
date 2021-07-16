@@ -18,7 +18,7 @@ function Dictaphone({ Data }) {
             command: Data,
             callback: (command) => { writeMessage(`${command}`) },
             isFuzzyMatch: true,
-            fuzzyMatchingThreshold: 0.5,
+            fuzzyMatchingThreshold: 0.4,
             bestMatchOnly: true
         }]
     }, [Data])
@@ -35,6 +35,7 @@ function Dictaphone({ Data }) {
     return (<div>
         <p>Microphone: {listening ? 'on' : 'off'}</p>
         <button
+            id="idClickMiniGame"
             onClick={startListening}
         >Click to talk</button>
         <button
