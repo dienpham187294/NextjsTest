@@ -24,8 +24,8 @@ function Dictaphone({ Data }) {
         commands = [{
             command: Data,
             callback: (command) => {
-                Str_to_Check += "epdp" + `${command}`;
-                console.log(Str_to_Check, "commands");
+                Str_to_Check = `${command}`;
+                console.log(Str_to_Check, "===========================commands");
                 writeMessage(Str_to_Check);
             },
             isFuzzyMatch: true,
@@ -43,66 +43,69 @@ function Dictaphone({ Data }) {
     useEffect(() => {
         if (typeof (Data) === 'string' && interimTranscript !== "") {
             let Temp_str = interimTranscript;
-            if (interimTranscript.indexOf(2) !== -1) {
-                Temp_str += "two";
+            if (interimTranscript.includes(1)) {
+                Temp_str += " one";
             }
-            if (interimTranscript.indexOf(3) !== -1) {
-                Temp_str += "three";
+            if (interimTranscript.includes(2)) {
+                Temp_str += " two";
             }
-            if (interimTranscript.indexOf(4) !== -1) {
-                Temp_str += "four";
+            if (interimTranscript.includes(3)) {
+                Temp_str += " three";
             }
-            if (interimTranscript.indexOf(5) !== -1) {
-                Temp_str += "five";
+            if (interimTranscript.includes(4)) {
+                Temp_str += " four";
             }
-            if (interimTranscript.indexOf(6) !== -1) {
-                Temp_str += "six";
+            if (interimTranscript.includes(5)) {
+                Temp_str += " five";
             }
-            if (interimTranscript.indexOf(7) !== -1) {
-                Temp_str += "seven";
+            if (interimTranscript.includes(6)) {
+                Temp_str += " six";
             }
-            if (interimTranscript.indexOf(8) !== -1) {
-                Temp_str += "eight";
+            if (interimTranscript.includes(7)) {
+                Temp_str += " seven";
             }
-            if (interimTranscript.indexOf(9) !== -1) {
-                Temp_str += "nine";
+            if (interimTranscript.includes(8)) {
+                Temp_str += " eight";
             }
-            if (interimTranscript.indexOf(10) !== -1) {
-                Temp_str += "ten";
+            if (interimTranscript.includes(9)) {
+                Temp_str += " nine";
             }
-            if (interimTranscript.indexOf(11) !== -1) {
-                Temp_str += "eleven"
+            if (interimTranscript.includes(10)) {
+                Temp_str += " ten";
             }
-            if (interimTranscript.indexOf(12) !== -1) {
-                Temp_str += "twelve"
+            if (interimTranscript.includes(11)) {
+                Temp_str += " eleven"
             }
-            if (interimTranscript.indexOf(13) !== -1) {
-                Temp_str += "thirteen"
+            if (interimTranscript.includes(12)) {
+                Temp_str += " twelve"
             }
-            if (interimTranscript.indexOf(14) !== -1) {
-                Temp_str += "fourteen"
+            if (interimTranscript.includes(13)) {
+                Temp_str += " thirteen"
             }
-            if (interimTranscript.indexOf(15) !== -1) {
-                Temp_str += "fifteen"
+            if (interimTranscript.includes(14)) {
+                Temp_str += " fourteen"
             }
-            if (interimTranscript.indexOf(16) !== -1) {
-                Temp_str += "sixteen"
+            if (interimTranscript.includes(15)) {
+                Temp_str += " fifteen"
             }
-            if (interimTranscript.indexOf(17) !== -1) {
-                Temp_str += "seventeen"
+            if (interimTranscript.includes(16)) {
+                Temp_str += " sixteen"
             }
-            if (interimTranscript.indexOf(18) !== -1) {
-                Temp_str += "eighteen"
+            if (interimTranscript.includes(17)) {
+                Temp_str += " seventeen"
             }
-            if (interimTranscript.indexOf(19) !== -1) {
-                Temp_str += "nineteen"
+            if (interimTranscript.includes(18)) {
+                Temp_str += " eighteen"
             }
-            if (interimTranscript.indexOf(20) !== -1) {
-                Temp_str += "twenty"
+            if (interimTranscript.includes(19)) {
+                Temp_str += " nineteen"
+            }
+            if (interimTranscript.includes(20)) {
+                Temp_str += " twenty"
             }
             if (Temp_str.toLowerCase().includes(Data.toLowerCase()) || stringSimilarity.compareTwoStrings(Temp_str.toLowerCase(), Data.toLowerCase()) > 0.7) {
-                Str_to_Check += "epdp" + Data;
-                console.log(Str_to_Check, "interim");
+                Str_to_Check = Data;
+                console.log(Str_to_Check, "=======================================interim");
                 writeMessage(Str_to_Check);
             }
         }
@@ -112,7 +115,7 @@ function Dictaphone({ Data }) {
     const stopListening = () => SpeechRecognition.stopListening({ continuous: false, language: 'en-GB' });
     async function writeMessage(message) {
         try {
-            await $("#messageRes").val(message);
+            await $("#messageRes").val("one_true");
             await $("#messageResBtn").click();
         } catch (error) {
             console.log("e")
@@ -172,74 +175,3 @@ function Dictaphone({ Data }) {
     );
 };
 export default Dictaphone;
-
-
-// import GetLongest from '../../util/GetLongest';
-// import Dictionary from './Dictionary';
-// import ImageSearch from './ImageSearch';
-
-
-// {
-//     ShowSide ?
-
-//         <div
-//             id="Dictaphone_div_Sidebar"
-//             style={{
-//                 position: "fixed",
-//                 width: "19%",
-//                 top: "1px",
-//                 left: "0.5%",
-//                 bottom: "1px",
-//                 overflow: "auto",
-//                 padding: "3px",
-//                 backgroundColor: "white",
-//                 border: "5px solid green",
-//                 borderRadius: "5px",
-//                 zIndex: 2
-//             }}
-//         >
-
-//             <button
-//                 className="ml-3"
-//                 onClick={() => {
-//                     SET_ShowSide(false)
-//                 }}
-//             >Turn off Side Bar</button>
-//             <hr />
-//             <button
-//                 onClick={() => {
-//                     SET_Word(document.getElementById("DictionarySearch").innerText)
-//                 }}
-//             >Look up</button>
-//             <button
-//                 onClick={() => {
-//                     document.getElementById("DictionarySearch").innerText = "";
-//                     SET_Word("")
-//                 }}
-//             >Clear</button>
-//             <div id="DictionarySearch"></div>
-//             {Word !== "" ?
-//                 <>
-//                     <Dictionary Word={GetLongest(Word)} />
-//                     < ImageSearch Word={Word} />
-//                 </>
-//                 : null}
-
-//             <hr />
-//             {AllMessage.map((e, i) =>
-//                 <p key={i} id={i + "p_dictaphone"} style={{ backgroundColor: i === AllMessage.length - 1 ? "yellow" : "transparent" }} >{e}</p>
-//             )}
-//         </div>
-//         : ""
-// }   function scrolldown() {
-//     setTimeout(() => {
-//         try {
-//             let id = (AllMessage.length - 1) + 'p_dictaphone'
-//             document.getElementById(id).scrollIntoView({ behavior: "smooth" });
-//         } catch (error) {
-
-//         }
-
-//     }, 100)
-
-// }
