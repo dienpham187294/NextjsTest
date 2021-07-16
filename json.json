@@ -1,0 +1,11 @@
+{
+    "_id": {
+        "$oid": "60f10abb00e3a89de13c2af3"
+    },
+    "token": "1652364800-cau-thong-dung",
+    "name": "VanDIEN",
+    "status": true,
+    "list_of_machine": [
+        "none"
+    ]
+}

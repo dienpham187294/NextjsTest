@@ -1,14 +1,11 @@
-import List_ID from "../List_IDs/List_IDs"
 import Link from 'next/link'
 
 export default function Cookies_ReadingPage(BUYCODE) {
     // setTimeout(()=>{})
     try {
-        console.log(document.getElementById(List_ID["GET_Cookies"]).innerText.indexOf("@"), document.getElementById(List_ID["Text_Cookies_Buycode"]).innerText.indexOf(BUYCODE))
+        let Cookies_Buycode = $("#Text_Cookies_Buycode").text();
         if (
-            document.getElementById(List_ID["GET_Cookies"]).innerText.indexOf("@") === -1
-            ||
-            document.getElementById(List_ID["Text_Cookies_Buycode"]).innerText.indexOf(BUYCODE) === -1
+            !Cookies_Buycode.includes(BUYCODE)
         ) {
             return (
                 <div

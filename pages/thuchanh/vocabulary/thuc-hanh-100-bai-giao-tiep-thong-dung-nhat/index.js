@@ -47,7 +47,7 @@ function Manager() {
                     className="btn btn-outline-primary ml-1" type="button" defaultValue="Thực hành đọc sau"
                 />
             </div>
-            {Cookies_ReadingPage("V003")}
+            {Cookies_ReadingPage("V003", "100-bai-giao-tiep")}
             {Show_chude()}
 
             {Practice ?

@@ -5,14 +5,15 @@ import tuvung800cau from "../../../../util/filedulieu/800cau"
 import PracticeDiv from "./practice"
 import Cookies_checking from "../../../../util/Cookies/Cookies_checking"
 import Dictionary_with_image from "../../../helpers/IMAGE/Dictionary_with_image";
+
 function Index_800cauthongdung() {
     const [Data, SET_Data] = useState(tuvung800cau.slice(0, 20))
     const [Practice, SET_Practice] = useState(false)
     const [Data_Commands, SET_Data_Commands] = useState([])
     const [Learn_detail, SET_Learn_detail] = useState("")
     const [Popup, SET_Popup] = useState("")
-    return (
 
+    return (
         <div className="container">
             <div className="text-justify p-3">
                 <p>
@@ -70,17 +71,7 @@ function Index_800cauthongdung() {
                         SET_Popup(e)
                     }}
                 >{e}</span>)}</p>
-            {/* <b>Từ điển hình ảnh</b>
-            <p>{Learn_detail.split(" ").map((e, i) =>
-                <span
-                    style={{
-                        border: "2px solid green",
-                        padding: "0 3px",
-                        marginLeft: "15px",
-                        cursor: "pointer"
-                    }}
-                >{e}</span>)}</p> */}
-            {Cookies_checking("V002")}
+            {Cookies_checking("V002", "800-cau-thong-dung")}
             {Show_chude()}
 
             {Practice ?
@@ -123,5 +114,4 @@ function Index_800cauthongdung() {
 
 
 export default Index_800cauthongdung
-
 

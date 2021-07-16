@@ -52,9 +52,8 @@ function Manager() {
                     className="btn btn-outline-primary ml-1" type="button" defaultValue="Thực hành"
                 />
             </div>
-            {Cookies_ReadingPage("V004")}
+            {Cookies_ReadingPage("V004", "3000-tu-vung-thong-dung")}
             {Show_chude()}
-
             {Practice ?
                 <PracticeDiv Data={Data} Data_Commands={Data_Commands} SET_Data_Commands={SET_Data_Commands} SET_Practice={SET_Practice} />
                 : ""}

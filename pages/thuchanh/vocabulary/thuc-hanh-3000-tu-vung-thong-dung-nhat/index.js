@@ -66,7 +66,7 @@ function Manager() {
 
                 />
             </div>
-            {Cookies_ReadingPage("V001")}
+            {Cookies_ReadingPage("V001", "3000-tu-co-ban")}
             {Show_3000Words()}
             {Practice ?
                 <PracticeDiv SET_Practice={SET_Practice} SET_Data_Commands={SET_Data_Commands} Data_Commands={Data_Commands} Data={Data} />

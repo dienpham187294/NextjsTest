@@ -168,7 +168,7 @@ function SHOW_CHECK(Data, Check_BuyCode) {
 function showlistbuycode(listbuycode) {
     try {
         return listbuycode.split("epdp").map((e, i) =>
-            <p>{e}</p>
+            <p key={i}>{e}</p>
         )
     } catch (error) {
         return null
