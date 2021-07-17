@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import DataTool from "../S_Data_tool"
 import Read_ReactSpeech from "../../../../helpers/Read_ReactSpeech"
 import ReadMessage from "../../../../../util/Read/ReadMessage"
-
+const stringSimilarity = require("string-similarity");
 let VoicePick = [1];
 
 let State_of_Anwer = ["none"];
@@ -89,7 +89,6 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                                         ARR_TEMP_CHECKMESSAGE_Rate = TEMP_CHECK[0];
                                         ARR_TEMP_CHECKMESSAGE_Length = TEMP_CHECK[1];
                                         ARR_TEMP_CHECKMESSAGE_ARR.push(e)
-
                                     }
                                 }
                             })
@@ -97,16 +96,12 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                         //----------------------
 
                         if (ARR_TEMP_CHECKMESSAGE_ARR[ARR_TEMP_CHECKMESSAGE_ARR.length - 1] !== "none") {
-
                             let data = ARR_TEMP_CHECKMESSAGE_ARR[ARR_TEMP_CHECKMESSAGE_ARR.length - 1];
-
-
                             if (data.robotspeak.length > 0) {
                                 let textRobotSpeak = data.robotspeak.PickRandom()
                                 ReadMessage(textRobotSpeak, VoicePick[VoicePick.length - 1]);
                                 $("#textRobotSayId").text(textRobotSpeak)
                             }
-
                             if (data.handling_next.length > 0) {
 
                                 Data_temp_Strickmode.push(data.handling_next)
@@ -140,13 +135,6 @@ function ArrOfPeopeAppear_ReactJSX(props) {
             props.SET_Info_message(null)
         }, [props.Info_message]
     )
-
-
-    // async function Read(message, i) {
-    //     await SET_MessagetoRead(null);
-    //     await Read([message, i]);
-    // }
-
 
     /*BEGIN ARR TO SHOW */
     async function AddTo_Show_ArrOfPeopeAppear_ReactData(e, index) {
@@ -389,28 +377,15 @@ function SortMessageToArray(message) {
 }
 
 function checkMessageReturnNumber(message_API, message_INPUT) {
-
-    if (message_API === null || message_INPUT === null || message_API === "" || message_INPUT === "") {
+    try {
+        let Allnumtocheck = SortMessageToArray(message_INPUT).length
+        let checkRate = stringSimilarity.compareTwoStrings(message_API, message_INPUT) * 10
+        if (checkRate > 6) {
+            return [checkRate, Allnumtocheck]
+        }
+    } catch (error) {
         return [0, 0]
     }
-    let numCheckRight = 0;
-    let Allnumtocheck = SortMessageToArray(message_INPUT).length
-    let New_message_API = SortMessageToArray(message_API).toString()
-
-
-    SortMessageToArray(message_INPUT).forEach(e => {
-
-        if (New_message_API.indexOf(e) > -1) {
-            numCheckRight += 1;
-
-        }
-    })
-
-    if (numCheckRight / Allnumtocheck > 2 / 3) {
-
-        return [numCheckRight / Allnumtocheck * 10, Allnumtocheck]
-    }
-    return [0, 0]
 }
 
 Array.prototype.PickRandom = function () {
