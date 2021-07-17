@@ -285,7 +285,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                             <div className="text-left">
                                 Trả lời:  {Info_StrickAnwers_Reactdata !== null && ShowHint ? Show_Info_StrickAnwers_Reactdata() : ""}
                             </div>
-                            <h3 id="submitRightMessageId"></h3>
+                            <h3 id="submitRightMessageId" style={{ backgroundColor: "black", color: "red" }}></h3>
                             <div style={{ display: "none" }} id="input_submit"></div>
                             <div id="input_submitHTML"></div>
                             <input
