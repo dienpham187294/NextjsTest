@@ -279,13 +279,16 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                                     <img alt={Info_Icon_Reactdata} src={Info_Icon_Reactdata} width="60px" />
                                     : null}
                                 {Score < 6 ?
-                                    <span>Khách nói:  <span id="textRobotSayId" style={{ opacity: (10 - Score) / 10 }}>Hello</span></span>
+                                    <div>
+                                        <span>Khách nói:</span>
+                                        <h3>  <span id="textRobotSayId" style={{ opacity: (10 - Score) / 10 }}>Hello</span></h3>
+                                    </div>
                                     : null}
                             </div>
                             <div className="text-left">
-                                Trả lời:  {Info_StrickAnwers_Reactdata !== null && ShowHint ? Show_Info_StrickAnwers_Reactdata() : ""}
+                                <h4>  Trả lời:  {Info_StrickAnwers_Reactdata !== null && ShowHint ? Show_Info_StrickAnwers_Reactdata() : ""}</h4>
                             </div>
-                            <h3 id="submitRightMessageId" style={{ backgroundColor: "black", color: "red" }}></h3>
+                            <h3 id="submitRightMessageId" style={{ backgroundColor: "black", color: "yellow" }}></h3>
                             <div style={{ display: "none" }} id="input_submit"></div>
                             <div id="input_submitHTML"></div>
                             <input
