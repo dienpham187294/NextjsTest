@@ -1,15 +1,11 @@
 
 import { useEffect, useState } from "react";
-import baithuchanhgiaotiep from "../../../../util/filedulieu/20baithuchanhgiaotiep"
-import baithuchanhgiaotiep1 from "../../../../util/filedulieu/20baithuchanhgiaotiep1"
 import Dulieu_gameMiniSellFruit from "../../../../util/filedulieu/Dulieu_gameMiniSellFruit";
 function UpLoadFile(props) {
-    const [Data_20baithuchanh] = useState(baithuchanhgiaotiep.concat(baithuchanhgiaotiep1))
     const [Status] = useState(0)
     useEffect(() => {
         Fnpick(Dulieu_gameMiniSellFruit)
     }, [Status])
-
     function Fnpick(arrPick) {
         try {
             props.SET_Data_InfoOflession(arrPick)
@@ -40,20 +36,7 @@ function UpLoadFile(props) {
     }
     return (
         <div>
-            <table className="table table-striped"><tbody>
 
-                {Data_20baithuchanh.map((e, i) =>
-                    <tr key={i}>
-                        <td>{e[0].nameoflession}</td>
-                        <td
-                            onClick={() => {
-                                Fnpick(e)
-                            }}
-                            style={{ cursor: "pointer" }}
-                        >Chọn bài học</td>
-                    </tr>
-                )}
-            </tbody></table>
         </div>
     )
 }
