@@ -21,6 +21,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
 
 
 
+    const [WrongChoose, SET_WrongChoose] = useState(0)
     const [Score, SET_Score] = useState(0)
     const [TimeCount, SET_TimeCount] = useState(600);
     const [VoiceAPIMessage, SET_VoiceAPIMessage] = useState("");
@@ -129,8 +130,6 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                             }
                             SET_Info_Icon_Reactdata(data.icon)
                             Submit_check_funtion_indata(data.function);
-
-
                         }
                         //...............
                     }
@@ -243,6 +242,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                 })
 
                 if (status_check_submit) {
+                    $("#submitRightMessageId").text("Chọn chính xác")
                     Data_temp_Strickmode.push(data.end.handling_next);
                     let arrTemp = []
                     data.end.handling_next.forEach(e => {
@@ -251,6 +251,8 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                         })
                     })
                     SET_Info_StrickAnwers_Reactdata(arrTemp)
+                } else {
+                    SET_WrongChoose(W => W + 1)
                 }
             })
         } catch (error) {
@@ -281,18 +283,32 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                     <div className="row GameSence_Playing_OneShow">
                         {/* Main */}
                         <div className="col-12">
-                            <img alt={Info_Avatar_Reactdata} src={Info_Avatar_Reactdata} width="90px" />
-                            {Info_Icon_Reactdata !== "" ?
-                                <img alt={Info_Icon_Reactdata} src={Info_Icon_Reactdata} width="60px" />
-                                : null}
-                            {Score < 6 ?
-                                <span id="textRobotSayId">Hello</span>
-                                : null}
-                            <hr />
-                            {Info_StrickAnwers_Reactdata !== null && ShowHint ? Show_Info_StrickAnwers_Reactdata() : ""}
-                            <hr />
                             Điểm: {Score}
                             <button className="btn btn-sm btn-outline-danger ml-1" onClick={() => Outof_Show_OnePeopeAppear_ReactData()}>Thoát!</button>
+                            <div className="text-left">
+                                <img alt={Info_Avatar_Reactdata} src={Info_Avatar_Reactdata} width="90px" />
+                                {Info_Icon_Reactdata !== "" ?
+                                    <img alt={Info_Icon_Reactdata} src={Info_Icon_Reactdata} width="60px" />
+                                    : null}
+                                {Score < 6 ?
+                                    <span>Khách nói:  <span id="textRobotSayId" style={{ opacity: (10 - Score) / 10 }}>Hello</span></span>
+                                    : null}
+                            </div>
+                            <div className="text-left">
+                                Trả lời:  {Info_StrickAnwers_Reactdata !== null && ShowHint ? Show_Info_StrickAnwers_Reactdata() : ""}
+                            </div>
+                            <h3 id="submitRightMessageId"></h3>
+                            <div style={{ display: "none" }} id="input_submit"></div>
+                            <div id="input_submitHTML"></div>
+                            <input
+                                id="input_submitButton"
+                                style={{ display: "none" }}
+                                onClick={() => {
+                                    Submit_Show_OnePeopeAppear_ReactData($("#input_submit").text())
+                                }}
+                                className="btn btn-outline-primary" type="button" value="Enter" />
+                            <hr />
+
                             {/* <br />
                             {VoiceAPIMessage} */}
                         </div>
@@ -318,12 +334,13 @@ function ArrOfPeopeAppear_ReactJSX(props) {
             <div
                 className="GameSence_Playing"
             >
-                <p>  Điểm:  {Score} Thời gian: {TimeCount} s</p>
+                <p>Số lần chọn sai: <span>{WrongChoose}</span>  Điểm:  {Score} Thời gian: {TimeCount} s</p>
                 {Show_OnePeopeAppear_ReactData()}
                 {Show_ArrOfPeopeAppear_ReactData(props.ArrOfPeopeAppear_ReactData)}
                 {TimeCount < 0 ? <div className="GameSence_Playing_Timeout">
                     <h1>Hết giờ</h1>
                     <h3>Điểm: {Score}</h3>
+                    <h3>Số lần chọn sai: {WrongChoose}</h3>
                 </div> : ""}
             </div>
 

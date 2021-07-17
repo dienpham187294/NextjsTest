@@ -79,10 +79,10 @@ export default [
                         "handling_next": [
                             {
                                 "manspeak": [
-                                    "I come from ...Nice to meet you!"
+                                    "Here you are!"
                                 ],
                                 "robotspeak": [
-                                    "Nice to meet you."
+                                    "Thank you."
                                 ],
                                 "icon": "",
                                 "function": {
@@ -356,7 +356,7 @@ export default [
                 ],
                 "Tabletool": [
                     {
-                        "nameoftable": "Hoa quả",
+                        "nameoftable": "Cửa hàng hoa quả",
                         "nameofheader": [
                             "Hoa quả"
                         ],

@@ -1,0 +1,11 @@
+{
+    "_id": {
+        "$oid": "60f168a87ac05c997f7de61b"
+    },
+    "token": "16523165861239854800-cau-thong-dung",
+    "name": "Kiều Duyên",
+    "status": true,
+    "list_of_machine": [
+        "none"
+    ]
+}
