@@ -41,13 +41,12 @@ function Dictaphone({ Data }) {
         commands
     });
     useEffect(() => {
-
+        try {
+            $("#interrimID").text(interimTranscript)
+        } catch (error) {
+            console.log("E ID interim")
+        }
         if (typeof (Data) === 'string' && interimTranscript !== "") {
-            try {
-                $("#interrimID").text(interimTranscript)
-            } catch (error) {
-                console.log("E ID interim")
-            }
             let Temp_str = interimTranscript;
             if (interimTranscript.includes(1)) {
                 Temp_str += " one";
