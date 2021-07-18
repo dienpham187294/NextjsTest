@@ -14,6 +14,28 @@ if (process.brower) {
 let commands = [];
 let ArrMessage = []
 let Str_to_Check = ""
+let ArrNumber = [
+    { "number": 1, "text": "one" },
+    { "number": 2, "text": "two" },
+    { "number": 3, "text": "three" },
+    { "number": 4, "text": "four" },
+    { "number": 5, "text": "five" },
+    { "number": 6, "text": "six" },
+    { "number": 7, "text": "seven" },
+    { "number": 8, "text": "eight" },
+    { "number": 9, "text": "nine" },
+    { "number": 10, "text": "ten" },
+    { "number": 11, "text": "eleven" },
+    { "number": 12, "text": "twelve" },
+    { "number": 13, "text": "thirteen" },
+    { "number": 14, "text": "fourteen" },
+    { "number": 15, "text": "fifteen" },
+    { "number": 16, "text": "sixteen" },
+    { "number": 17, "text": "seventeen" },
+    { "number": 18, "text": "eighteen" },
+    { "number": 19, "text": "nineteen" },
+    { "number": 20, "text": "twenty" }
+]
 function Dictaphone({ Data }) {
     const [fuzzyMatchingThreshold, SET_fuzzyMatchingThreshold] = useState(0.5)
     const [Style, SET_Style] = useState(true)
@@ -41,81 +63,45 @@ function Dictaphone({ Data }) {
         commands
     });
     useEffect(() => {
-       
+
         if (typeof (Data) === 'string' && interimTranscript !== "") {
             try {
                 $("#interrimID").text(interimTranscript)
+                let ArrTemp = [];
+                let i = 0
+                let Arr = Data.toLowerCase().split(/[\?#!-().]+/).join("").split(" ")
+                Arr.forEach(e => {
+                    if (interimTranscript.toLowerCase().includes(e)) {
+                        i++;
+                    }
+                });
+                if (i === Arr.length) {
+                    writeMessage(Str_to_Check)
+                    console.log(interimTranscript, i, Arr.length, "===============interim")
+                }
+
             } catch (error) {
                 console.log("E ID interim")
             }
-            let Temp_str = interimTranscript;
-            if (interimTranscript.includes(1)) {
-                Temp_str += " one";
-            }
-            if (interimTranscript.includes(2)) {
-                Temp_str += " two";
-            }
-            if (interimTranscript.includes(3)) {
-                Temp_str += " three";
-            }
-            if (interimTranscript.includes(4)) {
-                Temp_str += " four";
-            }
-            if (interimTranscript.includes(5)) {
-                Temp_str += " five";
-            }
-            if (interimTranscript.includes(6)) {
-                Temp_str += " six";
-            }
-            if (interimTranscript.includes(7)) {
-                Temp_str += " seven";
-            }
-            if (interimTranscript.includes(8)) {
-                Temp_str += " eight";
-            }
-            if (interimTranscript.includes(9)) {
-                Temp_str += " nine";
-            }
-            if (interimTranscript.includes(10)) {
-                Temp_str += " ten";
-            }
-            if (interimTranscript.includes(11)) {
-                Temp_str += " eleven"
-            }
-            if (interimTranscript.includes(12)) {
-                Temp_str += " twelve"
-            }
-            if (interimTranscript.includes(13)) {
-                Temp_str += " thirteen"
-            }
-            if (interimTranscript.includes(14)) {
-                Temp_str += " fourteen"
-            }
-            if (interimTranscript.includes(15)) {
-                Temp_str += " fifteen"
-            }
-            if (interimTranscript.includes(16)) {
-                Temp_str += " sixteen"
-            }
-            if (interimTranscript.includes(17)) {
-                Temp_str += " seventeen"
-            }
-            if (interimTranscript.includes(18)) {
-                Temp_str += " eighteen"
-            }
-            if (interimTranscript.includes(19)) {
-                Temp_str += " nineteen"
-            }
-            if (interimTranscript.includes(20)) {
-                Temp_str += " twenty"
-            }
-            if (Temp_str.toLowerCase().includes(Data.toLowerCase()) || stringSimilarity.compareTwoStrings(Temp_str.toLowerCase(), Data.toLowerCase()) > 0.7) {
-                Str_to_Check = Data;
-                console.log(Str_to_Check, "=======================================interim");
-                writeMessage(Str_to_Check);
-            }
+
+            // let Temp_str = interimTranscript;
+            // ArrNumber.forEach((e) => {
+            //     Temp_str.split(e.number).join(e.text)
+            // })
+            // try {
+            //     $("#interrimID").text(Temp_str)
+            // } catch (error) {
+            //     console.log("E ID interim")
+            // }
+            // console.log(Temp_str)
+            // if (Temp_str.toLowerCase().includes(Data.toLowerCase())) {
+            //     Str_to_Check = Data;
+            //     console.log(Str_to_Check, "=======================================interim");
+            //     writeMessage(Str_to_Check);
+            // }
+            // console.log(i)
         }
-        console.log(interimTranscript, "interimTranscript")
+        // console.log(interimTranscript, "interimTranscript")
     }, [interimTranscript])
     const startListening = () => SpeechRecognition.startListening({ continuous: true, language: 'en-GB' });
     const stopListening = () => SpeechRecognition.stopListening({ continuous: false, language: 'en-GB' });
@@ -134,11 +120,18 @@ function Dictaphone({ Data }) {
             <button
                 id={List_IDs["BUTTON_CLICK_TO_TALK"]}
                 className="btn btn-sm btn-outline-info ml-5"
-                onClick={startListening}
+                onClick={() => {
+                    if (!listening) {
+                        console.log("startReg")
+                        startListening()
+                    }
+                }
+
+                }
             >Click to Talk</button>
             <button
                 className="btn btn-sm btn-outline-info ml-1 ml-2"
-                onClick={stopListening}
+                onClick={() => stopListening()}
             >Click to Stop</button>
         </p>
         {OpenSetting % 2 === 0 ? <div>

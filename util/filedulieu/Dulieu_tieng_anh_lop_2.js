@@ -9,9 +9,7 @@ export default [
     },
     {
         "img": "https://i.postimg.cc/T1J0kKGb/S-ch-l-p-2-1-03.jpg",
-        "data": [
-
-        ]
+        "data": []
     },
     {
         "img": "https://i.postimg.cc/Y0H8f6ck/S-ch-l-p-2-1-04.jpg",
@@ -21,53 +19,53 @@ export default [
         "img": "https://i.postimg.cc/Hs33X86D/S-ch-l-p-2-1-05.jpg",
         "data": [
             {
-                "EN": "1",
-                "IPA": "wʌn",
+                "EN": "number one",
+                "IPA": "ˈnʌm.bər wʌn",
                 "VN": "số một/one"
             },
             {
-                "EN": "2",
-                "IPA": "tuː",
+                "EN": "number two",
+                "IPA": "ˈnʌm.bər tuː",
                 "VN": "số hai/two"
             },
             {
-                "EN": "three",
-                "IPA": "θriː",
+                "EN": "number three",
+                "IPA": "ˈnʌm.bər θriː",
                 "VN": "số ba"
             },
             {
-                "EN": "4",
-                "IPA": "fɔːr",
+                "EN": "number four",
+                "IPA": "ˈnʌm.bər fɔːr",
                 "VN": "số bốn/four"
             },
             {
-                "EN": "5",
-                "IPA": "/faiv/",
+                "EN": "number five",
+                "IPA": "ˈnʌm.bər faiv",
                 "VN": "số năm/five"
             },
             {
-                "EN": "six",
-                "IPA": "siks",
+                "EN": "number six",
+                "IPA": "ˈnʌm.bər siks",
                 "VN": "số sáu"
             },
             {
-                "EN": "7",
-                "IPA": "'sev.ən",
+                "EN": "number seven",
+                "IPA": "ˈnʌm.bər 'sev.ən",
                 "VN": "số bảy/seven"
             },
             {
-                "EN": "8",
-                "IPA": "eɪt",
+                "EN": "number eight",
+                "IPA": "ˈnʌm.bər eɪt",
                 "VN": "số tám/eight"
             },
             {
-                "EN": "9",
-                "IPA": "naɪn",
+                "EN": "number nine",
+                "IPA": "ˈnʌm.bər naɪn",
                 "VN": "số chín/nine"
             },
             {
-                "EN": "10",
-                "IPA": "ten",
+                "EN": "number ten",
+                "IPA": "ˈnʌm.bər ten",
                 "VN": "số mười/ten"
             },
             {
@@ -76,7 +74,7 @@ export default [
                 "IPA": "haʊ əʊld ɑːr juː"
             },
             {
-                "EN": "I'm 5",
+                "EN": "I'm five",
                 "VN": "Tôi 5 tuổi./I'm five.",
                 "IPA": "ˌaɪˈem faɪv"
             }
@@ -91,7 +89,7 @@ export default [
                 "IPA": "haʊ əʊld ɑːr juː"
             },
             {
-                "EN": "I'm 5",
+                "EN": "I'm five",
                 "VN": "Tôi 5 tuổi./I'm five",
                 "IPA": "ˌaɪˈem faɪv"
             }
@@ -119,7 +117,7 @@ export default [
                 "EN": "Hands down!",
                 "VN": "Bỏ tay xuống!",
                 "IPA": "hænds daʊn"
-            },
+            }
         ]
     },
     {
@@ -134,8 +132,7 @@ export default [
                 "EN": "Close your book!",
                 "VN": "Đóng sách lại!",
                 "IPA": "kləʊz jɔːr bʊk"
-            },
-
+            }
         ]
     },
     {
@@ -183,7 +180,7 @@ export default [
                 "EN": "I'm happy.",
                 "VN": "Tôi đang hạnh phúc.",
                 "IPA": "ˌaɪˈem ˈhæp.i"
-            },
+            }
         ]
     },
     {
@@ -203,7 +200,7 @@ export default [
                 "EN": "I'm great.",
                 "VN": "Tôi rất tuyệt.",
                 "IPA": "ˌaɪˈem ɡreɪt"
-            },
+            }
         ]
     },
     {
@@ -228,7 +225,7 @@ export default [
                 "EN": "orange",
                 "IPA": "ˈɔːr.ɪndʒ",
                 "VN": "quả cam"
-            },
+            }
         ]
     },
     {
@@ -243,7 +240,7 @@ export default [
                 "EN": "orange",
                 "IPA": "ˈɔːr.ɪndʒ",
                 "VN": "quả cam"
-            },
+            }
         ]
     },
     {
@@ -278,8 +275,7 @@ export default [
                 "EN": "My name is Vinh?",
                 "IPA": "mai neɪm iz Vinh",
                 "VN": "Tôi tên là Vinh"
-            },
-
+            }
         ]
     },
     {
@@ -294,8 +290,7 @@ export default [
                 "EN": "My name is Vinh?",
                 "IPA": "mai neɪm iz Vinh",
                 "VN": "Tôi tên là Vinh"
-            },
-
+            }
         ]
     },
     {
@@ -325,7 +320,7 @@ export default [
                 "EN": "What shape is it?",
                 "VN": "Nó có hình dạng gì?",
                 "IPA": "wɒt ʃeɪp iz it?"
-            },
+            }
         ]
     },
     {
@@ -365,7 +360,7 @@ export default [
                 "EN": "That's right.",
                 "VN": "Đúng rồi.",
                 "IPA": "ðæts raɪt"
-            },
+            }
         ]
     },
     {
@@ -399,7 +394,7 @@ export default [
                 "EN": "What's your name?",
                 "IPA": "wɑːts jɔːr neɪm",
                 "VN": "Bạn tên gì?"
-            },
+            }
         ]
     },
     {
@@ -434,7 +429,7 @@ export default [
                 "EN": "My name's Lan?",
                 "IPA": "mai neɪm's Lan",
                 "VN": "Tôi tên là Lan"
-            },
+            }
         ]
     },
     {
@@ -449,30 +444,30 @@ export default [
                 "EN": "It's a circle.",
                 "VN": "Đó là một vòng tròn.",
                 "IPA": "its ə ˈsɝː.kəl"
-            },
+            }
         ]
     },
     {
         "img": "https://i.postimg.cc/1RBDjhwD/S-ch-l-p-2-1-23.jpg",
         "data": [
             {
-                "EN": "eleven",
-                "IPA": "ɪˈlev.ən",
+                "EN": "number eleven",
+                "IPA": "ˈnʌm.bər ɪˈlev.ən",
                 "VN": "số mười một"
             },
             {
                 "EN": "Twelve books.",
-                "VN": "Mười hai cuốn sách.",
+                "VN": "số Mười hai cuốn sách.",
                 "IPA": "twelv bʊks"
             },
             {
-                "EN": "thirteen",
-                "IPA": " θɝːˈtiːn",
+                "EN": "number thirteen",
+                "IPA": "ˈnʌm.bər θɝːˈtiːn",
                 "VN": "số mười ba"
             },
             {
-                "EN": "fourteen",
-                "IPA": "ˌfɔːˈtiːn",
+                "EN": "number fourteen",
+                "IPA": "ˈnʌm.bər ˌfɔːˈtiːn",
                 "VN": "số mười bốn"
             },
             {
@@ -482,9 +477,9 @@ export default [
             },
             {
                 "EN": "Eleven triangles.",
-                "VN": "Mười một hình tam giác.",
+                "VN": "số Mười một hình tam giác.",
                 "IPA": "ɪˈlev.ən ˈtraɪ.æŋ.ɡəl"
-            },
+            }
         ]
     },
     {
@@ -497,9 +492,9 @@ export default [
             },
             {
                 "EN": "Fifteen squares.",
-                "VN": "Mười lăm ô vuông.",
+                "VN": "số Mười lăm ô vuông.",
                 "IPA": "ˌfɪfˈtiːn skweər"
-            },
+            }
         ]
     },
     {
@@ -514,41 +509,39 @@ export default [
                 "EN": "nut",
                 "IPA": "nʌt",
                 "VN": "hạt, quả hạch"
-            },
+            }
         ]
     },
     {
         "img": "https://i.postimg.cc/Hkc5nrKt/S-ch-l-p-2-1-26.jpg",
-        "data": [
-
-        ]
+        "data": []
     },
     {
         "img": "https://i.postimg.cc/nrSjcxG5/S-ch-l-p-2-1-27.jpg",
         "data": [
             {
-                "EN": "sixteen",
-                "IPA": "ˌsɪkˈstiːn",
-                "VN": "mười sáu"
+                "EN": "number sixteen",
+                "IPA": "ˈnʌm.bər ˌsɪkˈstiːn",
+                "VN": "số mười sáu"
             },
             {
-                "EN": "seventeen",
-                "IPA": "ˌsev.ənˈtiːn",
-                "VN": "mười bảy"
+                "EN": "number seventeen",
+                "IPA": "ˈnʌm.bər ˌsev.ənˈtiːn",
+                "VN": "số mười bảy"
             },
             {
-                "EN": "eighteen",
-                "IPA": "ˌeɪˈtiːn",
-                "VN": "mười tám"
+                "EN": "number eighteen",
+                "IPA": "ˈnʌm.bər ˌeɪˈtiːn",
+                "VN": "số mười tám"
             },
             {
-                "EN": "nineteen",
-                "IPA": "ˌnaɪnˈtiːn",
-                "VN": "mười chín"
+                "EN": "number nineteen",
+                "IPA": "ˈnʌm.bər ˌnaɪnˈtiːn",
+                "VN": "số mười chín"
             },
             {
-                "EN": "twenty",
-                "IPA": "ˈtwen.t̬i",
+                "EN": "number twenty",
+                "IPA": "ˈnʌm.bər ˈtwen.t̬i",
                 "VN": "hai mươi"
             },
             {
@@ -565,7 +558,7 @@ export default [
                 "EN": "I'm from Hanoi?",
                 "IPA": "ai:am frɒm Hanoi",
                 "VN": "Tôi đến từ Hà Nội"
-            },
+            }
         ]
     },
     {
@@ -580,7 +573,7 @@ export default [
                 "EN": "I'm from Hanoi?",
                 "IPA": "ai:am frɒm Hanoi",
                 "VN": "Tôi đến từ Hà Nội"
-            },
+            }
         ]
     },
     {
@@ -615,7 +608,7 @@ export default [
                 "EN": "What's that",
                 "VN": "Đó là một con vịt",
                 "IPA": "Its ə duck"
-            },
+            }
         ]
     },
     {
@@ -645,7 +638,7 @@ export default [
                 "EN": "It's a bird",
                 "VN": "Đó là một con chim",
                 "IPA": "Its ə bɝːd"
-            },
+            }
         ]
     },
     {
@@ -670,7 +663,7 @@ export default [
                 "EN": "sun",
                 "IPA": "sʌn",
                 "VN": "mặt trời"
-            },
+            }
         ]
     },
     {
@@ -685,7 +678,7 @@ export default [
                 "EN": "sun",
                 "IPA": "sʌn",
                 "VN": "mặt trời"
-            },
+            }
         ]
     },
     {
@@ -728,7 +721,7 @@ export default [
                 "EN": "OK",
                 "IPA": "ˌoʊˈkeɪ",
                 "VN": "được, tốt"
-            },
+            }
         ]
     },
     {
@@ -758,7 +751,7 @@ export default [
                 "EN": "Let's play hide and seek.",
                 "VN": "Cùng chơi trốn tìm nhé.",
                 "IPA": "lets pleɪ haɪd ænd siːk"
-            },
+            }
         ]
     },
     {
@@ -788,7 +781,7 @@ export default [
                 "EN": "I can see a tiger",
                 "IPA": "ai kæn si: ə ˈtaɪ.ɡɚ",
                 "VN": "Tôi có thể nhìn thấy một con hổ"
-            },
+            }
         ]
     },
     {
@@ -813,8 +806,7 @@ export default [
                 "EN": "this is my uncle",
                 "IPA": "ðiːz iz mai ˈʌŋ.kəl",
                 "VN": "đây là chú của tôi"
-            },
-
+            }
         ]
     },
     {
@@ -839,7 +831,7 @@ export default [
                 "EN": "eat snacks",
                 "IPA": "iːt snæk",
                 "VN": "ăn snacks"
-            },
+            }
         ]
     },
     {
@@ -859,7 +851,7 @@ export default [
                 "EN": "thank you",
                 "IPA": "θæŋk jiu",
                 "VN": "cảm ơn bạn"
-            },
+            }
         ]
     },
     {
@@ -894,7 +886,7 @@ export default [
                 "EN": "I want to go to the beach.",
                 "VN": "Tôi muốn đi đến bãi biển.",
                 "IPA": "ai wɒnt tu ɡəʊ tu ðə biːtʃ"
-            },
+            }
         ]
     },
     {
@@ -909,7 +901,7 @@ export default [
                 "EN": "I want to go to the park.",
                 "VN": "Tôi muốn đi đến công viên.",
                 "IPA": "ai wɒnt tu ɡəʊ tu ðə pɑːk"
-            },
+            }
         ]
     },
     {
@@ -928,12 +920,11 @@ export default [
                 "VN": "Hãy chơi bóng đá.",
                 "IPA": "lets pleɪ ˈsɒk.ər"
             },
-
             {
                 "EN": "Let's play hopscotch.",
                 "VN": "Hãy chơi trò nhảy lò cò.",
                 "IPA": "lets pleɪ ˈhɒp.skɒtʃ"
-            },
+            }
         ]
     },
     {
@@ -948,7 +939,7 @@ export default [
                 "EN": "I want to go to the park.",
                 "VN": "Tôi muốn đi đến công viên.",
                 "IPA": "ai wɒnt tu ɡəʊ tu ðə pɑːk"
-            },
+            }
         ]
     },
     {
@@ -993,7 +984,7 @@ export default [
                 "EN": "No, it isn't.",
                 "VN": "Không, không phải vậy.",
                 "IPA": "nəʊ it ˈɪz.ənt"
-            },
+            }
         ]
     },
     {
@@ -1028,7 +1019,7 @@ export default [
                 "EN": "No, it isn't.",
                 "VN": "Không, không phải vậy.",
                 "IPA": "nəʊ it ˈɪz.ənt"
-            },
+            }
         ]
     },
     {
@@ -1053,7 +1044,7 @@ export default [
                 "EN": "window",
                 "IPA": "ˈwɪn.doʊ",
                 "VN": "cửa sổ"
-            },
+            }
         ]
     },
     {
@@ -1068,7 +1059,7 @@ export default [
                 "EN": "window",
                 "IPA": "ˈwɪn.doʊ",
                 "VN": "cửa sổ"
-            },
+            }
         ]
     },
     {
@@ -1108,8 +1099,7 @@ export default [
                 "EN": "no, thank you",
                 "IPA": "noʊ, θæŋk jiu",
                 "VN": "không cám ơn"
-            },
-
+            }
         ]
     },
     {
@@ -1139,7 +1129,7 @@ export default [
                 "EN": "no, thank you",
                 "IPA": "noʊ, θæŋk jiu",
                 "VN": "không cám ơn"
-            },
+            }
         ]
     },
     {
@@ -1184,8 +1174,7 @@ export default [
                 "EN": "No, I can't.",
                 "VN": "Không, tôi không thể.",
                 "IPA": "noʊ, ai kɑnt"
-            },
-
+            }
         ]
     },
     {
@@ -1220,7 +1209,7 @@ export default [
                 "EN": "Yes, I can.",
                 "VN": "Vâng tôi có thể.",
                 "IPA": "jes i kæn"
-            },
+            }
         ]
     },
     {
@@ -1245,7 +1234,7 @@ export default [
                 "EN": "yogurt",
                 "IPA": "ˈjoʊ.ɡɚt",
                 "VN": "sữa chua"
-            },
+            }
         ]
     },
     {
@@ -1264,8 +1253,7 @@ export default [
                 "EN": "there are my pants",
                 "IPA": "ðer ɑːr mai pænts",
                 "VN": "đây là quần của tôi"
-            },
-
+            }
         ]
     },
     {
@@ -1290,7 +1278,7 @@ export default [
                 "EN": "Yes, I can.",
                 "VN": "Vâng tôi có thể.",
                 "IPA": "jes i kæn"
-            },
+            }
         ]
     },
     {
@@ -1325,7 +1313,7 @@ export default [
                 "EN": "Pick up your pencil case.",
                 "VN": "Nhặt hộp bút chì của bạn.",
                 "IPA": "pɪk ʌp jɔːr ˈpen.səl keɪs"
-            },
+            }
         ]
     },
     {
@@ -1350,7 +1338,7 @@ export default [
                 "EN": "Pick up your pencil case.",
                 "VN": "Nhặt hộp bút chì của bạn.",
                 "IPA": "pɪk ʌp jɔːr ˈpen.səl keɪs"
-            },
+            }
         ]
     },
     {
@@ -1375,7 +1363,7 @@ export default [
                 "EN": "watch",
                 "IPA": "wɑːtʃ",
                 "VN": "đồng hồ đeo tay"
-            },
+            }
         ]
     },
     {
@@ -1430,7 +1418,7 @@ export default [
                 "EN": "I sing songs on Wednesday",
                 "IPA": "ai sɪŋ sɑːŋ ɑːn ˈwenz.deɪ",
                 "VN": "Tôi hát các bài hát vào thứ tư"
-            },
+            }
         ]
     },
     {
@@ -1450,7 +1438,7 @@ export default [
                 "EN": "I sing songs on Wednesday",
                 "IPA": "ai sɪŋ sɑːŋ ɑːn ˈwenz.deɪ",
                 "VN": "Tôi hát các bài hát vào thứ tư"
-            },
+            }
         ]
     },
     {
@@ -1490,7 +1478,7 @@ export default [
                 "EN": "It's Thursday.",
                 "VN": "Hôm nay là thứ năm",
                 "IPA": "its ˈθɜːz.deɪ"
-            },
+            }
         ]
     },
     {
@@ -1510,7 +1498,7 @@ export default [
                 "EN": "It's Thursday.",
                 "VN": "Hôm nay là thứ năm",
                 "IPA": "its ˈθɜːz.deɪ"
-            },
+            }
         ]
     },
     {
@@ -1598,7 +1586,7 @@ export default [
                 "IPA": "ˌaɪˈem fɔːr"
             },
             {
-                "EN": "I'm 5",
+                "EN": "I'm five",
                 "VN": "Tôi 5 tuổi/I'm five",
                 "IPA": "ˌaɪˈem faɪv"
             },
@@ -1644,7 +1632,7 @@ export default [
             },
             {
                 "EN": "Eleven triangles.",
-                "VN": "Mười một hình tam giác.",
+                "VN": "số Mười một hình tam giác.",
                 "IPA": "ɪˈlev.ən ˈtraɪ.æŋ.ɡəl"
             },
             {
@@ -1654,7 +1642,7 @@ export default [
             },
             {
                 "EN": "Twelve books.",
-                "VN": "Mười hai cuốn sách.",
+                "VN": "số Mười hai cuốn sách.",
                 "IPA": "twelv bʊks"
             },
             {
@@ -1663,8 +1651,8 @@ export default [
                 "IPA": "haʊ ˈmen.i ˈrek.tæŋ.ɡəl ɑːr ðeər?"
             },
             {
-                "EN": "Thirteen rectangles.",
-                "VN": "Mười ba hình chữ nhật.",
+                "EN": "number Thirteen rectangles.",
+                "VN": "Mˈnʌm.bərười ba hình chữ nhật.",
                 "IPA": "θɜːˈtiːn ˈrek.tæŋ.ɡəl"
             },
             {
@@ -1674,7 +1662,7 @@ export default [
             },
             {
                 "EN": "Fourteen pencils.",
-                "VN": "Mười bốn bút chì.",
+                "VN": "số Mười bốn bút chì.",
                 "IPA": "ˌfɔːˈtiːn ˈpen.səls"
             },
             {
@@ -1684,7 +1672,7 @@ export default [
             },
             {
                 "EN": "Fifteen squares.",
-                "VN": "Mười lăm ô vuông.",
+                "VN": "số Mười lăm ô vuông.",
                 "IPA": "ˌfɪfˈtiːn skweər"
             },
             {
@@ -1871,7 +1859,7 @@ export default [
                 "EN": "It's Thursday.",
                 "VN": "Hôm nay là thứ năm",
                 "IPA": "its ˈθɜːz.deɪ"
-            },
+            }
         ]
     },
     {
@@ -1958,18 +1946,18 @@ export default [
                 "VN": "bút sáp màu"
             },
             {
-                "EN": "8",
-                "IPA": "eɪt",
+                "EN": "number eight",
+                "IPA": "ˈnʌm.bər eɪt",
                 "VN": "số tám/eight"
             },
             {
-                "EN": "eighteen",
-                "IPA": "ˌeɪˈtiːn",
+                "EN": "number eighteen",
+                "IPA": "ˈnʌm.bər ˌeɪˈtiːn",
                 "VN": "số mười tám"
             },
             {
-                "EN": "eleven",
-                "IPA": "ɪˈlev.ən",
+                "EN": "number eleven",
+                "IPA": "ˈnʌm.bər ɪˈlev.ən",
                 "VN": "số mười một"
             },
             {
@@ -1988,23 +1976,23 @@ export default [
                 "VN": "khỏe, tốt"
             },
             {
-                "EN": "5",
-                "IPA": "/faiv/",
+                "EN": "number five",
+                "IPA": "ˈnʌm.bər faiv",
                 "VN": "số năm/five"
             },
             {
-                "EN": "4",
-                "IPA": "fɔːr",
+                "EN": "number four",
+                "IPA": "ˈnʌm.bər fɔːr",
                 "VN": "số bốn/four"
-            },
+            }
         ]
     },
     {
         "img": "https://i.postimg.cc/DZL3wPdK/S-ch-l-p-2-2-23.jpg",
         "data": [
             {
-                "EN": "fourteen",
-                "IPA": "ˌfɔːˈtiːn",
+                "EN": "number fourteen",
+                "IPA": "ˈnʌm.bər ˌfɔːˈtiːn",
                 "VN": "số mười bốn"
             },
             {
@@ -2083,8 +2071,8 @@ export default [
                 "VN": "âm nhạc"
             },
             {
-                "EN": "9",
-                "IPA": "naɪn",
+                "EN": "number nine",
+                "IPA": "ˈnʌm.bər naɪn",
                 "VN": "số chín/nine"
             },
             {
@@ -2118,17 +2106,15 @@ export default [
                 "VN": "được, tốt"
             },
             {
-                "EN": "1",
-                "IPA": "wʌn",
+                "EN": "number one",
+                "IPA": "ˈnʌm.bər wʌn",
                 "VN": "số một/one"
-            },
+            }
         ]
     },
     {
         "img": "https://i.postimg.cc/vmpdyNnz/S-ch-l-p-2-2-24.jpg",
         "data": [
-
-
             {
                 "EN": "open your book",
                 "IPA": "ˈəʊ.pən jɔːr bʊk",
@@ -2245,19 +2231,18 @@ export default [
                 "VN": "biển"
             },
             {
-                "EN": "7",
-                "IPA": "'sev.ən",
+                "EN": "number seven",
+                "IPA": "ˈnʌm.bər 'sev.ən",
                 "VN": "số bảy/seven"
-            },
+            }
         ]
     },
     {
         "img": "https://i.postimg.cc/v87dRXZr/S-ch-l-p-2-2-25.jpg",
         "data": [
-
             {
-                "EN": "seventeen",
-                "IPA": "ˌsev.ənˈtiːn",
+                "EN": "number seventeen",
+                "IPA": "ˈnʌm.bər ˌsev.ənˈtiːn",
                 "VN": "số mười bảy"
             },
             {
@@ -2281,8 +2266,8 @@ export default [
                 "VN": "hát"
             },
             {
-                "EN": "six",
-                "IPA": "siks",
+                "EN": "number six",
+                "IPA": "ˈnʌm.bər siks",
                 "VN": "số sáu"
             },
             {
@@ -2306,13 +2291,13 @@ export default [
                 "VN": "trò đuổi bắt"
             },
             {
-                "EN": "sixteen",
-                "IPA": ",siks'ti:n",
+                "EN": "number sixteen",
+                "IPA": "ˈnʌm.bər ,siks'ti:n",
                 "VN": "số mười sáu"
             },
             {
-                "EN": "10",
-                "IPA": "ten",
+                "EN": "number ten",
+                "IPA": "ˈnʌm.bər ten",
                 "VN": "số mười/ten"
             },
             {
@@ -2321,8 +2306,8 @@ export default [
                 "VN": "khát nước"
             },
             {
-                "EN": "thirteen",
-                "IPA": " θɝːˈtiːn",
+                "EN": "number thirteen",
+                "IPA": "ˈnʌm.bər θɝːˈtiːn",
                 "VN": "số mười ba"
             },
             {
@@ -2331,8 +2316,8 @@ export default [
                 "VN": "thức ăn nhẹ"
             },
             {
-                "EN": "three",
-                "IPA": "θriː",
+                "EN": "number three",
+                "IPA": "ˈnʌm.bər θriː",
                 "VN": "số ba"
             },
             {
@@ -2374,13 +2359,12 @@ export default [
                 "EN": "triangle",
                 "IPA": "ˈtraɪ.æŋ.ɡəl",
                 "VN": "hình tam giác"
-            },
+            }
         ]
     },
     {
         "img": "https://i.postimg.cc/prBNDV6G/S-ch-l-p-2-2-26.jpg",
         "data": [
-
             {
                 "EN": "T-shirt",
                 "IPA": "ˈtiː.ʃɝːt",
@@ -2407,13 +2391,13 @@ export default [
                 "VN": "sữa chua"
             },
             {
-                "EN": "twenty",
-                "IPA": "'twenti",
+                "EN": "number twenty",
+                "IPA": "ˈnʌm.bər 'twenti",
                 "VN": "số hai mươi"
             },
             {
-                "EN": "2",
-                "IPA": "tuː",
+                "EN": "number two",
+                "IPA": "ˈnʌm.bər tuː",
                 "VN": "số hai/two"
             },
             {

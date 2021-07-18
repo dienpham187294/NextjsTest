@@ -42,6 +42,7 @@ export default function Show_Tieng_anh_lop_1(Dulieu_tieng_anh_lop_1, tokenCheck)
         return (
             <div className="container">
                 <div
+                    id="ID_ShowTiengAnh"
                     style={{
                         position: "fixed",
                         top: "0px",
@@ -88,7 +89,7 @@ export default function Show_Tieng_anh_lop_1(Dulieu_tieng_anh_lop_1, tokenCheck)
                                             onClick={() => {
                                                 SET_Data_Learn(Dulieu_tieng_anh_lop_1[Num_page].data[i]);
                                                 try {
-                                                    document.getElementById(List_IDs["BUTTON_CLICK_TO_TALK"]).click()
+                                                    document.getElementById(List_IDs["BUTTON_CLICK_TO_TALK"]).click();
                                                 } catch (error) {
                                                     console.log("es")
                                                 }
@@ -156,7 +157,8 @@ export default function Show_Tieng_anh_lop_1(Dulieu_tieng_anh_lop_1, tokenCheck)
                                         style={{ fontSize: "larger", padding: "20px" }}
                                         onClick={() => {
                                             SET_Data_Learn("");
-                                            SET_Docthu("")
+                                            SET_Docthu("");
+                                            $("#ID_ShowTiengAnh").scrollTop(150)
                                         }}
                                     >Học câu khác</button>
                                     <hr />
