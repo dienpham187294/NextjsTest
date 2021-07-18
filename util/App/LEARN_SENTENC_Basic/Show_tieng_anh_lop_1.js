@@ -150,7 +150,9 @@ export default function Show_Tieng_anh_lop_1(Dulieu_tieng_anh_lop_1, tokenCheck)
                                         : Docthu === "Docthu" ? <img src="https://i.postimg.cc/1z95rjPs/Listening.gif" alt="https://i.postimg.cc/1z95rjPs/Listening.gif" width="100px" />
                                             : <span style={{ fontSize: "larger", color: "red" }}> <b>Chính Xác - Chúc mừng</b></span>
                                     }
-                                    <p id="interrimID"></p>
+                                    <br />
+                                    <b>Máy lắng nghe: </b>
+                                    <i id="interrimID"></i>
                                     <hr />
                                     <button
                                         className="btn btn-warning"

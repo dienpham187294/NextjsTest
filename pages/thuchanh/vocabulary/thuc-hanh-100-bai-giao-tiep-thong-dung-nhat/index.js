@@ -2,7 +2,7 @@ import { useState } from "react";
 import Read from "../../../helpers/Read_ReactSpeech"
 import ReadMessage from "../../../../util/Read/ReadMessage";
 import baigiaotiep from "../../../../util/filedulieu/100baigiaotiep"
-import Cookies_ReadingPage from "../../../../util/Cookies/Cookies_ReadingPage"
+import Cookies_ReadingPage from "../../../../util/Cookies/Cookies_checking"
 import PracticeDiv from "./practice"
 
 

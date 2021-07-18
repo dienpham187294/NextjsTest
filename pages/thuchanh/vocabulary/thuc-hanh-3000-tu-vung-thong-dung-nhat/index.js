@@ -7,7 +7,7 @@ import Jsonfile from "../../../../util/filedulieu/3000tuthongdung/tuvung3000thon
 import GetLongest from "../../../../util/rarely_use/GetLongest"
 import PracticeDiv from "./practice"
 import ReadMessage from "../../../../util/Read/ReadMessage"
-import Cookies_ReadingPage from "../../../../util/Cookies/Cookies_ReadingPage"
+import Cookies_ReadingPage from "../../../../util/Cookies/Cookies_checking"
 let ArrHold = [["hello", "null", "null", "null"]]
 
 function Manager() {

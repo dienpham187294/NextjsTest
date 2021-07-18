@@ -45,10 +45,10 @@ function Dictaphone({ Data }) {
         console.log(fuzzyMatchingThreshold, Style, Data)
         commands = [{
             command: Data,
-            callback: (command) => {
-                Str_to_Check = `${command}`;
-                console.log(Str_to_Check, "===========================commands");
-                writeMessage(Str_to_Check);
+            callback: () => {
+                // Str_to_Check = `${command}`;
+                console.log("===========================commands");
+                writeMessage("Str_to_Check");
             },
             isFuzzyMatch: true,
             fuzzyMatchingThreshold: fuzzyMatchingThreshold,
@@ -64,7 +64,7 @@ function Dictaphone({ Data }) {
     });
     useEffect(() => {
 
-        if (typeof (Data) === 'string' && interimTranscript !== "") {
+        if (interimTranscript !== "") {
             try {
                 $("#interrimID").text(interimTranscript)
                 let ArrTemp = [];
@@ -83,25 +83,7 @@ function Dictaphone({ Data }) {
             } catch (error) {
                 console.log("E ID interim")
             }
-
-            // let Temp_str = interimTranscript;
-            // ArrNumber.forEach((e) => {
-            //     Temp_str.split(e.number).join(e.text)
-            // })
-            // try {
-            //     $("#interrimID").text(Temp_str)
-            // } catch (error) {
-            //     console.log("E ID interim")
-            // }
-            // console.log(Temp_str)
-            // if (Temp_str.toLowerCase().includes(Data.toLowerCase())) {
-            //     Str_to_Check = Data;
-            //     console.log(Str_to_Check, "=======================================interim");
-            //     writeMessage(Str_to_Check);
-            // }
-            // console.log(i)
         }
-        // console.log(interimTranscript, "interimTranscript")
     }, [interimTranscript])
     const startListening = () => SpeechRecognition.startListening({ continuous: true, language: 'en-GB' });
     const stopListening = () => SpeechRecognition.stopListening({ continuous: false, language: 'en-GB' });
