@@ -37,7 +37,7 @@ let ArrNumber = [
     { "number": 20, "text": "twenty" }
 ]
 function Dictaphone({ Data }) {
-    const [fuzzyMatchingThreshold, SET_fuzzyMatchingThreshold] = useState(0.5)
+    const [fuzzyMatchingThreshold, SET_fuzzyMatchingThreshold] = useState(0.6)
     const [Style, SET_Style] = useState(true)
     const [OpenSetting, SET_OpenSetting] = useState(0)
     useEffect(() => {
