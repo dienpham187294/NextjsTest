@@ -701,19 +701,19 @@ export default [
         "img": "https://i.postimg.cc/LsBc5m4b/tieng-anh-smart-start-1-student-book-44.jpg",
         "data": [
             {
-                "EN": "one",
+                "EN": "number one",
                 "VN": "Một",
-                "IPA": "wʌn"
+                "IPA": "ˈnʌm.bər wʌn"
             },
             {
-                "EN": "two",
+                "EN": "number two",
                 "VN": "Hai",
-                "IPA": "tuː"
+                "IPA": "ˈnʌm.bər tuː"
             },
             {
-                "EN": "three",
+                "EN": "number three",
                 "VN": "Ba",
-                "IPA": "θriː"
+                "IPA": "ˈnʌm.bər θriː"
             }
         ]
     },
@@ -721,19 +721,19 @@ export default [
         "img": "https://i.postimg.cc/NjTqh13Y/tieng-anh-smart-start-1-student-book-45.jpg",
         "data": [
             {
-                "EN": "one",
+                "EN": "number one",
                 "VN": "Một",
-                "IPA": "wʌn"
+                "IPA": "ˈnʌm.bər wʌn"
             },
             {
-                "EN": "two",
+                "EN": "number two",
                 "VN": "Hai",
-                "IPA": "tuː"
+                "IPA": "ˈnʌm.bər tuː"
             },
             {
-                "EN": "three",
+                "EN": "number three",
                 "VN": "Ba",
-                "IPA": "θriː"
+                "IPA": "ˈnʌm.bər θriː"
             }
         ]
     },
@@ -776,19 +776,19 @@ export default [
         "img": "https://i.postimg.cc/vTDk09rJ/tieng-anh-smart-start-1-student-book-48.jpg",
         "data": [
             {
-                "EN": "four",
+                "EN": "number four",
                 "VN": "Bốn",
-                "IPA": "fɔːr"
+                "IPA": "ˈnʌm.bər fɔːr"
             },
             {
-                "EN": "five",
+                "EN": "number five",
                 "VN": "Năm",
-                "IPA": "faɪv"
+                "IPA": "ˈnʌm.bər faɪv"
             },
             {
-                "EN": "six",
+                "EN": "number six",
                 "VN": "Sáu",
-                "IPA": "sɪks"
+                "IPA": "ˈnʌm.bər sɪks"
             },
             {
                 "EN": "here are my friend from Vietnam",
@@ -812,7 +812,7 @@ export default [
             },
             {
                 "EN": "I'm five",
-                "VN": "Mình 6 tuổi",
+                "VN": "Mình 5 tuổi",
                 "IPA": "aɪˈem faɪv"
             }
         ]
@@ -901,9 +901,9 @@ export default [
         "img": "https://i.postimg.cc/63pmQRm8/tieng-anh-smart-start-1-student-book-54.jpg",
         "data": [
             {
-                "EN": "six",
+                "EN": "number six",
                 "VN": "Sáu",
-                "IPA": "sɪks"
+                "IPA": "ˈnʌm.bər sɪks"
             }
         ]
     },
@@ -1006,24 +1006,24 @@ export default [
         "img": "https://i.postimg.cc/htRZdNYW/tieng-anh-smart-start-1-student-book-60.jpg",
         "data": [
             {
-                "EN": "seven",
+                "EN": "number seven",
                 "VN": "7",
-                "IPA": "ˈsev.ən"
+                "IPA": "ˈnʌm.bər ˈsev.ən"
             },
             {
-                "EN": "eight",
+                "EN": "number eight",
                 "VN": "8",
                 "IPA": "eɪt"
             },
             {
-                "EN": "nine",
+                "EN": "number nine",
                 "VN": "9",
-                "IPA": "naɪn"
+                "IPA": "ˈnʌm.bər naɪn"
             },
             {
-                "EN": "ten",
+                "EN": "number ten",
                 "VN": "10",
-                "IPA": "ten"
+                "IPA": "ˈnʌm.bər ten"
             },
             {
                 "EN": "ten teddy bear",
@@ -1359,7 +1359,7 @@ export default [
                 "IPA": "ˈbed.ruːm"
             },
             {
-                "EN": "eight",
+                "EN": "number eight",
                 "VN": "8",
                 "IPA": "eɪt"
             },
@@ -1389,9 +1389,9 @@ export default [
                 "IPA": "bʊk"
             },
             {
-                "EN": "five",
+                "EN": "number five",
                 "VN": "Năm",
-                "IPA": "faɪv"
+                "IPA": "ˈnʌm.bər faɪv"
             },
             {
                 "EN": "Boy",
@@ -1419,9 +1419,9 @@ export default [
         "img": "https://i.postimg.cc/sfkCT6LK/tieng-anh-smart-start-1-student-book-70.jpg",
         "data": [
             {
-                "EN": "four",
+                "EN": "number four",
                 "VN": "Bốn",
-                "IPA": "fɔːr"
+                "IPA": "ˈnʌm.bər fɔːr"
             },
             {
                 "EN": "Kite",
@@ -1524,9 +1524,9 @@ export default [
                 "IPA": "kɪk"
             },
             {
-                "EN": "nine",
+                "EN": "number nine",
                 "VN": "9",
-                "IPA": "naɪn"
+                "IPA": "ˈnʌm.bər naɪn"
             },
             {
                 "EN": "kitchen",
@@ -1534,9 +1534,9 @@ export default [
                 "IPA": "ˈkɪtʃ.ən"
             },
             {
-                "EN": "one",
+                "EN": "number one",
                 "VN": "Một",
-                "IPA": "wʌn"
+                "IPA": "ˈnʌm.bər wʌn"
             }
         ]
     },
@@ -1579,14 +1579,14 @@ export default [
                 "IPA": "rʌn"
             },
             {
-                "EN": "three",
+                "EN": "number three",
                 "VN": "Ba",
-                "IPA": "θriː"
+                "IPA": "ˈnʌm.bər θriː"
             },
             {
-                "EN": "seven",
+                "EN": "number seven",
                 "VN": "7",
-                "IPA": "ˈsev.ən"
+                "IPA": "ˈnʌm.bər ˈsev.ən"
             },
             {
                 "EN": "Sing",
@@ -1604,9 +1604,9 @@ export default [
                 "IPA": "sɪt daʊn"
             },
             {
-                "EN": "six",
+                "EN": "number six",
                 "VN": "Sáu",
-                "IPA": "sɪks"
+                "IPA": "ˈnʌm.bər sɪks"
             },
             {
                 "EN": "Snake",
@@ -1619,19 +1619,19 @@ export default [
                 "IPA": "stænd ʌp"
             },
             {
-                "EN": "ten",
+                "EN": "number ten",
                 "VN": "10",
-                "IPA": "ten"
+                "IPA": "ˈnʌm.bər ten"
             },
             {
-                "EN": "three",
+                "EN": "number three",
                 "VN": "Ba",
-                "IPA": "θriː"
+                "IPA": "ˈnʌm.bər θriː"
             },
             {
-                "EN": "two",
+                "EN": "number two",
                 "VN": "Hai",
-                "IPA": "tuː"
+                "IPA": "ˈnʌm.bər tuː"
             },
             {
                 "EN": "White",
