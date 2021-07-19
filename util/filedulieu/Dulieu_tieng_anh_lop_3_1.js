@@ -2032,12 +2032,12 @@ export default [
             {
                 "EN": "open your book",
                 "VN": "mở sách ra",
-                "IPA": "ˈəʊ.pən jɔːr book"
+                "IPA": "ˈəʊ.pən jɔːr bʊk"
             },
             {
                 "EN": "close your book",
                 "VN": "đóng sách lại",
-                "IPA": "kloʊz jɔːr book"
+                "IPA": "kloʊz jɔːr bʊk"
             },
             {
                 "EN": "Let's talk.",
@@ -2048,162 +2048,904 @@ export default [
     },
     {
         "img": "https://i.postimg.cc/FKX4r0Ln/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-42.jpg",
-        "data": []
+        "data": [
+            {
+                "EN": "Listen and tick.",
+                "VN": "Nghe và đánh dấu.",
+                "IPA": "ˈlɪs.ən ænd tɪk"
+            },
+            {
+                "EN": "Look and write.",
+                "VN": "Nhìn và viết.",
+                "IPA": "lʊk ænd raɪt"
+            },
+            {
+                "EN": "Let's play.",
+                "VN": "Hãy chơi.",
+                "IPA": "lets pleɪ"
+            }
+        ]
     },
     {
         "img": "https://i.postimg.cc/ZRVtxgD1/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-43.jpg",
-        "data": []
+        "data": [
+            {
+                "EN": "lesson 2",
+                "VN": "Bài 2",
+                "IPA": "ˈles.ən tuː"
+            },
+            {
+                "EN": "Look, listen and repeat.",
+                "VN": "Nhìn, nghe và lặp lại.",
+                "IPA": "lʊk ˈlɪs.ən ænd rɪˈpiːt"
+            },
+            {
+                "EN": "May I come in, Mr. Loc?",
+                "VN": "Em vào được không anh Lộc?",
+                "IPA": "meɪ aj kʌm ɪn ˈmɪs.tər Loc?"
+            },
+            {
+                "EN": "Yes, you can.",
+                "VN": "Có, bạn có thể.",
+                "IPA": "jes jʊ kæn"
+            },
+            {
+                "EN": "May I go out, Mr. Loc?",
+                "VN": "Em đi chơi được không anh Lộc?",
+                "IPA": "meɪ aj ɡoʊ out, ˈmɪs.tər Loc?"
+            },
+            {
+                "EN": "No, you can't.",
+                "VN": "Không, bạn không thể.",
+                "IPA": "nəʊ jʊ kænt"
+            },
+            {
+                "EN": "Point and say.",
+                "VN": "Chỉ và nói.",
+                "IPA": "pɔɪnt ænd seɪ"
+            },
+            {
+                "EN": "come in",
+                "VN": "mời vào",
+                "IPA": "kʌm ɪn"
+            },
+            {
+                "EN": "go out",
+                "VN": "đi ra ngoài",
+                "IPA": "ɡoʊ out"
+            },
+            {
+                "EN": "speak",
+                "VN": "nói",
+                "IPA": "spiːk"
+            },
+            {
+                "EN": "write",
+                "VN": "viết",
+                "IPA": "raɪt"
+            },
+            {
+                "EN": "Yes, you can.",
+                "VN": "Có, bạn có thể.",
+                "IPA": "jes jʊ kæn"
+            },
+            {
+                "EN": "No, you can't.",
+                "VN": "Không, bạn không thể.",
+                "IPA": "nəʊ jʊ kænt"
+            },
+            {
+                "EN": "Let's talk.",
+                "VN": "Hãy nói chuyện.",
+                "IPA": "lets tɑːk"
+            }
+        ]
     },
     {
         "img": "https://i.postimg.cc/W32crjSG/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-44.jpg",
-        "data": []
+        "data": [
+            {
+                "EN": "Listen and number.",
+                "VN": "Nghe và số.",
+                "IPA": "ˈlɪs.ən ænd ˈnʌm.bər"
+            },
+            {
+                "EN": "Read and match.",
+                "VN": "Đọc và nối.",
+                "IPA": "riːd ænd mætʃ"
+            },
+            {
+                "EN": "May I go out?",
+                "VN": "Tôi có thể đi chơi không?",
+                "IPA": "meɪ aj ɡoʊ out?"
+            },
+            {
+                "EN": "Yes, you can.",
+                "VN": "Có, bạn có thể.",
+                "IPA": "jes jʊ kæn"
+            },
+            {
+                "EN": "May I ask a question?",
+                "VN": "Tôi có thể hỏi một câu được không?",
+                "IPA": "meɪ aj ask ə ˈkwes.tʃən"
+            },
+            {
+                "EN": "Yes, you can.",
+                "VN": "Có, bạn có thể.",
+                "IPA": "jes jʊ kæn"
+            },
+            {
+                "EN": "May I open the book?",
+                "VN": "Tôi có thể mở cuốn sách không?",
+                "IPA": "meɪ aj ˈəʊ.pən ðə bʊk"
+            },
+            {
+                "EN": "No, you can't.",
+                "VN": "Không, bạn không thể.",
+                "IPA": "nəʊ jʊ kænt"
+            },
+            {
+                "EN": "May I come in?",
+                "VN": "Tôi vào được không?",
+                "IPA": "meɪ aj kʌm ɪn"
+            },
+            {
+                "EN": "Yes, you can.",
+                "VN": "Có, bạn có thể.",
+                "IPA": "jes jʊ kæn"
+            },
+            {
+                "EN": "Let's write.",
+                "VN": "Cùng viết nào.",
+                "IPA": "lets raɪt"
+            }
+        ]
     },
     {
         "img": "https://i.postimg.cc/SRR0TrBj/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-45.jpg",
-        "data": []
+        "data": [
+            {
+                "EN": "lesson 3",
+                "VN": "bài 3",
+                "IPA": "ˈles.ən θriː"
+            },
+            {
+                "EN": "Listen and repeat.",
+                "VN": "Lắng nghe và lặp lại.",
+                "IPA": "ˈlɪs.ən ænd rɪˈpiːt"
+            },
+            {
+                "EN": "May I come in?",
+                "VN": "Tôi vào được không?",
+                "IPA": "meɪ aj kʌm ɪn"
+            },
+            {
+                "EN": "May I sit down?",
+                "VN": "Tôi ngồi được không?",
+                "IPA": "meɪ aj sɪt daʊn"
+            },
+            {
+                "EN": "Listen and write.",
+                "VN": "Nghe và viết.",
+                "IPA": "ˈlɪs.ən ænd raɪt"
+            },
+            {
+                "EN": "Let's sing.",
+                "VN": "Hãy hát nào.",
+                "IPA": "lets sɪŋ"
+            },
+            {
+                "EN": "Come in and sit down",
+                "VN": "Đến và ngồi xuống đi",
+                "IPA": "kʌm ɪn ænd sɪt daʊn"
+            },
+            {
+                "EN": "Hello, hello, Miss Minh Hien. ",
+                "VN": "Em xin chào cô Minh Hiền.",
+                "IPA": "heˈloʊ heˈloʊ mɪs Minh Hien."
+            },
+            {
+                "EN": "May I come In and sit down? ",
+                "VN": "Tôi có thể vào và ngồi xuống được không?",
+                "IPA": "meɪ aj kʌm ɪn ænd sɪt daʊn"
+            },
+            {
+                "EN": "Hello, hello. ",
+                "VN": "Xin chào.",
+                "IPA": "heˈloʊ heˈloʊ"
+            },
+            {
+                "EN": "Yes, you can. ",
+                "VN": "Có, bạn có thể.",
+                "IPA": "jes jʊ kæn"
+            },
+            {
+                "EN": "Come in, sit down and study. ",
+                "VN": "Vào, ngồi xuống và học.",
+                "IPA": "kʌm ɪn sɪt daʊn ænd ˈstʌd.i"
+            },
+            {
+                "EN": "Open your book and read aloud: ",
+                "VN": "Mở sách của bạn và đọc to:",
+                "IPA": "ˈəʊ.pən jɔːr bʊk ænd riːd əˈlaʊd"
+            },
+            {
+                "EN": "A B C D E F G I",
+                "VN": "A B C D E F G I",
+                "IPA": "ə B C D E F G aj"
+            }
+        ]
     },
     {
         "img": "https://i.postimg.cc/7PtrCFzz/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-46.jpg",
-        "data": []
+        "data": [
+            {
+                "EN": "Read and match.",
+                "VN": "Đọc và nối.",
+                "IPA": "riːd ænd mætʃ"
+            },
+            {
+                "EN": "Open your book, please!",
+                "VN": "Mở sách xin vui lòng!",
+                "IPA": "ˈəʊ.pən jɔːr bʊk pliːz"
+            },
+            {
+                "EN": "Be quiet, please!",
+                "VN": "Làm ơn hãy im lặng!",
+                "IPA": "biː ˈkwaɪ.ət pliːz"
+            },
+            {
+                "EN": "May I write my name, Miss Hien?",
+                "VN": "Tôi viết tên tôi được không, cô Hiền?",
+                "IPA": "meɪ aj raɪt mai neɪm mɪs Hien?"
+            },
+            {
+                "EN": "May I ask a question, Mr. Loc?",
+                "VN": "Tôi có thể hỏi một câu được không, ông Loc?",
+                "IPA": "meɪ aj ask ə ˈkwes.tʃən ˈmɪs.tər Loc?"
+            },
+            {
+                "EN": "Don't talk!",
+                "VN": "Đừng nói chuyện!",
+                "IPA": "doʊnt tɑːk"
+            },
+            {
+                "EN": "Look, read and write.",
+                "VN": "Nhìn đọc và viết.",
+                "IPA": "lʊk riːd ænd raɪt"
+            },
+            {
+                "EN": "Project",
+                "VN": "Dự án",
+                "IPA": "ˈprɒdʒ.ekt"
+            },
+            {
+                "EN": "Write and put the instructions in a box. ",
+                "VN": "Viết và đặt các hướng dẫn vào một hộp.",
+                "IPA": "raɪt ænd pʊt ðə ɪnˈstrʌk·ʃənz ɪn ə bɒks"
+            },
+            {
+                "EN": "Choose and act them out.",
+                "VN": "Chọn và hành động chúng.",
+                "IPA": "tʃuːz ænd ækt ðem aʊt"
+            }
+        ]
     },
     {
         "img": "https://i.postimg.cc/j2FpGfTc/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-47.jpg",
-        "data": []
+        "data": [
+            {
+                "EN": "Unit 7",
+                "VN": "Bài 7",
+                "IPA": "ˈjuː.nɪt 7"
+            },
+            {
+                "EN": "That's my school",
+                "VN": "Đó là trường của tôi",
+                "IPA": "ðæts mai skuːl"
+            },
+            {
+                "EN": "lesson 1",
+                "VN": "bài 1",
+                "IPA": "ˈles.ən wʌn"
+            },
+            {
+                "EN": "Look, listen and repeat.",
+                "VN": "Nhìn, nghe và lặp lại.",
+                "IPA": "lʊk ˈlɪs.ən ænd rɪˈpiːt"
+            },
+            {
+                "EN": "That's my school.",
+                "VN": "Đó là trường học của tôi.",
+                "IPA": "ðæts mai skuːl"
+            },
+            {
+                "EN": "Is it big?",
+                "VN": "Nó có lớn không?",
+                "IPA": "ɪz ɪt bɪɡ"
+            },
+            {
+                "EN": "Yes, it Is.",
+                "VN": "Vâng, đúng vậy.",
+                "IPA": "jes ɪt ɪz"
+            },
+            {
+                "EN": "That's my classroom.",
+                "VN": "Đó là phòng học của tôi.",
+                "IPA": "ðæts mai ˈklɑːs.ruːm"
+            },
+            {
+                "EN": "Is it big?",
+                "VN": "Nó có lớn không?",
+                "IPA": "ɪz ɪt bɪɡ"
+            },
+            {
+                "EN": "No, it isn't. It's small.",
+                "VN": "Không, không phải vậy. Nó nhỏ.",
+                "IPA": "nəʊ ɪt ˈɪz.ənt ɪts smɑːl"
+            },
+            {
+                "EN": "Point and say.",
+                "VN": "Chỉ và nói.",
+                "IPA": "pɔɪnt ænd seɪ"
+            },
+            {
+                "EN": "gym",
+                "VN": "phòng thể dục",
+                "IPA": "dʒɪm"
+            },
+            {
+                "EN": "library",
+                "VN": "thư viện",
+                "IPA": "ˈlaɪ.brər.i"
+            },
+            {
+                "EN": "computer room",
+                "VN": "phòng máy tính",
+                "IPA": "kəmˈpjuː.tər ruːm"
+            },
+            {
+                "EN": "playground",
+                "VN": "sân chơi",
+                "IPA": "ˈpleɪ.ɡraʊnd"
+            },
+            {
+                "EN": "Let's talk.",
+                "VN": "Hãy nói chuyện.",
+                "IPA": "lets tɑːk"
+            }
+        ]
     },
     {
         "img": "https://i.postimg.cc/BQ892m5V/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-48.jpg",
-        "data": []
+        "data": [
+            {
+                "EN": "Listen and tick.",
+                "VN": "Nghe và đánh dấu.",
+                "IPA": "ˈlɪs.ən ænd tɪk"
+            },
+            {
+                "EN": "Look, read and write.",
+                "VN": "Nhìn đọc và viết.",
+                "IPA": "lʊk riːd ænd raɪt"
+            },
+            {
+                "EN": "Let's sing. ",
+                "VN": "Hãy hát nào.",
+                "IPA": "lets sɪŋ"
+            },
+            {
+                "EN": "This is the way we go to school",
+                "VN": "Đây là con đường chúng ta đến trường",
+                "IPA": "ðɪs ɪz ðə way wiː ɡoʊ tuː skuːl"
+            },
+            {
+                "EN": "This is the way we go to school",
+                "VN": "Đây là cách chúng ta đi học",
+                "IPA": "ðɪs ɪz ðə way wiː ɡoʊ tuː skuːl"
+            },
+            {
+                "EN": "Go to school go to school",
+                "VN": "Đi học đi học",
+                "IPA": "ɡoʊ tuː skuːl ɡoʊ tuː skuːl"
+            },
+            {
+                "EN": "This is the way we go to school ",
+                "VN": "Đây là con đường chúng ta đến trường",
+                "IPA": "ðɪs ɪz ðə way wiː ɡoʊ tuː skuːl"
+            },
+            {
+                "EN": "So early In the morning.",
+                "VN": "Sáng sớm.",
+                "IPA": "soʊ ˈɜː.li ɪn ðə ˈmɔː.nɪŋ"
+            },
+            {
+                "EN": "This is the way we go to school.",
+                "VN": "Đây là con đường chúng ta đến trường.",
+                "IPA": "ðɪs ɪz ðə way wiː ɡoʊ tuː skuːl"
+            },
+            {
+                "EN": "Go to school, go to school.",
+                "VN": "Đi học, đi học.",
+                "IPA": "ɡoʊ tuː skuːl ɡoʊ tuː skuːl"
+            },
+            {
+                "EN": "This is the way we go to school. ",
+                "VN": "Đây là con đường chúng ta đến trường.",
+                "IPA": "ðɪs ɪz ðə way wiː ɡoʊ tuː skuːl"
+            },
+            {
+                "EN": "So early in the morning",
+                "VN": "Sáng sớm",
+                "IPA": "soʊ ˈɜː.li ɪn ðə ˈmɔː.nɪŋ"
+            }
+        ]
     },
     {
         "img": "https://i.postimg.cc/tCL0kF2C/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-49.jpg",
-        "data": []
+        "data": [
+            {
+                "EN": "lesson 2",
+                "VN": "Bài 2",
+                "IPA": "ˈles.ən tuː"
+            },
+            {
+                "EN": "Look, listen and repeat.",
+                "VN": "Nhìn, nghe và lặp lại.",
+                "IPA": "lʊk ˈlɪs.ən ænd rɪˈpiːt"
+            },
+            {
+                "EN": "Is your school big?",
+                "VN": "Trường của bạn có to không?",
+                "IPA": "ɪz jɔːr skuːl bɪɡ"
+            },
+            {
+                "EN": "Yes, it Is.",
+                "VN": "Vâng, đúng vậy.",
+                "IPA": "jes ɪt ɪz"
+            },
+            {
+                "EN": "Is your classroom big?",
+                "VN": "Phòng học của bạn có lớn không?",
+                "IPA": "ɪz jɔːr ˈklɑːs.ruːm bɪɡ"
+            },
+            {
+                "EN": "No, it isn't. It's small.",
+                "VN": "Không, không phải vậy. Nó nhỏ.",
+                "IPA": "nəʊ ɪt ˈɪz.ənt ɪts smɑːl"
+            },
+            {
+                "EN": "Point and say.",
+                "VN": "Chỉ và nói.",
+                "IPA": "pɔɪnt ænd seɪ"
+            },
+            {
+                "EN": "school",
+                "VN": "trường học",
+                "IPA": "skuːl"
+            },
+            {
+                "EN": "new",
+                "VN": "Mới",
+                "IPA": "ˈnju"
+            },
+            {
+                "EN": "gym,",
+                "VN": "phòng thể dục,",
+                "IPA": "dʒɪm"
+            },
+            {
+                "EN": "big",
+                "VN": "to",
+                "IPA": "bɪɡ"
+            },
+            {
+                "EN": "library",
+                "VN": "thư viện",
+                "IPA": "ˈlaɪ.brər.i"
+            },
+            {
+                "EN": "old",
+                "VN": "cũ",
+                "IPA": "oʊld"
+            },
+            {
+                "EN": "playground",
+                "VN": "sân chơi",
+                "IPA": "ˈpleɪ.ɡraʊnd"
+            },
+            {
+                "EN": "large",
+                "VN": "lớn",
+                "IPA": "ˈɫɑɹdʒ"
+            },
+            {
+                "EN": "Let's talk.",
+                "VN": "Hãy nói chuyện.",
+                "IPA": "lets tɑːk"
+            }
+        ]
     },
     {
         "img": "https://i.postimg.cc/kg80pDpN/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-50.jpg",
-        "data": []
+        "data": [
+            {
+                "EN": "Listen and number.",
+                "VN": "Nghe và số.",
+                "IPA": "ˈlɪs.ən ænd ˈnʌm.bər"
+            },
+            {
+                "EN": "Read and circle.",
+                "VN": "Đọc và khoanh tròn.",
+                "IPA": "riːd ænd ˈsɜː.kəl"
+            },
+            {
+                "EN": "Look at my school. ",
+                "VN": "Nhìn vào trường học của tôi.",
+                "IPA": "lʊk at mai skuːl"
+            },
+            {
+                "EN": "It is beautiful. ",
+                "VN": "Nó thật đẹp.",
+                "IPA": "ɪt ɪz ˈbjutəfəɫ"
+            },
+            {
+                "EN": "That is my classroom. ",
+                "VN": "Đó là phòng học của tôi.",
+                "IPA": "ðæt ɪz mai ˈklɑːs.ruːm"
+            },
+            {
+                "EN": "It is big. ",
+                "VN": "Nó to.",
+                "IPA": "ɪt ɪz bɪɡ"
+            },
+            {
+                "EN": "And that is the computer room. ",
+                "VN": "Và đó là phòng máy tính.",
+                "IPA": "ænd ðæt ɪz ðə kəmˈpjuː.tər ruːm"
+            },
+            {
+                "EN": "It is new but small. ",
+                "VN": "Nó là mới nhưng nhỏ.",
+                "IPA": "ɪt ɪz ˈnju ˈbət smɑːl"
+            },
+            {
+                "EN": "Look at the library. ",
+                "VN": "Nhìn vào thư viện.",
+                "IPA": "lʊk at ðə ˈlaɪ.brər.i"
+            },
+            {
+                "EN": "It is large and new. ",
+                "VN": "Nó là lớn và mới.",
+                "IPA": "ɪt ɪz ˈɫɑɹdʒ ænd ˈnju"
+            },
+            {
+                "EN": "And look at the gym. ",
+                "VN": "Và nhìn vào phòng tập thể dục.",
+                "IPA": "ænd lʊk at ðə dʒɪm"
+            },
+            {
+                "EN": "It is big but old.",
+                "VN": "Nó lớn nhưng cũ.",
+                "IPA": "ɪt ɪz bɪɡ ˈbət oʊld"
+            },
+            {
+                "EN": "Write about your school.",
+                "VN": "Viết về trường học của bạn.",
+                "IPA": "raɪt əˈbaʊt jɔːr skuːl"
+            },
+            {
+                "EN": "Is your school big?",
+                "VN": "Trường của bạn có to không?",
+                "IPA": "ɪz jɔːr skuːl bɪɡ"
+            },
+            {
+                "EN": "Is the computer room new?",
+                "VN": "Phòng máy có mới không?",
+                "IPA": "ɪz ðə kəmˈpjuː.tər ruːm ˈnju"
+            },
+            {
+                "EN": "Is the gym large?",
+                "VN": "Phòng tập có rộng không?",
+                "IPA": "ɪz ðə dʒɪm ˈɫɑɹdʒ"
+            },
+            {
+                "EN": "Is the library big?",
+                "VN": "Thư viện có lớn không?",
+                "IPA": "ɪz ðə ˈlaɪ.brər.i bɪɡ"
+            }
+        ]
     },
     {
         "img": "https://i.postimg.cc/jjbp0Kpp/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-51.jpg",
-        "data": []
+        "data": [
+            {
+                "EN": "lesson 3",
+                "VN": "bài 3",
+                "IPA": "ˈles.ən θriː"
+            },
+            {
+                "EN": "Listen and repeat.",
+                "VN": "Lắng nghe và lặp lại.",
+                "IPA": "ˈlɪs.ən ænd rɪˈpiːt"
+            },
+            {
+                "EN": "The gym is old.",
+                "VN": "Phòng tập thể dục đã cũ.",
+                "IPA": "ðə dʒɪm ɪz oʊld"
+            },
+            {
+                "EN": "Look at the school.",
+                "VN": "Nhìn vào trường học.",
+                "IPA": "lʊk at ðə skuːl"
+            },
+            {
+                "EN": "Listen and write.",
+                "VN": "Nghe và viết.",
+                "IPA": "ˈlɪs.ən ænd raɪt"
+            },
+            {
+                "EN": "Let's chant.",
+                "VN": "Hãy hát thánh ca.",
+                "IPA": "lets tʃænt"
+            },
+            {
+                "EN": "is your school now?",
+                "VN": "bây giờ là trường học của bạn?",
+                "IPA": "ɪz jɔːr skuːl naʊ"
+            },
+            {
+                "EN": "is your school new?",
+                "VN": "trường của bạn có mới không?",
+                "IPA": "ɪz jɔːr skuːl ˈnju"
+            },
+            {
+                "EN": "Is your school big?",
+                "VN": "Trường của bạn có to không?",
+                "IPA": "ɪz jɔːr skuːl bɪɡ"
+            },
+            {
+                "EN": "Is your classroom large?",
+                "VN": "Phòng học của bạn có rộng không?",
+                "IPA": "ɪz jɔːr ˈklɑːs.ruːm ˈɫɑɹdʒ"
+            },
+            {
+                "EN": "Is the playground small?",
+                "VN": "Sân chơi có nhỏ không?",
+                "IPA": "ɪz ðə ˈpleɪ.ɡraʊnd smɑːl"
+            },
+            {
+                "EN": "Yes, it is. It's new.",
+                "VN": "Vâng, đúng vậy. Nó mới.",
+                "IPA": "jes ɪt ɪz ɪts ˈnju"
+            },
+            {
+                "EN": "Yes, It is. It's big.",
+                "VN": "Vâng, đúng vậy. Nó to quá.",
+                "IPA": "jes ɪt ɪz ɪts bɪɡ"
+            },
+            {
+                "EN": "No, It isn't. It's small.",
+                "VN": "Không, không phải vậy. Nó nhỏ.",
+                "IPA": "nəʊ ɪt ˈɪz.ənt ɪts smɑːl"
+            },
+            {
+                "EN": "No, It isn't. It's large.",
+                "VN": "Không, không phải vậy. Nó lớn.",
+                "IPA": "nəʊ ɪt ˈɪz.ənt ɪts ˈɫɑɹdʒ"
+            }
+        ]
     },
     {
         "img": "https://i.postimg.cc/jj4GRmKL/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-52.jpg",
+        "data": [
+            {
+                "EN": "Read and match.",
+                "VN": "Đọc và nối.",
+                "IPA": "riːd ænd mætʃ"
+            },
+            {
+                "EN": "Is that your school?",
+                "VN": "Đó có phải là trường học của bạn không?",
+                "IPA": "ɪz ðæt jɔːr skuːl"
+            },
+            {
+                "EN": "Is the library big?",
+                "VN": "Thư viện có lớn không?",
+                "IPA": "ɪz ðə ˈlaɪ.brər.i bɪɡ"
+            },
+            {
+                "EN": "Is the music room new?",
+                "VN": "Phòng nghe nhạc có mới không?",
+                "IPA": "ɪz ðə ˈmjuzɪk ruːm ˈnju"
+            },
+            {
+                "EN": "This is my school.",
+                "VN": "Đây là trường học của tôi.",
+                "IPA": "ðɪs ɪz mai skuːl"
+            },
+            {
+                "EN": "No, It isn't It's old. ",
+                "VN": "Không, nó không phải là cũ.",
+                "IPA": "nəʊ ɪt ˈɪz.ənt ɪts oʊld"
+            },
+            {
+                "EN": "Wow, It's very nice. ",
+                "VN": "Wow, nó rất tuyệt.",
+                "IPA": "Wow, ɪts ˈvɛri naɪs"
+            },
+            {
+                "EN": "No, it isn't. It's small. ",
+                "VN": "Không, không phải vậy. Nó nhỏ.",
+                "IPA": "nəʊ ɪt ˈɪz.ənt ɪts smɑːl"
+            },
+            {
+                "EN": "Yes, it Is.",
+                "VN": "Vâng, đúng vậy.",
+                "IPA": "jes ɪt ɪz"
+            },
+            {
+                "EN": "Read and complete.",
+                "VN": "Đọc và hoàn thành.",
+                "IPA": "riːd ænd kəmˈpliːt"
+            },
+            {
+                "EN": "it ",
+                "VN": "nó",
+                "IPA": "ɪt"
+            },
+            {
+                "EN": "gym ",
+                "VN": "phòng thể dục",
+                "IPA": "dʒɪm"
+            },
+            {
+                "EN": "playground ",
+                "VN": "sân chơi",
+                "IPA": "ˈpleɪ.ɡraʊnd"
+            },
+            {
+                "EN": "nice ",
+                "VN": "đẹp",
+                "IPA": "naɪs"
+            },
+            {
+                "EN": "classroom",
+                "VN": "lớp học",
+                "IPA": "ˈklɑːs.ruːm"
+            },
+            {
+                "EN": "Project",
+                "VN": "Dự án",
+                "IPA": "ˈprɒdʒ.ekt"
+            },
+            {
+                "EN": "Write the names of the rooms in the school. ",
+                "VN": "Viết tên các phòng trong trường.",
+                "IPA": "raɪt ðə neɪm's əv ðə ˈrumz ɪn ðə skuːl"
+            },
+            {
+                "EN": "Tell your classmates about them.",
+                "VN": "Nói với bạn cùng lớp của bạn về họ.",
+                "IPA": "ˈtɛɫ jɔːr ˈklɑːs.meɪt əˈbaʊt ðem"
+            }
+        ]
+    },
+
+    {
+        "img": "https://i.postimg.cc/hGz6Kzxp/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-53.jpg",
         "data": []
     },
     {
-        "img": "https://i.postimg.cc/Y92T0Rq8/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-53.jpg",
+        "img": "https://i.postimg.cc/FFytfL66/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-53-1.jpg",
         "data": []
     },
     {
-        "img": "https://i.postimg.cc/nzdgDmXx/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-54.jpg",
+        "img": "https://i.postimg.cc/3ws6N8F7/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-54.jpg",
         "data": []
     },
     {
-        "img": "https://i.postimg.cc/ryP7yS6C/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-55.jpg",
+        "img": "https://i.postimg.cc/yYjwjzsX/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-54-1.jpg",
         "data": []
     },
     {
-        "img": "https://i.postimg.cc/gjn5q0hZ/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-56.jpg",
+        "img": "https://i.postimg.cc/JzhSddhw/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-55.jpg",
         "data": []
     },
     {
-        "img": "https://i.postimg.cc/RhyYPz1b/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-57.jpg",
+        "img": "https://i.postimg.cc/3JYs2w5x/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-55-1.jpg",
         "data": []
     },
     {
-        "img": "https://i.postimg.cc/654g8yts/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-58.jpg",
+        "img": "https://i.postimg.cc/6p1FsL78/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-56.jpg",
         "data": []
     },
     {
-        "img": "https://i.postimg.cc/qv8FGSNj/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-59.jpg",
+        "img": "https://i.postimg.cc/bJ1527mn/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-56-1.jpg",
         "data": []
     },
     {
-        "img": "https://i.postimg.cc/DwVDLnwS/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-60.jpg",
+        "img": "https://i.postimg.cc/d3vxR5fx/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-58.jpg",
         "data": []
     },
     {
-        "img": "https://i.postimg.cc/Zq4MsH3Z/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-61.jpg",
+        "img": "https://i.postimg.cc/Wp6KpPFL/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-58-1.jpg",
         "data": []
     },
     {
-        "img": "https://i.postimg.cc/MG5rCBbB/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-62.jpg",
+        "img": "https://i.postimg.cc/T19HtrMY/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-60.jpg",
         "data": []
     },
     {
-        "img": "https://i.postimg.cc/265Xr52K/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-63.jpg",
+        "img": "https://i.postimg.cc/GhLfHSGB/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-60-1.jpg",
         "data": []
     },
     {
-        "img": "https://i.postimg.cc/PJp3vRGb/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-64.jpg",
+        "img": "https://i.postimg.cc/RZ8ppS8f/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-62.jpg",
         "data": []
     },
     {
-        "img": "https://i.postimg.cc/2ysHQ7ms/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-65.jpg",
+        "img": "https://i.postimg.cc/jSCkhw8t/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-62-1.jpg",
         "data": []
     },
     {
-        "img": "https://i.postimg.cc/HxPvxCNs/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-66.jpg",
+        "img": "https://i.postimg.cc/tCBMPtNB/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-64.jpg",
         "data": []
     },
     {
-        "img": "https://i.postimg.cc/sfbyHF2r/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-67.jpg",
+        "img": "https://i.postimg.cc/0NwWTgR4/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-64-1.jpg",
         "data": []
     },
     {
-        "img": "https://i.postimg.cc/y6DsT6sj/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-68.jpg",
+        "img": "https://i.postimg.cc/B6fYshJn/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-66.jpg",
         "data": []
     },
     {
-        "img": "https://i.postimg.cc/qMnr9mtC/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-69.jpg",
+        "img": "https://i.postimg.cc/V697NjNB/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-66-1.jpg",
         "data": []
     },
     {
-        "img": "https://i.postimg.cc/FH4vmjcC/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-70.jpg",
+        "img": "https://i.postimg.cc/8cttRNM7/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-68.jpg",
         "data": []
     },
     {
-        "img": "https://i.postimg.cc/3xFTwdF8/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-71.jpg",
+        "img": "https://i.postimg.cc/kGnTRB6r/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-68-1.jpg",
         "data": []
     },
     {
-        "img": "https://i.postimg.cc/DzC3qHNR/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-72.jpg",
+        "img": "https://i.postimg.cc/RVZPMJxK/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-70.jpg",
         "data": []
     },
     {
-        "img": "https://i.postimg.cc/cJ1Nt0FQ/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-73.jpg",
+        "img": "https://i.postimg.cc/hPZ2h4Kw/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-70-1.jpg",
         "data": []
     },
     {
-        "img": "https://i.postimg.cc/KzRSQQSj/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-74.jpg",
+        "img": "https://i.postimg.cc/qv9QXmhx/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-72.jpg",
         "data": []
     },
     {
-        "img": "https://i.postimg.cc/pXNbYD0V/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-75.jpg",
+        "img": "https://i.postimg.cc/pdzC0DKb/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-72-1.jpg",
         "data": []
     },
     {
-        "img": "https://i.postimg.cc/c1tGnDB5/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-76.jpg",
+        "img": "https://i.postimg.cc/gJpD1nKw/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-74.jpg",
         "data": []
     },
     {
-        "img": "https://i.postimg.cc/NMShnTB4/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-77.jpg",
+        "img": "https://i.postimg.cc/Hxt2mdS6/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-74-1.jpg",
         "data": []
     },
     {
-        "img": "https://i.postimg.cc/j2fVY5jr/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-78.jpg",
+        "img": "https://i.postimg.cc/hvy1JMRx/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-76.jpg",
         "data": []
     },
     {
-        "img": "https://i.postimg.cc/gkv9Mn5V/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-79.jpg",
+        "img": "https://i.postimg.cc/5yNmNTTb/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-76-1.jpg",
         "data": []
     },
     {
-        "img": "https://i.postimg.cc/qvLPTWpg/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-80.jpg",
-        "data": []
-    },
-    {
-        "img": "https://i.postimg.cc/bw874qcK/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-81.jpg",
+        "img": "https://i.postimg.cc/G3qQS3T2/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-78.jpg",
         "data": []
     }
 ]

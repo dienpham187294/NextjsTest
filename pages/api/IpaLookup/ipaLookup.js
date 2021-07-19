@@ -535,6 +535,10 @@ let arrIPA = [
         "ipa": "ˈkwes.tʃən"
     },
     {
+        "text": "question",
+        "ipa": "ˈkwes.tʃən"
+    },
+    {
         "text": "answers",
         "ipa": "ɑːn.sər"
     },
@@ -560,6 +564,7 @@ let arrNEW = [
     "Sorry", "ˈsɔːr.i", "Sir", "sɜːr", "actions", "ˈæk.ʃən", "come", "kʌm", "here", "hɪr", "don't", "doʊnt",
     "open", "ˈəʊ.pən", "close", "kloʊz"
 ]
+
 for (let i = 0; i < arrNEW.length; i += 2) {
     arrIPA.push({
         "text": arrNEW[i],
@@ -567,35 +572,59 @@ for (let i = 0; i < arrNEW.length; i += 2) {
     })
 }
 
-let arr1 = `Unit 6.
-Stand up
-lesson 1.
-Look, listen and repeat.
-Good morning, Mr. Loc.
-Good morning, class. Sit down, please!
-Be quiet, boys!
-Sorry, Sir.
-Point, say and do the actions.
-come here
-don't talk
-open your book
-close your book
-Let's talk.`
+let ArrstringApi =
+    [
+        `book,bʊk,can,kæn,can't,kænt,May,meɪ,speak,spiːk,sit,sɪt,down,daʊn,study,ˈstʌd.i,aloud,əˈlaʊd,please,pliːz,instructions,ɪnˈstrʌk·ʃənz,box,bɒks`,
+        `Choose,tʃuːz,act,ækt,out,aʊt,classroom,ˈklɑːs.ruːm,big,bɪɡ,small,smɑːl,gym,dʒɪm,library,ˈlaɪ.brər.i,computer,kəmˈpjuː.tər,room,ruːm`,
+        `playground,ˈpleɪ.ɡraʊnd,So,soʊ,early,ˈɜː.li,new,ˈnju,large,ˈɫɑrdʒ,beautiful,ˈbjutəfəɫ,about,əˈbaʊt,but,ˈbət,music,ˈmjuzɪk`,
+        `very,ˈvɛri,rooms,ˈrumz,Tell,ˈtɛɫ`
+    ]
 
-let arr2 = `Bài 6.
-Đứng lên
-bài 1
-Nhìn, nghe và lặp lại.
-Chào anh Lộc.
-Chào buổi sáng cả lớp. Mời ngồi!
-Hãy im lặng, các chàng trai!
-Xin lỗi sếp.
-Chỉ, nói và thực hiện các hành động.
-đến đây
-đừng nói chuyện
-mở sách ra
-đóng sách lại
-Hãy nói chuyện.`
+let arrrStringApi = ArrstringApi.join(",").split(",")
+
+for (let i = 0; i < arrrStringApi.length; i += 2) {
+    arrIPA.push({
+        "text": arrrStringApi[i],
+        "ipa": arrrStringApi[i + 1]
+    })
+}
+let arr1 = `Read and match.
+Is that your school?
+Is the library big?
+Is the music room new?
+This is my school.
+No, It isn't It's old. 
+Wow, It's very nice. 
+No, it isn't. It's small. 
+Yes, it Is.
+Read and complete.
+it 
+gym 
+playground 
+nice 
+classroom
+Project
+Write the names of the rooms in the school. 
+Tell your classmates about them.`
+
+let arr2 = `Đọc và nối.
+Đó có phải là trường học của bạn không?
+Thư viện có lớn không?
+Phòng nghe nhạc có mới không?
+Đây là trường học của tôi.
+Không, nó không phải là cũ.
+Wow, nó rất tuyệt.
+Không, không phải vậy. Nó nhỏ.
+Vâng, đúng vậy.
+Đọc và hoàn thành.
+nó
+phòng thể dục
+sân chơi
+đẹp
+lớp học
+Dự án
+Viết tên các phòng trong trường.
+Nói với bạn cùng lớp của bạn về họ.`
 
 export default async (req, res) => {
     // const { db } = await connectToDatabase();
@@ -615,7 +644,7 @@ export default async (req, res) => {
                 if (ee !== "") {
                     let status = true
                     arrIPA.forEach(eee => {
-                        if (eee.text.toLowerCase().split("'").join("").split(".").join("") === ee.toLowerCase().split("'").join("").split(".").join("").split(",").join("").split("!").join("")) {
+                        if (eee.text.toLowerCase().split("'").join("").split(".").join("") === ee.toLowerCase().split("'").join("").split(".").join("").split(",").join("").split("!").join("").split("?").join("").split(":").join("")) {
                             status = false
                             Arr_temp.push(eee.ipa)
                         }

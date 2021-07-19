@@ -67,7 +67,7 @@ export default function Show_Tieng_anh_lop_1(Dulieu_tieng_anh_lop_1, tokenCheck)
                             }}>
                                 <option>Chọn trang</option>
                                 {Dulieu_tieng_anh_lop_1.map((e, i) =>
-                                    <option key={i} value={i}>{i + 1}</option>
+                                    <option key={i} value={i}>{i}</option>
                                 )}
                             </select>
                             <hr />
