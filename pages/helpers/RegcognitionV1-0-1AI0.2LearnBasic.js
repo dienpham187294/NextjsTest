@@ -37,24 +37,19 @@ let ArrNumber = [
     { "number": 20, "text": "twenty" }
 ]
 function Dictaphone({ Data }) {
-    const [fuzzyMatchingThreshold, SET_fuzzyMatchingThreshold] = useState(0.6)
-    const [Style, SET_Style] = useState(true)
-    const [OpenSetting, SET_OpenSetting] = useState(0)
+
     useEffect(() => {
-        Str_to_Check = "";
-        console.log(fuzzyMatchingThreshold, Style, Data)
         commands = [{
             command: Data,
             callback: () => {
-                // Str_to_Check = `${command}`;
                 console.log("===========================commands");
-                writeMessage("Str_to_Check");
+                writeMessage();
             },
             isFuzzyMatch: true,
-            fuzzyMatchingThreshold: fuzzyMatchingThreshold,
-            bestMatchOnly: Style
+            fuzzyMatchingThreshold: 0.4,
+            bestMatchOnly: true
         }]
-    }, [Data, fuzzyMatchingThreshold, Style])
+    }, [Data])
 
 
     const {
@@ -67,6 +62,7 @@ function Dictaphone({ Data }) {
         if (interimTranscript !== "") {
             try {
                 $("#interrimID").text(interimTranscript)
+                console.log(interimTranscript)
                 let ArrTemp = [];
                 let i = 0
                 let Arr = Data.toLowerCase().split(/[\?#!-().]+/).join("").split(" ")
@@ -76,18 +72,18 @@ function Dictaphone({ Data }) {
                     }
                 });
                 if (i === Arr.length) {
-                    writeMessage(Str_to_Check)
+                    writeMessage()
                     console.log(interimTranscript, i, Arr.length, "===============interim")
                 }
 
             } catch (error) {
-                console.log("E ID interim")
+                console.log(error)
             }
         }
     }, [interimTranscript])
     const startListening = () => SpeechRecognition.startListening({ continuous: true, language: 'en-GB' });
     const stopListening = () => SpeechRecognition.stopListening({ continuous: false, language: 'en-GB' });
-    async function writeMessage(message) {
+    async function writeMessage() {
         try {
             await $("#messageRes").val("one_true");
             await $("#messageResBtn").click();
@@ -116,42 +112,7 @@ function Dictaphone({ Data }) {
                 onClick={() => stopListening()}
             >Click to Stop</button>
         </p>
-        {OpenSetting % 2 === 0 ? <div>
-            <input className="form-control bg-light mt-1" disabled type="text" id="messageRes" defaultValue="" />
-            <br />
-            <span> Độ chính xác (the similarity of speech):  </span>
-            <select
-                onChange={(e) => {
-                    SET_fuzzyMatchingThreshold(e.currentTarget.value)
-                }}
-                className="form-control bg-light mt-1"
-                defaultValue="0.5">
-                <option value="0.1">10%</option>
-                <option value="0.2">20%</option>
-                <option value="0.3">30%</option>
-                <option value="0.4">40%</option>
-                <option value="0.5">50%</option>
-                <option value="0.6">60%</option>
-                <option value="0.7">70%</option>
-                <option value="0.8">80%</option>
-                <option value="0.9">90%</option>
-                <option value="1">100%</option>
-            </select>
-            <span> Chế độ đọc (matches the speech): </span>
-            <select
-                onChange={(e) => {
-                    if (e.currentTarget.value === "true") {
-                        SET_Style(true)
-                    } else {
-                        SET_Style(false)
-                    }
-                }}
-                className="form-control bg-light mt-1"
-                defaultValue={true}>
-                <option value={true}>Đọc từng câu một</option>
-                <option value={false}>Đọc nhiều câu một lúc</option>
-            </select>
-        </div> : ""}
+        <input type="text" id="messageRes"/>
     </div>
     );
 };
