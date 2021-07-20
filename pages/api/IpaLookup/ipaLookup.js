@@ -577,7 +577,18 @@ let ArrstringApi =
         `book,bʊk,can,kæn,can't,kænt,May,meɪ,speak,spiːk,sit,sɪt,down,daʊn,study,ˈstʌd.i,aloud,əˈlaʊd,please,pliːz,instructions,ɪnˈstrʌk·ʃənz,box,bɒks`,
         `Choose,tʃuːz,act,ækt,out,aʊt,classroom,ˈklɑːs.ruːm,big,bɪɡ,small,smɑːl,gym,dʒɪm,library,ˈlaɪ.brər.i,computer,kəmˈpjuː.tər,room,ruːm`,
         `playground,ˈpleɪ.ɡraʊnd,So,soʊ,early,ˈɜː.li,new,ˈnju,large,ˈɫɑrdʒ,beautiful,ˈbjutəfəɫ,about,əˈbaʊt,but,ˈbət,music,ˈmjuzɪk`,
-        `very,ˈvɛri,rooms,ˈrumz,Tell,ˈtɛɫ`
+        `very,ˈvɛri,rooms,ˈrumz,Tell,ˈtɛɫ`,
+        `8,ˈeɪt,pen,ˈpɛn,rubber,ˈrəbɝr,notebook,ˈnoʊtˌbʊk,pencil,ˈpɛnsəɫ,case,ˈkeɪs,sharpener,ˈʃɑː.pən.ər`,
+        `these,ˈðiz,books,ˈbʊks,Those,ˈðoʊz,pencils,ˈpɛnsəɫz,notebooks,ˈnoʊtˌbʊks,rubbers,ˈrəbɝz`,
+        `things,ˈθɪŋz,rulers,ˈruɫɝz,pens,ˈpɛnz,robots,ˈroʊˌbɑts,9,ˈnaɪn,bag,ˈbæɡ,desk,ˈdɛsk`,
+        `colour,ˈkəɫɝ,red,ˈɹɛd,green,ˈɡɹin,blue,ˈbɫu,white,ˈwaɪt,yellow,ˈjɛɫoʊ,bags,ˈbæɡz,orange,ˈɔɹəndʒ,brown,ˈbɹaʊn,sharpeners,ˈʃɑː.pən.ərs`,
+        `black,ˈbɫæk,bookcase,ˈbʊkˌkeɪs,Thanks,ˈθæŋks,rainbow,ˈɹeɪnˌboʊ,classmate,ˈkɫæsˌmeɪt,10,ˈtɛn,break,ˈbɹeɪk`,
+        `badminton,ˈbædˌmɪntən,football,ˈfʊtˌbɔɫ,basketball,ˈbæskətˌbɔɫ,chess,ˈtʃɛs,table,ˈteɪbəɫ`,
+        `tennis,ˈtɛnɪs,different,ˈdɪfɝənt,games,ˈɡeɪmz,sports,ˈspɔɹts,do,ˈdu,OK,ˈoʊˈkeɪ,skipping,ˈskɪpɪŋ,skating,ˈskeɪtɪŋ,hide-and-seek,ˌhaɪd.ənˈsiːk`,
+        `blind,ˌblaɪnd,man's,.mænz,bluff,ˈblʌf,like,ˈɫaɪk,Hide,ˈhaɪd,Where,ˈwɛɹ,find,ˈfaɪnd`,
+        `Bingo,ˈbɪŋɡoʊ,volleyball,ˈvɑɫiˌbɔɫ,then,ˈðɛn,check,ˈtʃɛk,right,ˈɹaɪt,house,ˈhaʊs,order,ˈɔɹdɝ,calculator,ˈkæɫkjəˌɫeɪtɝ`,
+        `ruler,ˈɹuɫɝ`
+
     ]
 
 let arrrStringApi = ArrstringApi.join(",").split(",")
@@ -588,43 +599,39 @@ for (let i = 0; i < arrrStringApi.length; i += 2) {
         "ipa": arrrStringApi[i + 1]
     })
 }
-let arr1 = `Read and match.
-Is that your school?
-Is the library big?
-Is the music room new?
-This is my school.
-No, It isn't It's old. 
-Wow, It's very nice. 
-No, it isn't. It's small. 
-Yes, it Is.
-Read and complete.
-it 
-gym 
-playground 
-nice 
-classroom
-Project
-Write the names of the rooms in the school. 
-Tell your classmates about them.`
+let arr1 = `these
+they 
+this 
+those 
+three 
+too 
+two 
+what
+white 
+who 
+write
+year
+yellow
+yes
+you
+your`
 
-let arr2 = `Đọc và nối.
-Đó có phải là trường học của bạn không?
-Thư viện có lớn không?
-Phòng nghe nhạc có mới không?
-Đây là trường học của tôi.
-Không, nó không phải là cũ.
-Wow, nó rất tuyệt.
-Không, không phải vậy. Nó nhỏ.
-Vâng, đúng vậy.
-Đọc và hoàn thành.
-nó
-phòng thể dục
-sân chơi
-đẹp
-lớp học
-Dự án
-Viết tên các phòng trong trường.
-Nói với bạn cùng lớp của bạn về họ.`
+let arr2 = `những cái này
+họ
+điều này
+những, cái đó
+số ba
+quá
+hai
+gì
+trắng
+WHO
+viết
+năm
+màu vàng
+Đúng
+bạn
+của bạn`
 
 export default async (req, res) => {
     // const { db } = await connectToDatabase();
@@ -644,9 +651,12 @@ export default async (req, res) => {
                 if (ee !== "") {
                     let status = true
                     arrIPA.forEach(eee => {
-                        if (eee.text.toLowerCase().split("'").join("").split(".").join("") === ee.toLowerCase().split("'").join("").split(".").join("").split(",").join("").split("!").join("").split("?").join("").split(":").join("")) {
+
+                        if (eee.text.FN_sort() === ee.FN_sort()) {
+                            if (status) {
+                                Arr_temp.push(eee.ipa)
+                            }
                             status = false
-                            Arr_temp.push(eee.ipa)
                         }
                     })
                     if (status) {
@@ -674,3 +684,8 @@ export default async (req, res) => {
         res.status(400).json({ success: false })
     }
 }
+
+String.prototype.FN_sort = function () {
+    return this.toLowerCase().split(/[\?#!-':().,]+/).join("")
+}
+
