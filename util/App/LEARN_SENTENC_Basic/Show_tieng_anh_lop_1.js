@@ -96,7 +96,7 @@ export default function Show_Tieng_anh_lop_1(Dulieu_tieng_anh_lop_1, tokenCheck)
                                                     document.getElementById(List_IDs["BUTTON_CLICK_TO_TALK"]).click();
 
                                                     if (!window.fullscreen && statusCount === 0) {
-                                                        // FullScreen("ID_ShowTiengAnh")
+                                                        FullScreen("ID_ShowTiengAnh")
                                                         statusCount = 1
                                                     }
                                                 } catch (error) {
