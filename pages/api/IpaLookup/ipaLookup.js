@@ -602,12 +602,23 @@ for (let i = 0; i < arrrStringApi.length; i += 2) {
     })
 }
 let arrstr11 = [
-    `stones
-    /ˈstoʊnz/stepping
-    /ˈstɛpɪŋ/example
-    /ɪɡˈzæmpəɫ/queen
-    /ˈkwin/penguin
-    /ˈpɛŋɡwən/letters/ˈɫɛtɝz/hop/ˈhɑp/clap/ˈkɫæp/trace/ˈtɹeɪs/game/ˈɡeɪm`
+    `stones/ˈstoʊnz/stepping/ˈstɛpɪŋ/example/ɪɡˈzæmpəɫ/queen/ˈkwin/penguin/ˈpɛŋɡwən/letters/ˈɫɛtɝz/hop/ˈhɑp/clap/ˈkɫæp/trace/ˈtɹeɪs/ball/ˈbɔɫ/game/ˈɡeɪm`,
+    `cycle/ˈsaɪkəɫ/cupboard/ˈkəbɝd/cup/ˈkəp/cook/ˈkʊk/coat/ˈkoʊt/cloudy/ˈkɫaʊdi/chair/ˈtʃɛɹ/central/ˈsɛntɹəɫ/cathedral/kəˈθidɹəɫ/brother/ˈbɹəðɝ/behind/bɪˈhaɪnd/bedroom/ˈbɛˌdɹum/bed/ˈbɛd/bay/ˈbeɪ/bathroom/ˈbæˌθɹum`,
+    `doll/ˈdɑɫ/grandmother/ˈɡɹændˌməðɝ/grandfather/ˈɡɹænˌfɑðɝ/goldfish/ˈɡoʊɫdˌfɪʃ/gate/ˈɡeɪt/garden/ˈɡɑɹdən/garage/ɡɝˈɑʒ/kites/ˈkaɪts/fly/ˈfɫaɪ/tank/ˈtæŋk/fish/ˈfɪʃ/fence/ˈfɛns/father/ˈfɑðɝ/far/ˈfɑɹ/fan/ˈfæn/family/ˈfæməɫi/draw/ˈdɹɔ/door/ˈdɔɹ/dog/ˈdɔɡ/homework/ˈhoʊmˌwɝk/does/ˈdəz/dining/ˈdaɪnɪŋ`,
+    `his
+    /ˈhɪz/picture
+    /ˈpɪktʃɝ/children
+    /ˈtʃɪɫdɹən/photo
+    /ˈfoʊˌtoʊ/sister
+    /ˈsɪstɝ/she's
+    /ˈʃiz/him
+    /ˈhɪm/mother
+    /ˈməðɝ/young
+    /ˈjəŋ/really
+    /ˈɹiɫi/he's
+    /ˈhiz/man
+    /ˈmæn/11
+    /ˈiɫɛvən`
 ]
 
 let ArrStr11 = arrstr11.join("/").split("\n    ").join("").split("/");
@@ -618,23 +629,43 @@ for (let i = 0; i < ArrStr11.length; i += 2) {
     })
 }
 
-let arr1 = `Review
-Listen and repeat.
-Listen and point.
-Circle the odd one out.
-Example:
-Play "Stepping stones."`
+let arr1 = `Listen and number.
+Read and complete. 
+Hi! My name is Quan. 
+I am ten years old. 
+That is a picture of my family. 
+My father is forty-four years old. 
+My mother is thirty-nine years old. 
+My brother is fourteen years old.
+His father
+His mother
+His brother
+Write about your family.
+How old are you?
+How old is your mother?
+How old is your father?
+How old is your brother?
+How old is your sister?`
 
-let arr2 = `Ôn tập
-Lắng nghe và lặp lại.
-Lắng nghe và chỉ ra.
-Khoanh tròn số lẻ ra ngoài.
-Thí dụ:
-Chơi "Đá bậc thang."`
+let arr2 = `Nghe và số.
+Đọc và hoàn thành.
+Chào! Tôi tên Quân.
+Tôi mười tuổi.
+Đó là hình ảnh của gia đình tôi.
+Cha tôi bốn mươi bốn tuổi.
+Mẹ tôi ba mươi chín tuổi.
+Em trai tôi mười bốn tuổi.
+Bố của anh ấy
+Mẹ của anh ta
+Anh trai của anh ấy
+Viết về gia đình của bạn.
+Bạn bao nhiêu tuổi?
+Mẹ của bạn bao nhiêu tuổi?
+Bố bạn bao nhiêu tuổi?
+Anh trai bạn bao nhiêu tuổi?
+Em gái bạn bao nhiêu tuổi?`
 
-export default async (req, res) => {
-    // const { db } = await connectToDatabase();
-    // TextToIPA.loadDict(); // blocking load
+export default async (req, res) => {// const { db } = await connectToDatabase();// TextToIPA.loadDict(); // blocking load
     try {
         let ARR1 = arr1.split("\n")
         let ARR2 = arr2.split("\n")

@@ -6,7 +6,10 @@ import Check2String from "../../String_tool/Check2String"
 import List_IDs from "../../List_IDs/List_IDs"
 import Linkapi from "../../api/Linkapi"
 import Dictionary_with_image from "../../../pages/helpers/IMAGE/Dictionary_with_image"
+import FullScreen from "../../fullscreen/fullscreen"
 const queryString = require('query-string');
+
+let statusCount = 0;
 export default function Show_Tieng_anh_lop_1(Dulieu_tieng_anh_lop_1, tokenCheck) {
 
     const [Data_Learn, SET_Data_Learn] = useState("")
@@ -88,8 +91,14 @@ export default function Show_Tieng_anh_lop_1(Dulieu_tieng_anh_lop_1, tokenCheck)
                                             }}
                                             onClick={() => {
                                                 SET_Data_Learn(Dulieu_tieng_anh_lop_1[Num_page].data[i]);
+
                                                 try {
                                                     document.getElementById(List_IDs["BUTTON_CLICK_TO_TALK"]).click();
+
+                                                    if (!window.fullscreen && statusCount === 0) {
+                                                        FullScreen("ID_ShowTiengAnh")
+                                                        statusCount = 1
+                                                    }
                                                 } catch (error) {
                                                     console.log("es")
                                                 }

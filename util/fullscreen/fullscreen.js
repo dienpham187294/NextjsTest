@@ -8,7 +8,7 @@ export default function FullScreen(id) {
         } else if (elem.webkitRequestFullScreen) {
             elem.webkitRequestFullScreen();
         } else {
-            alert("Máy không hỗ trợ full màn hình")
+            console.log("Máy không hỗ trợ full màn hình")
         }
     } catch (error) {
         console.log(error)

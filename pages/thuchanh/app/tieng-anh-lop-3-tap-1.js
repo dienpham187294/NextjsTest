@@ -10,7 +10,7 @@ export default function Show_tieng_anh_lop_3_tap_1() {
                 <meta name="description" content="Một sản phẩm của Ericpham" />
             </Head>
             <div className="container text-center">
-                {Show_Demo_Sentence_Basic(Dulieu_tieng_anh_lop_3, "giao-khoa-lop-2")}
+                {Show_Demo_Sentence_Basic(Dulieu_tieng_anh_lop_3, "giao-khoa-lop-3-tap-1")}
             </div>
         </div>
 

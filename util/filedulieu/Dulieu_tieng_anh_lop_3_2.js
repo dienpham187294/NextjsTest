@@ -17,27 +17,375 @@ export default [
     },
     {
         "img": "https://i.postimg.cc/90ZkGyMM/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-2-05.jpg",
-        "data": []
+        "data": [
+
+        ]
     },
     {
         "img": "https://i.postimg.cc/MZQg2JDS/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-2-06.jpg",
-        "data": []
+        "data": [
+
+        ]
     },
     {
         "img": "https://i.postimg.cc/qMHSpDbC/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-2-07.jpg",
-        "data": []
+        "data": [
+            {
+                "EN": "Unit 11",
+                "VN": "Đơn vị 11",
+                "IPA": "ˈjuː.nɪt ˈiɫɛvən"
+            },
+            {
+                "EN": "This is my family",
+                "VN": "Đây là gia đình tôi",
+                "IPA": "ðɪs ɪz mai ˈfæməɫi"
+            },
+            {
+                "EN": "Look, listen and repeat.",
+                "VN": "Nhìn, nghe và lặp lại.",
+                "IPA": "lʊk ˈlɪs.ən ænd rɪˈpiːt"
+            },
+            {
+                "EN": "Who's that man?",
+                "VN": "Người đàn ông đó là ai?",
+                "IPA": "huːz ðæt ˈmæn"
+            },
+            {
+                "EN": "He's my father.",
+                "VN": "Ông ấy là bố tôi.",
+                "IPA": "ˈhiz mai ˈfɑðɝ"
+            },
+            {
+                "EN": "Really? He's young!",
+                "VN": "Có thật không? Cậu ấy còn trẻ!",
+                "IPA": "ˈɹiɫi ˈhiz ˈjəŋ"
+            },
+            {
+                "EN": "And that's my mother next to him.",
+                "VN": "Và đó là mẹ tôi bên cạnh anh ấy.",
+                "IPA": "ænd ðæts mai ˈməðɝ nekst tuː ˈhɪm"
+            },
+            {
+                "EN": "She's nice!",
+                "VN": "Cô ấy tốt!",
+                "IPA": "ˈʃiz naɪs"
+            },
+            {
+                "EN": "Point and say.",
+                "VN": "Chỉ và nói.",
+                "IPA": "pɔɪnt ænd seɪ"
+            },
+            {
+                "EN": "Who's that?",
+                "VN": "Ai đó?",
+                "IPA": "huːz ðæt"
+            },
+            {
+                "EN": "grandfather ",
+                "VN": "ông ",
+                "IPA": "ˈɡɹænˌfɑðɝ"
+            },
+            {
+                "EN": "grandmother",
+                "VN": "bà",
+                "IPA": "ˈɡɹændˌməðɝ"
+            },
+            {
+                "EN": "father",
+                "VN": "bố",
+                "IPA": "ˈfɑðɝ"
+            },
+            {
+                "EN": "mother ",
+                "VN": "mẹ ",
+                "IPA": "ˈməðɝ"
+            },
+            {
+                "EN": "I ",
+                "VN": "tôi ",
+                "IPA": "aj"
+            },
+            {
+                "EN": "sister ",
+                "VN": "em gái ",
+                "IPA": "ˈsɪstɝ"
+            },
+            {
+                "EN": "brother",
+                "VN": "anh trai",
+                "IPA": "ˈbɹəðɝ"
+            },
+            {
+                "EN": "Let's talk.",
+                "VN": "Hãy nói chuyện.",
+                "IPA": "lets tɑːk"
+            },
+            {
+                "EN": "Who's that?",
+                "VN": "Ai đó?",
+                "IPA": "huːz ðæt"
+            }
+        ]
     },
     {
         "img": "https://i.postimg.cc/50HT2hW8/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-2-08.jpg",
-        "data": []
+        "data": [
+            {
+                "EN": "Listen and tick.",
+                "VN": "Nghe và đánh dấu.",
+                "IPA": "ˈlɪs.ən ænd tɪk"
+            },
+            {
+                "EN": "Read and complete",
+                "VN": "Đọc và hoàn thành",
+                "IPA": "riːd ænd kəmˈpliːt"
+            },
+            {
+                "EN": "This is a photo of Mai's family.",
+                "VN": "Đây là ảnh của gia đình Mai.",
+                "IPA": "ðɪs ɪz ə ˈfoʊˌtoʊ əv Mai's ˈfæməɫi"
+            },
+            {
+                "EN": "Let's sing.",
+                "VN": "Hãy hát nào.",
+                "IPA": "lets sɪŋ"
+            },
+            {
+                "EN": "A happy family",
+                "VN": "Một gia đình hạnh phúc",
+                "IPA": "ə ˈhæpi ˈfæməɫi"
+            },
+            {
+                "EN": "happy, happy, happy father. ",
+                "VN": "hạnh phúc, vui vẻ, hạnh phúc cha.",
+                "IPA": "ˈhæpi ˈhæpi ˈhæpi ˈfɑðɝ"
+            },
+            {
+                "EN": "happy, happy, happy mother. ",
+                "VN": "mẹ vui vẻ, hạnh phúc, vui vẻ.",
+                "IPA": "ˈhæpi ˈhæpi ˈhæpi ˈməðɝ"
+            },
+            {
+                "EN": "Happy, happy, happy children.",
+                "VN": "Chúc các con vui vẻ, hạnh phúc, vui vẻ.",
+                "IPA": "ˈhæpi ˈhæpi ˈhæpi ˈtʃɪɫdɹən"
+            },
+            {
+                "EN": "Happy, happy, happy family",
+                "VN": "Gia đình hạnh phúc, vui vẻ, hạnh phúc",
+                "IPA": "ˈhæpi ˈhæpi ˈhæpi ˈfæməɫi"
+            },
+            {
+                "EN": "Yes, yes, yes, yes",
+                "VN": "Có có có có",
+                "IPA": "jes jes jes jes"
+            },
+            {
+                "EN": "We are a happy family! ",
+                "VN": "Chúng tôi là một gia đình hạnh phúc!",
+                "IPA": "wiː ɑːr ə ˈhæpi ˈfæməɫi"
+            },
+            {
+                "EN": "yes, yes, yes, yes!",
+                "VN": "có có có có!",
+                "IPA": "jes jes jes jes"
+            },
+            {
+                "EN": "We are a happy family!",
+                "VN": "Chúng tôi là một gia đình hạnh phúc!",
+                "IPA": "wiː ɑːr ə ˈhæpi ˈfæməɫi"
+            },
+            {
+                "EN": "Look, listen and repeat.",
+                "VN": "Nhìn, nghe và lặp lại.",
+                "IPA": "lʊk ˈlɪs.ən ænd rɪˈpiːt"
+            },
+            {
+                "EN": "That's my brother.",
+                "VN": "Đó là anh trai tôi.",
+                "IPA": "ðæts mai ˈbɹəðɝ"
+            }
+        ]
     },
     {
         "img": "https://i.postimg.cc/wMXWtHfR/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-2-09.jpg",
-        "data": []
+        "data": [
+            {
+                "EN": "lesson 2",
+                "VN": "Bài 2",
+                "IPA": "ˈles.ən tuː"
+            },
+            {
+                "EN": "look, listen, and repeat",
+                "VN": "nhìn, nghe và lặp lại",
+                "IPA": "lʊk ˈlɪs.ən ænd rɪˈpiːt"
+            },
+            {
+                "EN": "That's my brother",
+                "VN": "Đó là anh trai của tôi",
+                "IPA": "ðæts mai ˈbɹəðɝ"
+            },
+            {
+                "EN": "How old is your brother?",
+                "VN": "Anh trai bạn bao nhiêu tuổi?",
+                "IPA": "haʊ oʊld ɪz jɔːr ˈbɹəðɝ"
+            },
+            {
+                "EN": "He's seven.",
+                "VN": "Anh ấy bảy tuổi.",
+                "IPA": "ˈhiz ˈsev.ən"
+            },
+            {
+                "EN": "That's my grandmother.",
+                "VN": "Đó là bà tôi.",
+                "IPA": "ðæts mai ˈɡɹændˌməðɝ"
+            },
+            {
+                "EN": "How old is she?",
+                "VN": "Cô ấy bao nhiêu tuổi?",
+                "IPA": "haʊ oʊld ɪz ʃiː"
+            },
+            {
+                "EN": "She's sixty-five.",
+                "VN": "Cô ấy sáu mươi lăm.",
+                "IPA": "ˈʃiz sixty-five."
+            },
+            {
+                "EN": "Point and say.",
+                "VN": "Chỉ và nói.",
+                "IPA": "pɔɪnt ænd seɪ"
+            },
+            {
+                "EN": "grandfather",
+                "VN": "ông nội",
+                "IPA": "ˈɡɹænˌfɑðɝ"
+            },
+            {
+                "EN": "grandmother",
+                "VN": "bà ngoại",
+                "IPA": "ˈɡɹændˌməðɝ"
+            },
+            {
+                "EN": "father",
+                "VN": "bố",
+                "IPA": "ˈfɑðɝ"
+            },
+            {
+                "EN": "mother",
+                "VN": "mẹ",
+                "IPA": "ˈməðɝ"
+            },
+            {
+                "EN": "brother ",
+                "VN": "Anh trai",
+                "IPA": "ˈbɹəðɝ"
+            },
+            {
+                "EN": "sister ",
+                "VN": "em gái",
+                "IPA": "ˈsɪstɝ"
+            },
+            {
+                "EN": "Let's talk.",
+                "VN": "Hãy nói chuyện.",
+                "IPA": "lets tɑːk"
+            },
+            {
+                "EN": "Nam's family",
+                "VN": "Gia đình nam",
+                "IPA": "Nam's ˈfæməɫi"
+            }
+        ]
     },
     {
         "img": "https://i.postimg.cc/zBR2rTTj/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-2-10.jpg",
-        "data": []
+        "data": [
+            {
+                "EN": "Listen and number.",
+                "VN": "Nghe và số.",
+                "IPA": "ˈlɪs.ən ænd ˈnʌm.bər"
+            },
+            {
+                "EN": "Read and complete. ",
+                "VN": "Đọc và hoàn thành.",
+                "IPA": "riːd ænd kəmˈpliːt"
+            },
+            {
+                "EN": "Hi! My name is Quan. ",
+                "VN": "Chào! Tôi tên Quân.",
+                "IPA": "haɪ mai neɪm ɪz Quan."
+            },
+            {
+                "EN": "I am ten years old. ",
+                "VN": "Tôi mười tuổi.",
+                "IPA": "aj am ten jɪər oʊld"
+            },
+            {
+                "EN": "That is a picture of my family. ",
+                "VN": "Đó là hình ảnh của gia đình tôi.",
+                "IPA": "ðæt ɪz ə ˈpɪktʃɝ əv mai ˈfæməɫi"
+            },
+            {
+                "EN": "My father is forty-four years old. ",
+                "VN": "Cha tôi bốn mươi bốn tuổi.",
+                "IPA": "mai ˈfɑðɝ ɪz forty-four jɪər oʊld"
+            },
+            {
+                "EN": "My mother is thirty-nine years old. ",
+                "VN": "Mẹ tôi ba mươi chín tuổi.",
+                "IPA": "mai ˈməðɝ ɪz thirty-nine jɪər oʊld"
+            },
+            {
+                "EN": "My brother is fourteen years old.",
+                "VN": "Em trai tôi mười bốn tuổi.",
+                "IPA": "mai ˈbɹəðɝ ɪz fourteen jɪər oʊld"
+            },
+            {
+                "EN": "His father",
+                "VN": "Bố của anh ấy",
+                "IPA": "ˈhɪz ˈfɑðɝ"
+            },
+            {
+                "EN": "His mother",
+                "VN": "Mẹ của anh ta",
+                "IPA": "ˈhɪz ˈməðɝ"
+            },
+            {
+                "EN": "His brother",
+                "VN": "Anh trai của anh ấy",
+                "IPA": "ˈhɪz ˈbɹəðɝ"
+            },
+            {
+                "EN": "Write about your family.",
+                "VN": "Viết về gia đình của bạn.",
+                "IPA": "raɪt əˈbaʊt jɔːr ˈfæməɫi"
+            },
+            {
+                "EN": "How old are you?",
+                "VN": "Bạn bao nhiêu tuổi?",
+                "IPA": "haʊ oʊld ɑːr jʊ"
+            },
+            {
+                "EN": "How old is your mother?",
+                "VN": "Mẹ của bạn bao nhiêu tuổi?",
+                "IPA": "haʊ oʊld ɪz jɔːr ˈməðɝ"
+            },
+            {
+                "EN": "How old is your father?",
+                "VN": "Bố bạn bao nhiêu tuổi?",
+                "IPA": "haʊ oʊld ɪz jɔːr ˈfɑðɝ"
+            },
+            {
+                "EN": "How old is your brother?",
+                "VN": "Anh trai bạn bao nhiêu tuổi?",
+                "IPA": "haʊ oʊld ɪz jɔːr ˈbɹəðɝ"
+            },
+            {
+                "EN": "How old is your sister?",
+                "VN": "Em gái bạn bao nhiêu tuổi?",
+                "IPA": "haʊ oʊld ɪz jɔːr ˈsɪstɝ"
+            }
+        ]
     },
     {
         "img": "https://i.postimg.cc/FK6C8Tkz/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-2-11.jpg",
@@ -289,19 +637,225 @@ export default [
     },
     {
         "img": "https://i.postimg.cc/h4NzvTTm/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-2-73.jpg",
-        "data": []
+        "data": [
+
+        ]
     },
     {
         "img": "https://i.postimg.cc/wMRpntB8/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-2-74.jpg",
-        "data": []
+        "data": [
+
+        ]
     },
     {
         "img": "https://i.postimg.cc/fWVSMBtZ/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-2-75.jpg",
-        "data": []
+        "data": [
+            {
+                "EN": "ball",
+                "VN": "trái bóng",
+                "IPA": "ˈbɔɫ"
+            },
+            {
+                "EN": "bathroom",
+                "VN": "phòng tắm",
+                "IPA": "ˈbæˌθɹum"
+            },
+            {
+                "EN": "bay",
+                "VN": "vịnh",
+                "IPA": "ˈbeɪ"
+            },
+            {
+                "EN": "bed",
+                "VN": "Giường",
+                "IPA": "ˈbɛd"
+            },
+            {
+                "EN": "bedroom",
+                "VN": "phòng ngủ",
+                "IPA": "ˈbɛˌdɹum"
+            },
+            {
+                "EN": "behind",
+                "VN": "phía sau",
+                "IPA": "bɪˈhaɪnd"
+            },
+            {
+                "EN": "brother",
+                "VN": "Anh trai",
+                "IPA": "ˈbɹəðɝ"
+            },
+            {
+                "EN": "cat",
+                "VN": "con mèo",
+                "IPA": "kæt"
+            },
+            {
+                "EN": "cathedral",
+                "VN": "thánh đường",
+                "IPA": "kəˈθidɹəɫ"
+            },
+            {
+                "EN": "central Viet Nam",
+                "VN": "miền trung việt nam",
+                "IPA": "ˈsɛntɹəɫ Viet Nam"
+            },
+            {
+                "EN": "chair",
+                "VN": "cái ghế",
+                "IPA": "ˈtʃɛɹ"
+            },
+            {
+                "EN": "cloudy",
+                "VN": "Nhiều mây",
+                "IPA": "ˈkɫaʊdi"
+            },
+            {
+                "EN": "coat",
+                "VN": "áo choàng ngoài",
+                "IPA": "ˈkoʊt"
+            },
+            {
+                "EN": "cook",
+                "VN": "nấu ăn",
+                "IPA": "ˈkʊk"
+            },
+            {
+                "EN": "count",
+                "VN": "đếm",
+                "IPA": "kaʊnt"
+            },
+            {
+                "EN": "cup",
+                "VN": "cốc",
+                "IPA": "ˈkəp"
+            },
+            {
+                "EN": "cupboard",
+                "VN": "cái tủ",
+                "IPA": "ˈkəbɝd"
+            },
+            {
+                "EN": "cycle desk",
+                "VN": "bàn đạp xe",
+                "IPA": "ˈsaɪkəɫ ˈdɛsk"
+            },
+            {
+                "EN": "different",
+                "VN": "khác nhau",
+                "IPA": "ˈdɪfɝənt"
+            }
+        ]
     },
     {
         "img": "https://i.postimg.cc/9FT470Yn/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-2-76.jpg",
-        "data": []
+        "data": [
+            {
+                "EN": "dining room",
+                "VN": "phòng ăn",
+                "IPA": "ˈdaɪnɪŋ ruːm"
+            },
+            {
+                "EN": "do, ",
+                "VN": "làm,",
+                "IPA": "ˈdu"
+            },
+            {
+                "EN": "does",
+                "VN": "làm",
+                "IPA": "ˈdəz"
+            },
+            {
+                "EN": "do homework",
+                "VN": "làm bài tập về nhà",
+                "IPA": "ˈdu ˈhoʊmˌwɝk"
+            },
+            {
+                "EN": "dog",
+                "VN": "chó",
+                "IPA": "ˈdɔɡ"
+            },
+            {
+                "EN": "doll",
+                "VN": "búp bê",
+                "IPA": "ˈdɑɫ"
+            },
+            {
+                "EN": "door",
+                "VN": "cửa",
+                "IPA": "ˈdɔɹ"
+            },
+            {
+                "EN": "draw",
+                "VN": "vẽ tranh",
+                "IPA": "ˈdɹɔ"
+            },
+            {
+                "EN": "family",
+                "VN": "gia đình",
+                "IPA": "ˈfæməɫi"
+            },
+            {
+                "EN": "fan",
+                "VN": "quạt",
+                "IPA": "ˈfæn"
+            },
+            {
+                "EN": "far",
+                "VN": "xa",
+                "IPA": "ˈfɑɹ"
+            },
+            {
+                "EN": "father",
+                "VN": "bố",
+                "IPA": "ˈfɑðɝ"
+            },
+            {
+                "EN": "fence",
+                "VN": "hàng rào",
+                "IPA": "ˈfɛns"
+            },
+            {
+                "EN": "fish tank",
+                "VN": "bể cá",
+                "IPA": "ˈfɪʃ ˈtæŋk"
+            },
+            {
+                "EN": "fly kites",
+                "VN": "thả diều",
+                "IPA": "ˈfɫaɪ ˈkaɪts"
+            },
+            {
+                "EN": "garage",
+                "VN": "nhà để xe",
+                "IPA": "ɡɝˈɑʒ"
+            },
+            {
+                "EN": "garden",
+                "VN": "vườn",
+                "IPA": "ˈɡɑɹdən"
+            },
+            {
+                "EN": "gate",
+                "VN": "cánh cổng",
+                "IPA": "ˈɡeɪt"
+            },
+            {
+                "EN": "goldfish",
+                "VN": "cá vàng",
+                "IPA": "ˈɡoʊɫdˌfɪʃ"
+            },
+            {
+                "EN": "grandfather",
+                "VN": "ông nội",
+                "IPA": "ˈɡɹænˌfɑðɝ"
+            },
+            {
+                "EN": "grandmother",
+                "VN": "bà ngoại",
+                "IPA": "ˈɡɹændˌməðɝ"
+            }
+        ]
     },
     {
         "img": "https://i.postimg.cc/52S6srG5/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-2-77.jpg",
