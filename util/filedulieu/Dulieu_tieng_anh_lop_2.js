@@ -19,6 +19,36 @@ export default [
         "img": "https://i.postimg.cc/Hs33X86D/S-ch-l-p-2-1-05.jpg",
         "data": [
             {
+                "EN": "Listen and point.",
+                "VN": "Lắng nghe và chỉ ra.",
+                "IPA": "ˈlɪs.ən ænd pɔɪnt"
+            },
+            {
+                "EN": "I'm six",
+                "VN": "Tôi sáu tuổi",
+                "IPA": "ˌaɪˈem sɪks"
+            },
+            {
+                "EN": "I'm ten",
+                "VN": "tôi mười tuổi",
+                "IPA": "ˌaɪˈem ten"
+            },
+            {
+                "EN": "How old are you?",
+                "VN": "Bạn bao nhiêu tuổi?",
+                "IPA": "haʊ oʊld ɑːr jʊ"
+            },
+            {
+                "EN": "How old are you?",
+                "VN": "Bạn bao nhiêu tuổi?",
+                "IPA": "haʊ oʊld ɑːr jʊ"
+            },
+            {
+                "EN": "I'm four.",
+                "VN": "Tôi thì bốn tuổi.",
+                "IPA": "ˌaɪˈem fɔːr"
+            },
+            {
                 "EN": "number one",
                 "IPA": "ˈnʌm.bər wʌn",
                 "VN": "số một/one"
@@ -92,12 +122,37 @@ export default [
                 "EN": "I'm five",
                 "VN": "Tôi 5 tuổi./I'm five",
                 "IPA": "ˌaɪˈem faɪv"
+            },
+            {
+                "EN": "Point, ask, and answer.",
+                "VN": "Chỉ, hỏi và trả lời.",
+                "IPA": "pɔɪnt ask, ænd ˈɑːn.sər"
+            },
+            {
+                "EN": "Play \"Magic finger.\"",
+                "VN": "Chơi \"Ngón tay ma thuật\".",
+                "IPA": "pleɪ ˈmædʒɪk ˈfɪŋɡɝ"
+            },
+            {
+                "EN": "How old are you?",
+                "VN": "Bạn bao nhiêu tuổi?",
+                "IPA": "haʊ oʊld ɑːr jʊ"
+            },
+            {
+                "EN": "I'm seven.",
+                "VN": "Tôi bảy tuổi.",
+                "IPA": "ˌaɪˈem ˈsev.ən"
             }
         ]
     },
     {
         "img": "https://i.postimg.cc/L6mNJ3B3/S-ch-l-p-2-1-07.jpg",
         "data": [
+            {
+                "EN": "Listen and point. Repeat.",
+                "VN": "Lắng nghe và chỉ ra. Nói lại.",
+                "IPA": "ˈlɪs.ən ænd pɔɪnt rɪˈpiːt"
+            },
             {
                 "EN": "Open your book!",
                 "VN": "Mở sách ra!",
@@ -118,34 +173,142 @@ export default [
                 "VN": "Bỏ tay xuống!",
                 "IPA": "hænds daʊn"
             }
+
         ]
     },
     {
         "img": "https://i.postimg.cc/xCHtzs4t/S-ch-l-p-2-1-08.jpg",
         "data": [
             {
+                "EN": "hands up",
+                "VN": "giơ tay lên",
+                "IPA": "hands ʌp"
+            },
+            {
+                "EN": "hands down",
+                "VN": "bỏ tay xuống",
+                "IPA": "hands daʊn"
+            },
+            {
+                "EN": "Listen and point.",
+                "VN": "Lắng nghe và chỉ ra.",
+                "IPA": "ˈlɪs.ən ænd pɔɪnt"
+            },
+            {
                 "EN": "Open your book!",
+                "VN": "Mở sách ra!",
+                "IPA": "ˈəʊ.pən jɔːr bʊk"
+            },
+            {
+                "EN": "Yes, Teacher.",
+                "VN": "Vâng thưa thầy giáo.",
+                "IPA": "jes ˈtitʃɝ"
+            },
+            {
+                "EN": "Open your book! ",
                 "VN": "Mở sách ra!",
                 "IPA": "ˈəʊ.pən jɔːr bʊk"
             },
             {
                 "EN": "Close your book!",
                 "VN": "Đóng sách lại!",
-                "IPA": "kləʊz jɔːr bʊk"
+                "IPA": "kloʊz jɔːr bʊk"
             }
         ]
     },
     {
         "img": "https://i.postimg.cc/jS5cXq1W/S-ch-l-p-2-1-09.jpg",
-        "data": []
+        "data": [
+            {
+                "EN": "Review",
+                "VN": "Ôn tập",
+                "IPA": "rɪˈvjuː"
+            },
+            {
+                "EN": "Write the letters. Listen and repeat.",
+                "VN": "Viết các từ. Lắng nghe và lặp lại.",
+                "IPA": "raɪt ðə ˈɫɛtɝz. ˈlɪs.ən ænd rɪˈpiːt"
+            },
+            {
+                "EN": "Listen and point,",
+                "VN": "Lắng nghe và chỉ ra,",
+                "IPA": "ˈlɪs.ən ænd pɔɪnt"
+            },
+            {
+                "EN": "Follow the letters and say the sounds.",
+                "VN": "Làm theo các chữ cái và nói âm thanh.",
+                "IPA": "ˈfɑɫoʊ ðə ˈɫɛtɝz ænd seɪ ðə ˈsaʊndz"
+            },
+            {
+                "EN": "Start",
+                "VN": "Khởi đầu",
+                "IPA": "ˈstɑɹt"
+            },
+            {
+                "EN": "Finish",
+                "VN": "Hoàn thành",
+                "IPA": "ˈfɪnɪʃ"
+            }
+        ]
     },
     {
         "img": "https://i.postimg.cc/Gm5QSw0X/S-ch-l-p-2-1-10.jpg",
-        "data": []
+        "data": [
+            {
+                "EN": "Review",
+                "VN": "Ôn tập",
+                "IPA": "rɪˈvjuː"
+            },
+            {
+                "EN": "Write the letters. Listen and repeat.",
+                "VN": "Viết thư. Lắng nghe và lặp lại.",
+                "IPA": "raɪt ðə ˈɫɛtɝz ˈlɪs.ən ænd rɪˈpiːt"
+            },
+            {
+                "EN": "Listen and point.",
+                "VN": "Lắng nghe và chỉ ra.",
+                "IPA": "ˈlɪs.ən ænd pɔɪnt"
+            },
+            {
+                "EN": "Circle the letters.",
+                "VN": "Khoanh tròn các chữ cái.",
+                "IPA": "ˈsɜː.kəl ðə ˈɫɛtɝz"
+            },
+            {
+                "EN": "Play \"Board race.\"",
+                "VN": "Chơi \"Cuộc đua trên bàn\".",
+                "IPA": "pleɪ ˈbɔɹd ˈɹeɪs"
+            }
+        ]
     },
     {
         "img": "https://i.postimg.cc/9fwB68CC/S-ch-l-p-2-1-11.jpg",
         "data": [
+            {
+                "EN": "Feeling",
+                "VN": "Cảm giác",
+                "IPA": "ˈfiɫɪŋ"
+            },
+            {
+                "EN": "Listen and point. Repeat",
+                "VN": "Lắng nghe và chỉ ra. Nói lại",
+                "IPA": "ˈlɪs.ən ænd pɔɪnt rɪˈpiːt"
+            },
+            {
+                "EN": "Listen and point.",
+                "VN": "Lắng nghe và chỉ ra.",
+                "IPA": "ˈlɪs.ən ænd pɔɪnt"
+            },
+            {
+                "EN": "How are you?",
+                "VN": "Bạn khỏe không?",
+                "IPA": "haʊ ɑːr jʊ"
+            },
+            {
+                "EN": "I'm happy.",
+                "VN": "Tôi đang hạnh phúc.",
+                "IPA": "ˌaɪˈem ˈhæpi"
+            },
             {
                 "EN": "happy",
                 "IPA": "ˈhæp.i",
@@ -187,6 +350,26 @@ export default [
         "img": "https://i.postimg.cc/4ysbhXtx/S-ch-l-p-2-1-12.jpg",
         "data": [
             {
+                "EN": "Point, ask, and answer.",
+                "VN": "Chỉ, hỏi và trả lời.",
+                "IPA": "pɔɪnt ˈæsk ænd ˈɑːn.sər"
+            },
+            {
+                "EN": "How are you?",
+                "VN": "Bạn khỏe không?",
+                "IPA": "haʊ ɑːr jʊ"
+            },
+            {
+                "EN": "I'm fine.",
+                "VN": "Tôi ổn.",
+                "IPA": "ˌaɪˈem faɪn"
+            },
+            {
+                "EN": "Play the \"Chain\" game.",
+                "VN": "Chơi trò chơi \"Sợi xích\".",
+                "IPA": "pleɪ ðə ˈtʃeɪn ˈɡeɪm"
+            },
+            {
                 "EN": "How are you?",
                 "VN": "Bạn khỏe không?",
                 "IPA": "haʊ ɑːr juː"
@@ -206,6 +389,31 @@ export default [
     {
         "img": "https://i.postimg.cc/vBWtB44K/S-ch-l-p-2-1-13.jpg",
         "data": [
+            {
+                "EN": "Listen and repeat. Trace.",
+                "VN": "Lắng nghe và lặp lại. Truy vết.",
+                "IPA": "ˈlɪs.ən ænd rɪˈpiːt ˈtɹeɪs"
+            },
+            {
+                "EN": "Listen and repeat. Write.",
+                "VN": "Lắng nghe và lặp lại. Viết.",
+                "IPA": "ˈlɪs.ən ænd rɪˈpiːt raɪt"
+            },
+            {
+                "EN": "Sing.",
+                "VN": "Hát.",
+                "IPA": "sɪŋ"
+            },
+            {
+                "EN": "Listen and clap.",
+                "VN": "Lắng nghe và vỗ tay.",
+                "IPA": "ˈlɪs.ən ænd ˈkɫæp"
+            },
+            {
+                "EN": "Listen and hop.",
+                "VN": "Nghe và nhảy.",
+                "IPA": "ˈlɪs.ən ænd ˈhɑp"
+            },
             {
                 "EN": "nut",
                 "IPA": "nʌt",
@@ -231,6 +439,16 @@ export default [
     {
         "img": "https://i.postimg.cc/ZRkL4853/S-ch-l-p-2-1-14.jpg",
         "data": [
+            {
+                "EN": "Listen and repeat. Trace.",
+                "VN": "Lắng nghe và lặp lại. Truy vết.",
+                "IPA": "ˈlɪs.ən ænd rɪˈpiːt ˈtɹeɪs"
+            },
+            {
+                "EN": "Listen and repeat. Write.",
+                "VN": "Lắng nghe và lặp lại. Viết.",
+                "IPA": "ˈlɪs.ən ænd rɪˈpiːt raɪt"
+            },
             {
                 "EN": "octopus",
                 "IPA": "ˈɑːk.tə.pəs",
@@ -282,14 +500,64 @@ export default [
         "img": "https://i.postimg.cc/VL7BdQNz/S-ch-l-p-2-1-16.jpg",
         "data": [
             {
-                "EN": "What's your name?",
-                "IPA": "wɑːts jɔːr neɪm",
-                "VN": "Bạn tên gì?"
+                "EN": "Listen and read,",
+                "VN": "Nghe và đọc,",
+                "IPA": "ˈlɪs.ən ænd riːd"
             },
             {
-                "EN": "My name is Vinh?",
-                "IPA": "mai neɪm iz Vinh",
-                "VN": "Tôi tên là Vinh"
+                "EN": "What's your name?",
+                "VN": "Bạn tên là gì?",
+                "IPA": "wɑːts jɔːr neɪm"
+            },
+            {
+                "EN": "what's your name?",
+                "VN": "bạn tên là gì?",
+                "IPA": "wɑːts jɔːr neɪm"
+            },
+            {
+                "EN": "My name's Bobby.",
+                "VN": "Tên tôi là Bobby.",
+                "IPA": "mai neɪm's Bobby."
+            },
+            {
+                "EN": "listen and repeat.",
+                "VN": "lắng nghe và lặp lại.",
+                "IPA": "ˈlɪs.ən ænd rɪˈpiːt"
+            },
+            {
+                "EN": "What's your name? ",
+                "VN": "Bạn tên là gì?",
+                "IPA": "wɑːts jɔːr neɪm"
+            },
+            {
+                "EN": "My name's Vinh.",
+                "VN": "My name's Vinh.",
+                "IPA": "mai neɪm's Vinh."
+            },
+            {
+                "EN": "Play the \"Chain\" game.",
+                "VN": "Chơi trò chơi \"Sợi xích\".",
+                "IPA": "pleɪ ðə ˈtʃeɪn ˈɡeɪm"
+            },
+            {
+                "EN": "What's your name?",
+                "VN": "Bạn tên là gì?",
+                "IPA": "wɑːts jɔːr neɪm"
+            },
+            {
+                "EN": "My name's Mai.",
+                "VN": "Tên tôi là Mai.",
+                "IPA": "mai neɪm's Mai."
+            },
+            {
+                "EN": "What's your name?",
+                "VN": "Bạn tên là gì?",
+                "IPA": "wɑːts jɔːr neɪm"
+            },
+            {
+                "EN": "My name's Bill",
+                "VN": "Tên tôi là Bill",
+                "IPA": "mai neɪm's Bill"
             }
         ]
     },
@@ -365,7 +633,46 @@ export default [
     },
     {
         "img": "https://i.postimg.cc/x1hv3vH7/S-ch-l-p-2-1-19.jpg",
-        "data": []
+        "data": [{
+            "EN": "pen",
+            "VN": "cây bút",
+            "IPA": "ˈpɛn"
+        },
+        {
+            "EN": "penguin",
+            "VN": "chim cánh cụt",
+            "IPA": "ˈpɛŋɡwən"
+        },
+        {
+            "EN": "queen",
+            "VN": "nữ hoàng",
+            "IPA": "ˈkwin"
+        },
+        {
+            "EN": "question",
+            "VN": "câu hỏi",
+            "IPA": "ˈkwes.tʃən"
+        },
+        {
+            "EN": "Listen and repeat. Trace.",
+            "VN": "Lắng nghe và lặp lại. Dấu vết.",
+            "IPA": "ˈlɪs.ən ænd rɪˈpiːt ˈtɹeɪs"
+        },
+        {
+            "EN": "Listen and repeat. Write.",
+            "VN": "Lắng nghe và lặp lại. Viết.",
+            "IPA": "ˈlɪs.ən ænd rɪˈpiːt raɪt"
+        },
+        {
+            "EN": "Sing.",
+            "VN": "Hát.",
+            "IPA": "sɪŋ"
+        },
+        {
+            "EN": "Listen and hop.",
+            "VN": "Nghe và nhảy.",
+            "IPA": "ˈlɪs.ən ænd ˈhɑp"
+        }]
     },
     {
         "img": "https://i.postimg.cc/wBNhf1QB/S-ch-l-p-2-1-20.jpg",
@@ -457,7 +764,7 @@ export default [
             },
             {
                 "EN": "Twelve books.",
-                "VN": "số Mười hai cuốn sách.",
+                "VN": "Mười hai cuốn sách.",
                 "IPA": "twelv bʊks"
             },
             {
@@ -477,7 +784,7 @@ export default [
             },
             {
                 "EN": "Eleven triangles.",
-                "VN": "số Mười một hình tam giác.",
+                "VN": "Mười một hình tam giác.",
                 "IPA": "ɪˈlev.ən ˈtraɪ.æŋ.ɡəl"
             }
         ]
@@ -492,7 +799,7 @@ export default [
             },
             {
                 "EN": "Fifteen squares.",
-                "VN": "số Mười lăm ô vuông.",
+                "VN": "Mười lăm ô vuông.",
                 "IPA": "ˌfɪfˈtiːn skweər"
             }
         ]
@@ -514,7 +821,38 @@ export default [
     },
     {
         "img": "https://i.postimg.cc/Hkc5nrKt/S-ch-l-p-2-1-26.jpg",
-        "data": []
+        "data": [
+            {
+                "EN": "Review",
+                "VN": "Ôn tập",
+                "IPA": "rɪˈvjuː"
+            },
+            {
+                "EN": "Listen and repeat.",
+                "VN": "Lắng nghe và lặp lại.",
+                "IPA": "ˈlɪs.ən ænd rɪˈpiːt"
+            },
+            {
+                "EN": "Listen and point.",
+                "VN": "Lắng nghe và chỉ ra.",
+                "IPA": "ˈlɪs.ən ænd pɔɪnt"
+            },
+            {
+                "EN": "Circle the odd one out.",
+                "VN": "Khoanh tròn số lẻ ra ngoài.",
+                "IPA": "ˈsɜː.kəl ðə odd wan aʊt"
+            },
+            {
+                "EN": "Example:",
+                "VN": "Thí dụ:",
+                "IPA": "ɪɡˈzæmpəɫ"
+            },
+            {
+                "EN": "Play \"Stepping stones.\"",
+                "VN": "Chơi \"Đá bậc thang.\"",
+                "IPA": "pleɪ ˈstɛpɪŋ ˈstoʊnz"
+            }
+        ]
     },
     {
         "img": "https://i.postimg.cc/nrSjcxG5/S-ch-l-p-2-1-27.jpg",
@@ -1632,7 +1970,7 @@ export default [
             },
             {
                 "EN": "Eleven triangles.",
-                "VN": "số Mười một hình tam giác.",
+                "VN": "Mười một hình tam giác.",
                 "IPA": "ɪˈlev.ən ˈtraɪ.æŋ.ɡəl"
             },
             {
@@ -1642,7 +1980,7 @@ export default [
             },
             {
                 "EN": "Twelve books.",
-                "VN": "số Mười hai cuốn sách.",
+                "VN": "Mười hai cuốn sách.",
                 "IPA": "twelv bʊks"
             },
             {
@@ -1662,7 +2000,7 @@ export default [
             },
             {
                 "EN": "Fourteen pencils.",
-                "VN": "số Mười bốn bút chì.",
+                "VN": "Mười bốn bút chì.",
                 "IPA": "ˌfɔːˈtiːn ˈpen.səls"
             },
             {
@@ -1672,7 +2010,7 @@ export default [
             },
             {
                 "EN": "Fifteen squares.",
-                "VN": "số Mười lăm ô vuông.",
+                "VN": "Mười lăm ô vuông.",
                 "IPA": "ˌfɪfˈtiːn skweər"
             },
             {

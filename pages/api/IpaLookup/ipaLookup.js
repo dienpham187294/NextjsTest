@@ -587,9 +587,11 @@ let ArrstringApi =
         `tennis,ˈtɛnɪs,different,ˈdɪfɝənt,games,ˈɡeɪmz,sports,ˈspɔɹts,do,ˈdu,OK,ˈoʊˈkeɪ,skipping,ˈskɪpɪŋ,skating,ˈskeɪtɪŋ,hide-and-seek,ˌhaɪd.ənˈsiːk`,
         `blind,ˌblaɪnd,man's,.mænz,bluff,ˈblʌf,like,ˈɫaɪk,Hide,ˈhaɪd,Where,ˈwɛɹ,find,ˈfaɪnd`,
         `Bingo,ˈbɪŋɡoʊ,volleyball,ˈvɑɫiˌbɔɫ,then,ˈðɛn,check,ˈtʃɛk,right,ˈɹaɪt,house,ˈhaʊs,order,ˈɔɹdɝ,calculator,ˈkæɫkjəˌɫeɪtɝ`,
-        `ruler,ˈɹuɫɝ`
-
+        `ruler,ˈɹuɫɝ,magic,ˈmædʒɪk,finger,ˈfɪŋɡɝ,Teacher,ˈtitʃɝ,Follow,ˈfɑɫoʊ,letters,ˈɫɛtɝz,sounds,ˈsaʊndz,Start,ˈstɑɹt,Finish,ˈfɪnɪʃ`,
+        `Board,ˈbɔɹd,race,ˈɹeɪs,feeling,ˈfiɫɪŋ`,
+        `happy,ˈhæpi,ask,ˈæsk,chain,ˈtʃeɪn`
     ]
+
 
 let arrrStringApi = ArrstringApi.join(",").split(",")
 
@@ -599,39 +601,36 @@ for (let i = 0; i < arrrStringApi.length; i += 2) {
         "ipa": arrrStringApi[i + 1]
     })
 }
-let arr1 = `these
-they 
-this 
-those 
-three 
-too 
-two 
-what
-white 
-who 
-write
-year
-yellow
-yes
-you
-your`
+let arrstr11 = [
+    `stones
+    /ˈstoʊnz/stepping
+    /ˈstɛpɪŋ/example
+    /ɪɡˈzæmpəɫ/queen
+    /ˈkwin/penguin
+    /ˈpɛŋɡwən/letters/ˈɫɛtɝz/hop/ˈhɑp/clap/ˈkɫæp/trace/ˈtɹeɪs/game/ˈɡeɪm`
+]
 
-let arr2 = `những cái này
-họ
-điều này
-những, cái đó
-số ba
-quá
-hai
-gì
-trắng
-WHO
-viết
-năm
-màu vàng
-Đúng
-bạn
-của bạn`
+let ArrStr11 = arrstr11.join("/").split("\n    ").join("").split("/");
+for (let i = 0; i < ArrStr11.length; i += 2) {
+    arrIPA.push({
+        "text": ArrStr11[i],
+        "ipa": ArrStr11[i + 1].split("/").join("")
+    })
+}
+
+let arr1 = `Review
+Listen and repeat.
+Listen and point.
+Circle the odd one out.
+Example:
+Play "Stepping stones."`
+
+let arr2 = `Ôn tập
+Lắng nghe và lặp lại.
+Lắng nghe và chỉ ra.
+Khoanh tròn số lẻ ra ngoài.
+Thí dụ:
+Chơi "Đá bậc thang."`
 
 export default async (req, res) => {
     // const { db } = await connectToDatabase();
@@ -686,6 +685,6 @@ export default async (req, res) => {
 }
 
 String.prototype.FN_sort = function () {
-    return this.toLowerCase().split(/[\?#!-':().,]+/).join("")
+    return this.toLowerCase().split(/[\?#!-':()\".,]+/).join("")
 }
 
