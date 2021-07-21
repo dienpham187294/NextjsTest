@@ -605,20 +605,34 @@ let arrstr11 = [
     `stones/ˈstoʊnz/stepping/ˈstɛpɪŋ/example/ɪɡˈzæmpəɫ/queen/ˈkwin/penguin/ˈpɛŋɡwən/letters/ˈɫɛtɝz/hop/ˈhɑp/clap/ˈkɫæp/trace/ˈtɹeɪs/ball/ˈbɔɫ/game/ˈɡeɪm`,
     `cycle/ˈsaɪkəɫ/cupboard/ˈkəbɝd/cup/ˈkəp/cook/ˈkʊk/coat/ˈkoʊt/cloudy/ˈkɫaʊdi/chair/ˈtʃɛɹ/central/ˈsɛntɹəɫ/cathedral/kəˈθidɹəɫ/brother/ˈbɹəðɝ/behind/bɪˈhaɪnd/bedroom/ˈbɛˌdɹum/bed/ˈbɛd/bay/ˈbeɪ/bathroom/ˈbæˌθɹum`,
     `doll/ˈdɑɫ/grandmother/ˈɡɹændˌməðɝ/grandfather/ˈɡɹænˌfɑðɝ/goldfish/ˈɡoʊɫdˌfɪʃ/gate/ˈɡeɪt/garden/ˈɡɑɹdən/garage/ɡɝˈɑʒ/kites/ˈkaɪts/fly/ˈfɫaɪ/tank/ˈtæŋk/fish/ˈfɪʃ/fence/ˈfɛns/father/ˈfɑðɝ/far/ˈfɑɹ/fan/ˈfæn/family/ˈfæməɫi/draw/ˈdɹɔ/door/ˈdɔɹ/dog/ˈdɔɡ/homework/ˈhoʊmˌwɝk/does/ˈdəz/dining/ˈdaɪnɪŋ`,
-    `his
-    /ˈhɪz/picture
-    /ˈpɪktʃɝ/children
-    /ˈtʃɪɫdɹən/photo
-    /ˈfoʊˌtoʊ/sister
-    /ˈsɪstɝ/she's
-    /ˈʃiz/him
-    /ˈhɪm/mother
-    /ˈməðɝ/young
-    /ˈjəŋ/really
-    /ˈɹiɫi/he's
-    /ˈhiz/man
-    /ˈmæn/11
-    /ˈiɫɛvən`
+    `great/ˈɡɹeɪt/his/ˈhɪz/picture/ˈpɪktʃɝ/children/ˈtʃɪɫdɹən/photo/ˈfoʊˌtoʊ/sister/ˈsɪstɝ/she's/ˈʃiz/him/ˈhɪm/mother/ˈməðɝ/young/ˈjəŋ/really/ˈɹiɫi/he's/ˈhiz/man/ˈmæn/11/ˈiɫɛvən`,
+    `near/ˈnɪɹ/mountain/ˈmaʊntən/mirror/ˈmɪɹɝ/map/ˈmæp/love/ˈɫəv/living/ˈɫɪvɪŋ/kite/ˈkaɪt/kitchen/ˈkɪtʃən/keep/ˈkip/front/ˈfɹənt/many/ˈmɛni/has/ˈhæz`,
+    `wardrobe/ˈwɔɹˌdɹoʊb/wall/ˈwɔɫ/under/ˈəndɝ/truck/ˈtɹək/tree/ˈtɹi/train/ˈtɹeɪn/toy/ˈtɔɪ/car/ˈkɑɹ/toy/ˈtɔɪ/there/ˈðɛɹ/theatre/ˈθiətɝ/temple/ˈtɛmpəɫ/bear/ˈbɛɹ/teddy/ˈtɛdi/sunny/ˈsəni/stormy/ˈstɔɹmi/much/ˈmətʃ/sofa/ˈsoʊfə/snowy/ˈsnoʊi/skip/ˈskɪp/skate/ˈskeɪt/ship/ˈʃɪp/robot/ˈɹoʊˌbɑt/rabbit/ˈɹæbət/puzzle/ˈpəzəɫ/poster/ˈpoʊstɝ/pond/ˈpɑnd/plane/ˈpɫeɪn/parrot/ˈpɛɹət/park/ˈpɑɹk/north/ˈnɔɹθ`,
+    `chairs/ˈtʃɛɹz/balls/ˈbɔɫz/posters/ˈpoʊstɝz/dear/ˈdɪɹ/where's/ˈhwɛɹz/13/ˈθɝˈtin/clean/ˈkɫin/see/ˈsi/over/ˈoʊvɝ/there's/ðerz/12/ˈtwɛɫv/yard/ˈjɑɹd/woman/ˈwʊmən/windy/ˈwaɪndi/window/ˈwɪndoʊ/weather/ˈwɛðɝ/puppet/ˈpəpət/water/ˈwɔtɝ/watch/ˈwɑtʃ`
+    , `15/ˈfɪfˈtin/desks/ˈdɛsks/differences/ˈdɪfɝənsɪz/spot/ˈspɑt/cupboards/ˈkəbɝdz/wardrobes/ˈwɔɹˌdɹoʊbz/windows/ˈwɪndoʊz/doors/ˈdɔɹz/mirrors/ˈmɪɹɝz/fans/ˈfænz/sofas/ˈsoʊfəz/maps/ˈmæps/any/ˈɛni/14/ˈfɔɹˈtin/hero/ˈhiɹoʊ/pictures/ˈpɪktʃɝz`
+    , `make/ˈmeɪk/goes/ˈɡoʊz/sure/ˈʃʊɹ/everywhere/ˈɛvɹiˌwɛɹ/little/ˈɫɪtəɫ/doesn't/ˈdəzən/he/ˈhi/bedrooms/ˈbɛˌdɹumz/balcony/ˈbæɫkəni/tables/ˈteɪbəɫz/bubbles/ˈbəbəɫz/brothers/ˈbɹəðɝz/sisters/ˈsɪstɝz/between/bitˈwin/16/ˈsɪkˈstin/17/ˈsɛvənˈtin/18/ˈeɪˈtin/19/ˈnaɪnˈtin/20/ˈtwɛni/toys/ˈtɔɪz`
+    , `flower/ˈfɫaʊɝ/pot/ˈpɑt/pets/ˈpɛts/parrots/ˈpɛɹəts/dogs/ˈdɑɡz/birds/ˈbɝdz/rabbits/ˈɹæbəts/ships/ˈʃɪps/trucks/ˈtɹəks/dolls/ˈdɑɫz/planes/ˈpɫeɪnz/playroom/ˈpɫeɪˌɹum/planes/ˈpɫeɪnz/doing/ˈduɪŋ/home/ˈhoʊm/reading/ˈɹɛdɪŋ/cooking/ˈkʊkɪŋ/listening/ˈɫɪsənɪŋ/today/təˈdeɪ/cleaning/ˈkɫinɪŋ/singing/ˈsɪŋɪŋ/drawing/ˈdɹɔɪŋ/playing/ˈpɫeɪɪŋ/watching/ˈwɑtʃɪŋ/dancing/ˈdænsɪŋ/cycling/ˈsaɪkəɫɪŋ/cats/ˈkæts`
+    , `some
+    /ˈsəm/song
+    /ˈsɔŋ/hometown
+    /ˈhoʊmˌtaʊn/rainy
+    /ˈɹeɪni/tomorrow's
+    /təˈmɑˌɹoʊz/place
+    /ˈpɫeɪs/card
+    /ˈkɑɹd/south
+    /ˈsaʊθ/favourite
+    /ˈfeɪvɝɪt/floor
+    /ˈfɫɔɹ/country
+    /ˈkəntɹi/cold
+    /ˈkoʊɫd/wait
+    /ˈweɪt/minute
+    /ˈmɪnət/everyone
+    /ˈɛvɹiˌwən/careful
+    /ˈkɛɹfəɫ/dangerous
+    /ˈdeɪndʒɝəs/rhyming
+    /ˈɹaɪmɪŋ/walk
+    /ˈwɑk/late
+    /ˈɫeɪt/flying/ˈfɫaɪɪŋ`
 ]
 
 let ArrStr11 = arrstr11.join("/").split("\n    ").join("").split("/");
@@ -629,41 +643,315 @@ for (let i = 0; i < ArrStr11.length; i += 2) {
     })
 }
 
-let arr1 = `Listen and number.
-Read and complete. 
-Hi! My name is Quan. 
-I am ten years old. 
-That is a picture of my family. 
-My father is forty-four years old. 
-My mother is thirty-nine years old. 
-My brother is fourteen years old.
-His father
-His mother
-His brother
-Write about your family.
-How old are you?
-How old is your mother?
-How old is your father?
-How old is your brother?
-How old is your sister?`
+let arr1 = `Unit 20
+Where's Sa Pa,
+Look, listen and repeat.
+Where's Sa Pa, Mai?
+It's in north Viet Nam.
+This is a photo of Sa Pa.
+Oh! It's very beautiful.
+Point and say.
+Let's talk.
 
-let arr2 = `Nghe và số.
+
+Listen and tick.
+Look and write.
+Let's write.
+
+
+Look, listen and repeat.
+Look. This is a photo of Hai Duong.
+Is Hai Duong near Ha Noi?
+Yes, it is.
+And this is a photo of Ha Long Bay.
+Is Ha Long Bay near Ha Noi?
+No, it isn't. It's far from Ha Noi.
+Point and say.
+Let's talk.
+
+Listen and number.
+Read and complete.
+far 
+theatre 
+near 
+name
+Let's play.
+Card game
+
+Listen and repeat.
+far
+north
+Can Tho is far from Ho Chi Minh City.
+Sa Pa is in north Viet Nam.
+Listen and write.
+Let's chant.
+Where's Ba Vi?
+Is it near Ha Noi?
+Where's Da Nang?
+Is it near Hue?
+Where's Can Tho?
+Is it near Ho Chi Minh City?
+It's in north Viet Nam.
+Yes, it is. 
+Yes, It is.
+It's in central Viet Nam.
+Yes, It is.
+It's in south Viet Nam.
+No, It isn't. No, it isn't.
+Read and write.
+Hello! My name is A Vung. 
+I am eight years old. 
+My family is in Sa Pa. 
+It is in north Viet Nam. 
+Sa Pa is near Lai Chau but very far from Ha Noi. 
+There are a lot of mountains and trees in my place. 
+How about your place?
+Where is it in Viet Nam?
+Let's write.
+Where is your family?
+Where are they in Viet Nam? 
+Is your place near Ha Noi?
+Is your place near Da Nang?
+Is your place near Ho Chi Minh City?
+Project
+Talk about your favourite place.
+
+
+Review 4
+Listen and tick.
+Listen and number.
+
+
+Read and complete.
+near 
+playing 
+watching 
+reading 
+dog 
+living 
+room
+Read and match.
+Where's Hue?
+How many toys do you have? 
+What's your brother doing?
+Do you have any goldfish? 
+What are those on the wall?
+He's cleaning the floor.
+Yes, I do.
+I have three kites, two robots and a ball.
+A map and a picture.
+It's in central Viet Nam.
+Look and say.
+Who are they?
+What are they doing?
+What is there on the shelf?
+How many balls are there?
+How many kites are there?
+How many ships are there?
+How many robots are there?
+How many trucks are there?
+How many planes are there?
+How many dolls are there?
+What toys do you have?
+What country Is this? 
+Where is Sa Pa?
+Where are the children? 
+What are they doing?
+
+
+Short story
+Cat and Mouse 4
+Read and listen to the story.
+It's cold! 
+Yes, but it's sunny. 
+Let's go for a walk.
+Wait a minute.
+Come on, everyone 
+Let's go to the park!
+No! We're busy.
+They're busy.
+What are they doing?
+Mimi is watching TV. 
+Nini is listening to music and Jack is playing the piano.
+OK. Let's go to the park.
+OK!
+Oh look! There's Maurice and Doris!
+What are they doing?
+They're skating.
+Hello, Mounce!
+Hello, Doris!
+Oh no!
+Be careful! 
+Skating is fun, but it can be dangerous too!
+
+Put the words in the correct order.
+Match the rhyming words.
+cold 
+wait 
+walk 
+play 
+hello
+late 
+know 
+stay 
+old 
+talk
+Read and write.`
+
+let arr2 = `Đơn vị 20
+Sa Pa ở đâu,
+Nhìn, nghe và lặp lại.
+Sa Pa, Mai ở đâu?
+Nó ở miền bắc Việt Nam.
+Đây là ảnh chụp Sa Pa.
+Oh! Nó rất đẹp.
+Chỉ và nói.
+Hãy nói chuyện.
+
+
+Nghe và đánh dấu.
+Nhìn và viết.
+Cùng viết nào.
+
+
+Nhìn, nghe và lặp lại.
+Nhìn. Đây là ảnh của Hải Dương.
+Hải Dương có gần Hà Nội không?
+Vâng, đúng vậy.
+Còn đây là ảnh Vịnh Hạ Long.
+Vịnh Hạ Long có gần Hà Nội không?
+Không, không phải vậy. Nó ở xa Hà Nội.
+Chỉ và nói.
+Hãy nói chuyện.
+
+Nghe và số.
 Đọc và hoàn thành.
-Chào! Tôi tên Quân.
-Tôi mười tuổi.
-Đó là hình ảnh của gia đình tôi.
-Cha tôi bốn mươi bốn tuổi.
-Mẹ tôi ba mươi chín tuổi.
-Em trai tôi mười bốn tuổi.
-Bố của anh ấy
-Mẹ của anh ta
-Anh trai của anh ấy
-Viết về gia đình của bạn.
-Bạn bao nhiêu tuổi?
-Mẹ của bạn bao nhiêu tuổi?
-Bố bạn bao nhiêu tuổi?
-Anh trai bạn bao nhiêu tuổi?
-Em gái bạn bao nhiêu tuổi?`
+xa
+rạp hát
+ở gần
+Tên
+Hãy chơi.
+Chơi bài
+
+Lắng nghe và lặp lại.
+xa
+Bắc
+Cần Thơ cách Tp.
+Sa Pa thuộc miền Bắc Việt Nam.
+Nghe và viết.
+Hãy hát thánh ca.
+Ba Vì ở đâu?
+Có gần hà nội không?
+Đà Nẵng ở đâu?
+Có gần Huế không?
+Cần Thơ ở đâu?
+Có gần thành phố Hồ Chí Minh không?
+Nó ở miền bắc Việt Nam.
+Vâng, đúng vậy.
+Vâng, đúng vậy.
+Nó ở miền Trung Việt Nam.
+Vâng, đúng vậy.
+Nó ở miền nam Việt Nam.
+Không, không phải vậy. Không, không phải vậy.
+Đọc và viết.
+Xin chào! Tôi tên là A Vững.
+Tôi tám tuổi.
+Gia đình tôi ở Sa Pa.
+Nó ở miền bắc Việt Nam.
+Sa Pa gần Lai Châu nhưng rất xa Hà Nội.
+Có rất nhiều núi và cây cối ở nơi tôi ở.
+Làm thế nào về nơi của bạn?
+Nó ở đâu tại Việt Nam?
+Cùng viết nào.
+Gia đình bạn ở đâu?
+Họ ở đâu tại Việt Nam?
+Địa điểm của bạn có gần Hà Nội không?
+Địa điểm của bạn có gần Đà Nẵng không?
+Địa điểm của bạn có gần Thành phố Hồ Chí Minh không?
+Dự án
+Nói về địa điểm yêu thích của bạn.
+
+
+Đánh giá 4
+Nghe và đánh dấu.
+Nghe và số.
+
+
+Đọc và hoàn thành.
+ở gần
+đang chơi
+xem
+đọc hiểu
+chó
+cuộc sống
+phòng
+Đọc và nối.
+Huế ở đâu?
+Bạn có bao nhiêu đồ chơi?
+Anh trai của bạn đang làm gì?
+Bạn có con cá vàng nào không?
+Những cái đó trên tường là gì?
+Anh ấy đang lau sàn.
+Vâng tôi đồng ý.
+Tôi có ba con diều, hai con rô bốt và một quả bóng.
+Một bản đồ và một bức tranh.
+Nó ở miền Trung Việt Nam.
+Nhìn và nói.
+Họ là ai?
+Họ đang làm gì?
+Có gì trên kệ?
+Bao nhiêu quả bóng đang có?
+Có bao nhiêu con diều?
+Có bao nhiêu tàu?
+Có bao nhiêu người máy?
+Có bao nhiêu xe tải?
+Có bao nhiêu mặt phẳng?
+Có bao nhiêu con búp bê?
+Bạn có đồ chơi gì?
+Đây là đất nước nào?
+Sa Pa ở đâu?
+Những đứa tre đang ở đâu?
+Họ đang làm gì?
+
+
+Truyện ngắn
+Cat and Mouse 4
+Đọc và nghe câu chuyện.
+Trời lạnh!
+Có, nhưng trời nắng.
+Đi dạo thôi.
+Đợi tí.
+Đi nào mọi người
+Chúng ta hãy đi đến công viên!
+Không! Chúng tôi đang bận.
+Họ đang bận.
+Họ đang làm gì?
+Mimi đang xem TV.
+Nini đang nghe nhạc và Jack đang chơi piano.
+ĐỒNG Ý. Chúng ta hãy đi đến công viên.
+ĐỒNG Ý!
+Ôi nhìn kìa! Maurice và Doris!
+Họ đang làm gì?
+Họ đang trượt băng.
+Xin chào, Mounce!
+Xin chào, Doris!
+Ôi không!
+Hãy cẩn thận!
+Trượt băng rất vui, nhưng nó cũng có thể nguy hiểm!
+
+Đặt các từ theo đúng thứ tự.
+Ghép các từ có vần.
+lạnh
+chờ đợi
+đi bộ
+chơi
+xin chào
+muộn
+biết rôi
+ở lại
+cũ
+nói chuyện
+Đọc và viết.`
 
 export default async (req, res) => {// const { db } = await connectToDatabase();// TextToIPA.loadDict(); // blocking load
     try {
