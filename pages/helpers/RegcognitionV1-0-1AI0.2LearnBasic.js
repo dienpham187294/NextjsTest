@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { createSpeechlySpeechRecognition } from '@speechly/speech-recognition-polyfill';
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
-import List_IDs from '../../util/List_IDs/List_IDs';
 import $ from "jquery";
 import { async } from 'regenerator-runtime';
 import { data } from 'cheerio/lib/api/attributes';

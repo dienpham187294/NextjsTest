@@ -10,7 +10,7 @@ export default function Show_tieng_anh_lop_4_tap_2() {
                 <meta name="description" content="Một sản phẩm của Ericpham" />
             </Head>
             <div className="container text-center">
-                {Show_Demo_Sentence_Basic(Dulieu_tieng_anh_lop_4, "giao-khoa-lop-2")}
+                {Show_Demo_Sentence_Basic(Dulieu_tieng_anh_lop_4, "giao-khoa-lop-2","thuchanh/app/tieng-anh-lop-4-tap-2?token=")}
             </div>
         </div>
 

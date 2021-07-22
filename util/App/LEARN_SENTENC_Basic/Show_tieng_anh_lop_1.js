@@ -3,14 +3,13 @@ import Read_ReactSpeech from "../../../pages/helpers/Read_ReactSpeechSlow"
 import ReadMessage from "../../Read/ReadMessage"
 import Dictaphone from "../../../pages/helpers/RegcognitionV1-0-1AI0.2LearnBasic"
 import Check2String from "../../String_tool/Check2String"
-import List_IDs from "../../List_IDs/List_IDs"
 import Linkapi from "../../api/Linkapi"
 import Dictionary_with_image from "../../../pages/helpers/IMAGE/Dictionary_with_image"
 import FullScreen from "../../fullscreen/fullscreen"
 const queryString = require('query-string');
-
+let linkReset = ""
 let statusCount = 0;
-export default function Show_Tieng_anh_lop_1(Dulieu_tieng_anh_lop_1, tokenCheck) {
+export default function Show_Tieng_anh_lop_1(Dulieu_tieng_anh_lop_1, tokenCheck, href) {
 
     const [Data_Learn, SET_Data_Learn] = useState("")
 
@@ -28,15 +27,6 @@ export default function Show_Tieng_anh_lop_1(Dulieu_tieng_anh_lop_1, tokenCheck)
 
     const [Popup, SET_Popup] = useState("")
 
-    const [RESET, SET_RESET] = useState(true)
-
-
-
-    useEffect(() => {
-        console.log("reset")
-    }, [RESET])
-
-
     useEffect(() => {
         setTimeout(() => {
             const parsed = queryString.parse(window.location.search);
@@ -44,7 +34,21 @@ export default function Show_Tieng_anh_lop_1(Dulieu_tieng_anh_lop_1, tokenCheck)
                 if (!(parsed["token"].includes(tokenCheck))) {
                     alert("Tài khoản không hợp lệ (token không tồn tại). Vui lòng nhắn tin englishtool.co để nhận được trợ giúp.")
                 } else {
-                    CHECK_Token(parsed["token"], SET_Name)
+                    CHECK_Token(parsed["token"], SET_Name);
+                    setTimeout(() => {
+                        $("#hrefID").css("display", "initial")
+                        linkReset = Linkapi + href + parsed["token"]
+                        $("#hrefID").attr("href", linkReset + "&p=" + $("#SelectID").val())
+                        try {
+                            const parsed1 = queryString.parse(window.location.search);
+                            $("#SelectID").val(parsed1["p"]);
+                            SET_Num_page(parsed1["p"])
+                        } catch (error) {
+                            console.log("e")
+                        }
+                    }, 1000);
+
+
                 }
             } else {
                 alert("Cần token để sử dụng. Vui lòng nhắn tin englishtool.co để nhận được trợ giúp. Xin cảm ơn")
@@ -75,26 +79,27 @@ export default function Show_Tieng_anh_lop_1(Dulieu_tieng_anh_lop_1, tokenCheck)
                         <div className="container">
                             <h3> {Name}</h3>
                             <hr />
-                            <select id="SelectID" onChange={(e) => {
-                                SET_Num_page(e.currentTarget.value)
-                            }}>
+                            <select id="SelectID"
+                                defaultValue="0"
+                                onChange={(e) => {
+                                    SET_Num_page(e.currentTarget.value)
+                                    try {
+                                        $("#hrefID").attr("href", linkReset + "&p=" + $("#SelectID").val())
+                                    } catch (error) {
+                                        console.log("e")
+                                    }
+                                }}>
                                 <option>Chọn trang</option>
                                 {Dulieu_tieng_anh_lop_1.map((e, i) =>
                                     <option key={i} value={i}>{i}</option>
                                 )}
                             </select>
-                            <button
-                                style={{ float: "right" }}
-                                onClick={() => {
-                                    SET_RESET(false);
-                                    setTimeout(() => {
-                                        SET_RESET(true);
-                                        SET_Data_Learn("");
-                                        SET_Docthu("");
-                                        $("#ID_ShowTiengAnh").scrollTop(150)
-                                    }, 1000)
-                                }}
-                            >Khởi động lắng nghe lại</button>
+
+                            <a
+                                id="hrefID"
+                                href=""
+                                style={{ float: "right", cursor: "pointer", display: "none", border: "1px solid black", padding: "5px" }}
+                            >Khởi động lại</a>
                             <hr />
                             {Data_Learn === ""
                                 ?
@@ -220,9 +225,9 @@ export default function Show_Tieng_anh_lop_1(Dulieu_tieng_anh_lop_1, tokenCheck)
                     }
                     <hr />
                 </div>
-                {RESET ? <Dictaphone
+                <Dictaphone
                     Data={Data_Commands}
-                /> : null}
+                />
                 <Dictionary_with_image Popup={Popup} />
                 <Read_ReactSpeech />
                 <button style={{ display: "none" }} onClick={() => {
