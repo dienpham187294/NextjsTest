@@ -38,7 +38,6 @@ export default function Show_Tieng_anh_lop_1(Dulieu_tieng_anh_lop_1, tokenCheck,
                     setTimeout(() => {
                         linkReset = Linkapi + href + parsed["token"]
                         $("#hrefID").attr("href", linkReset)
-                        console.log($("#hrefID").attr("href"))
                         try {
                             const parsed1 = queryString.parse(window.location.search);
                             if (parsed1["p"] !== undefined) {

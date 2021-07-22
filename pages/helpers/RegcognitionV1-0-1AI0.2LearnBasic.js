@@ -11,9 +11,11 @@ if (process.brower) {
     SpeechRecognition.applyPolyfill(SpeechlySpeechRecognition);
 }
 let commands = [];
-let ArrMessage = []
-let Str_to_Check = ""
+let Arrinterval1time = 0;
+let Count3time = 0;
+let Str_to_Check = "";
 let intervalCheckCommads;
+let indexCheck = 0;
 let ArrNumber = [
     { "number": 1, "text": "one" },
     { "number": 2, "text": "two" },
@@ -37,10 +39,10 @@ let ArrNumber = [
     { "number": 20, "text": "twenty" }
 ]
 function Dictaphone({ Data }) {
-    // console.log(Data, "first")
     useEffect(() => {
         let MatchingInt = 0.4;
-        Str_to_Check = ""
+        Str_to_Check = "";
+        Count3time = 0;
         try {
             if (Data.toLowerCase().includes("number")) {
                 MatchingInt = 0.8;
@@ -48,27 +50,29 @@ function Dictaphone({ Data }) {
         } catch (error) {
             console.log("e MatchingInt")
         };
-        // console.log(MatchingInt, Data)
+        console.log(MatchingInt)
         commands = [
             {
                 command: Data,
                 callback: () => {
-                    console.log("===========================commands");
+                    console.log("Đúng commands");
                     writeMessage();
                 },
                 isFuzzyMatch: true,
                 fuzzyMatchingThreshold: MatchingInt,
+                bestMatchOnly: true
             }
         ]
-
         if (Data === "====" && Data !== "") {
-            // console.log("co inteval");
-            clearInterval(intervalCheckCommads)
+            clearInterval(intervalCheckCommads);
+            Arrinterval1time = 1;
         } else {
-            // console.log("ko co inteval");
-            intervalCheckCommads = setInterval(() => {
-                CheckCommandFast(Str_to_Check, Data, writeMessage);
-            }, 2000);
+            if (Arrinterval1time === 1) {
+                intervalCheckCommads = setInterval(() => {
+                    CheckCommandFast(Str_to_Check, Data, writeMessage);
+                }, 1500);
+                Arrinterval1time = 2;
+            }
         }
     }, [Data])
 
@@ -79,7 +83,6 @@ function Dictaphone({ Data }) {
         commands
     });
     useEffect(() => {
-
         try {
             Str_to_Check += interimTranscript + " ";
             $("#interrimID").text(interimTranscript);
@@ -114,7 +117,6 @@ function Dictaphone({ Data }) {
                         startListening()
                     }
                 }
-
                 }
             >Click to Talk</button>
             <button
@@ -135,19 +137,35 @@ async function CheckCommandFast(Str_to_Check, Data, writeMessage) {
             (Str_to_Check.includes(e.number)) ? Str_to_Check += e.text : null
         })
     } catch (error) {
-
+        console.log("e")
     }
-    let i = 0
+    let i = 0;
     let Arr = Data.toLowerCase().split(/[\?#!-().]+/).join("").split(" ")
-    let strSort = Str_to_Check.toLowerCase().split(/[\?#!-().]+/).join("")
-    // console.log("check", Arr, strSort)
+    let strSort = Str_to_Check.toLowerCase().split(/[\?#!-().]+/).join("");
     Arr.forEach(e => {
         if (strSort.includes(e)) {
             i++;
         }
     });
-    if (i === Arr.length) {
-        writeMessage()
-        // console.log("===============interim")
+    if (Arr.length === 1) {
+        Count3time++;
     }
+    if (Arr.length === 2) {
+        i === 1 ? Count3time++ : null
+    }
+    if (Arr.length > 2) {
+        i > 0.6 * Arr.length ? Count3time++ : null
+    }
+    if (i === Arr.length) {
+        console.log("Đúng 100%")
+        writeMessage();
+        return;
+    };
+
+    if ((Count3time > 8 && Str_to_Check.length > indexCheck)) {
+        writeMessage();
+        console.log("An ủi")
+        return
+    }
+    indexCheck = Str_to_Check.length;
 }
