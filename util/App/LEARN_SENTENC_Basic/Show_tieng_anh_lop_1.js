@@ -41,8 +41,11 @@ export default function Show_Tieng_anh_lop_1(Dulieu_tieng_anh_lop_1, tokenCheck,
                         $("#hrefID").attr("href", linkReset + "&p=" + $("#SelectID").val())
                         try {
                             const parsed1 = queryString.parse(window.location.search);
-                            $("#SelectID").val(parsed1["p"]);
-                            SET_Num_page(parsed1["p"])
+                            if (parsed1["p"] !== undefined) {
+                                $("#SelectID").val(parsed1["p"]);
+                                SET_Num_page(parsed1["p"])
+                            }
+
                         } catch (error) {
                             console.log("e")
                         }
@@ -99,7 +102,7 @@ export default function Show_Tieng_anh_lop_1(Dulieu_tieng_anh_lop_1, tokenCheck,
                                 id="hrefID"
                                 href=""
                                 style={{ float: "right", cursor: "pointer", display: "none", border: "1px solid black", padding: "5px" }}
-                            >Khởi động lại</a>
+                            >Lắng nghe bị dừng - Khởi động lại</a>
                             <hr />
                             {Data_Learn === ""
                                 ?
