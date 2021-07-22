@@ -27,6 +27,16 @@ export default function Show_Tieng_anh_lop_1(Dulieu_tieng_anh_lop_1, tokenCheck)
     const [Num_page, SET_Num_page] = useState(0)
 
     const [Popup, SET_Popup] = useState("")
+
+    const [RESET, SET_RESET] = useState(true)
+
+
+
+    useEffect(() => {
+        console.log("reset")
+    }, [RESET])
+
+
     useEffect(() => {
         setTimeout(() => {
             const parsed = queryString.parse(window.location.search);
@@ -73,9 +83,18 @@ export default function Show_Tieng_anh_lop_1(Dulieu_tieng_anh_lop_1, tokenCheck)
                                     <option key={i} value={i}>{i}</option>
                                 )}
                             </select>
-                            <Dictaphone
-                                Data={Data_Commands}
-                            />
+                            <button
+                                style={{ float: "right" }}
+                                onClick={() => {
+                                    SET_RESET(false);
+                                    setTimeout(() => {
+                                        SET_RESET(true);
+                                        SET_Data_Learn("");
+                                        SET_Docthu("");
+                                        $("#ID_ShowTiengAnh").scrollTop(150)
+                                    }, 1000)
+                                }}
+                            >Khởi động lắng nghe lại</button>
                             <hr />
                             {Data_Learn === ""
                                 ?
@@ -94,9 +113,8 @@ export default function Show_Tieng_anh_lop_1(Dulieu_tieng_anh_lop_1, tokenCheck)
                                             }}
                                             onClick={() => {
                                                 SET_Data_Learn(Dulieu_tieng_anh_lop_1[Num_page].data[i]);
-
                                                 try {
-
+                                                    document.getElementById("BUTTON_CLICK_TO_TALK").click();
                                                     if (!window.fullscreen && statusCount === 0) {
                                                         FullScreen("ID_ShowTiengAnh")
                                                         statusCount = 1
@@ -155,11 +173,6 @@ export default function Show_Tieng_anh_lop_1(Dulieu_tieng_anh_lop_1, tokenCheck)
                                         onClick={() => {
                                             SET_Data_Commands(Data_Learn.EN);
                                             SET_Docthu("Docthu")
-                                            try {
-                                                document.getElementById("BUTTON_CLICK_TO_TALK").click();
-                                            } catch (error) {
-                                                console.log("e");
-                                            }
                                         }}
                                     >Đọc thử</button>
                                     {Docthu === "" ? null
@@ -207,9 +220,9 @@ export default function Show_Tieng_anh_lop_1(Dulieu_tieng_anh_lop_1, tokenCheck)
                     }
                     <hr />
                 </div>
-                <Dictaphone
+                {RESET ? <Dictaphone
                     Data={Data_Commands}
-                />
+                /> : null}
                 <Dictionary_with_image Popup={Popup} />
                 <Read_ReactSpeech />
                 <button style={{ display: "none" }} onClick={() => {
