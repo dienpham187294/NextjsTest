@@ -107,7 +107,7 @@ function Dictaphone({ Data }) {
         <p>
             Microphone: {listening ? <span style={{ color: "white", backgroundColor: "blue", padding: "5px" }}>On</span> : <span style={{ color: "white", backgroundColor: "red", padding: "5px" }}>Off</span>}
             <button
-                id={List_IDs["BUTTON_CLICK_TO_TALK"]}
+                id="BUTTON_CLICK_TO_TALK"
                 className="btn btn-sm btn-outline-info ml-5"
                 onClick={() => {
                     if (!listening) {
@@ -119,6 +119,7 @@ function Dictaphone({ Data }) {
                 }
             >Click to Talk</button>
             <button
+                id="BUTTON_CLICK_TO_STOP_TALK"
                 className="btn btn-sm btn-outline-info ml-1 ml-2"
                 onClick={() => stopListening()}
             >Click to Stop</button>

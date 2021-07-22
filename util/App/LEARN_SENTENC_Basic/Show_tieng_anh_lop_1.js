@@ -93,7 +93,6 @@ export default function Show_Tieng_anh_lop_1(Dulieu_tieng_anh_lop_1, tokenCheck)
                                                 SET_Data_Learn(Dulieu_tieng_anh_lop_1[Num_page].data[i]);
 
                                                 try {
-                                                    document.getElementById(List_IDs["BUTTON_CLICK_TO_TALK"]).click();
 
                                                     if (!window.fullscreen && statusCount === 0) {
                                                         FullScreen("ID_ShowTiengAnh")
@@ -153,6 +152,12 @@ export default function Show_Tieng_anh_lop_1(Dulieu_tieng_anh_lop_1, tokenCheck)
                                         onClick={() => {
                                             SET_Data_Commands(Data_Learn.EN);
                                             SET_Docthu("Docthu")
+                                            try {
+                                                document.getElementById("BUTTON_CLICK_TO_STOP_TALK").click();
+                                                document.getElementById("BUTTON_CLICK_TO_TALK").click();
+                                            } catch (error) {
+                                                console.log("e");
+                                            }
                                         }}
                                     >Đọc thử</button>
                                     {Docthu === "" ? null
