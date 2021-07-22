@@ -38,7 +38,7 @@ export default function Show_Tieng_anh_lop_1(Dulieu_tieng_anh_lop_1, tokenCheck,
                     setTimeout(() => {
                         $("#hrefID").css("display", "initial")
                         linkReset = Linkapi + href + parsed["token"]
-                        $("#hrefID").attr("href", linkReset + "&p=" + $("#SelectID").val())
+                        $("#hrefID").attr("href", linkReset)
                         try {
                             const parsed1 = queryString.parse(window.location.search);
                             if (parsed1["p"] !== undefined) {
@@ -49,9 +49,7 @@ export default function Show_Tieng_anh_lop_1(Dulieu_tieng_anh_lop_1, tokenCheck,
                         } catch (error) {
                             console.log("e")
                         }
-                    }, 1000);
-
-
+                    }, 3000);
                 }
             } else {
                 alert("Cần token để sử dụng. Vui lòng nhắn tin englishtool.co để nhận được trợ giúp. Xin cảm ơn")
@@ -102,7 +100,7 @@ export default function Show_Tieng_anh_lop_1(Dulieu_tieng_anh_lop_1, tokenCheck,
                                 id="hrefID"
                                 href=""
                                 style={{ float: "right", cursor: "pointer", display: "none", border: "1px solid black", padding: "5px" }}
-                            >Lắng nghe bị dừng - Khởi động lại</a>
+                            >Khởi động lại</a>
                             <hr />
                             {Data_Learn === ""
                                 ?
