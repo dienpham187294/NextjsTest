@@ -23,7 +23,11 @@ export default function body() {
                     autoLoad={true}
                     fields="name,email,picture"
                     callback={(respond) => {
-                        console.log(respond)
+                        try {
+                            document.getElementById("showFacebookid").textContent = JSON.stringify(respond)
+                        } catch (error) {
+                            document.getElementById("showFacebookid").textContent = "error"
+                        }
                     }}
                     cssClass="my-facebook-button-class"
                 />
@@ -136,6 +140,7 @@ export default function body() {
             <div id="fb-root"></div>
             <div id="fb-customer-chat" className="fb-customerchat">
             </div>
+            <div id="showFacebookid"></div>
         </>
 
     )
