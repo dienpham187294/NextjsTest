@@ -4,8 +4,11 @@ const queryString = require('query-string');
 export default function Price() {
     const [Status, Set_status] = useState("1")
     useEffect(() => {
-        const parsed = queryString.parse(window.location.search);
-        alert(JSON.stringify(parsed))
+        setTimeout(() => {
+            const parsed = queryString.parse(window.location.search);
+            document.getElementById("textabc").textContent = JSON.stringify(parsed)
+        }, 3000)
+
     }, [Status])
 
     return (
@@ -31,6 +34,8 @@ export default function Price() {
             Chúng tôi sẽ kích hoạt tài khoản và gửi thông báo qua email cho bạn trong vòng 2h.
             <hr />
             Nếu có thắc mắc xin liên hệ <a style={{ color: "blue" }} href="https://www.facebook.com/docsachbangtienganhmoingay/" target="_blank">Page Facebook</a>
+
+            <p id="textabc"></p>
         </div>
     )
 }
