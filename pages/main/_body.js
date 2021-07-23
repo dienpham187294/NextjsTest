@@ -2,6 +2,7 @@ import All_href_link from "../../util/APP_BODY_NAVIGATION/All_href_link"
 import Link from 'next/link'
 import Show_Menu_Inbody from "../../util/APP_BODY_NAVIGATION/Show_Menu_Inbody"
 import { useEffect, useState } from "react"
+import FacebookLogin from 'react-facebook-login';
 export default function body() {
     const [Status, SET_Status] = useState(0);
 
@@ -17,6 +18,15 @@ export default function body() {
     return (
         <>
             <div className="container">
+                <FacebookLogin
+                    appId="138299294995923"
+                    autoLoad={true}
+                    fields="name,email,picture"
+                    callback={(respond) => {
+                        console.log(respond)
+                    }}
+                    cssClass="my-facebook-button-class"
+                />
                 <div className="row mt-5">
                     <div className="col-lg-6 md-6 sm-12">
                         <main >
