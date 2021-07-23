@@ -1,6 +1,12 @@
+import { useEffect, useState } from "react";
 import ALL_Href_GET_BUYCODE from "../../util/APP_BODY_NAVIGATION/All_href_link"
+const queryString = require('query-string');
 export default function Price() {
-
+    const [Status, Set_status] = useState("1")
+    useEffect(() => {
+        const parsed = queryString.parse(window.location.search);
+        alert(JSON.stringify(parsed))
+    }, [Status])
 
     return (
         <div className="container text-center">
