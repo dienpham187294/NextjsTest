@@ -47,22 +47,25 @@ function Dictaphone({ Data }) {
             if (Data.toLowerCase().includes("number")) {
                 MatchingInt = 0.8;
             }
+            if (Data.split(" ").length > 3) {
+                MatchingInt = 0.7;
+            }
         } catch (error) {
             console.log("e MatchingInt")
         };
-        console.log(MatchingInt)
+
         commands = [
             {
                 command: Data,
                 callback: () => {
-                    console.log("Đúng commands");
-                    writeMessage();
+                    writeMessage("Đúng 90%");
                 },
                 isFuzzyMatch: true,
                 fuzzyMatchingThreshold: MatchingInt,
-                bestMatchOnly: true
+                bestMatchOnly: false
             }
         ]
+        console.log(commands)
         if (Data === "====" && Data !== "") {
             clearInterval(intervalCheckCommads);
             Arrinterval1time = 1;
@@ -85,7 +88,9 @@ function Dictaphone({ Data }) {
     useEffect(() => {
         try {
             Str_to_Check += interimTranscript + " ";
-            $("#interrimID").text(interimTranscript);
+            if (interimTranscript !== "") {
+                $("#interrimID").text(interimTranscript);
+            }
         } catch (error) {
             console.log(error)
         }
@@ -96,9 +101,10 @@ function Dictaphone({ Data }) {
 
     const startListening = () => SpeechRecognition.startListening({ continuous: true, language: 'en-GB' });
     const stopListening = () => SpeechRecognition.stopListening({ continuous: false, language: 'en-GB' });
-    async function writeMessage() {
+    async function writeMessage(result) {
         try {
             await $("#messageRes").val("one_true");
+            $("#interrimID").text(result);
             await $("#messageResBtn").click();
         } catch (error) {
             console.log("e")
@@ -140,31 +146,32 @@ async function CheckCommandFast(Str_to_Check, Data, writeMessage) {
         console.log("e")
     }
     let i = 0;
-    let Arr = Data.toLowerCase().split(/[\?#!-().]+/).join("").split(" ")
+    let Arr = Data.toLowerCase().split(/[\?#!-().,]+/).join("").split(" ")
     let strSort = Str_to_Check.toLowerCase().split(/[\?#!-().]+/).join("");
     Arr.forEach(e => {
         if (strSort.includes(e)) {
             i++;
         }
     });
-    if (Arr.length === 1) {
+    if (Arr.length === 1 && Count3time === 0) {
         Count3time++;
     }
-    if (Arr.length === 2) {
+    if (Arr.length === 2 && Count3time === 0) {
         i === 1 ? Count3time++ : null
     }
-    if (Arr.length > 2) {
-        i > 0.6 * Arr.length ? Count3time++ : null
+    if (Arr.length > 2 && Count3time === 0) {
+        i > 0.4 * Arr.length ? Count3time++ : null
     }
     if (i === Arr.length) {
-        console.log("Đúng 100%")
-        writeMessage();
+        writeMessage("Đúng 100%");
         return;
     };
-
-    if ((Count3time > 8 && Str_to_Check.length > indexCheck)) {
-        writeMessage();
-        console.log("An ủi")
+    if (Str_to_Check.length > indexCheck && Count3time > 0) {
+        Count3time++;
+        console.log(Count3time)
+    }
+    if (Count3time > 4) {
+        writeMessage("Đúng 80%");
         return
     }
     indexCheck = Str_to_Check.length;
