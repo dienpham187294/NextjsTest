@@ -6,6 +6,7 @@ import Check2String from "../../String_tool/Check2String"
 import Linkapi from "../../api/Linkapi"
 import Dictionary_with_image from "../../../pages/helpers/IMAGE/Dictionary_with_image"
 import FullScreen from "../../fullscreen/fullscreen"
+import Show_QuangCao from "../../../util/Show/Show_QuangCao"
 const queryString = require('query-string');
 let linkReset = ""
 let statusCount = 0;
@@ -79,27 +80,34 @@ export default function Show_Tieng_anh_lop_1(Dulieu_tieng_anh_lop_1, tokenCheck,
                         <div className="container">
                             <h3> {Name}</h3>
                             <hr />
-                            <select id="SelectID"
-                                defaultValue="0"
-                                onChange={(e) => {
-                                    SET_Num_page(e.currentTarget.value)
-                                    try {
-                                        $("#hrefID").attr("href", linkReset + "&p=" + $("#SelectID").val())
-                                    } catch (error) {
-                                        console.log("e")
-                                    }
-                                }}>
-                                <option>Chọn trang</option>
-                                {Dulieu_tieng_anh_lop_1.map((e, i) =>
-                                    <option key={i} value={i}>{i + 1}</option>
-                                )}
-                            </select>
-
-                            <a
-                                id="hrefID"
-                                href=""
-                                style={{ float: "right", cursor: "pointer", border: "1px solid black", padding: "5px" }}
-                            >Khởi động lại</a>
+                            <div className="row">
+                                <div className="col-6">
+                                    <span>Chọn trang: </span>
+                                    <select
+                                        id="SelectID"
+                                        style={{ padding: "5px", color: "red", fontSize: "20px" }}
+                                        defaultValue="0"
+                                        onChange={(e) => {
+                                            SET_Num_page(e.currentTarget.value)
+                                            try {
+                                                $("#hrefID").attr("href", linkReset + "&p=" + $("#SelectID").val())
+                                            } catch (error) {
+                                                console.log("e")
+                                            }
+                                        }}>
+                                        {Dulieu_tieng_anh_lop_1.map((e, i) =>
+                                            <option key={i} value={i}> {i + 1}</option>
+                                        )}
+                                    </select>
+                                </div>
+                                <div className="col-6">
+                                    <a
+                                        id="hrefID"
+                                        href=""
+                                        style={{ float: "right", cursor: "pointer", border: "1px solid black", padding: "5px" }}
+                                    >Khởi động lại</a>
+                                </div>
+                            </div>
                             <hr />
                             {Data_Learn === ""
                                 ?
@@ -135,6 +143,10 @@ export default function Show_Tieng_anh_lop_1(Dulieu_tieng_anh_lop_1, tokenCheck,
                                         </div>
                                     )}
                                     <hr />
+                                    <div className="text-left">
+                                        <i >Bản dịch tiếng việt vài nơi còn chưa chuẩn ngữ nghĩa, quý vị phụ huynh và học sinh thông cảm. Chúng tôi sẽ cố gắng cải thiện trong thời gian tới.</i>
+                                    </div>
+
                                     <img src={Dulieu_tieng_anh_lop_1[Num_page].img} alt={Dulieu_tieng_anh_lop_1[Num_page].img} width="100%" />
                                 </div>
                                 :
@@ -224,6 +236,7 @@ export default function Show_Tieng_anh_lop_1(Dulieu_tieng_anh_lop_1, tokenCheck,
                         </div>
                     }
                     <hr />
+                    {Show_QuangCao()}
                 </div>
                 <Dictaphone
                     Data={Data_Commands}
