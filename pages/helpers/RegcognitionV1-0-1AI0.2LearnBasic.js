@@ -50,6 +50,9 @@ function Dictaphone({ Data }) {
             if (Data.split(" ").length > 3) {
                 MatchingInt = 0.7;
             }
+            if (Data.split(" ").length < 3) {
+                MatchingInt = 0.2;
+            }
         } catch (error) {
             console.log("e MatchingInt")
         };
