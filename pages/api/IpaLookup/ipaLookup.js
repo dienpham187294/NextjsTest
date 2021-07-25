@@ -618,6 +618,8 @@ let arrstr11 = [
     , `bike/ˈbaɪk/unscramble/ənsˈkɹæmbəɫ/primary/ˈpɹaɪˌmɛɹi/street/ˈstɹit/oxford/ˈɑksfɝd/our/ˈaʊɝ/likes/ˈɫaɪks/stream/ˈstɹim/way/ˈweɪ/address/ˈæˌdɹɛs/welcome/ˈwɛɫkəm/collecting/kəˈɫɛktɪŋ/stamps/ˈstæmps/comic/ˈkɑmɪk/models/ˈmɑdəɫz/cool/ˈkuɫ/hobby/ˈhɑbi/super/ˈsupɝ/riding/ˈɹaɪdɪŋ/taking/ˈteɪkɪŋ/sailing/ˈseɪɫɪŋ/boat/ˈboʊt/drum/ˈdɹəm/fun/ˈfən/lot/ˈɫɑt/collect/kəˈɫɛkt/stickers/ˈstɪkɝz/candy/ˈkændi/wrappers/ˈɹæpɝz/subjects/ˈsəbdʒɪkts/maths/ˈmæθs/run/ˈɹən/studying/ˈstədiɪŋ/science/ˈsaɪəns/favorite/ˈfeɪvɝɪt/often/ˈɔfən/week/ˈwik/subject/ˈsəbdʒɪkt/another/əˈnəðɝ/timetable/ˈtaɪmˌteɪbəɫ/below/biˈɫoʊ/idea/aɪˈdiə/video/ˈvɪdioʊ/writing/ˈɹaɪtɪŋ/dictation/dɪkˈteɪʃən/text/ˈtɛkst/pupils/ˈpjupəɫz/having/ˈhævɪŋ/an/ˈæn/art/ˈɑɹt/painting/ˈpeɪntɪŋ/masks/ˈmæsks/painting/ˈpeɪntɪŋ/mask/ˈmæsk/exercise/ˈɛksɝˌsaɪz/members/ˈmɛmbɝz/yesterday/ˈjɛstɝˌdeɪ/beach/ˈbitʃ/watered/ˈwɔtɝd/flowers/ˈfɫaʊɝz/played/ˈpɫeɪd/watched/ˈwɑtʃt/did/ˈdɪd/painted/ˈpeɪntɪd/was/ˈwɑz/comes/ˈkəmz/here's/ˈhɪɹz/cake/ˈkeɪk/whose/ˈhuz/activity/ækˈtɪvəti/australian/ɔˈstɹeɪɫjən/dishes/ˈdɪʃəz/japanese/ˌdʒæpəˈniz/malaysian/məˈɫeɪʒən/model/ˈmɑdəɫ/once/ˈwəns/paint/ˈpeɪnt/physical/ˈfɪzɪkəɫ/education/ˌɛdʒəˈkeɪʃən/photograph/ˈfoʊtəˌɡɹæf/plant/ˈpɫænt/radio/ˈɹeɪdiˌoʊ/return/ɹiˈtɝn/road/ˈɹoʊd/sail/ˈseɪɫ/stamp/ˈstæmp/take/ˈteɪk/twice/ˈtwaɪs/village/ˈvɪɫədʒ/wash/ˈwɑʃ/sumps/ˈsəmps/ride/ˈɹaɪd`
     , `lucky/ˈɫəki/money/ˈməni/lunch/ˈɫəntʃ/medicine/ˈmɛdəsən/milk/ˈmɪɫk/mobile/ˈmoʊbəɫ/phone/ˈfoʊn/monkey/ˈməŋki/noodles/ˈnudəɫz/noon/ˈnun/nurse/ˈnɝs/o'clock/əˈkɫɑk/office/ˈɔfɪs/juice/ˈdʒus/pharmacy/ˈfɑɹməsi/p.m./ˈpiˈɛm/pork/ˈpɔɹk/prepare/pɹiˈpɛɹ/relative/ˈɹɛɫətɪv/repeal/ɹiˈpiɫ/rice/ˈɹaɪs/sandals/ˈsændəɫz/sandcastle/ˈsændˌkæs.əl/scarf/ˈskɑɹf/scary/ˈskɛɹi/scenery/ˈsinɝi/sea/ˈsi/seafood/ˈsiˌfud/shoes/ˈʃuz/skirt/ˈskɝt/slim/ˈsɫɪm/smart/ˈsmɑɹt/stay/ˈsteɪ/strong/ˈstɹɔŋ/student/ˈstudənt/summer/ˈsəmɝ/holidays/ˈhɑɫəˌdeɪz/supermarket/ˈsupɝˌmɑɹkɪt/sweet/ˈswit/shop/ˈʃɑp/pool/ˈpuɫ/tall/ˈtɔɫ/thick/ˈθɪk/thin/ˈθɪn/tiger/ˈtaɪɡɝ/trousers/ˈtɹaʊzɝz/uncle/ˈəŋkəɫ/usually/ˈjuʒəɫi/vegetables/ˈvɛdʒtəbəɫz/want/ˈwɑnt/wear/ˈwɛɹ/wish/ˈwɪʃ/wonderful/ˈwəndɝfəɫ/worker/ˈwɝkɝ/zebra/ˈzibɹə/after/ˈæftɝ/a.m./ˌeɪˈɛm/animal/ˈænəməɫ/bakery/ˈbeɪkɝi/beef/ˈbif/blouse/ˈbɫaʊs/bookshop/ˈbʊkˌʃɑp/bread/ˈbɹɛd/breakfast/ˈbɹɛkfəst/build/ˈbɪɫd/busy/ˈbɪzi/buy/ˈbaɪ/celebration/ˌsɛɫəˈbɹeɪʃən/children's/ˈtʃɪɫdɹənz/chocolate/ˈtʃɔkɫət/christmas/ˈkɹɪsməs/cinema/ˈsɪnəmə/clerk/ˈkɫɝk/clothes/ˈkɫoʊðz/countryside/ˈkəntɹiˌsaɪd/crocodile/ˈkɹɑkəˌdaɪɫ/decorate/ˈdɛkɝˌeɪt/delicious/dɪˈɫɪʃəs/dictionary/ˈdɪkʃəˌnɛɹi/dinner/ˈdɪnɝ/doctor/ˈdɑktɝ/driver/ˈdɹaɪvɝ/elephant/ˈɛɫəfənt/enjoy/ˌɛnˈdʒɔɪ/enormous/iˈnɔɹməs/expensive/ɪkˈspɛnsɪv/factory/ˈfæktɝi/farmer/ˈfɑɹmɝ/fast/ˈfæst/festival/ˈfɛstəvəɫ/field/ˈfiɫd/film/ˈfɪɫm/finally/ˈfaɪnəɫi/firework/ˈfaɪɹˌwɝk/display/dɪsˈpɫeɪ/footballer/ˈfʊt.bɑː.lɚ/free/ˈfɹi/friendly/ˈfɹɛndɫi/funny/ˈfəni/get/ˈɡɛt/fishing/ˈfɪʃɪŋ/for/ˈfɔɹ/picnic/ˈpɪkˌnɪk/cruise/ˈkɹuz/grandparent/ˈɡɹændˌpɛɹənt/holiday/ˈhɑɫəˌdeɪ/hospital/ˈhɑˌspɪtəɫ/hotel/hoʊˈtɛɫ/hungry/ˈhəŋɡɹi/invite/ˌɪnˈvaɪt/jacket/ˈdʒækət/jeans/ˈdʒinz/join/ˈdʒɔɪn/jumper/ˈdʒəmpɝ/kangaroo/ˌkæŋɡɝˈu/leaf/ˈɫif/mum/ˈməm/fifteen/ˈfɪfˈtin/twenty-five/ˈtwɛntiˌfaɪv/thirty/ˈθɝˌdi/forty-five/ˈfɔɹtiˌfaɪv/studies/ˈstədiz/gets/ˈɡɛts/finishes/ˈfɪnɪʃɪz/at/ˈæt/listens/ˈɫɪsənz/daily/ˈdeɪɫi/routine/ɹuˈtin/into/ˈɪntu/jobs/ˈdʒɑbz/lemonade/ˈɫɛməˈneɪd`
     , `drink/drɪŋk/chicken/ˈtʃɪkən/menu/ˈmɛnju/dish/ˈdɪʃ/loves/ˈɫəvz/food/fuːd`
+    , `started/ˈstɑɹtɪd/seem/ˈsim/received/ɹəˈsivd/letter/ˈɫɛtɝ/think/ˈθɪŋk/next-door/ˌnekst ˈdɔːr/neighbor/ˈneɪbɝ/lovely/ˈɫəvɫi/smile/ˈsmaɪɫ/wasn't/ˈwɑzənt/enough/iˈnəf/twelve/ˈtwɛɫv/going/ˈɡoʊɪn/she'll/ˈʃiɫ/would/ˈaɪd/practice/ˈwʊd/i'd/ˈpɹæktəs/dialogue/ˈdaɪəˌɫɔɡ/following/ˈfɑɫoʊɪŋ/which/ˈhwɪtʃ/sentence/ˈsɛntəns/tells/ˈtɛɫz/older/ˈoʊɫdɝ/than/ˈðæn/going/ˈɡoʊɪn/getting/ˈɡɛtɪŋ`
+    , `long/ˈɫɔŋ/blond/ˈbɫɑnd/hair/ˈhɛɹ/turns/ˈtɝnz/dialogues/ˈdaɪəˌɫɔɡz/use/ˈjus/adjectives/ˈædʒɪktɪvz/hair/ˈhɛɹ/fat/ˈfæt/long/ˈɫɔŋ/straight/ˈstɹeɪt/curly/ˈkɝɫi/bald/ˈbɔɫd/dark/ˈdɑɹk/fair/ˈfɛɹ/pleasure/ˈpɫɛʒɝ/all/ˈɔɫ/mine/ˈmaɪn/principal/ˈpɹɪnsəpəɫ/excuse/ɪkˈskjus/mrs/ˈmɪsɪz/must/ˈməst/certainly/ˈsɝtənɫi/ma'am/ˈmæm/not/ˈnɑt/ones/ˈwənz/spend/ˈspɛnd/most/ˈmoʊs/each/ˈitʃ/us/ˈəs/however/ˌhaʊˈɛvɝ/character/ˈkɛɹɪktɝ/most/ˈmoʊs/sociable/ˈsoʊʃəbəɫ/also/ˈɔɫsoʊ/extremely/ɛkˈstɹimɫi/kind/ˈkaɪnd/generous/ˈdʒɛnɝəs/spends/ˈspɛndz/volunteer/ˌvɑɫənˈtɪɹ/local/ˈɫoʊkəɫ/orphanage/ˈɔɹfənədʒ/hard-working/ˌhɑɹdhˈwɝkɪŋ/always/ˈɔɫˌweɪz/grades/ˈɡɹeɪdz/unlike/ənˈɫaɪk/quite/ˈkwaɪt/reserved/ɹiˈzɝvd/public/ˈpəbɫɪk/both/ˈboʊθ/prefer/pɹəˈfɝ/outside/ˈaʊtˈsaɪd/school's/ˈskuɫz/star/ˈstɑɹ/soccer/ˈsɑkɝ/player/ˈpɫeɪɝ/peace/ˈpis/as/ˈæz/outgoing/ˈaʊtˌɡoʊɪŋ/telling/ˈtɛɫɪŋ/jokes/ˈdʒoʊks/sense/ˈsɛns/humor/ˈhjumɝ/sometimes/ˈsəmˌtaɪmz/annoy/əˈnɔɪ/although/ˌɔɫˈðoʊ/personalities/ˌpɝsəˈnæɫɪtiz/best/ˈbɛst/none/ˈnən/helps/ˈhɛɫps/causes/ˈkɑzəz/problems/ˈpɹɑbɫəmz/exam/ɪɡˈzæm/affect/əˈfɛkt/takes/ˈteɪks/places/ˈpɫeɪsəz/dislike/dɪˈsɫaɪk/laugh/ˈɫæf/tired/ˈtaɪɝd/feel/ˈfiɫ/bad/ˈbæd/thing/ˈθɪŋ/same/ˈseɪm/or/ˈɔɹ/characters/ˈkæɹəktɝz/fourteen/ˈfɔɹˈtin/lives/ˈɫaɪvz/elder/ˈɛɫdɝ/humorous/ˈhjumɝəs/helpful/ˈhɛɫpfəɫ/fill/ˈfɪɫ/form/ˈfɔɹm/prompts/ˈpɹɑmps/language/ˈɫæŋɡwədʒ/focus/ˈfoʊkəs/simple/ˈsɪmpəɫ/tenses/tens/general/ˈdʒɛnɝəɫ/truths/ˈtɹuθs/paragraphs/ˈpæɹəˌɡɹæfs/verbs/ˈvɝbz/brackets/ˈbɹækəts/move/ˈmuv/set/ˈsɛt/rise/ˈɹaɪz/describe/dɪsˈkɹaɪb/people/ˈpipəɫ/wearing/ˈwɛɹɪŋ/person/ˈpɝsən`
 ]
 
 let ArrStr11 = arrstr11.join("/").split("\n    ").join("").split("/");
@@ -653,7 +655,7 @@ Does Lan know Nien?
 Which sentence tells you that Hoa is older than Nien?
 When is Nien going to visit Hoa?
 SPEAK
-Read dialogic
+Read dialogue
 This person is short and thin.
 She has long blond hair.
 Is this Mary?
@@ -773,162 +775,159 @@ Set.
 rise
 
 
-
-ABCBC
 Look and describe
 How many people are there in the picture?
 What does each person look like?
 What is each person wearing?`
-let arr2 = `UNIT 1
-GETTING STARTED.
-LISTEN AND READ.
-Hello, Lan.
-Hi Hoa. You seem happy
-I am. I received a letter from my friend Nien today.
-Do I know her?
-I don't think so. She was my next-door neighbor in Hue.
-What does she look like?
-Oh. She's beautiful. Here is her photograph.
-What a lovely smile! Was she your classmate?
-Oh, no. She wasn't old enough to be in my class.
-How old is she?
-Twelve. She's going to visit me. She'll be here for Christmas.
-Would you like to meet her?
-I'd love to.
+let arr2 = `BÀI 1
+BẮT ĐẦU.
+NGHE VÀ ĐỌC.
+Xin chào Lan.
+Chào Hoa. Bạn có vẻ hạnh phúc
+Tôi là. Hôm nay tôi nhận được một lá thư từ bạn Niên.
+Tôi có biết cô ta ko?
+Tôi không nghĩ vậy. Cô ấy từng là hàng xóm gần nhà tôi ở Huế.
+Cô ấy trông như thế nào?
+Ồ. Cô ấy đẹp. Đây là bức ảnh của cô ấy.
+Một nụ cười đáng yêu! Cô ấy là bạn cùng lớp của anh à?
+Ôi không. Cô ấy không đủ lớn để học trong lớp của tôi.
+Cô ấy bao nhiêu tuổi?
+Mười hai. Cô ấy sẽ đến thăm tôi. Cô ấy sẽ ở đây vào dịp Giáng sinh.
+Bạn có muốn gặp cô ấy không?
+Tôi rất thích.
 
 
 
-Practice the dialogue with a partner.
-Answer the following questions.
-Does Lan know Nien?
-Which sentence tells you that Hoa is older than Nien?
-When is Nien going to visit Hoa?
-SPEAK
-Read dialogic
-This person is short and thin.
-She has long blond hair.
-Is this Mary?
-Now take turns making similar dialogues.
-Use the adjectives in the table.
-build
-hair
-tall
-Print short,
-fat
-slim
-thin
-long
-Straight
-curly
-Bald
-black
-dark
-Blond
-fair
-brown
+Thực hành đối thoại với đối tác.
+Trả lời các câu hỏi sau.
+Có phải Lan biết Niên?
+Câu nào cho bạn biết Hoa nhiều tuổi hơn Niên?
+Khi nao Niên sẽ đến thăm Hòa?
+NÓI
+Đọc đối thoại
+Người này thấp và gầy.
+Cô ấy có mái tóc dài màu vàng.
+Đây có phải là Mary không?
+Bây giờ hãy lần lượt thực hiện các cuộc đối thoại tương tự.
+Sử dụng các tính từ trong bảng.
+xây dựng
+tóc
+cao
+In ngắn,
+mập
+mảnh mai
+gầy
+Dài
+Thẳng
+quăn
+Hói
+đen
+tối
+Tóc vàng
+công bằng
+màu nâu
 
 
 
-LISTEN.
-What do you do?
-Nice to meet you
-It's a pleasure to meet you.
-I'd like you to come and meet me.
-Hello, Nam.
-Morning, Hoa.
-Nice to meet you too, Nam.
-The pleasure is all mine. Miss Lien.
-Oh, there is the principal. Please excuse me, Mrs. Vi, but I must talk to him.
-Certainly.
+NGHE.
+Bạn làm nghề gì?
+Hân hạnh được biết bạn
+Hân hạnh được gặp bạn.
+Tôi muốn bạn đến và gặp tôi.
+Xin chào, Nam.
+Chào Hoa.
+Rất vui được gặp bạn, Nam.
+Những niềm vui là tất cả của tôi. Hoa hậu Liên.
+Ồ, có hiệu trưởng. Bà Vi xin lỗi, nhưng tôi phải nói chuyện với anh ta.
+Chắc chắn.
 
 
 
-Hello, ma'am.
-Hello, young man.
-Bao is my classmate's grandmother.
-What was that?
-Classmate! Bao is my classmate.
-I see.
-Isn't that Lan's father, my dear?
-I'm not sure. Go and ask him.
-Excuse me. Are you Mr. Bar?
-Yes, I am.
-I'm Lam, Nga's father.
-READ
-I am lucky enough to have a lot of friends.
-Of all my friends, Khai and Song are the ones I spend most of my time with.
-Each of us, however, has a different character.
-Bao is the most social.
-He is also extremely kind and generous.
-He spends his free time doing volunteer work at a local orphanage, and he is a hard-working student who always gets good grades.
-Unlike Bao, Khai and Song are quite reserved in public.
-Both boys enjoy school, but they prefer to be outside the classroom.
-Song is our school's star soccer player, and Khai likes the peace and quiet of the local library.
+Xin chào thưa cô.
+Xin chào, bạn trẻ.
+Bảo là bà của bạn cùng lớp với tôi.
+Đó là gì?
+Bạn cùng lớp! Bảo là bạn học của tôi.
+Tôi thấy.
+Đó không phải là bố của Lan sao con yêu?
+Tôi không chắc. Đi và hỏi anh ta.
+Xin lỗi. Bạn có phải là Mr. Bar?
+Vâng là tôi.
+Tôi là Lâm, bố của Nga.
+ĐỌC
+Tôi đủ may mắn để có rất nhiều bạn bè.
+Trong tất cả những người bạn của tôi, Khải và Song là những người tôi dành nhiều thời gian nhất.
+Tuy nhiên, mỗi người chúng ta đều có một tính cách khác nhau.
+Bảo là xã giao nhất.
+Ông cũng là vô cùng tốt bụng và hào phóng.
+Anh dành thời gian rảnh để làm công việc tình nguyện tại trại trẻ mồ côi địa phương, và anh là một học sinh chăm chỉ luôn đạt điểm cao.
+Khác với Bảo, Khải và Song khá dè dặt trước công chúng.
+Cả hai cậu con trai đều thích đi học, nhưng họ thích ở ngoài lớp học hơn.
+Song là cầu thủ bóng đá ngôi sao của trường chúng tôi, còn Khải thích sự yên bình và tĩnh lặng của thư viện địa phương.
 
 
 
-I am not as outgoing as Bao, but I enjoy telling jokes.
-My friends usually enjoy my sense of humor.
-However, sometimes my jokes annoy them.
-Although we have quite different personalities, the four of us are very close friends.
-Choose the best answer and write it.
-three
-All
-four
-None.
-It helps him make friends.
-It causes problems at exam time.
-It does not affect his school work.
-which takes up a lot of time.
-They like quiet places.
-They don't talk much in public.
-They dislike school.
-They enjoy sports.
-answer
-Don't listen to
-laugh at
-I get tired of
-Now, answer the questions.
-How do you feel about having a lot of friends?
-Who is the most social?
-Who likes reading?
-What is the bad thing about Ba's jokes?
-Where does Bao spend his free time?
-Do you and your close friends have the same or different characters?
+Tôi không hướng ngoại như Bảo, nhưng tôi thích kể chuyện cười.
+Bạn bè của tôi thường thích thú với khiếu hài hước của tôi.
+Tuy nhiên, đôi khi những trò đùa của tôi làm họ khó chịu.
+Mặc dù chúng tôi có tính cách khá khác nhau, bốn chúng tôi là những người bạn rất thân.
+Chọn câu trả lời đúng nhất và viết nó.
+số ba
+Tất cả các
+bốn
+Không có.
+Nó giúp anh ấy kết bạn.
+Nó gây ra vấn đề vào thời gian thi.
+Nó không ảnh hưởng đến việc học ở trường của anh ấy.
+chiếm nhiều thời gian.
+Họ thích những nơi yên tĩnh.
+Họ không nói nhiều ở nơi công cộng.
+Họ không thích trường học.
+Họ thích thể thao.
+trả lời
+Đừng nghe
+cười vào
+Tôi cảm thấy mệt mỏi vì
+Bây giờ, hãy trả lời các câu hỏi.
+Bạn cảm thấy thế nào khi có nhiều bạn bè?
+Ai là người xã hội nhất?
+Ai thích đọc sách?
+Chuyện dở khóc dở cười của Ba là gì?
+Thời gian rảnh rỗi của Bảo ở đâu?
+Bạn và những người bạn thân của bạn có nhân vật giống nhau hay khác nhau?
 
 
 
-WRITE
-Read the information about Tam.
-His name's Le Van Tam and he's fourteen years old.
-He lives at 26 Tran Phu Street in Ha Noi with his mother, father and his elder brother, Hung.
-He's tall and thin and has short black hair.
-He is sociable, humorous and helpful.
-His best friends are Ba and Bao.
-Fill in a similar form for your partner.
-Use the following questions as prompts.
+VIẾT
+Đọc thông tin về Tâm.
+Tên anh ấy Lê Văn Tam và anh ấy mười bốn tuổi.
+Anh sống tại 26 Trần Phú, Hà Nội cùng mẹ, cha và anh trai Hùng.
+Anh ấy cao, gầy và có mái tóc ngắn màu đen.
+Anh ấy hòa đồng, hài hước và hay giúp đỡ.
+Bạn thân nhất của anh ấy là Ba và Bảo.
+Điền vào một biểu mẫu tương tự cho đối tác của bạn.
+Sử dụng các câu hỏi sau khi gợi ý.
 
 
 
-Language focus
-Simple tenses.
-present simple to talk about general truths.
-Complete the paragraphs.
-Use the correct form of the verbs in brackets.
-Complete the dialogue.
-Use the correct form of the verbs in the box.
-You will have to use some verbs more than once.
-beige
-Move.
-Set.
-rise
+Ngôn ngữ trọng tâm
+Thì đơn.
+trình bày đơn giản để nói về sự thật chung.
+Hoàn thành các đoạn văn.
+Sử dụng dạng đúng của các động từ trong ngoặc.
+Hoàn thành đoạn đối thoại.
+Sử dụng dạng đúng của các động từ trong hộp.
+Bạn sẽ phải sử dụng một số động từ nhiều hơn một lần.
+thì là ở
+Di chuyển.
+Đặt.
+nổi lên
 
 
-
-Look and describe
-How many people are there in the picture?
-What does each person look like?
-What is each person wearing?`
+Nhìn và mô tả
+Có bao nhiêu người trong bức tranh?
+Mỗi người nhìn trông như thế nào?
+Mỗi người mặc gì?`
 
 export default async (req, res) => {// const { db } = await connectToDatabase();// TextToIPA.loadDict(); // blocking load
     try {

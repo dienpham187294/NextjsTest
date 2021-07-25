@@ -148,6 +148,8 @@ export default function Show_Tieng_anh_lop_1(Dulieu_tieng_anh_lop_1, tokenCheck,
                                     </div>
 
                                     <img src={Dulieu_tieng_anh_lop_1[Num_page].img} alt={Dulieu_tieng_anh_lop_1[Num_page].img} width="100%" />
+                                    <hr />
+                                    {Show_QuangCao()}
                                 </div>
                                 :
                                 <div className="text-justify">
@@ -184,6 +186,8 @@ export default function Show_Tieng_anh_lop_1(Dulieu_tieng_anh_lop_1, tokenCheck,
 
                                     <h1>{Data_Learn.IPA}</h1>
                                     <hr />
+                                    {Data_Commands}
+                                    <br />
                                     <button
                                         className="btn btn-warning"
                                         style={{ fontSize: "larger", padding: "20px" }}
@@ -236,7 +240,6 @@ export default function Show_Tieng_anh_lop_1(Dulieu_tieng_anh_lop_1, tokenCheck,
                         </div>
                     }
                     <hr />
-                    {Show_QuangCao()}
                 </div>
                 <Dictaphone
                     Data={Data_Commands}

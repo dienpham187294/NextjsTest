@@ -113,9 +113,10 @@ export default function Show_Demo_Sentence_Basic() {
                                     <button
                                         className="btn btn-warning"
                                         style={{ fontSize: "larger", padding: "20px" }}
-                                        onClick={() => {
+                                        onClick={() => {   
                                             SET_Data_Commands(Data_Learn.EN);
-                                            SET_Docthu("Docthu")
+                                            SET_Docthu("Docthu");
+
                                         }}
                                     >Đọc thử</button>
                                     {Docthu === "" ? null
