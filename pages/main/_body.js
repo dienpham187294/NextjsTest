@@ -2,20 +2,70 @@ import All_href_link from "../../util/APP_BODY_NAVIGATION/All_href_link"
 import Link from 'next/link'
 import Show_Menu_Inbody from "../../util/APP_BODY_NAVIGATION/Show_Menu_Inbody"
 import { useEffect, useState } from "react"
+import List_IDs from "../../util/List_IDs/List_IDs";
+
 export default function body() {
     const [Status, SET_Status] = useState(0);
-
+    const [Cookie, SET_Cookie] = useState("");
     useEffect(() => {
         try {
             document.querySelector("body").style.overflowX = "hidden";
             document.querySelector("body").style.overflowY = "auto";
+            SET_Cookie(getCookie("ericpham"));
         } catch (error) {
             console.log("e")
         }
     }, [Status])
-
     return (
         <>
+            <header>
+                <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
+                    <Link href="/">
+                        <a className="navbar-brand" >
+                            <i>ENGLISH  <span style={{ color: "yellow" }}>TOOL</span></i>
+                        </a>
+                    </Link>
+
+                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div className="collapse navbar-collapse" id="navbarsExample03">
+                        <ul className="navbar-nav mr-auto">
+                            <li className="nav-item active">
+                                <Link href="/#VocabularyPage">
+                                    <a className="nav-link">Vocabulary 4.0</a>
+                                </Link>
+                            </li>
+                            <li className="nav-item active">
+                                <Link href="/#ReadingPage">
+                                    <a className="nav-link">Reading 4.0</a>
+                                </Link>
+                            </li>
+                            <li className="nav-item active">
+                                <Link href="/#ReadingPage">
+                                    <a className="nav-link">Conversation 4.0</a>
+                                </Link>
+                            </li>
+                            <li className="nav-item active">
+                                <Link href="/#Trochoi">
+                                    <a className="nav-link">Trò chơi</a>
+                                </Link>
+                            </li>
+                            <li className="nav-item active">
+                                <Link href="/#CustomPage">
+                                    <a className="nav-link">CustomFile</a>
+                                </Link>
+                            </li>
+                        </ul>
+                        <form className="form-inline my-2 my-md-0">
+
+                            {Show_Dangnhap()}
+
+                        </form>
+                    </div>
+                </nav>
+            </header >
             <div className="container">
                 <div className="row mt-5">
                     <div className="col-lg-6 md-6 sm-12">
@@ -130,4 +180,27 @@ export default function body() {
         </>
 
     )
+
+    function Show_Dangnhap() {
+        if (Cookie !== "") {
+            return (
+                <>
+                    <Link href="/main/detail">
+                        <a>
+                            <input className="btn btn-primary" type="button" value={"Tài khoản của bạn"} />
+                        </a>
+                    </Link>
+
+                </>
+            )
+        } else {
+            return (
+                <Link href="/main/dangnhap">
+                    <a >
+                        <input id={List_IDs["Button_DangNhap"]} className="btn btn-primary" type="button" value="Đăng nhập" />
+                    </a>
+                </Link>
+            )
+        }
+    }
 }

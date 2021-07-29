@@ -1,24 +1,14 @@
 import { useEffect, useState } from "react"
 import Read_ReactSpeech from "../../../pages/helpers/Read_ReactSpeechSlow"
-import ReadMessage from "../../Read/ReadMessage"
-import Dictaphone from "../../../pages/helpers/RegcognitionV1-0-1AI0.2LearnBasic"
-import Check2String from "../../String_tool/Check2String"
 import Linkapi from "../../api/Linkapi"
-import Dictionary_with_image from "../../../pages/helpers/IMAGE/Dictionary_with_image"
 import FullScreen from "../../fullscreen/fullscreen"
-import Show_QuangCao from "../../../util/Show/Show_QuangCao"
+import Show_QuangCao from "../../Show/Show_QuangCao"
+import Show_tienganhphothong_phanbaihoc from "../../Show/Show_tienganhphothong_phanbaihoc"
 const queryString = require('query-string');
 let linkReset = ""
 let statusCount = 0;
 export default function Show_Tieng_anh_lop_1(Dulieu_tieng_anh_lop_1, tokenCheck, href) {
-
     const [Data_Learn, SET_Data_Learn] = useState("")
-
-    const [Data_Commands, SET_Data_Commands] = useState("====")
-
-    const [Docthu, SET_Docthu] = useState("")
-
-    const [Data_use, SET_Data_use] = useState(Dulieu_tieng_anh_lop_1[0].data)
 
     const [Name, SET_Name] = useState("")
 
@@ -26,7 +16,7 @@ export default function Show_Tieng_anh_lop_1(Dulieu_tieng_anh_lop_1, tokenCheck,
 
     const [Num_page, SET_Num_page] = useState(0)
 
-    const [Popup, SET_Popup] = useState("")
+
 
     useEffect(() => {
         setTimeout(() => {
@@ -75,9 +65,9 @@ export default function Show_Tieng_anh_lop_1(Dulieu_tieng_anh_lop_1, tokenCheck,
                         overflowY: "auto"
                     }}>
                     <hr />
-
                     {Name === "" ? <h2>Xin chờ 5s...</h2> :
                         <div className="container">
+
                             <h3> {Name}</h3>
                             <hr />
                             <div className="row">
@@ -127,7 +117,6 @@ export default function Show_Tieng_anh_lop_1(Dulieu_tieng_anh_lop_1, tokenCheck,
                                             onClick={() => {
                                                 SET_Data_Learn(Dulieu_tieng_anh_lop_1[Num_page].data[i]);
                                                 try {
-                                                    document.getElementById("BUTTON_CLICK_TO_TALK").click();
                                                     if (!window.fullscreen && statusCount === 0) {
                                                         FullScreen("ID_ShowTiengAnh")
                                                         statusCount = 1
@@ -143,119 +132,23 @@ export default function Show_Tieng_anh_lop_1(Dulieu_tieng_anh_lop_1, tokenCheck,
                                         </div>
                                     )}
                                     <hr />
+                                   
                                     <div className="text-left">
                                         <i >Bản dịch tiếng việt vài nơi còn chưa chuẩn ngữ nghĩa, quý vị phụ huynh và học sinh thông cảm. Chúng tôi sẽ cố gắng cải thiện trong thời gian tới.</i>
                                     </div>
-
                                     <img src={Dulieu_tieng_anh_lop_1[Num_page].img} alt={Dulieu_tieng_anh_lop_1[Num_page].img} width="100%" />
                                     <hr />
                                     {Show_QuangCao()}
                                 </div>
                                 :
-                                <div className="text-justify">
-                                    <hr />
-                                    <h1>{Data_Learn.EN}</h1>
-                                    <hr />
-                                    <h1>{Data_Learn.VN}</h1>
-
-                                    <hr />
-                                    <button
-                                        className="btn btn-warning"
-                                        style={{ fontSize: "larger", padding: "20px" }}
-                                        onClick={() => {
-                                            ReadMessage(Data_Learn.EN, [1, 2].PickRandom())
-                                        }}
-                                    >Nghe máy đọc nguyên câu</button>
-                                    <br />
-                                    <b>Đọc từng chữ:</b>
-                                    <br />
-                                    {Data_Learn.EN.split(" ").map((e, i) =>
-                                        <div
-                                            style={{
-                                                border: "5px solid green",
-                                                padding: "5px",
-                                                cursor: "pointer",
-                                                display: "inline-block",
-                                                marginLeft: "10px"
-                                            }}
-                                            onClick={() => { ReadMessage(e, [1, 2].PickRandom()) }}
-                                            key={i}>
-                                            {e}
-                                        </div>
-                                    )}
-
-                                    <h1>{Data_Learn.IPA}</h1>
-                                    <hr />
-                                    {Data_Commands}
-                                    <br />
-                                    <button
-                                        className="btn btn-warning"
-                                        style={{ fontSize: "larger", padding: "20px" }}
-                                        onClick={() => {
-                                            SET_Data_Commands(Data_Learn.EN);
-                                            SET_Docthu("Docthu")
-                                        }}
-                                    >Đọc thử</button>
-                                    {Docthu === "" ? null
-                                        : Docthu === "Docthu" ? <img src="https://i.postimg.cc/1z95rjPs/Listening.gif" alt="https://i.postimg.cc/1z95rjPs/Listening.gif" width="100px" />
-                                            : <span style={{ fontSize: "larger", color: "red" }}> <b>Chính Xác - Chúc mừng</b></span>
-                                    }
-                                    <br />
-                                    <b>Máy lắng nghe: </b>
-                                    <i id="interrimID"></i>
-                                    <hr />
-                                    <button
-                                        className="btn btn-warning"
-                                        style={{ fontSize: "larger", padding: "20px" }}
-                                        onClick={() => {
-                                            SET_Data_Learn("");
-                                            SET_Docthu("");
-                                            $("#ID_ShowTiengAnh").scrollTop(150)
-                                        }}
-                                    >Học câu khác</button>
-                                    <hr />
-                                    <div>
-                                        <div>
-                                            <b>Từ điển hình ảnh:</b>
-                                            <br />
-                                            {Data_Learn.EN.split(" ").map((e, i) =>
-                                                <div
-                                                    style={{
-                                                        border: "5px solid green",
-                                                        padding: "5px",
-                                                        cursor: "pointer",
-                                                        display: "inline-block",
-                                                        marginLeft: "10px"
-                                                    }}
-                                                    onClick={() => { SET_Popup(e) }}
-                                                    key={i}>
-                                                    {e}
-                                                </div>
-                                            )}
-                                        </div>
-
-                                    </div>
-                                </div>
+                                <Show_tienganhphothong_phanbaihoc Data_Learn={Data_Learn} SET_Data_Learn={SET_Data_Learn} />
                             }
                         </div>
                     }
                     <hr />
                 </div>
-                <Dictaphone
-                    Data={Data_Commands}
-                />
-                <Dictionary_with_image Popup={Popup} />
                 <Read_ReactSpeech />
-                <button style={{ display: "none" }} onClick={() => {
-                    if ($("#messageRes").val() !== "" && Docthu === "Docthu") {
-                        if (Check2String($("#messageRes").val(), Data_Commands)) {
-                            SET_Docthu("A");
-                            ReadMessage("Great", [1, 2].PickRandom());
-                            SET_Data_Commands("====")
-                        }
-                    }
-                }} id="messageResBtn"></button>
-
+                <p id="DataAcross"></p>
             </div >
         )
     } catch (error) {

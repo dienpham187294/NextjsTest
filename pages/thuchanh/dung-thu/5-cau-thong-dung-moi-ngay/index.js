@@ -11,8 +11,6 @@ function INDEX_5caumoingay() {
     const [Practice, SET_Practice] = useState(false)
     const [Data_Commands, SET_Data_Commands] = useState([])
 
-
-
     return (
 
         <div className="container">
@@ -45,7 +43,6 @@ function INDEX_5caumoingay() {
             {Practice ?
                 <PracticeDiv Data={Data} Data_Commands={Data_Commands} SET_Data_Commands={SET_Data_Commands} SET_Practice={SET_Practice} />
                 : ""}
-
             <Read />
 
 

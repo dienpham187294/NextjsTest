@@ -121,7 +121,7 @@ function Dictaphone({ Data }) {
                 onClick={() => stopListening()}
             >Click to Stop</button>
         </p>
-        <input type="text" id="messageRes" />
+        <input disabled type="text" id="messageRes" />
     </div>
     );
 };

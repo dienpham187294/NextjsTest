@@ -2,17 +2,16 @@
 import '../styles/globals.css'
 import Link from 'next/link'
 import 'regenerator-runtime/runtime'
-import Head from "next/head";
 import { getCookie } from "../util/Cookies/functionCookies"
 import { useEffect, useState } from 'react';
 import Linkapi from "../util/api/Linkapi"
 import List_IDs from "../util/List_IDs/List_IDs"
+import Head from "next/head";
 import { async } from 'regenerator-runtime';
 const { detect } = require('detect-browser');
 const ip = require('ip');
 
 function MyApp({ Component, pageProps }) {
-  const [Cookie, SET_Cookie] = useState("");
   const [Status, SET_Status] = useState(0)
   const browser = detect();
   useEffect(() => {
@@ -21,37 +20,37 @@ function MyApp({ Component, pageProps }) {
     }
     try {
       document.getElementById("Text_Cookies").innerText = getCookie("ericpham")
-      SET_Cookie(getCookie("ericpham"));
       GET_Buycode_FROM_DATABASE(getCookie("ericpham"))
     } catch (error) {
       console.log(error)
     }
-    setTimeout(() => {
-      try {
-        const chatbox = document.getElementById('fb-customer-chat');
-        chatbox.setAttribute("page_id", "106237278271751");
-        chatbox.setAttribute("attribution", "setup_tool");
-        window.fbAsyncInit = function () {
-          FB.init({
-            appId: '138299294995923',
-            xfbml: true,
-            version: 'v11.0'
-          });
-        };
-        (function (d, s, id) {
-          var js, fjs = d.getElementsByTagName(s)[0];
-          if (d.getElementById(id)) return;
-          js = d.createElement(s); js.id = id;
-          js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-          fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-      } catch (error) {
-        console.log(error, "facebook message")
-      }
-    }, 3000)
+    // setTimeout(() => {
+    //   try {
+    //     const chatbox = document.getElementById('fb-customer-chat');
+    //     chatbox.setAttribute("page_id", "106237278271751");
+    //     chatbox.setAttribute("attribution", "setup_tool");
+    //     window.fbAsyncInit = function () {
+    //       FB.init({
+    //         appId: '138299294995923',
+    //         xfbml: true,
+    //         version: 'v11.0'
+    //       });
+    //     };
+    //     (function (d, s, id) {
+    //       var js, fjs = d.getElementsByTagName(s)[0];
+    //       if (d.getElementById(id)) return;
+    //       js = d.createElement(s); js.id = id;
+    //       js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+    //       fjs.parentNode.insertBefore(js, fjs);
+    //     }(document, 'script', 'facebook-jssdk'));
+    //   } catch (error) {
+    //     console.log(error, "facebook message")
+    //   }
+    // }, 3000)
 
   }, [Status])
   return (<>
+
     <Head>
       <title>ENGLISH TOOL</title>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -76,55 +75,6 @@ function MyApp({ Component, pageProps }) {
         crossOrigin="anonymous"
       />
     </Head>
-    <header>
-      <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
-        <Link href="/">
-          <a className="navbar-brand" >
-            <i>ENGLISH  <span style={{ color: "yellow" }}>TOOL</span></i>
-          </a>
-        </Link>
-
-        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
-        </button>
-
-        <div className="collapse navbar-collapse" id="navbarsExample03">
-          <ul className="navbar-nav mr-auto">
-            <li className="nav-item active">
-              <Link href="/#VocabularyPage">
-                <a className="nav-link">Vocabulary 4.0</a>
-              </Link>
-            </li>
-            <li className="nav-item active">
-              <Link href="/#ReadingPage">
-                <a className="nav-link">Reading 4.0</a>
-              </Link>
-            </li>
-            <li className="nav-item active">
-              <Link href="/#ReadingPage">
-                <a className="nav-link">Conversation 4.0</a>
-              </Link>
-            </li>
-            <li className="nav-item active">
-              <Link href="/#Trochoi">
-                <a className="nav-link">Trò chơi</a>
-              </Link>
-            </li>
-            <li className="nav-item active">
-              <Link href="/#CustomPage">
-                <a className="nav-link">CustomFile</a>
-              </Link>
-            </li>
-          </ul>
-          <form className="form-inline my-2 my-md-0">
-
-            {Show_Dangnhap()}
-
-          </form>
-        </div>
-      </nav>
-    </header >
-
 
 
 
@@ -156,28 +106,7 @@ function MyApp({ Component, pageProps }) {
 
 
 
-  function Show_Dangnhap() {
-    if (Cookie !== "") {
-      return (
-        <>
-          <Link href="/main/detail">
-            <a>
-              <input className="btn btn-primary" type="button" value={"Tài khoản của bạn"} />
-            </a>
-          </Link>
 
-        </>
-      )
-    } else {
-      return (
-        <Link href="/main/dangnhap">
-          <a >
-            <input id={List_IDs["Button_DangNhap"]} className="btn btn-primary" type="button" value="Đăng nhập" />
-          </a>
-        </Link>
-      )
-    }
-  }
 }
 
 export default MyApp

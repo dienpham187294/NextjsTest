@@ -9,11 +9,6 @@ export default [
         price: "99.000VNĐ/năm",
         discription: "Giáo trình theo bộ giáo dục áp dụng công nghệ nhận diện giọng nói."
     },
-    {
-        name: "Tiếng anh lớp 2",
-        price: "99.000VNĐ/năm",
-        discription: "Giáo trình theo bộ giáo dục áp dụng công nghệ nhận diện giọng nói."
-    }
     ,
     {
         name: "Tiếng anh lớp 3 tập 1",
@@ -48,6 +43,23 @@ export default [
     {
         name: "Tiếng anh lớp 5 tập 2",
         price: "149.000VNĐ/năm",
+        discription: "Giáo trình theo bộ giáo dục áp dụng công nghệ nhận diện giọng nói."
+    },
+    {
+        name: "Tiếng anh lớp 7 tập 1",
+        price: "149.000VNĐ/năm",
+        discription: "Giáo trình theo bộ giáo dục áp dụng công nghệ nhận diện giọng nói."
+    }
+    ,
+    {
+        name: "Tiếng anh lớp 7 tập 2",
+        price: "149.000VNĐ/năm",
+        discription: "Giáo trình theo bộ giáo dục áp dụng công nghệ nhận diện giọng nói."
+    }
+,
+    {
+        name: "Tiếng anh lớp 8",
+        price: "299.000VNĐ/năm",
         discription: "Giáo trình theo bộ giáo dục áp dụng công nghệ nhận diện giọng nói."
     }
     ,

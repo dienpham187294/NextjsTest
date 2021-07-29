@@ -1,7 +1,7 @@
-import Dulieu_tieng_anh_lop_2 from "../../../util/filedulieu/Dulieu_tieng_anh_lop_2";
+import Dulieu from "../../../util/filedulieu/Dulieu_tieng_anh_lop_2";
 import Head from "next/head";
 import Show_Demo_Sentence_Basic from "../../../util/App/LEARN_SENTENC_Basic/Show_tieng_anh_lop_1";
-export default function Show_tieng_anh_lop_2() {
+export default function Show() {
     return (
         <div>
             <Head>
@@ -10,7 +10,7 @@ export default function Show_tieng_anh_lop_2() {
                 <meta name="description" content="Một sản phẩm của Ericpham" />
             </Head>
             <div className="container text-center">
-                {Show_Demo_Sentence_Basic(Dulieu_tieng_anh_lop_2, "giao-khoa-lop-2","thuchanh/app/tieng-anh-lop-2?token=")}
+                {Show_Demo_Sentence_Basic(Dulieu, "giao-khoa-lop-2", "thuchanh/app/tieng-anh-lop-2?token=")}
             </div>
         </div>
 

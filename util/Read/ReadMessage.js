@@ -1,12 +1,19 @@
-export default async function ReadMessage(text, voiceNum) {
+export default async function ReadMessage(text, voiceNum, rate) {
+
     try {
+        if (voiceNum === undefined) {
+            voiceNum = 0.7;
+        }
+        if (rate === undefined) {
+            rate = 0.7
+        }
         if ($("#ID_TEXT_BROWSERNAME").text().indexOf("ios") !== -1) {
             try {
                 if ('speechSynthesis' in window) {
                     let msg = new SpeechSynthesisUtterance();
                     let voices = window.speechSynthesis.getVoices();
                     msg.voice = voices[voiceNum + 4];
-                    msg.rate = 1;
+                    msg.rate = rate;
                     msg.pitch = 1;
                     msg.text = text;
                     speechSynthesis.speak(msg);
@@ -17,6 +24,15 @@ export default async function ReadMessage(text, voiceNum) {
 
         } else {
             try {
+                // if ('speechSynthesis' in window) {
+                //     let msg = new SpeechSynthesisUtterance();
+                //     let voices = window.speechSynthesis.getVoices();
+                //     msg.voice = voices[voiceNum];
+                //     msg.rate = rate;
+                //     msg.pitch = 1;
+                //     msg.text = text;
+                //     speechSynthesis.speak(msg);
+                // }
                 await $("#SpeechText").val(text)
                 await $("#SpeechTextBtn")[0].click();
 
