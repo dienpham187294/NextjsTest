@@ -23,7 +23,7 @@ export default function Price() {
             <hr />
             <h3>Tài khoản ngân hàng VCB: 0441000737314</h3>
             <h3>Tài khoản ngân hàng ACB: 4487767</h3>
-            <p>Chủ tên khoản: PHẠM VĂN ĐIỆN</p>
+            <p>Chủ tài khoản: PHẠM VĂN ĐIỆN</p>
             <hr />
             <h3>Cú pháp: [Email]_[Mã code]</h3>
             Ví dụ: dienpham187294@gmail.com R0001

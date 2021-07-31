@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react"
 import Read_ReactSpeech from "../../../pages/helpers/Read_ReactSpeechSlow"
+import Dictionary_with_image from "../../../pages/helpers/IMAGE/Dictionary_with_image"
 import Linkapi from "../../api/Linkapi"
 import FullScreen from "../../fullscreen/fullscreen"
 import Show_QuangCao from "../../Show/Show_QuangCao"
 import Show_tienganhphothong_phanbaihoc from "../../Show/Show_tienganhphothong_phanbaihoc"
+
 const queryString = require('query-string');
 let linkReset = ""
 let statusCount = 0;
@@ -16,6 +18,7 @@ export default function Show_Tieng_anh_lop_1(Dulieu_tieng_anh_lop_1, tokenCheck,
 
     const [Num_page, SET_Num_page] = useState(0)
 
+    const [Popup, SET_Popup] = useState("")
 
 
     useEffect(() => {
@@ -132,7 +135,7 @@ export default function Show_Tieng_anh_lop_1(Dulieu_tieng_anh_lop_1, tokenCheck,
                                         </div>
                                     )}
                                     <hr />
-                                   
+
                                     <div className="text-left">
                                         <i >Bản dịch tiếng việt vài nơi còn chưa chuẩn ngữ nghĩa, quý vị phụ huynh và học sinh thông cảm. Chúng tôi sẽ cố gắng cải thiện trong thời gian tới.</i>
                                     </div>
@@ -141,13 +144,14 @@ export default function Show_Tieng_anh_lop_1(Dulieu_tieng_anh_lop_1, tokenCheck,
                                     {Show_QuangCao()}
                                 </div>
                                 :
-                                <Show_tienganhphothong_phanbaihoc Data_Learn={Data_Learn} SET_Data_Learn={SET_Data_Learn} />
+                                <Show_tienganhphothong_phanbaihoc Data_Learn={Data_Learn} SET_Data_Learn={SET_Data_Learn} SET_Popup={SET_Popup} />
                             }
                         </div>
                     }
                     <hr />
                 </div>
                 <Read_ReactSpeech />
+                <Dictionary_with_image Popup={Popup} />
                 <p id="DataAcross"></p>
             </div >
         )

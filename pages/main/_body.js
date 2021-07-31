@@ -11,9 +11,12 @@ export default function body() {
         try {
             document.querySelector("body").style.overflowX = "hidden";
             document.querySelector("body").style.overflowY = "auto";
-            SET_Cookie(getCookie("ericpham"));
+            // SET_Cookie(getCookie("ericpham"));
+            // localStorage.setItem("token", "ABC")
+            // console.log(localStorage.getItem("name"))
         } catch (error) {
-            console.log("e")
+            console.log(error);
+
         }
     }, [Status])
     return (
@@ -173,10 +176,10 @@ export default function body() {
 
                 </div>
             </div>
-            <div id="fb-root"></div>
-            <div id="fb-customer-chat" className="fb-customerchat">
+            {/* <div id="fb-root"></div> */}
+            {/* <div id="fb-customer-chat" className="fb-customerchat">
             </div>
-            <div id="showFacebookid"></div>
+            <div id="showFacebookid"></div> */}
         </>
 
     )

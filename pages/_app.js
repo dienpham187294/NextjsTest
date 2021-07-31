@@ -18,12 +18,12 @@ function MyApp({ Component, pageProps }) {
     if (browser) {
       document.getElementById("ID_TEXT_BROWSERNAME").innerText = browser.name + browser.version + browser.os + ip.address()
     }
-    try {
-      document.getElementById("Text_Cookies").innerText = getCookie("ericpham")
-      GET_Buycode_FROM_DATABASE(getCookie("ericpham"))
-    } catch (error) {
-      console.log(error)
-    }
+    // try {
+    //   document.getElementById("Text_Cookies").innerText = getCookie("ericpham")
+    //   GET_Buycode_FROM_DATABASE(getCookie("ericpham"))
+    // } catch (error) {
+    //   console.log(error)
+    // }
     // setTimeout(() => {
     //   try {
     //     const chatbox = document.getElementById('fb-customer-chat');
@@ -112,20 +112,20 @@ function MyApp({ Component, pageProps }) {
 export default MyApp
 
 
-async function GET_Buycode_FROM_DATABASE(mail) {
-  try {
-    const res = await fetch(Linkapi + "api/GET_Buycode?mail=" + mail, {
-      method: 'GET',
-      headers: {
-        "Accept": "application/json",
-        "Content-Type": "application/json"
-      }
-    })
-    let data = await res.json();
-    document.getElementById("Text_Cookies_Buycode").innerText = data.data["buycode"]
-    $("#Detect_device").text(data.data["detect_device"])
-  } catch (error) {
-    console.log(error)
-  }
-}
+// async function GET_Buycode_FROM_DATABASE(mail) {
+//   try {
+//     const res = await fetch(Linkapi + "api/GET_Buycode?mail=" + mail, {
+//       method: 'GET',
+//       headers: {
+//         "Accept": "application/json",
+//         "Content-Type": "application/json"
+//       }
+//     })
+//     let data = await res.json();
+//     document.getElementById("Text_Cookies_Buycode").innerText = data.data["buycode"]
+//     $("#Detect_device").text(data.data["detect_device"])
+//   } catch (error) {
+//     console.log(error)
+//   }
+// }
 

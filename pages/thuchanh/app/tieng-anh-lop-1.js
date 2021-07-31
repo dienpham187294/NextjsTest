@@ -5,7 +5,7 @@ export default function Show() {
     return (
         <div>
             <Head>
-                <title>Học tiếng anh lớp 1 theo giáo trình của bộ giáo dục</title>
+                <title>Học tiếng anh lớp 1 theo giáo trình của bộ giáo dục (mới)</title>
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <meta name="description" content="Một sản phẩm của Ericpham" />
             </Head>

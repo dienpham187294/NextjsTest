@@ -5,10 +5,11 @@ export default async (req, res) => {
         .setType("image")
         .setQuery(id).run()
         .then(function (result) {
-            res.status(200).json({ success: true, data: result })
+            res.status(200).json({ success: true, data: result, id: id })
         })
         .catch(function (error) {
-            res.status(200).json({ success: true, data: error })
+            console.log(error)
+            res.status(200).json({ success: true, data: error, id: id })
         })
 
 }

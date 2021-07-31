@@ -1,11 +1,9 @@
 import { useState } from "react"
 import Dictaphone from "../../pages/helpers/RegcognitionV1-0-1AI0.2LearnBasic"
 import ReadMessage from "../Read/ReadMessage"
-import Dictionary_with_image from "../../pages/helpers/IMAGE/Dictionary_with_image"
 import Show_tienganhphothong_hocphatam from "./Show_tienganhphothong_hocphatam"
-export default function Show_tienganhphothong_phanbaihoc({ Data_Learn, SET_Data_Learn }) {
+export default function Show_tienganhphothong_phanbaihoc({ Data_Learn, SET_Data_Learn, SET_Popup }) {
     const [Data_Commands, SET_Data_Commands] = useState("====")
-    const [Popup, SET_Popup] = useState("")
     const [Docthu, SET_Docthu] = useState("")
     return (
         <div className="text-justify">
@@ -107,7 +105,6 @@ export default function Show_tienganhphothong_phanbaihoc({ Data_Learn, SET_Data_
             />
             <hr />
             <Show_tienganhphothong_hocphatam />
-            <Dictionary_with_image Popup={Popup} />
             <button style={{ display: "none" }} onClick={() => {
                 if ($("#messageRes").val() !== "" && Docthu === "Docthu") {
                     SET_Docthu("A");
