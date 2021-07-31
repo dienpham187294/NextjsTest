@@ -49,10 +49,10 @@ function Dictaphone({ Data }) {
                 MatchingInt = 0.2;
             }
             if (Num > 3 && Num < 5) {
-                MatchingInt = 0.5;
+                MatchingInt = 0.4;
             }
             if (Num > 5) {
-                MatchingInt = 0.6;
+                MatchingInt = 0.5;
             }
         } catch (error) {
             console.log("e MatchingInt")
