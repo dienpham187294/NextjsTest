@@ -40,7 +40,7 @@ let ArrNumber = [
 ]
 function Dictaphone({ Data }) {
     useEffect(() => {
-        let MatchingInt = 0.4;
+        let MatchingInt = 0.3;
         Str_to_Check = "";
         Count3time = 0;
         let Num = Data.split(" ").length
