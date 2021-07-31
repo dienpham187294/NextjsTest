@@ -1,7 +1,6 @@
 import { useState } from "react"
 
 import ReadMessage from "../Read/ReadMessage"
-import Show_tienganhphothong_hocphatam from "./Show_tienganhphothong_hocphatam"
 export default function Show_tienganhphothong_phanbaihoc({ Data_Learn, SET_Data_Learn, SET_Popup, Data_Commands, SET_Data_Commands }) {
     const [Docthu, SET_Docthu] = useState("")
     return (
@@ -101,7 +100,7 @@ export default function Show_tienganhphothong_phanbaihoc({ Data_Learn, SET_Data_
 
 
             <hr />
-            <Show_tienganhphothong_hocphatam />
+          
             <button style={{ display: "none" }} onClick={() => {
                 if ($("#messageRes").val() !== "" && Docthu === "Docthu") {
                     SET_Docthu("A");

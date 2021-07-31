@@ -5,6 +5,8 @@ import Linkapi from "../../api/Linkapi"
 import FullScreen from "../../fullscreen/fullscreen"
 import Show_QuangCao from "../../Show/Show_QuangCao"
 import Show_tienganhphothong_phanbaihoc from "../../Show/Show_tienganhphothong_phanbaihoc"
+import Show_tienganhphothong_hocphatam from "../../Show/Show_tienganhphothong_hocphatam"
+
 import Dictaphone from "../../../pages/helpers/RegcognitionV1-0-1AI0.2LearnBasic"
 const queryString = require('query-string');
 let linkReset = ""
@@ -140,6 +142,8 @@ export default function Show_Tieng_anh_lop_1(Dulieu_tieng_anh_lop_1, tokenCheck,
                                         <i >Bản dịch tiếng việt vài nơi còn chưa chuẩn ngữ nghĩa, quý vị phụ huynh và học sinh thông cảm. Chúng tôi sẽ cố gắng cải thiện trong thời gian tới.</i>
                                     </div>
                                     <img src={Dulieu_tieng_anh_lop_1[Num_page].img} alt={Dulieu_tieng_anh_lop_1[Num_page].img} width="100%" />
+                                    <hr />
+                                    <Show_tienganhphothong_hocphatam />
                                     <hr />
                                     {Show_QuangCao()}
                                 </div>
