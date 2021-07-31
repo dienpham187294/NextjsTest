@@ -5,7 +5,7 @@ import Linkapi from "../../api/Linkapi"
 import FullScreen from "../../fullscreen/fullscreen"
 import Show_QuangCao from "../../Show/Show_QuangCao"
 import Show_tienganhphothong_phanbaihoc from "../../Show/Show_tienganhphothong_phanbaihoc"
-
+import Dictaphone from "../../../pages/helpers/RegcognitionV1-0-1AI0.2LearnBasic"
 const queryString = require('query-string');
 let linkReset = ""
 let statusCount = 0;
@@ -20,7 +20,7 @@ export default function Show_Tieng_anh_lop_1(Dulieu_tieng_anh_lop_1, tokenCheck,
 
     const [Popup, SET_Popup] = useState("")
 
-
+    const [Data_Commands, SET_Data_Commands] = useState("====")
     useEffect(() => {
         setTimeout(() => {
             const parsed = queryString.parse(window.location.search);
@@ -144,13 +144,16 @@ export default function Show_Tieng_anh_lop_1(Dulieu_tieng_anh_lop_1, tokenCheck,
                                     {Show_QuangCao()}
                                 </div>
                                 :
-                                <Show_tienganhphothong_phanbaihoc Data_Learn={Data_Learn} SET_Data_Learn={SET_Data_Learn} SET_Popup={SET_Popup} />
+                                <Show_tienganhphothong_phanbaihoc Data_Learn={Data_Learn} SET_Data_Learn={SET_Data_Learn} SET_Popup={SET_Popup} Data_Commands={Data_Commands} SET_Data_Commands={SET_Data_Commands} />
                             }
                         </div>
                     }
                     <hr />
                 </div>
                 <Read_ReactSpeech />
+                <Dictaphone
+                    Data={Data_Commands}
+                />
                 <Dictionary_with_image Popup={Popup} />
                 <p id="DataAcross"></p>
             </div >

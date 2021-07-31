@@ -1,9 +1,8 @@
 import { useState } from "react"
-import Dictaphone from "../../pages/helpers/RegcognitionV1-0-1AI0.2LearnBasic"
+
 import ReadMessage from "../Read/ReadMessage"
 import Show_tienganhphothong_hocphatam from "./Show_tienganhphothong_hocphatam"
-export default function Show_tienganhphothong_phanbaihoc({ Data_Learn, SET_Data_Learn, SET_Popup }) {
-    const [Data_Commands, SET_Data_Commands] = useState("====")
+export default function Show_tienganhphothong_phanbaihoc({ Data_Learn, SET_Data_Learn, SET_Popup, Data_Commands, SET_Data_Commands }) {
     const [Docthu, SET_Docthu] = useState("")
     return (
         <div className="text-justify">
@@ -100,9 +99,7 @@ export default function Show_tienganhphothong_phanbaihoc({ Data_Learn, SET_Data_
             </div>
             <hr />
 
-            <Dictaphone
-                Data={Data_Commands}
-            />
+
             <hr />
             <Show_tienganhphothong_hocphatam />
             <button style={{ display: "none" }} onClick={() => {
