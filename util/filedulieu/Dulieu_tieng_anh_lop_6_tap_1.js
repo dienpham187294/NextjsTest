@@ -67,7 +67,7 @@ export default [
                 "IPA": "Oh, ˈsʌmˌwʌnz ˈnɑkɪŋ ˈæt ðə ˈdɔɹ"
             },
             {
-                "EN": "Hi, Vy. You're early. ",
+                "EN": "Hi, Vy. You're early.",
                 "VN": "Chào Vy. Cháu đến sớm quá.",
                 "IPA": "haɪ Vy. ˈjuɹ ˈɜː.li"
             },
@@ -77,12 +77,12 @@ export default [
                 "IPA": "Phong's ˈhævɪŋ ˈbɹɛkfəst"
             },
             {
-                "EN": "Hi, Mrs Nguyen. ",
+                "EN": "Hi, Mrs Nguyen.",
                 "VN": "Chào bà Nguyễn.",
                 "IPA": "haɪ ˈmɪsɪz Nguyen."
             },
             {
-                "EN": "Oh dear, I'm sorry. ",
+                "EN": "Oh dear, I'm sorry.",
                 "VN": "Ôi trời, cháu xin lỗi.",
                 "IPA": "Oh ˈdɪɹ ˌaɪˈem ˈsɔːr.i"
             },
@@ -122,7 +122,7 @@ export default [
                 "IPA": "haɪ Duy. naɪs tuː miːt jʊ"
             },
             {
-                "EN": "Hi, Phong. Nice to meet you too. ",
+                "EN": "Hi, Phong. Nice to meet you too.",
                 "VN": "Chào Phong. Cũng hân hạnh được gặp bạn.",
                 "IPA": "haɪ Phong. naɪs tuː miːt jʊ tuː"
             },
@@ -137,12 +137,12 @@ export default [
                 "IPA": "aj ɡoʊ tuː ðə ˈseɪm skuːl ˈæz jʊ"
             },
             {
-                "EN": "That's good. ",
+                "EN": "That's good.",
                 "VN": "Tốt đấy.",
                 "IPA": "ðæts ɡʊd"
             },
             {
-                "EN": "School will be great - you'll see. ",
+                "EN": "School will be great - you'll see.",
                 "VN": "Trường học sẽ rất tuyệt - bạn sẽ thấy điều đó.",
                 "IPA": "skuːl wɪl biː ˈɡɹeɪt - ˈjuɫ ˈsi"
             },
@@ -152,7 +152,7 @@ export default [
                 "IPA": "Hmm, jɔːr skuːl ˈbæɡ lʊks ˈhɛvi"
             },
             {
-                "EN": "Yes, it is. ",
+                "EN": "Yes, it is.",
                 "VN": "Vâng, đúng vậy.",
                 "IPA": "jes ɪt ɪz"
             },
@@ -222,7 +222,7 @@ export default [
                 "IPA": "Phong ɪz ˈwɛɹɪŋ ə skuːl ˈjunəˌfɔrm"
             },
             {
-                "EN": "Find these expressions in the conversation. ",
+                "EN": "Find these expressions in the conversation.",
                 "VN": "Tìm những biểu hiện này trong cuộc hội thoại.",
                 "IPA": "ˈfaɪnd ˈðiz ɪkˈsprɛʃənz ɪn ðə ˌkɑːn.vɚˈseɪ.ʃən"
             },
@@ -252,12 +252,12 @@ export default [
                 "IPA": "ˈʃʊɹ"
             },
             {
-                "EN": "Work in pairs. ",
+                "EN": "Work in pairs.",
                 "VN": "Làm việc theo cặp.",
                 "IPA": "wɝːk ɪn peər"
             },
             {
-                "EN": "Create short role-plays with the expressions. ",
+                "EN": "Create short role-plays with the expressions.",
                 "VN": "Tạo các màn đóng vai ngắn với các biểu cảm.",
                 "IPA": "kriˈeɪt ʃɔːrt roʊl-pleɪz wɪð ðə ɪkˈsprɛʃənz"
             },
@@ -272,7 +272,7 @@ export default [
                 "IPA": "ɪɡˈzæmpəɫ"
             },
             {
-                "EN": "oh dear. I forgot my calculator. ",
+                "EN": "oh dear. I forgot my calculator.",
                 "VN": "trời ơi. Tôi quên máy tính của tôi.",
                 "IPA": "oh ˈdɪɹ aj fɝˈɡɑt mai ˈkæɫkjəˌɫeɪtɝ"
             },
@@ -302,12 +302,12 @@ export default [
                 "IPA": "ˈɡɛt ʌp Nam"
             },
             {
-                "EN": "You're going back to school ",
+                "EN": "You're going back to school",
                 "VN": "Bạn sẽ trở lại trường học",
                 "IPA": "ˈjuɹ ˈɡoʊɪn ˈbæk tuː skuːl"
             },
             {
-                "EN": "Your friends are going back to school, too. ",
+                "EN": "Your friends are going back to school, too.",
                 "VN": "Bạn bè của bạn cũng đang trở lại trường học.",
                 "IPA": "jɔːr frends ɑːr ˈɡoʊɪn ˈbæk tuː skuːl tuː"
             },
@@ -327,7 +327,7 @@ export default [
                 "IPA": "nəʊ"
             },
             {
-                "EN": "You've got new pens ",
+                "EN": "You've got new pens",
                 "VN": "Bạn có bút mới",
                 "IPA": "juv ˈɡɑt ˈnju ˈpɛnz"
             },
@@ -337,12 +337,12 @@ export default [
                 "IPA": "jɔːr frends ɑːr ɒn ðer ˈweɪ"
             },
             {
-                "EN": "Work in pairs. ",
+                "EN": "Work in pairs.",
                 "VN": "Làm việc theo cặp.",
                 "IPA": "wɝːk ɪn peər"
             },
             {
-                "EN": "Write a poem about your partner. ",
+                "EN": "Write a poem about your partner.",
                 "VN": "Viết một bài thơ về đối tác của bạn.",
                 "IPA": "raɪt ə ˈpoʊəm əˈbaʊt jɔːr ˈpɑːt.nər"
             },
@@ -362,12 +362,12 @@ export default [
                 "IPA": "ˈjuɹ ˈɡoʊɪn ˈbæk tuː skuːl"
             },
             {
-                "EN": "Work in pairs. ",
+                "EN": "Work in pairs.",
                 "VN": "Làm việc theo cặp.",
                 "IPA": "wɝːk ɪn peər"
             },
             {
-                "EN": "Write a poem about your partner. ",
+                "EN": "Write a poem about your partner.",
                 "VN": "Viết một bài thơ về đối tác của bạn.",
                 "IPA": "raɪt ə ˈpoʊəm əˈbaʊt jɔːr ˈpɑːt.nər"
             },
@@ -377,7 +377,7 @@ export default [
                 "IPA": "naʊ riːd ðə ˈpoʊəm tuː jɔːr ˈpɑːt.nər"
             },
             {
-                "EN": "Match the words with the school things. ",
+                "EN": "Match the words with the school things.",
                 "VN": "Nối các từ với những thứ ở trường.",
                 "IPA": "mætʃ ðə wɝːd wɪð ðə skuːl ˈθɪŋz"
             },
@@ -392,7 +392,7 @@ export default [
                 "IPA": "ˈbaɪsɪkəl"
             },
             {
-                "EN": "pencil sharpener ",
+                "EN": "pencil sharpener",
                 "VN": "cái gọt bút chì",
                 "IPA": "ˈpɛnsəɫ ˈʃɑː.pən.ər"
             },
@@ -437,12 +437,12 @@ export default [
                 "IPA": "skuːl ˈbæɡ"
             },
             {
-                "EN": "Look around the class ",
+                "EN": "Look around the class",
                 "VN": "Nhìn quanh lớp",
                 "IPA": "lʊk ɝˈaʊn ðə klɑːs"
             },
             {
-                "EN": "what other things do you have in your classroom? ",
+                "EN": "what other things do you have in your classroom?",
                 "VN": "những thứ khác bạn có trong lớp học của bạn là gì?",
                 "IPA": "wɑːt ˈəðɝ ˈθɪŋz ˈdu jʊ hæv ɪn jɔːr ˈklɑːs.ruːm"
             },
@@ -517,7 +517,7 @@ export default [
                 "IPA": "ˈfʊtˌbɔɫ"
             },
             {
-                "EN": "homework ",
+                "EN": "homework",
                 "VN": "bài tập về nhà",
                 "IPA": "ˈhoʊmˌwɝk"
             },
@@ -527,7 +527,7 @@ export default [
                 "IPA": "ˈlɛsənz"
             },
             {
-                "EN": "judo ",
+                "EN": "judo",
                 "VN": "judo",
                 "IPA": "ˈʤuˌdoʊ"
             },
@@ -537,7 +537,7 @@ export default [
                 "IPA": "ˈmjuzɪk"
             },
             {
-                "EN": "school lunch ",
+                "EN": "school lunch",
                 "VN": "Bữa trưa ở trường học",
                 "IPA": "skuːl ˈɫəntʃ"
             },
@@ -607,7 +607,7 @@ export default [
                 "IPA": "ˈhoʊmˌwɝk"
             },
             {
-                "EN": "football ",
+                "EN": "football",
                 "VN": "bóng đá",
                 "IPA": "ˈfʊtˌbɔɫ"
             },
@@ -627,32 +627,32 @@ export default [
                 "IPA": "pɹəˌnənsiˈeɪʃən"
             },
             {
-                "EN": "Listen and repeat. ",
+                "EN": "Listen and repeat.",
                 "VN": "Lắng nghe và lặp lại.",
                 "IPA": "ˈlɪs.ən ænd rɪˈpiːt"
             },
             {
-                "EN": "judo ",
+                "EN": "judo",
                 "VN": "judo",
                 "IPA": "ˈʤuˌdoʊ"
             },
             {
-                "EN": "going ",
+                "EN": "going",
                 "VN": "đang đi",
                 "IPA": "ˈɡoʊɪn"
             },
             {
-                "EN": "homework ",
+                "EN": "homework",
                 "VN": "bài tập về nhà",
                 "IPA": "ˈhoʊmˌwɝk"
             },
             {
-                "EN": "brother ",
+                "EN": "brother",
                 "VN": "Anh trai",
                 "IPA": "ˈbɹəðɝ"
             },
             {
-                "EN": "Monday ",
+                "EN": "Monday",
                 "VN": "Thứ hai",
                 "IPA": "ˈmənˌdeɪ"
             },
@@ -677,7 +677,7 @@ export default [
                 "IPA": "ˈlɪs.ən tuː ðə wɝːd ænd pʊt ðem ˈɪntu tuː ɡruːp"
             },
             {
-                "EN": "some ",
+                "EN": "some",
                 "VN": "một vài",
                 "IPA": "ˈsəm"
             },
@@ -687,22 +687,22 @@ export default [
                 "IPA": "roʊd"
             },
             {
-                "EN": "don't ",
+                "EN": "don't",
                 "VN": "đừng",
                 "IPA": "doʊnt"
             },
             {
-                "EN": "hope ",
+                "EN": "hope",
                 "VN": "mong",
                 "IPA": "ˈhoʊp"
             },
             {
-                "EN": "Monday ",
+                "EN": "Monday",
                 "VN": "Thứ hai",
                 "IPA": "ˈmənˌdeɪ"
             },
             {
-                "EN": "homework ",
+                "EN": "homework",
                 "VN": "bài tập về nhà",
                 "IPA": "ˈhoʊmˌwɝk"
             },
@@ -712,12 +712,12 @@ export default [
                 "IPA": "mʌnθ"
             },
             {
-                "EN": "come ",
+                "EN": "come",
                 "VN": "đến",
                 "IPA": "kʌm"
             },
             {
-                "EN": "post ",
+                "EN": "post",
                 "VN": "Bưu kiện",
                 "IPA": "poʊst"
             },
@@ -727,12 +727,12 @@ export default [
                 "IPA": "wan"
             },
             {
-                "EN": "Listen and repeat. ",
+                "EN": "Listen and repeat.",
                 "VN": "Lắng nghe và lặp lại.",
                 "IPA": "ˈlɪs.ən ænd rɪˈpiːt"
             },
             {
-                "EN": "Underline ",
+                "EN": "Underline",
                 "VN": "Gạch chân",
                 "IPA": "ˈəndɝˌɫaɪn"
             },
@@ -742,7 +742,7 @@ export default [
                 "IPA": "ðə ˈsaʊndz"
             },
             {
-                "EN": "They are going to open a new library. ",
+                "EN": "They are going to open a new library.",
                 "VN": "Họ sẽ mở một thư viện mới.",
                 "IPA": "ðeɪ ɑːr ˈɡoʊɪn tuː ˈəʊ.pən ə ˈnju ˈlaɪ.brər.i"
             },
@@ -787,7 +787,7 @@ export default [
                 "IPA": "ˈɡɹæmɝ"
             },
             {
-                "EN": "The present simple ",
+                "EN": "The present simple",
                 "VN": "Hiện tại đơn",
                 "IPA": "ðə ˈprez.ənt ˈsɪmpəɫ"
             },
@@ -797,7 +797,7 @@ export default [
                 "IPA": "ðə ˈprez.ənt kənˈtɪnjuəs"
             },
             {
-                "EN": "Miss Nguyet is interviewing Duy for the school newsletter. ",
+                "EN": "Miss Nguyet is interviewing Duy for the school newsletter.",
                 "VN": "Cô Nguyệt đang phỏng vấn Duy cho bản tin của trường.",
                 "IPA": "mɪs Nguyet ɪz ˈɪntərˌvjuɪŋ Duy ˈfɔɹ ðə skuːl ˈnuˌzlɛtər"
             },
@@ -857,12 +857,12 @@ export default [
                 "IPA": "ðə ˈprez.ənt ˈsɪmpəɫ"
             },
             {
-                "EN": "Positive ",
+                "EN": "Positive",
                 "VN": "Tích cực",
                 "IPA": "ˈpɑzətɪv"
             },
             {
-                "EN": "Work in pairs. ",
+                "EN": "Work in pairs.",
                 "VN": "Làm việc theo cặp.",
                 "IPA": "wɝːk ɪn peər"
             },
@@ -872,17 +872,17 @@ export default [
                 "IPA": "ˈmeɪk ˈkwes.tʃən ˈðɛn ˈɪn.tə.vjuː jɔːr ˈpɑːt.nər"
             },
             {
-                "EN": "you ",
+                "EN": "you",
                 "VN": "bạn",
                 "IPA": "jʊ"
             },
             {
-                "EN": "ride ",
+                "EN": "ride",
                 "VN": "điều khiển",
                 "IPA": "ˈɹaɪd"
             },
             {
-                "EN": "your bicycle ",
+                "EN": "your bicycle",
                 "VN": "xe đạp của bạn",
                 "IPA": "jɔːr ˈbaɪsɪkəl"
             },
@@ -892,17 +892,17 @@ export default [
                 "IPA": "skuːl"
             },
             {
-                "EN": "you ",
+                "EN": "you",
                 "VN": "bạn",
                 "IPA": "jʊ"
             },
             {
-                "EN": "read ",
+                "EN": "read",
                 "VN": "đọc",
                 "IPA": "riːd"
             },
             {
-                "EN": "in the library ",
+                "EN": "in the library",
                 "VN": "trong thư viện",
                 "IPA": "ɪn ðə ˈlaɪ.brər.i"
             },
@@ -912,7 +912,7 @@ export default [
                 "IPA": "ˈæt ˈbɹeɪk taɪm"
             },
             {
-                "EN": "you ",
+                "EN": "you",
                 "VN": "bạn",
                 "IPA": "jʊ"
             },
@@ -927,7 +927,7 @@ export default [
                 "IPA": "skuːl"
             },
             {
-                "EN": "your friends ",
+                "EN": "your friends",
                 "VN": "nhưng ngươi bạn của bạn",
                 "IPA": "jɔːr frends"
             },
@@ -937,7 +937,7 @@ export default [
                 "IPA": "ɡoʊ tuː skuːl wɪð jʊ"
             },
             {
-                "EN": "do your homework ",
+                "EN": "do your homework",
                 "VN": "làm bài tập về nhà đi",
                 "IPA": "ˈdu jɔːr ˈhoʊmˌwɝk"
             },
@@ -952,7 +952,7 @@ export default [
         "img": "https://i.postimg.cc/y8DTLd8p/English-6-ebook-Tap-1-06.jpg",
         "data": [
             {
-                "EN": "Listen to part of the conversation from Getting Started again. ",
+                "EN": "Listen to part of the conversation from Getting Started again.",
                 "VN": "Nghe lại một phần của cuộc trò chuyện từ lúc Bắt đầu.",
                 "IPA": "ˈlɪs.ən tuː ˈpɑɹt əv ðə ˌkɑːn.vɚˈseɪ.ʃən frɒm ˈɡɛtɪŋ ˈstɑɹtɪd əˈɡeɪn"
             },
@@ -967,7 +967,7 @@ export default [
                 "IPA": "Oh, ˈsʌmˌwʌnz ˈnɑkɪŋ ˈæt ðə ˈdɔɹ"
             },
             {
-                "EN": "Hi, Vy. You're early! ",
+                "EN": "Hi, Vy. You're early!",
                 "VN": "Chào Vy. Bạn đến sớm thế!",
                 "IPA": "haɪ Vy. ˈjuɹ ˈɜː.li"
             },
@@ -1012,12 +1012,12 @@ export default [
                 "IPA": "haɪ Trang,"
             },
             {
-                "EN": "How are you? ",
+                "EN": "How are you?",
                 "VN": "Bạn khỏe không?",
                 "IPA": "haʊ ɑːr jʊ"
             },
             {
-                "EN": "This is the first week at my new school. ",
+                "EN": "This is the first week at my new school.",
                 "VN": "Đây là tuần đầu tiên ở trường mới của tôi.",
                 "IPA": "ðɪs ɪz ðə ˈfɝst ˈwik ˈæt mai ˈnju skuːl"
             },
@@ -1032,7 +1032,7 @@ export default [
                 "IPA": "aj hæv ˈɫɑts tuː ˈdu ɔˈɹɛdi"
             },
             {
-                "EN": "I have lots of friends and they are all nice to me. ",
+                "EN": "I have lots of friends and they are all nice to me.",
                 "VN": "Tôi có rất nhiều bạn bè và họ đều tốt với tôi.",
                 "IPA": "aj hæv ˈɫɑts əv frends ænd ðeɪ ɑːr ˈɔɫ naɪs tuː miː"
             },
@@ -1042,17 +1042,17 @@ export default [
                 "IPA": "wiː ˈstʌd.i ˈmɛni ˈsəbdʒɪkts - ˈmæθs ˈsaɪəns ænd ˈɪŋɡɫɪʃ əv ˈkɔɹs"
             },
             {
-                "EN": "I have a new uniform, but I don't wear it every day ",
+                "EN": "I have a new uniform, but I don't wear it every day",
                 "VN": "Tôi có một bộ đồng phục mới, nhưng tôi không mặc nó mỗi ngày",
                 "IPA": "aj hæv ə ˈnju ˈjunəˌfɔrm ˈbət aj doʊnt ˈwɛɹ ɪt ˈɛvɝi ˈdeɪ"
             },
             {
-                "EN": "only on Mondays and Saturdays ",
+                "EN": "only on Mondays and Saturdays",
                 "VN": "chỉ vào thứ Hai và thứ Bảy",
                 "IPA": "ˈoʊnɫi ɒn ˈmənˌdeɪz ænd ˈsætɝdeɪz"
             },
             {
-                "EN": "I have lessons in the morning. ",
+                "EN": "I have lessons in the morning.",
                 "VN": "Tôi có bài học vào buổi sáng.",
                 "IPA": "aj hæv ˈlɛsənz ɪn ðə ˈmɔː.nɪŋ"
             },
@@ -1062,12 +1062,12 @@ export default [
                 "IPA": "ɪn ðə ˌæftɝˈnun aj riːd ˈbʊks ɪn ðə ˈlaɪ.brər.i ˈɔɹ ˈdu ˈspɔɹts ɪn ðə ˈpleɪ.ɡraʊnd"
             },
             {
-                "EN": "How is your new school? ",
+                "EN": "How is your new school?",
                 "VN": "Thế nào là trường mới của bạn?",
                 "IPA": "haʊ ɪz jɔːr ˈnju skuːl"
             },
             {
-                "EN": "Do you study the same subjects as me? ",
+                "EN": "Do you study the same subjects as me?",
                 "VN": "Bạn có học cùng môn với tôi không?",
                 "IPA": "ˈdu jʊ ˈstʌd.i ðə ˈseɪm ˈsəbdʒɪkts ˈæz miː"
             },
@@ -1077,7 +1077,7 @@ export default [
                 "IPA": "ˈdu jʊ pleɪ ˈbædˌmɪntən wɪð jɔːr frends"
             },
             {
-                "EN": "School starts again next Monday. ",
+                "EN": "School starts again next Monday.",
                 "VN": "Trường học bắt đầu học trở lại vào thứ Hai tới.",
                 "IPA": "skuːl stɑːts əˈɡeɪn nekst ˈmənˌdeɪ"
             },
@@ -1087,7 +1087,7 @@ export default [
                 "IPA": "ɪts ˈɫeɪt naʊ soʊ ɡʊd ˈnaɪt"
             },
             {
-                "EN": "Please write soon. ",
+                "EN": "Please write soon.",
                 "VN": "Xin vui lòng hồi âm sớm.",
                 "IPA": "pliːz raɪt ˈsun"
             },
@@ -1097,12 +1097,12 @@ export default [
                 "IPA": "ˈɫəv"
             },
             {
-                "EN": "Then Underline things that often happen or are fixed. ",
+                "EN": "Then Underline things that often happen or are fixed.",
                 "VN": "Sau đó Gạch chân những điều thường xảy ra hoặc đã được khắc phục.",
                 "IPA": "ˈðɛn ˈəndɝˌɫaɪn ˈθɪŋz ðæt ˈɔfən ˈhæpən ˈɔɹ ɑːr fɪkst"
             },
             {
-                "EN": "Then underline things that are happening now. ",
+                "EN": "Then underline things that are happening now.",
                 "VN": "Sau đó, gạch chân những điều đang xảy ra bây giờ.",
                 "IPA": "ˈðɛn ˈəndɝˌɫaɪn ˈθɪŋz ðæt ɑːr ˈhæpənɪŋ naʊ"
             },
@@ -1187,7 +1187,7 @@ export default [
                 "IPA": "ˈwɛɹ ˈdu jʊ ɡoʊ ˈʃɑpɪŋ"
             },
             {
-                "EN": "Write one or two more questions on a piece of paper. ",
+                "EN": "Write one or two more questions on a piece of paper.",
                 "VN": "Viết thêm một hoặc hai câu hỏi vào một tờ giấy.",
                 "IPA": "raɪt wan ˈɔɹ tuː mɔːr ˈkwes.tʃən ɒn ə ˈpis əv ˈpeɪ.pər"
             },
@@ -1202,22 +1202,22 @@ export default [
                 "IPA": "ˈɛkstrə voʊˈkæbjəˌɫɛɹi"
             },
             {
-                "EN": "pocket money ",
+                "EN": "pocket money",
                 "VN": "tiền tiêu vặt",
                 "IPA": "ˈpɑkət ˈməni"
             },
             {
-                "EN": "remember ",
+                "EN": "remember",
                 "VN": "nhớ",
                 "IPA": "ɹiˈmɛmbɝ"
             },
             {
-                "EN": "share ",
+                "EN": "share",
                 "VN": "chia sẻ",
                 "IPA": "ˈʃɛɹ"
             },
             {
-                "EN": "help ",
+                "EN": "help",
                 "VN": "Cứu giúp",
                 "IPA": "ˈhɛɫp"
             },
@@ -1227,7 +1227,7 @@ export default [
                 "IPA": "ˈkɫæsˌmeɪt"
             },
             {
-                "EN": "There is a quiz for students in the new school newsletter. ",
+                "EN": "There is a quiz for students in the new school newsletter.",
                 "VN": "Có một câu đố dành cho học sinh trong bản tin năm học mới.",
                 "IPA": "ˈðɛɹ ɪz ə kwɪz ˈfɔɹ ˈstjuːdənts ɪn ðə ˈnju skuːl ˈnuˌzlɛtər"
             },
@@ -1237,7 +1237,7 @@ export default [
                 "IPA": "riːd ðə ˈkwes.tʃən"
             },
             {
-                "EN": "Do you remember all your new classmates' names? ",
+                "EN": "Do you remember all your new classmates' names?",
                 "VN": "Bạn có nhớ tất cả tên các bạn học mới của mình không?",
                 "IPA": "ˈdu jʊ ɹiˈmɛmbɝ ˈɔɫ jɔːr ˈnju ˈklɑːs.meɪt neɪm's"
             },
@@ -1247,27 +1247,27 @@ export default [
                 "IPA": "ˈdu jʊ ˈhɛɫp jɔːr ˈtitʃɝ ɪn ðə klɑːs"
             },
             {
-                "EN": "Do you share things with your classmates? ",
+                "EN": "Do you share things with your classmates?",
                 "VN": "Bạn có chia sẻ những điều với các bạn cùng lớp của mình không?",
                 "IPA": "ˈdu jʊ ˈʃɛɹ ˈθɪŋz wɪð jɔːr ˈklɑːs.meɪt"
             },
             {
-                "EN": "Do you keep quiet when your teacher is talking? ",
+                "EN": "Do you keep quiet when your teacher is talking?",
                 "VN": "Bạn có giữ im lặng khi giáo viên của bạn đang nói chuyện không?",
                 "IPA": "ˈdu jʊ ˈkip ˈkwaɪ.ət ˈhwɛn jɔːr ˈtitʃɝ ɪz ˈtɔkɪŋ"
             },
             {
-                "EN": "Do you play with your classmates at break time? ",
+                "EN": "Do you play with your classmates at break time?",
                 "VN": "Bạn có chơi với các bạn cùng lớp vào giờ giải lao không?",
                 "IPA": "ˈdu jʊ pleɪ wɪð jɔːr ˈklɑːs.meɪt ˈæt ˈbɹeɪk taɪm"
             },
             {
-                "EN": "Do you help your classmates with their homework? ",
+                "EN": "Do you help your classmates with their homework?",
                 "VN": "Bạn có giúp các bạn cùng lớp làm bài tập không?",
                 "IPA": "ˈdu jʊ ˈhɛɫp jɔːr ˈklɑːs.meɪt wɪð ðer ˈhoʊmˌwɝk"
             },
             {
-                "EN": "Do you travel to school with your classmates? ",
+                "EN": "Do you travel to school with your classmates?",
                 "VN": "Bạn có đi du lịch đến trường với các bạn cùng lớp của bạn không?",
                 "IPA": "ˈdu jʊ ˈtɹævəɫ tuː skuːl wɪð jɔːr ˈklɑːs.meɪt"
             },
@@ -1277,7 +1277,7 @@ export default [
                 "IPA": "ˈdu jʊ ˈlɪs.ən ˈhwɛn jɔːr ˈklɑːs.meɪt ɑːr ˈtɔkɪŋ"
             },
             {
-                "EN": "Work in groups. ",
+                "EN": "Work in groups.",
                 "VN": "Làm việc nhóm.",
                 "IPA": "wɝːk ɪn ɡruːp"
             },
@@ -1292,12 +1292,12 @@ export default [
                 "IPA": "ˈjus ðə ˈkwes.tʃən"
             },
             {
-                "EN": "Class presentation. ",
+                "EN": "Class presentation.",
                 "VN": "Thuyết trình trên lớp.",
                 "IPA": "klɑːs ˌprɛzənˈteɪʃən"
             },
             {
-                "EN": "Are they good friends in class? ",
+                "EN": "Are they good friends in class?",
                 "VN": "Họ có phải là những người bạn tốt trong lớp không?",
                 "IPA": "ɑːr ðeɪ ɡʊd frends ɪn klɑːs"
             },
@@ -1322,7 +1322,7 @@ export default [
                 "IPA": "ˈɹɛdɪŋ"
             },
             {
-                "EN": "Look at the pictures. ",
+                "EN": "Look at the pictures.",
                 "VN": "Nhìn vào những bức tranh.",
                 "IPA": "lʊk ˈæt ðə ˈpɪktʃɝz"
             },
@@ -1332,7 +1332,7 @@ export default [
                 "IPA": "wɑːt ˈdu ðeɪ ˈtɛɫ jʊ əˈbaʊt ðə ˈskuɫz"
             },
             {
-                "EN": "Presbyterian Ladies College Sydney is a school for girls in Sydney. ",
+                "EN": "Presbyterian Ladies College Sydney is a school for girls in Sydney.",
                 "VN": "Presbyterian Ladies College Sydney là một trường học dành cho nữ sinh ở Sydney.",
                 "IPA": "ˌprɛsbɪˈtɪriən ˈɫeɪdiz ˈkɑɫɪdʒ ˈsɪdni ɪz ə skuːl ˈfɔɹ ˈɡɝɫz ɪn ˈsɪdni"
             },
@@ -1342,17 +1342,17 @@ export default [
                 "IPA": "ɪt ɪz ə ˈbɔrdɪŋ skuːl"
             },
             {
-                "EN": "Students study and live there. ",
+                "EN": "Students study and live there.",
                 "VN": "Sinh viên học tập và sống ở đây.",
                 "IPA": "ˈstjuːdənts ˈstʌd.i ænd ˈɫaɪv ˈðɛɹ"
             },
             {
-                "EN": "About 1,250 girls from age four, kindergarten, to age eighteen, Year 12, go to PLC Sydney. ",
+                "EN": "About 1,250 girls from age four, kindergarten, to age eighteen, Year 12, go to PLC Sydney.",
                 "VN": "Khoảng 1.250 trẻ em gái từ bốn tuổi, mẫu giáo, đến mười tám tuổi, Lớp 12, đến học tại PLC Sydney.",
                 "IPA": "əˈbaʊt 1,250 ˈɡɝɫz frɒm ˈeɪ·dʒɪz fɔːr ˈkɪndɝˌɡɑɹtən tuː ˈeɪ·dʒɪz eɪˈtin jɪr ˈtwɛɫv ɡoʊ tuː PLC ˈsɪdni"
             },
             {
-                "EN": "PLC Sydney has students from all over Australia and overseas. ",
+                "EN": "PLC Sydney has students from all over Australia and overseas.",
                 "VN": "PLC Sydney có sinh viên từ khắp nước Úc và nước ngoài.",
                 "IPA": "PLC ˈsɪdni ˈhæz ˈstjuːdənts frɒm ˈɔɫ ˈoʊvɝ ɔˈstɹeɪɫjə ænd ˈoʊvərˈsiz"
             },
@@ -1367,22 +1367,22 @@ export default [
                 "IPA": "VINABRITA skuːl ɪz ˈæn ˌɪnɝˈnæʃənəɫ skuːl ˈfɔɹ ˈstjuːdənts frɒm jɪr wʌn tuː jɪr ˈtwɛɫv"
             },
             {
-                "EN": "It has big buildings and modern equipment. ",
+                "EN": "It has big buildings and modern equipment.",
                 "VN": "Nó có những tòa nhà lớn và trang thiết bị hiện đại.",
                 "IPA": "ɪt ˈhæz bɪɡ ˈbɪldɪŋz ænd ˈmɒdən ɪˈkwɪpmənt"
             },
             {
-                "EN": "Every day, students learn English with English speaking teachers. ",
+                "EN": "Every day, students learn English with English speaking teachers.",
                 "VN": "Mỗi ngày, học sinh học tiếng Anh với giáo viên nói tiếng Anh.",
                 "IPA": "ˈɛvɝi ˈdeɪ ˈstjuːdənts ˈɫɝn ˈɪŋɡɫɪʃ wɪð ˈɪŋɡɫɪʃ ˈspikɪŋ ˈtitʃɝz"
             },
             {
-                "EN": "In the afternoon, they join many interesting clubs. ",
+                "EN": "In the afternoon, they join many interesting clubs.",
                 "VN": "Vào buổi chiều, họ tham gia nhiều câu lạc bộ thú vị.",
                 "IPA": "ɪn ðə ˌæftɝˈnun ðeɪ ˈdʒɔɪn ˈmɛni ˈɪntɝəstɪŋ klʌbz"
             },
             {
-                "EN": "They play basketball, football and badminton. ",
+                "EN": "They play basketball, football and badminton.",
                 "VN": "Họ chơi bóng rổ, bóng đá và cầu lông.",
                 "IPA": "ðeɪ pleɪ ˈbæskətˌbɔɫ ˈfʊtˌbɔɫ ænd ˈbædˌmɪntən"
             },
@@ -1392,7 +1392,7 @@ export default [
                 "IPA": "ˈsəm kriˈeɪtɪv ˈstjuːdənts ˈdu ˈdrɔɪŋz ænd ˈpeɪntɪŋz ɪn ðə ˈɑɹt ˈkɫəb"
             },
             {
-                "EN": "AN LAC LOWER SECONDARY SCHOOL is in Bac Giang Province. ",
+                "EN": "AN LAC LOWER SECONDARY SCHOOL is in Bac Giang Province.",
                 "VN": "TRƯỜNG THCS AN LẠC thuộc Tỉnh Bắc Giang.",
                 "IPA": "ˈæn LAC ˈloʊər ˈsɛkənˌdɛri skuːl ɪz ɪn Bac ʤiˈɑŋ ˈprɑvəns"
             },
@@ -1402,12 +1402,12 @@ export default [
                 "IPA": "ɪts ə smɑːl skuːl"
             },
             {
-                "EN": "It has 7 classes and 194 students. ",
+                "EN": "It has 7 classes and 194 students.",
                 "VN": "Nó có 7 lớp học và 194 học sinh.",
                 "IPA": "ɪt ˈhæz 7 ˈklæsəz ænd 194 ˈstjuːdənts"
             },
             {
-                "EN": "The school is surrounded by mountains and green fields. ",
+                "EN": "The school is surrounded by mountains and green fields.",
                 "VN": "Trường được bao quanh bởi những ngọn núi và những cánh đồng xanh tươi.",
                 "IPA": "ðə skuːl ɪz səˈraʊndəd ˈbaɪ ˈmaʊntənz ænd ˈɡɹin fildz"
             },
@@ -1417,7 +1417,7 @@ export default [
                 "IPA": "ˈðɛɹ ɪz ə kəmˈpjuː.tər ruːm ænd ə ˈlaɪ.brər.i"
             },
             {
-                "EN": "There is also a school garden and a playground. ",
+                "EN": "There is also a school garden and a playground.",
                 "VN": "Ngoài ra còn có một khu vườn trường và một sân chơi.",
                 "IPA": "ˈðɛɹ ɪz ˈɔɫsoʊ ə skuːl ˈɡɑɹdən ænd ə ˈpleɪ.ɡraʊnd"
             },
@@ -1432,7 +1432,7 @@ export default [
                 "IPA": "riːd ðə ˈtɛkst ˈkwɪkɫi tuː ˈtʃɛk jɔːr aɪˈdiəz"
             },
             {
-                "EN": "Now find these words in the text. ",
+                "EN": "Now find these words in the text.",
                 "VN": "Bây giờ tìm những từ này trong văn bản.",
                 "IPA": "naʊ ˈfaɪnd ˈðiz wɝːd ɪn ðə ˈtɛkst"
             },
@@ -1472,17 +1472,17 @@ export default [
                 "IPA": "ˈspikɪŋ"
             },
             {
-                "EN": "which school would you like to go to? ",
+                "EN": "which school would you like to go to?",
                 "VN": "bạn muốn đi học ở trường nào?",
                 "IPA": "ˈhwɪtʃ skuːl ˈaɪd jʊ ˈɫaɪk tuː ɡoʊ tuː"
             },
             {
-                "EN": "Why? ",
+                "EN": "Why?",
                 "VN": "Tại sao?",
                 "IPA": "ˈwaɪ"
             },
             {
-                "EN": "First complete the table. ",
+                "EN": "First complete the table.",
                 "VN": "Đầu tiên hãy hoàn thành bảng.",
                 "IPA": "ˈfɝst kəmˈpliːt ðə ˈteɪbəɫ"
             },
@@ -1537,7 +1537,7 @@ export default [
                 "IPA": "ˈhi ˈdəzən ˈɫaɪk"
             },
             {
-                "EN": "maths ",
+                "EN": "maths",
                 "VN": "toán học",
                 "IPA": "ˈmæθs"
             },
@@ -1547,7 +1547,7 @@ export default [
                 "IPA": "ˈsaɪəns"
             },
             {
-                "EN": "she is wearing her uniform ",
+                "EN": "she is wearing her uniform",
                 "VN": "cô ấy đang mặc đồng phục của cô ấy",
                 "IPA": "ʃiː ɪz ˈwɛɹɪŋ ˈhɝ ˈjunəˌfɔrm"
             },
@@ -1567,7 +1567,7 @@ export default [
                 "IPA": "viˌɛtnɑˈmis"
             },
             {
-                "EN": "at break time ",
+                "EN": "at break time",
                 "VN": "lúc nghỉ",
                 "IPA": "ˈæt ˈbɹeɪk taɪm"
             },
@@ -1602,12 +1602,12 @@ export default [
                 "IPA": "ˈdəz jɔːr ˈɹaɪtɪŋ hæv kəˈrekt ˌpʌŋkʧuˈeɪʃən"
             },
             {
-                "EN": "Capital letters for: starting sentences names, days and months, the pronoun  ",
+                "EN": "Capital letters for: starting sentences names, days and months, the pronoun ",
                 "VN": "Các chữ cái viết hoa cho: tên câu bắt đầu, ngày và tháng, đại từ",
                 "IPA": "ˈkæpətəl ˈɫɛtɝz ˈfɔɹ ˈstɑrtɪŋ ˈsen.təns neɪm's ˈdeɪz ænd ˈmənθs ðə ˈproʊnaʊn"
             },
             {
-                "EN": "Pauses and endings: commas to separate long sentences and lists of things. ",
+                "EN": "Pauses and endings: commas to separate long sentences and lists of things.",
                 "VN": "Tạm dừng và kết thúc: dấu phẩy để ngăn cách các câu dài và danh sách sự vật.",
                 "IPA": "ˈpɔzəz ænd ˈɛndɪŋz ˈkɑməz tuː ˈsɛprət ˈɫɔŋ ˈsen.təns ænd ˈɫɪsts əv ˈθɪŋz"
             },
@@ -1647,7 +1647,7 @@ export default [
                 "IPA": "wər ˈhævɪŋ ˈæn ˈɪŋɡɫɪʃ ˈles.ən ɪn klɑːs"
             },
             {
-                "EN": "Can you correct the passage? ",
+                "EN": "Can you correct the passage?",
                 "VN": "Bạn có thể sửa đoạn văn được không?",
                 "IPA": "kæn jʊ kəˈrekt ðə ˈpæsəʤ"
             },
@@ -1667,7 +1667,7 @@ export default [
                 "IPA": "ˈθɪŋk əv ə ˈtaɪtəl"
             },
             {
-                "EN": "Write an introduction ",
+                "EN": "Write an introduction",
                 "VN": "Viết lời giới thiệu",
                 "IPA": "raɪt ˈæn ˌɪntɹoʊˈdəkʃən"
             },
@@ -1813,7 +1813,7 @@ export default [
                 "IPA": "ˈbɹɛkfəst"
             },
             {
-                "EN": "Listen. ",
+                "EN": "Listen.",
                 "VN": "Nghe.",
                 "IPA": "ˈlɪs.ən"
             },
@@ -1913,7 +1913,7 @@ export default [
                 "IPA": "naʊ ˈroʊl ˌpleɪ ðə ˈkwes.tʃən ænd ɑːn.sər wɪð ə ˈpɑːt.nər"
             },
             {
-                "EN": "ask and answer questions about school ",
+                "EN": "ask and answer questions about school",
                 "VN": "hỏi và trả lời các câu hỏi về trường học",
                 "IPA": "ˈæsk ænd ˈɑːn.sər ˈkwes.tʃən əˈbaʊt skuːl"
             },
@@ -2003,7 +2003,7 @@ export default [
                 "IPA": "ˈlɪs.ən ænd riːd"
             },
             {
-                "EN": "Wow. That room looks so big, Nick. ",
+                "EN": "Wow. That room looks so big, Nick.",
                 "VN": "Ồ. Căn phòng đó trông rất lớn, Nick.",
                 "IPA": "Wow. ðæt ruːm lʊks soʊ bɪɡ Nick."
             },
@@ -2013,12 +2013,12 @@ export default [
                 "IPA": "aj kæn ˈsi ðerz ə ˈtiˈvi bɪˈhaɪnd jʊ"
             },
             {
-                "EN": "Yes. I’m in the living room. ",
+                "EN": "Yes. I’m in the living room.",
                 "VN": "Đúng. Tôi đang ở trong phòng khách.",
                 "IPA": "jes ˌaɪˈem ɪn ðə ˈɫɪvɪŋ ruːm"
             },
             {
-                "EN": "Can you see my dog Luke? ",
+                "EN": "Can you see my dog Luke?",
                 "VN": "Bạn có thể nhìn thấy con chó Luke của tôi không?",
                 "IPA": "kæn jʊ ˈsi mai ˈdɔɡ luːk"
             },
@@ -2033,7 +2033,7 @@ export default [
                 "IPA": "jes aj kæn ˈhi lʊks ˈhæpi"
             },
             {
-                "EN": "Ha ha, he is. Your room looks nice too. ",
+                "EN": "Ha ha, he is. Your room looks nice too.",
                 "VN": "Ha ha, đúng vậy. Phòng của bạn trông cũng đẹp.",
                 "IPA": "Ha ha, ˈhi ɪz jɔːr ruːm lʊks naɪs tuː"
             },
@@ -2043,17 +2043,17 @@ export default [
                 "IPA": "ˈwɛɹ ˈdu jʊ ˈɫaɪv Mi?"
             },
             {
-                "EN": "I live in a town house. ",
+                "EN": "I live in a town house.",
                 "VN": "Tôi sống trong một ngôi nhà phố.",
                 "IPA": "aj ˈɫaɪv ɪn ə taʊn ˈhaʊs"
             },
             {
-                "EN": "It's near the city centre and it's very noisy. ",
+                "EN": "It's near the city centre and it's very noisy.",
                 "VN": "Nó gần trung tâm thành phố và rất ồn ào.",
                 "IPA": "ɪts ˈnɪɹ ðə ˈsɪti ˈsɛntər ænd ɪts ˈvɛri ˈnɔɪzi"
             },
             {
-                "EN": "How about you? ",
+                "EN": "How about you?",
                 "VN": "Còn bạn thì sao?",
                 "IPA": "haʊ əˈbaʊt jʊ"
             },
@@ -2063,7 +2063,7 @@ export default [
                 "IPA": "ˈwɛɹ ˈdu jʊ ˈɫaɪv"
             },
             {
-                "EN": "I live in a country house. ",
+                "EN": "I live in a country house.",
                 "VN": "Tôi sống trong một ngôi nhà nông thôn.",
                 "IPA": "aj ˈɫaɪv ɪn ə ˈkəntɹi ˈhaʊs"
             },
@@ -2073,7 +2073,7 @@ export default [
                 "IPA": "huː ˈdu jʊ ˈɫaɪv wɪð"
             },
             {
-                "EN": "I live with my father, mother and younger brother. ",
+                "EN": "I live with my father, mother and younger brother.",
                 "VN": "Tôi sống với bố, mẹ và em trai.",
                 "IPA": "aj ˈɫaɪv wɪð mai ˈfɑðɝ ˈməðɝ ænd ˈjəŋɡɝ ˈbɹəðɝ"
             },
@@ -2088,7 +2088,7 @@ export default [
                 "IPA": "ɑːr jʊ"
             },
             {
-                "EN": "Yes, we are. ",
+                "EN": "Yes, we are.",
                 "VN": "Vâng tất cả chúng tôi.",
                 "IPA": "jes wiː ɑːr"
             },
@@ -2103,12 +2103,12 @@ export default [
                 "IPA": "ɑːr ˈðɛɹ ˈmɛni ˈrumz ɪn jɔːr ˈnju əˈpɑːtmənt"
             },
             {
-                "EN": "Yes, there are. ",
+                "EN": "Yes, there are.",
                 "VN": "Có, có.",
                 "IPA": "jes ˈðɛɹ ɑːr"
             },
             {
-                "EN": "There's a living room, three bedrooms, a kitchen and two bathrooms. ",
+                "EN": "There's a living room, three bedrooms, a kitchen and two bathrooms.",
                 "VN": "Có một phòng khách, ba phòng ngủ, một nhà bếp và hai phòng tắm.",
                 "IPA": "ðerz ə ˈɫɪvɪŋ ruːm θriː ˈbɛˌdɹumz ə ˈkɪtʃən ænd tuː ˈbæˌθrumz"
             },
@@ -2123,17 +2123,17 @@ export default [
                 "IPA": "ˈsaʊnd əv ˈʃaʊtɪŋ"
             },
             {
-                "EN": "Oh, that's my mum. ",
+                "EN": "Oh, that's my mum.",
                 "VN": "Ồ, đó là mẹ của tôi.",
                 "IPA": "Oh, ðæts mai ˈməm"
             },
             {
-                "EN": "I'd better go. ",
+                "EN": "I'd better go.",
                 "VN": "Tốt hơn là tôi nên đi.",
                 "IPA": "ˈpɹæktəs ˈbɛtər ɡoʊ"
             },
             {
-                "EN": "It's dinner time. ",
+                "EN": "It's dinner time.",
                 "VN": "Đến giờ ăn tối rồi.",
                 "IPA": "ɪts ˈdɪnɝ taɪm"
             },
@@ -2153,7 +2153,7 @@ export default [
                 "IPA": "ˈhwɪtʃ ˈfæməɫi ˈmɛmbɝz ˈdəz Mi tɑːk əˈbaʊt"
             },
             {
-                "EN": "read the conversation again. ",
+                "EN": "read the conversation again.",
                 "VN": "đọc lại đoạn hội thoại.",
                 "IPA": "riːd ðə ˌkɑːn.vɚˈseɪ.ʃən əˈɡeɪn"
             },
@@ -2173,27 +2173,27 @@ export default [
                 "IPA": "mætʃ ðə ˌprɛpəˈzɪʃənz wɪð ðə ˈpɪktʃɝz"
             },
             {
-                "EN": "on ",
+                "EN": "on",
                 "VN": "trên",
                 "IPA": "ɒn"
             },
             {
-                "EN": "behind ",
+                "EN": "behind",
                 "VN": "phía sau",
                 "IPA": "bɪˈhaɪnd"
             },
             {
-                "EN": "in front of ",
+                "EN": "in front of",
                 "VN": "ở đằng trước",
                 "IPA": "ɪn ˈfɹənt əv"
             },
             {
-                "EN": "under ",
+                "EN": "under",
                 "VN": "Dưới",
                 "IPA": "ˈəndɝ"
             },
             {
-                "EN": "between ",
+                "EN": "between",
                 "VN": "ở giữa",
                 "IPA": "bitˈwin"
             },
@@ -2213,7 +2213,7 @@ export default [
                 "IPA": "ðə ˈdɔɡ ɪz ɒn ðə ˈtʃɛɹ"
             },
             {
-                "EN": "Look at the picture and write true or false  for each sentence. ",
+                "EN": "Look at the picture and write true or false  for each sentence.",
                 "VN": "Nhìn vào hình và viết đúng hay sai cho mỗi câu.",
                 "IPA": "lʊk ˈæt ðə ˈpɪktʃɝ ænd raɪt ˈtɹu ˈɔɹ ˈfɔɫs ˈfɔɹ ˈitʃ ˈsɛntəns"
             },
@@ -2253,7 +2253,7 @@ export default [
                 "IPA": "ðə ˈpɪktʃɝz ɑːr ɒn ðə ˈwɔɫ"
             },
             {
-                "EN": "Look at the picture again. ",
+                "EN": "Look at the picture again.",
                 "VN": "Nhìn vào bức tranh một lần nữa.",
                 "IPA": "lʊk ˈæt ðə ˈpɪktʃɝ əˈɡeɪn"
             },
@@ -2308,7 +2308,7 @@ export default [
                 "IPA": "voʊˈkæbjəˌɫɛɹi"
             },
             {
-                "EN": "Look at the house below. ",
+                "EN": "Look at the house below.",
                 "VN": "Hãy nhìn vào ngôi nhà dưới đây.",
                 "IPA": "lʊk ˈæt ðə ˈhaʊs biˈɫoʊ"
             },
@@ -2338,7 +2338,7 @@ export default [
                 "IPA": "ˈbæˌθɹum"
             },
             {
-                "EN": "living room ",
+                "EN": "living room",
                 "VN": "phòng khách",
                 "IPA": "ˈɫɪvɪŋ ruːm"
             },
@@ -2348,12 +2348,12 @@ export default [
                 "IPA": "ˈætɪk"
             },
             {
-                "EN": "Name the things in each room in 1. ",
+                "EN": "Name the things in each room in 1.",
                 "VN": "Tên những thứ ở mỗi phòng trong mục 1.",
                 "IPA": "neɪm ðə ˈθɪŋz ɪn ˈitʃ ruːm ɪn wʌn"
             },
             {
-                "EN": "Use the word list below. ",
+                "EN": "Use the word list below.",
                 "VN": "Sử dụng danh sách từ bên dưới.",
                 "IPA": "ˈjus ðə ˈwɝd lɪst biˈɫoʊ"
             },
@@ -2398,32 +2398,32 @@ export default [
                 "IPA": "læmp"
             },
             {
-                "EN": " toilet ",
+                "EN": " toilet",
                 "VN": " phòng vệ sinh",
                 "IPA": "ˈtɔɪlət"
             },
             {
-                "EN": "bed ",
+                "EN": "bed",
                 "VN": "Giường",
                 "IPA": "ˈbɛd"
             },
             {
-                "EN": "picture ",
+                "EN": "picture",
                 "VN": "bức ảnh",
                 "IPA": "ˈpɪktʃɝ"
             },
             {
-                "EN": "bath ",
+                "EN": "bath",
                 "VN": "bồn tắm",
                 "IPA": "bæθ"
             },
             {
-                "EN": "cupboard ",
+                "EN": "cupboard",
                 "VN": "cái tủ",
                 "IPA": "ˈkəbɝd"
             },
             {
-                "EN": "chest of drawers ",
+                "EN": "chest of drawers",
                 "VN": "tủ ngăn kéo",
                 "IPA": "ʧɛst əv drɔrz"
             },
@@ -2433,12 +2433,12 @@ export default [
                 "IPA": "frɪʤ"
             },
             {
-                "EN": "poster ",
+                "EN": "poster",
                 "VN": "bảng quảng cáo",
                 "IPA": "ˈpoʊstɝ"
             },
             {
-                "EN": "chair ",
+                "EN": "chair",
                 "VN": "cái ghế",
                 "IPA": "ˈtʃɛɹ"
             },
@@ -2448,52 +2448,52 @@ export default [
                 "IPA": "ɛr-kənˈdɪʃənər"
             },
             {
-                "EN": "wardrobe ",
+                "EN": "wardrobe",
                 "VN": "tủ quần áo",
                 "IPA": "ˈwɔɹˌdɹoʊb"
             },
             {
-                "EN": "sink ",
+                "EN": "sink",
                 "VN": "bồn nước",
                 "IPA": "sɪŋk"
             },
             {
-                "EN": "sofa ",
+                "EN": "sofa",
                 "VN": "ghế sô pha",
                 "IPA": "ˈsoʊfə"
             },
             {
-                "EN": "television ",
+                "EN": "television",
                 "VN": "vô tuyến",
                 "IPA": "ˈtɛləˌvɪʒən"
             },
             {
-                "EN": "table ",
+                "EN": "table",
                 "VN": "bàn",
                 "IPA": "ˈteɪbəɫ"
             },
             {
-                "EN": "dishwasher ",
+                "EN": "dishwasher",
                 "VN": "Máy rửa chén",
                 "IPA": "ˈdɪˌʃwɑʃər"
             },
             {
-                "EN": "desk ",
+                "EN": "desk",
                 "VN": "bàn",
                 "IPA": "ˈdɛsk"
             },
             {
-                "EN": "cooker ",
+                "EN": "cooker",
                 "VN": "nồi cơm điện",
                 "IPA": "ˈkʊkə"
             },
             {
-                "EN": "light ",
+                "EN": "light",
                 "VN": "ánh sáng",
                 "IPA": "laɪt"
             },
             {
-                "EN": "microwave ",
+                "EN": "microwave",
                 "VN": "lò vi sóng",
                 "IPA": "ˈmaɪkrəˌweɪv"
             },
@@ -2513,7 +2513,7 @@ export default [
                 "IPA": "kæn jʊ ˈæd ˈɛni mɔːr wɝːd tuː ðə lɪst"
             },
             {
-                "EN": "Think of a room. ",
+                "EN": "Think of a room.",
                 "VN": "Hãy nghĩ về một căn phòng.",
                 "IPA": "ˈθɪŋk əv ə ruːm"
             },
@@ -2528,7 +2528,7 @@ export default [
                 "IPA": "wɑːts ɪn ðə ruːm"
             },
             {
-                "EN": "A sofa and a television. ",
+                "EN": "A sofa and a television.",
                 "VN": "Một chiếc ghế sofa và một chiếc tivi.",
                 "IPA": "ə ˈsoʊfə ænd ə ˈtɛləˌvɪʒən"
             },
@@ -2553,7 +2553,7 @@ export default [
                 "IPA": "ˈlɪs.ən ænd rɪˈpiːt ðə wɝːd"
             },
             {
-                "EN": "lamps ",
+                "EN": "lamps",
                 "VN": "đèn",
                 "IPA": "læmps"
             },
@@ -2563,7 +2563,7 @@ export default [
                 "IPA": "ˈteɪbəɫz"
             },
             {
-                "EN": "posters ",
+                "EN": "posters",
                 "VN": "áp phích",
                 "IPA": "ˈpoʊstɝz"
             },
@@ -2578,7 +2578,7 @@ export default [
                 "IPA": "ˈtɔɪləts"
             },
             {
-                "EN": "fridges ",
+                "EN": "fridges",
                 "VN": "tủ lạnh",
                 "IPA": "ˈfrɪʤəz"
             },
@@ -2608,7 +2608,7 @@ export default [
                 "IPA": "ˈɡɹæmɝ"
             },
             {
-                "EN": "Singular ",
+                "EN": "Singular",
                 "VN": "Số ít",
                 "IPA": "ˈsɪŋgjələr"
             },
@@ -2703,7 +2703,7 @@ export default [
                 "IPA": "raɪt ˈpɑzətɪv ænd ˈnɛgətɪv ˈsen.təns"
             },
             {
-                "EN": "pictures ",
+                "EN": "pictures",
                 "VN": "những bức ảnh",
                 "IPA": "ˈpɪktʃɝz"
             },
@@ -2733,7 +2733,7 @@ export default [
                 "IPA": "ðə ˈteɪbəɫ"
             },
             {
-                "EN": "a brown dog ",
+                "EN": "a brown dog",
                 "VN": "một con chó nâu",
                 "IPA": "ə ˈbɹaʊn ˈdɔɡ"
             },
@@ -2743,17 +2743,17 @@ export default [
                 "IPA": "ðə ˈkɪtʃən"
             },
             {
-                "EN": "the cupboard ",
+                "EN": "the cupboard",
                 "VN": "tủ chén",
                 "IPA": "ðə ˈkəbɝd"
             },
             {
-                "EN": "a bath ",
+                "EN": "a bath",
                 "VN": "Tắm",
                 "IPA": "ə bæθ"
             },
             {
-                "EN": "the bathroom ",
+                "EN": "the bathroom",
                 "VN": "phòng tắm",
                 "IPA": "ðə ˈbæˌθɹum"
             },
@@ -2808,7 +2808,7 @@ export default [
                 "IPA": "ɪn peər ˈæsk ænd ˈɑːn.sər ðə ˈkwes.tʃən ɪn 5, ɹiˈpɔɹt jɔːr ˈpɑɹtnɝz ɑːn.sər tuː ðə klɑːs"
             },
             {
-                "EN": "Are there two bathrooms in your house? ",
+                "EN": "Are there two bathrooms in your house?",
                 "VN": "Có hai phòng tắm trong nhà của bạn?",
                 "IPA": "ɑːr ˈðɛɹ tuː ˈbæˌθrumz ɪn jɔːr ˈhaʊs"
             },
@@ -2823,7 +2823,7 @@ export default [
                 "IPA": "nəʊ ˈðɛɹ ɑːnt"
             },
             {
-                "EN": "Work  in pairs. ",
+                "EN": "Work  in pairs.",
                 "VN": "Làm việc theo cặp.",
                 "IPA": "wɝːk ɪn peər"
             },
@@ -2873,12 +2873,12 @@ export default [
                 "IPA": "ˈkəntɹi ˈhaʊs"
             },
             {
-                "EN": "villa ",
+                "EN": "villa",
                 "VN": "Biệt thự",
                 "IPA": "ˈvɪlə"
             },
             {
-                "EN": "stilt house ",
+                "EN": "stilt house",
                 "VN": "nhà sàn",
                 "IPA": "stɪlt ˈhaʊs"
             },
@@ -2888,7 +2888,7 @@ export default [
                 "IPA": "əˈpɑːtmənt"
             },
             {
-                "EN": "Mi tells Nick about her grandparents' country house. ",
+                "EN": "Mi tells Nick about her grandparents' country house.",
                 "VN": "Mi kể cho Nick nghe về ngôi nhà quê của ông bà cô.",
                 "IPA": "Mi ˈtɛɫz Nick əˈbaʊt ˈhɝ ˈɡɹændˌpɛɹənts ˈkəntɹi ˈhaʊs"
             },
@@ -2903,7 +2903,7 @@ export default [
         "img": "https://i.postimg.cc/yx6mc6GP/English-6-ebook-Tap-1-16.jpg",
         "data": [
             {
-                "EN": "Student A looks at the pictures of Nick's house on this page. ",
+                "EN": "Student A looks at the pictures of Nick's house on this page.",
                 "VN": "Học sinh A xem hình ảnh ngôi nhà của Nick trên trang này.",
                 "IPA": "ˈstudənt ə lʊks ˈæt ðə ˈpɪktʃɝz əv Nick's ˈhaʊs ɒn ðɪs ˈpeɪdʒ"
             },
@@ -2918,7 +2918,7 @@ export default [
                 "IPA": "ˈfaɪnd ðə ˈdɪfɝənsɪz bitˈwin ðə tuː ˈhaʊsəz"
             },
             {
-                "EN": "Nick lives in a country house. ",
+                "EN": "Nick lives in a country house.",
                 "VN": "nick sống trong ngôi nhà nông thôn.",
                 "IPA": "Nick ˈɫaɪvz ɪn ə ˈkəntɹi ˈhaʊs"
             },
@@ -2933,7 +2933,7 @@ export default [
                 "IPA": "Mi ˈɫaɪvz ɪn ə taʊn ˈhaʊs"
             },
             {
-                "EN": "Draw a simple plan of your house. ",
+                "EN": "Draw a simple plan of your house.",
                 "VN": "Vẽ một kế hoạch đơn giản về ngôi nhà của bạn.",
                 "IPA": "ˈdɹɔ ə ˈsɪmpəɫ plæn əv jɔːr ˈhaʊs"
             },
@@ -2963,7 +2963,7 @@ export default [
                 "IPA": "ə ruːm ˈæt ðə ˈkreɪzi ˈhaʊs hoʊˈtɛɫ Da lɑt"
             },
             {
-                "EN": "Study skills ",
+                "EN": "Study skills",
                 "VN": "Kỹ năng học tập",
                 "IPA": "ˈstʌd.i ˈskɪɫz"
             },
@@ -3003,7 +3003,7 @@ export default [
                 "IPA": "ˈɹɛdɪŋ"
             },
             {
-                "EN": "Look at the text, don't read it. ",
+                "EN": "Look at the text, don't read it.",
                 "VN": "Nhìn vào văn bản, không đọc nó.",
                 "IPA": "lʊk ˈæt ðə ˈtɛkst doʊnt riːd ɪt"
             },
@@ -3018,7 +3018,7 @@ export default [
                 "IPA": "wɑːt taɪp əv ˈtɛkst ɪz ɪt"
             },
             {
-                "EN": "What's the title of this page? ",
+                "EN": "What's the title of this page?",
                 "VN": "Tiêu đề của trang này là gì?",
                 "IPA": "wɑːts ðə ˈtaɪtəl əv ðɪs ˈpeɪdʒ"
             },
@@ -3033,7 +3033,7 @@ export default [
                 "IPA": "raɪt θriː ˈθɪŋz jʊ noʊ əˈbaʊt Da lɑt"
             },
             {
-                "EN": "Quickly read the text. ",
+                "EN": "Quickly read the text.",
                 "VN": "Đọc nhanh văn bản.",
                 "IPA": "ˈkwɪkɫi riːd ðə ˈtɛkst"
             },
@@ -3093,12 +3093,12 @@ export default [
                 "IPA": "ə ʃɛlf"
             },
             {
-                "EN": "a desk ",
+                "EN": "a desk",
                 "VN": "bàn học",
                 "IPA": "ə ˈdɛsk"
             },
             {
-                "EN": "a poster ",
+                "EN": "a poster",
                 "VN": "một tấm áp phích",
                 "IPA": "ə ˈpoʊstɝ"
             },
@@ -3128,7 +3128,7 @@ export default [
                 "IPA": "ˈspikɪŋ"
             },
             {
-                "EN": "Create a new room for the hotel. ",
+                "EN": "Create a new room for the hotel.",
                 "VN": "Tạo một phòng mới cho khách sạn.",
                 "IPA": "kriˈeɪt ə ˈnju ruːm ˈfɔɹ ðə hoʊˈtɛɫ"
             },
@@ -3148,12 +3148,12 @@ export default [
                 "IPA": "haɪ Phong, haʊ ɑːr jʊ"
             },
             {
-                "EN": " I'm in Da Lat with my parents. ",
+                "EN": " I'm in Da Lat with my parents.",
                 "VN": " Tôi ở Đà Lạt với bố mẹ.",
                 "IPA": "ˌaɪˈem ɪn Da lɑt wɪð mai ˈpɛɹənts"
             },
             {
-                "EN": "We are staying at the Crazy House Hotel. ",
+                "EN": "We are staying at the Crazy House Hotel.",
                 "VN": "Chúng tôi đang ở khách sạn Crazy House.",
                 "IPA": "wiː ɑːr ˈsteɪɪŋ ˈæt ðə ˈkreɪzi ˈhaʊs hoʊˈtɛɫ"
             },
@@ -3163,7 +3163,7 @@ export default [
                 "IPA": "Wow! ɪt ˈɹiɫi ɪz ˈkreɪzi"
             },
             {
-                "EN": "Da Lat is nice. ",
+                "EN": "Da Lat is nice.",
                 "VN": "Đà Lạt rất đẹp.",
                 "IPA": "Da lɑt ɪz naɪs"
             },
@@ -3178,22 +3178,22 @@ export default [
                 "IPA": "ˈðɛɹ ɑːr ə ˈɫɑt əv ˈθɪŋz tuː ˈsi ænd ˈɫɑts əv ˈtʊrəsts tuː"
             },
             {
-                "EN": "There are ten rooms in the hotel. ",
+                "EN": "There are ten rooms in the hotel.",
                 "VN": "Có mười phòng trong khách sạn.",
                 "IPA": "ˈðɛɹ ɑːr ten ˈrumz ɪn ðə hoʊˈtɛɫ"
             },
             {
-                "EN": "They are named after different animals. ",
+                "EN": "They are named after different animals.",
                 "VN": "Chúng được đặt tên theo các loài động vật khác nhau.",
                 "IPA": "ðeɪ ɑːr neɪmd ˈæftɝ ˈdɪfɝənt ˈænəməlz"
             },
             {
-                "EN": "There is a Kangaroo room an Eagle room, and even an Ant room. ",
+                "EN": "There is a Kangaroo room an Eagle room, and even an Ant room.",
                 "VN": "Có một phòng Kangaroo, một phòng Đại bàng, và thậm chí là một phòng Kiến.",
                 "IPA": "ˈðɛɹ ɪz ə ˌkæŋɡɝˈu ruːm ˈæn ˈigəl ruːm ænd ˈivɪn ˈæn ænt ruːm"
             },
             {
-                "EN": "I'm staying in the Tiger room. ",
+                "EN": "I'm staying in the Tiger room.",
                 "VN": "Tôi đang ở trong phòng Tiger.",
                 "IPA": "ˌaɪˈem ˈsteɪɪŋ ɪn ðə ˈtaɪɡɝ ruːm"
             },
@@ -3203,32 +3203,32 @@ export default [
                 "IPA": "ɪts ˈkɔɫd ðə ˈtaɪɡɝ ruːm bɪˈkɑz ðerz ə bɪɡ ˈtaɪɡɝ ɒn ðə ˈwɔɫ"
             },
             {
-                "EN": "The Tiger is between the bathroom door and the window. ",
+                "EN": "The Tiger is between the bathroom door and the window.",
                 "VN": "Con Hổ ở giữa cửa phòng tắm và cửa sổ.",
                 "IPA": "ðə ˈtaɪɡɝ ɪz bitˈwin ðə ˈbæˌθɹum ˈdɔɹ ænd ðə ˈwɪndoʊ"
             },
             {
-                "EN": "The bed is under the window - but the window is a strange shape. ",
+                "EN": "The bed is under the window - but the window is a strange shape.",
                 "VN": "Chiếc giường ở dưới cửa sổ - nhưng cửa sổ mang hình dạng kỳ lạ.",
                 "IPA": "ðə ˈbɛd ɪz ˈəndɝ ðə ˈwɪndoʊ - ˈbət ðə ˈwɪndoʊ ɪz ə streɪnʤ ˈʃeɪp"
             },
             {
-                "EN": "I put my bag under the bed. ",
+                "EN": "I put my bag under the bed.",
                 "VN": "Tôi để túi dưới gầm giường.",
                 "IPA": "aj pʊt mai ˈbæɡ ˈəndɝ ðə ˈbɛd"
             },
             {
-                "EN": "I put my books on the shelf. ",
+                "EN": "I put my books on the shelf.",
                 "VN": "Tôi đặt sách của mình trên giá.",
                 "IPA": "aj pʊt mai ˈbʊks ɒn ðə ʃɛlf"
             },
             {
-                "EN": "There is a lamp, a wardrobe and a desk. ",
+                "EN": "There is a lamp, a wardrobe and a desk.",
                 "VN": "Có một đèn, một tủ quần áo và một bàn làm việc.",
                 "IPA": "ˈðɛɹ ɪz ə læmp ə ˈwɔɹˌdɹoʊb ænd ə ˈdɛsk"
             },
             {
-                "EN": "There are clothes on the floor  ",
+                "EN": "There are clothes on the floor ",
                 "VN": "Có quần áo trên sàn nhà",
                 "IPA": "ˈðɛɹ ɑːr ˈkɫoʊðz ɒn ðə ˈfɫɔɹ"
             },
@@ -3264,7 +3264,7 @@ export default [
                 "IPA": "ˈɫɪsənɪŋ"
             },
             {
-                "EN": "Nick’s parents are describing their room at the hotel. ",
+                "EN": "Nick’s parents are describing their room at the hotel.",
                 "VN": "Cha mẹ của Nick đang mô tả phòng của họ tại khách sạn.",
                 "IPA": "Nick’s ˈpɛɹənts ɑːr dɪsˈkɹaɪbɪŋ ðer ruːm ˈæt ðə hoʊˈtɛɫ"
             },
@@ -3284,12 +3284,12 @@ export default [
                 "IPA": "ˈfaɪərˌpleɪs"
             },
             {
-                "EN": "wardrobe ",
+                "EN": "wardrobe",
                 "VN": "tủ quần áo",
                 "IPA": "ˈwɔɹˌdɹoʊb"
             },
             {
-                "EN": "table ",
+                "EN": "table",
                 "VN": "bàn",
                 "IPA": "ˈteɪbəɫ"
             },
@@ -3324,7 +3324,7 @@ export default [
                 "IPA": "ˈæn i-meɪl tuː ə frend"
             },
             {
-                "EN": "Writing tips ",
+                "EN": "Writing tips",
                 "VN": "Mẹo viết",
                 "IPA": "ˈɹaɪtɪŋ ˈtɪps"
             },
@@ -3339,12 +3339,12 @@ export default [
                 "IPA": "ɪn ðə ˈsəbdʒɪkt ˈɫaɪn raɪt ˈbɹifɫi wɑːt ðə i-meɪl ɪz əˈbaʊt"
             },
             {
-                "EN": "Begin the e-mail with a greeting ",
+                "EN": "Begin the e-mail with a greeting",
                 "VN": "Bắt đầu e-mail bằng một lời chào",
                 "IPA": "bɪˈgɪn ðə i-meɪl wɪð ə ˈgritɪŋ"
             },
             {
-                "EN": "The introduction is the first paragraph. ",
+                "EN": "The introduction is the first paragraph.",
                 "VN": "Phần mở đầu là đoạn đầu tiên.",
                 "IPA": "ðə ˌɪntɹoʊˈdəkʃən ɪz ðə ˈfɝst ˈpæɹəˌɡɹæf"
             },
@@ -3354,7 +3354,7 @@ export default [
                 "IPA": "wiː kæn ˈæsk əˈbaʊt ˈhɪz ˈhɛɫθ θæŋk ˈhɪm ˈfɔɹ ðə ˈpriviəs i-meɪl ˈɔɹ raɪt ðə ˈɹizənz ˈfɔɹ i-ˈmeɪlɪŋ etc."
             },
             {
-                "EN": "In the body, write the subject of the e-mail. ",
+                "EN": "In the body, write the subject of the e-mail.",
                 "VN": "Trong phần nội dung, hãy viết chủ đề của e-mail.",
                 "IPA": "ɪn ðə ˈbɒdi raɪt ðə ˈsəbdʒɪkt əv ðə i-meɪl"
             },
@@ -3364,7 +3364,7 @@ export default [
                 "IPA": "raɪt ˈitʃ ˈsəbdʒɪkt ɪn ə ˈnju ˈpæɹəˌɡɹæf"
             },
             {
-                "EN": "The conclusion is the last paragraph. ",
+                "EN": "The conclusion is the last paragraph.",
                 "VN": "Kết luận là đoạn văn cuối cùng.",
                 "IPA": "ðə kənˈkluʒən ɪz ðə ˈɫæs ˈpæɹəˌɡɹæf"
             },
@@ -3399,7 +3399,7 @@ export default [
                 "IPA": "aɪˈdɛntəˌfaɪ ðə ˈsəbdʒɪkt ˈgritɪŋ ˌɪntɹoʊˈdəkʃən ˈbɒdi ænd kənˈkluʒən əv ðə i-meɪl"
             },
             {
-                "EN": "Read the e-mail below and correct it. ",
+                "EN": "Read the e-mail below and correct it.",
                 "VN": "Đọc e-mail dưới đây và sửa nó.",
                 "IPA": "riːd ðə i-meɪl biˈɫoʊ ænd kəˈrekt ɪt"
             },
@@ -3409,7 +3409,7 @@ export default [
                 "IPA": "raɪt ðə kəˈɫɛkt ˈvɜrʒən ɪn ðə speɪs prəˈvaɪdəd"
             },
             {
-                "EN": "Write an e-mail to Nick. ",
+                "EN": "Write an e-mail to Nick.",
                 "VN": "Viết e-mail cho Nick.",
                 "IPA": "raɪt ˈæn i-meɪl tuː Nick."
             },
@@ -3444,17 +3444,17 @@ export default [
                 "IPA": "ˈtʃɛk"
             },
             {
-                "EN": "Check your draft ",
+                "EN": "Check your draft",
                 "VN": "Kiểm tra bản nháp của bạn",
                 "IPA": "ˈtʃɛk jɔːr dræft"
             },
             {
-                "EN": "Is the punctuation correct? ",
+                "EN": "Is the punctuation correct?",
                 "VN": "Dấu câu có đúng không?",
                 "IPA": "ɪz ðə ˌpʌŋkʧuˈeɪʃən kəˈrekt"
             },
             {
-                "EN": "Is the capitalisation correct? ",
+                "EN": "Is the capitalisation correct?",
                 "VN": "Viết hoa có đúng không?",
                 "IPA": "ɪz ðə ˌkæpɪtəlɪˈzeɪʃən kəˈrekt"
             },
@@ -3480,7 +3480,7 @@ export default [
                 "IPA": "voʊˈkæbjəˌɫɛɹi"
             },
             {
-                "EN": "Put the words into the correct groups. ",
+                "EN": "Put the words into the correct groups.",
                 "VN": "Đặt các từ vào đúng nhóm.",
                 "IPA": "pʊt ðə wɝːd ˈɪntu ðə kəˈrekt ɡruːp"
             },
@@ -3500,57 +3500,57 @@ export default [
                 "IPA": "ˈætɪk"
             },
             {
-                "EN": "bed ",
+                "EN": "bed",
                 "VN": "Giường",
                 "IPA": "ˈbɛd"
             },
             {
-                "EN": "hall ",
+                "EN": "hall",
                 "VN": "đại sảnh",
                 "IPA": "hɔːl"
             },
             {
-                "EN": "picture ",
+                "EN": "picture",
                 "VN": "bức ảnh",
                 "IPA": "ˈpɪktʃɝ"
             },
             {
-                "EN": "villa ",
+                "EN": "villa",
                 "VN": "Biệt thự",
                 "IPA": "ˈvɪlə"
             },
             {
-                "EN": "cupboard ",
+                "EN": "cupboard",
                 "VN": "cái tủ",
                 "IPA": "ˈkəbɝd"
             },
             {
-                "EN": "apartment ",
+                "EN": "apartment",
                 "VN": "căn hộ",
                 "IPA": "əˈpɑːtmənt"
             },
             {
-                "EN": "chest of drawers ",
+                "EN": "chest of drawers",
                 "VN": "tủ ngăn kéo",
                 "IPA": "ʧɛst əv drɔrz"
             },
             {
-                "EN": "town ",
+                "EN": "town",
                 "VN": "thành phố",
                 "IPA": "taʊn"
             },
             {
-                "EN": "house ",
+                "EN": "house",
                 "VN": "căn nhà",
                 "IPA": "ˈhaʊs"
             },
             {
-                "EN": "bathroom ",
+                "EN": "bathroom",
                 "VN": "phòng tắm",
                 "IPA": "ˈbæˌθɹum"
             },
             {
-                "EN": "bedroom ",
+                "EN": "bedroom",
                 "VN": "phòng ngủ",
                 "IPA": "ˈbɛˌdɹum"
             },
@@ -3560,32 +3560,32 @@ export default [
                 "IPA": "ˈwɔɹˌdɹoʊb"
             },
             {
-                "EN": "sofa ",
+                "EN": "sofa",
                 "VN": "ghế sô pha",
                 "IPA": "ˈsoʊfə"
             },
             {
-                "EN": "stilt ",
+                "EN": "stilt",
                 "VN": "cà kheo",
                 "IPA": "stɪlt"
             },
             {
-                "EN": "house ",
+                "EN": "house",
                 "VN": "căn nhà",
                 "IPA": "ˈhaʊs"
             },
             {
-                "EN": "kitchen ",
+                "EN": "kitchen",
                 "VN": "nhà bếp",
                 "IPA": "ˈkɪtʃən"
             },
             {
-                "EN": "dishwasher ",
+                "EN": "dishwasher",
                 "VN": "Máy rửa chén",
                 "IPA": "ˈdɪˌʃwɑʃər"
             },
             {
-                "EN": "desk ",
+                "EN": "desk",
                 "VN": "bàn",
                 "IPA": "ˈdɛsk"
             },
@@ -3615,7 +3615,7 @@ export default [
                 "IPA": "ˈɡɹæmɝ"
             },
             {
-                "EN": "Make sentences. ",
+                "EN": "Make sentences.",
                 "VN": "Đặt câu văn.",
                 "IPA": "ˈmeɪk ˈsen.təns"
             },
@@ -3625,12 +3625,12 @@ export default [
                 "IPA": "ˈjus əˈpɹoʊpɹiˌeɪt ˌprɛpəˈzɪʃənz əv ˈpɫeɪs"
             },
             {
-                "EN": "Look at the picture and complete the sentences. ",
+                "EN": "Look at the picture and complete the sentences.",
                 "VN": "Nhìn vào bức tranh và hoàn thành các câu.",
                 "IPA": "lʊk ˈæt ðə ˈpɪktʃɝ ænd kəmˈpliːt ðə ˈsen.təns"
             },
             {
-                "EN": "Use ",
+                "EN": "Use",
                 "VN": "Sử dụng",
                 "IPA": "ˈjus"
             },
@@ -3685,7 +3685,7 @@ export default [
                 "IPA": "raɪt sɪks ˈsen.təns tuː dɪsˈkɹaɪb jɔːr ˈbɛˌdɹum"
             },
             {
-                "EN": "Example ",
+                "EN": "Example",
                 "VN": "Thí dụ",
                 "IPA": "ɪɡˈzæmpəɫ"
             },
@@ -3700,12 +3700,12 @@ export default [
                 "IPA": "kəmˌjunəˈkeɪʃən"
             },
             {
-                "EN": "Work in groups. ",
+                "EN": "Work in groups.",
                 "VN": "Làm việc nhóm.",
                 "IPA": "wɝːk ɪn ɡruːp"
             },
             {
-                "EN": "Take turns to draw a cat in the house below. ",
+                "EN": "Take turns to draw a cat in the house below.",
                 "VN": "Lần lượt vẽ con mèo trong nhà dưới đây.",
                 "IPA": "ˈteɪk ˈtɝnz tuː ˈdɹɔ ə kæt ɪn ðə ˈhaʊs biˈɫoʊ"
             },
@@ -3715,7 +3715,7 @@ export default [
                 "IPA": "ˈəðɝ ˈstjuːdənts ˈæsk ˈkwes.tʃən tuː ˈfaɪnd ðə kæt"
             },
             {
-                "EN": "in ",
+                "EN": "in",
                 "VN": "trong",
                 "IPA": "ɪn"
             },
@@ -3725,7 +3725,7 @@ export default [
                 "IPA": "ˈəndɝ"
             },
             {
-                "EN": "behind ",
+                "EN": "behind",
                 "VN": "phía sau",
                 "IPA": "bɪˈhaɪnd"
             },
@@ -3745,7 +3745,7 @@ export default [
                 "IPA": "bitˈwin"
             },
             {
-                "EN": "Where is the cat? ",
+                "EN": "Where is the cat?",
                 "VN": "Con mèo ở đâu rồi?",
                 "IPA": "ˈwɛɹ ɪz ðə kæt"
             },
@@ -3755,7 +3755,7 @@ export default [
                 "IPA": "ɪz ɪt ɒn ðə ˈbɛd"
             },
             {
-                "EN": "No, it isn't. ",
+                "EN": "No, it isn't.",
                 "VN": "Không, không phải vậy.",
                 "IPA": "nəʊ ɪt ˈɪz.ənt"
             },
@@ -3816,7 +3816,7 @@ export default [
             },
             {
                 "EN": "describe things using there is",
-                "VN": "mô tả những thứ bằng cách sử dụng there is ",
+                "VN": "mô tả những thứ bằng cách sử dụng there is",
                 "IPA": "dɪsˈkɹaɪb ˈθɪŋz ˈjuzɪŋ ˈðɛɹ ɪz"
             },
             {
@@ -3841,7 +3841,7 @@ export default [
                 "IPA": "ˈhwɪtʃ ˈhaʊs ˈdu jʊ ˈwɑnt tuː ˈɫaɪv ɪn ˈwaɪ"
             },
             {
-                "EN": "Draw your own strange house. ",
+                "EN": "Draw your own strange house.",
                 "VN": "Vẽ ngôi nhà kỳ lạ của riêng bạn.",
                 "IPA": "ˈdɹɔ jɔːr ˈoʊn streɪnʤ ˈhaʊs"
             },

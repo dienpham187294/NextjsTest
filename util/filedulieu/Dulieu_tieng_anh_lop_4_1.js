@@ -4063,7 +4063,7 @@ export default [
                 "IPA": "wər ˈɫeɪt for skuːl"
             },
             {
-                "EN": "Let’s run! We’re late. ",
+                "EN": "Let’s run! We’re late.",
                 "VN": "Chạy thôi! Chúng ta muộn rồi.",
                 "IPA": "lets ˈɹən wər ˈɫeɪt"
             },
@@ -4308,9 +4308,9 @@ export default [
         "img": "https://i.postimg.cc/RhH963KC/S-ch-H-c-Sinh-Ti-ng-Anh-L-p-4-T-p-1-59.jpg",
         "data": [
             {
-                "EN": "Unit 9 ",
+                "EN": "Unit 9",
                 "VN": "Đơn vị 9",
-                "IPA": "ˈjuː.nɪt ˈnaɪn "
+                "IPA": "ˈjuː.nɪt ˈnaɪn"
             },
             {
                 "EN": "What are they doing?",
@@ -4996,7 +4996,7 @@ export default [
                 "IPA": "aj ˈpɫeɪd ˈtʃɛs wɪð mai ˈfɑðɝ"
             },
             {
-                "EN": "What about yesterday evening? ",
+                "EN": "What about yesterday evening?",
                 "VN": "Còn buổi tối hôm qua thì sao?",
                 "IPA": "wɑːt əˈbaʊt ˈjɛstɝˌdeɪ ˈivnɪŋ"
             },

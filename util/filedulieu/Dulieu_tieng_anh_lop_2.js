@@ -205,7 +205,7 @@ export default [
                 "IPA": "jes ˈtitʃɝ"
             },
             {
-                "EN": "Open your book! ",
+                "EN": "Open your book!",
                 "VN": "Mở sách ra!",
                 "IPA": "ˈəʊ.pən jɔːr bʊk"
             },
@@ -525,7 +525,7 @@ export default [
                 "IPA": "ˈlɪs.ən ænd rɪˈpiːt"
             },
             {
-                "EN": "What's your name? ",
+                "EN": "What's your name?",
                 "VN": "Bạn tên là gì?",
                 "IPA": "wɑːts jɔːr neɪm"
             },

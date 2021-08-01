@@ -882,7 +882,7 @@ export default [
                 "IPA": "mai ˈsɪstɝ ˈhæz ə ˈɫɑt əv ˈfoʊ.t̬oʊ"
             },
             {
-                "EN": "When I have free time, I usually go surfing.     ",
+                "EN": "When I have free time, I usually go surfing.    ",
                 "VN": "Khi rảnh rỗi, tôi thường đi lướt sóng.",
                 "IPA": "ˈhwɛn aj hæv ˈfɹi taɪm aj ˈjuʒəɫi ɡoʊ ˈsɝfɪŋ"
             },
@@ -982,7 +982,7 @@ export default [
                 "IPA": "ˈθɪŋk əv ˈsəm ækˈtɪvətiz ˈsətʃ ˈæz ˈɫɪsənɪŋ tuː ˈmjuzɪk ˈpɫeɪɪŋ ˈbæskətˌbɔɫ ˈɔɹ ˈɡoʊɪn ˈʃɑpɪŋ ænd ˈmeɪk ə ˈteɪbəɫ ˈɫaɪk ə ˈteɪbəɫ ɪn tuː"
             },
             {
-                "EN": "One student in the group asks the other group members about the frequency they do these activities while another student in the group records the answers. ",
+                "EN": "One student in the group asks the other group members about the frequency they do these activities while another student in the group records the answers.",
                 "VN": "Một học sinh trong nhóm hỏi các thành viên khác trong nhóm về tần suất họ thực hiện các hoạt động này trong khi một học sinh khác trong nhóm ghi lại câu trả lời.",
                 "IPA": "wan ˈstudənt ɪn ðə ˈɡɹup ˈæsks ðə ˈəðɝ ˈɡɹup ˈmɛmbɝz əˈbaʊt ðə ˈfɹikwənsi ðeɪ ˈdu ˈðiz ækˈtɪvətiz ˈhwaɪɫ əˈnəðɝ ˈstudənt ɪn ðə ˈɡɹup ˈɹɛkɝdz ðə ɑːn.sər"
             },
@@ -1704,7 +1704,7 @@ export default [
                 "IPA": "raɪt ˈtɹu ˈsen.təns əˈbaʊt ˈjɔɹsɛɫf"
             },
             {
-                "EN": "like    ",
+                "EN": "like   ",
                 "VN": "Thích",
                 "IPA": "ˈɫaɪk"
             },
@@ -1714,7 +1714,7 @@ export default [
                 "IPA": "ˌɛnˈdʒɔɪ"
             },
             {
-                "EN": "love   ",
+                "EN": "love  ",
                 "VN": "yêu và quý",
                 "IPA": "ˈɫəv"
             },

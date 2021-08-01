@@ -171,7 +171,7 @@ export default [
             {
                 "EN": "Nice to meet you, too",
                 "VN": "Cũng hân hạnh được gặp bạn",
-                "IPA": "nais tuː mi:t juː tuː "
+                "IPA": "nais tuː mi:t juː tuː"
             }
         ]
     },
@@ -186,7 +186,7 @@ export default [
             {
                 "EN": "Nice to meet you, too",
                 "VN": "Cũng hân hạnh được gặp bạn",
-                "IPA": "nais tuː mi:t juː tuː "
+                "IPA": "nais tuː mi:t juː tuː"
             }
         ]
     },
@@ -581,7 +581,7 @@ export default [
             {
                 "EN": "This is a monkey",
                 "VN": "Đây là một con khỉ",
-                "IPA": "ðɪs ɪz ə ˈmʌŋ.ki "
+                "IPA": "ðɪs ɪz ə ˈmʌŋ.ki"
             },
             {
                 "EN": "This is a snake",

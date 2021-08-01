@@ -169,7 +169,7 @@ export default [
                 "IPA": "wɑːt taɪm ɪz ɪt"
             },
             {
-                "EN": "It's six forty-five ",
+                "EN": "It's six forty-five",
                 "VN": "Bây giờ là sáu giờ bốn mươi lăm",
                 "IPA": "ɪts sɪks ˈfɔɹtiˌfaɪv"
             },
@@ -214,7 +214,7 @@ export default [
                 "IPA": "Oh nəʊ wər ˈɫeɪt ˈfɔɹ skuːl"
             },
             {
-                "EN": "Let's run. ",
+                "EN": "Let's run.",
                 "VN": "Chạy thôi.",
                 "IPA": "lets ˈɹən"
             },
@@ -389,32 +389,32 @@ export default [
                 "IPA": "riːd ænd kəmˈpliːt"
             },
             {
-                "EN": "Phong studies at Nguyen Du Primary School. ",
+                "EN": "Phong studies at Nguyen Du Primary School.",
                 "VN": "Phong học trường Tiểu học Nguyễn Du.",
                 "IPA": "Phong ˈstədiz ˈæt Nguyen Du ˈpɹaɪˌmɛɹi skuːl"
             },
             {
-                "EN": "Every day he gets up at 6.30. ",
+                "EN": "Every day he gets up at 6.30.",
                 "VN": "Mỗi ngày anh ấy dậy lúc 6h30.",
                 "IPA": "ˈɛvɝi ˈdeɪ ˈhi ˈɡɛts ʌp ˈæt 6.30."
             },
             {
-                "EN": "He goes to school at 7 a.m. ",
+                "EN": "He goes to school at 7 a.m.",
                 "VN": "Anh ấy đến trường lúc 7 giờ sáng.",
                 "IPA": "ˈhi ˈɡoʊz tuː skuːl ˈæt 7 ˌeɪˈɛm"
             },
             {
-                "EN": "School starts at 7.30 a.m. and finishes at 4.30 p.m. He goes home at 5 o’clock. ",
+                "EN": "School starts at 7.30 a.m. and finishes at 4.30 p.m. He goes home at 5 o’clock.",
                 "VN": "Trường học bắt đầu lúc 7h30 sáng và kết thúc lúc 4h30 chiều. Anh ấy về nhà lúc 5 giờ đồng hồ.",
                 "IPA": "skuːl starts ˈæt 7.30 ˌeɪˈɛm ænd ˈfɪnɪʃɪz ˈæt 4.30 ˈpiˈɛm ˈhi ˈɡoʊz ˈhoʊm ˈæt 5 əˈkɫɑk"
             },
             {
-                "EN": "He has dinner at 7.15 in the evening. ",
+                "EN": "He has dinner at 7.15 in the evening.",
                 "VN": "Anh ấy ăn tối lúc 7 giờ 15 tối.",
                 "IPA": "ˈhi ˈhæz ˈdɪnɝ ˈæt 7.15 ɪn ðə ˈivnɪŋ"
             },
             {
-                "EN": "Then he does his homework or listens to music. ",
+                "EN": "Then he does his homework or listens to music.",
                 "VN": "Sau đó, anh ấy làm bài tập về nhà hoặc nghe nhạc.",
                 "IPA": "ˈðɛn ˈhi ˈdəz ˈhɪz ˈhoʊmˌwɝk or ˈɫɪsənz tuː ˈmjuzɪk"
             },
@@ -434,7 +434,7 @@ export default [
                 "IPA": "ˈprɒdʒ.ekt"
             },
             {
-                "EN": "Complete your daily routine. ",
+                "EN": "Complete your daily routine.",
                 "VN": "Hoàn thành thói quen hàng ngày của bạn.",
                 "IPA": "kəmˈpliːt jɔːr ˈdeɪɫi ɹuˈtin"
             },
@@ -479,7 +479,7 @@ export default [
                 "IPA": "lʊk ˈlɪs.ən ænd rɪˈpiːt"
             },
             {
-                "EN": "Class, get into pairs, please! ",
+                "EN": "Class, get into pairs, please!",
                 "VN": "Cả lớp, làm ơn xếp thành cặp!",
                 "IPA": "klɑːs ˈɡɛt ˈɪntu peər pliːz"
             },
@@ -569,7 +569,7 @@ export default [
                 "IPA": "ˈfæktɝi ˈwɝkɝ"
             },
             {
-                "EN": "Work in pairs. ",
+                "EN": "Work in pairs.",
                 "VN": "Làm việc theo cặp.",
                 "IPA": "wɝːk ɪn peər"
             },
@@ -704,7 +704,7 @@ export default [
                 "IPA": "ˈdɑktɝ"
             },
             {
-                "EN": "in a hospital ",
+                "EN": "in a hospital",
                 "VN": "trong một bệnh viện",
                 "IPA": "ɪn ə ˈhɑˌspɪtəɫ"
             },
@@ -724,7 +724,7 @@ export default [
                 "IPA": "ˈwɝkɝ"
             },
             {
-                "EN": "in a factory ",
+                "EN": "in a factory",
                 "VN": "trong nhà máy",
                 "IPA": "ɪn ə ˈfæktɝi"
             },
@@ -834,17 +834,17 @@ export default [
                 "IPA": "ˈɹɛdɪŋ"
             },
             {
-                "EN": "My grandpa works in a field. ",
+                "EN": "My grandpa works in a field.",
                 "VN": "Ông tôi làm ruộng.",
                 "IPA": "mai grandpa works ɪn ə ˈfiɫd"
             },
             {
-                "EN": "I want a piece of chocolate. ",
+                "EN": "I want a piece of chocolate.",
                 "VN": "Tôi muốn một miếng sô cô la.",
                 "IPA": "aj ˈwɑnt ə piece əv ˈtʃɔkɫət"
             },
             {
-                "EN": "My mother is a teacher. ",
+                "EN": "My mother is a teacher.",
                 "VN": "Mẹ tôi là giáo viên.",
                 "IPA": "mai ˈməðɝ ɪz ə ˈtitʃɝ"
             },
@@ -884,17 +884,17 @@ export default [
                 "IPA": "ˈdʒɑbz ænd places əv wɝːk"
             },
             {
-                "EN": "What does your father do? ",
+                "EN": "What does your father do?",
                 "VN": "Ba của bạn làm nghề gì?",
                 "IPA": "wɑːt ˈdəz jɔːr ˈfɑðɝ ˈdu"
             },
             {
-                "EN": "He's a farmer. ",
+                "EN": "He's a farmer.",
                 "VN": "Anh ấy là một nông dân.",
                 "IPA": "ˈhiz ə ˈfɑɹmɝ"
             },
             {
-                "EN": "Where does he work? ",
+                "EN": "Where does he work?",
                 "VN": "Anh ấy làm việc ở đâu?",
                 "IPA": "ˈwɛɹ ˈdəz ˈhi wɝːk"
             },
@@ -904,17 +904,17 @@ export default [
                 "IPA": "ɪn ə ˈfiɫd"
             },
             {
-                "EN": "What does your mother do? ",
+                "EN": "What does your mother do?",
                 "VN": "Mẹ bạn làm nghề gì?",
                 "IPA": "wɑːt ˈdəz jɔːr ˈməðɝ ˈdu"
             },
             {
-                "EN": "She’s a teacher. ",
+                "EN": "She’s a teacher.",
                 "VN": "Cô ấy là cô giáo.",
                 "IPA": "ˈʃiz ə ˈtitʃɝ"
             },
             {
-                "EN": "Where does she work? ",
+                "EN": "Where does she work?",
                 "VN": "Cô ấy làm việc ở đâu?",
                 "IPA": "ˈwɛɹ ˈdəz ʃiː wɝːk"
             },
@@ -924,17 +924,17 @@ export default [
                 "IPA": "ɪn ə skuːl"
             },
             {
-                "EN": "What does your sister do? ",
+                "EN": "What does your sister do?",
                 "VN": "Chị gái của bạn làm nghề gì vậy?",
                 "IPA": "wɑːt ˈdəz jɔːr ˈsɪstɝ ˈdu"
             },
             {
-                "EN": "She's a worker ",
+                "EN": "She's a worker",
                 "VN": "Cô ấy là một công nhân",
                 "IPA": "ˈʃiz ə ˈwɝkɝ"
             },
             {
-                "EN": "Where does she work? ",
+                "EN": "Where does she work?",
                 "VN": "Cô ấy làm việc ở đâu?",
                 "IPA": "ˈwɛɹ ˈdəz ʃiː wɝːk"
             },
@@ -944,17 +944,17 @@ export default [
                 "IPA": "ɪn ə ˈfæktɝi"
             },
             {
-                "EN": "What does your brother do? ",
+                "EN": "What does your brother do?",
                 "VN": "Anh trai của bạn làm nghề gì?",
                 "IPA": "wɑːt ˈdəz jɔːr ˈbɹəðɝ ˈdu"
             },
             {
-                "EN": "He's a clerk. ",
+                "EN": "He's a clerk.",
                 "VN": "Anh ấy là một thư ký.",
                 "IPA": "ˈhiz ə ˈkɫɝk"
             },
             {
-                "EN": "Where does he work? ",
+                "EN": "Where does he work?",
                 "VN": "Anh ấy làm việc ở đâu?",
                 "IPA": "ˈwɛɹ ˈdəz ˈhi wɝːk"
             },
@@ -979,42 +979,42 @@ export default [
                 "IPA": "ɹiˈpɔɹt"
             },
             {
-                "EN": "This is the report of my interview with Phong. ",
+                "EN": "This is the report of my interview with Phong.",
                 "VN": "Đây là bản tường trình cuộc phỏng vấn của tôi với Phong.",
                 "IPA": "ðɪs ɪz ðə ɹiˈpɔɹt əv mai ˈɪn.tə.vjuː wɪð Phong."
             },
             {
-                "EN": "His father is a teacher. ",
+                "EN": "His father is a teacher.",
                 "VN": "Cha của anh ấy là một giáo viên.",
                 "IPA": "ˈhɪz ˈfɑðɝ ɪz ə ˈtitʃɝ"
             },
             {
-                "EN": "He works in Le Hong Phong Primary School. ",
+                "EN": "He works in Le Hong Phong Primary School.",
                 "VN": "Anh công tác tại trường tiểu học Lê Hồng Phong.",
                 "IPA": "ˈhi works ɪn Le Hong Phong ˈpɹaɪˌmɛɹi skuːl"
             },
             {
-                "EN": "His mother is a nurse. ",
+                "EN": "His mother is a nurse.",
                 "VN": "Mẹ anh ấy là một y tá.",
                 "IPA": "ˈhɪz ˈməðɝ ɪz ə ˈnɝs"
             },
             {
-                "EN": "She works in Thanh Nhan Hospital. ",
+                "EN": "She works in Thanh Nhan Hospital.",
                 "VN": "Cô ấy làm việc ở bệnh viện Thanh Nhàn.",
                 "IPA": "ʃiː works ɪn Thanh Nhan ˈhɑˌspɪtəɫ"
             },
             {
-                "EN": "Phong has a brother but he doesn’t have a sister. His brother is a worker in a car factory. ",
+                "EN": "Phong has a brother but he doesn’t have a sister. His brother is a worker in a car factory.",
                 "VN": "Phong có anh trai nhưng không có em gái. Anh trai của anh ấy là công nhân trong một nhà máy sản xuất ô tô.",
                 "IPA": "Phong ˈhæz ə ˈbɹəðɝ ˈbət ˈhi ˈdəzən hæv ə ˈsɪstɝ ˈhɪz ˈbɹəðɝ ɪz ə ˈwɝkɝ ɪn ə ˈkɑɹ ˈfæktɝi"
             },
             {
-                "EN": "And as you know. ",
+                "EN": "And as you know.",
                 "VN": "Và như bạn biết.",
                 "IPA": "ænd as jʊ noʊ"
             },
             {
-                "EN": "Phong is a pupil in Class 4A. ",
+                "EN": "Phong is a pupil in Class 4A.",
                 "VN": "Phong là học sinh lớp 4A.",
                 "IPA": "Phong ɪz ə ˈpjupəɫ ɪn klɑːs 4A."
             },
@@ -1134,7 +1134,7 @@ export default [
                 "IPA": "drɪŋk"
             },
             {
-                "EN": "orange juice ",
+                "EN": "orange juice",
                 "VN": "nước cam",
                 "IPA": "ˈɔɹəndʒ ˈdʒus"
             },
@@ -1204,7 +1204,7 @@ export default [
                 "IPA": "mai ˈfeɪvɝɪt food ænd drink"
             },
             {
-                "EN": "What's your favourite food? ",
+                "EN": "What's your favourite food?",
                 "VN": "Món ăn yêu thích của bạn là gì?",
                 "IPA": "wɑːts jɔːr ˈfeɪvɝɪt food?"
             },
@@ -1254,7 +1254,7 @@ export default [
                 "IPA": "aj ˈɫəv ˈnudəɫz"
             },
             {
-                "EN": "Would you like some milk? ",
+                "EN": "Would you like some milk?",
                 "VN": "Bạn có muốn một ít sữa?",
                 "IPA": "Would jʊ ˈɫaɪk ˈsəm ˈmɪɫk"
             },
@@ -1375,17 +1375,17 @@ export default [
                 "IPA": "ˈlɪs.ən ænd rɪˈpiːt"
             },
             {
-                "EN": "beef ",
+                "EN": "beef",
                 "VN": "thịt bò",
                 "IPA": "ˈbif"
             },
             {
-                "EN": "leaf ",
+                "EN": "leaf",
                 "VN": "Lá cây",
                 "IPA": "ˈɫif"
             },
             {
-                "EN": "fish ",
+                "EN": "fish",
                 "VN": "cá",
                 "IPA": "ˈfɪʃ"
             },
@@ -1450,7 +1450,7 @@ export default [
                 "IPA": "jes pliːz aj ˈɫəv ˈmɪɫk"
             },
             {
-                "EN": "It's my favourite drink. ",
+                "EN": "It's my favourite drink.",
                 "VN": "Đó là thức uống yêu thích của tôi.",
                 "IPA": "ɪts mai ˈfeɪvɝɪt drɪŋk"
             },
@@ -1470,32 +1470,32 @@ export default [
                 "IPA": "haɪ mai neɪm ɪz Linda."
             },
             {
-                "EN": "I like beef. It is my favourite food. ",
+                "EN": "I like beef. It is my favourite food.",
                 "VN": "Tôi thích thịt bò. Nó là món ăn yêu thích của tôi.",
                 "IPA": "aj ˈɫaɪk ˈbif ɪt ɪz mai ˈfeɪvɝɪt fuːd"
             },
             {
-                "EN": "My favourite drink is orange juice. ",
+                "EN": "My favourite drink is orange juice.",
                 "VN": "Thức uống yêu thích của tôi là nước cam.",
                 "IPA": "mai ˈfeɪvɝɪt drɪŋk ɪz ˈɔɹəndʒ ˈdʒus"
             },
             {
-                "EN": "I don’t like vegetables. ",
+                "EN": "I don’t like vegetables.",
                 "VN": "Tôi không thích rau.",
                 "IPA": "aj doʊnt ˈɫaɪk ˈvɛdʒtəbəɫz"
             },
             {
-                "EN": "My younger brother Peter doesn’t like beef. ",
+                "EN": "My younger brother Peter doesn’t like beef.",
                 "VN": "Em trai tôi, Peter không thích thịt bò.",
                 "IPA": "mai younger ˈbɹəðɝ Peter ˈdəzən ˈɫaɪk ˈbif"
             },
             {
-                "EN": "He loves chicken. ",
+                "EN": "He loves chicken.",
                 "VN": "Anh ấy yêu gà.",
                 "IPA": "ˈhi ˈɫəvz ˈtʃɪkən"
             },
             {
-                "EN": "It is his favourite food. ",
+                "EN": "It is his favourite food.",
                 "VN": "Nó là món ăn yêu thích của anh ấy.",
                 "IPA": "ɪt ɪz ˈhɪz ˈfeɪvɝɪt fuːd"
             },
@@ -1505,7 +1505,7 @@ export default [
                 "IPA": "ˈhi ˈɫəvz ˈɫɛməˈneɪd tuː"
             },
             {
-                "EN": "Lemonade is his favourite drink. ",
+                "EN": "Lemonade is his favourite drink.",
                 "VN": "Nước chanh là thức uống yêu thích của anh ấy.",
                 "IPA": "ˈɫɛməˈneɪd ɪz ˈhɪz ˈfeɪvɝɪt drɪŋk"
             },
@@ -1515,7 +1515,7 @@ export default [
                 "IPA": "ˈhi drinks ɪt ˈɛvɝi ˈdeɪ"
             },
             {
-                "EN": "Favourite food ",
+                "EN": "Favourite food",
                 "VN": "Món ăn yêu thích",
                 "IPA": "ˈfeɪvɝɪt fuːd"
             },
@@ -1535,7 +1535,7 @@ export default [
                 "IPA": "ˈprɒdʒ.ekt"
             },
             {
-                "EN": "Interview your classmates about their favourite food and drink. ",
+                "EN": "Interview your classmates about their favourite food and drink.",
                 "VN": "Phỏng vấn bạn học của bạn về đồ ăn và thức uống yêu thích của họ.",
                 "IPA": "ˈɪn.tə.vjuː jɔːr ˈklɑːs.meɪt əˈbaʊt ðer ˈfeɪvɝɪt fuːd ænd drɪŋk"
             },
@@ -1750,7 +1750,7 @@ export default [
         "img": "https://i.postimg.cc/NFvYX6tJ/S-ch-H-c-Sinh-Ti-ng-Anh-L-p-4-T-p-2-73.jpg",
         "data": [
             {
-                "EN": "after that ",
+                "EN": "after that",
                 "VN": "sau đó",
                 "IPA": "ˈæftɝ ðæt"
             },
@@ -1765,27 +1765,27 @@ export default [
                 "IPA": "ˌeɪˈɛm"
             },
             {
-                "EN": "animal ",
+                "EN": "animal",
                 "VN": "thú vật",
                 "IPA": "ˈænəməɫ"
             },
             {
-                "EN": "bakery ",
+                "EN": "bakery",
                 "VN": "cửa hàng bánh mì",
                 "IPA": "ˈbeɪkɝi"
             },
             {
-                "EN": "bay ",
+                "EN": "bay",
                 "VN": "Vịnh",
                 "IPA": "ˈbeɪ"
             },
             {
-                "EN": "bear ",
+                "EN": "bear",
                 "VN": "chịu",
                 "IPA": "ˈbɛɹ"
             },
             {
-                "EN": "beautiful ",
+                "EN": "beautiful",
                 "VN": "đẹp",
                 "IPA": "ˈbjutəfəɫ"
             },
@@ -1800,52 +1800,52 @@ export default [
                 "IPA": "bɪɡ"
             },
             {
-                "EN": "birthday present ",
+                "EN": "birthday present",
                 "VN": "quà sinh nhật",
                 "IPA": "ˈbɝθˌdeɪ ˈprez.ənt"
             },
             {
-                "EN": "blouse ",
+                "EN": "blouse",
                 "VN": "áo cánh",
                 "IPA": "ˈbɫaʊs"
             },
             {
-                "EN": "bookshop ",
+                "EN": "bookshop",
                 "VN": "hiệu sách",
                 "IPA": "ˈbʊkˌʃɑp"
             },
             {
-                "EN": "bread ",
+                "EN": "bread",
                 "VN": "bánh mỳ",
                 "IPA": "ˈbɹɛd"
             },
             {
-                "EN": "breakfast ",
+                "EN": "breakfast",
                 "VN": "bữa ăn sáng",
                 "IPA": "ˈbɹɛkfəst"
             },
             {
-                "EN": "build ",
+                "EN": "build",
                 "VN": "xây dựng",
                 "IPA": "ˈbɪɫd"
             },
             {
-                "EN": "busy ",
+                "EN": "busy",
                 "VN": "bận",
                 "IPA": "ˈbɪzi"
             },
             {
-                "EN": "buy ",
+                "EN": "buy",
                 "VN": "mua",
                 "IPA": "ˈbaɪ"
             },
             {
-                "EN": "celebration ",
+                "EN": "celebration",
                 "VN": "lễ kỷ niệm",
                 "IPA": "ˌsɛɫəˈbɹeɪʃən"
             },
             {
-                "EN": "chicken ",
+                "EN": "chicken",
                 "VN": "gà",
                 "IPA": "ˈtʃɪkən"
             },
@@ -1855,27 +1855,27 @@ export default [
                 "IPA": "ˈtʃɪɫdɹənz ˈdeɪ"
             },
             {
-                "EN": "chocolate ",
+                "EN": "chocolate",
                 "VN": "sô cô la",
                 "IPA": "ˈtʃɔkɫət"
             },
             {
-                "EN": "Christmas ",
+                "EN": "Christmas",
                 "VN": "Giáng sinh",
                 "IPA": "ˈkɹɪsməs"
             },
             {
-                "EN": "cinema ",
+                "EN": "cinema",
                 "VN": "Rạp chiếu phim",
                 "IPA": "ˈsɪnəmə"
             },
             {
-                "EN": "clerk ",
+                "EN": "clerk",
                 "VN": "nhân viên bán hàng",
                 "IPA": "ˈkɫɝk"
             },
             {
-                "EN": "clothes ",
+                "EN": "clothes",
                 "VN": "quần áo",
                 "IPA": "ˈkɫoʊðz"
             },
@@ -1890,92 +1890,92 @@ export default [
         "img": "https://i.postimg.cc/wvmg3WCR/S-ch-H-c-Sinh-Ti-ng-Anh-L-p-4-T-p-2-74.jpg",
         "data": [
             {
-                "EN": "cook ",
+                "EN": "cook",
                 "VN": "đầu bếp",
                 "IPA": "ˈkʊk"
             },
             {
-                "EN": "countryside ",
+                "EN": "countryside",
                 "VN": "vùng nông thôn",
                 "IPA": "ˈkəntɹiˌsaɪd"
             },
             {
-                "EN": "crocodile ",
+                "EN": "crocodile",
                 "VN": "Cá sấu",
                 "IPA": "ˈkɹɑkəˌdaɪɫ"
             },
             {
-                "EN": "dangerous ",
+                "EN": "dangerous",
                 "VN": "sự nguy hiểm",
                 "IPA": "ˈdeɪndʒɝəs"
             },
             {
-                "EN": "decorate ",
+                "EN": "decorate",
                 "VN": "trang trí",
                 "IPA": "ˈdɛkɝˌeɪt"
             },
             {
-                "EN": "delicious ",
+                "EN": "delicious",
                 "VN": "thơm ngon",
                 "IPA": "dɪˈɫɪʃəs"
             },
             {
-                "EN": "dictionary ",
+                "EN": "dictionary",
                 "VN": "từ điển",
                 "IPA": "ˈdɪkʃəˌnɛɹi"
             },
             {
-                "EN": "dinner ",
+                "EN": "dinner",
                 "VN": "bữa ăn tối",
                 "IPA": "ˈdɪnɝ"
             },
             {
-                "EN": "doctor ",
+                "EN": "doctor",
                 "VN": "Bác sĩ",
                 "IPA": "ˈdɑktɝ"
             },
             {
-                "EN": "dong ",
+                "EN": "dong",
                 "VN": "dong",
                 "IPA": "dong"
             },
             {
-                "EN": "driver ",
+                "EN": "driver",
                 "VN": "tài xế",
                 "IPA": "ˈdɹaɪvɝ"
             },
             {
-                "EN": "elephant ",
+                "EN": "elephant",
                 "VN": "con voi",
                 "IPA": "ˈɛɫəfənt"
             },
             {
-                "EN": "enjoy ",
+                "EN": "enjoy",
                 "VN": "vui thích",
                 "IPA": "ˌɛnˈdʒɔɪ"
             },
             {
-                "EN": "enormous ",
+                "EN": "enormous",
                 "VN": "lớn lao",
                 "IPA": "iˈnɔɹməs"
             },
             {
-                "EN": "evening ",
+                "EN": "evening",
                 "VN": "tối",
                 "IPA": "ˈivnɪŋ"
             },
             {
-                "EN": "expensive ",
+                "EN": "expensive",
                 "VN": "đắt tiền",
                 "IPA": "ɪkˈspɛnsɪv"
             },
             {
-                "EN": "factory ",
+                "EN": "factory",
                 "VN": "nhà máy",
                 "IPA": "ˈfæktɝi"
             },
             {
-                "EN": "farmer ",
+                "EN": "farmer",
                 "VN": "nông dân",
                 "IPA": "ˈfɑɹmɝ"
             },
@@ -1985,12 +1985,12 @@ export default [
                 "IPA": "ˈfæst"
             },
             {
-                "EN": "festival ",
+                "EN": "festival",
                 "VN": "ngày hội",
                 "IPA": "ˈfɛstəvəɫ"
             },
             {
-                "EN": "field ",
+                "EN": "field",
                 "VN": "đồng ruộng",
                 "IPA": "ˈfiɫd"
             },
@@ -2005,7 +2005,7 @@ export default [
                 "IPA": "ˈfaɪnəɫi"
             },
             {
-                "EN": "firework display ",
+                "EN": "firework display",
                 "VN": "bắn pháo hoa",
                 "IPA": "ˈfaɪɹˌwɝk dɪsˈpɫeɪ"
             },
@@ -2090,12 +2090,12 @@ export default [
                 "IPA": "ɡoʊ tuː ˈbɛd"
             },
             {
-                "EN": "go to school ",
+                "EN": "go to school",
                 "VN": "đi học",
                 "IPA": "ɡoʊ tuː skuːl"
             },
             {
-                "EN": "grandparent ",
+                "EN": "grandparent",
                 "VN": "ông bà",
                 "IPA": "ˈɡɹændˌpɛɹənt"
             },
@@ -2120,27 +2120,27 @@ export default [
                 "IPA": "ˈhɑɫəˌdeɪ"
             },
             {
-                "EN": "hospital ",
+                "EN": "hospital",
                 "VN": "bệnh viện",
                 "IPA": "ˈhɑˌspɪtəɫ"
             },
             {
-                "EN": "hotel ",
+                "EN": "hotel",
                 "VN": "khách sạn",
                 "IPA": "hoʊˈtɛɫ"
             },
             {
-                "EN": "house ",
+                "EN": "house",
                 "VN": "căn nhà",
                 "IPA": "ˈhaʊs"
             },
             {
-                "EN": "how much ",
+                "EN": "how much",
                 "VN": "bao nhiêu",
                 "IPA": "haʊ ˈmətʃ"
             },
             {
-                "EN": "hungry ",
+                "EN": "hungry",
                 "VN": "đói bụng",
                 "IPA": "ˈhəŋɡɹi"
             },
@@ -2155,7 +2155,7 @@ export default [
                 "IPA": "ˈdʒækət"
             },
             {
-                "EN": "jeans ",
+                "EN": "jeans",
                 "VN": "Quần jean",
                 "IPA": "ˈdʒinz"
             },
@@ -2165,12 +2165,12 @@ export default [
                 "IPA": "ˈdʒɔɪn"
             },
             {
-                "EN": "jumper ",
+                "EN": "jumper",
                 "VN": "jumper",
                 "IPA": "ˈdʒəmpɝ"
             },
             {
-                "EN": "kangaroo ",
+                "EN": "kangaroo",
                 "VN": "con chuột túi",
                 "IPA": "ˌkæŋɡɝˈu"
             },
@@ -2195,17 +2195,17 @@ export default [
                 "IPA": "ˈɫɛməˈneɪd"
             },
             {
-                "EN": "lucky money ",
+                "EN": "lucky money",
                 "VN": "tiền lì xì",
                 "IPA": "ˈɫəki ˈməni"
             },
             {
-                "EN": "lunch ",
+                "EN": "lunch",
                 "VN": "Bữa trưa",
                 "IPA": "ˈɫəntʃ"
             },
             {
-                "EN": "make ",
+                "EN": "make",
                 "VN": "chế tạo",
                 "IPA": "ˈmeɪk"
             },
@@ -2220,27 +2220,27 @@ export default [
                 "IPA": "ˈmɪɫk"
             },
             {
-                "EN": "mobile ",
+                "EN": "mobile",
                 "VN": "di động",
                 "IPA": "ˈmoʊbəɫ"
             },
             {
-                "EN": "phone ",
+                "EN": "phone",
                 "VN": "điện thoại",
                 "IPA": "ˈfoʊn"
             },
             {
-                "EN": "monkey ",
+                "EN": "monkey",
                 "VN": "con khỉ",
                 "IPA": "ˈməŋki"
             },
             {
-                "EN": "morning ",
+                "EN": "morning",
                 "VN": "buổi sáng",
                 "IPA": "ˈmɔː.nɪŋ"
             },
             {
-                "EN": "next ",
+                "EN": "next",
                 "VN": "tiếp theo",
                 "IPA": "nekst"
             },
@@ -2255,22 +2255,22 @@ export default [
                 "IPA": "ˈnudəɫz"
             },
             {
-                "EN": "noon ",
+                "EN": "noon",
                 "VN": "không bật",
                 "IPA": "ˈnun"
             },
             {
-                "EN": "nurse ",
+                "EN": "nurse",
                 "VN": "cô y tá",
                 "IPA": "ˈnɝs"
             },
             {
-                "EN": "o'clock ",
+                "EN": "o'clock",
                 "VN": "giờ",
                 "IPA": "əˈkɫɑk"
             },
             {
-                "EN": "office ",
+                "EN": "office",
                 "VN": "văn phòng",
                 "IPA": "ˈɔfɪs"
             },
@@ -2280,12 +2280,12 @@ export default [
                 "IPA": "oʊld"
             },
             {
-                "EN": "orange juice ",
+                "EN": "orange juice",
                 "VN": "nước cam",
                 "IPA": "ˈɔɹəndʒ ˈdʒus"
             },
             {
-                "EN": "pharmacy ",
+                "EN": "pharmacy",
                 "VN": "tiệm thuốc",
                 "IPA": "ˈfɑɹməsi"
             },
@@ -2295,32 +2295,32 @@ export default [
                 "IPA": "ˈfoʊn ˈnʌm.bər"
             },
             {
-                "EN": "p.m. ",
+                "EN": "p.m.",
                 "VN": "buổi chiều.",
                 "IPA": "ˈpiˈɛm"
             },
             {
-                "EN": "pork ",
+                "EN": "pork",
                 "VN": "thịt heo",
                 "IPA": "ˈpɔɹk"
             },
             {
-                "EN": "prepare ",
+                "EN": "prepare",
                 "VN": "chuẩn bị các",
                 "IPA": "pɹiˈpɛɹ"
             },
             {
-                "EN": "relative ",
+                "EN": "relative",
                 "VN": "quan hệ",
                 "IPA": "ˈɹɛɫətɪv"
             },
             {
-                "EN": "repeal ",
+                "EN": "repeal",
                 "VN": "bãi bỏ",
                 "IPA": "ɹiˈpiɫ"
             },
             {
-                "EN": "rice ",
+                "EN": "rice",
                 "VN": "cơm",
                 "IPA": "ˈɹaɪs"
             },
@@ -2335,7 +2335,7 @@ export default [
         "img": "https://i.postimg.cc/xjL924GW/S-ch-H-c-Sinh-Ti-ng-Anh-L-p-4-T-p-2-77.jpg",
         "data": [
             {
-                "EN": "sandcastle ",
+                "EN": "sandcastle",
                 "VN": "lâu đài cát",
                 "IPA": "ˈsændˌkæs.əl"
             },
@@ -2345,37 +2345,37 @@ export default [
                 "IPA": "ˈskɑɹf"
             },
             {
-                "EN": "scary ",
+                "EN": "scary",
                 "VN": "đáng sợ",
                 "IPA": "ˈskɛɹi"
             },
             {
-                "EN": "scenery ",
+                "EN": "scenery",
                 "VN": "phong cảnh",
                 "IPA": "ˈsinɝi"
             },
             {
-                "EN": "sea ",
+                "EN": "sea",
                 "VN": "biển",
                 "IPA": "ˈsi"
             },
             {
-                "EN": "seafood ",
+                "EN": "seafood",
                 "VN": "Hải sản",
                 "IPA": "ˈsiˌfud"
             },
             {
-                "EN": "shoes ",
+                "EN": "shoes",
                 "VN": "đôi giày",
                 "IPA": "ˈʃuz"
             },
             {
-                "EN": "short ",
+                "EN": "short",
                 "VN": "ngắn ngủi",
                 "IPA": "ʃɔːrt"
             },
             {
-                "EN": "skirt ",
+                "EN": "skirt",
                 "VN": "váy",
                 "IPA": "ˈskɝt"
             },
@@ -2385,27 +2385,27 @@ export default [
                 "IPA": "ˈsɫɪm"
             },
             {
-                "EN": "small ",
+                "EN": "small",
                 "VN": "bé nhỏ",
                 "IPA": "smɑːl"
             },
             {
-                "EN": "smart ",
+                "EN": "smart",
                 "VN": "thông minh",
                 "IPA": "ˈsmɑɹt"
             },
             {
-                "EN": "start ",
+                "EN": "start",
                 "VN": "bắt đầu",
                 "IPA": "ˈstɑɹt"
             },
             {
-                "EN": "stay ",
+                "EN": "stay",
                 "VN": "ở lại",
                 "IPA": "ˈsteɪ"
             },
             {
-                "EN": "strong ",
+                "EN": "strong",
                 "VN": "mạnh",
                 "IPA": "ˈstɹɔŋ"
             },
@@ -2420,7 +2420,7 @@ export default [
                 "IPA": "ˈsəmɝ"
             },
             {
-                "EN": "summer ",
+                "EN": "summer",
                 "VN": "mùa hạ",
                 "IPA": "ˈsəmɝ"
             },
@@ -2430,22 +2430,22 @@ export default [
                 "IPA": "ˈhɑɫəˌdeɪz"
             },
             {
-                "EN": "supermarket ",
+                "EN": "supermarket",
                 "VN": "siêu thị",
                 "IPA": "ˈsupɝˌmɑɹkɪt"
             },
             {
-                "EN": "sweet ",
+                "EN": "sweet",
                 "VN": "ngọt",
                 "IPA": "ˈswit"
             },
             {
-                "EN": "sweet shop ",
+                "EN": "sweet shop",
                 "VN": "cửa hàng bánh kẹo",
                 "IPA": "ˈswit ˈʃɑp"
             },
             {
-                "EN": "swimming pool ",
+                "EN": "swimming pool",
                 "VN": "Hồ bơi",
                 "IPA": "ˈswɪmɪŋ ˈpuɫ"
             },
@@ -2460,7 +2460,7 @@ export default [
                 "IPA": "ˈtitʃɝz ˈdeɪ ​"
             },
             {
-                "EN": "then ",
+                "EN": "then",
                 "VN": "sau đó",
                 "IPA": "ˈðɛn"
             },
@@ -2485,27 +2485,27 @@ export default [
                 "IPA": "ˈtaɪɡɝ"
             },
             {
-                "EN": "time ",
+                "EN": "time",
                 "VN": "thời gian",
                 "IPA": "taɪm"
             },
             {
-                "EN": "trousers ",
+                "EN": "trousers",
                 "VN": "quần",
                 "IPA": "ˈtɹaʊzɝz"
             },
             {
-                "EN": "uncle ",
+                "EN": "uncle",
                 "VN": "Chú",
                 "IPA": "ˈəŋkəɫ"
             },
             {
-                "EN": "usually ",
+                "EN": "usually",
                 "VN": "thông thường",
                 "IPA": "ˈjuʒəɫi"
             },
             {
-                "EN": "vegetables ",
+                "EN": "vegetables",
                 "VN": "rau",
                 "IPA": "ˈvɛdʒtəbəɫz"
             },
@@ -2515,7 +2515,7 @@ export default [
                 "IPA": "ˈvɪzɪt"
             },
             {
-                "EN": "want ",
+                "EN": "want",
                 "VN": "muốn",
                 "IPA": "ˈwɑnt"
             },
@@ -2525,17 +2525,17 @@ export default [
                 "IPA": "ˈwɔtɝ"
             },
             {
-                "EN": "wear ",
+                "EN": "wear",
                 "VN": "mặc",
                 "IPA": "ˈwɛɹ"
             },
             {
-                "EN": "wish ",
+                "EN": "wish",
                 "VN": "ước",
                 "IPA": "ˈwɪʃ"
             },
             {
-                "EN": "wonderful ",
+                "EN": "wonderful",
                 "VN": "Tuyệt vời",
                 "IPA": "ˈwəndɝfəɫ"
             },
@@ -2545,7 +2545,7 @@ export default [
                 "IPA": "ˈwɝkɝ"
             },
             {
-                "EN": "young ",
+                "EN": "young",
                 "VN": "trẻ tuổi",
                 "IPA": "ˈjəŋ"
             },
