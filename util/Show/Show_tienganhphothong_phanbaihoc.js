@@ -35,6 +35,7 @@ export default function Show_tienganhphothong_phanbaihoc({ Data_Learn, SET_Data_
                 <div
                     style={{
                         border: "5px solid green",
+                        borderRadius: "5px",
                         padding: "5px",
                         cursor: "pointer",
                         display: "inline-block",
@@ -53,7 +54,8 @@ export default function Show_tienganhphothong_phanbaihoc({ Data_Learn, SET_Data_
                 {Data_Learn.EN.split(" ").map((e, i) =>
                     <span
                         style={{
-                            border: "5px solid green",
+                            border: "2px solid blue",
+                            borderRadius: "5px",
                             padding: "5px",
                             cursor: "pointer",
                             display: "inline-block",
@@ -66,7 +68,7 @@ export default function Show_tienganhphothong_phanbaihoc({ Data_Learn, SET_Data_
                 )}
             </p>
             <hr />
-            <span style={{ color: "red" }}>Đọc câu/từ này:</span>{Data_Commands}
+
             <br />
             <button
                 className="btn btn-info"
@@ -78,7 +80,11 @@ export default function Show_tienganhphothong_phanbaihoc({ Data_Learn, SET_Data_
                 }}
             >Luyện nói nguyên câu</button>
             {Docthu === "" ? null
-                : Docthu === "Docthu" ? <img src="https://i.postimg.cc/1z95rjPs/Listening.gif" alt="https://i.postimg.cc/1z95rjPs/Listening.gif" width="100px" />
+                : Docthu === "Docthu" ?
+                    <>
+                        <img src="https://i.postimg.cc/1z95rjPs/Listening.gif" alt="https://i.postimg.cc/1z95rjPs/Listening.gif" width="100px" />
+                        {Data_Commands}
+                    </>
                     : <span style={{ fontSize: "larger", color: "red" }}> <b>Chính Xác - Chúc mừng</b></span>
             }
             <br />

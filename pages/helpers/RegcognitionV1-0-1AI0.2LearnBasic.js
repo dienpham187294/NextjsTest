@@ -148,21 +148,24 @@ export default Dictaphone;
 //     console.log("e inreact data")
 // }
 async function CheckCommandFast(Str_to_Check, Data, writeMessage) {
-
     try {
-        if (Data.split(" ").length < 3) {
-            let numCount = 0
-            Data.toLowerCase().split(/[\?#!-().,]+/).join("").split(" ").forEach(e => {
-                let strSort = Str_to_Check.toLowerCase().split(/[\?#!-().]+/).join("");
-                console.log(strSort, "-----s", e)
-                if (strSort.includes(e)) {
-                    numCount++;
-                }
-            });
-            if (numCount / Data.split(" ").length > 0.4) {
+        if (Data.split(" ").length === 1) {
+            if (Str_to_Check.toLowerCase().split(/[\?#!-().]+/).join("").includes(Data.toLowerCase().split(/[\?#!-().,]+/).join(""))) {
                 console.log("CheckFast")
                 writeMessage()
             }
+            // let numCount = 0
+            // Data.toLowerCase().split(/[\?#!-().,]+/).join("").split(" ").forEach(e => {
+            //     let strSort = Str_to_Check.toLowerCase().split(/[\?#!-().]+/).join("");
+            //     console.log(strSort, "-----s", e)
+            //     if (strSort.includes(e)) {
+            //         numCount++;
+            //     }
+            // });
+            // if (numCount / Data.split(" ").length > 0.4) {
+            //     console.log("CheckFast")
+            //     writeMessage()
+            // }
         }
     } catch (error) {
         console.log("e")
