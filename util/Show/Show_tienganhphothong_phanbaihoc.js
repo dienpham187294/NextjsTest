@@ -10,14 +10,13 @@ export default function Show_tienganhphothong_phanbaihoc({ Data_Learn, SET_Data_
             <h1>
                 {Data_Learn.EN.split(" ").map((e, i) =>
                     <span
-                        style={{ cursor: "pointer", border: "1px solid green", borderRadius: "5px", padding: "5px" }}
+                        style={{ cursor: "pointer" }}
                         onClick={() => { SET_Data_Commands(e); SET_Docthu("Docthu"); document.getElementById("BUTTON_CLICK_TO_TALK").click(); }}
                         key={i}>
                         {e + " "}
                     </span>
                 )}
             </h1>
-            <i>Tips: Có thể bấm chọn từng từ để luyện nói</i>
             <hr />
             <h1>{Data_Learn.VN}</h1>
 
@@ -48,6 +47,24 @@ export default function Show_tienganhphothong_phanbaihoc({ Data_Learn, SET_Data_
             )}
 
             <h1>{Data_Learn.IPA}</h1>
+            <b>Chọn từng từ để luyện nói</b>
+            <br />
+            <p>
+                {Data_Learn.EN.split(" ").map((e, i) =>
+                    <span
+                        style={{
+                            border: "5px solid green",
+                            padding: "5px",
+                            cursor: "pointer",
+                            display: "inline-block",
+                            marginLeft: "10px"
+                        }}
+                        onClick={() => { SET_Data_Commands(e); SET_Docthu("Docthu"); document.getElementById("BUTTON_CLICK_TO_TALK").click(); }}
+                        key={i}>
+                        {e + " "}
+                    </span>
+                )}
+            </p>
             <hr />
             <span style={{ color: "red" }}>Đọc câu/từ này:</span>{Data_Commands}
             <br />

@@ -59,6 +59,7 @@ function Dictaphone({ Data }) {
             {
                 command: Data,
                 callback: () => {
+                    console.log("CheckCommands")
                     writeMessage();
                 },
                 isFuzzyMatch: true,
@@ -70,6 +71,8 @@ function Dictaphone({ Data }) {
     }, [Data])
 
 
+
+
     const {
         listening, interimTranscript
     } = useSpeechRecognition({
@@ -78,7 +81,7 @@ function Dictaphone({ Data }) {
     useEffect(() => {
         try {
             Str_to_Check += interimTranscript + " ";
-            $("#interrimID").text(interimTranscript);
+            interimTranscript !== "" ? $("#interrimID").text(interimTranscript) : CheckCommandFast(Str_to_Check, Data, writeMessage);
         } catch (error) {
             console.log(error)
         }
@@ -144,44 +147,65 @@ export default Dictaphone;
 // } catch (error) {
 //     console.log("e inreact data")
 // }
-// async function CheckCommandFast(Str_to_Check, Data, writeMessage) {
+async function CheckCommandFast(Str_to_Check, Data, writeMessage) {
 
-//     try {
-//         ArrNumber.forEach(e => {
-//             (Str_to_Check.includes(e.number)) ? Str_to_Check += e.text : null
-//         })
-//     } catch (error) {
-//         console.log("e")
-//     }
-//     let i = 0;
-//     let Arr = Data.toLowerCase().split(/[\?#!-().,]+/).join("").split(" ")
-//     let strSort = Str_to_Check.toLowerCase().split(/[\?#!-().]+/).join("");
-//     Arr.forEach(e => {
-//         if (strSort.includes(e)) {
-//             i++;
-//         }
-//     });
-//     if (Arr.length === 1 && Count3time === 0) {
-//         Count3time++;
-//     }
-//     if (Arr.length === 2 && Count3time === 0) {
-//         i === 1 ? Count3time++ : null
-//     }
-//     if (Arr.length > 2 && Count3time === 0) {
-//         i > 0.4 * Arr.length ? Count3time++ : null
-//     }
-//     if (i === Arr.length) {
-//         writeMessage("Đúng 100%");
-//         return;
-//     };
-//     if (Str_to_Check.length > indexCheck && Count3time > 0) {
-//         Count3time++;
-//         console.log(Count3time)
-//     }
-//     if (Count3time > 4) {
-//         writeMessage("Đúng 80%");
-//         return
-//     }
-//     indexCheck = Str_to_Check.length;
+    try {
+        if (Data.split(" ").length < 3) {
+            let numCount = 0
+            Data.toLowerCase().split(/[\?#!-().,]+/).join("").split(" ").forEach(e => {
+                let strSort = Str_to_Check.toLowerCase().split(/[\?#!-().]+/).join("");
+                console.log(strSort, "-----s", e)
+                if (strSort.includes(e)) {
+                    numCount++;
+                }
+            });
+            if (numCount / Data.split(" ").length > 0.4) {
+                console.log("CheckFast")
+                writeMessage()
+            }
+        }
+    } catch (error) {
+        console.log("e")
+    }
 
-// }
+
+
+    // try {
+    //     ArrNumber.forEach(e => {
+    //         (Str_to_Check.includes(e.number)) ? Str_to_Check += e.text : null
+    //     })
+    // } catch (error) {
+    //     console.log("e")
+    // }
+    // let i = 0;
+    // let Arr = Data.toLowerCase().split(/[\?#!-().,]+/).join("").split(" ")
+    // let strSort = Str_to_Check.toLowerCase().split(/[\?#!-().]+/).join("");
+    // Arr.forEach(e => {
+    //     if (strSort.includes(e)) {
+    //         i++;
+    //     }
+    // });
+    // if (Arr.length === 1 && Count3time === 0) {
+    //     Count3time++;
+    // }
+    // if (Arr.length === 2 && Count3time === 0) {
+    //     i === 1 ? Count3time++ : null
+    // }
+    // if (Arr.length > 2 && Count3time === 0) {
+    //     i > 0.4 * Arr.length ? Count3time++ : null
+    // }
+    // if (i === Arr.length) {
+    //     writeMessage("Đúng 100%");
+    //     return;
+    // };
+    // if (Str_to_Check.length > indexCheck && Count3time > 0) {
+    //     Count3time++;
+    //     console.log(Count3time)
+    // }
+    // if (Count3time > 4) {
+    //     writeMessage("Đúng 80%");
+    //     return
+    // }
+    // indexCheck = Str_to_Check.length;
+
+}

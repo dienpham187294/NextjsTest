@@ -73,6 +73,9 @@ export default function Show_Tieng_anh_lop_1(Dulieu_tieng_anh_lop_1, tokenCheck,
                         <div className="container">
 
                             <h3> {Name}</h3>
+                            <Dictaphone
+                                Data={Data_Commands}
+                            />
                             <hr />
                             <div className="row">
                                 <div className="col-6">
@@ -138,9 +141,7 @@ export default function Show_Tieng_anh_lop_1(Dulieu_tieng_anh_lop_1, tokenCheck,
                                         </div>
                                     )}
                                     <hr />
-                                    <Dictaphone
-                                        Data={Data_Commands}
-                                    />
+
                                     <div className="text-left">
                                         <i >Bản dịch tiếng việt vài nơi còn chưa chuẩn ngữ nghĩa, quý vị phụ huynh và học sinh thông cảm. Chúng tôi sẽ cố gắng cải thiện trong thời gian tới.</i>
                                     </div>
@@ -157,6 +158,7 @@ export default function Show_Tieng_anh_lop_1(Dulieu_tieng_anh_lop_1, tokenCheck,
                     }
                     <hr />
                 </div>
+
                 <Read_ReactSpeech />
                 <Dictionary_with_image Popup={Popup} />
                 <p id="DataAcross"></p>
