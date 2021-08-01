@@ -37,7 +37,8 @@ function Dictionary_with_image(props) {
                 width: "70%",
                 maxHeight: "100%",
                 backgroundColor: "white",
-                overflow: "auto"
+                overflow: "auto",
+                zIndex: 3
             }}
         >
 
