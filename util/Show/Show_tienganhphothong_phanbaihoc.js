@@ -6,29 +6,31 @@ export default function Show_tienganhphothong_phanbaihoc({ Data_Learn, SET_Data_
     return (
         <div className="text-justify">
             <hr />
+
             <h1>
                 {Data_Learn.EN.split(" ").map((e, i) =>
                     <span
-                        style={{ cursor: "pointer" }}
+                        style={{ cursor: "pointer", border: "1px solid green", borderRadius: "5px", padding: "5px" }}
                         onClick={() => { SET_Data_Commands(e); SET_Docthu("Docthu"); document.getElementById("BUTTON_CLICK_TO_TALK").click(); }}
                         key={i}>
                         {e + " "}
                     </span>
                 )}
             </h1>
+            <i>Tips: Có thể bấm chọn từng từ để luyện nói</i>
             <hr />
             <h1>{Data_Learn.VN}</h1>
 
             <hr />
             <button
-                className="btn btn-warning"
+                className="btn btn-primary"
                 style={{ fontSize: "larger", padding: "20px" }}
                 onClick={() => {
                     ReadMessage(Data_Learn.EN, [1, 2].PickRandom())
                 }}
             >Nghe máy đọc nguyên câu</button>
             <br />
-            <b>Đọc từng chữ:</b>
+            <b>Bấm vào từ để nghe máy đọc:</b>
             <br />
             {Data_Learn.EN.split(" ").map((e, i) =>
                 <div
@@ -47,34 +49,34 @@ export default function Show_tienganhphothong_phanbaihoc({ Data_Learn, SET_Data_
 
             <h1>{Data_Learn.IPA}</h1>
             <hr />
-            {Data_Commands}
+            <span style={{ color: "red" }}>Đọc câu/từ này:</span>{Data_Commands}
             <br />
             <button
-                className="btn btn-warning"
+                className="btn btn-info"
                 style={{ fontSize: "larger", padding: "20px" }}
                 onClick={() => {
                     document.getElementById("BUTTON_CLICK_TO_TALK").click();
                     SET_Data_Commands(Data_Learn.EN);
                     SET_Docthu("Docthu")
                 }}
-            >Đọc thử</button>
+            >Luyện nói nguyên câu</button>
             {Docthu === "" ? null
                 : Docthu === "Docthu" ? <img src="https://i.postimg.cc/1z95rjPs/Listening.gif" alt="https://i.postimg.cc/1z95rjPs/Listening.gif" width="100px" />
                     : <span style={{ fontSize: "larger", color: "red" }}> <b>Chính Xác - Chúc mừng</b></span>
             }
             <br />
-            <b>Máy lắng nghe: </b>
+            <b>Máy lắng nghe bạn nói... : </b>
             <i id="interrimID"></i>
             <hr />
             <button
-                className="btn btn-warning"
+                className="btn btn-danger"
                 style={{ fontSize: "larger", padding: "20px" }}
                 onClick={() => {
                     SET_Data_Learn("");
                     SET_Docthu("");
                     $("#ID_ShowTiengAnh").scrollTop(150)
                 }}
-            >Học câu khác</button>
+            >Chọn câu khác.</button>
             <hr />
             <div>
                 <div>
@@ -100,7 +102,7 @@ export default function Show_tienganhphothong_phanbaihoc({ Data_Learn, SET_Data_
 
 
             <hr />
-          
+
             <button style={{ display: "none" }} onClick={() => {
                 if ($("#messageRes").val() !== "" && Docthu === "Docthu") {
                     SET_Docthu("A");

@@ -6,7 +6,6 @@ import FullScreen from "../../fullscreen/fullscreen"
 import Show_QuangCao from "../../Show/Show_QuangCao"
 import Show_tienganhphothong_phanbaihoc from "../../Show/Show_tienganhphothong_phanbaihoc"
 import Show_tienganhphothong_hocphatam from "../../Show/Show_tienganhphothong_hocphatam"
-
 import Dictaphone from "../../../pages/helpers/RegcognitionV1-0-1AI0.2LearnBasic"
 const queryString = require('query-string');
 let linkReset = ""
@@ -84,7 +83,9 @@ export default function Show_Tieng_anh_lop_1(Dulieu_tieng_anh_lop_1, tokenCheck,
                                         defaultValue="0"
                                         onChange={(e) => {
                                             SET_Num_page(e.currentTarget.value)
+                                            SET_Data_Learn("");
                                             try {
+                                                $("#ID_ShowTiengAnh").scrollTop(150)
                                                 $("#hrefID").attr("href", linkReset + "&p=" + $("#SelectID").val())
                                             } catch (error) {
                                                 console.log("e")
@@ -137,7 +138,9 @@ export default function Show_Tieng_anh_lop_1(Dulieu_tieng_anh_lop_1, tokenCheck,
                                         </div>
                                     )}
                                     <hr />
-
+                                    <Dictaphone
+                                        Data={Data_Commands}
+                                    />
                                     <div className="text-left">
                                         <i >Bản dịch tiếng việt vài nơi còn chưa chuẩn ngữ nghĩa, quý vị phụ huynh và học sinh thông cảm. Chúng tôi sẽ cố gắng cải thiện trong thời gian tới.</i>
                                     </div>
@@ -155,9 +158,6 @@ export default function Show_Tieng_anh_lop_1(Dulieu_tieng_anh_lop_1, tokenCheck,
                     <hr />
                 </div>
                 <Read_ReactSpeech />
-                <Dictaphone
-                    Data={Data_Commands}
-                />
                 <Dictionary_with_image Popup={Popup} />
                 <p id="DataAcross"></p>
             </div >
