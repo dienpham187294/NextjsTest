@@ -1,11 +1,10 @@
 {
     "_id": {
-        "$oid": "6105383cd2e8478560a88d0e"
+        "$oid": "6106825ef87f6d276b656f99"
     },
-    "token": "abdadd187jd-31-7-2021-g294-na-giao-khoa-lop-4-tap-1",
-    "name": "Mỹ",
+    "token": "abdadd187jd-1-8-2021-g294-minh-thu-giao-khoa-lop-5-tap-1",
+    "name": "Minh Thư",
     "status": true,
-    "list_of_machine": ["none", "chrome92.0.4515Windows 10127.0.0.1", "chrome92.0.4515Windows 10127.0.0.1"],
+    "list_of_machine": ["none", "chrome92.0.4515Windows 10127.0.0.1", "chrome92.0.4515Windows 10127.0.0.1", "chrome92.0.4515Windows 10127.0.0.1", "chrome90.0.4430Android OS127.0.0.1", "chrome89.0.4389Android OS127.0.0.1", "chrome89.0.4389Android OS127.0.0.1", "chrome89.0.4389Android OS127.0.0.1", "chrome92.0.4515Windows 10127.0.0.1", "chrome92.0.4515Windows 8.1127.0.0.1"],
     "list_sentences": []
 }
-

@@ -45,7 +45,7 @@ function Dictaphone({ Data }) {
         // Count3time = 0;
         try {
             let Num = Data.split(" ").length
-            if (Num > 3 && Num < 5) {
+            if (Num > 3 && Num <= 5) {
                 MatchingInt = 0.5;
             }
             if (Num > 5) {
@@ -81,7 +81,7 @@ function Dictaphone({ Data }) {
     useEffect(() => {
         try {
             Str_to_Check += interimTranscript + " ";
-            interimTranscript !== "" ? $("#interrimID").text(interimTranscript) : CheckCommandFast(Str_to_Check, Data, writeMessage);
+            interimTranscript !== "" ? $("#interrimID").text(interimTranscript) : (CheckCommandFast(Str_to_Check, Data, writeMessage), $("#interrimID").text(interimTranscript));
         } catch (error) {
             console.log(error)
         }
