@@ -83,7 +83,7 @@ export default function Show_tienganhphothong_phanbaihoc({ Data_Learn, SET_Data_
                 : Docthu === "Docthu" ?
                     <>
                         <img src="https://i.postimg.cc/1z95rjPs/Listening.gif" alt="https://i.postimg.cc/1z95rjPs/Listening.gif" width="100px" />
-                        {Data_Commands}
+                        <h5 style={{ color: "red" }}>{Data_Commands}</h5>
                     </>
                     : <span style={{ fontSize: "larger", color: "red" }}> <b>Chính Xác - Chúc mừng</b></span>
             }
