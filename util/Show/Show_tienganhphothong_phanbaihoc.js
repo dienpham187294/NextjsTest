@@ -7,7 +7,7 @@ export default function Show_tienganhphothong_phanbaihoc({ Data_Learn, SET_Data_
         <div className="text-justify">
             <hr />
 
-            <h1>
+            <h3>
                 {Data_Learn.EN.split(" ").map((e, i) =>
                     <span
                         style={{ cursor: "pointer" }}
@@ -16,9 +16,9 @@ export default function Show_tienganhphothong_phanbaihoc({ Data_Learn, SET_Data_
                         {e + " "}
                     </span>
                 )}
-            </h1>
+            </h3>
             <hr />
-            <h1>{Data_Learn.VN}</h1>
+            <h3>{Data_Learn.VN}</h3>
 
             <hr />
             <button
@@ -71,7 +71,7 @@ export default function Show_tienganhphothong_phanbaihoc({ Data_Learn, SET_Data_
 
             <br />
             <button
-                className="btn btn-info"
+                className="btn btn-danger"
                 style={{ fontSize: "larger", padding: "20px" }}
                 onClick={() => {
                     document.getElementById("BUTTON_CLICK_TO_TALK").click();
@@ -82,7 +82,7 @@ export default function Show_tienganhphothong_phanbaihoc({ Data_Learn, SET_Data_
             {Docthu === "" ? null
                 : Docthu === "Docthu" ?
                     <>
-                        <img src="https://i.postimg.cc/1z95rjPs/Listening.gif" alt="https://i.postimg.cc/1z95rjPs/Listening.gif" width="100px" />
+                        <img src="https://i.postimg.cc/1z95rjPs/Listening.gif" alt="https://i.postimg.cc/1z95rjPs/Listening.gif" width="70px" />
                         <h5 style={{ color: "red" }}>{Data_Commands}</h5>
                     </>
                     : <span style={{ fontSize: "larger", color: "red" }}> <b>Chính Xác - Chúc mừng</b></span>
@@ -92,7 +92,7 @@ export default function Show_tienganhphothong_phanbaihoc({ Data_Learn, SET_Data_
             <i id="interrimID"></i>
             <hr />
             <button
-                className="btn btn-danger"
+                className="btn btn-info"
                 style={{ fontSize: "larger", padding: "20px" }}
                 onClick={() => {
                     SET_Data_Learn("");
@@ -100,6 +100,21 @@ export default function Show_tienganhphothong_phanbaihoc({ Data_Learn, SET_Data_
                     $("#ID_ShowTiengAnh").scrollTop(150)
                 }}
             >Chọn câu khác.</button>
+            <button
+                className="btn btn-primary ml-2"
+                style={{ fontSize: "larger", padding: "20px" }}
+                onClick={() => {
+                    try {
+                        $("#Btn_nextDatalearn").click()
+                    } catch (error) {
+                        console.log(error)
+                    }
+                    // SET_Num_page(A => A + 1)
+                    // SET_Data_Learn("");
+                    // SET_Docthu("");
+                    // $("#ID_ShowTiengAnh").scrollTop(150)
+                }}
+            >Câu tiếp.</button>
             <hr />
             <div>
                 <div>

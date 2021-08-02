@@ -10,6 +10,7 @@ import Dictaphone from "../../../pages/helpers/RegcognitionV1-0-1AI0.2LearnBasic
 const queryString = require('query-string');
 let linkReset = ""
 let statusCount = 0;
+let Int_nextDatalearn = 0;
 export default function Show_Tieng_anh_lop_1(Dulieu_tieng_anh_lop_1, tokenCheck, href) {
     const [Data_Learn, SET_Data_Learn] = useState("")
 
@@ -50,6 +51,9 @@ export default function Show_Tieng_anh_lop_1(Dulieu_tieng_anh_lop_1, tokenCheck,
             }
         }, 5000)
     }, [Status])
+
+
+
     try {
         return (
             <div className="container">
@@ -125,6 +129,7 @@ export default function Show_Tieng_anh_lop_1(Dulieu_tieng_anh_lop_1, tokenCheck,
                                             }}
                                             onClick={() => {
                                                 SET_Data_Learn(Dulieu_tieng_anh_lop_1[Num_page].data[i]);
+                                                Int_nextDatalearn = i
                                                 try {
                                                     if (!window.fullscreen && statusCount === 0) {
                                                         FullScreen("ID_ShowTiengAnh")
@@ -162,6 +167,15 @@ export default function Show_Tieng_anh_lop_1(Dulieu_tieng_anh_lop_1, tokenCheck,
                 <Read_ReactSpeech />
                 <Dictionary_with_image Popup={Popup} />
                 <p id="DataAcross"></p>
+                <button onClick={() => {
+                    try {
+                        (Dulieu_tieng_anh_lop_1[Num_page].data[Int_nextDatalearn + 1].EN) ?
+                            (SET_Data_Learn(Dulieu_tieng_anh_lop_1[Num_page].data[Int_nextDatalearn + 1]), Int_nextDatalearn++)
+                            : null
+                    } catch (error) {
+                        SET_Data_Learn(Dulieu_tieng_anh_lop_1[Num_page].data[0]); Int_nextDatalearn = 0
+                    }
+                }} id="Btn_nextDatalearn"></button>
             </div >
         )
     } catch (error) {
