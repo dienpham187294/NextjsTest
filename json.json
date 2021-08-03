@@ -1,10 +1,52 @@
-{
-    "_id": {
-        "$oid": "6106825ef87f6d276b656f99"
+[
+    {
+        "_id": {
+            "$oid": "6106825ef87f6d276b656f99"
+        },
+        "token": "abdadd187jd-1-8-2021-g294-minh-thu-giao-khoa-lop-5-tap-1",
+        "name": "Minh Thư",
+        "status": true,
+        "list_of_machine": [],
+        "list_sentences": []
     },
-    "token": "abdadd187jd-1-8-2021-g294-minh-thu-giao-khoa-lop-5-tap-1",
-    "name": "Minh Thư",
-    "status": true,
-    "list_of_machine": ["none", "chrome92.0.4515Windows 10127.0.0.1", "chrome92.0.4515Windows 10127.0.0.1", "chrome92.0.4515Windows 10127.0.0.1", "chrome90.0.4430Android OS127.0.0.1", "chrome89.0.4389Android OS127.0.0.1", "chrome89.0.4389Android OS127.0.0.1", "chrome89.0.4389Android OS127.0.0.1", "chrome92.0.4515Windows 10127.0.0.1", "chrome92.0.4515Windows 8.1127.0.0.1"],
-    "list_sentences": []
-}
+    {
+        "_id": {
+            "$oid": "6107db863deb45687eda5003"
+        },
+        "token": "abdadd187jd-2-8-2021-g29-ngoc-giao-khoa-lop-6-tap-1",
+        "name": "Ngọc",
+        "status": true,
+        "list_of_machine": [],
+        "list_sentences": []
+    },
+    {
+        "_id": {
+            "$oid": "6107dbdb3deb45687eda5004"
+        },
+        "token": "abdadd187jd-2-8-2021-g29-ngoc-giao-khoa-lop-6-tap-2",
+        "name": "Ngọc",
+        "status": true,
+        "list_of_machine": [],
+        "list_sentences": []
+    },
+    {
+        "_id": {
+            "$oid": "6107b9363deb45687eda4ffc"
+        },
+        "token": "abdadd187jd-2-8-2021-g294-bao-ngoc-giao-khoa-lop-3-tap-2",
+        "name": "Bảo Ngọc",
+        "status": true,
+        "list_of_machine": [],
+        "list_sentences": []
+    },
+    {
+        "_id": {
+            "$oid": "6107b2253deb45687eda4ff6"
+        },
+        "token": "abdadd187jd-2-8-2021-g294-bao-nguyen-giao-khoa-lop-3-tap-2",
+        "name": "Bảo Nguyên",
+        "status": true,
+        "list_of_machine": [],
+        "list_sentences": []
+    }
+]

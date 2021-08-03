@@ -1,64 +1,80 @@
 export default [
+
     {
-        name: "Tiếng anh lớp 1",
+        name: "KHÓA HỌC TẠI LỚP",
+        price: "349.000VNĐ/tháng",
+        discription: "Học với phương pháp nhập vai - Hiệu quả nhanh chóng - thấy rõ. Cam kết hiệu quả."
+    },
+    {
+        name: "Tiếng anh lớp 1 (chương trình mới)",
         price: "99.000VNĐ/năm",
         discription: "Giáo trình theo bộ giáo dục áp dụng công nghệ nhận diện giọng nói."
     },
     {
-        name: "Tiếng anh lớp 2",
+        name: "Tiếng anh lớp 2 (Chương trình mới)",
         price: "99.000VNĐ/năm",
         discription: "Giáo trình theo bộ giáo dục áp dụng công nghệ nhận diện giọng nói."
     },
     ,
     {
-        name: "Tiếng anh lớp 3 tập 1",
+        name: "Tiếng anh lớp 3 tập 1 (Chương trình cũ)",
         price: "149.000VNĐ/năm",
         discription: "Giáo trình theo bộ giáo dục áp dụng công nghệ nhận diện giọng nói."
     }
     ,
     {
-        name: "Tiếng anh lớp 3 tập 2",
+        name: "Tiếng anh lớp 3 tập 2 (Chương trình cũ)",
         price: "149.000VNĐ/năm",
         discription: "Giáo trình theo bộ giáo dục áp dụng công nghệ nhận diện giọng nói."
     }
     ,
     {
-        name: "Tiếng anh lớp 4 tập 1",
+        name: "Tiếng anh lớp 4 tập 1 (Chương trình cũ)",
         price: "149.000VNĐ/năm",
         discription: "Giáo trình theo bộ giáo dục áp dụng công nghệ nhận diện giọng nói."
     }
     ,
     {
-        name: "Tiếng anh lớp 4 tập 2",
+        name: "Tiếng anh lớp 4 tập 2 (Chương trình cũ)",
         price: "149.000VNĐ/năm",
         discription: "Giáo trình theo bộ giáo dục áp dụng công nghệ nhận diện giọng nói."
     }
     ,
     {
-        name: "Tiếng anh lớp 5 tập 1",
+        name: "Tiếng anh lớp 5 tập 1 (Chương trình cũ)",
         price: "149.000VNĐ/năm",
         discription: "Giáo trình theo bộ giáo dục áp dụng công nghệ nhận diện giọng nói."
     }
     ,
     {
-        name: "Tiếng anh lớp 5 tập 2",
+        name: "Tiếng anh lớp 5 tập 2 (Chương trình cũ)",
         price: "149.000VNĐ/năm",
         discription: "Giáo trình theo bộ giáo dục áp dụng công nghệ nhận diện giọng nói."
     },
     {
-        name: "Tiếng anh lớp 7 tập 1",
+        name: "Tiếng anh lớp 6 tập 1 (Chương trình mới)",
+        price: "149.000VNĐ/năm",
+        discription: "Giáo trình theo bộ giáo dục áp dụng công nghệ nhận diện giọng nói."
+    },
+    {
+        name: "Tiếng anh lớp 6 tập 2 (Chương trình mới)",
+        price: "149.000VNĐ/năm",
+        discription: "Giáo trình theo bộ giáo dục áp dụng công nghệ nhận diện giọng nói."
+    },
+    {
+        name: "Tiếng anh lớp 7 tập 1 (Chương trình mới)",
         price: "149.000VNĐ/năm",
         discription: "Giáo trình theo bộ giáo dục áp dụng công nghệ nhận diện giọng nói."
     }
     ,
     {
-        name: "Tiếng anh lớp 7 tập 2",
+        name: "Tiếng anh lớp 7 tập 2 (Chương trình mới)",
         price: "149.000VNĐ/năm",
         discription: "Giáo trình theo bộ giáo dục áp dụng công nghệ nhận diện giọng nói."
     }
-,
+    ,
     {
-        name: "Tiếng anh lớp 8",
+        name: "Tiếng anh lớp 8 (Chương trình cũ)",
         price: "299.000VNĐ/năm",
         discription: "Giáo trình theo bộ giáo dục áp dụng công nghệ nhận diện giọng nói."
     }
@@ -92,10 +108,5 @@ export default [
         price: "99.000VNĐ/năm",
         discription: "Học từ vựng với hình ảnh sinh động."
     }
-    ,
-    {
-        name: "KHÓA HỌC TẠI LỚP",
-        price: "349.000VNĐ/tháng",
-        discription: "Học với phương pháp nhập vai - Hiệu quả nhanh chóng - thấy rõ. Cam kết hiệu quả."
-    }
+
 ]

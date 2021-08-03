@@ -48,6 +48,7 @@ export default function Show_tienganhphothong_phanbaihoc({ Data_Learn, SET_Data_
             )}
 
             <h1>{Data_Learn.IPA}</h1>
+            <hr />
             <b>Chọn từng từ để luyện nói</b>
             <br />
             <p>
@@ -67,8 +68,6 @@ export default function Show_tienganhphothong_phanbaihoc({ Data_Learn, SET_Data_
                     </span>
                 )}
             </p>
-            <hr />
-
             <br />
             <button
                 className="btn btn-danger"

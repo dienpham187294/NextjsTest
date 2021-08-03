@@ -4,12 +4,12 @@ export default function Show_tienganhphothong_hocphatam() {
 
 
     return (<div>
-        <i>Học phát âm với thầy Kenny N</i>
+        <h1 style={{ color: "red" }}>Phần bài học các kiến thức quan trọng và bổ ích về phát âm, đọc chuẩn</h1>
         {Dulieu_hocphatam.map((e, i) =>
             <div key={i}>
-                <b>Học phát âm: {e.text}</b>
+                <b>{e.text}</b>
                 <br />
-                <a href={e.srcYoutube} className="btn btn-warning">Bấm để học</a>
+                <a href={e.srcYoutube} className="btn btn-outline-primay">Bấm vào đây để học</a>
             </div>
         )}
     </div >)

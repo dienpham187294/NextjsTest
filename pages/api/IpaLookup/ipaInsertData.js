@@ -1,5 +1,5 @@
 import jsonData from "../../../util/filedulieu/Dulieu_tho"
-import Dulieu_tienganh from "../../../util/filedulieu/Dulieu_tieng_anh_lop_5_2"
+import Dulieu_tienganh from "../../../util/filedulieu/Dulieu_tieng_anh_lop_6_tap_2"
 
 
 

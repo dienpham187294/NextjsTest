@@ -69,7 +69,7 @@ export default [
                 "IPA": "naɪs tuː ˈsi jʊ əˈɡeɪn"
             },
             {
-                "EN": "Hi, Mai. Nice to see too.",
+                "EN": "Hi, Mai. Nice to see you too.",
                 "VN": "Chào, Mai. Mình cũng rất vui được gặp bạn.",
                 "IPA": "haɪ maɪ naɪs tuː ˈsi tuː"
             },
