@@ -9,7 +9,7 @@ export default function Show_tienganhphothong_hocphatam() {
             <div key={i}>
                 <b>{e.text}</b>
                 <br />
-                <a href={e.srcYoutube} className="btn btn-outline-primay">Bấm vào đây để học</a>
+                <a href={e.srcYoutube} className="btn btn-outline-primary">Bấm vào đây để học</a>
             </div>
         )}
     </div >)
