@@ -9,7 +9,7 @@ import List_IDs from "../util/List_IDs/List_IDs"
 import Head from "next/head";
 import { async } from 'regenerator-runtime';
 const { detect } = require('detect-browser');
-const ip = require('ip');
+ const ip = require('ip');
 
 function MyApp({ Component, pageProps }) {
   const [Status, SET_Status] = useState(0)

@@ -584,7 +584,7 @@ export default [
                 "IPA": "ˈðɛn seɪ ðə ˈsen.təns əˈlaʊd"
             },
             {
-                "EN": "country ",
+                "EN": "country",
                 "VN": "Quốc gia",
                 "IPA": "ˈkəntɹi"
             },
@@ -594,7 +594,7 @@ export default [
                 "IPA": "ˈsɪti"
             },
             {
-                "EN": "countryside ",
+                "EN": "countryside",
                 "VN": "vùng nông thôn",
                 "IPA": "ˈkəntɹiˌsaɪd"
             },
@@ -894,7 +894,7 @@ export default [
                 "IPA": "aj ˈjuʒəɫi ˈdu mai ˈhoʊmˌwɝk"
             },
             {
-                "EN": "So do I. ",
+                "EN": "So do I.",
                 "VN": "Tôi cũng thế.",
                 "IPA": "soʊ ˈdu aj"
             },
@@ -2599,7 +2599,7 @@ export default [
                 "IPA": "wɑːt ˈdɪd jʊ ˈdu ˈæt ðə ˈpɑɹti"
             },
             {
-                "EN": "had nice food ",
+                "EN": "had nice food",
                 "VN": "có thức ăn ngon",
                 "IPA": "ˈhæd naɪs fuːd"
             },
@@ -4078,229 +4078,4381 @@ export default [
     {
         "img": "https://i.postimg.cc/2y5ph2Jx/S-ch-H-c-Sinh-Ti-ng-Anh-L-p-5-T-p-1-41.jpg",
         "data": [
-
+            {
+                "EN": "Unit 6",
+                "VN": "Bài 6",
+                "IPA": "ˈjuː.nɪt sɪks"
+            },
+            {
+                "EN": "How many lessons do you have today?",
+                "VN": "Bạn có bao nhiêu bài học hôm nay?",
+                "IPA": "haʊ ˈmɛni ˈlɛsənz ˈdu jʊ hæv təˈdeɪ"
+            },
+            {
+                "EN": "lesson 1",
+                "VN": "bài học 1",
+                "IPA": "ˈles.ən wʌn"
+            },
+            {
+                "EN": "Look, listen and repeat.",
+                "VN": "Nhìn, nghe và lặp lại.",
+                "IPA": "lʊk ˈlɪs.ən ænd rɪˈpiːt"
+            },
+            {
+                "EN": "Hi, Long.",
+                "VN": "Chào, Long.",
+                "IPA": "haɪ ˈɫɔŋ"
+            },
+            {
+                "EN": "How was your trip home?",
+                "VN": "Chuyến đi của bạn về nhà như thế nào?",
+                "IPA": "haʊ ˈwɑz jɔːr ˈtɹɪp ˈhoʊm"
+            },
+            {
+                "EN": "Hi, Mai.",
+                "VN": "Chào, Mai.",
+                "IPA": "haɪ maɪ"
+            },
+            {
+                "EN": "It was good, thanks.",
+                "VN": "Chuyến đi tuyệt, cảm ơn.",
+                "IPA": "ɪt ˈwɑz ɡʊd ˈθæŋks"
+            },
+            {
+                "EN": "Do you have school today, Mai?",
+                "VN": "Hôm nay bạn có đi học không, Mai?",
+                "IPA": "ˈdu jʊ hæv skuːl təˈdeɪ maɪ"
+            },
+            {
+                "EN": "Yes, I do.",
+                "VN": "Có. Tôi có đi.",
+                "IPA": "jes aj ˈdu"
+            },
+            {
+                "EN": "How many lessons do you have today?",
+                "VN": "Bạn có bao nhiêu bài học hôm nay?",
+                "IPA": "haʊ ˈmɛni ˈlɛsənz ˈdu jʊ hæv təˈdeɪ"
+            },
+            {
+                "EN": "I have four: Maths, Vietnamese, Music and PE.",
+                "VN": "Tôi có bốn bài: Toán, Tiếng Việt, Âm nhạc và Thể dục.",
+                "IPA": "aj hæv fɔːr ˈmæθs viˌɛtnɑˈmis ˈmjuzɪk ænd PE."
+            },
+            {
+                "EN": "How about you?",
+                "VN": "Còn bạn thì sao?",
+                "IPA": "haʊ əˈbaʊt jʊ"
+            },
+            {
+                "EN": "Do you have school today?",
+                "VN": "Hôm nay bạn có đi học không?",
+                "IPA": "ˈdu jʊ hæv skuːl təˈdeɪ"
+            },
+            {
+                "EN": "Not today, but tomorrow.",
+                "VN": "Không phải hôm nay, mà là ngày mai.",
+                "IPA": "ˈnɑt təˈdeɪ ˈbət təˈmɑˌɹoʊ"
+            },
+            {
+                "EN": "I’m still on holiday!",
+                "VN": "Tôi vẫn đang đi nghỉ!",
+                "IPA": "ˌaɪˈem stɪl ɒn ˈhɑɫəˌdeɪ"
+            },
+            {
+                "EN": "Point and say.",
+                "VN": "Chỉ và nói.",
+                "IPA": "pɔɪnt ænd seɪ"
+            },
+            {
+                "EN": "How many lessons do you have today?",
+                "VN": "Bạn có bao nhiêu bài học hôm nay?",
+                "IPA": "haʊ ˈmɛni ˈlɛsənz ˈdu jʊ hæv təˈdeɪ"
+            },
+            {
+                "EN": "Maths",
+                "VN": "Toán học",
+                "IPA": "ˈmæθs"
+            },
+            {
+                "EN": "IT",
+                "VN": "NÓ",
+                "IPA": "ɪt"
+            },
+            {
+                "EN": "Science",
+                "VN": "Khoa học",
+                "IPA": "ˈsaɪəns"
+            },
+            {
+                "EN": "Art",
+                "VN": "Nghệ thuật",
+                "IPA": "ˈɑɹt"
+            },
+            {
+                "EN": "Music",
+                "VN": "Âm nhạc",
+                "IPA": "ˈmjuzɪk"
+            },
+            {
+                "EN": "Vietnamese",
+                "VN": "Tiếng Việt",
+                "IPA": "viˌɛtnɑˈmis"
+            },
+            {
+                "EN": "English",
+                "VN": "tiếng Anh",
+                "IPA": "ˈɪŋɡɫɪʃ"
+            }
         ]
     },
     {
         "img": "https://i.postimg.cc/0QP1280F/S-ch-H-c-Sinh-Ti-ng-Anh-L-p-5-T-p-1-42.jpg",
         "data": [
-
+            {
+                "EN": "Let’s talk.",
+                "VN": "Hãy nói chuyện.",
+                "IPA": "lets tɑːk"
+            },
+            {
+                "EN": "Ask and answer questions about the lessons you have today.",
+                "VN": "Hỏi và trả lời các câu hỏi về các bài học bạn có ngày hôm nay.",
+                "IPA": "ˈæsk ænd ˈɑːn.sər ˈkwes.tʃən əˈbaʊt ðə ˈlɛsənz jʊ hæv təˈdeɪ"
+            },
+            {
+                "EN": "Ask and answer questions about the lessons you have today.",
+                "VN": "Hỏi và trả lời các câu hỏi về các bài học bạn có ngày hôm nay.",
+                "IPA": "ˈæsk ænd ˈɑːn.sər ˈkwes.tʃən əˈbaʊt ðə ˈlɛsənz jʊ hæv təˈdeɪ"
+            },
+            {
+                "EN": "How many lessons do you have today?",
+                "VN": "Bạn có bao nhiêu bài học hôm nay?",
+                "IPA": "haʊ ˈmɛni ˈlɛsənz ˈdu jʊ hæv təˈdeɪ"
+            },
+            {
+                "EN": "What lessons do you have today?",
+                "VN": "Bạn có bài học gì hôm nay?",
+                "IPA": "wɑːt ˈlɛsənz ˈdu jʊ hæv təˈdeɪ"
+            },
+            {
+                "EN": "Listen and tick.",
+                "VN": "Nghe và đánh dấu.",
+                "IPA": "ˈlɪs.ən ænd tɪk"
+            },
+            {
+                "EN": "Maths",
+                "VN": "Toán học",
+                "IPA": "ˈmæθs"
+            },
+            {
+                "EN": "Science",
+                "VN": "Khoa học",
+                "IPA": "ˈsaɪəns"
+            },
+            {
+                "EN": "IT",
+                "VN": "NÓ",
+                "IPA": "ɪt"
+            },
+            {
+                "EN": "Music",
+                "VN": "Âm nhạc",
+                "IPA": "ˈmjuzɪk"
+            },
+            {
+                "EN": "Art",
+                "VN": "Nghệ thuật",
+                "IPA": "ˈɑɹt"
+            },
+            {
+                "EN": "English",
+                "VN": "tiếng Anh",
+                "IPA": "ˈɪŋɡɫɪʃ"
+            },
+            {
+                "EN": "Vietnamese",
+                "VN": "Tiếng Việt",
+                "IPA": "viˌɛtnɑˈmis"
+            },
+            {
+                "EN": "Read and complete.",
+                "VN": "Đọc và hoàn thành.",
+                "IPA": "riːd ænd kəmˈpliːt"
+            },
+            {
+                "EN": "Art, four lessons, Wednesday, Tuesday",
+                "VN": "Nghệ thuật, bốn buổi học, Thứ tư, Thứ ba",
+                "IPA": "ˈɑɹt fɔːr ˈlɛsənz ˈwɛnzˌdeɪ ˈtjuzˌdeɪ"
+            },
+            {
+                "EN": "My name is Trung.",
+                "VN": "Tôi tên là Trung.",
+                "IPA": "mai neɪm ɪz Trung."
+            },
+            {
+                "EN": "I’m a new pupil in Class 5B.",
+                "VN": "Tôi là một học sinh mới của Lớp 5B.",
+                "IPA": "ˌaɪˈem ə ˈnju ˈpjupəɫ ɪn klɑːs 5B."
+            },
+            {
+                "EN": "Let’s sing.",
+                "VN": "Hãy hát nào.",
+                "IPA": "lets sɪŋ"
+            },
+            {
+                "EN": "How many lessons do you have today?",
+                "VN": "Bạn có bao nhiêu bài học hôm nay?",
+                "IPA": "haʊ ˈmɛni ˈlɛsənz ˈdu jʊ hæv təˈdeɪ"
+            },
+            {
+                "EN": "Yesterday was Sunday.",
+                "VN": "Hôm qua là Chủ nhật.",
+                "IPA": "ˈjɛstɝˌdeɪ ˈwɑz ˈsənˌdeɪ"
+            },
+            {
+                "EN": "It was a holiday.",
+                "VN": "Đó là một kỳ nghỉ.",
+                "IPA": "ɪt ˈwɑz ə ˈhɑɫəˌdeɪ"
+            },
+            {
+                "EN": "Today’s Monday and I'm back at school.",
+                "VN": "Hôm nay là thứ Hai và tôi quay trở lại trường.",
+                "IPA": "təˈdeɪz ˈmənˌdeɪ ænd ˈpiˈɛm ˈbæk ˈæt skuːl"
+            },
+            {
+                "EN": "I have three lessons: Maths. English and Science.",
+                "VN": "Tôi có ba bài học: Toán học. Tiếng Anh và Khoa học.",
+                "IPA": "aj hæv θriː ˈlɛsənz ˈmæθs ˈɪŋɡɫɪʃ ænd ˈsaɪəns"
+            },
+            {
+                "EN": "Tomorrow’s Tuesday.",
+                "VN": "Ngày mai là thứ 3.",
+                "IPA": "təˈmɑˌɹoʊz ˈtjuzˌdeɪ"
+            },
+            {
+                "EN": "I’ll be at school again.",
+                "VN": "Tôi sẽ ở trường một lần nữa.",
+                "IPA": "aɪl biː ˈæt skuːl əˈɡeɪn"
+            },
+            {
+                "EN": "I’ll have three more lessons: Maths, Music and Art.",
+                "VN": "Tôi sẽ có ba bài học nữa: Toán, Âm nhạc và Nghệ thuật.",
+                "IPA": "aɪl hæv θriː mɔːr ˈlɛsənz ˈmæθs ˈmjuzɪk ænd ˈɑɹt"
+            },
+            {
+                "EN": "How about you? How many lessons do you have today?",
+                "VN": "Còn bạn thì sao? Bạn có bao nhiêu bài học hôm nay?",
+                "IPA": "haʊ əˈbaʊt jʊ haʊ ˈmɛni ˈlɛsənz ˈdu jʊ hæv təˈdeɪ"
+            }
         ]
     },
     {
         "img": "https://i.postimg.cc/QN6ZhZ9Y/S-ch-H-c-Sinh-Ti-ng-Anh-L-p-5-T-p-1-43.jpg",
         "data": [
-
+            {
+                "EN": "Lesson 2",
+                "VN": "Bài 2",
+                "IPA": "ˈles.ən tuː"
+            },
+            {
+                "EN": "Look, listen and repeat.",
+                "VN": "Nhìn, nghe và lặp lại.",
+                "IPA": "lʊk ˈlɪs.ən ænd rɪˈpiːt"
+            },
+            {
+                "EN": "Hi, Akiko.",
+                "VN": "Chào, Akiko.",
+                "IPA": "haɪ əˈkikoʊ"
+            },
+            {
+                "EN": "It's nice to talk to you again.",
+                "VN": "Rất vui được nói chuyện với bạn một lần nữa.",
+                "IPA": "ɪts naɪs tuː tɑːk tuː jʊ aqain."
+            },
+            {
+                "EN": "Nice to talk to you, too, Nam.",
+                "VN": "Rất vui được nói chuyện với bạn, Nam.",
+                "IPA": "naɪs tuː tɑːk tuː jʊ tuː næm"
+            },
+            {
+                "EN": "Are you at school?",
+                "VN": "Bạn có đang ở trường không?",
+                "IPA": "ɑːr jʊ ˈæt skuːl"
+            },
+            {
+                "EN": "Yes, I am.",
+                "VN": "Có. tôi có.",
+                "IPA": "jes aj ˌeɪˈɛm"
+            },
+            {
+                "EN": "It’s break time.",
+                "VN": "Đã đến giờ giải lao.",
+                "IPA": "ɪts ˈbɹeɪk taɪm"
+            },
+            {
+                "EN": "Ve you at school, too?",
+                "VN": "Bạn cũng ở trường á?",
+                "IPA": "Ve jʊ ˈæt skuːl tuː"
+            },
+            {
+                "EN": "No, I'm at home.",
+                "VN": "Không, tôi ở nhà.",
+                "IPA": "nəʊ ˌaɪˈem ˈæt ˈhoʊm"
+            },
+            {
+                "EN": "I’m studying my English lesson.",
+                "VN": "Tôi đang học bài tiếng Anh của mình.",
+                "IPA": "ˌaɪˈem ˈstədiɪŋ mai ˈɪŋɡɫɪʃ ˈles.ən"
+            },
+            {
+                "EN": "Good for you.",
+                "VN": "Tốt cho bạn đấy.",
+                "IPA": "good ˈfɔɹ jʊ"
+            },
+            {
+                "EN": "How often do you have English?",
+                "VN": "Bạn có thường xuyên học tiếng Anh không?",
+                "IPA": "haʊ ˈɔfən ˈdu jʊ hæv ˈɪŋɡɫɪʃ"
+            },
+            {
+                "EN": "I have it four times a week.",
+                "VN": "Tôi học nó bốn lần một tuần.",
+                "IPA": "aj hæv ɪt fɔːr ˈtaɪmz ə ˈwik"
+            },
+            {
+                "EN": "Point and say.",
+                "VN": "Chỉ và nói.",
+                "IPA": "pɔɪnt ænd seɪ"
+            },
+            {
+                "EN": "once a week",
+                "VN": "mỗi tuần một lần",
+                "IPA": "ˈwəns ə ˈwik"
+            },
+            {
+                "EN": "twice a week, four times a week, every school day",
+                "VN": "hai lần một tuần, bốn lần một tuần, mỗi ngày học",
+                "IPA": "ˈtwaɪs ə ˈwik fɔːr ˈtaɪmz ə ˈwik ˈɛvɝi skuːl ˈdeɪ"
+            },
+            {
+                "EN": "Let’s talk.",
+                "VN": "Hãy nói chuyện.",
+                "IPA": "lets tɑːk"
+            },
+            {
+                "EN": "Ask and answer questions about the lessons you have today and how often you have each lesson.",
+                "VN": "Hỏi và trả lời các câu hỏi về các bài học bạn có ngày hôm nay và mức độ thường xuyên của mỗi bài học.",
+                "IPA": "ˈæsk ænd ˈɑːn.sər ˈkwes.tʃən əˈbaʊt ðə ˈlɛsənz jʊ hæv təˈdeɪ ænd haʊ ˈɔfən jʊ hæv ˈitʃ ˈles.ən"
+            },
+            {
+                "EN": "How many lessons do you have today?",
+                "VN": "Bạn có bao nhiêu bài học hôm nay?",
+                "IPA": "haʊ ˈmɛni ˈlɛsənz ˈdu jʊ hæv təˈdeɪ"
+            }
         ]
     },
     {
         "img": "https://i.postimg.cc/65gs4Vhd/S-ch-H-c-Sinh-Ti-ng-Anh-L-p-5-T-p-1-44.jpg",
         "data": [
-
+            {
+                "EN": "Listen and circle a or b.",
+                "VN": "Nghe và khoanh tròn a hoặc b.",
+                "IPA": "ˈlɪs.ən ænd ˈsɜː.kəl ə ˈɔɹ b."
+            },
+            {
+                "EN": "four times a week",
+                "VN": "bốn lần một tuần",
+                "IPA": "fɔːr ˈtaɪmz ə ˈwik"
+            },
+            {
+                "EN": "every school day",
+                "VN": "mỗi ngày học",
+                "IPA": "ˈɛvɝi skuːl ˈdeɪ"
+            },
+            {
+                "EN": "four lessons",
+                "VN": "bốn bài học",
+                "IPA": "fɔːr ˈlɛsənz"
+            },
+            {
+                "EN": "no lesson",
+                "VN": "không có bài học",
+                "IPA": "nəʊ ˈles.ən"
+            },
+            {
+                "EN": "at school",
+                "VN": "ở trường",
+                "IPA": "ˈæt skuːl"
+            },
+            {
+                "EN": "on holiday",
+                "VN": "trong kỳ nghỉ",
+                "IPA": "ɒn ˈhɑɫəˌdeɪ"
+            },
+            {
+                "EN": "every school day",
+                "VN": "mỗi ngày học",
+                "IPA": "ˈɛvɝi skuːl ˈdeɪ"
+            },
+            {
+                "EN": "four times a week",
+                "VN": "bốn lần một tuần",
+                "IPA": "fɔːr ˈtaɪmz ə ˈwik"
+            },
+            {
+                "EN": "Write about you.",
+                "VN": "Viết về bạn.",
+                "IPA": "raɪt əˈbaʊt jʊ"
+            },
+            {
+                "EN": "How many lessons do you have today?",
+                "VN": "Bạn có bao nhiêu bài học hôm nay?",
+                "IPA": "haʊ ˈmɛni ˈlɛsənz ˈdu jʊ hæv təˈdeɪ"
+            },
+            {
+                "EN": "What’s your favourite lesson?",
+                "VN": "Bài học yêu thích của bạn là gì?",
+                "IPA": "wɑːts jɔːr ˈfeɪvɝɪt ˈles.ən"
+            },
+            {
+                "EN": "How often do you have your favourite lesson?",
+                "VN": "Bạn có học bài học yêu thích của mình thường xuyên như thế nào?",
+                "IPA": "haʊ ˈɔfən ˈdu jʊ hæv jɔːr ˈfeɪvɝɪt ˈles.ən"
+            },
+            {
+                "EN": "How often do you have English?",
+                "VN": "Bạn có thường xuyên học tiếng Anh không?",
+                "IPA": "haʊ ˈɔfən ˈdu jʊ hæv ˈɪŋɡɫɪʃ"
+            },
+            {
+                "EN": "Do you like English? Why?",
+                "VN": "Bạn có thích tiếng Anh không? Tại sao?",
+                "IPA": "ˈdu jʊ ˈɫaɪk ˈɪŋɡɫɪʃ ˈwaɪ"
+            },
+            {
+                "EN": "Slap the board",
+                "VN": "Đập bảng",
+                "IPA": "Slap ðə ˈbɔɹd"
+            },
+            {
+                "EN": "once a week",
+                "VN": "mỗi tuần một lần",
+                "IPA": "ˈwəns ə ˈwik"
+            },
+            {
+                "EN": "twice a week",
+                "VN": "hai lần một tuần",
+                "IPA": "ˈtwaɪs ə ˈwik"
+            },
+            {
+                "EN": "three times a week",
+                "VN": "ba lần một tuần",
+                "IPA": "θriː ˈtaɪmz ə ˈwik"
+            },
+            {
+                "EN": "four times a week",
+                "VN": "bốn lần một tuần",
+                "IPA": "fɔːr ˈtaɪmz ə ˈwik"
+            },
+            {
+                "EN": "every school day",
+                "VN": "mỗi ngày học",
+                "IPA": "ˈɛvɝi skuːl ˈdeɪ"
+            }
         ]
     },
     {
         "img": "https://i.postimg.cc/MTWgJ9W8/S-ch-H-c-Sinh-Ti-ng-Anh-L-p-5-T-p-1-45.jpg",
         "data": [
-
+            {
+                "EN": "lesson 3",
+                "VN": "bài học 3",
+                "IPA": "ˈles.ən θriː"
+            },
+            {
+                "EN": "Listen and repeat.",
+                "VN": "Lắng nghe và lặp lại.",
+                "IPA": "ˈlɪs.ən ænd rɪˈpiːt"
+            },
+            {
+                "EN": "How many lessons do you have today?",
+                "VN": "Bạn có bao nhiêu bài học hôm nay?",
+                "IPA": "haʊ ˈmɛni ˈlɛsənz ˈdu jʊ hæv təˈdeɪ"
+            },
+            {
+                "EN": "How many crayons do you have?",
+                "VN": "Bạn có bao nhiêu bút màu?",
+                "IPA": "haʊ ˈmɛni crayons ˈdu jʊ hæv"
+            },
+            {
+                "EN": "How many books do you have?",
+                "VN": "Bạn có bao nhiêu quyển sách?",
+                "IPA": "haʊ ˈmɛni ˈbʊks ˈdu jʊ hæv"
+            },
+            {
+                "EN": "How many copybooks do you have?",
+                "VN": "Bạn có bao nhiêu quyển sách?",
+                "IPA": "haʊ ˈmɛni copybooks ˈdu jʊ hæv"
+            },
+            {
+                "EN": "I have four.",
+                "VN": "Tôi có bốn.",
+                "IPA": "aj hæv fɔːr"
+            },
+            {
+                "EN": "I have five.",
+                "VN": "Tôi có năm.",
+                "IPA": "aj hæv faɪv"
+            },
+            {
+                "EN": "I have six.",
+                "VN": "Tôi có sáu.",
+                "IPA": "aj hæv sɪks"
+            },
+            {
+                "EN": "I have seven.",
+                "VN": "Tôi có bảy.",
+                "IPA": "aj hæv ˈsev.ən"
+            },
+            {
+                "EN": "Listen and circle a or b.",
+                "VN": "Nghe và khoanh tròn a hoặc b.",
+                "IPA": "ˈlɪs.ən ænd ˈsɜː.kəl ə ˈɔɹ b."
+            },
+            {
+                "EN": "Then say the sentences aloud.",
+                "VN": "Sau đó nói lớn lên",
+                "IPA": "ˈðɛn seɪ ðə ˈsen.təns əˈlaʊd"
+            },
+            {
+                "EN": "books",
+                "VN": "sách",
+                "IPA": "ˈbʊks"
+            },
+            {
+                "EN": "two",
+                "VN": "hai",
+                "IPA": "tuː"
+            },
+            {
+                "EN": "copybooks",
+                "VN": "sách chép",
+                "IPA": "copybooks"
+            },
+            {
+                "EN": "crayons",
+                "VN": "bút màu",
+                "IPA": "crayons"
+            },
+            {
+                "EN": "lessons",
+                "VN": "Những bài học",
+                "IPA": "ˈlɛsənz"
+            },
+            {
+                "EN": "five",
+                "VN": "số năm",
+                "IPA": "faɪv"
+            },
+            {
+                "EN": "Let’s chant.",
+                "VN": "Hãy hát thánh ca.",
+                "IPA": "lets tʃænt"
+            },
+            {
+                "EN": "How often do you have?",
+                "VN": "Bạn có thường xuyên không?",
+                "IPA": "haʊ ˈɔfən ˈdu jʊ hæv"
+            },
+            {
+                "EN": "How many lessons do you have today?",
+                "VN": "Bạn có bao nhiêu bài học hôm nay?",
+                "IPA": "haʊ ˈmɛni ˈlɛsənz ˈdu jʊ hæv təˈdeɪ"
+            },
+            {
+                "EN": "I have four",
+                "VN": "Tôi có bốn",
+                "IPA": "aj hæv fɔːr"
+            },
+            {
+                "EN": "English, Science, Music and Vietnamese.",
+                "VN": "Tiếng Anh, Khoa học, Âm nhạc và Tiếng Việt.",
+                "IPA": "ˈɪŋɡɫɪʃ ˈsaɪəns ˈmjuzɪk ænd viˌɛtnɑˈmis"
+            },
+            {
+                "EN": "How often do you have English?",
+                "VN": "Bạn có thường xuyên có tiếng Anh không?",
+                "IPA": "haʊ ˈɔfən ˈdu jʊ hæv ˈɪŋɡɫɪʃ"
+            },
+            {
+                "EN": "Four times a week.",
+                "VN": "Bốn lần một tuần.",
+                "IPA": "fɔːr ˈtaɪmz ə ˈwik"
+            },
+            {
+                "EN": "How often do you have Science?",
+                "VN": "Bạn có học Khoa học thường xuyên không?",
+                "IPA": "haʊ ˈɔfən ˈdu jʊ hæv ˈsaɪəns"
+            },
+            {
+                "EN": "Twice a week.",
+                "VN": "Hai lần một tuần.",
+                "IPA": "ˈtwaɪs ə ˈwik"
+            },
+            {
+                "EN": "How often do you have Music?",
+                "VN": "Bạn có thường nghe nhạc không?",
+                "IPA": "haʊ ˈɔfən ˈdu jʊ hæv ˈmjuzɪk"
+            },
+            {
+                "EN": "Once a week.",
+                "VN": "Mỗi tuần một lần.",
+                "IPA": "ˈwəns ə ˈwik"
+            },
+            {
+                "EN": "How often do you have Vietnamese?",
+                "VN": "Bạn có thường xuyên học tiếng Việt không?",
+                "IPA": "haʊ ˈɔfən ˈdu jʊ hæv viˌɛtnɑˈmis"
+            },
+            {
+                "EN": "I have it every day.",
+                "VN": "Tôi có nó mỗi ngày.",
+                "IPA": "aj hæv ɪt ˈɛvɝi ˈdeɪ"
+            }
         ]
     },
     {
         "img": "https://i.postimg.cc/m2tfrp7L/S-ch-H-c-Sinh-Ti-ng-Anh-L-p-5-T-p-1-46.jpg",
         "data": [
-
+            {
+                "EN": "Read and complete.",
+                "VN": "Đọc và hoàn thành.",
+                "IPA": "riːd ænd kəmˈpliːt"
+            },
+            {
+                "EN": "My name’s Mai.",
+                "VN": "Tên tôi là Mai.",
+                "IPA": "mai neɪm's maɪ"
+            },
+            {
+                "EN": "I’m in Class 5B, Nguyen Du Primary School.",
+                "VN": "Tôi học lớp 5B, trường tiểu học Nguyễn Du.",
+                "IPA": "ˌaɪˈem ɪn klɑːs 5B, nuˈjɛn Du ˈpɹaɪˌmɛɹi skuːl"
+            },
+            {
+                "EN": "My school year started in August.",
+                "VN": "Năm học của tôi bắt đầu vào tháng Tám.",
+                "IPA": "mai skuːl jɪr ˈstɑɹtɪd ɪn ˈɑɡəst"
+            },
+            {
+                "EN": "I go to school every day except Saturday and Sunday.",
+                "VN": "Tôi đi học hàng ngày trừ thứ bảy và chủ nhật.",
+                "IPA": "aj ɡoʊ tuː skuːl ˈɛvɝi ˈdeɪ ɪkˈsɛpt ˈsæˌtɪˌdeɪ ænd ˈsənˌdeɪ"
+            },
+            {
+                "EN": "I have four lessons a day.",
+                "VN": "Tôi có bốn bài học một ngày.",
+                "IPA": "aj hæv fɔːr ˈlɛsənz ə ˈdeɪ"
+            },
+            {
+                "EN": "Today is Wednesday.",
+                "VN": "Hôm nay là thứ tư.",
+                "IPA": "təˈdeɪ ɪz ˈwɛnzˌdeɪ"
+            },
+            {
+                "EN": "I have Maths, Vietnamese, Music and English.",
+                "VN": "Tôi có các môn Toán, Tiếng Việt, Âm nhạc và Tiếng Anh.",
+                "IPA": "aj hæv ˈmæθs viˌɛtnɑˈmis ˈmjuzɪk ænd ˈɪŋɡɫɪʃ"
+            },
+            {
+                "EN": "I have Maths and Vietnamese every schoolday.",
+                "VN": "Tôi học Toán và Tiếng Việt mỗi ngày.",
+                "IPA": "aj hæv ˈmæθs ænd viˌɛtnɑˈmis ˈɛvɝi schoolday."
+            },
+            {
+                "EN": "I have Music once a week and English four times a week.",
+                "VN": "Tôi nghe nhạc một lần một tuần và tiếng Anh bốn lần một tuần.",
+                "IPA": "aj hæv ˈmjuzɪk ˈwəns ə ˈwik ænd ˈɪŋɡɫɪʃ fɔːr ˈtaɪmz ə ˈwik"
+            },
+            {
+                "EN": "Write about your school and lessons.",
+                "VN": "Viết về trường học và bài học của bạn.",
+                "IPA": "raɪt əˈbaʊt jɔːr skuːl ænd ˈlɛsənz"
+            },
+            {
+                "EN": "Project",
+                "VN": "Dự án",
+                "IPA": "ˈprɒdʒ.ekt"
+            },
+            {
+                "EN": "Write a letter to a pen friend to talk about your timetable.",
+                "VN": "Viết một bức thư cho một người bạn thân để nói về thời gian biểu của bạn.",
+                "IPA": "raɪt ə ˈɫɛtɝ tuː ə ˈpɛn frend tuː tɑːk əˈbaʊt jɔːr ˈtaɪmˌteɪbəɫ"
+            },
+            {
+                "EN": "Colour the stars.",
+                "VN": "Tô màu các ngôi sao.",
+                "IPA": "ˈkəɫɝ ðə stɑːz"
+            },
+            {
+                "EN": "Now I can ...",
+                "VN": "Bây giờ tôi có thể ...",
+                "IPA": "Now aj kæn ..."
+            },
+            {
+                "EN": "ask and answer questions about school lessons, listen to and understand texts about school lessons, read and understand texts about school lessons, write about my timetable.",
+                "VN": "hỏi và trả lời các câu hỏi về bài học ở trường, nghe và hiểu văn bản về bài học ở trường, đọc và hiểu văn bản về bài học ở trường, viết về thời gian biểu của tôi.",
+                "IPA": "ˈæsk ænd ˈɑːn.sər ˈkwes.tʃən əˈbaʊt skuːl ˈlɛsənz ˈlɪs.ən tuː ænd ˌəndɝˈstænd tɛksts əˈbaʊt skuːl ˈlɛsənz riːd ænd ˌəndɝˈstænd tɛksts əˈbaʊt skuːl ˈlɛsənz raɪt əˈbaʊt mai ˈtaɪmˌteɪbəɫ"
+            }
         ]
     },
     {
         "img": "https://i.postimg.cc/FKbw6MXZ/S-ch-H-c-Sinh-Ti-ng-Anh-L-p-5-T-p-1-47.jpg",
         "data": [
-
+            {
+                "EN": "Unit 7",
+                "VN": "Bài 7",
+                "IPA": "ˈjuː.nɪt 7"
+            },
+            {
+                "EN": "How do you learn English?",
+                "VN": "Bạn học tiếng Anh như thế nào?",
+                "IPA": "haʊ ˈdu jʊ ˈɫɝn ˈɪŋɡɫɪʃ"
+            },
+            {
+                "EN": "lesson 1",
+                "VN": "bài 1",
+                "IPA": "ˈles.ən wʌn"
+            },
+            {
+                "EN": "Look, listen and repeat.",
+                "VN": "Nhìn, nghe và lặp lại.",
+                "IPA": "lʊk ˈlɪs.ən ænd rɪˈpiːt"
+            },
+            {
+                "EN": "How often do you have English, Mai?",
+                "VN": "Bạn có thường xuyên học tiếng Anh không, Mai?",
+                "IPA": "haʊ ˈɔfən ˈdu jʊ hæv ˈɪŋɡɫɪʃ maɪ"
+            },
+            {
+                "EN": "I have it four times a week.",
+                "VN": "Tôi có nó bốn lần một tuần.",
+                "IPA": "aj hæv ɪt fɔːr ˈtaɪmz ə ˈwik"
+            },
+            {
+                "EN": "Do you have English today?",
+                "VN": "Bạn có tiếng Anh hôm nay không?",
+                "IPA": "ˈdu jʊ hæv ˈɪŋɡɫɪʃ təˈdeɪ"
+            },
+            {
+                "EN": "Yes, I do.",
+                "VN": "Có, tôi có.",
+                "IPA": "jes aj ˈdu"
+            },
+            {
+                "EN": "How do you practise reading?",
+                "VN": "Bạn luyện đọc như thế nào?",
+                "IPA": "haʊ ˈdu jʊ ˈpræk.tɪs ˈɹɛdɪŋ"
+            },
+            {
+                "EN": "I read English comic books.",
+                "VN": "Tôi đọc truyện tranh tiếng Anh.",
+                "IPA": "aj riːd ˈɪŋɡɫɪʃ ˈkɑmɪk ˈbʊks"
+            },
+            {
+                "EN": "How do you learn vocabulary?",
+                "VN": "Bạn học từ vựng như thế nào?",
+                "IPA": "haʊ ˈdu jʊ ˈɫɝn voʊˈkæbjəˌɫɛɹi"
+            },
+            {
+                "EN": "I write new words in my notebook and read them aloud.",
+                "VN": "Tôi viết từ mới vào sổ tay của mình và đọc to chúng.",
+                "IPA": "aj raɪt ˈnju wɝːd ɪn mai ˈnoʊtˌbʊk ænd riːd ðem əˈlaʊd"
+            },
+            {
+                "EN": "Point and say.",
+                "VN": "Chỉ và nói.",
+                "IPA": "pɔɪnt ænd seɪ"
+            },
+            {
+                "EN": "speak English",
+                "VN": "nói tiếng Anh",
+                "IPA": "spiːk ˈɪŋɡɫɪʃ"
+            },
+            {
+                "EN": "speak English every day",
+                "VN": "nói tiếng anh mỗi ngày",
+                "IPA": "spiːk ˈɪŋɡɫɪʃ ˈɛvɝi ˈdeɪ"
+            },
+            {
+                "EN": "listen to English",
+                "VN": "nghe tiếng anh",
+                "IPA": "ˈlɪs.ən tuː ˈɪŋɡɫɪʃ"
+            },
+            {
+                "EN": "watch English cartoons on TV",
+                "VN": "xem phim hoạt hình tiếng Anh trên tivi",
+                "IPA": "ˈwɑtʃ ˈɪŋɡɫɪʃ kɑrˈtunz ɒn ˈtiˈvi"
+            },
+            {
+                "EN": "write English",
+                "VN": "viết tiếng Anh",
+                "IPA": "raɪt ˈɪŋɡɫɪʃ"
+            },
+            {
+                "EN": "write emails to my friends",
+                "VN": "viết email cho bạn bè của tôi",
+                "IPA": "raɪt emails tuː mai frends"
+            },
+            {
+                "EN": "read English",
+                "VN": "Đọc tiếng anh",
+                "IPA": "riːd ˈɪŋɡɫɪʃ"
+            },
+            {
+                "EN": "read short stories",
+                "VN": "đọc truyện ngắn",
+                "IPA": "riːd ʃɔːrt ˈstɔːriz"
+            }
         ]
     },
     {
         "img": "https://i.postimg.cc/d14psG1Z/S-ch-H-c-Sinh-Ti-ng-Anh-L-p-5-T-p-1-48.jpg",
         "data": [
-
+            {
+                "EN": "Let’s talk.",
+                "VN": "Hãy nói chuyện.",
+                "IPA": "lets tɑːk"
+            },
+            {
+                "EN": "Ask and answer questions about how you learn English.",
+                "VN": "Hỏi và trả lời các câu hỏi về cách bạn học tiếng Anh.",
+                "IPA": "ˈæsk ænd ˈɑːn.sər ˈkwes.tʃən əˈbaʊt haʊ jʊ ˈɫɝn ˈɪŋɡɫɪʃ"
+            },
+            {
+                "EN": "How often do you have English?",
+                "VN": "Bạn có thường xuyên có tiếng Anh không?",
+                "IPA": "haʊ ˈɔfən ˈdu jʊ hæv ˈɪŋɡɫɪʃ"
+            },
+            {
+                "EN": "Do you have English today?",
+                "VN": "Bạn có tiếng Anh hôm nay không?",
+                "IPA": "ˈdu jʊ hæv ˈɪŋɡɫɪʃ təˈdeɪ"
+            },
+            {
+                "EN": "Yes, I do.",
+                "VN": "có, tôi có.",
+                "IPA": "Yes, aj ˈdu"
+            },
+            {
+                "EN": "No, I don't.",
+                "VN": "Không, tôi không.",
+                "IPA": "nəʊ aj doʊnt"
+            },
+            {
+                "EN": "Listen and tick.",
+                "VN": "Nghe và đánh dấu.",
+                "IPA": "ˈlɪs.ən ænd tɪk"
+            },
+            {
+                "EN": "Read and complete.",
+                "VN": "Đọc và hoàn thành.",
+                "IPA": "riːd ænd kəmˈpliːt"
+            },
+            {
+                "EN": "Trung is a newcomer in Class 5B.",
+                "VN": "Trung là học sinh mới của lớp 5B.",
+                "IPA": "Trung ɪz ə ˈnjuːˌkʌmə ɪn klɑːs 5B."
+            },
+            {
+                "EN": "Let’s sing.",
+                "VN": "Hãy hát nào.",
+                "IPA": "lets sɪŋ"
+            },
+            {
+                "EN": "How do you learn English?",
+                "VN": "Bạn học tiếng Anh như thế nào?",
+                "IPA": "haʊ ˈdu jʊ ˈɫɝn ˈɪŋɡɫɪʃ"
+            },
+            {
+                "EN": "How do you learn English?",
+                "VN": "Bạn học tiếng Anh như thế nào?",
+                "IPA": "haʊ ˈdu jʊ ˈɫɝn ˈɪŋɡɫɪʃ"
+            },
+            {
+                "EN": "How do you practise speaking?",
+                "VN": "Bạn luyện nói như thế nào?",
+                "IPA": "haʊ ˈdu jʊ ˈpræk.tɪs ˈspikɪŋ"
+            },
+            {
+                "EN": "I speak to my friends every day.",
+                "VN": "Tôi nói chuyện với bạn bè của tôi mỗi ngày.",
+                "IPA": "aj spiːk tuː mai frends ˈɛvɝi ˈdeɪ"
+            },
+            {
+                "EN": "How do you practise reading?",
+                "VN": "Bạn luyện đọc như thế nào?",
+                "IPA": "haʊ ˈdu jʊ ˈpræk.tɪs ˈɹɛdɪŋ"
+            },
+            {
+                "EN": "I read English comic books.",
+                "VN": "Tôi đọc truyện tranh tiếng Anh.",
+                "IPA": "aj riːd ˈɪŋɡɫɪʃ ˈkɑmɪk ˈbʊks"
+            },
+            {
+                "EN": "How do you practise writing?",
+                "VN": "Bạn luyện viết như thế nào?",
+                "IPA": "haʊ ˈdu jʊ ˈpræk.tɪs ˈɹaɪtɪŋ"
+            },
+            {
+                "EN": "I write emails to my friends.",
+                "VN": "Tôi viết email cho bạn bè của tôi.",
+                "IPA": "aj raɪt emails tuː mai frends"
+            },
+            {
+                "EN": "And how do you practise listening?",
+                "VN": "Và bạn luyện nghe như thế nào?",
+                "IPA": "ænd haʊ ˈdu jʊ ˈpræk.tɪs ˈɫɪsənɪŋ"
+            },
+            {
+                "EN": "I watch English cartoons on TV.",
+                "VN": "Tôi xem phim hoạt hình tiếng Anh trên TV.",
+                "IPA": "aj ˈwɑtʃ ˈɪŋɡɫɪʃ kɑrˈtunz ɒn ˈtiˈvi"
+            }
         ]
     },
     {
         "img": "https://i.postimg.cc/JzkfNyTS/S-ch-H-c-Sinh-Ti-ng-Anh-L-p-5-T-p-1-49.jpg",
         "data": [
-
+            {
+                "EN": "Lesson 2",
+                "VN": "Bài 2",
+                "IPA": "ˈles.ən tuː"
+            },
+            {
+                "EN": "Look, listen and repeat.",
+                "VN": "Nhìn, nghe và lặp lại.",
+                "IPA": "lʊk ˈlɪs.ən ænd rɪˈpiːt"
+            },
+            {
+                "EN": "What foreign language do you have at school?",
+                "VN": "Bạn có ngoại ngữ gì ở trường?",
+                "IPA": "wɑːt ˈfɑɹən ˈɫæŋɡwədʒ ˈdu jʊ hæv ˈæt skuːl"
+            },
+            {
+                "EN": "English.",
+                "VN": "Tiếng Anh.",
+                "IPA": "ˈɪŋɡɫɪʃ"
+            },
+            {
+                "EN": "What about you, Akiko?",
+                "VN": "Còn bạn thì sao, Akiko?",
+                "IPA": "wɑːt əˈbaʊt jʊ əˈkikoʊ"
+            },
+            {
+                "EN": "I have French.",
+                "VN": "Tôi có tiếng Pháp.",
+                "IPA": "aj hæv French."
+            },
+            {
+                "EN": "Oh, really?",
+                "VN": "Ồ vậy ư?",
+                "IPA": "oʊ ˈɹiɫi"
+            },
+            {
+                "EN": "And do you like English?",
+                "VN": "Và bạn có thích tiếng anh không?",
+                "IPA": "ænd ˈdu jʊ ˈɫaɪk ˈɪŋɡɫɪʃ"
+            },
+            {
+                "EN": "Yes.",
+                "VN": "Có.",
+                "IPA": "jes"
+            },
+            {
+                "EN": "It’s my favourite subject.",
+                "VN": "Đó là chủ đề yêu thích của tôi.",
+                "IPA": "ɪts mai ˈfeɪvɝɪt ˈsəbdʒɪkt"
+            },
+            {
+                "EN": "Why do you learn English?",
+                "VN": "Tại sao bạn lại học tiếng Anh?",
+                "IPA": "ˈwaɪ ˈdu jʊ ˈɫɝn ˈɪŋɡɫɪʃ"
+            },
+            {
+                "EN": "Because I want to sing English songs.",
+                "VN": "Bởi vì tôi muốn hát những bài hát tiếng Anh.",
+                "IPA": "bɪˈkɑz aj ˈwɑnt tuː sɪŋ ˈɪŋɡɫɪʃ ˈsɔŋz"
+            },
+            {
+                "EN": "Point and say.",
+                "VN": "Chỉ và nói.",
+                "IPA": "pɔɪnt ænd seɪ"
+            },
+            {
+                "EN": "Why do you learn English?",
+                "VN": "Tại sao bạn lại học tiếng Anh?",
+                "IPA": "ˈwaɪ ˈdu jʊ ˈɫɝn ˈɪŋɡɫɪʃ"
+            },
+            {
+                "EN": "watch English cartoons on TV",
+                "VN": "xem phim hoạt hình tiếng Anh trên tivi",
+                "IPA": "ˈwɑtʃ ˈɪŋɡɫɪʃ kɑrˈtunz ɒn ˈtiˈvi"
+            },
+            {
+                "EN": "read English comic books",
+                "VN": "đọc truyện tranh tiếng anh",
+                "IPA": "riːd ˈɪŋɡɫɪʃ ˈkɑmɪk ˈbʊks"
+            },
+            {
+                "EN": "talk with my foreign friends",
+                "VN": "nói chuyện với những người bạn nước ngoài của tôi",
+                "IPA": "tɑːk wɪð mai ˈfɑɹən frends"
+            },
+            {
+                "EN": "Let’s talk.",
+                "VN": "Hãy nói chuyện.",
+                "IPA": "lets tɑːk"
+            },
+            {
+                "EN": "Ask and answer questions about how and why you learn English.",
+                "VN": "Hỏi và trả lời các câu hỏi về cách thức và lý do bạn học tiếng Anh.",
+                "IPA": "ˈæsk ænd ˈɑːn.sər ˈkwes.tʃən əˈbaʊt haʊ ænd ˈwaɪ jʊ ˈɫɝn ˈɪŋɡɫɪʃ"
+            },
+            {
+                "EN": "How do you learn English?",
+                "VN": "Bạn học tiếng Anh như thế nào?",
+                "IPA": "haʊ ˈdu jʊ ˈɫɝn ˈɪŋɡɫɪʃ"
+            },
+            {
+                "EN": "Why do you learn English?",
+                "VN": "Tại sao bạn lại học tiếng Anh?",
+                "IPA": "ˈwaɪ ˈdu jʊ ˈɫɝn ˈɪŋɡɫɪʃ"
+            }
         ]
     },
     {
         "img": "https://i.postimg.cc/CKpWmFX5/S-ch-H-c-Sinh-Ti-ng-Anh-L-p-5-T-p-1-50.jpg",
         "data": [
-
+            {
+                "EN": "Listen and number.",
+                "VN": "Nghe và điền số.",
+                "IPA": "ˈlɪs.ən ænd ˈnʌm.bər"
+            },
+            {
+                "EN": "practise, listen, speak",
+                "VN": "thực hành, nghe, nói",
+                "IPA": "ˈpræk.tɪs ˈlɪs.ən spiːk"
+            },
+            {
+                "EN": "Write about you.",
+                "VN": "Viết về bạn.",
+                "IPA": "raɪt əˈbaʊt jʊ"
+            },
+            {
+                "EN": "How do you practise speaking English?",
+                "VN": "Bạn luyện nói tiếng Anh như thế nào?",
+                "IPA": "haʊ ˈdu jʊ ˈpræk.tɪs ˈspikɪŋ ˈɪŋɡɫɪʃ"
+            },
+            {
+                "EN": "How do you practise reading English?",
+                "VN": "Bạn luyện đọc tiếng Anh như thế nào?",
+                "IPA": "haʊ ˈdu jʊ ˈpræk.tɪs ˈɹɛdɪŋ ˈɪŋɡɫɪʃ"
+            },
+            {
+                "EN": "How do you practise writing English?",
+                "VN": "Bạn luyện viết tiếng Anh như thế nào?",
+                "IPA": "haʊ ˈdu jʊ ˈpræk.tɪs ˈɹaɪtɪŋ ˈɪŋɡɫɪʃ"
+            },
+            {
+                "EN": "How do you learn English vocabulary?",
+                "VN": "Bạn học từ vựng tiếng Anh như thế nào?",
+                "IPA": "haʊ ˈdu jʊ ˈɫɝn ˈɪŋɡɫɪʃ voʊˈkæbjəˌɫɛɹi"
+            },
+            {
+                "EN": "Why do you learn English?",
+                "VN": "Tại sao bạn lại học tiếng Anh?",
+                "IPA": "ˈwaɪ ˈdu jʊ ˈɫɝn ˈɪŋɡɫɪʃ"
+            },
+            {
+                "EN": "Let’s play.",
+                "VN": "Hãy chơi.",
+                "IPA": "lets pleɪ"
+            },
+            {
+                "EN": "How do I learn English?",
+                "VN": "Tôi học tiếng Anh như thế nào?",
+                "IPA": "haʊ ˈdu aj ˈɫɝn ˈɪŋɡɫɪʃ"
+            },
+            {
+                "EN": "Charades",
+                "VN": "Trò chơi",
+                "IPA": "Charades"
+            }
         ]
     },
     {
         "img": "https://i.postimg.cc/900SrzR8/S-ch-H-c-Sinh-Ti-ng-Anh-L-p-5-T-p-1-51.jpg",
         "data": [
-
+            {
+                "EN": "Lesson 3",
+                "VN": "Bài 3",
+                "IPA": "ˈles.ən θriː"
+            },
+            {
+                "EN": "Listen and repeat.",
+                "VN": "Lắng nghe và lặp lại.",
+                "IPA": "ˈlɪs.ən ænd rɪˈpiːt"
+            },
+            {
+                "EN": "How do you practise speaking?",
+                "VN": "Bạn luyện nói như thế nào?",
+                "IPA": "haʊ ˈdu jʊ ˈpræk.tɪs ˈspikɪŋ"
+            },
+            {
+                "EN": "I speak English every day.",
+                "VN": "Tôi nói tiếng Anh mỗi ngày.",
+                "IPA": "aj spiːk ˈɪŋɡɫɪʃ ˈɛvɝi ˈdeɪ"
+            },
+            {
+                "EN": "How do you practise reading?",
+                "VN": "Bạn luyện đọc như thế nào?",
+                "IPA": "haʊ ˈdu jʊ ˈpræk.tɪs ˈɹɛdɪŋ"
+            },
+            {
+                "EN": "I read English comic books.",
+                "VN": "Tôi đọc truyện tranh tiếng Anh.",
+                "IPA": "aj riːd ˈɪŋɡɫɪʃ ˈkɑmɪk ˈbʊks"
+            },
+            {
+                "EN": "How do you practise writing?",
+                "VN": "Bạn luyện viết như thế nào?",
+                "IPA": "haʊ ˈdu jʊ ˈpræk.tɪs ˈɹaɪtɪŋ"
+            },
+            {
+                "EN": "I write emails to my friends.",
+                "VN": "Tôi viết email cho bạn bè của tôi.",
+                "IPA": "aj raɪt emails tuː mai frends"
+            },
+            {
+                "EN": "Why do you learn English?",
+                "VN": "Tại sao bạn lại học tiếng Anh?",
+                "IPA": "ˈwaɪ ˈdu jʊ ˈɫɝn ˈɪŋɡɫɪʃ"
+            },
+            {
+                "EN": "Because I want to sing English songs.",
+                "VN": "Bởi vì tôi muốn hát những bài hát tiếng Anh.",
+                "IPA": "bɪˈkɑz aj ˈwɑnt tuː sɪŋ ˈɪŋɡɫɪʃ ˈsɔŋz"
+            },
+            {
+                "EN": "Listen and circle a or b.",
+                "VN": "Nghe và khoanh tròn a hoặc b.",
+                "IPA": "ˈlɪs.ən ænd ˈsɜː.kəl ə ˈɔɹ b."
+            },
+            {
+                "EN": "Then say the sentences aloud.",
+                "VN": "Sau đó nói to các câu.",
+                "IPA": "ˈðɛn seɪ ðə ˈsen.təns əˈlaʊd"
+            },
+            {
+                "EN": "speaking it every day",
+                "VN": "nói nó mỗi ngày",
+                "IPA": "ˈspikɪŋ ɪt ˈɛvɝi ˈdeɪ"
+            },
+            {
+                "EN": "talking with my friends",
+                "VN": "nói chuyện với bạn bè của tôi",
+                "IPA": "ˈtɔkɪŋ wɪð mai frends"
+            },
+            {
+                "EN": "reading comic books",
+                "VN": "đọc truyện tranh",
+                "IPA": "ˈɹɛdɪŋ ˈkɑmɪk ˈbʊks"
+            },
+            {
+                "EN": "singing English songs",
+                "VN": "hát những bài hát tiếng anh",
+                "IPA": "ˈsɪŋɪŋ ˈɪŋɡɫɪʃ ˈsɔŋz"
+            },
+            {
+                "EN": "writing emails to his friends",
+                "VN": "viết email cho bạn bè của anh ấy",
+                "IPA": "ˈɹaɪtɪŋ emails tuː ˈhɪz frends"
+            },
+            {
+                "EN": "watching cartoons on TV",
+                "VN": "xem phim hoạt hình trên TV",
+                "IPA": "ˈwɑtʃɪŋ kɑrˈtunz ɒn ˈtiˈvi"
+            },
+            {
+                "EN": "read comic books",
+                "VN": "đọc truyện tranh",
+                "IPA": "riːd ˈkɑmɪk ˈbʊks"
+            },
+            {
+                "EN": "talk with our foreign friends",
+                "VN": "nói chuyện với những người bạn nước ngoài của chúng tôi",
+                "IPA": "tɑːk wɪð ˈaʊɝ ˈfɑɹən frends"
+            },
+            {
+                "EN": "Let’s chant.",
+                "VN": "Hãy hát thánh ca.",
+                "IPA": "lets tʃænt"
+            },
+            {
+                "EN": "How do you learn English?",
+                "VN": "Bạn học tiếng Anh như thế nào?",
+                "IPA": "haʊ ˈdu jʊ ˈɫɝn ˈɪŋɡɫɪʃ"
+            },
+            {
+                "EN": "How do you practise speaking?",
+                "VN": "Bạn luyện nói như thế nào?",
+                "IPA": "haʊ ˈdu jʊ ˈpræk.tɪs ˈspikɪŋ"
+            },
+            {
+                "EN": "By speaking English every day.",
+                "VN": "Bằng cách nói tiếng Anh mỗi ngày.",
+                "IPA": "ˈbaɪ ˈspikɪŋ ˈɪŋɡɫɪʃ ˈɛvɝi ˈdeɪ"
+            },
+            {
+                "EN": "How do you practise reading?",
+                "VN": "Bạn luyện đọc như thế nào?",
+                "IPA": "haʊ ˈdu jʊ ˈpræk.tɪs ˈɹɛdɪŋ"
+            },
+            {
+                "EN": "By reading comic books.",
+                "VN": "Bằng cách đọc truyện tranh.",
+                "IPA": "ˈbaɪ ˈɹɛdɪŋ ˈkɑmɪk ˈbʊks"
+            },
+            {
+                "EN": "How do you practise listening?",
+                "VN": "Bạn luyện nghe như thế nào?",
+                "IPA": "haʊ ˈdu jʊ ˈpræk.tɪs ˈɫɪsənɪŋ"
+            },
+            {
+                "EN": "By watching English cartoons on TV.",
+                "VN": "Bằng cách xem phim hoạt hình tiếng Anh trên TV.",
+                "IPA": "ˈbaɪ ˈwɑtʃɪŋ ˈɪŋɡɫɪʃ kɑrˈtunz ɒn ˈtiˈvi"
+            },
+            {
+                "EN": "How do you practise writing?",
+                "VN": "Bạn luyện viết như thế nào?",
+                "IPA": "haʊ ˈdu jʊ ˈpræk.tɪs ˈɹaɪtɪŋ"
+            },
+            {
+                "EN": "By writing emails to my friends.",
+                "VN": "Bằng cách viết email cho bạn bè của tôi.",
+                "IPA": "ˈbaɪ ˈɹaɪtɪŋ emails tuː mai frends"
+            },
+            {
+                "EN": "Why do you learn English?",
+                "VN": "Tại sao bạn lại học tiếng Anh?",
+                "IPA": "ˈwaɪ ˈdu jʊ ˈɫɝn ˈɪŋɡɫɪʃ"
+            },
+            {
+                "EN": "Because I want to sing English songs.",
+                "VN": "Bởi vì tôi muốn hát những bài hát tiếng Anh.",
+                "IPA": "bɪˈkɑz aj ˈwɑnt tuː sɪŋ ˈɪŋɡɫɪʃ ˈsɔŋz"
+            }
         ]
     },
     {
         "img": "https://i.postimg.cc/LsV0DjjQ/S-ch-H-c-Sinh-Ti-ng-Anh-L-p-5-T-p-1-52.jpg",
         "data": [
-
+            {
+                "EN": "Read and tick True (T) or False (F).",
+                "VN": "Đọc và đánh dấu Đúng (T) hoặc Sai (F).",
+                "IPA": "riːd ænd tɪk ˈtɹu ti ˈɔɹ ˈfɔɫs ɛf"
+            },
+            {
+                "EN": "My name is Mai.",
+                "VN": "Tôi tên là Mai.",
+                "IPA": "mai neɪm ɪz maɪ"
+            },
+            {
+                "EN": "I love reading English comic books.",
+                "VN": "Tôi thích đọc truyện tranh tiếng Anh.",
+                "IPA": "aj ˈɫəv ˈɹɛdɪŋ ˈɪŋɡɫɪʃ ˈkɑmɪk ˈbʊks"
+            },
+            {
+                "EN": "When I see a new word, I try to guess its meaning.",
+                "VN": "Khi tôi nhìn thấy một từ mới, tôi cố gắng đoán nghĩa của nó.",
+                "IPA": "ˈhwɛn aj ˈsi ə ˈnju ˈwɝd aj ˈtɹaɪ tuː ˈɡɛs ɪts ˈminɪŋ"
+            },
+            {
+                "EN": "I write the word in my notebook and say it a few times.",
+                "VN": "Tôi viết từ đó vào sổ tay và nói vài lần.",
+                "IPA": "aj raɪt ðə ˈwɝd ɪn mai ˈnoʊtˌbʊk ænd seɪ ɪt ə ˈfju ˈtaɪmz"
+            },
+            {
+                "EN": "I often stick new words on my bedroom walls and practise reading them aloud.",
+                "VN": "Tôi thường dán các từ mới lên tường phòng ngủ của mình và luyện đọc chúng thành tiếng.",
+                "IPA": "aj ˈɔfən stɪk ˈnju wɝːd ɒn mai ˈbɛˌdɹum walls ænd ˈpræk.tɪs ˈɹɛdɪŋ ðem əˈlaʊd"
+            },
+            {
+                "EN": "I learn to speak English by talking with my foreign friends in my free time.",
+                "VN": "Tôi học nói tiếng Anh bằng cách nói chuyện với những người bạn nước ngoài của mình vào thời gian rảnh.",
+                "IPA": "aj ˈɫɝn tuː spiːk ˈɪŋɡɫɪʃ ˈbaɪ ˈtɔkɪŋ wɪð mai ˈfɑɹən frends ɪn mai ˈfɹi taɪm"
+            },
+            {
+                "EN": "My friend Akiko is good at English.",
+                "VN": "Bạn tôi Akiko rất giỏi tiếng Anh.",
+                "IPA": "mai frend əˈkikoʊ ɪz ɡʊd ˈæt ˈɪŋɡɫɪʃ"
+            },
+            {
+                "EN": "She usually practises listening by watching cartoons on TV.",
+                "VN": "Cô ấy thường luyện nghe bằng cách xem phim hoạt hình trên TV.",
+                "IPA": "ʃiː ˈjuʒəɫi practises ˈɫɪsənɪŋ ˈbaɪ ˈwɑtʃɪŋ kɑrˈtunz ɒn ˈtiˈvi"
+            },
+            {
+                "EN": "She learns to write by writing emails to me every day.",
+                "VN": "Cô ấy học viết bằng cách viết email cho tôi mỗi ngày.",
+                "IPA": "ʃiː learns tuː raɪt ˈbaɪ ˈɹaɪtɪŋ emails tuː miː ˈɛvɝi ˈdeɪ"
+            },
+            {
+                "EN": "We are happy because we can understand each other.",
+                "VN": "Chúng tôi rất vui vì có thể hiểu nhau.",
+                "IPA": "wiː ɑːr ˈhæpi bɪˈkɑz wiː kæn ˌəndɝˈstænd ˈitʃ ˈəðɝ"
+            },
+            {
+                "EN": "English is necessary for communication.",
+                "VN": "Tiếng Anh cần thiết để giao tiếp.",
+                "IPA": "ˈɪŋɡɫɪʃ ɪz ˈnɛsəˌsɛri ˈfɔɹ kəmˌjunəˈkeɪʃən"
+            },
+            {
+                "EN": "Mai tries to guess the meaning of a word while she reads.",
+                "VN": "Mai cố gắng đoán nghĩa của một từ trong khi cô ấy đọc.",
+                "IPA": "maɪ ˈtɹaɪz tuː ˈɡɛs ðə ˈminɪŋ əv ə ˈwɝd ˈhwaɪɫ ʃiː ridz"
+            },
+            {
+                "EN": "Mai often learns to speak English by herself.",
+                "VN": "Mai thường tự học nói tiếng Anh.",
+                "IPA": "maɪ ˈɔfən learns tuː spiːk ˈɪŋɡɫɪʃ ˈbaɪ hɜːˈsɛlf"
+            },
+            {
+                "EN": "Akiko usually practises listening by watching cartoons on TV.",
+                "VN": "Akiko thường luyện nghe bằng cách xem phim hoạt hình trên TV.",
+                "IPA": "əˈkikoʊ ˈjuʒəɫi practises ˈɫɪsənɪŋ ˈbaɪ ˈwɑtʃɪŋ kɑrˈtunz ɒn ˈtiˈvi"
+            },
+            {
+                "EN": "Akiko learns to write English by writing emails to Mai every day.",
+                "VN": "Akiko học viết tiếng Anh bằng cách viết email cho Mai mỗi ngày.",
+                "IPA": "əˈkikoʊ learns tuː raɪt ˈɪŋɡɫɪʃ ˈbaɪ ˈɹaɪtɪŋ emails tuː maɪ ˈɛvɝi ˈdeɪ"
+            },
+            {
+                "EN": "They like learning English because it is necessary for their studies.",
+                "VN": "Họ thích học tiếng Anh vì nó cần thiết cho việc học của họ.",
+                "IPA": "ðeɪ ˈɫaɪk ˈɫɝnɪŋ ˈɪŋɡɫɪʃ bɪˈkɑz ɪt ɪz ˈnɛsəˌsɛri ˈfɔɹ ðer ˈstədiz"
+            },
+            {
+                "EN": "Write about how your friend learns English.",
+                "VN": "Viết về cách bạn của bạn học tiếng Anh.",
+                "IPA": "raɪt əˈbaʊt haʊ jɔːr frend learns ˈɪŋɡɫɪʃ"
+            },
+            {
+                "EN": "Project",
+                "VN": "Dự án",
+                "IPA": "ˈprɒdʒ.ekt"
+            },
+            {
+                "EN": "Discuss how you practise listening, speaking, reading and writing English.",
+                "VN": "Thảo luận về cách bạn luyện nghe, nói, đọc và viết tiếng Anh.",
+                "IPA": "dɪˈskəs haʊ jʊ ˈpræk.tɪs ˈɫɪsənɪŋ ˈspikɪŋ ˈɹɛdɪŋ ænd ˈɹaɪtɪŋ ˈɪŋɡɫɪʃ"
+            },
+            {
+                "EN": "Colour the stars.",
+                "VN": "Tô màu các ngôi sao.",
+                "IPA": "ˈkəɫɝ ðə stɑːz"
+            },
+            {
+                "EN": "Now I can ...",
+                "VN": "Bây giờ tôi có thể ...",
+                "IPA": "naʊ aj kæn ..."
+            },
+            {
+                "EN": "ask and answer questions about how and why someone learns English.",
+                "VN": "hỏi và trả lời các câu hỏi về cách thức và lý do tại sao ai đó học tiếng Anh.",
+                "IPA": "ˈæsk ænd ˈɑːn.sər ˈkwes.tʃən əˈbaʊt haʊ ænd ˈwaɪ ˈsəmˌwən learns ˈɪŋɡɫɪʃ"
+            },
+            {
+                "EN": "listen to and understand texts about how and why someone learns English.",
+                "VN": "nghe và hiểu các văn bản về cách thức và lý do tại sao ai đó học tiếng Anh.",
+                "IPA": "ˈlɪs.ən tuː ænd ˌəndɝˈstænd tɛksts əˈbaʊt haʊ ænd ˈwaɪ ˈsəmˌwən learns ˈɪŋɡɫɪʃ"
+            },
+            {
+                "EN": "read and understand texts about how and why someone learns English.",
+                "VN": "đọc và hiểu các văn bản về cách thức và lý do tại sao ai đó học tiếng Anh.",
+                "IPA": "riːd ænd ˌəndɝˈstænd tɛksts əˈbaʊt haʊ ænd ˈwaɪ ˈsəmˌwən learns ˈɪŋɡɫɪʃ"
+            },
+            {
+                "EN": "write about how your friend learns English.",
+                "VN": "viết về cách bạn của bạn học tiếng Anh.",
+                "IPA": "raɪt əˈbaʊt haʊ jɔːr frend learns ˈɪŋɡɫɪʃ"
+            }
         ]
     },
     {
         "img": "https://i.postimg.cc/Px3Vsh3m/S-ch-H-c-Sinh-Ti-ng-Anh-L-p-5-T-p-1-53.jpg",
         "data": [
-
+            {
+                "EN": "Unit 8",
+                "VN": "Bài 8",
+                "IPA": "ˈjuː.nɪt ˈeɪt"
+            },
+            {
+                "EN": "What are you reading?",
+                "VN": "Bạn đang đọc gì",
+                "IPA": "wɑːt ɑːr jʊ ˈɹɛdɪŋ"
+            },
+            {
+                "EN": "Lesson 1",
+                "VN": "Bài học 1",
+                "IPA": "ˈles.ən wʌn"
+            },
+            {
+                "EN": "Look, listen and repeat.",
+                "VN": "Nhìn, nghe và lặp lại.",
+                "IPA": "lʊk ˈlɪs.ən ænd rɪˈpiːt"
+            },
+            {
+                "EN": "Hi, Peter.",
+                "VN": "Chào Peter.",
+                "IPA": "haɪ ˈpitər"
+            },
+            {
+                "EN": "Let's play chess.",
+                "VN": "Ta cùng chơi cờ nào.",
+                "IPA": "lets pleɪ ˈtʃɛs"
+            },
+            {
+                "EN": "I can't.",
+                "VN": "Tôi không thể.",
+                "IPA": "aj kænt"
+            },
+            {
+                "EN": "I’m reading.",
+                "VN": "Tôi đang đọc.",
+                "IPA": "ˌaɪˈem ˈɹɛdɪŋ"
+            },
+            {
+                "EN": "What are you reading?",
+                "VN": "Bạn đang đọc gì",
+                "IPA": "wɑːt ɑːr jʊ ˈɹɛdɪŋ"
+            },
+            {
+                "EN": "I’m reading a story about Halloween.",
+                "VN": "Tôi đang đọc một câu chuyện về Halloween.",
+                "IPA": "ˌaɪˈem ˈɹɛdɪŋ ə ˈstɔːr.i əˈbaʊt ˌhæləˈwin"
+            },
+            {
+                "EN": "Is it a ghost story?",
+                "VN": "Nó là một câu chuyện ma phải không?",
+                "IPA": "ɪz ɪt ə goʊst ˈstɔːr.i"
+            },
+            {
+                "EN": "Yes. Very scary.",
+                "VN": "Đúng. Rất đáng sợ.",
+                "IPA": "jes ˈvɛri ˈskɛɹi"
+            },
+            {
+                "EN": "Is it a ghost?",
+                "VN": "Có phải là ma không?",
+                "IPA": "ɪz ɪt ə goʊst"
+            },
+            {
+                "EN": "Oh, no!",
+                "VN": "Ôi không!",
+                "IPA": "oʊ nəʊ"
+            },
+            {
+                "EN": "Point and say.",
+                "VN": "Chỉ và nói.",
+                "IPA": "pɔɪnt ænd seɪ"
+            },
+            {
+                "EN": "What are you reading?",
+                "VN": "Bạn đang đọc gì",
+                "IPA": "wɑːt ɑːr jʊ ˈɹɛdɪŋ"
+            },
+            {
+                "EN": "The Fox and the Crow",
+                "VN": "Con cáo và con quạ",
+                "IPA": "ðə fɑks ænd ðə Crow"
+            },
+            {
+                "EN": "The Story of Mai An Tiem",
+                "VN": "Câu chuyện về Mai An Tiêm",
+                "IPA": "ðə ˈstɔːr.i əv maɪ ˈæn Tiem"
+            },
+            {
+                "EN": "Aladdin and the Magic Lamp",
+                "VN": "Aladdin và cây đèn thần",
+                "IPA": "Aladdin ænd ðə ˈmædʒɪk læmp"
+            },
+            {
+                "EN": "Snow White and the Seven Dwarfs",
+                "VN": "Nàng Bạch Tuyết và bảy chú lùn",
+                "IPA": "snoʊ ˈwaɪt ænd ðə ˈsev.ən Dwarfs"
+            }
         ]
     },
     {
         "img": "https://i.postimg.cc/tgbMFBnV/S-ch-H-c-Sinh-Ti-ng-Anh-L-p-5-T-p-1-54.jpg",
         "data": [
-
+            {
+                "EN": "Let’s talk.",
+                "VN": "Hãy nói chuyện.",
+                "IPA": "lets tɑːk"
+            },
+            {
+                "EN": "Ask and answer questions about the book or story you are reading.",
+                "VN": "Hỏi và trả lời các câu hỏi về cuốn sách hoặc câu chuyện bạn đang đọc.",
+                "IPA": "ˈæsk ænd ˈɑːn.sər ˈkwes.tʃən əˈbaʊt ðə bʊk ˈɔɹ ˈstɔːr.i jʊ ɑːr ˈɹɛdɪŋ"
+            },
+            {
+                "EN": "Do you read books in your free time?",
+                "VN": "Bạn có đọc sách trong thời gian rảnh không?",
+                "IPA": "ˈdu jʊ riːd ˈbʊks ɪn jɔːr ˈfɹi taɪm"
+            },
+            {
+                "EN": "What are you reading now?",
+                "VN": "Bạn đang đọc gì vậy?",
+                "IPA": "wɑːt ɑːr jʊ ˈɹɛdɪŋ naʊ"
+            },
+            {
+                "EN": "What’s your favourite book or story?",
+                "VN": "Cuốn sách hoặc câu chuyện yêu thích của bạn là gì?",
+                "IPA": "wɑːts jɔːr ˈfeɪvɝɪt bʊk ˈɔɹ ˈstɔːr.i"
+            },
+            {
+                "EN": "Aladdin and the Magic Lamp",
+                "VN": "Aladdin và cây đèn thần",
+                "IPA": "Aladdin ænd ðə ˈmædʒɪk læmp"
+            },
+            {
+                "EN": "The Fox and the Crow",
+                "VN": "Con cáo và con quạ",
+                "IPA": "ðə fɑks ænd ðə Crow"
+            },
+            {
+                "EN": "The Story of Mai An Tiem",
+                "VN": "Câu chuyện về Mai An Tiêm",
+                "IPA": "ðə ˈstɔːr.i əv maɪ ˈæn Tiem"
+            },
+            {
+                "EN": "Snow White and the Seven Dwarfs",
+                "VN": "Nàng Bạch Tuyết và bảy chú lùn",
+                "IPA": "snoʊ ˈwaɪt ænd ðə ˈsev.ən Dwarfs"
+            },
+            {
+                "EN": "Read and complete.",
+                "VN": "Đọc và hoàn thành.",
+                "IPA": "riːd ænd kəmˈpliːt"
+            },
+            {
+                "EN": "snow",
+                "VN": "tuyết",
+                "IPA": "snoʊ"
+            },
+            {
+                "EN": "like",
+                "VN": "Thích",
+                "IPA": "ˈɫaɪk"
+            },
+            {
+                "EN": "reading",
+                "VN": "đọc hiểu",
+                "IPA": "ˈɹɛdɪŋ"
+            },
+            {
+                "EN": "free",
+                "VN": "miễn phí",
+                "IPA": "ˈfɹi"
+            },
+            {
+                "EN": "seven",
+                "VN": "bảy",
+                "IPA": "ˈsev.ən"
+            },
+            {
+                "EN": "I read a lot. I like fairy tales.",
+                "VN": "Tôi đọc rất nhiều. Tôi thích những câu chuyện cổ tích.",
+                "IPA": "aj riːd ə ˈɫɑt aj ˈɫaɪk ˈfeəri tales."
+            },
+            {
+                "EN": "What about you?",
+                "VN": "Còn bạn thì sao?",
+                "IPA": "wɑːt əˈbaʊt jʊ"
+            },
+            {
+                "EN": "Do you like fairy tales?",
+                "VN": "Bạn có thích những câu chuyện cổ tích?",
+                "IPA": "ˈdu jʊ ˈɫaɪk ˈfeəri tales?"
+            },
+            {
+                "EN": "What are you reading now?",
+                "VN": "Bạn đang đọc gì vậy?",
+                "IPA": "wɑːt ɑːr jʊ ˈɹɛdɪŋ naʊ"
+            },
+            {
+                "EN": "A Halloween story.",
+                "VN": "Một câu chuyện Halloween.",
+                "IPA": "ə ˌhæləˈwin ˈstɔːr.i"
+            },
+            {
+                "EN": "Let’s play.",
+                "VN": "Hãy chơi nào.",
+                "IPA": "lets pleɪ"
+            },
+            {
+                "EN": "The Guessing Game",
+                "VN": "Trò chơi đoán",
+                "IPA": "ðə Guessing ˈɡeɪm"
+            },
+            {
+                "EN": "It's a Vietnamese story.",
+                "VN": "Đó là một câu chuyện Việt Nam.",
+                "IPA": "ɪts ə viˌɛtnɑˈmis ˈstɔːr.i"
+            },
+            {
+                "EN": "It’s a fairy tale.",
+                "VN": "Đó là một câu chuyện cổ tích.",
+                "IPA": "ɪts ə ˈfeəri teɪl"
+            },
+            {
+                "EN": "The main character is a girl.",
+                "VN": "Nhân vật chính là một cô gái.",
+                "IPA": "ðə ˈmeɪn ˈkɛɹɪktɝ ɪz ə gɜrl"
+            },
+            {
+                "EN": "It’s The Story of Tam and Cam",
+                "VN": "Đó là câu chuyện của Tấm và Cám",
+                "IPA": "ɪts ðə ˈstɔːr.i əv tæm ænd Cam"
+            }
         ]
     },
     {
         "img": "https://i.postimg.cc/xCTp4qRf/S-ch-H-c-Sinh-Ti-ng-Anh-L-p-5-T-p-1-55.jpg",
         "data": [
-
+            {
+                "EN": "Lesson 2",
+                "VN": "Bài học 2",
+                "IPA": "ˈles.ən tuː"
+            },
+            {
+                "EN": "Look, listen and repeat.",
+                "VN": "Nhìn, nghe và lặp lại.",
+                "IPA": "lʊk ˈlɪs.ən ænd rɪˈpiːt"
+            },
+            {
+                "EN": "What are you reading, Quan?",
+                "VN": "Bạn đang đọc gì vậy Quân?",
+                "IPA": "wɑːt ɑːr jʊ ˈɹɛdɪŋ kwɔn"
+            },
+            {
+                "EN": "Aladdin and the Magic Lamp.",
+                "VN": "Aladdin và Cây đèn thần.",
+                "IPA": "Aladdin ænd ðə ˈmædʒɪk læmp"
+            },
+            {
+                "EN": "Who’s the main character?",
+                "VN": "Nhân vật chính là ai?",
+                "IPA": "huːz ðə ˈmeɪn ˈkɛɹɪktɝ"
+            },
+            {
+                "EN": "A boy... Aladdin.",
+                "VN": "Một cậu bé ... Aladdin.",
+                "IPA": "ə bɔɪ Aladdin."
+            },
+            {
+                "EN": "What's he like?",
+                "VN": "Anh ấy thích gì?",
+                "IPA": "wɑːts ˈhi ˈɫaɪk"
+            },
+            {
+                "EN": "I think he’s generous.",
+                "VN": "Tôi nghĩ anh ấy hào phóng.",
+                "IPA": "aj ˈθɪŋk ˈhiz ˈdʒɛnɝəs"
+            },
+            {
+                "EN": "May I borrow the book?",
+                "VN": "Tôi có thể mượn cuốn sách được không?",
+                "IPA": "meɪ aj ˈbɑˌroʊ ðə bʊk"
+            },
+            {
+                "EN": "Yes. You can have it when I finish it.",
+                "VN": "Đúng. Bạn có thể có nó khi tôi hoàn thành nó.",
+                "IPA": "jes jʊ kæn hæv ɪt ˈhwɛn aj ˈfɪnɪʃ ɪt"
+            },
+            {
+                "EN": "Point and say.",
+                "VN": "Chỉ và nói.",
+                "IPA": "pɔɪnt ænd seɪ"
+            },
+            {
+                "EN": "An Tiem",
+                "VN": "An Tiêm",
+                "IPA": "ˈæn Tiem"
+            },
+            {
+                "EN": "hard-working",
+                "VN": "làm việc chăm chỉ",
+                "IPA": "ˌhɑɹdhˈwɝkɪŋ"
+            },
+            {
+                "EN": "Snow White",
+                "VN": "Bạch Tuyết",
+                "IPA": "snoʊ ˈwaɪt"
+            },
+            {
+                "EN": "kind",
+                "VN": "tốt bụng",
+                "IPA": "ˈkaɪnd"
+            },
+            {
+                "EN": "The Fox",
+                "VN": "Con cáo",
+                "IPA": "ðə fɑks"
+            },
+            {
+                "EN": "clever",
+                "VN": "thông minh",
+                "IPA": "ˈklɛvər"
+            },
+            {
+                "EN": "Tam",
+                "VN": "Tấm",
+                "IPA": "tæm"
+            },
+            {
+                "EN": "gentle",
+                "VN": "dịu dàng",
+                "IPA": "gentle"
+            },
+            {
+                "EN": "Let’s talk.",
+                "VN": "Hãy nói chuyện.",
+                "IPA": "lets tɑːk"
+            },
+            {
+                "EN": "Ask and answer questions about your favourite book or story.",
+                "VN": "Hỏi và trả lời các câu hỏi về cuốn sách hoặc câu chuyện yêu thích của bạn.",
+                "IPA": "ˈæsk ænd ˈɑːn.sər ˈkwes.tʃən əˈbaʊt jɔːr ˈfeɪvɝɪt bʊk ˈɔɹ ˈstɔːr.i"
+            },
+            {
+                "EN": "Do you like fairy tales or comic books or short stories?",
+                "VN": "Bạn thích truyện cổ tích hay truyện tranh hay truyện ngắn?",
+                "IPA": "ˈdu jʊ ˈɫaɪk ˈfeəri tales ˈɔɹ ˈkɑmɪk ˈbʊks ˈɔɹ ʃɔːrt ˈstɔːriz"
+            },
+            {
+                "EN": "What book or story are you reading?",
+                "VN": "Bạn đang đọc cuốn sách hay câu chuyện nào?",
+                "IPA": "wɑːt bʊk ˈɔɹ ˈstɔːr.i ɑːr jʊ ˈɹɛdɪŋ"
+            },
+            {
+                "EN": "What's the main character like?",
+                "VN": "Nhân vật chính như thế nào?",
+                "IPA": "wɑːts ðə ˈmeɪn ˈkɛɹɪktɝ ˈɫaɪk"
+            },
+            {
+                "EN": "Do you like him or her?",
+                "VN": "Bạn thích anh ấy hay cô ấy không?",
+                "IPA": "ˈdu jʊ ˈɫaɪk ˈhɪm ˈɔɹ ˈhɝ"
+            }
         ]
     },
     {
         "img": "https://i.postimg.cc/90D8cSKs/S-ch-H-c-Sinh-Ti-ng-Anh-L-p-5-T-p-1-56.jpg",
         "data": [
-
+            {
+                "EN": "Listen and write one word in each blank.",
+                "VN": "Nghe và viết một từ vào mỗi chỗ trống.",
+                "IPA": "ˈlɪs.ən ænd raɪt wan ˈwɝd ɪn ˈitʃ ˈbɫæŋk"
+            },
+            {
+                "EN": "What’s Tam in The Story of Tam and Cam like?",
+                "VN": "Tấm trong Chuyện Tấm và Cám như thế nào?",
+                "IPA": "wɑːts tæm ɪn ðə ˈstɔːr.i əv tæm ænd Cam ˈɫaɪk"
+            },
+            {
+                "EN": "What’s Doraemon like?",
+                "VN": "Doraemon như thế nào?",
+                "IPA": "wɑːts Doraemon ˈɫaɪk"
+            },
+            {
+                "EN": "What are the Seven Dwarfs like?",
+                "VN": "Bảy chú lùn như thế nào?",
+                "IPA": "wɑːt ɑːr ðə ˈsev.ən Dwarfs ˈɫaɪk"
+            },
+            {
+                "EN": "What’s An Tiem like?",
+                "VN": "An Tiem như thế nào?",
+                "IPA": "wɑːts ˈæn Tiem ˈɫaɪk"
+            },
+            {
+                "EN": "Number the sentences in the correct order.",
+                "VN": "Đánh số các câu theo thứ tự đúng.",
+                "IPA": "ˈnʌm.bər ðə ˈsen.təns ɪn ðə kəˈrekt ˈɔɹdɝ"
+            },
+            {
+                "EN": "It’s a Vietnamese story about two girls.",
+                "VN": "Đó là một câu chuyện Việt Nam về hai cô gái.",
+                "IPA": "ɪts ə viˌɛtnɑˈmis ˈstɔːr.i əˈbaʊt tuː ˈɡɝɫz"
+            },
+            {
+                "EN": "She likes reading fairy tales in her free time.",
+                "VN": "Cô ấy thích đọc truyện cổ tích trong thời gian rảnh rỗi.",
+                "IPA": "ʃiː ˈɫaɪks ˈɹɛdɪŋ ˈfeəri tales ɪn ˈhɝ ˈfɹi taɪm"
+            },
+            {
+                "EN": "Their names are Tam and Cam.",
+                "VN": "Tên họ là Tấm và Cám.",
+                "IPA": "ðer neɪm's ɑːr tæm ænd Cam."
+            },
+            {
+                "EN": "Minh’s my classmate.",
+                "VN": "Minh là bạn cùng lớp của tôi.",
+                "IPA": "Minh’s mai ˈkɫæsˌmeɪt"
+            },
+            {
+                "EN": "Her favourite fairy tale is The Story of Tam and Cam.",
+                "VN": "Truyện cổ tích mà cô yêu thích nhất là Chuyện Tấm và Cám.",
+                "IPA": "ˈhɝ ˈfeɪvɝɪt ˈfeəri teɪl ɪz ðə ˈstɔːr.i əv tæm ænd Cam."
+            },
+            {
+                "EN": "Let’s sing.",
+                "VN": "Hãy hát nào.",
+                "IPA": "lets sɪŋ"
+            },
+            {
+                "EN": "Snow White and Aladdin",
+                "VN": "Bạch tuyết và Aladdin",
+                "IPA": "snoʊ ˈwaɪt ænd Aladdin"
+            },
+            {
+                "EN": "There’s a girl who’s so gentle.",
+                "VN": "Có một cô gái thật dịu dàng.",
+                "IPA": "ðerz ə gɜrl huːz soʊ gentle."
+            },
+            {
+                "EN": "So gentle and so kind.",
+                "VN": "Thật nhẹ nhàng và thật tốt bụng.",
+                "IPA": "soʊ gentle ænd soʊ ˈkaɪnd"
+            },
+            {
+                "EN": "Snow White is her name.",
+                "VN": "Snow White là tên của cô ấy.",
+                "IPA": "snoʊ ˈwaɪt ɪz ˈhɝ neɪm"
+            },
+            {
+                "EN": "Yes, Snow White is her name.",
+                "VN": "Vâng, Bạch Tuyết là tên của cô ấy.",
+                "IPA": "jes snoʊ ˈwaɪt ɪz ˈhɝ neɪm"
+            },
+            {
+                "EN": "There’s a boy who’s so clever.",
+                "VN": "Có một cậu bé thật thông minh.",
+                "IPA": "ðerz ə bɔɪ huːz soʊ ˈklɛvər"
+            },
+            {
+                "EN": "So clever and so bright.",
+                "VN": "Thật thông minh và thật sáng sủa.",
+                "IPA": "soʊ ˈklɛvər ænd soʊ braɪt"
+            },
+            {
+                "EN": "Aladdin is his name.",
+                "VN": "Aladdin là tên của anh ấy.",
+                "IPA": "Aladdin ɪz ˈhɪz neɪm"
+            },
+            {
+                "EN": "Yes, Aladdin Is his name.",
+                "VN": "Vâng, Aladdin Là tên của anh ấy.",
+                "IPA": "jes Aladdin ɪz ˈhɪz neɪm"
+            }
         ]
     },
     {
         "img": "https://i.postimg.cc/sgd6RTc0/S-ch-H-c-Sinh-Ti-ng-Anh-L-p-5-T-p-1-57.jpg",
         "data": [
-
+            {
+                "EN": "Lesson 3",
+                "VN": "Bài học 3",
+                "IPA": "ˈles.ən θriː"
+            },
+            {
+                "EN": "Listen and repeat.",
+                "VN": "Lắng nghe và lặp lại.",
+                "IPA": "ˈlɪs.ən ænd rɪˈpiːt"
+            },
+            {
+                "EN": "What are you reading?",
+                "VN": "Bạn đang đọc gì",
+                "IPA": "wɑːt ɑːr jʊ ˈɹɛdɪŋ"
+            },
+            {
+                "EN": "I’m reading The Fox and the Crow.",
+                "VN": "Tôi đang đọc Cáo và Quạ.",
+                "IPA": "ˌaɪˈem ˈɹɛdɪŋ ðə fɑks ænd ðə Crow."
+            },
+            {
+                "EN": "What’s Snow White like?",
+                "VN": "Bạch Tuyết như thế nào?",
+                "IPA": "wɑːts snoʊ ˈwaɪt ˈɫaɪk"
+            },
+            {
+                "EN": "She’s kind.",
+                "VN": "Cô ấy tốt bụng.",
+                "IPA": "ˈʃiz ˈkaɪnd"
+            },
+            {
+                "EN": "Listen and circle a or b.",
+                "VN": "Nghe và khoanh tròn a hoặc b.",
+                "IPA": "ˈlɪs.ən ænd ˈsɜː.kəl ə ˈɔɹ b."
+            },
+            {
+                "EN": "Then say the sentences aloud.",
+                "VN": "Sau đó nói to các câu.",
+                "IPA": "ˈðɛn seɪ ðə ˈsen.təns əˈlaʊd"
+            },
+            {
+                "EN": "What are you reading?",
+                "VN": "Bạn đang đọc gì?",
+                "IPA": "wɑːt ɑːr jʊ ˈɹɛdɪŋ"
+            },
+            {
+                "EN": "What’s she reading?",
+                "VN": "Cô ấy đang đọc gì vậy?",
+                "IPA": "wɑːts ʃiː ˈɹɛdɪŋ"
+            },
+            {
+                "EN": "What’s An Tiem like?",
+                "VN": "An Tiêm như thế nào?",
+                "IPA": "wɑːts ˈæn Tiem ˈɫaɪk"
+            },
+            {
+                "EN": "What’s Aladdin like?",
+                "VN": "Aladdin như thế nào?",
+                "IPA": "wɑːts Aladdin ˈɫaɪk"
+            },
+            {
+                "EN": "The Fox and the Crow",
+                "VN": "Con cáo và con quạ",
+                "IPA": "ðə fɑks ænd ðə Crow"
+            },
+            {
+                "EN": "Aladdin and the Magic Lamp",
+                "VN": "Aladdin và cây đèn thần",
+                "IPA": "Aladdin ænd ðə ˈmædʒɪk læmp"
+            },
+            {
+                "EN": "a fairy tale",
+                "VN": "Một câu chuyện cổ tích",
+                "IPA": "ə ˈfeəri teɪl"
+            },
+            {
+                "EN": "a funny story",
+                "VN": "Một câu chuyện vui nhộn",
+                "IPA": "ə ˈfəni ˈstɔːr.i"
+            },
+            {
+                "EN": "hard-working clever",
+                "VN": "làm việc chăm chỉ thông minh",
+                "IPA": "ˌhɑɹdhˈwɝkɪŋ ˈklɛvər"
+            },
+            {
+                "EN": "generous clever",
+                "VN": "thông minh hào phóng",
+                "IPA": "ˈdʒɛnɝəs ˈklɛvər"
+            },
+            {
+                "EN": "Let’s chant.",
+                "VN": "Hãy hát thánh ca.",
+                "IPA": "lets tʃænt"
+            },
+            {
+                "EN": "What are you reading?",
+                "VN": "Bạn đang đọc gì",
+                "IPA": "wɑːt ɑːr jʊ ˈɹɛdɪŋ"
+            },
+            {
+                "EN": "What are you reading?",
+                "VN": "Bạn đang đọc gì",
+                "IPA": "wɑːt ɑːr jʊ ˈɹɛdɪŋ"
+            },
+            {
+                "EN": "I’m reading the Aladdin story.",
+                "VN": "Tôi đang đọc câu chuyện về Aladdin.",
+                "IPA": "ˌaɪˈem ˈɹɛdɪŋ ðə Aladdin ˈstɔːr.i"
+            },
+            {
+                "EN": "What’s Aladdin like?",
+                "VN": "Aladdin như thế nào?",
+                "IPA": "wɑːts Aladdin ˈɫaɪk"
+            },
+            {
+                "EN": "What’s he like?",
+                "VN": "Anh ấy thích gì?",
+                "IPA": "wɑːts ˈhi ˈɫaɪk"
+            },
+            {
+                "EN": "He’s clever and he’s kind.",
+                "VN": "Anh ấy thông minh và tốt bụng.",
+                "IPA": "ˈhiz ˈklɛvər ænd ˈhiz ˈkaɪnd"
+            },
+            {
+                "EN": "What are you reading?",
+                "VN": "Bạn đang đọc gì",
+                "IPA": "wɑːt ɑːr jʊ ˈɹɛdɪŋ"
+            },
+            {
+                "EN": "I’m reading the Cinderella story.",
+                "VN": "Tôi đang đọc câu chuyện Cô bé lọ lem.",
+                "IPA": "ˌaɪˈem ˈɹɛdɪŋ ðə Cinderella ˈstɔːr.i"
+            },
+            {
+                "EN": "What’s Cinderella like?",
+                "VN": "Cinderella như thế nào?",
+                "IPA": "wɑːts Cinderella ˈɫaɪk"
+            },
+            {
+                "EN": "What’s she like?",
+                "VN": "Cô ấy thích gì?",
+                "IPA": "wɑːts ʃiː ˈɫaɪk"
+            },
+            {
+                "EN": "She’s beautiful and she’s kind.",
+                "VN": "Cô ấy xinh đẹp và tốt bụng.",
+                "IPA": "ˈʃiz ˈbjutəfəɫ ænd ˈʃiz ˈkaɪnd"
+            }
         ]
     },
     {
         "img": "https://i.postimg.cc/Ghs7NWky/S-ch-H-c-Sinh-Ti-ng-Anh-L-p-5-T-p-1-58.jpg",
         "data": [
-
+            {
+                "EN": "Read and tick Yes or No .",
+                "VN": "Đọc và đánh dấu Yes hoặc No .",
+                "IPA": "riːd ænd tɪk jes ˈɔɹ nəʊ ."
+            },
+            {
+                "EN": "Tom likes reading.",
+                "VN": "Tom thích đọc sách.",
+                "IPA": "tɒm ˈɫaɪks ˈɹɛdɪŋ"
+            },
+            {
+                "EN": "On Sundays, he often stays at home and reads comic books.",
+                "VN": "Vào chủ nhật, anh ấy thường ở nhà và đọc truyện tranh.",
+                "IPA": "ɒn ˈsənˌdeɪz ˈhi ˈɔfən stays ˈæt ˈhoʊm ænd ridz ˈkɑmɪk ˈbʊks"
+            },
+            {
+                "EN": "He likes Case Closed very much.",
+                "VN": "Anh ấy rất thích Case Closed.",
+                "IPA": "ˈhi ˈɫaɪks ˈkeɪs kloʊzd ˈvɛri ˈmətʃ"
+            },
+            {
+                "EN": "It is a Japanese story.",
+                "VN": "Đó là một câu chuyện của Nhật Bản.",
+                "IPA": "ɪt ɪz ə ˌdʒæpəˈniz ˈstɔːr.i"
+            },
+            {
+                "EN": "The main character is a schoolboy called Jimmy Kudo.",
+                "VN": "Nhân vật chính là một cậu học sinh tên là Jimmy Kudo.",
+                "IPA": "ðə ˈmeɪn ˈkɛɹɪktɝ ɪz ə schoolboy ˈkɔɫd Jimmy Kudo."
+            },
+            {
+                "EN": "He often helps the police.",
+                "VN": "Anh ấy thường giúp đỡ cảnh sát.",
+                "IPA": "ˈhi ˈɔfən ˈhɛɫps ðə pəˈliːs"
+            },
+            {
+                "EN": "He is good at his job.",
+                "VN": "Anh ấy làm tốt công việc của mình.",
+                "IPA": "ˈhi ɪz ɡʊd ˈæt ˈhɪz ʤɑb"
+            },
+            {
+                "EN": "Jimmy Kudo is Tom’s favourite character because he is clever and brave.",
+                "VN": "Jimmy Kudo là nhân vật yêu thích của Tom vì anh ấy thông minh và dũng cảm.",
+                "IPA": "Jimmy Kudo ɪz tɑmz ˈfeɪvɝɪt ˈkɛɹɪktɝ bɪˈkɑz ˈhi ɪz ˈklɛvər ænd brave."
+            },
+            {
+                "EN": "Tom likes reading books in his free time.",
+                "VN": "Tom thích đọc sách trong thời gian rảnh.",
+                "IPA": "tɒm ˈɫaɪks ˈɹɛdɪŋ ˈbʊks ɪn ˈhɪz ˈfɹi taɪm"
+            },
+            {
+                "EN": "Case Closed is a Malaysian story.",
+                "VN": "Case Closed là một câu chuyện của Malaysia.",
+                "IPA": "ˈkeɪs kloʊzd ɪz ə məˈɫeɪʒən ˈstɔːr.i"
+            },
+            {
+                "EN": "The main character is Jimmy Kudo.",
+                "VN": "Nhân vật chính là Jimmy Kudo.",
+                "IPA": "ðə ˈmeɪn ˈkɛɹɪktɝ ɪz Jimmy Kudo."
+            },
+            {
+                "EN": "Jimmy Kudo is a policeman.",
+                "VN": "Jimmy Kudo là một cảnh sát.",
+                "IPA": "Jimmy Kudo ɪz ə policeman."
+            },
+            {
+                "EN": "Jimmy Kudo is clever and brave.",
+                "VN": "Jimmy Kudo thông minh và dũng cảm.",
+                "IPA": "Jimmy Kudo ɪz ˈklɛvər ænd brave."
+            },
+            {
+                "EN": "Write about your favourite book.",
+                "VN": "Viết về cuốn sách yêu thích của bạn.",
+                "IPA": "raɪt əˈbaʊt jɔːr ˈfeɪvɝɪt bʊk"
+            },
+            {
+                "EN": "Project",
+                "VN": "Dự án",
+                "IPA": "ˈprɒdʒ.ekt"
+            },
+            {
+                "EN": "Interview three classmates about their favourite books and characters.",
+                "VN": "Phỏng vấn ba bạn cùng lớp về những cuốn sách và nhân vật yêu thích của họ.",
+                "IPA": "ˈɪn.tə.vjuː θriː ˈklɑːs.meɪt əˈbaʊt ðer ˈfeɪvɝɪt ˈbʊks ænd ˈkæɹəktɝz"
+            },
+            {
+                "EN": "Colour the stars.",
+                "VN": "Tô màu các ngôi sao.",
+                "IPA": "ˈkəɫɝ ðə stɑːz"
+            },
+            {
+                "EN": "Now I can ...",
+                "VN": "Bây giờ tôi có thể ...",
+                "IPA": "naʊ aj kæn ..."
+            },
+            {
+                "EN": "ask and answer questions about favourite books,",
+                "VN": "hỏi và trả lời câu hỏi về những cuốn sách yêu thích,",
+                "IPA": "ˈæsk ænd ˈɑːn.sər ˈkwes.tʃən əˈbaʊt ˈfeɪvɝɪt ˈbʊks"
+            },
+            {
+                "EN": "listen to and understand texts about favourite books,",
+                "VN": "nghe và hiểu văn bản về những cuốn sách yêu thích,",
+                "IPA": "ˈlɪs.ən tuː ænd ˌəndɝˈstænd tɛksts əˈbaʊt ˈfeɪvɝɪt ˈbʊks"
+            },
+            {
+                "EN": "read and understand texts about favourite books,",
+                "VN": "đọc và hiểu văn bản về những cuốn sách yêu thích,",
+                "IPA": "riːd ænd ˌəndɝˈstænd tɛksts əˈbaʊt ˈfeɪvɝɪt ˈbʊks"
+            },
+            {
+                "EN": "write about my favourite book.",
+                "VN": "viết về cuốn sách yêu thích của tôi.",
+                "IPA": "raɪt əˈbaʊt mai ˈfeɪvɝɪt bʊk"
+            }
         ]
     },
     {
         "img": "https://i.postimg.cc/YC6X2QD2/S-ch-H-c-Sinh-Ti-ng-Anh-L-p-5-T-p-1-59.jpg",
         "data": [
-
+            {
+                "EN": "Unit 9",
+                "VN": "Bài 9",
+                "IPA": "ˈjuː.nɪt ˈnaɪn"
+            },
+            {
+                "EN": "What did you see at the zoo?",
+                "VN": "Bạn đã thấy gì ở sở thú?",
+                "IPA": "wɑːt ˈdɪd jʊ ˈsi ˈæt ðə ˈzu"
+            },
+            {
+                "EN": "Lesson 1",
+                "VN": "Bài học 1",
+                "IPA": "ˈles.ən wʌn"
+            },
+            {
+                "EN": "Look, listen and repeat.",
+                "VN": "Nhìn, nghe và lặp lại.",
+                "IPA": "lʊk ˈlɪs.ən ænd rɪˈpiːt"
+            },
+            {
+                "EN": "I didn’t see you yesterday.",
+                "VN": "Tôi đã không gặp bạn ngày hôm qua.",
+                "IPA": "aj ˈdɪdənt ˈsi jʊ ˈjɛstɝˌdeɪ"
+            },
+            {
+                "EN": "Where did you go?",
+                "VN": "Bạn đã đi đâu?",
+                "IPA": "ˈwɛɹ ˈdɪd jʊ ɡoʊ"
+            },
+            {
+                "EN": "I went to the zoo.",
+                "VN": "Tôi đã đến sở thú.",
+                "IPA": "aj wɛnt tuː ðə ˈzu"
+            },
+            {
+                "EN": "What did you see at the zoo?",
+                "VN": "Bạn đã thấy gì ở sở thú?",
+                "IPA": "wɑːt ˈdɪd jʊ ˈsi ˈæt ðə ˈzu"
+            },
+            {
+                "EN": "I saw a baby elephant and some other animals.",
+                "VN": "Tôi nhìn thấy một con voi con và một số động vật khác.",
+                "IPA": "aj ˈsɔ ə ˈbeɪbi ˈɛɫəfənt ænd ˈsəm ˈəðɝ ˈænəməlz"
+            },
+            {
+                "EN": "Did you see any monkeys?",
+                "VN": "Bạn có thấy con khỉ nào không?",
+                "IPA": "ˈdɪd jʊ ˈsi anu monkeus?"
+            },
+            {
+                "EN": "Yes, I did. They were really noisy!",
+                "VN": "Vâng, tôi có thấy. Chúng thực sự ồn ào!",
+                "IPA": "jes aj ˈdɪd ðeɪ wər ˈɹiɫi ˈnɔɪzi"
+            },
+            {
+                "EN": "Did you see any tigers?",
+                "VN": "Bạn có nhìn thấy con hổ nào không?",
+                "IPA": "ˈdɪd jʊ ˈsi ˈɛni tigers?"
+            },
+            {
+                "EN": "Yes. They were really fast!",
+                "VN": "Có. Chúng thực sự nhanh đấy!",
+                "IPA": "jes ðeɪ wər ˈɹiɫi ˈfæst"
+            },
+            {
+                "EN": "Point and say.",
+                "VN": "Chỉ và nói.",
+                "IPA": "pɔɪnt ænd seɪ"
+            },
+            {
+                "EN": "What did you see at the zoo?",
+                "VN": "Bạn đã thấy gì ở sở thú?",
+                "IPA": "wɑːt ˈdɪd jʊ ˈsi ˈæt ðə ˈzu"
+            },
+            {
+                "EN": "pythons",
+                "VN": "con trăn",
+                "IPA": "pythons"
+            },
+            {
+                "EN": "crocodiles",
+                "VN": "cá sấu",
+                "IPA": "crocodiles"
+            },
+            {
+                "EN": "peacocks",
+                "VN": "con công",
+                "IPA": "peacocks"
+            },
+            {
+                "EN": "gorillas",
+                "VN": "khỉ đột",
+                "IPA": "gorillas"
+            }
         ]
     },
     {
         "img": "https://i.postimg.cc/rpgQxMLv/S-ch-H-c-Sinh-Ti-ng-Anh-L-p-5-T-p-1-60.jpg",
         "data": [
-
+            {
+                "EN": "Let’s talk.",
+                "VN": "Hãy nói chuyện.",
+                "IPA": "lets tɑːk"
+            },
+            {
+                "EN": "Ask and answer questions about the zoo.",
+                "VN": "Hỏi và trả lời các câu hỏi về sở thú.",
+                "IPA": "ˈæsk ænd ˈɑːn.sər ˈkwes.tʃən əˈbaʊt ðə ˈzu"
+            },
+            {
+                "EN": "When did you go to the zoo?",
+                "VN": "Bạn đã đến sở thú khi nào?",
+                "IPA": "ˈhwɛn ˈdɪd jʊ ɡoʊ tuː ðə ˈzu"
+            },
+            {
+                "EN": "What did you see at the zoo?",
+                "VN": "Bạn đã thấy gì ở sở thú?",
+                "IPA": "wɑːt ˈdɪd jʊ ˈsi ˈæt ðə ˈzu"
+            },
+            {
+                "EN": "Listen and tick.",
+                "VN": "Nghe và đánh dấu.",
+                "IPA": "ˈlɪs.ən ænd tɪk"
+            },
+            {
+                "EN": "What did Tom see at the zoo?",
+                "VN": "Tom đã nhìn thấy gì ở sở thú?",
+                "IPA": "wɑːt ˈdɪd tɒm ˈsi ˈæt ðə ˈzu"
+            },
+            {
+                "EN": "What did Mai see at the park?",
+                "VN": "Mai đã thấy gì ở công viên?",
+                "IPA": "wɑːt ˈdɪd maɪ ˈsi ˈæt ðə ˈpɑɹk"
+            },
+            {
+                "EN": "What did Tony see at the circus?",
+                "VN": "Tony đã thấy gì ở rạp xiếc?",
+                "IPA": "wɑːt ˈdɪd Tony ˈsi ˈæt ðə circus?"
+            },
+            {
+                "EN": "Read and complete.",
+                "VN": "Đọc và hoàn thành.",
+                "IPA": "riːd ænd kəmˈpliːt"
+            },
+            {
+                "EN": "intelligent",
+                "VN": "thông minh",
+                "IPA": "ɪnˈtɛləʤənt"
+            },
+            {
+                "EN": "gorillas",
+                "VN": "khỉ đột",
+                "IPA": "gorillas"
+            },
+            {
+                "EN": "elephants",
+                "VN": "con voi",
+                "IPA": "ˈɛləfənts"
+            },
+            {
+                "EN": "do",
+                "VN": "làm",
+                "IPA": "ˈdu"
+            },
+            {
+                "EN": "like",
+                "VN": "Thích",
+                "IPA": "ˈɫaɪk"
+            },
+            {
+                "EN": "They can spray water with their trunks.",
+                "VN": "Chúng có thể phun nước bằng các vòi của chúng.",
+                "IPA": "ðeɪ kæn spray ˈwɔtɝ wɪð ðer trunks."
+            },
+            {
+                "EN": "Let’s sing.",
+                "VN": "Hãy hát nào.",
+                "IPA": "lets sɪŋ"
+            },
+            {
+                "EN": "What did you see at the zoo?",
+                "VN": "Bạn đã thấy gì ở sở thú?",
+                "IPA": "wɑːt ˈdɪd jʊ ˈsi ˈæt ðə ˈzu"
+            },
+            {
+                "EN": "where did you go yesterday?",
+                "VN": "bạn đã đi đâu ngày hôm qua?",
+                "IPA": "ˈwɛɹ ˈdɪd jʊ ɡoʊ ˈjɛstɝˌdeɪ"
+            },
+            {
+                "EN": "I went to the zoo.",
+                "VN": "Tôi đã đến sở thú.",
+                "IPA": "aj wɛnt tuː ðə ˈzu"
+            },
+            {
+                "EN": "Who did you go with?",
+                "VN": "Bạn đã đi với ai?",
+                "IPA": "huː ˈdɪd jʊ ɡoʊ wɪð"
+            },
+            {
+                "EN": "I went with my friend Sue.",
+                "VN": "Tôi đã đi với người bạn của tôi Sue.",
+                "IPA": "aj wɛnt wɪð mai frend Sue."
+            },
+            {
+                "EN": "What did you see at the zoo?",
+                "VN": "Bạn đã thấy gì ở sở thú?",
+                "IPA": "wɑːt ˈdɪd jʊ ˈsi ˈæt ðə ˈzu"
+            },
+            {
+                "EN": "We saw some peacocks.",
+                "VN": "Chúng tôi đã nhìn thấy một số con công.",
+                "IPA": "wiː ˈsɔ ˈsəm peacocks."
+            },
+            {
+                "EN": "They were very beautiful And we saw some kangaroos.",
+                "VN": "Chúng rất đẹp Và chúng tôi đã thấy một số con kanguru.",
+                "IPA": "ðeɪ wər ˈvɛri ˈbjutəfəɫ ænd wiː ˈsɔ ˈsəm kangaroos."
+            },
+            {
+                "EN": "They were fast and funny, too.",
+                "VN": "Chúng cũng nhanh chóng và hài hước.",
+                "IPA": "ðeɪ wər ˈfæst ænd ˈfəni tuː"
+            }
         ]
     },
     {
         "img": "https://i.postimg.cc/FRRGx8r1/S-ch-H-c-Sinh-Ti-ng-Anh-L-p-5-T-p-1-61.jpg",
         "data": [
-
+            {
+                "EN": "Lesson 2",
+                "VN": "Bài 2",
+                "IPA": "ˈles.ən tuː"
+            },
+            {
+                "EN": "Look, listen and repeat.",
+                "VN": "Nhìn, nghe và lặp lại.",
+                "IPA": "lʊk ˈlɪs.ən ænd rɪˈpiːt"
+            },
+            {
+                "EN": "Did you go to the zoo last week, Phong?",
+                "VN": "Bạn có đi sở thú tuần trước không, Phong?",
+                "IPA": "ˈdɪd jʊ ɡoʊ tuː ðə ˈzu ˈɫæs ˈwik phong"
+            },
+            {
+                "EN": "What was it like?",
+                "VN": "Nó thế nào?",
+                "IPA": "wɑːt ˈwɑz ɪt ˈɫaɪk"
+            },
+            {
+                "EN": "Yes, I did.",
+                "VN": "Vâng, tôi có thấy.",
+                "IPA": "jes aj ˈdɪd"
+            },
+            {
+                "EN": "It was great.",
+                "VN": "Nó thật tuyệt.",
+                "IPA": "ˈwɑz ˈɡɹeɪt"
+            },
+            {
+                "EN": "What did the lions do when you were there?",
+                "VN": "Những con sư tử đã làm gì khi bạn ở đó?",
+                "IPA": "wɑːt ˈdɪd ðə ˈlaɪənz ˈdu ˈhwɛn jʊ wər ˈðɛɹ"
+            },
+            {
+                "EN": "They roared loudly.",
+                "VN": "Chúng rống to.",
+                "IPA": "ðeɪ roared ˈlaʊdli"
+            },
+            {
+                "EN": "I saw a python too.",
+                "VN": "Tôi cũng nhìn thấy một con trăn.",
+                "IPA": "aj ˈsɔ ə python tuː"
+            },
+            {
+                "EN": "It moved really quietly.",
+                "VN": "Nó di chuyển thực sự lặng lẽ.",
+                "IPA": "ɪt moved ˈɹiɫi quietly."
+            },
+            {
+                "EN": "And I saw two pandas.",
+                "VN": "Và tôi nhìn thấy hai con gấu trúc.",
+                "IPA": "ænd aj ˈsɔ tuː pandas."
+            },
+            {
+                "EN": "They were really cute and did things slowly.",
+                "VN": "Chúng thực sự rất dễ thương và làm mọi thứ một cách chậm rãi.",
+                "IPA": "ðeɪ wər ˈɹiɫi kjut ænd ˈdɪd ˈθɪŋz slowly."
+            },
+            {
+                "EN": "Point and say.",
+                "VN": "Chỉ và nói.",
+                "IPA": "pɔɪnt ænd seɪ"
+            },
+            {
+                "EN": "Tigers",
+                "VN": "Nhiều con hổ",
+                "IPA": "Tigers"
+            },
+            {
+                "EN": "roar loudly",
+                "VN": "rống to",
+                "IPA": "roar ˈlaʊdli"
+            },
+            {
+                "EN": "peacocks",
+                "VN": "con công",
+                "IPA": "peacocks"
+            },
+            {
+                "EN": "move beautifully",
+                "VN": "di chuyển đẹp",
+                "IPA": "ˈmuv beautifully"
+            },
+            {
+                "EN": "pythons",
+                "VN": "con trăn",
+                "IPA": "pythons"
+            },
+            {
+                "EN": "move quietly",
+                "VN": "di chuyển nhẹ nhàng",
+                "IPA": "ˈmuv quietly"
+            },
+            {
+                "EN": "pandas",
+                "VN": "gấu trúc",
+                "IPA": "pandas"
+            },
+            {
+                "EN": "eat slowly",
+                "VN": "ăn chậm thôi",
+                "IPA": "ˈit slowly"
+            },
+            {
+                "EN": "Let’s talk.",
+                "VN": "Hãy nói chuyện.",
+                "IPA": "lets tɑːk"
+            },
+            {
+                "EN": "Ask and answer questions about zoo animals.",
+                "VN": "Hỏi và trả lời các câu hỏi về động vật trong vườn thú.",
+                "IPA": "ˈæsk ænd ˈɑːn.sər ˈkwes.tʃən əˈbaʊt ˈzu ˈænəməlz"
+            },
+            {
+                "EN": "What are your favourite animals at the zoo?",
+                "VN": "Những con vật yêu thích của bạn ở sở thú là gì?",
+                "IPA": "wɑːt ɑːr jɔːr ˈfeɪvɝɪt ˈænəməlz ˈæt ðə ˈzu"
+            }
         ]
     },
     {
         "img": "https://i.postimg.cc/ZRMHsHnH/S-ch-H-c-Sinh-Ti-ng-Anh-L-p-5-T-p-1-62.jpg",
         "data": [
-
+            {
+                "EN": "Listen and circle a or b.",
+                "VN": "Nghe và khoanh tròn a hoặc b.",
+                "IPA": "ˈlɪs.ən ænd ˈsɜː.kəl ə ˈɔɹ b."
+            },
+            {
+                "EN": "What did the gorillas do when Nam was at the zoo?",
+                "VN": "Khỉ đột đã làm gì khi Nam ở sở thú?",
+                "IPA": "wɑːt ˈdɪd ðə gorillas ˈdu ˈhwɛn næm ˈwɑz ˈæt ðə ˈzu"
+            },
+            {
+                "EN": "They moved quickly.",
+                "VN": "Chúng di chuyển nhanh chóng.",
+                "IPA": "ðeɪ moved ˈkwɪkɫi"
+            },
+            {
+                "EN": "They moved slowly.",
+                "VN": "Chúng di chuyển từ từ.",
+                "IPA": "ðeɪ moved slowly."
+            },
+            {
+                "EN": "What did the pandas do when Quan was at the zoo?",
+                "VN": "Gấu trúc đã làm gì khi Quân ở sở thú?",
+                "IPA": "wɑːt ˈdɪd ðə pandas ˈdu ˈhwɛn kwɔn ˈwɑz ˈæt ðə ˈzu"
+            },
+            {
+                "EN": "They moved slowly and they ate quickly.",
+                "VN": "Chúng di chuyển chậm và ăn một cách nhanh chóng.",
+                "IPA": "ðeɪ moved slowly ænd ðeɪ ˈeɪt ˈkwɪkɫi"
+            },
+            {
+                "EN": "They moved quietly and they ate slowly.",
+                "VN": "Chúng lặng lẽ di chuyển và chúng ăn chậm rãi.",
+                "IPA": "ðeɪ moved quietly ænd ðeɪ ˈeɪt slowly."
+            },
+            {
+                "EN": "What did the peacocks do when Phong was at the park?",
+                "VN": "Chim công đã làm gì khi Phong ở công viên?",
+                "IPA": "wɑːt ˈdɪd ðə peacocks ˈdu ˈhwɛn phong ˈwɑz ˈæt ðə ˈpɑɹk"
+            },
+            {
+                "EN": "They ate slowly.",
+                "VN": "Chúng ăn một cách chậm rãi.",
+                "IPA": "ðeɪ ˈeɪt slowly."
+            },
+            {
+                "EN": "They moved beautifully.",
+                "VN": "Chúng di chuyển rất đẹp.",
+                "IPA": "ðeɪ moved beautifully."
+            },
+            {
+                "EN": "Write about your visit to the zoo.",
+                "VN": "Viết về chuyến thăm của bạn đến sở thú.",
+                "IPA": "raɪt əˈbaʊt jɔːr ˈvɪzɪt tuː ðə ˈzu"
+            },
+            {
+                "EN": "When were you at the zoo?",
+                "VN": "Bạn đã ở sở thú khi nào?",
+                "IPA": "ˈhwɛn wər jʊ ˈæt ðə ˈzu"
+            },
+            {
+                "EN": "What did you see there?",
+                "VN": "Những gì bạn đã nhìn thấy ở đó?",
+                "IPA": "wɑːt ˈdɪd jʊ ˈsi ˈðɛɹ"
+            },
+            {
+                "EN": "What did the animals do when you were there?",
+                "VN": "Những con vật đã làm gì khi bạn ở đó?",
+                "IPA": "wɑːt ˈdɪd ðə ˈænəməlz ˈdu ˈhwɛn jʊ wər ˈðɛɹ"
+            },
+            {
+                "EN": "Let’s play.",
+                "VN": "Hãy chơi.",
+                "IPA": "lets pleɪ"
+            },
+            {
+                "EN": "Animals in action (Charades)",
+                "VN": "Động vật đang hoạt động (Trò chơi đố chữ)",
+                "IPA": "ˈænəməlz ɪn ˈækʃən (Charades)"
+            },
+            {
+                "EN": "slowly",
+                "VN": "chậm rãi",
+                "IPA": "slowly"
+            },
+            {
+                "EN": "noisily",
+                "VN": "ồn ào",
+                "IPA": "noisily"
+            },
+            {
+                "EN": "quickly",
+                "VN": "Mau",
+                "IPA": "ˈkwɪkɫi"
+            },
+            {
+                "EN": "loudly",
+                "VN": "ầm ĩ",
+                "IPA": "ˈlaʊdli"
+            },
+            {
+                "EN": "quietly",
+                "VN": "lặng lẽ",
+                "IPA": "quietly"
+            },
+            {
+                "EN": "beautifully",
+                "VN": "đẹp đẽ",
+                "IPA": "beautifully"
+            },
+            {
+                "EN": "Example",
+                "VN": "Thí dụ",
+                "IPA": "ɪɡˈzæmpəɫ"
+            },
+            {
+                "EN": "What did I see at the zoo?",
+                "VN": "Tôi đã thấy gì ở sở thú?",
+                "IPA": "wɑːt ˈdɪd aj ˈsi ˈæt ðə ˈzu"
+            },
+            {
+                "EN": "You saw the elephants.",
+                "VN": "Bạn đã thấy những con voi.",
+                "IPA": "jʊ ˈsɔ ðə ˈɛləfənts"
+            },
+            {
+                "EN": "What did they do there?",
+                "VN": "Chúng đã làm gì ở đó?",
+                "IPA": "wɑːt ˈdɪd ðeɪ ˈdu ˈðɛɹ"
+            },
+            {
+                "EN": "They walked slowly.",
+                "VN": "Chúng bước đi chậm rãi.",
+                "IPA": "ðeɪ wɔkt slowly."
+            }
         ]
     },
     {
         "img": "https://i.postimg.cc/SRYrB9zh/S-ch-H-c-Sinh-Ti-ng-Anh-L-p-5-T-p-1-63.jpg",
         "data": [
-
+            {
+                "EN": "Lesson 3",
+                "VN": "Bài học 3",
+                "IPA": "ˈles.ən θriː"
+            },
+            {
+                "EN": "Listen and repeat.",
+                "VN": "Lắng nghe và lặp lại.",
+                "IPA": "ˈlɪs.ən ænd rɪˈpiːt"
+            },
+            {
+                "EN": "When did you go to the zoo?",
+                "VN": "Bạn đã đến sở thú khi nào?",
+                "IPA": "ˈhwɛn ˈdɪd jʊ ɡoʊ tuː ðə ˈzu"
+            },
+            {
+                "EN": "I went there yesterday.",
+                "VN": "Tôi đã đến đó ngày hôm qua.",
+                "IPA": "aj wɛnt ˈðɛɹ ˈjɛstɝˌdeɪ"
+            },
+            {
+                "EN": "What did the tigers do when you were there?",
+                "VN": "Những con hổ đã làm gì khi bạn ở đó?",
+                "IPA": "wɑːt ˈdɪd ðə tigers ˈdu ˈhwɛn jʊ wər ˈðɛɹ"
+            },
+            {
+                "EN": "They roared loudly.",
+                "VN": "Chúng rống to.",
+                "IPA": "ðeɪ roared ˈlaʊdli"
+            },
+            {
+                "EN": "Listen and underline the stressed words.",
+                "VN": "Nghe và gạch chân những từ được nhấn mạnh.",
+                "IPA": "ˈlɪs.ən ænd ˈəndɝˌɫaɪn ðə strɛst wɝːd"
+            },
+            {
+                "EN": "Then say the sentences aloud.",
+                "VN": "Sau đó nói to các câu.",
+                "IPA": "ˈðɛn seɪ ðə ˈsen.təns əˈlaʊd"
+            },
+            {
+                "EN": "What did you see at the zoo?",
+                "VN": "Bạn đã thấy gì ở sở thú?",
+                "IPA": "wɑːt ˈdɪd jʊ ˈsi ˈæt ðə ˈzu"
+            },
+            {
+                "EN": "What did the peacocks do when you were there?",
+                "VN": "Những con công đã làm gì khi bạn ở đó?",
+                "IPA": "wɑːt ˈdɪd ðə peacocks ˈdu ˈhwɛn jʊ wər ˈðɛɹ"
+            },
+            {
+                "EN": "saw lots of animals.",
+                "VN": "nhìn thấy rất nhiều động vật.",
+                "IPA": "ˈsɔ ˈɫɑts əv ˈænəməlz"
+            },
+            {
+                "EN": "They moved beautifully.",
+                "VN": "Chúng di chuyển rất đẹp.",
+                "IPA": "ðeɪ moved beautifully."
+            },
+            {
+                "EN": "Let’s chant.",
+                "VN": "Hãy hát thánh ca.",
+                "IPA": "lets tʃænt"
+            },
+            {
+                "EN": "At the circus",
+                "VN": "Ở rạp xiếc",
+                "IPA": "ˈæt ðə circus"
+            },
+            {
+                "EN": "What did you do yesterday?",
+                "VN": "Bạn đã làm gì ngày hôm qua?",
+                "IPA": "wɑːt ˈdɪd jʊ ˈdu ˈjɛstɝˌdeɪ"
+            },
+            {
+                "EN": "I went to the circus.",
+                "VN": "Tôi đã đi xem xiếc.",
+                "IPA": "aj wɛnt tuː ðə circus."
+            },
+            {
+                "EN": "I had a lot of fun.",
+                "VN": "Tôi đã có rất nhiều niềm vui.",
+                "IPA": "aj ˈhæd ə ˈɫɑt əv ˈfən"
+            },
+            {
+                "EN": "What did you see?",
+                "VN": "Bạn đã thấy gì?",
+                "IPA": "wɑːt ˈdɪd jʊ ˈsi"
+            },
+            {
+                "EN": "I saw the animals.",
+                "VN": "Tôi đã nhìn thấy những con vật.",
+                "IPA": "aj ˈsɔ ðə ˈænəməlz"
+            },
+            {
+                "EN": "They were playing games.",
+                "VN": "Chúng đang chơi trò chơi.",
+                "IPA": "ðeɪ wər ˈpɫeɪɪŋ ˈɡeɪmz"
+            },
+            {
+                "EN": "What did they do?",
+                "VN": "Chúng đã làm gì?",
+                "IPA": "wɑːt ˈdɪd ðeɪ ˈdu"
+            },
+            {
+                "EN": "The monkeys rode bicycles.",
+                "VN": "Những con khỉ đạp xe.",
+                "IPA": "ðə ˈmʌŋkiz roʊd bicycles."
+            },
+            {
+                "EN": "The bears played volleyball",
+                "VN": "Những chú gấu chơi bóng chuyền",
+                "IPA": "ðə bears ˈpɫeɪd ˈvɑɫiˌbɔɫ"
+            },
+            {
+                "EN": "How did the monkeys ride bicycles?",
+                "VN": "Những con khỉ đã đi xe đạp như thế nào?",
+                "IPA": "haʊ ˈdɪd ðə ˈmʌŋkiz ˈɹaɪd bicycles?"
+            },
+            {
+                "EN": "They rode them quickly.",
+                "VN": "Chúng lái xe đạp nhanh nhẹn.",
+                "IPA": "ðeɪ roʊd ðem ˈkwɪkɫi"
+            }
         ]
     },
     {
         "img": "https://i.postimg.cc/yWqPsNFS/S-ch-H-c-Sinh-Ti-ng-Anh-L-p-5-T-p-1-64.jpg",
         "data": [
-
+            {
+                "EN": "Read and match.",
+                "VN": "Đọc và nối.",
+                "IPA": "riːd ænd mætʃ"
+            },
+            {
+                "EN": "Dear Tuan,",
+                "VN": "Tuấn thân mến,",
+                "IPA": "ˈdɪɹ Tuan,"
+            },
+            {
+                "EN": "I went to the zoo with my classmates last Friday.",
+                "VN": "Tôi đã đi đến sở thú với các bạn cùng lớp của tôi vào thứ sáu tuần trước.",
+                "IPA": "aj wɛnt tuː ðə ˈzu wɪð mai ˈklɑːs.meɪt ˈɫæs ˈfɹaɪˌdeɪ"
+            },
+            {
+                "EN": "First, we saw the monkeys.",
+                "VN": "Đầu tiên, chúng tôi nhìn thấy những con khỉ.",
+                "IPA": "ˈfɝst wiː ˈsɔ ðə ˈmʌŋkiz"
+            },
+            {
+                "EN": "They were fun to watch because they jumped up and down quickly.",
+                "VN": "Chúng rất vui để xem vì chúng nhảy lên và xuống nhanh chóng.",
+                "IPA": "ðeɪ wər ˈfən tuː ˈwɑtʃ bɪˈkɑz ðeɪ jumped ʌp ænd daʊn ˈkwɪkɫi"
+            },
+            {
+                "EN": "Then we went to see the elephants.",
+                "VN": "Sau đó chúng tôi đi xem voi.",
+                "IPA": "ˈðɛn wiː wɛnt tuː ˈsi ðə ˈɛləfənts"
+            },
+            {
+                "EN": "They moved slowly and quietly.",
+                "VN": "Chúng di chuyển chậm và lặng lẽ.",
+                "IPA": "ðeɪ moved slowly ænd quietly."
+            },
+            {
+                "EN": "We also saw the tigers.",
+                "VN": "Chúng tôi cũng đã nhìn thấy những con hổ.",
+                "IPA": "wiː ˈɔɫsoʊ ˈsɔ ðə tigers."
+            },
+            {
+                "EN": "I liked them very much because they were fast.",
+                "VN": "Tôi thích chúng rất nhiều vì chúng nhanh.",
+                "IPA": "aj laɪkt ðem ˈvɛri ˈmətʃ bɪˈkɑz ðeɪ wər ˈfæst"
+            },
+            {
+                "EN": "Next, we saw the peacocks.",
+                "VN": "Tiếp theo, chúng tôi nhìn thấy những con công.",
+                "IPA": "nekst wiː ˈsɔ ðə peacocks."
+            },
+            {
+                "EN": "My classmates liked them because they moved beautifully.",
+                "VN": "Các bạn cùng lớp của tôi thích chúng vì chúng di chuyển rất đẹp.",
+                "IPA": "mai ˈklɑːs.meɪt laɪkt ðem bɪˈkɑz ðeɪ moved beautifully."
+            },
+            {
+                "EN": "In the end, we saw the pandas.",
+                "VN": "Cuối cùng, chúng tôi đã nhìn thấy những con gấu trúc.",
+                "IPA": "ɪn ðə ɛnd wiː ˈsɔ ðə pandas."
+            },
+            {
+                "EN": "They were very cute and did everything slowly.",
+                "VN": "Chúng rất dễ thương và làm mọi thứ chậm rãi.",
+                "IPA": "ðeɪ wər ˈvɛri kjut ænd ˈdɪd ˈɛvɹiˌθɪŋ slowly."
+            },
+            {
+                "EN": "I had a really good time at the zoo.",
+                "VN": "Tôi đã có một thời gian thực sự vui vẻ ở sở thú.",
+                "IPA": "aj ˈhæd ə ˈɹiɫi ɡʊd taɪm ˈæt ðə ˈzu"
+            },
+            {
+                "EN": "See you soon.",
+                "VN": "Hẹn sớm gặp lại.",
+                "IPA": "ˈsi jʊ ˈsun"
+            },
+            {
+                "EN": "Best wishes,",
+                "VN": "Lời chúc tốt nhất,",
+                "IPA": "ˈbɛst ˈwɪʃɪz"
+            },
+            {
+                "EN": "Phong",
+                "VN": "Phong",
+                "IPA": "phong"
+            },
+            {
+                "EN": "First,",
+                "VN": "Ngày thứ nhất,",
+                "IPA": "ˈfɝst"
+            },
+            {
+                "EN": "Then",
+                "VN": "sau đó",
+                "IPA": "ˈðɛn"
+            },
+            {
+                "EN": "Next,",
+                "VN": "Kế tiếp,",
+                "IPA": "nekst"
+            },
+            {
+                "EN": "In the end,",
+                "VN": "Đến cuối cùng,",
+                "IPA": "ɪn ðə ɛnd"
+            },
+            {
+                "EN": "they saw the peacocks.",
+                "VN": "họ đã nhìn thấy những con công.",
+                "IPA": "ðeɪ ˈsɔ ðə peacocks."
+            },
+            {
+                "EN": "they saw the monkeys.",
+                "VN": "họ đã nhìn thấy những con khỉ.",
+                "IPA": "ðeɪ ˈsɔ ðə ˈmʌŋkiz"
+            },
+            {
+                "EN": "they saw the pandas.",
+                "VN": "họ đã nhìn thấy những con gấu trúc.",
+                "IPA": "ðeɪ ˈsɔ ðə pandas."
+            },
+            {
+                "EN": "they saw the elephants and the tigers.",
+                "VN": "họ đã nhìn thấy những con voi và những con hổ.",
+                "IPA": "ðeɪ ˈsɔ ðə ˈɛləfənts ænd ðə tigers."
+            },
+            {
+                "EN": "Write about your last visit to the zoo.",
+                "VN": "Viết về chuyến thăm cuối cùng của bạn đến sở thú.",
+                "IPA": "raɪt əˈbaʊt jɔːr ˈɫæs ˈvɪzɪt tuː ðə ˈzu"
+            },
+            {
+                "EN": "Project",
+                "VN": "Dự án",
+                "IPA": "ˈprɒdʒ.ekt"
+            },
+            {
+                "EN": "Draw your dream zoo.",
+                "VN": "Vẽ vườn thú trong mơ của bạn.",
+                "IPA": "ˈdɹɔ jɔːr driːm ˈzu"
+            },
+            {
+                "EN": "Colour the stars.",
+                "VN": "Tô màu các ngôi sao.",
+                "IPA": "ˈkəɫɝ ðə stɑːz"
+            },
+            {
+                "EN": "Now I can ...",
+                "VN": "Bây giờ tôi có thể ...",
+                "IPA": "naʊ aj kæn ..."
+            },
+            {
+                "EN": "ask and answer questions about animals at the zoo.",
+                "VN": "hỏi và trả lời các câu hỏi về động vật ở sở thú.",
+                "IPA": "ˈæsk ænd ˈɑːn.sər ˈkwes.tʃən əˈbaʊt ˈænəməlz ˈæt ðə ˈzu"
+            },
+            {
+                "EN": "listen to and understand texts about animals at the zoo.",
+                "VN": "nghe và hiểu văn bản về động vật ở sở thú.",
+                "IPA": "ˈlɪs.ən tuː ænd ˌəndɝˈstænd tɛksts əˈbaʊt ˈænəməlz ˈæt ðə ˈzu"
+            },
+            {
+                "EN": "read and understand texts about animals at the zoo.",
+                "VN": "đọc và hiểu văn bản về động vật ở sở thú.",
+                "IPA": "riːd ænd ˌəndɝˈstænd tɛksts əˈbaʊt ˈænəməlz ˈæt ðə ˈzu"
+            },
+            {
+                "EN": "write about my last visit to the zoo.",
+                "VN": "viết về chuyến thăm cuối cùng của tôi đến sở thú.",
+                "IPA": "raɪt əˈbaʊt mai ˈɫæs ˈvɪzɪt tuː ðə ˈzu"
+            }
         ]
     },
     {
         "img": "https://i.postimg.cc/7PCrHQ3x/S-ch-H-c-Sinh-Ti-ng-Anh-L-p-5-T-p-1-65.jpg",
         "data": [
-
+            {
+                "EN": "Unit 10",
+                "VN": "Bài 10",
+                "IPA": "ˈjuː.nɪt ˈtɛn"
+            },
+            {
+                "EN": "When will Sports Day be?",
+                "VN": "Ngày thể thao là khi nào?",
+                "IPA": "ˈhwɛn wɪl ˈspɔɹts ˈdeɪ biː"
+            },
+            {
+                "EN": "Lesson 1",
+                "VN": "Bài học 1",
+                "IPA": "ˈles.ən wʌn"
+            },
+            {
+                "EN": "Look, listen and repeat.",
+                "VN": "Nhìn, nghe và lặp lại.",
+                "IPA": "lʊk ˈlɪs.ən ænd rɪˈpiːt"
+            },
+            {
+                "EN": "I’m looking for Phong, Where is he?",
+                "VN": "Tôi đang tìm Phong, Anh ấy ở đâu?",
+                "IPA": "ˌaɪˈem ˈɫʊkɪŋ ˈfɔɹ phong ˈwɛɹ ɪz ˈhi"
+            },
+            {
+                "EN": "He’s in the gym",
+                "VN": "Anh ấy đang ở trong phòng tập thể dục",
+                "IPA": "ˈhiz ɪn ðə dʒɪm"
+            },
+            {
+                "EN": "What’s he doing there?",
+                "VN": "Anh ấy đang làm gì ở đó?",
+                "IPA": "wɑːts ˈhi ˈduɪŋ ˈðɛɹ"
+            },
+            {
+                "EN": "I think he's practising for Sports Day.",
+                "VN": "Tôi nghĩ anh ấy đang tập luyện cho Ngày thể thao.",
+                "IPA": "aj ˈθɪŋk ˈhiz practising ˈfɔɹ ˈspɔɹts ˈdeɪ"
+            },
+            {
+                "EN": "When will Sports Day be?",
+                "VN": "Ngày thể thao là khi nào?",
+                "IPA": "ˈhwɛn wɪl ˈspɔɹts ˈdeɪ biː"
+            },
+            {
+                "EN": "On Saturday.",
+                "VN": "Vào thứ bảy.",
+                "IPA": "ɒn ˈsæˌtɪˌdeɪ"
+            },
+            {
+                "EN": "Will you take part in Sports Day?",
+                "VN": "Bạn sẽ tham gia Ngày thể thao chứ?",
+                "IPA": "wɪl jʊ ˈteɪk ˈpɑɹt ɪn ˈspɔɹts ˈdeɪ"
+            },
+            {
+                "EN": "Yes, I will.",
+                "VN": "Vâng tôi sẽ.",
+                "IPA": "jes aj wɪl"
+            },
+            {
+                "EN": "Point and say.",
+                "VN": "Chỉ và nói.",
+                "IPA": "pɔɪnt ænd seɪ"
+            },
+            {
+                "EN": "Sports Day",
+                "VN": "Ngày hội thể thao",
+                "IPA": "ˈspɔɹts ˈdeɪ"
+            },
+            {
+                "EN": "Saturday",
+                "VN": "ngày thứ bảy",
+                "IPA": "ˈsæˌtɪˌdeɪ"
+            },
+            {
+                "EN": "Teachers’ Day",
+                "VN": "Ngày Nhà giáo",
+                "IPA": "ˈtitʃɝz ˈdeɪ"
+            },
+            {
+                "EN": "Sunday",
+                "VN": "chủ nhật",
+                "IPA": "ˈsənˌdeɪ"
+            },
+            {
+                "EN": "Independence Day",
+                "VN": "Ngày Quốc Khánh",
+                "IPA": "Independence ˈdeɪ"
+            },
+            {
+                "EN": "Thursday",
+                "VN": "Thứ năm",
+                "IPA": "ˈθɝzˌdeɪ"
+            },
+            {
+                "EN": "Children’s Day",
+                "VN": "Ngày trẻ em",
+                "IPA": "ˈtʃɪɫdɹənz ˈdeɪ"
+            },
+            {
+                "EN": "Friday",
+                "VN": "Thứ sáu",
+                "IPA": "ˈfɹaɪˌdeɪ"
+            },
+            {
+                "EN": "Let’s talk.",
+                "VN": "Hãy nói chuyện.",
+                "IPA": "lets tɑːk"
+            },
+            {
+                "EN": "Ask and answer questions about school events.",
+                "VN": "Hỏi và trả lời các câu hỏi về các sự kiện của trường.",
+                "IPA": "ˈæsk ænd ˈɑːn.sər ˈkwes.tʃən əˈbaʊt skuːl ɪˈvɛnts"
+            }
         ]
     },
     {
         "img": "https://i.postimg.cc/QNRGHkmc/S-ch-H-c-Sinh-Ti-ng-Anh-L-p-5-T-p-1-66.jpg",
         "data": [
-
+            {
+                "EN": "Listen and match.",
+                "VN": "Lắng nghe và nối.",
+                "IPA": "ˈlɪs.ən ænd mætʃ"
+            },
+            {
+                "EN": "Read and match.",
+                "VN": "Đọc và nối.",
+                "IPA": "riːd ænd mætʃ"
+            },
+            {
+                "EN": "Where’s Tony now?",
+                "VN": "Tony bây giờ ở đâu?",
+                "IPA": "ˈhwɛɹz Tony naʊ"
+            },
+            {
+                "EN": "What’s Linda doing in the gym?",
+                "VN": "Linda đang làm gì trong phòng tập thể dục?",
+                "IPA": "wɑːts ˈlɪndə ˈduɪŋ ɪn ðə dʒɪm"
+            },
+            {
+                "EN": "When will Sports Day be?",
+                "VN": "Ngày thể thao là khi nào?",
+                "IPA": "ˈhwɛn wɪl ˈspɔɹts ˈdeɪ biː"
+            },
+            {
+                "EN": "What will Phong and Nam do on Sport Day?",
+                "VN": "Phong và Nam sẽ làm gì trong ngày Thể Thao?",
+                "IPA": "wɑːt wɪl phong ænd næm ˈdu ɒn Snorts Dav?"
+            },
+            {
+                "EN": "Will you take part in the singing contest?",
+                "VN": "Bạn sẽ tham gia cuộc thi hát chứ?",
+                "IPA": "wɪl jʊ ˈteɪk ˈpɑɹt ɪn ðə ˈsɪŋɪŋ ˈkɒntɛst"
+            },
+            {
+                "EN": "They’ll swim.",
+                "VN": "Họ sẽ bơi.",
+                "IPA": "ðeɪl ˈswɪm"
+            },
+            {
+                "EN": "He’s in the gym.",
+                "VN": "Anh ấy đang ở trong phòng tập thể dục.",
+                "IPA": "ˈhiz ɪn ðə dʒɪm"
+            },
+            {
+                "EN": "She’s playing table tennis.",
+                "VN": "Cô ấy đang chơi bóng bàn.",
+                "IPA": "ˈʃiz ˈpɫeɪɪŋ ˈteɪbəɫ ˈtɛnɪs"
+            },
+            {
+                "EN": "Yes, I will.",
+                "VN": "Vâng tôi sẽ.",
+                "IPA": "jes aj wɪl"
+            },
+            {
+                "EN": "It’ll be next month.",
+                "VN": "Nó diễn ra vào tháng tới.",
+                "IPA": "ˈɪtəl biː nekst mʌnθ"
+            },
+            {
+                "EN": "Let’s sing.",
+                "VN": "Hãy hát nào.",
+                "IPA": "lets sɪŋ"
+            },
+            {
+                "EN": "When will Sports Day be?",
+                "VN": "Ngày thể thao là khi nào?",
+                "IPA": "ˈhwɛn wɪl ˈspɔɹts ˈdeɪ biː"
+            },
+            {
+                "EN": "When will Sports Day be?",
+                "VN": "Ngày thể thao là khi nào?",
+                "IPA": "ˈhwɛn wɪl ˈspɔɹts ˈdeɪ biː"
+            },
+            {
+                "EN": "It’ll be In September, On Saturday.",
+                "VN": "Nó diễn ra vào tháng 9, thứ bảy.",
+                "IPA": "ˈɪtəl biː ɪn sɛpˈtɛmbɝ ɒn ˈsæˌtɪˌdeɪ"
+            },
+            {
+                "EN": "When will the singing contest be?",
+                "VN": "Khi nào thì cuộc thi hát diễn ra?",
+                "IPA": "ˈhwɛn wɪl ðə ˈsɪŋɪŋ ˈkɒntɛst biː"
+            },
+            {
+                "EN": "It’ll be In November, On Teachers' Day.",
+                "VN": "Vào tháng 11, ngày nhà giáo.",
+                "IPA": "ˈɪtəl biː ɪn noʊˈvɛmbɝ ɒn ˈtitʃɝz ˈdeɪ"
+            },
+            {
+                "EN": "When will the music festival be?",
+                "VN": "Lễ hội âm nhạc sẽ diễn ra khi nào?",
+                "IPA": "ˈhwɛn wɪl ðə ˈmjuzɪk ˈfɛstəvəɫ biː"
+            },
+            {
+                "EN": "It’ll be in June, On Children's Day.",
+                "VN": "Vào tháng 6, Ngày thiếu nhi.",
+                "IPA": "ˈɪtəl biː ɪn ˈdʒun ɒn ˈtʃɪɫdɹənz ˈdeɪ"
+            }
         ]
     },
     {
         "img": "https://i.postimg.cc/4xgD1frd/S-ch-H-c-Sinh-Ti-ng-Anh-L-p-5-T-p-1-67.jpg",
         "data": [
-
+            {
+                "EN": "Lesson 2",
+                "VN": "Bài 2",
+                "IPA": "ˈles.ən tuː"
+            },
+            {
+                "EN": "Look, listen and repeat.",
+                "VN": "Nhìn, nghe và lặp lại.",
+                "IPA": "lʊk ˈlɪs.ən ænd rɪˈpiːt"
+            },
+            {
+                "EN": "It's only two weeks until Sports Day!",
+                "VN": "Chỉ còn hai tuần nữa là đến Ngày Thể thao!",
+                "IPA": "ɪts ˈoʊnɫi tuː ˈwiks ənˈtɪl ˈspɔɹts ˈdeɪ"
+            },
+            {
+                "EN": "Yes! It’ll be great!",
+                "VN": "Đúng! Sẽ rất tuyệt!",
+                "IPA": "jes ˈɪtəl biː ˈɡɹeɪt"
+            },
+            {
+                "EN": "Where will it be?",
+                "VN": "Nó diễn ra ở đâu?",
+                "IPA": "ˈwɛɹ wɪl ɪt biː"
+            },
+            {
+                "EN": "In the sports ground near our school",
+                "VN": "Trong sân thể thao gần trường học của chúng tôi",
+                "IPA": "ɪn ðə ˈspɔɹts graʊnd ˈnɪɹ ˈaʊɝ skuːl"
+            },
+            {
+                "EN": "What are you going to do on Sports Day, Mai?",
+                "VN": "Bạn định làm gì vào Ngày thể thao, Mai?",
+                "IPA": "wɑːt ɑːr jʊ ˈɡoʊɪn tuː ˈdu ɒn ˈspɔɹts ˈdeɪ maɪ"
+            },
+            {
+                "EN": "I'm going to play table tennis.",
+                "VN": "Tôi sẽ chơi bóng bàn.",
+                "IPA": "ˌaɪˈem ˈɡoʊɪn tuː pleɪ ˈteɪbəɫ ˈtɛnɪs"
+            },
+            {
+                "EN": "What about you, Tony?",
+                "VN": "Còn bạn thì sao, Tony?",
+                "IPA": "wɑːt əˈbaʊt jʊ Tony?"
+            },
+            {
+                "EN": "What are you going to do on Sports Day?",
+                "VN": "Bạn sẽ làm gì vào Ngày thể thao?",
+                "IPA": "wɑːt ɑːr jʊ ˈɡoʊɪn tuː ˈdu ɒn ˈspɔɹts ˈdeɪ"
+            },
+            {
+                "EN": "Phong and I are going to play football.",
+                "VN": "Tôi và Phong đi đá bóng.",
+                "IPA": "phong ænd aj ɑːr ˈɡoʊɪn tuː pleɪ ˈfʊtˌbɔɫ"
+            },
+            {
+                "EN": "Our class will play against Class 5E.",
+                "VN": "Lớp chúng ta sẽ đấu với Lớp 5E.",
+                "IPA": "ˈaʊɝ klɑːs wɪl pleɪ əˈgɛnst klɑːs 5E."
+            },
+            {
+                "EN": "Point and say.",
+                "VN": "Chỉ và nói.",
+                "IPA": "pɔɪnt ænd seɪ"
+            },
+            {
+                "EN": "What are you going to do on Sports Day?",
+                "VN": "Bạn sẽ làm gì vào Ngày thể thao?",
+                "IPA": "wɑːt ɑːr jʊ ˈɡoʊɪn tuː ˈdu ɒn ˈspɔɹts ˈdeɪ"
+            },
+            {
+                "EN": "play basketball",
+                "VN": "chơi bóng rổ",
+                "IPA": "pleɪ ˈbæskətˌbɔɫ"
+            },
+            {
+                "EN": "play football",
+                "VN": "chơi bóng đá",
+                "IPA": "pleɪ ˈfʊtˌbɔɫ"
+            },
+            {
+                "EN": "play table tennis",
+                "VN": "chơi bóng bàn",
+                "IPA": "pleɪ ˈteɪbəɫ ˈtɛnɪs"
+            },
+            {
+                "EN": "play badminton",
+                "VN": "chơi cầu lông",
+                "IPA": "pleɪ ˈbædˌmɪntən"
+            },
+            {
+                "EN": "Let’s talk.",
+                "VN": "Hãy nói chuyện.",
+                "IPA": "lets tɑːk"
+            },
+            {
+                "EN": "Ask and answer questions about what you will do on Sports Day in your school.",
+                "VN": "Hỏi và trả lời các câu hỏi về những gì bạn sẽ làm trong Ngày Thể thao ở trường của bạn.",
+                "IPA": "ˈæsk ænd ˈɑːn.sər ˈkwes.tʃən əˈbaʊt wɑːt jʊ wɪl ˈdu ɒn ˈspɔɹts ˈdeɪ ɪn jɔːr skuːl"
+            },
+            {
+                "EN": "when will Sports Day be?",
+                "VN": "khi nào sẽ là Ngày thể thao?",
+                "IPA": "ˈhwɛn wɪl ˈspɔɹts ˈdeɪ biː"
+            },
+            {
+                "EN": "what are you going to do?",
+                "VN": "bạn định làm gì?",
+                "IPA": "wɑːt ɑːr jʊ ˈɡoʊɪn tuː ˈdu"
+            }
         ]
     },
     {
         "img": "https://i.postimg.cc/WbgRrFYC/S-ch-H-c-Sinh-Ti-ng-Anh-L-p-5-T-p-1-68.jpg",
         "data": [
-
+            {
+                "EN": "Listen and number.",
+                "VN": "Nghe và điền số.",
+                "IPA": "ˈlɪs.ən ænd ˈnʌm.bər"
+            },
+            {
+                "EN": "Write about you.",
+                "VN": "Viết về bạn.",
+                "IPA": "raɪt əˈbaʊt jʊ"
+            },
+            {
+                "EN": "When will Sports Day be at your school?",
+                "VN": "Khi nào sẽ có Ngày hội thể thao ở trường của bạn?",
+                "IPA": "ˈhwɛn wɪl ˈspɔɹts ˈdeɪ biː ˈæt jɔːr skuːl"
+            },
+            {
+                "EN": "Where will it be?",
+                "VN": "Nó sẽ ở đâu?",
+                "IPA": "ˈwɛɹ wɪl ɪt biː"
+            },
+            {
+                "EN": "What are you going to do?",
+                "VN": "Bạn định làm gì?",
+                "IPA": "wɑːt ɑːr jʊ ˈɡoʊɪn tuː ˈdu"
+            },
+            {
+                "EN": "What are your classmates going to do?",
+                "VN": "Các bạn cùng lớp của bạn sẽ làm gì?",
+                "IPA": "wɑːt ɑːr jɔːr ˈklɑːs.meɪt ˈɡoʊɪn tuː ˈdu"
+            },
+            {
+                "EN": "Let’s play.",
+                "VN": "Hãy chơi.",
+                "IPA": "lets pleɪ"
+            },
+            {
+                "EN": "Pass the secret!",
+                "VN": "Vượt qua bí mật!",
+                "IPA": "Pass ðə secret!"
+            },
+            {
+                "EN": "we are going to play table tennis on Sports Day.",
+                "VN": "chúng ta sẽ chơi bóng bàn vào Ngày thể thao.",
+                "IPA": "wiː ɑːr ˈɡoʊɪn tuː pleɪ ˈteɪbəɫ ˈtɛnɪs ɒn ˈspɔɹts ˈdeɪ"
+            }
         ]
     },
     {
         "img": "https://i.postimg.cc/NjkWChcx/S-ch-H-c-Sinh-Ti-ng-Anh-L-p-5-T-p-1-69.jpg",
         "data": [
-
+            {
+                "EN": "Lesson 3",
+                "VN": "Bài học 3",
+                "IPA": "ˈles.ən θriː"
+            },
+            {
+                "EN": "Listen and repeat.",
+                "VN": "Lắng nghe và lặp lại.",
+                "IPA": "ˈlɪs.ən ænd rɪˈpiːt"
+            },
+            {
+                "EN": "When will Sports Day be?",
+                "VN": "Ngày thể thao vào khi nào?",
+                "IPA": "ˈhwɛn wɪl ˈspɔɹts ˈdeɪ biː"
+            },
+            {
+                "EN": "what are you going to do on Sports Day",
+                "VN": "bạn sẽ làm gì vào Ngày thể thao",
+                "IPA": "wɑːt ɑːr jʊ ˈɡoʊɪn tuː ˈdu ɒn ˈspɔɹts ˈdeɪ"
+            },
+            {
+                "EN": "It’ll be on Saturday.",
+                "VN": "Sẽ là vào Thứ Bảy.",
+                "IPA": "ˈɪtəl biː ɒn ˈsæˌtɪˌdeɪ"
+            },
+            {
+                "EN": "I’m going to play football.",
+                "VN": "Tôi sẽ chơi bóng đá.",
+                "IPA": "ˌaɪˈem ˈɡoʊɪn tuː pleɪ ˈfʊtˌbɔɫ"
+            },
+            {
+                "EN": "Listen and underline the stressed words.",
+                "VN": "Nghe và gạch chân những từ được nhấn mạnh.",
+                "IPA": "ˈlɪs.ən ænd ˈəndɝˌɫaɪn ðə strɛst wɝːd"
+            },
+            {
+                "EN": "Then say the sentences aloud.",
+                "VN": "Sau đó nói to các câu.",
+                "IPA": "ˈðɛn seɪ ðə ˈsen.təns əˈlaʊd"
+            },
+            {
+                "EN": "When will Sports Day be?",
+                "VN": "Ngày thể thao vào lúc nào?",
+                "IPA": "ˈhwɛn wɪl ˈspɔɹts ˈdeɪ biː"
+            },
+            {
+                "EN": "It’ll be on Sunday.",
+                "VN": "Vào Chủ nhật.",
+                "IPA": "ˈɪtəl biː ɒn ˈsənˌdeɪ"
+            },
+            {
+                "EN": "What are you going to do on Sports Day?",
+                "VN": "Bạn sẽ làm gì vào Ngày thể thao?",
+                "IPA": "wɑːt ɑːr jʊ ˈɡoʊɪn tuː ˈdu ɒn ˈspɔɹts ˈdeɪ"
+            },
+            {
+                "EN": "I’m going to play table tennis.",
+                "VN": "Tôi sẽ chơi bóng bàn.",
+                "IPA": "ˌaɪˈem ˈɡoʊɪn tuː pleɪ ˈteɪbəɫ ˈtɛnɪs"
+            },
+            {
+                "EN": "Let’s chant.",
+                "VN": "Hãy hát thánh ca.",
+                "IPA": "lets tʃænt"
+            },
+            {
+                "EN": "What are they going to do?",
+                "VN": "Họ định làm gì vậy?",
+                "IPA": "wɑːt ɑːr ðeɪ ˈɡoʊɪn tuː ˈdu"
+            },
+            {
+                "EN": "Sports Day will be this weekend.",
+                "VN": "Ngày Thể thao sẽ diễn ra vào cuối tuần này.",
+                "IPA": "ˈspɔɹts ˈdeɪ wɪl biː ðɪs ˈwiˌkɛnd"
+            },
+            {
+                "EN": "It’ll be this weekend.",
+                "VN": "Vào cuối tuần này.",
+                "IPA": "ˈɪtəl biː ðɪs ˈwiˌkɛnd"
+            },
+            {
+                "EN": "What are they going to do?",
+                "VN": "Họ định làm gì vậy?",
+                "IPA": "wɑːt ɑːr ðeɪ ˈɡoʊɪn tuː ˈdu"
+            },
+            {
+                "EN": "They’re going to play volleyball",
+                "VN": "Họ sẽ chơi bóng chuyền",
+                "IPA": "ðeər ˈɡoʊɪn tuː pleɪ ˈvɑɫiˌbɔɫ"
+            },
+            {
+                "EN": "They’re going to play table tennis.",
+                "VN": "Họ sẽ chơi bóng bàn.",
+                "IPA": "ðeər ˈɡoʊɪn tuː pleɪ ˈteɪbəɫ ˈtɛnɪs"
+            },
+            {
+                "EN": "They are practising hard For Sports Day.",
+                "VN": "Họ đang luyện tập chăm chỉ cho Ngày thể thao.",
+                "IPA": "ðeɪ ɑːr practising hɑːd ˈfɔɹ ˈspɔɹts ˈdeɪ"
+            }
         ]
     },
     {
         "img": "https://i.postimg.cc/3wrzPLrQ/S-ch-H-c-Sinh-Ti-ng-Anh-L-p-5-T-p-1-70.jpg",
         "data": [
-
+            {
+                "EN": "Read and tick.",
+                "VN": "Đọc và đánh dấu.",
+                "IPA": "riːd ænd tɪk"
+            },
+            {
+                "EN": "Our school Sports Day will be next Saturday.",
+                "VN": "Ngày Thể thao của trường chúng ta sẽ diễn ra vào thứ Bảy tới.",
+                "IPA": "ˈaʊɝ skuːl ˈspɔɹts ˈdeɪ wɪl biː nekst ˈsæˌtɪˌdeɪ"
+            },
+            {
+                "EN": "Everyone in my class is going to take part in it.",
+                "VN": "Tất cả mọi người trong lớp của tôi sẽ tham gia vào nó.",
+                "IPA": "ˈɛvɹiˌwən ɪn mai klɑːs ɪz ˈɡoʊɪn tuː ˈteɪk ˈpɑɹt ɪn ɪt"
+            },
+            {
+                "EN": "Mai and Linda are going to play table tennis.",
+                "VN": "Mai và Linda sẽ chơi bóng bàn.",
+                "IPA": "maɪ ænd ˈlɪndə ɑːr ˈɡoʊɪn tuː pleɪ ˈteɪbəɫ ˈtɛnɪs"
+            },
+            {
+                "EN": "Tony’s going to play basketball and Peter’s going to play badminton.",
+                "VN": "Tony sẽ chơi bóng rổ và Peter sẽ chơi cầu lông.",
+                "IPA": "Tony’s ˈɡoʊɪn tuː pleɪ ˈbæskətˌbɔɫ ænd Peter’s ˈɡoʊɪn tuː pleɪ ˈbædˌmɪntən"
+            },
+            {
+                "EN": "Phong and Nam are going to play in a football match.",
+                "VN": "Phong và Nam sẽ tham gia một trận bóng đá.",
+                "IPA": "phong ænd næm ɑːr ˈɡoʊɪn tuː pleɪ ɪn ə ˈfʊtˌbɔɫ mætʃ"
+            },
+            {
+                "EN": "Tom’s going to swim.",
+                "VN": "Tom sẽ đi bơi.",
+                "IPA": "tɑmz ˈɡoʊɪn tuː ˈswɪm"
+            },
+            {
+                "EN": "My classmates are practising hard for the events.",
+                "VN": "Các bạn cùng lớp của tôi đang luyện tập chăm chỉ cho các sự kiện.",
+                "IPA": "mai ˈklɑːs.meɪt ɑːr practising hɑːd ˈfɔɹ ðə ɪˈvɛnts"
+            },
+            {
+                "EN": "We hope that we will win the competitions.",
+                "VN": "Chúng tôi hy vọng rằng chúng tôi sẽ giành chiến thắng trong các cuộc thi.",
+                "IPA": "wiː ˈhoʊp ðæt wiː wɪl wɪn ðə competitions."
+            },
+            {
+                "EN": "Write about Sports Day.",
+                "VN": "Viết về Ngày thể thao.",
+                "IPA": "raɪt əˈbaʊt ˈspɔɹts ˈdeɪ"
+            },
+            {
+                "EN": "Sports Day is going to be",
+                "VN": "Ngày thể thao sẽ được",
+                "IPA": "ˈspɔɹts ˈdeɪ ɪz ˈɡoʊɪn tuː biː"
+            },
+            {
+                "EN": "Some of the boys are going to",
+                "VN": "Một số chàng trai sẽ",
+                "IPA": "ˈsəm əv ðə bɔɪs ɑːr ˈɡoʊɪn tuː"
+            },
+            {
+                "EN": "Some of the girls are going to",
+                "VN": "Một số cô gái sẽ",
+                "IPA": "ˈsəm əv ðə ˈɡɝɫz ɑːr ˈɡoʊɪn tuː"
+            },
+            {
+                "EN": "I am going to",
+                "VN": "Tôi sẽ",
+                "IPA": "aj ˌeɪˈɛm ˈɡoʊɪn tuː"
+            },
+            {
+                "EN": "I hope that we will",
+                "VN": "Tôi hy vọng rằng chúng tôi sẽ",
+                "IPA": "aj ˈhoʊp ðæt wiː wɪl"
+            },
+            {
+                "EN": "Project",
+                "VN": "Dự án",
+                "IPA": "ˈprɒdʒ.ekt"
+            },
+            {
+                "EN": "Draw three sports and talk about them.",
+                "VN": "Vẽ ba môn thể thao và nói về chúng.",
+                "IPA": "ˈdɹɔ θriː ˈspɔɹts ænd tɑːk əˈbaʊt ðem"
+            },
+            {
+                "EN": "Colour the stars.",
+                "VN": "Tô màu các ngôi sao.",
+                "IPA": "ˈkəɫɝ ðə stɑːz"
+            },
+            {
+                "EN": "Now I can ..",
+                "VN": "Bây giờ tôi có thể ..",
+                "IPA": "naʊ aj kæn .."
+            },
+            {
+                "EN": "ask and answer questions about school events and future activities.",
+                "VN": "hỏi và trả lời các câu hỏi về các sự kiện của trường và các hoạt động trong tương lai.",
+                "IPA": "ˈæsk ænd ˈɑːn.sər ˈkwes.tʃən əˈbaʊt skuːl ɪˈvɛnts ænd ˈfjutʃɝ ækˈtɪvətiz"
+            },
+            {
+                "EN": "listen to and understand texts about school events and future activities.",
+                "VN": "nghe và hiểu các văn bản về các sự kiện của trường và các hoạt động trong tương lai.",
+                "IPA": "ˈlɪs.ən tuː ænd ˌəndɝˈstænd tɛksts əˈbaʊt skuːl ɪˈvɛnts ænd ˈfjutʃɝ ækˈtɪvətiz"
+            },
+            {
+                "EN": "read and understand texts about school events and",
+                "VN": "đọc và hiểu các văn bản về các sự kiện của trường và",
+                "IPA": "riːd ænd ˌəndɝˈstænd tɛksts əˈbaʊt skuːl ɪˈvɛnts ænd"
+            },
+            {
+                "EN": "future activities.",
+                "VN": "các hoạt động trong tương lai.",
+                "IPA": "ˈfjutʃɝ ækˈtɪvətiz"
+            },
+            {
+                "EN": "write about Sports Day.",
+                "VN": "viết về Ngày thể thao.",
+                "IPA": "raɪt əˈbaʊt ˈspɔɹts ˈdeɪ"
+            }
         ]
     },
     {
         "img": "https://i.postimg.cc/05KhRKvj/S-ch-H-c-Sinh-Ti-ng-Anh-L-p-5-T-p-1-71.jpg",
         "data": [
-
+            {
+                "EN": "REVIEW 2",
+                "VN": "ĐÁNH GIÁ 2",
+                "IPA": "rɪˈvjuː tuː"
+            },
+            {
+                "EN": "Listen and tick.",
+                "VN": "Nghe và đánh dấu.",
+                "IPA": "ˈlɪs.ən ænd tɪk"
+            },
+            {
+                "EN": "Listen and number.",
+                "VN": "Nghe và điền số.",
+                "IPA": "ˈlɪs.ən ænd ˈnʌm.bər"
+            }
         ]
     },
     {
         "img": "https://i.postimg.cc/sxWLpqm7/S-ch-H-c-Sinh-Ti-ng-Anh-L-p-5-T-p-1-72.jpg",
         "data": [
-
+            {
+                "EN": "Listen and tick Yes or No.",
+                "VN": "Nghe và đánh dấu Yes hoặc No.",
+                "IPA": "ˈlɪs.ən ænd tɪk jes ˈɔɹ nəʊ."
+            },
+            {
+                "EN": "Tom saw some gorillas at the zoo yesterday.",
+                "VN": "Tom đã nhìn thấy một số con khỉ đột ở sở thú ngày hôm qua.",
+                "IPA": "tɒm ˈsɔ ˈsəm gorillas ˈæt ðə ˈzu ˈjɛstɝˌdeɪ"
+            },
+            {
+                "EN": "Nam’s going to play football on Sports Day.",
+                "VN": "Nam sẽ chơi bóng đá vào Ngày thể thao.",
+                "IPA": "Nam’s ˈɡoʊɪn tuː pleɪ ˈfʊtˌbɔɫ ɒn ˈspɔɹts ˈdeɪ"
+            },
+            {
+                "EN": "Read and write.",
+                "VN": "Đọc và viết.",
+                "IPA": "riːd ænd raɪt"
+            },
+            {
+                "EN": "My name is Nam.",
+                "VN": "Tôi tên Nam.",
+                "IPA": "mai neɪm ɪz næm"
+            },
+            {
+                "EN": "I go to school from Monday to Friday.",
+                "VN": "Tôi đi học từ thứ Hai đến thứ Sáu.",
+                "IPA": "aj ɡoʊ tuː skuːl frɒm ˈmənˌdeɪ tuː ˈfɹaɪˌdeɪ"
+            },
+            {
+                "EN": "I have Maths and Vietnamese every schoolday.",
+                "VN": "Tôi học Toán và Tiếng Việt mỗi ngày.",
+                "IPA": "aj hæv ˈmæθs ænd viˌɛtnɑˈmis ˈɛvɝi schoolday."
+            },
+            {
+                "EN": "I have English four times a week.",
+                "VN": "Tôi có tiếng Anh bốn lần một tuần.",
+                "IPA": "aj hæv ˈɪŋɡɫɪʃ fɔːr ˈtaɪmz ə ˈwik"
+            },
+            {
+                "EN": "English is my favourite subject.",
+                "VN": "Tiếng Anh là môn học yêu thích của tôi.",
+                "IPA": "ˈɪŋɡɫɪʃ ɪz mai ˈfeɪvɝɪt ˈsəbdʒɪkt"
+            },
+            {
+                "EN": "I practise , reading by reading English comic books and storybooks.",
+                "VN": "Tôi luyện đọc bằng cách đọc truyện tranh và sách truyện tiếng Anh.",
+                "IPA": "aj ˈpræk.tɪs , ˈɹɛdɪŋ ˈbaɪ ˈɹɛdɪŋ ˈɪŋɡɫɪʃ ˈkɑmɪk ˈbʊks ænd storybooks."
+            },
+            {
+                "EN": "Now I can read Aladdin and the Magic Lamp in English.",
+                "VN": "Bây giờ tôi có thể đọc Aladdin và Cây đèn thần bằng tiếng Anh.",
+                "IPA": "naʊ aj kæn riːd Aladdin ænd ðə ˈmædʒɪk læmp ɪn ˈɪŋɡɫɪʃ"
+            },
+            {
+                "EN": "I practise speaking by talking to my foreign friends.",
+                "VN": "Tôi luyện nói bằng cách nói chuyện với những người bạn nước ngoài của mình.",
+                "IPA": "aj ˈpræk.tɪs ˈspikɪŋ ˈbaɪ ˈtɔkɪŋ tuː mai ˈfɑɹən frends"
+            },
+            {
+                "EN": "Every day, I practise writing English by sending emails to my friend Hakim in Malaysia.",
+                "VN": "Mỗi ngày, tôi luyện viết tiếng Anh bằng cách gửi email cho người bạn Hakim ở Malaysia.",
+                "IPA": "ˈɛvɝi ˈdeɪ aj ˈpræk.tɪs ˈɹaɪtɪŋ ˈɪŋɡɫɪʃ ˈbaɪ ˈsɛndɪŋ emails tuː mai frend Hakim ɪn məˈɫeɪʒə"
+            },
+            {
+                "EN": "I learn English because I want to watch English cartoons on TV.",
+                "VN": "Tôi học tiếng Anh vì tôi muốn xem phim hoạt hình tiếng Anh trên TV.",
+                "IPA": "aj ˈɫɝn ˈɪŋɡɫɪʃ bɪˈkɑz aj ˈwɑnt tuː ˈwɑtʃ ˈɪŋɡɫɪʃ kɑrˈtunz ɒn ˈtiˈvi"
+            },
+            {
+                "EN": "How often does Nam have English?",
+                "VN": "Nam thường có học tiếng Anh như thế nào?",
+                "IPA": "haʊ ˈɔfən ˈdəz næm hæv ˈɪŋɡɫɪʃ"
+            },
+            {
+                "EN": "What storybook can he read in English?",
+                "VN": "Anh ấy có thể đọc cuốn truyện nào bằng tiếng Anh?",
+                "IPA": "wɑːt storybook kæn ˈhi riːd ɪn ˈɪŋɡɫɪʃ"
+            },
+            {
+                "EN": "How does he practise speaking?",
+                "VN": "Anh ấy luyện nói như thế nào?",
+                "IPA": "haʊ ˈdəz ˈhi ˈpræk.tɪs ˈspikɪŋ"
+            },
+            {
+                "EN": "How does he practise writing?",
+                "VN": "Anh ấy luyện viết như thế nào?",
+                "IPA": "haʊ ˈdəz ˈhi ˈpræk.tɪs ˈɹaɪtɪŋ"
+            },
+            {
+                "EN": "Why does he learn English?",
+                "VN": "Tại sao anh ấy học tiếng Anh?",
+                "IPA": "ˈwaɪ ˈdəz ˈhi ˈɫɝn ˈɪŋɡɫɪʃ"
+            },
+            {
+                "EN": "Write about you.",
+                "VN": "Viết về bạn.",
+                "IPA": "raɪt əˈbaʊt jʊ"
+            },
+            {
+                "EN": "Then tell the class about it.",
+                "VN": "Sau đó kể cho cả lớp nghe về điều đó.",
+                "IPA": "ˈðɛn ˈtɛɫ ðə klɑːs əˈbaʊt ɪt"
+            },
+            {
+                "EN": "How often do you have English?",
+                "VN": "Bạn có thường xuyên học tiếng Anh không?",
+                "IPA": "haʊ ˈɔfən ˈdu jʊ hæv ˈɪŋɡɫɪʃ"
+            },
+            {
+                "EN": "How do you learn English?",
+                "VN": "Bạn học tiếng Anh như thế nào?",
+                "IPA": "haʊ ˈdu jʊ ˈɫɝn ˈɪŋɡɫɪʃ"
+            },
+            {
+                "EN": "What is your favourite book?",
+                "VN": "Cuốn sách yêu thích của bạn là gì?",
+                "IPA": "wɑːt ɪz jɔːr ˈfeɪvɝɪt bʊk"
+            },
+            {
+                "EN": "Who’s the main character in your favourite book?",
+                "VN": "Nhân vật chính trong cuốn sách yêu thích của bạn là ai?",
+                "IPA": "huːz ðə ˈmeɪn ˈkɛɹɪktɝ ɪn jɔːr ˈfeɪvɝɪt bʊk"
+            },
+            {
+                "EN": "What’s he or she like?",
+                "VN": "Anh ấy hoặc cô ấy thích gì?",
+                "IPA": "wɑːts ˈhi ˈɔɹ ʃiː ˈɫaɪk"
+            },
+            {
+                "EN": "What did you see at the zoo last time?",
+                "VN": "Bạn đã thấy gì ở sở thú lần trước?",
+                "IPA": "wɑːt ˈdɪd jʊ ˈsi ˈæt ðə ˈzu ˈɫæs taɪm"
+            },
+            {
+                "EN": "What are you going to do on Sports Day?",
+                "VN": "Bạn sẽ làm gì vào Ngày thể thao?",
+                "IPA": "wɑːt ɑːr jʊ ˈɡoʊɪn tuː ˈdu ɒn ˈspɔɹts ˈdeɪ"
+            }
         ]
     },
     {
         "img": "https://i.postimg.cc/BQxytWXG/S-ch-H-c-Sinh-Ti-ng-Anh-L-p-5-T-p-1-73.jpg",
         "data": [
-
+            {
+                "EN": "Short story Cat and Mouse 2",
+                "VN": "Truyện ngắn Mèo và Chuột 2",
+                "IPA": "ʃɔːrt ˈstɔːr.i kæt ænd maʊs tuː"
+            },
+            {
+                "EN": "Read and listen to the story.",
+                "VN": "Đọc và nghe câu chuyện.",
+                "IPA": "riːd ænd ˈlɪs.ən tuː ðə ˈstɔːr.i"
+            },
+            {
+                "EN": "Hello, Chit. What are you doing?",
+                "VN": "Xin chào, Chit. Bạn đang làm gì thế?",
+                "IPA": "heˈloʊ Chit. wɑːt ɑːr jʊ ˈduɪŋ"
+            },
+            {
+                "EN": "We're practising for Mouse Sports Day.",
+                "VN": "Chúng tôi đang luyện tập cho Ngày hội thể thao của Chuột.",
+                "IPA": "Wire, practising ˈfɔɹ maʊs ˈspɔɹts ˈdeɪ"
+            },
+            {
+                "EN": "Mouse Sports Day?",
+                "VN": "Ngày thể thao chuột?",
+                "IPA": "maʊs ˈspɔɹts ˈdeɪ"
+            },
+            {
+                "EN": "When will it be?",
+                "VN": "Khi nào nó sẽ diễn ra?",
+                "IPA": "ˈhwɛn wɪl ɪt biː"
+            },
+            {
+                "EN": "On Saturday.",
+                "VN": "Vào thứ bảy.",
+                "IPA": "ɒn ˈsæˌtɪˌdeɪ"
+            },
+            {
+                "EN": "What are you going to do?",
+                "VN": "Bạn định làm gì?",
+                "IPA": "wɑːt ɑːr jʊ ˈɡoʊɪn tuː ˈdu"
+            },
+            {
+                "EN": "I'm going to run a hundred metres.",
+                "VN": "Tôi sẽ chạy một trăm mét.",
+                "IPA": "ˌaɪˈem ˈɡoʊɪn tuː ˈɹən ə ˈhʌndrəd ˈmitərz"
+            },
+            {
+                "EN": "Mimi is going to play badminton.",
+                "VN": "Mimi sẽ chơi cầu lông.",
+                "IPA": "Mimi ɪz ˈɡoʊɪn tuː pleɪ ˈbædˌmɪntən"
+            },
+            {
+                "EN": "Nini is going to play table tennis.",
+                "VN": "Nini sẽ chơi bóng bàn.",
+                "IPA": "Nini ɪz ˈɡoʊɪn tuː pleɪ ˈteɪbəɫ ˈtɛnɪs"
+            },
+            {
+                "EN": "And what are you going to do, Jack?",
+                "VN": "Và bạn sẽ làm gì, Jack?",
+                "IPA": "ænd wɑːt ɑːr jʊ ˈɡoʊɪn tuː ˈdu ʤæk"
+            },
+            {
+                "EN": "I'm going to watch them!",
+                "VN": "Tôi sẽ xem chúng!",
+                "IPA": "ˌaɪˈem ˈɡoʊɪn tuː ˈwɑtʃ ðem"
+            }
         ]
     },
     {
         "img": "https://i.postimg.cc/2SrtZHZL/S-ch-H-c-Sinh-Ti-ng-Anh-L-p-5-T-p-1-74.jpg",
         "data": [
-
+            {
+                "EN": "Answer the questions.",
+                "VN": "Trả lời các câu hỏi.",
+                "IPA": "ˈɑːn.sər ðə ˈkwes.tʃən"
+            },
+            {
+                "EN": "What are the mice doing?",
+                "VN": "Những con chuột đang làm gì?",
+                "IPA": "wɑːt ɑːr ðə mice ˈduɪŋ"
+            },
+            {
+                "EN": "What is Chit going to do at Mouse Sports Day?",
+                "VN": "Chit sẽ làm gì tại Ngày hội thể thao của Chuột?",
+                "IPA": "wɑːt ɪz Chit ˈɡoʊɪn tuː ˈdu ˈæt maʊs ˈspɔɹts ˈdeɪ"
+            },
+            {
+                "EN": "What is Mimi going to do at Mouse Sports Day?",
+                "VN": "Mimi sẽ làm gì tại Ngày hội thể thao dành cho chuột?",
+                "IPA": "wɑːt ɪz Mimi ˈɡoʊɪn tuː ˈdu ˈæt maʊs ˈspɔɹts ˈdeɪ"
+            },
+            {
+                "EN": "What is Nini going to do at Mouse Sports Day?",
+                "VN": "Nini sẽ làm gì tại Ngày hội thể thao chuột?",
+                "IPA": "wɑːt ɪz Nini ˈɡoʊɪn tuː ˈdu ˈæt maʊs ˈspɔɹts ˈdeɪ"
+            },
+            {
+                "EN": "Is Jack going to take part in Mouse Sports Day?",
+                "VN": "Jack có tham gia Ngày hội thể thao dành cho chuột không?",
+                "IPA": "ɪz ʤæk ˈɡoʊɪn tuː ˈteɪk ˈpɑɹt ɪn maʊs ˈspɔɹts ˈdeɪ"
+            },
+            {
+                "EN": "Unscramble these words from the story.",
+                "VN": "Sắp xếp những từ này khỏi câu chuyện.",
+                "IPA": "ənsˈkɹæmbəɫ ˈðiz wɝːd frɒm ðə ˈstɔːr.i"
+            },
+            {
+                "EN": "Read and complete.",
+                "VN": "Đọc và hoàn thành.",
+                "IPA": "riːd ænd kəmˈpliːt"
+            },
+            {
+                "EN": "Will there be Sports Day at your school?",
+                "VN": "Sẽ có Ngày hội thể thao ở trường của bạn chứ?",
+                "IPA": "wɪl ˈðɛɹ biː ˈspɔɹts ˈdeɪ ˈæt jɔːr skuːl"
+            },
+            {
+                "EN": "What are you going to do?",
+                "VN": "Bạn định làm gì?",
+                "IPA": "wɑːt ɑːr jʊ ˈɡoʊɪn tuː ˈdu"
+            },
+            {
+                "EN": "Are you going to win?",
+                "VN": "Bạn sẽ giành chiến thắng?",
+                "IPA": "ɑːr jʊ ˈɡoʊɪn tuː wɪn"
+            },
+            {
+                "EN": "Work in pairs.",
+                "VN": "Làm việc theo cặp.",
+                "IPA": "wɝːk ɪn peər"
+            },
+            {
+                "EN": "Talk about your school Sports Day.",
+                "VN": "Nói về Ngày thể thao của trường bạn.",
+                "IPA": "tɑːk əˈbaʊt jɔːr skuːl ˈspɔɹts ˈdeɪ"
+            },
+            {
+                "EN": "Read and match.",
+                "VN": "Đọc và nối.",
+                "IPA": "riːd ænd mætʃ"
+            },
+            {
+                "EN": "What are you going to do on Saturday?",
+                "VN": "Bạn sẽ làm gì vào thứ Bảy?",
+                "IPA": "wɑːt ɑːr jʊ ˈɡoʊɪn tuː ˈdu ɒn ˈsæˌtɪˌdeɪ"
+            },
+            {
+                "EN": "Where are you going to do that?",
+                "VN": "Bạn sẽ làm điều đó ở đâu?",
+                "IPA": "ˈwɛɹ ɑːr jʊ ˈɡoʊɪn tuː ˈdu ðæt"
+            },
+            {
+                "EN": "Are you going to practise with anyone?",
+                "VN": "Bạn có định tập với ai không?",
+                "IPA": "ɑːr jʊ ˈɡoʊɪn tuː ˈpræk.tɪs wɪð anyone?"
+            },
+            {
+                "EN": "When is Sports Day?",
+                "VN": "Ngày thể thao là khi nào?",
+                "IPA": "ˈhwɛn ɪz ˈspɔɹts ˈdeɪ"
+            },
+            {
+                "EN": "Are you going to run?",
+                "VN": "Bạn sẽ chạy chứ?",
+                "IPA": "ɑːr jʊ ˈɡoʊɪn tuː ˈɹən"
+            },
+            {
+                "EN": "Yes, with my friend.",
+                "VN": "Vâng, với bạn của tôi.",
+                "IPA": "jes wɪð mai frend"
+            },
+            {
+                "EN": "On Wednesday.",
+                "VN": "Vào thứ Tư.",
+                "IPA": "ɒn ˈwɛnzˌdeɪ"
+            },
+            {
+                "EN": "No, I’m going to play basketball.",
+                "VN": "Không, tôi sẽ chơi bóng rổ.",
+                "IPA": "nəʊ ˌaɪˈem ˈɡoʊɪn tuː pleɪ ˈbæskətˌbɔɫ"
+            },
+            {
+                "EN": "the park.",
+                "VN": "công viên.",
+                "IPA": "ðə ˈpɑɹk"
+            },
+            {
+                "EN": "I’m going to practise for Sports Day.",
+                "VN": "Tôi sẽ luyện tập cho Ngày thể thao.",
+                "IPA": "ˌaɪˈem ˈɡoʊɪn tuː ˈpræk.tɪs ˈfɔɹ ˈspɔɹts ˈdeɪ"
+            }
         ]
     },
     {
         "img": "https://i.postimg.cc/nh2PYv4R/S-ch-H-c-Sinh-Ti-ng-Anh-L-p-5-T-p-1-75.jpg",
         "data": [
-
+            {
+                "EN": "Glossary",
+                "VN": "Bảng chú giải",
+                "IPA": "Glossary"
+            },
+            {
+                "EN": "a lot of",
+                "VN": "rất nhiều",
+                "IPA": "ə ˈɫɑt əv"
+            },
+            {
+                "EN": "address",
+                "VN": "Địa chỉ",
+                "IPA": "ˈæˌdɹɛs"
+            },
+            {
+                "EN": "always",
+                "VN": "luôn luôn",
+                "IPA": "ˈɔɫˌweɪz"
+            },
+            {
+                "EN": "ancient town",
+                "VN": "phố cổ",
+                "IPA": "ancient taʊn"
+            },
+            {
+                "EN": "boring",
+                "VN": "nhạt nhẽo",
+                "IPA": "ˈbɔɹɪŋ"
+            },
+            {
+                "EN": "brave",
+                "VN": "Dũng cảm",
+                "IPA": "brave"
+            },
+            {
+                "EN": "breakfast",
+                "VN": "bữa ăn sáng",
+                "IPA": "ˈbɹɛkfəst"
+            },
+            {
+                "EN": "brush (your teeth)",
+                "VN": "đánh răng",
+                "IPA": "brʌʃ jɔːr tiθ"
+            },
+            {
+                "EN": "by",
+                "VN": "qua",
+                "IPA": "ˈbaɪ"
+            },
+            {
+                "EN": "cartoon",
+                "VN": "hoạt hình",
+                "IPA": "kɑrˈtun"
+            },
+            {
+                "EN": "cave",
+                "VN": "hang",
+                "IPA": "cave"
+            },
+            {
+                "EN": "character",
+                "VN": "tính cách",
+                "IPA": "ˈkɛɹɪktɝ"
+            },
+            {
+                "EN": "chat",
+                "VN": "trò chuyện",
+                "IPA": "chat"
+            },
+            {
+                "EN": "circus",
+                "VN": "rạp xiếc",
+                "IPA": "circus"
+            },
+            {
+                "EN": "clever",
+                "VN": "thông minh",
+                "IPA": "ˈklɛvər"
+            },
+            {
+                "EN": "competition",
+                "VN": "cuộc thi",
+                "IPA": "ˌkɑmpəˈtɪʃən"
+            },
+            {
+                "EN": "contest",
+                "VN": "Cuộc thi",
+                "IPA": "ˈkɒntɛst"
+            },
+            {
+                "EN": "cook",
+                "VN": "đầu bếp",
+                "IPA": "ˈkʊk"
+            },
+            {
+                "EN": "countryside",
+                "VN": "vùng nông thôn",
+                "IPA": "ˈkəntɹiˌsaɪd"
+            },
+            {
+                "EN": "crowded",
+                "VN": "Đông người",
+                "IPA": "ˈkraʊdəd"
+            },
+            {
+                "EN": "cute",
+                "VN": "dễ thương",
+                "IPA": "kjut"
+            },
+            {
+                "EN": "detective",
+                "VN": "thám tử",
+                "IPA": "detective"
+            },
+            {
+                "EN": "email",
+                "VN": "e-mail",
+                "IPA": "email"
+            }
         ]
     },
     {
         "img": "https://i.postimg.cc/nLwSNpwq/S-ch-H-c-Sinh-Ti-ng-Anh-L-p-5-T-p-1-76.jpg",
         "data": [
-
+            {
+                "EN": "enjoy",
+                "VN": "vui thích",
+                "IPA": "ˌɛnˈdʒɔɪ"
+            },
+            {
+                "EN": "event",
+                "VN": "Sự kiện",
+                "IPA": "iˈvɛnt"
+            },
+            {
+                "EN": "explore",
+                "VN": "khám phá",
+                "IPA": "ɪkˈsplɔr"
+            },
+            {
+                "EN": "fairy tale",
+                "VN": "truyện cổ tích",
+                "IPA": "ˈfeəri teɪl"
+            },
+            {
+                "EN": "festival",
+                "VN": "ngày hội",
+                "IPA": "ˈfɛstəvəɫ"
+            },
+            {
+                "EN": "foreign language",
+                "VN": "ngoại ngữ",
+                "IPA": "ˈfɑɹən ˈɫæŋɡwədʒ"
+            },
+            {
+                "EN": "funfair",
+                "VN": "khu vui chơi",
+                "IPA": "ˈfʌn.feər"
+            },
+            {
+                "EN": "generous",
+                "VN": "rộng lượng",
+                "IPA": "ˈdʒɛnɝəs"
+            },
+            {
+                "EN": "get",
+                "VN": "được",
+                "IPA": "ˈɡɛt"
+            },
+            {
+                "EN": "get up",
+                "VN": "thức dậy",
+                "IPA": "ˈɡɛt ʌp"
+            },
+            {
+                "EN": "gorilla",
+                "VN": "con khỉ đột",
+                "IPA": "gorilla"
+            },
+            {
+                "EN": "hard-working",
+                "VN": "làm việc chăm chỉ",
+                "IPA": "ˌhɑɹdhˈwɝkɪŋ"
+            },
+            {
+                "EN": "hope",
+                "VN": "mong",
+                "IPA": "ˈhoʊp"
+            },
+            {
+                "EN": "imperial city",
+                "VN": "cố đô",
+                "IPA": "imperial ˈsɪti"
+            },
+            {
+                "EN": "invite",
+                "VN": "mời gọi",
+                "IPA": "ˌɪnˈvaɪt"
+            },
+            {
+                "EN": "island",
+                "VN": "Đảo",
+                "IPA": "ˈaɪlənd"
+            },
+            {
+                "EN": "join",
+                "VN": "tham gia",
+                "IPA": "ˈdʒɔɪn"
+            },
+            {
+                "EN": "lane",
+                "VN": "làn đường",
+                "IPA": "leɪn"
+            },
+            {
+                "EN": "loudly",
+                "VN": "ầm ĩ",
+                "IPA": "ˈlaʊdli"
+            },
+            {
+                "EN": "lunch",
+                "VN": "Bữa trưa",
+                "IPA": "ˈɫəntʃ"
+            },
+            {
+                "EN": "may",
+                "VN": "có thể",
+                "IPA": "meɪ"
+            },
+            {
+                "EN": "morning exercise",
+                "VN": "thể dục buổi sáng",
+                "IPA": "ˈmɔː.nɪŋ ˈɛksɝˌsaɪz"
+            },
+            {
+                "EN": "motorbike",
+                "VN": "xe máy",
+                "IPA": "ˈmoʊtərˌbaɪk"
+            }
         ]
     },
     {
         "img": "https://i.postimg.cc/rppYhKg8/S-ch-H-c-Sinh-Ti-ng-Anh-L-p-5-T-p-1-77.jpg",
         "data": [
-
+            {
+                "EN": "Glossary",
+                "VN": "Bảng chú giải",
+                "IPA": "Glossary"
+            },
+            {
+                "EN": "never",
+                "VN": "chưa từng",
+                "IPA": "ˈnɛvɝ"
+            },
+            {
+                "EN": "notebook",
+                "VN": "sổ tay",
+                "IPA": "ˈnoʊtˌbʊk"
+            },
+            {
+                "EN": "often",
+                "VN": "thường",
+                "IPA": "ˈɔfən"
+            },
+            {
+                "EN": "once",
+                "VN": "Một lần",
+                "IPA": "ˈwəns"
+            },
+            {
+                "EN": "practise",
+                "VN": "luyện tập",
+                "IPA": "ˈpræk.tɪs"
+            },
+            {
+                "EN": "project",
+                "VN": "dự án",
+                "IPA": "ˈprɒdʒ.ekt"
+            },
+            {
+                "EN": "python",
+                "VN": "con trăn",
+                "IPA": "python"
+            },
+            {
+                "EN": "quickly",
+                "VN": "Mau",
+                "IPA": "ˈkwɪkɫi"
+            },
+            {
+                "EN": "quiet",
+                "VN": "im lặng",
+                "IPA": "ˈkwaɪ.ət"
+            },
+            {
+                "EN": "quietly",
+                "VN": "lặng lẽ",
+                "IPA": "quietly"
+            },
+            {
+                "EN": "railway",
+                "VN": "đường sắt",
+                "IPA": "ˈreɪlˌweɪ"
+            },
+            {
+                "EN": "roar",
+                "VN": "Gầm",
+                "IPA": "roar"
+            },
+            {
+                "EN": "sandcastle",
+                "VN": "lâu đài cát",
+                "IPA": "ˈsændˌkæs.əl"
+            },
+            {
+                "EN": "scenery",
+                "VN": "phong cảnh",
+                "IPA": "ˈsinɝi"
+            },
+            {
+                "EN": "sea",
+                "VN": "biển",
+                "IPA": "ˈsi"
+            },
+            {
+                "EN": "seaside",
+                "VN": "bên bờ biển",
+                "IPA": "ˈsiˌsaɪd"
+            },
+            {
+                "EN": "slowly",
+                "VN": "chậm rãi",
+                "IPA": "slowly"
+            },
+            {
+                "EN": "sometimes",
+                "VN": "thỉnh thoảng",
+                "IPA": "ˈsəmˌtaɪmz"
+            },
+            {
+                "EN": "story",
+                "VN": "câu chuyện",
+                "IPA": "ˈstɔːr.i"
+            },
+            {
+                "EN": "sunbathe",
+                "VN": "tắm nắng",
+                "IPA": "ˈsənˌbeɪð"
+            },
+            {
+                "EN": "swan",
+                "VN": "Thiên nga",
+                "IPA": "swan"
+            },
+            {
+                "EN": "take part",
+                "VN": "tham gia",
+                "IPA": "ˈteɪk ˈpɑɹt"
+            },
+            {
+                "EN": "taxi",
+                "VN": "xe tắc xi",
+                "IPA": "ˈtæksi"
+            }
         ]
     },
     {
         "img": "https://i.postimg.cc/DZJpTHtH/S-ch-H-c-Sinh-Ti-ng-Anh-L-p-5-T-p-1-78.jpg",
         "data": [
-
+            {
+                "EN": "think",
+                "VN": "nghĩ",
+                "IPA": "ˈθɪŋk"
+            },
+            {
+                "EN": "time",
+                "VN": "thời gian",
+                "IPA": "taɪm"
+            },
+            {
+                "EN": "tower",
+                "VN": "tòa tháp",
+                "IPA": "ˈtaʊər"
+            },
+            {
+                "EN": "train",
+                "VN": "xe lửa",
+                "IPA": "ˈtɹeɪn"
+            },
+            {
+                "EN": "twice",
+                "VN": "hai lần",
+                "IPA": "ˈtwaɪs"
+            },
+            {
+                "EN": "underground",
+                "VN": "bí mật",
+                "IPA": "ˈʌndərˌgraʊnd"
+            },
+            {
+                "EN": "understand",
+                "VN": "hiểu biết",
+                "IPA": "ˌəndɝˈstænd"
+            },
+            {
+                "EN": "usually",
+                "VN": "thông thường",
+                "IPA": "ˈjuʒəɫi"
+            },
+            {
+                "EN": "view",
+                "VN": "Quang cảnh",
+                "IPA": "vju"
+            },
+            {
+                "EN": "vocabulary",
+                "VN": "từ vựng",
+                "IPA": "voʊˈkæbjəˌɫɛɹi"
+            },
+            {
+                "EN": "What's ... like?",
+                "VN": "Như thế nào?",
+                "IPA": "wɑːts ... ˈɫaɪk"
+            }
         ]
     },
     {

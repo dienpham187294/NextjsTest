@@ -1,10 +1,10 @@
 [
     {
         "_id": {
-            "$oid": "610927d081f5deab1829b94b"
+            "$oid": "610bc46c77a9ddb11d6afa6d"
         },
-        "token": "abdadd187jd-3-8-2021-g294-bao-ngoc-giao-khoa-lop-1",
-        "name": "Bảo Ngọc",
+        "token": "abdadd187jd-5-8-2021-g294-bao-ngoc-giao-khoa-lop-1",
+        "name": "Nhã Phương",
         "status": true,
         "list_of_machine": [],
         "list_sentences": []

@@ -34,7 +34,7 @@ export default function Show_tienganhphothong_phanbaihoc({ Data_Learn, SET_Data_
             {Data_Learn.EN.split(" ").map((e, i) =>
                 <div
                     style={{
-                        border: "5px solid green",
+                        border: "5px solid blue",
                         borderRadius: "5px",
                         padding: "5px",
                         cursor: "pointer",
@@ -48,6 +48,10 @@ export default function Show_tienganhphothong_phanbaihoc({ Data_Learn, SET_Data_
             )}
 
             <h1>{Data_Learn.IPA}</h1>
+            <i>Chưa biết đọc theo phiên âm như trên hoặc đọc chưa chuẩn</i>
+            <a href="https://www.youtube.com/embed/DyYFwoITfXY" target="_blank">
+                <button className="btn btn-outline-primary">  Bấm vào để học</button>
+            </a>
             <hr />
             <b>Chọn từng từ để luyện nói</b>
             <br />
@@ -55,7 +59,7 @@ export default function Show_tienganhphothong_phanbaihoc({ Data_Learn, SET_Data_
                 {Data_Learn.EN.split(" ").map((e, i) =>
                     <span
                         style={{
-                            border: "2px solid blue",
+                            border: "5px solid red",
                             borderRadius: "5px",
                             padding: "5px",
                             cursor: "pointer",
@@ -91,7 +95,7 @@ export default function Show_tienganhphothong_phanbaihoc({ Data_Learn, SET_Data_
             <i id="interrimID"></i>
             <hr />
             <button
-                className="btn btn-info"
+                className="btn btn-warning"
                 style={{ fontSize: "larger", padding: "20px" }}
                 onClick={() => {
                     SET_Data_Learn("");
@@ -100,7 +104,7 @@ export default function Show_tienganhphothong_phanbaihoc({ Data_Learn, SET_Data_
                 }}
             >Chọn câu khác.</button>
             <button
-                className="btn btn-primary ml-2"
+                className="btn btn-warning ml-2"
                 style={{ fontSize: "larger", padding: "20px" }}
                 onClick={() => {
                     try {
@@ -116,29 +120,11 @@ export default function Show_tienganhphothong_phanbaihoc({ Data_Learn, SET_Data_
             >Câu tiếp.</button>
             <hr />
             <div>
-                <div>
-                    <b>Từ điển hình ảnh:</b>
-                    <br />
-                    {Data_Learn.EN.split(" ").map((e, i) =>
-                        <div
-                            style={{
-                                border: "5px solid green",
-                                padding: "5px",
-                                cursor: "pointer",
-                                display: "inline-block",
-                                marginLeft: "10px"
-                            }}
-                            onClick={() => { SET_Popup(e) }}
-                            key={i}>
-                            {e}
-                        </div>
-                    )}
-                </div>
+                <b>Liên hệ:</b> Phạm Văn Điện - 0918284482
+                <br />
+                <b>Facebook</b> <a href="https://www.facebook.com/profile.php?id=100010004440653" target="_blank">Bấm vào để liên hệ.</a>
             </div>
-            <hr />
 
-
-            <hr />
 
             <button style={{ display: "none" }} onClick={() => {
                 if ($("#messageRes").val() !== "" && Docthu === "Docthu") {
