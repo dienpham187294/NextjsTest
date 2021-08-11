@@ -61,11 +61,11 @@ export default function body() {
                                 </Link>
                             </li>
                         </ul>
-                        <form className="form-inline my-2 my-md-0">
+                        {/* <form className="form-inline my-2 my-md-0">
 
                             {Show_Dangnhap()}
 
-                        </form>
+                        </form> */}
                     </div>
                 </nav>
             </header >
@@ -110,7 +110,7 @@ export default function body() {
                 </div>
                 <hr id="DungThu" />
                 {Show_Menu_Inbody(All_href_link["demo"], "Dùng thử")}
-                <hr id="ReadingPage" />
+                {/* <hr id="ReadingPage" />
                 {Show_Menu_Inbody(All_href_link["reading_mobile"], "Dùng tiếng anh mỗi ngày: Đọc thông tin hữu ích.")}
                 < hr />
                 <hr id="VocabularyPage" />
@@ -118,9 +118,9 @@ export default function body() {
                 < hr id="Trochoi" />
                 {Show_Menu_Inbody(All_href_link["game"], "Dùng tiếng anh mỗi ngày: Chơi game")}
                 < hr id="CustomPage" />
-                {Show_Menu_Inbody(All_href_link["customfile"], "Tự tạo Customfile theo ý muốn")}
+                {Show_Menu_Inbody(All_href_link["customfile"], "Tự tạo Customfile theo ý muốn")} */}
 
-                < hr />
+                {/* < hr />
                 <div className="container text-justify mt-4 p-4">
                     <h1>Công nghệ 4.0 - Trí thông minh nhân tạo!</h1>
                     <br />
@@ -174,7 +174,7 @@ export default function body() {
                         </i>
                     </b>
 
-                </div>
+                </div> */}
             </div>
             {/* <div id="fb-root"></div> */}
             {/* <div id="fb-customer-chat" className="fb-customerchat">

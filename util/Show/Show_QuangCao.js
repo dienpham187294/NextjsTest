@@ -1,11 +1,10 @@
 import Dulieu_Quangcao from "../filedulieu/Dulieu_Quangcao"
 export default function QuangCao(arr) {
-
-
     try {
         return (
             <div>
-                <h3 style={{ color: "blue" }}>Tham khảo: Các khóa học khác - online - hoặc học tại lớp.</h3>                <br />
+                <h3 style={{ color: "blue" }}>Các khóa học khác</h3>
+                <br />
                 {Dulieu_Quangcao.map((e, i) =>
                     <div key={i} style={{ border: "1px solid green", borderRadius: "10px", padding: "5px", margin: "5px", display: "inline-block" }}>
                         <b>{e.name}</b>
