@@ -333,7 +333,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
 
     return (
         <>
-            {Cookies_ReadingPage("G001")}
+            {/* {Cookies_ReadingPage("G001")} */}
             <div className="GameSence_Playing">
                 <p>  Score:  {Score} Time: {TimeCount} s</p>
 
