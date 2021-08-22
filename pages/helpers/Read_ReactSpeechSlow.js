@@ -9,6 +9,7 @@ const Speech = dynamic(
 )
 
 let arrText = ["Hi"];
+let arrRate = [1];
 let arrVoice = ["Google UK English Female"];
 function Read(props) {
     const [Alert, SET_Alert] = useState(0)
@@ -16,31 +17,38 @@ function Read(props) {
 
     }, [Alert])
     return (
-        <div style={{display:"none"}}>
+        <div style={{ display: "none" }}>
 
             <input type="text" id="SpeechText" defaultValue="hi" />
+            <input type="number" id="SpeechRate" defaultValue="1" />
             <input type="text" id="SpeechVoice" defaultValue="Google UK English Female" />
             <input
                 onClick={() => {
                     arrText.push($("#SpeechText").val());
-                
-
+                    arrRate.push($("#SpeechRate").val());
                 }}
                 type="button" id="SpeechTextBtn"
             />
+
+
             <input
                 onClick={() => {
                     arrVoice.push($("#SpeechVoice").val());
-                   
+
                     SET_Alert(A => A + 1)
                 }}
                 type="button" id="SpeechVoiceBtn"
             />
+
+
+
+
+
             <div id="test" style={{ display: "none" }}>
                 <Speech
                     text={arrText[arrText.length - 1]}
                     pitch={1}
-                    rate={0.6}
+                    rate={arrRate[arrRate.length - 1]}
                     volume={1}
                     lang="en-GB"
                     voice={arrVoice[arrVoice.length - 1]}
