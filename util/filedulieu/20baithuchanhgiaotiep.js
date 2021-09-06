@@ -48,7 +48,7 @@ export default [
                                                 "I'm good.",
                                                 "Not too bad"
                                             ],
-                                            "robotspeak": [],
+                                            "robotspeak": ["That's ok"],
                                             "icon": "",
                                             "function": {
                                                 "end_successfull": false,
