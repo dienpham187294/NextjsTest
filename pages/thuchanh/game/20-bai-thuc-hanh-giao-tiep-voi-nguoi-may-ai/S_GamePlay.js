@@ -45,6 +45,7 @@ function GamePlay(props) {
                             ALLTable_ReactData={ALLTable_ReactData}
                             Data_TableTool={props.Data_TableTool}
                             SET_Data_Commands={SET_Data_Commands}
+                            Total={props.Total}
                         /> : ""}
                 </div>
 

@@ -19,7 +19,11 @@ export default [
                                     "---WHERE"
                                 ]
                             ],
-                            "submitsyntax": "Location",
+                            "submitsyntax": [
+                                [
+                                    "WHERE"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi",
                                 "Hello"
@@ -544,7 +548,14 @@ export default [
                                     "---YEARS"
                                 ]
                             ],
-                            "submitsyntax": "Name, Living, How many years,Job",
+                            "submitsyntax": [
+                                [
+                                    "NAME",
+                                    "WHERELIVING",
+                                    "WORKFOR",
+                                    "YEARS"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -2127,6 +2138,15 @@ export default [
                                     "Maria"
                                 ]
                             ]
+                        },
+                        {
+                            "nameoftable": "Year",
+                            "nameofheader": [
+                                "Year"
+                            ],
+                            "dataoftable": [
+                                [2], [3], [4], [5], [6], [7], [8], [9], [10]
+                            ]
                         }
                     ]
                 },
@@ -2139,7 +2159,14 @@ export default [
                             "submit": [
                                 []
                             ],
-                            "submitsyntax": "",
+                            "submitsyntax": [
+                                [
+                                    "NAME",
+                                    "WHERELIVING",
+                                    "WORKFOR",
+                                    "YEARS"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "hi",
                                 "hello"
@@ -2720,7 +2747,16 @@ export default [
                                     "---SYMBOL"
                                 ]
                             ],
-                            "submitsyntax": "",
+                            "submitsyntax": [
+                                [
+                                    "CLOTHES",
+                                    "SIZE"
+                                ],
+                                [
+                                    "CLOTHES",
+                                    "SYMBOL"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -2908,7 +2944,16 @@ export default [
                                     "---SYMBOL"
                                 ]
                             ],
-                            "submitsyntax": "",
+                            "submitsyntax": [
+                                [
+                                    "CLOTHES",
+                                    "SIZE"
+                                ],
+                                [
+                                    "CLOTHES",
+                                    "SYMBOL"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -3092,7 +3137,13 @@ export default [
                                     "---SIZE"
                                 ]
                             ],
-                            "submitsyntax": "",
+                            "submitsyntax": [
+                                [
+                                    "CLOTHES",
+                                    "COLOUR",
+                                    "SIZE"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -3307,7 +3358,13 @@ export default [
                                     "---SIZE"
                                 ]
                             ],
-                            "submitsyntax": "",
+                            "submitsyntax": [
+                                [
+                                    "CLOTHES",
+                                    "COLOUR",
+                                    "SIZE"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -3491,7 +3548,13 @@ export default [
                                     "---QUANTITY"
                                 ]
                             ],
-                            "submitsyntax": "",
+                            "submitsyntax": [
+                                [
+                                    "ACCESSORIES",
+                                    "PRICE",
+                                    "QUANTITY"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -3690,7 +3753,13 @@ export default [
                                     "---price"
                                 ]
                             ],
-                            "submitsyntax": "",
+                            "submitsyntax": [
+                                [
+                                    "ACCESSORIES",
+                                    "PRICE",
+                                    "price"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -3893,7 +3962,13 @@ export default [
                                     "---FinalPrice"
                                 ]
                             ],
-                            "submitsyntax": "",
+                            "submitsyntax": [
+                                [
+                                    "ACCESSORIES",
+                                    "price",
+                                    "FinalPrice"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -4096,7 +4171,13 @@ export default [
                                     "---PAYMENT"
                                 ]
                             ],
-                            "submitsyntax": "",
+                            "submitsyntax": [
+                                [
+                                    "ACCESSORIES",
+                                    "TOTAL",
+                                    "PAYMENT"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -4289,7 +4370,21 @@ export default [
                                     "---COLOUR",
                                     "---SYMBOL"]
                             ],
-                            "submitsyntax": "",
+                            "submitsyntax": [
+                                [
+                                    "CLOTHES",
+                                    "COLOUR",
+                                    "SIZE"
+                                ],
+                                [
+                                    "CLOTHES",
+                                    "COLOUR",
+                                    "NUMBERSIZE"],
+                                [
+                                    "CLOTHES",
+                                    "COLOUR",
+                                    "SYMBOL"]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -4549,7 +4644,21 @@ export default [
                                     "---COLOUR",
                                     "---SYMBOL"]
                             ],
-                            "submitsyntax": "",
+                            "submitsyntax": [
+                                [
+                                    "CLOTHES",
+                                    "COLOUR",
+                                    "SIZE"
+                                ],
+                                [
+                                    "CLOTHES",
+                                    "COLOUR",
+                                    "NUMBERSIZE"],
+                                [
+                                    "CLOTHES",
+                                    "COLOUR",
+                                    "SYMBOL"]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -4772,7 +4881,13 @@ export default [
                                     "---BIGGER/SMALLER"
                                 ]
                             ],
-                            "submitsyntax": "",
+                            "submitsyntax": [
+                                [
+                                    "CLOTHES",
+                                    "COLOUR",
+                                    "BIGGER/SMALLER"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -4989,7 +5104,13 @@ export default [
                                     "---BIGGER/SMALLER"
                                 ]
                             ],
-                            "submitsyntax": "",
+                            "submitsyntax": [
+                                [
+                                    "CLOTHES",
+                                    "COLOUR",
+                                    "BIGGER/SMALLER"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -5232,7 +5353,15 @@ export default [
                                     "---PAYMENT"
                                 ]
                             ],
-                            "submitsyntax": "",
+                            "submitsyntax": [
+                                [
+                                    "ACCESSORIES",
+                                    "PRICE",
+                                    "QUANTITY",
+                                    "TOTAL",
+                                    "PAYMENT"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -5465,7 +5594,15 @@ export default [
                                     "---PAYMENT"
                                 ]
                             ],
-                            "submitsyntax": "",
+                            "submitsyntax": [
+                                [
+                                    "ACCESSORIES",
+                                    "PRICE",
+                                    "QUANTITY",
+                                    "TOTAL",
+                                    "PAYMENT"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -5669,7 +5806,15 @@ export default [
                                     "---PAYMENT"
                                 ]
                             ],
-                            "submitsyntax": "",
+                            "submitsyntax": [
+                                [
+                                    "ACCESSORIES",
+                                    "FinalPrice",
+                                    "QUANTITY",
+                                    "TOTAL",
+                                    "PAYMENT"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."

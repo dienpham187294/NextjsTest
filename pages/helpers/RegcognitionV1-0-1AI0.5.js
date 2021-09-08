@@ -43,10 +43,10 @@ function Dictaphone({ Data }) {
             onClick={stopListening}
         >Click to stop</button>
         <input disabled type="text" id="messageRes" defaultValue="" />
-        <hr />
-        <div>{JSON.stringify(Data)}</div>
-        <hr />
-        <div>{finalTranscript}</div>
+        {/* <hr />
+        <div>{JSON.stringify(Data)}</div> */}
+        {/* <hr />
+        <div>{finalTranscript}</div> */}
     </div>
     );
 };

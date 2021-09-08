@@ -22,7 +22,6 @@ function DataTool(props) {
         )
     }
 
-
     return (
         <>
 
@@ -34,7 +33,7 @@ function DataTool(props) {
                 </select>
 
             </div>
-            {Show_Table(props.Data, Nameoftable)}
+            {Show_Table(props.Data, Nameoftable, props.Total)}
 
         </>
     )
@@ -43,9 +42,9 @@ function DataTool(props) {
 export default DataTool
 
 
-function Show_Table(Data, Nameoftable) {
+function Show_Table(Data, Nameoftable, Total) {
     return Data.map((e, index) =>
-        <div key={index} style={{ maxHeight: "350px", overflow: "auto" }}>
+        <div key={index} style={{ maxHeight: "250px", overflow: "auto" }}>
             {e.nameoftable === Nameoftable ?
                 <table className="table table-sm">
                     <thead>
@@ -65,8 +64,8 @@ function Show_Table(Data, Nameoftable) {
                                             let TEMP_Targetvalue = e.currentTarget.innerHTML;
                                             try {
                                                 if (TEMP_Targetvalue.indexOf("<img") === -1) {
-                                                    let TEMP_inputvalue = document.getElementById("input_submit").value + " " + TEMP_Targetvalue;
-                                                    document.getElementById("input_submit").value = TEMP_inputvalue;
+                                                    Total.stObj.inputSumit += TEMP_Targetvalue + " ";
+                                                    Total.fnObj.Submit_Show_OnePeopeAppear_ReactData(Total.stObj.inputSumit)
                                                 }
 
                                             } catch (error) {
