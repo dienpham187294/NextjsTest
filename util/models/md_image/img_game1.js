@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 // import Dictaphone from "../../../helpers/RegcognitionV1-0-1AI0.5Repeat";
 import $ from "jquery";
-import DaoArray from "../../rarely_use/DaoArray"
+// import DaoArray from "../../rarely_use/DaoArray"
 import GetFinal from "../../rarely_use/GetFinal"
 import SetAlert from "../../rarely_use/SetAlert"
 // import Check2String from "../../String_tool/Check2String"
-// import ReadMessage from "../../Read/ReadMessage"
+import ReadMessage from "../../Read/ReadMessage"
 let dataTotal = [["none"]]
 let dataJustOne = ["EN"]
 
@@ -15,6 +15,7 @@ function PracticeDiv(props) {
 
     const [AlertChange, SET_AlertChange] = useState(0);
     const [DapAn, SET_DapAn] = useState("");
+    const [DapAnVN, SET_DapAnVN] = useState("");
     const [HinhanhCauhoi, SET_HinhanhCauhoi] = useState([]);
     const [AllData, SET_AllData] = useState([]);
     const [End, SET_End] = useState(false);
@@ -31,7 +32,7 @@ function PracticeDiv(props) {
 
             }
 
-            let merged = [].concat.apply([], arr).sort(() => 0.5 - Math.random()).slice(0, 15);
+            let merged = [].concat.apply([], arr).sort(() => 0.5 - Math.random()).slice(0, 7);
 
             let meger1 = [].concat(merged).sort(() => 0.5 - Math.random())
 
@@ -40,15 +41,15 @@ function PracticeDiv(props) {
 
             dataTotal.push(merged)
 
-            dataJustOne.push(0);
+            dataJustOne.push(-1);
 
             Score.push(0);
 
-            SET_DapAn(dataTotal.getFinal()[dataJustOne.getFinal()].EN)
+            // SET_DapAn(dataTotal.getFinal()[dataJustOne.getFinal()].EN)
 
-            SET_HinhanhCauhoi(dataTotal.getFinal()[dataJustOne.getFinal()].ArrImg)
+            // SET_HinhanhCauhoi(dataTotal.getFinal()[dataJustOne.getFinal()].ArrImg)
 
-            SET_AlertChange(C => C + 1)
+            // SET_AlertChange(C => C + 1)
         } catch (error) {
             SET_End(true)
         }
@@ -64,18 +65,29 @@ function PracticeDiv(props) {
             let i = parseInt($("#numberID").val()) - 1;
 
             if (i === -1) {
+                i = 67;
+                ReadMessage(DapAn)
+                $("#middleWareId").show()
+            }
+
+            if (i === 61) {
                 // ReadMessage(GetFinal(dataTotal)[GetFinal(dataJustOne)]["EN"])
                 if (GetFinal(dataJustOne) + 1 < GetFinal(dataTotal).length) {
                     dataJustOne.push(GetFinal(dataJustOne) + 1)
 
-                    SET_DapAn(dataTotal.getFinal()[dataJustOne.getFinal()].EN)
+                    SET_DapAn(GetFinal(dataTotal)[GetFinal(dataJustOne)].EN)
 
-                    SET_HinhanhCauhoi(dataTotal.getFinal()[dataJustOne.getFinal()].ArrImg)
+                    SET_DapAnVN(GetFinal(dataTotal)[GetFinal(dataJustOne)].VN)
+
+                    SET_HinhanhCauhoi(GetFinal(dataTotal)[GetFinal(dataJustOne)].ArrImg)
 
                     SetAlert(SET_AlertChange);
-                    i = 60;
-                }
 
+                    $("#middleWareId").hide()
+                }
+            }
+            if (i > 61) {
+                $("#timechuanbi").text(i - 61)
             }
             $("#numberID").val(i)
         }, 1000)
@@ -106,9 +118,9 @@ function PracticeDiv(props) {
 
 
                             onClick={() => {
-
+                                $("#middleWareId").show()
+                                ReadMessage(DapAn)
                                 $("#ID_DUNGSAI").text(DapAn)
-
                                 if (DapAn === e.EN) {
                                     Score.push(GetFinal(Score) + 1);
                                     document.getElementById("ID_DUNGSAI").style.backgroundColor = "yellowgreen"
@@ -117,13 +129,13 @@ function PracticeDiv(props) {
                                 }
 
                                 if (GetFinal(dataJustOne) + 1 < GetFinal(dataTotal).length) {
-                                    dataJustOne.push(GetFinal(dataJustOne) + 1)
+                                    // dataJustOne.push(GetFinal(dataJustOne) + 1)
 
-                                    SET_DapAn(dataTotal.getFinal()[dataJustOne.getFinal()].EN)
+                                    // SET_DapAn(dataTotal.getFinal()[dataJustOne.getFinal()].EN)
 
-                                    SET_HinhanhCauhoi(dataTotal.getFinal()[dataJustOne.getFinal()].ArrImg)
+                                    // SET_HinhanhCauhoi(dataTotal.getFinal()[dataJustOne.getFinal()].ArrImg)
 
-                                    $("#numberID").val(60)
+                                    $("#numberID").val(67)
                                 } else {
                                     $("#numberID").val(-1);
                                     SET_End(true)
@@ -172,7 +184,7 @@ function PracticeDiv(props) {
                     textAlign: "center"
                 }}
             >
-                <input type="number" id="numberID" defaultValue="70" />
+                <input type="number" id="numberID" defaultValue="67" />
 
             </div>
             {!End ?
@@ -194,7 +206,33 @@ function PracticeDiv(props) {
                     <hr />
                     {Show_img(HinhanhCauhoi)}
 
-                    <hr /></div>
+                    <hr />
+                    <div
+                        id="middleWareId"
+                        style={{
+                            textAlign: "center",
+                            position: "fixed",
+                            top: "20%",
+                            bottom: "20%",
+                            left: "1%",
+                            right: "1%",
+                            border: "5px solid green",
+                            borderRadius: "5px",
+                            backgroundColor: "white"
+                        }}
+                    >
+                        <h1>Chuẩn bị: <span id="timechuanbi">5</span></h1>
+                        {DapAn !== "" ?
+                            <>
+                                <h5 style={{ color: "blue" }}>Đáp án: {DapAn} </h5>
+                                <h4 style={{ color: "violet" }}> {DapAnVN} </h4>
+                            </>
+
+                            : null}
+                        <h1 style={{ color: "red" }}>Điểm: {GetFinal(Score)}</h1>
+
+                    </div>
+                </div>
                 :
                 <div>
                     <h3>Bạn đạt {GetFinal(Score)} điểm</h3>
@@ -206,21 +244,21 @@ function PracticeDiv(props) {
 
 export default PracticeDiv
 
-Array.prototype.PickRandom = function () {
-    return this[Math.floor(Math.random() * this.length)];
-}
-function Show(Arr) {
-    try {
-        return Arr.VN
-    } catch (error) {
-        return ""
-    }
-}
+// Array.prototype.PickRandom = function () {
+//     return this[Math.floor(Math.random() * this.length)];
+// }
+// function Show(Arr) {
+//     try {
+//         return Arr.VN
+//     } catch (error) {
+//         return ""
+//     }
+// }
 
-Array.prototype.getFinal = function () {
+// Array.prototype.getFinal = function () {
 
-    return this[this.length - 1]
-}
+//     return this[this.length - 1]
+// }
 
 
 

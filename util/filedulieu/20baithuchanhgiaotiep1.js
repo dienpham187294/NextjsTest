@@ -21,7 +21,13 @@ export default [
                                     "---BIGGER/SMALLER"
                                 ]
                             ],
-                            "submitsyntax": "",
+                            "submitsyntax": [
+                                [
+                                    "SHOES",
+                                    "SIZE",
+                                    "BIGGER/SMALLER"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -231,7 +237,12 @@ export default [
                                     "---SIZE"
                                 ]
                             ],
-                            "submitsyntax": "",
+                            "submitsyntax": [
+                                [
+                                    "SHOES",
+                                    "SIZE"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -441,7 +452,14 @@ export default [
                                     "---BIGGER/SMALLER"
                                 ]
                             ],
-                            "submitsyntax": "",
+                            "submitsyntax":  [
+                                [
+                                    "SHOES",
+                                    "COLOUR",
+                                    "SIZE",
+                                    "BIGGER/SMALLER"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -651,7 +669,13 @@ export default [
                                     "---SIZE"
                                 ]
                             ],
-                            "submitsyntax": "",
+                            "submitsyntax":  [
+                                [
+                                    "SHOES",
+                                    "COLOUR",
+                                    "SIZE"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -861,7 +885,14 @@ export default [
                                     "---COLOUR"
                                 ]
                             ],
-                            "submitsyntax": "",
+                            "submitsyntax": [
+                                [
+                                    "SHOES",
+                                    "HIGH",
+                                    "short",
+                                    "COLOUR"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -1050,7 +1081,14 @@ export default [
                                     "---COLOUR"
                                 ]
                             ],
-                            "submitsyntax": "",
+                            "submitsyntax":  [
+                                [
+                                    "SHOES",
+                                    "HIGH",
+                                    "high",
+                                    "COLOUR"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -1242,7 +1280,13 @@ export default [
                                     "---SIZE"
                                 ]
                             ],
-                            "submitsyntax": "",
+                            "submitsyntax":  [
+                                [
+                                    "SHOES",
+                                    "shoes",
+                                    "SIZE"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -1428,7 +1472,13 @@ export default [
                                     "---BIGGER/SMALLER"
                                 ]
                             ],
-                            "submitsyntax": "",
+                            "submitsyntax": [
+                                [
+                                    "shoes",
+                                    "finalcolour",
+                                    "BIGGER/SMALLER"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -1689,7 +1739,13 @@ export default [
                                     "---BIGGER/SMALLER"
                                 ]
                             ],
-                            "submitsyntax": "",
+                            "submitsyntax": [
+                                [
+                                    "finalshoes",
+                                    "COLOUR",
+                                    "BIGGER/SMALLER"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -1924,7 +1980,13 @@ export default [
                                     "---SIZE"
                                 ]
                             ],
-                            "submitsyntax": "",
+                            "submitsyntax": [
+                                [
+                                    "shoes",
+                                    "finalcolour",
+                                    "SIZE"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -2156,7 +2218,13 @@ export default [
                                     "---SIZE"
                                 ]
                             ],
-                            "submitsyntax": "",
+                            "submitsyntax": [
+                                [
+                                    "finalshoes",
+                                    "COLOUR",
+                                    "SIZE"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -2387,7 +2455,13 @@ export default [
                                     "---BIGGER/SMALLER"
                                 ]
                             ],
-                            "submitsyntax": "",
+                            "submitsyntax": [
+                                [
+                                    "shoes",
+                                    "finalcolour",
+                                    "BIGGER/SMALLER"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -2671,7 +2745,13 @@ export default [
                                     "---BIGGER/SMALLER"
                                 ]
                             ],
-                            "submitsyntax": "",
+                            "submitsyntax": [
+                                [
+                                    "finalshoes",
+                                    "COLOUR",
+                                    "BIGGER/SMALLER"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -2954,7 +3034,13 @@ export default [
                                     "---SIZE"
                                 ]
                             ],
-                            "submitsyntax": "",
+                            "submitsyntax": [
+                                [
+                                    "finalshoes",
+                                    "COLOUR",
+                                    "SIZE"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -3235,7 +3321,13 @@ export default [
                                     "---SIZE"
                                 ]
                             ],
-                            "submitsyntax": "",
+                            "submitsyntax": [
+                                [
+                                    "shoes",
+                                    "finalcolour",
+                                    "SIZE"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -3526,7 +3618,12 @@ export default [
                                     "---FINALPRICE"
                                 ]
                             ],
-                            "submitsyntax": "",
+                            "submitsyntax":  [
+                                [
+                                    "SHOES",
+                                    "FINALPRICE"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -3776,7 +3873,12 @@ export default [
                                     "---PRICE"
                                 ]
                             ],
-                            "submitsyntax": "",
+                            "submitsyntax": [
+                                [
+                                    "SHOES",
+                                    "PRICE"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -3939,7 +4041,12 @@ export default [
                                     "---PRICE"
                                 ]
                             ],
-                            "submitsyntax": "",
+                            "submitsyntax":  [
+                                [
+                                    "SHOES",
+                                    "PRICE"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -4119,7 +4226,12 @@ export default [
                                     "---discountedprice"
                                 ]
                             ],
-                            "submitsyntax": "",
+                            "submitsyntax": [
+                                [
+                                    "SHOES",
+                                    "discountedprice"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -4316,7 +4428,12 @@ export default [
                                     "---price"
                                 ]
                             ],
-                            "submitsyntax": "",
+                            "submitsyntax": [
+                                [
+                                    "SHOES",
+                                    "price"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -4560,7 +4677,14 @@ export default [
                                     "---PAYMENT"
                                 ]
                             ],
-                            "submitsyntax": "",
+                            "submitsyntax":  [
+                                [
+                                    "SHOES",
+                                    "QUANTITY",
+                                    "TOTAL",
+                                    "PAYMENT"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -4755,7 +4879,12 @@ export default [
                                     "Cash"
                                 ]
                             ],
-                            "submitsyntax": "",
+                            "submitsyntax": [
+                                [
+                                    "RECEIPT",
+                                    "Cash"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -5063,7 +5192,12 @@ export default [
                                     "Credit card"
                                 ]
                             ],
-                            "submitsyntax": "",
+                            "submitsyntax": [
+                                [
+                                    "RECEIPT",
+                                    "Credit card"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -5279,7 +5413,12 @@ export default [
                                     "An exchange"
                                 ]
                             ],
-                            "submitsyntax": "",
+                            "submitsyntax": [
+                                [
+                                    "RECEIPT",
+                                    "An exchange"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -5586,7 +5725,12 @@ export default [
                                     "A store credit card"
                                 ]
                             ],
-                            "submitsyntax": "",
+                            "submitsyntax": [
+                                [
+                                    "RECEIPT",
+                                    "A store credit card"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -5807,7 +5951,17 @@ export default [
                                     "exchange"
                                 ]
                             ],
-                            "submitsyntax": "Receipt no, Return menthod, Shoes 2, Final price, Quantity, Total, Payment menthod ",
+                            "submitsyntax": [
+                                [
+                                    "RECEIPT",
+                                    "exchange",
+                                    "shoes",
+                                    "FINALPRICE",
+                                    "QUANTITY",
+                                    "TOTAL",
+                                    "exchange"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -6242,7 +6396,17 @@ export default [
                                     "exchange and cash"
                                 ]
                             ],
-                            "submitsyntax": "Receipt no, Return menthod, Shoes 2, Final price, Quantity, Total, Payment menthod",
+                            "submitsyntax": [
+                                [
+                                    "RECEIPT",
+                                    "exchange",
+                                    "shoes",
+                                    "FINALPRICE",
+                                    "QUANTITY",
+                                    "TOTAL",
+                                    "exchange and cash"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -6559,7 +6723,17 @@ export default [
                                     "exchange and credit card"
                                 ]
                             ],
-                            "submitsyntax": "Receipt no, Return menthod, Shoes 2, Final price, Quantity, Total, Payment menthod",
+                            "submitsyntax":  [
+                                [
+                                    "RECEIPT",
+                                    "exchange",
+                                    "shoes",
+                                    "FINALPRICE",
+                                    "QUANTITY",
+                                    "TOTAL",
+                                    "exchange and credit card"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -6876,7 +7050,17 @@ export default [
                                     "store credit card"
                                 ]
                             ],
-                            "submitsyntax": "Receipt no, Return menthod, Shoes 2, Final price, Quantity, Total, Payment menthod ",
+                            "submitsyntax": [
+                                [
+                                    "RECEIPT",
+                                    "store credit card",
+                                    "shoes",
+                                    "FINALPRICE",
+                                    "QUANTITY",
+                                    "TOTAL",
+                                    "store credit card"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -7193,7 +7377,17 @@ export default [
                                     "store credit card and credit card"
                                 ]
                             ],
-                            "submitsyntax": "Receipt no, Return menthod, Shoes 2, Final price, Quantity, Total, Payment menthod",
+                            "submitsyntax":  [
+                                [
+                                    "RECEIPT",
+                                    "store credit card",
+                                    "shoes",
+                                    "FINALPRICE",
+                                    "QUANTITY",
+                                    "TOTAL",
+                                    "store credit card and credit card"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -7510,7 +7704,17 @@ export default [
                                     "store credit card and cash"
                                 ]
                             ],
-                            "submitsyntax": "Receipt no, Return menthod, Shoes 2, Final price, Quantity, Total, Payment menthod",
+                            "submitsyntax":  [
+                                [
+                                    "RECEIPT",
+                                    "store credit card",
+                                    "shoes",
+                                    "FINALPRICE",
+                                    "QUANTITY",
+                                    "TOTAL",
+                                    "store credit card and cash"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -7827,7 +8031,17 @@ export default [
                                     "cash"
                                 ]
                             ],
-                            "submitsyntax": "Receipt no, Return menthod, Shoes 2, Final price, Quantity, Total, Payment menthod",
+                            "submitsyntax": [
+                                [
+                                    "RECEIPT",
+                                    "cash",
+                                    "shoes",
+                                    "FINALPRICE",
+                                    "QUANTITY",
+                                    "TOTAL",
+                                    "cash"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -8159,7 +8373,17 @@ export default [
                                     "credit card"
                                 ]
                             ],
-                            "submitsyntax": "Receipt no, Return menthod, Shoes 2, Final price, Quantity, Total, Payment menthod",
+                            "submitsyntax": [
+                                [
+                                    "RECEIPT",
+                                    "cash",
+                                    "shoes",
+                                    "FINALPRICE",
+                                    "QUANTITY",
+                                    "TOTAL",
+                                    "credit card"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -8491,7 +8715,17 @@ export default [
                                     "cash"
                                 ]
                             ],
-                            "submitsyntax": "Receipt no, Return menthod, Shoes 2, Final price, Quantity, Total, Payment menthod",
+                            "submitsyntax":  [
+                                [
+                                    "RECEIPT",
+                                    "credit card",
+                                    "shoes",
+                                    "FINALPRICE",
+                                    "QUANTITY",
+                                    "TOTAL",
+                                    "cash"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -8823,7 +9057,17 @@ export default [
                                     "credit card"
                                 ]
                             ],
-                            "submitsyntax": "Receipt no, Return menthod, Shoes 2, Final price, Quantity, Total, Payment menthod",
+                            "submitsyntax": [
+                                [
+                                    "RECEIPT",
+                                    "credit card",
+                                    "shoes",
+                                    "FINALPRICE",
+                                    "QUANTITY",
+                                    "TOTAL",
+                                    "credit card"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -9155,7 +9399,17 @@ export default [
                                     "exchange"
                                 ]
                             ],
-                            "submitsyntax": "Receipt no, Return menthod, Shoes 2, Final price, Quantity, Total, Payment menthod",
+                            "submitsyntax": [
+                                [
+                                    "RECEIPT",
+                                    "exchange",
+                                    "shoes",
+                                    "FINALPRICE",
+                                    "QUANTITY",
+                                    "TOTAL",
+                                    "exchange"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -9487,7 +9741,17 @@ export default [
                                     "exchange and cash"
                                 ]
                             ],
-                            "submitsyntax": "Receipt no, Return menthod, Shoes 2, Final price, Quantity, Total, Payment menthod",
+                            "submitsyntax": [
+                                [
+                                    "RECEIPT",
+                                    "exchange",
+                                    "shoes",
+                                    "FINALPRICE",
+                                    "QUANTITY",
+                                    "TOTAL",
+                                    "exchange and cash"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -9819,7 +10083,17 @@ export default [
                                     "exchange and credit card"
                                 ]
                             ],
-                            "submitsyntax": "Receipt no, Return menthod, Shoes 2, Final price, Quantity, Total, Payment menthod",
+                            "submitsyntax": [
+                                [
+                                    "RECEIPT",
+                                    "exchange",
+                                    "shoes",
+                                    "FINALPRICE",
+                                    "QUANTITY",
+                                    "TOTAL",
+                                    "exchange and credit card"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -10151,7 +10425,17 @@ export default [
                                     "exchange"
                                 ]
                             ],
-                            "submitsyntax": "Receipt no, Return menthod, Shoes 2, Final price, Quantity, Total, Payment menthod",
+                            "submitsyntax": [
+                                [
+                                    "RECEIPT",
+                                    "exchange",
+                                    "shoes",
+                                    "FINALPRICE",
+                                    "QUANTITY",
+                                    "TOTAL",
+                                    "exchange"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -10483,7 +10767,17 @@ export default [
                                     "exchange and cash"
                                 ]
                             ],
-                            "submitsyntax": "Receipt no, Return menthod, Shoes 2, Final price, Quantity, Total, Payment menthod",
+                            "submitsyntax": [
+                                [
+                                    "RECEIPT",
+                                    "exchange",
+                                    "shoes",
+                                    "FINALPRICE",
+                                    "QUANTITY",
+                                    "TOTAL",
+                                    "exchange and cash"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -10815,7 +11109,17 @@ export default [
                                     "exchange and credit card"
                                 ]
                             ],
-                            "submitsyntax": "Receipt no, Return menthod, Shoes 2, Final price, Quantity, Total, Payment menthod",
+                            "submitsyntax": [
+                                [
+                                    "RECEIPT",
+                                    "exchange",
+                                    "shoes",
+                                    "FINALPRICE",
+                                    "QUANTITY",
+                                    "TOTAL",
+                                    "exchange and credit card"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -11147,7 +11451,17 @@ export default [
                                     "cash"
                                 ]
                             ],
-                            "submitsyntax": "Receipt no, Return menthod, Shoes 2, Final price, Quantity, Total, Payment menthod",
+                            "submitsyntax": [
+                                [
+                                    "RECEIPT",
+                                    "cash",
+                                    "shoes",
+                                    "FINALPRICE",
+                                    "QUANTITY",
+                                    "TOTAL",
+                                    "cash"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -11479,7 +11793,17 @@ export default [
                                     "credit card"
                                 ]
                             ],
-                            "submitsyntax": "Receipt no, Return menthod, Shoes 2, Final price, Quantity, Total, Payment menthod",
+                            "submitsyntax": [
+                                [
+                                    "RECEIPT",
+                                    "cash",
+                                    "shoes",
+                                    "FINALPRICE",
+                                    "QUANTITY",
+                                    "TOTAL",
+                                    "credit card"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -11811,7 +12135,17 @@ export default [
                                     "cash"
                                 ]
                             ],
-                            "submitsyntax": "Receipt no, Return menthod, Shoes 2, Final price, Quantity, Total, Payment menthod",
+                            "submitsyntax": [
+                                [
+                                    "RECEIPT",
+                                    "credit card",
+                                    "shoes",
+                                    "FINALPRICE",
+                                    "QUANTITY",
+                                    "TOTAL",
+                                    "cash"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -12143,7 +12477,17 @@ export default [
                                     "credit card"
                                 ]
                             ],
-                            "submitsyntax": "Receipt no, Return menthod, Shoes 2, Final price, Quantity, Total, Payment menthod",
+                            "submitsyntax": [
+                                [
+                                    "RECEIPT",
+                                    "credit card",
+                                    "shoes",
+                                    "FINALPRICE",
+                                    "QUANTITY",
+                                    "TOTAL",
+                                    "credit card"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -12475,7 +12819,17 @@ export default [
                                     "exchange"
                                 ]
                             ],
-                            "submitsyntax": "Receipt no, Return menthod, Shoes 2, Final price, Quantity, Total, Payment menthod ",
+                            "submitsyntax": [
+                                [
+                                    "RECEIPT",
+                                    "exchange",
+                                    "shoes",
+                                    "PRICE",
+                                    "QUANTITY",
+                                    "TOTAL",
+                                    "exchange"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -12741,7 +13095,17 @@ export default [
                                     "exchange and cash"
                                 ]
                             ],
-                            "submitsyntax": "Receipt no, Return menthod, Shoes 2, Final price, Quantity, Total, Payment menthod",
+                            "submitsyntax": [
+                                [
+                                    "RECEIPT",
+                                    "exchange",
+                                    "shoes",
+                                    "PRICE",
+                                    "QUANTITY",
+                                    "TOTAL",
+                                    "exchange and cash"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -13007,7 +13371,17 @@ export default [
                                     "exchange and credit card"
                                 ]
                             ],
-                            "submitsyntax": "Receipt no, Return menthod, Shoes 2, Final price, Quantity, Total, Payment menthod",
+                            "submitsyntax":  [
+                                [
+                                    "RECEIPT",
+                                    "exchange",
+                                    "shoes",
+                                    "PRICE",
+                                    "QUANTITY",
+                                    "TOTAL",
+                                    "exchange and credit card"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -13273,7 +13647,17 @@ export default [
                                     "store credit card"
                                 ]
                             ],
-                            "submitsyntax": "Receipt no, Return menthod, Shoes 2, Final price, Quantity, Total, Payment menthod ",
+                            "submitsyntax":  [
+                                [
+                                    "RECEIPT",
+                                    "store credit card",
+                                    "shoes",
+                                    "PRICE",
+                                    "QUANTITY",
+                                    "TOTAL",
+                                    "store credit card"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -13538,7 +13922,17 @@ export default [
                                     "store credit card and credit card"
                                 ]
                             ],
-                            "submitsyntax": "Receipt no, Return menthod, Shoes 2, Final price, Quantity, Total, Payment menthod",
+                            "submitsyntax":  [
+                                [
+                                    "RECEIPT",
+                                    "store credit card",
+                                    "shoes",
+                                    "LPRICE",
+                                    "QUANTITY",
+                                    "TOTAL",
+                                    "store credit card and credit card"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -13803,7 +14197,17 @@ export default [
                                     "store credit card and cash"
                                 ]
                             ],
-                            "submitsyntax": "Receipt no, Return menthod, Shoes 2, Final price, Quantity, Total, Payment menthod",
+                            "submitsyntax": [
+                                [
+                                    "RECEIPT",
+                                    "store credit card",
+                                    "shoes",
+                                    "FINALPRICE",
+                                    "QUANTITY",
+                                    "TOTAL",
+                                    "store credit card and cash"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -14068,7 +14472,17 @@ export default [
                                     "cash"
                                 ]
                             ],
-                            "submitsyntax": "Receipt no, Return menthod, Shoes 2, Final price, Quantity, Total, Payment menthod",
+                            "submitsyntax":[
+                                [
+                                    "RECEIPT",
+                                    "cash",
+                                    "shoes",
+                                    "PRICE",
+                                    "QUANTITY",
+                                    "TOTAL",
+                                    "cash"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -14348,7 +14762,17 @@ export default [
                                     "credit card"
                                 ]
                             ],
-                            "submitsyntax": "Receipt no, Return menthod, Shoes 2, Final price, Quantity, Total, Payment menthod",
+                            "submitsyntax": [
+                                [
+                                    "RECEIPT",
+                                    "cash",
+                                    "shoes",
+                                    "PRICE",
+                                    "QUANTITY",
+                                    "TOTAL",
+                                    "credit card"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -14628,7 +15052,17 @@ export default [
                                     "cash"
                                 ]
                             ],
-                            "submitsyntax": "Receipt no, Return menthod, Shoes 2, Final price, Quantity, Total, Payment menthod",
+                            "submitsyntax": [
+                                [
+                                    "RECEIPT",
+                                    "credit card",
+                                    "shoes",
+                                    "PRICE",
+                                    "QUANTITY",
+                                    "TOTAL",
+                                    "cash"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -14908,7 +15342,17 @@ export default [
                                     "credit card"
                                 ]
                             ],
-                            "submitsyntax": "Receipt no, Return menthod, Shoes 2, Final price, Quantity, Total, Payment menthod",
+                            "submitsyntax":  [
+                                [
+                                    "RECEIPT",
+                                    "credit card",
+                                    "shoes",
+                                    "PRICE",
+                                    "QUANTITY",
+                                    "TOTAL",
+                                    "credit card"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -15188,7 +15632,17 @@ export default [
                                     "exchange"
                                 ]
                             ],
-                            "submitsyntax": "Receipt no, Return menthod, Shoes 2, Final price, Quantity, Total, Payment menthod",
+                            "submitsyntax": [
+                                [
+                                    "RECEIPT",
+                                    "exchange",
+                                    "shoes",
+                                    "PRICE",
+                                    "QUANTITY",
+                                    "TOTAL",
+                                    "exchange"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -15468,7 +15922,17 @@ export default [
                                     "exchange and cash"
                                 ]
                             ],
-                            "submitsyntax": "Receipt no, Return menthod, Shoes 2, Final price, Quantity, Total, Payment menthod",
+                            "submitsyntax": [
+                                [
+                                    "RECEIPT",
+                                    "exchange",
+                                    "shoes",
+                                    "PRICE",
+                                    "QUANTITY",
+                                    "TOTAL",
+                                    "exchange and cash"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -15748,7 +16212,17 @@ export default [
                                     "exchange and credit card"
                                 ]
                             ],
-                            "submitsyntax": "Receipt no, Return menthod, Shoes 2, Final price, Quantity, Total, Payment menthod",
+                            "submitsyntax": [
+                                [
+                                    "RECEIPT",
+                                    "exchange",
+                                    "shoes",
+                                    "PRICE",
+                                    "QUANTITY",
+                                    "TOTAL",
+                                    "exchange and credit card"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -16028,7 +16502,17 @@ export default [
                                     "exchange"
                                 ]
                             ],
-                            "submitsyntax": "Receipt no, Return menthod, Shoes 2, Final price, Quantity, Total, Payment menthod",
+                            "submitsyntax":  [
+                                [
+                                    "RECEIPT",
+                                    "exchange",
+                                    "shoes",
+                                    "PRICE",
+                                    "QUANTITY",
+                                    "TOTAL",
+                                    "exchange"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -16308,7 +16792,17 @@ export default [
                                     "exchange and cash"
                                 ]
                             ],
-                            "submitsyntax": "Receipt no, Return menthod, Shoes 2, Final price, Quantity, Total, Payment menthod",
+                            "submitsyntax": [
+                                [
+                                    "RECEIPT",
+                                    "exchange",
+                                    "shoes",
+                                    "PRICE",
+                                    "QUANTITY",
+                                    "TOTAL",
+                                    "exchange and cash"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -16588,7 +17082,17 @@ export default [
                                     "exchange and credit card"
                                 ]
                             ],
-                            "submitsyntax": "Receipt no, Return menthod, Shoes 2, Final price, Quantity, Total, Payment menthod",
+                            "submitsyntax": [
+                                [
+                                    "RECEIPT",
+                                    "exchange",
+                                    "shoes",
+                                    "PRICE",
+                                    "QUANTITY",
+                                    "TOTAL",
+                                    "exchange and credit card"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -16868,7 +17372,17 @@ export default [
                                     "cash"
                                 ]
                             ],
-                            "submitsyntax": "Receipt no, Return menthod, Shoes 2, Final price, Quantity, Total, Payment menthod",
+                            "submitsyntax":  [
+                                [
+                                    "RECEIPT",
+                                    "cash",
+                                    "shoes",
+                                    "PRICE",
+                                    "QUANTITY",
+                                    "TOTAL",
+                                    "cash"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -17148,7 +17662,17 @@ export default [
                                     "credit card"
                                 ]
                             ],
-                            "submitsyntax": "Receipt no, Return menthod, Shoes 2, Final price, Quantity, Total, Payment menthod",
+                            "submitsyntax": [
+                                [
+                                    "RECEIPT",
+                                    "cash",
+                                    "shoes",
+                                    "PRICE",
+                                    "QUANTITY",
+                                    "TOTAL",
+                                    "credit card"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -17428,7 +17952,17 @@ export default [
                                     "cash"
                                 ]
                             ],
-                            "submitsyntax": "Receipt no, Return menthod, Shoes 2, Final price, Quantity, Total, Payment menthod",
+                            "submitsyntax": [
+                                [
+                                    "RECEIPT",
+                                    "credit card",
+                                    "shoes",
+                                    "PRICE",
+                                    "QUANTITY",
+                                    "TOTAL",
+                                    "cash"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -17708,7 +18242,17 @@ export default [
                                     "credit card"
                                 ]
                             ],
-                            "submitsyntax": "Receipt no, Return menthod, Shoes 2, Final price, Quantity, Total, Payment menthod",
+                            "submitsyntax": [
+                                [
+                                    "RECEIPT",
+                                    "credit card",
+                                    "shoes",
+                                    "PRICE",
+                                    "QUANTITY",
+                                    "TOTAL",
+                                    "credit card"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -17988,7 +18532,17 @@ export default [
                                     "exchange"
                                 ]
                             ],
-                            "submitsyntax": "Receipt no, Return menthod, Shoes 2, Final price, Quantity, Total, Payment menthod ",
+                            "submitsyntax": [
+                                [
+                                    "RECEIPT",
+                                    "exchange",
+                                    "shoes",
+                                    "price",
+                                    "QUANTITY",
+                                    "TOTAL",
+                                    "exchange"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -18304,7 +18858,17 @@ export default [
                                     "exchange and cash"
                                 ]
                             ],
-                            "submitsyntax": "Receipt no, Return menthod, Shoes 2, Final price, Quantity, Total, Payment menthod",
+                            "submitsyntax": [
+                                [
+                                    "RECEIPT",
+                                    "exchange",
+                                    "shoes",
+                                    "price",
+                                    "QUANTITY",
+                                    "TOTAL",
+                                    "exchange and cash"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -18621,7 +19185,17 @@ export default [
                                     "exchange and credit card"
                                 ]
                             ],
-                            "submitsyntax": "Receipt no, Return menthod, Shoes 2, Final price, Quantity, Total, Payment menthod",
+                            "submitsyntax": [
+                                [
+                                    "RECEIPT",
+                                    "exchange",
+                                    "shoes",
+                                    "price",
+                                    "QUANTITY",
+                                    "TOTAL",
+                                    "exchange and credit card"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -18938,7 +19512,17 @@ export default [
                                     "store credit card"
                                 ]
                             ],
-                            "submitsyntax": "Receipt no, Return menthod, Shoes 2, Final price, Quantity, Total, Payment menthod ",
+                            "submitsyntax": [
+                                [
+                                    "RECEIPT",
+                                    "store credit card",
+                                    "shoes",
+                                    "price",
+                                    "QUANTITY",
+                                    "TOTAL",
+                                    "store credit card"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -19254,7 +19838,17 @@ export default [
                                     "store credit card and credit card"
                                 ]
                             ],
-                            "submitsyntax": "Receipt no, Return menthod, Shoes 2, Final price, Quantity, Total, Payment menthod",
+                            "submitsyntax": [
+                                [
+                                    "RECEIPT",
+                                    "store credit card",
+                                    "shoes",
+                                    "price",
+                                    "QUANTITY",
+                                    "TOTAL",
+                                    "store credit card and credit card"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -19570,7 +20164,17 @@ export default [
                                     "store credit card and cash"
                                 ]
                             ],
-                            "submitsyntax": "Receipt no, Return menthod, Shoes 2, Final price, Quantity, Total, Payment menthod",
+                            "submitsyntax":  [
+                                [
+                                    "RECEIPT",
+                                    "store credit card",
+                                    "shoes",
+                                    "price",
+                                    "QUANTITY",
+                                    "TOTAL",
+                                    "store credit card and cash"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -19886,7 +20490,17 @@ export default [
                                     "cash"
                                 ]
                             ],
-                            "submitsyntax": "Receipt no, Return menthod, Shoes 2, Final price, Quantity, Total, Payment menthod",
+                            "submitsyntax": [
+                                [
+                                    "RECEIPT",
+                                    "cash",
+                                    "shoes",
+                                    "price",
+                                    "QUANTITY",
+                                    "TOTAL",
+                                    "cash"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -20217,7 +20831,17 @@ export default [
                                     "credit card"
                                 ]
                             ],
-                            "submitsyntax": "Receipt no, Return menthod, Shoes 2, Final price, Quantity, Total, Payment menthod",
+                            "submitsyntax":  [
+                                [
+                                    "RECEIPT",
+                                    "cash",
+                                    "shoes",
+                                    "price",
+                                    "QUANTITY",
+                                    "TOTAL",
+                                    "credit card"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -20548,7 +21172,17 @@ export default [
                                     "cash"
                                 ]
                             ],
-                            "submitsyntax": "Receipt no, Return menthod, Shoes 2, Final price, Quantity, Total, Payment menthod",
+                            "submitsyntax": [
+                                [
+                                    "RECEIPT",
+                                    "credit card",
+                                    "shoes",
+                                    "price",
+                                    "QUANTITY",
+                                    "TOTAL",
+                                    "cash"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -20879,7 +21513,17 @@ export default [
                                     "credit card"
                                 ]
                             ],
-                            "submitsyntax": "Receipt no, Return menthod, Shoes 2, Final price, Quantity, Total, Payment menthod",
+                            "submitsyntax":  [
+                                [
+                                    "RECEIPT",
+                                    "credit card",
+                                    "shoes",
+                                    "price",
+                                    "QUANTITY",
+                                    "TOTAL",
+                                    "credit card"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -21210,7 +21854,17 @@ export default [
                                     "exchange"
                                 ]
                             ],
-                            "submitsyntax": "Receipt no, Return menthod, Shoes 2, Final price, Quantity, Total, Payment menthod",
+                            "submitsyntax": [
+                                [
+                                    "RECEIPT",
+                                    "exchange",
+                                    "shoes",
+                                    "price",
+                                    "QUANTITY",
+                                    "TOTAL",
+                                    "exchange"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -21541,7 +22195,17 @@ export default [
                                     "exchange and cash"
                                 ]
                             ],
-                            "submitsyntax": "Receipt no, Return menthod, Shoes 2, Final price, Quantity, Total, Payment menthod",
+                            "submitsyntax":[
+                                [
+                                    "RECEIPT",
+                                    "exchange",
+                                    "shoes",
+                                    "price",
+                                    "QUANTITY",
+                                    "TOTAL",
+                                    "exchange and cash"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -21872,7 +22536,17 @@ export default [
                                     "exchange and credit card"
                                 ]
                             ],
-                            "submitsyntax": "Receipt no, Return menthod, Shoes 2, Final price, Quantity, Total, Payment menthod",
+                            "submitsyntax":  [
+                                [
+                                    "RECEIPT",
+                                    "exchange",
+                                    "shoes",
+                                    "price",
+                                    "QUANTITY",
+                                    "TOTAL",
+                                    "exchange and credit card"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -22203,7 +22877,17 @@ export default [
                                     "exchange"
                                 ]
                             ],
-                            "submitsyntax": "Receipt no, Return menthod, Shoes 2, Final price, Quantity, Total, Payment menthod",
+                            "submitsyntax": [
+                                [
+                                    "RECEIPT",
+                                    "exchange",
+                                    "shoes",
+                                    "price",
+                                    "QUANTITY",
+                                    "TOTAL",
+                                    "exchange"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -22534,7 +23218,17 @@ export default [
                                     "exchange and cash"
                                 ]
                             ],
-                            "submitsyntax": "Receipt no, Return menthod, Shoes 2, Final price, Quantity, Total, Payment menthod",
+                            "submitsyntax": [
+                                [
+                                    "RECEIPT",
+                                    "exchange",
+                                    "shoes",
+                                    "price",
+                                    "QUANTITY",
+                                    "TOTAL",
+                                    "exchange and cash"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -22865,7 +23559,17 @@ export default [
                                     "exchange and credit card"
                                 ]
                             ],
-                            "submitsyntax": "Receipt no, Return menthod, Shoes 2, Final price, Quantity, Total, Payment menthod",
+                            "submitsyntax": [
+                                [
+                                    "RECEIPT",
+                                    "exchange",
+                                    "shoes",
+                                    "price",
+                                    "QUANTITY",
+                                    "TOTAL",
+                                    "exchange and credit card"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -23196,7 +23900,17 @@ export default [
                                     "cash"
                                 ]
                             ],
-                            "submitsyntax": "Receipt no, Return menthod, Shoes 2, Final price, Quantity, Total, Payment menthod",
+                            "submitsyntax": [
+                                [
+                                    "RECEIPT",
+                                    "cash",
+                                    "shoes",
+                                    "price",
+                                    "QUANTITY",
+                                    "TOTAL",
+                                    "cash"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -23527,7 +24241,17 @@ export default [
                                     "credit card"
                                 ]
                             ],
-                            "submitsyntax": "Receipt no, Return menthod, Shoes 2, Final price, Quantity, Total, Payment menthod",
+                            "submitsyntax":  [
+                                [
+                                    "RECEIPT",
+                                    "cash",
+                                    "shoes",
+                                    "price",
+                                    "QUANTITY",
+                                    "TOTAL",
+                                    "credit card"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -23858,7 +24582,17 @@ export default [
                                     "cash"
                                 ]
                             ],
-                            "submitsyntax": "Receipt no, Return menthod, Shoes 2, Final price, Quantity, Total, Payment menthod",
+                            "submitsyntax":  [
+                                [
+                                    "RECEIPT",
+                                    "credit card",
+                                    "shoes",
+                                    "price",
+                                    "QUANTITY",
+                                    "TOTAL",
+                                    "cash"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
@@ -24189,7 +24923,17 @@ export default [
                                     "credit card"
                                 ]
                             ],
-                            "submitsyntax": "Receipt no, Return menthod, Shoes 2, Final price, Quantity, Total, Payment menthod",
+                            "submitsyntax": [
+                                [
+                                    "RECEIPT",
+                                    "credit card",
+                                    "shoes",
+                                    "price",
+                                    "QUANTITY",
+                                    "TOTAL",
+                                    "credit card"
+                                ]
+                            ],
                             "robotspeakfirst": [
                                 "Hi.",
                                 "Hello."
