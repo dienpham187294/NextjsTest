@@ -22,10 +22,10 @@ export default
                 }
             ]
         },
-        {
-            "img": "https://i.postimg.cc/FKMYrgRZ/tieng-anh-smart-start-1-student-book-02.jpg",
-            "data": []
-        },
+        // {
+        //     "img": "https://i.postimg.cc/FKMYrgRZ/tieng-anh-smart-start-1-student-book-02.jpg",
+        //     "data": []
+        // },
         {
             "img": "https://i.postimg.cc/QCk9n9jq/tieng-anh-smart-start-1-student-book-03.jpg",
             "data": [

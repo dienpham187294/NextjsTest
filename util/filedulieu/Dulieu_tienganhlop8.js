@@ -3,42 +3,42 @@ export default [
         "img": "https://i.postimg.cc/MT3kRF8L/Metaisach-Com-S-ch-Gi-o-Khoa-Ti-ng-Anh-8-001.jpg",
         "data": []
     },
-    {
-        "img": "https://i.postimg.cc/2SnfJG4q/Metaisach-Com-S-ch-Gi-o-Khoa-Ti-ng-Anh-8-002.jpg",
-        "data": []
-    },
-    {
-        "img": "https://i.postimg.cc/PqhkkD4S/Metaisach-Com-S-ch-Gi-o-Khoa-Ti-ng-Anh-8-003.jpg",
-        "data": []
-    },
-    {
-        "img": "https://i.postimg.cc/QNPGdwm9/Metaisach-Com-S-ch-Gi-o-Khoa-Ti-ng-Anh-8-004.jpg",
-        "data": []
-    },
-    {
-        "img": "https://i.postimg.cc/K8S6nTdm/Metaisach-Com-S-ch-Gi-o-Khoa-Ti-ng-Anh-8-005.jpg",
-        "data": []
-    },
-    {
-        "img": "https://i.postimg.cc/7hjptJhM/Metaisach-Com-S-ch-Gi-o-Khoa-Ti-ng-Anh-8-006.jpg",
-        "data": []
-    },
-    {
-        "img": "https://i.postimg.cc/hvXk01Dt/Metaisach-Com-S-ch-Gi-o-Khoa-Ti-ng-Anh-8-007.jpg",
-        "data": []
-    },
-    {
-        "img": "https://i.postimg.cc/yYZqgjpf/Metaisach-Com-S-ch-Gi-o-Khoa-Ti-ng-Anh-8-008.jpg",
-        "data": []
-    },
-    {
-        "img": "https://i.postimg.cc/Nj6WbMcm/Metaisach-Com-S-ch-Gi-o-Khoa-Ti-ng-Anh-8-009.jpg",
-        "data": []
-    },
-    {
-        "img": "https://i.postimg.cc/s23bLrj8/Metaisach-Com-S-ch-Gi-o-Khoa-Ti-ng-Anh-8-010.jpg",
-        "data": []
-    },
+    // {
+    //     "img": "https://i.postimg.cc/2SnfJG4q/Metaisach-Com-S-ch-Gi-o-Khoa-Ti-ng-Anh-8-002.jpg",
+    //     "data": []
+    // },
+    // {
+    //     "img": "https://i.postimg.cc/PqhkkD4S/Metaisach-Com-S-ch-Gi-o-Khoa-Ti-ng-Anh-8-003.jpg",
+    //     "data": []
+    // },
+    // {
+    //     "img": "https://i.postimg.cc/QNPGdwm9/Metaisach-Com-S-ch-Gi-o-Khoa-Ti-ng-Anh-8-004.jpg",
+    //     "data": []
+    // },
+    // {
+    //     "img": "https://i.postimg.cc/K8S6nTdm/Metaisach-Com-S-ch-Gi-o-Khoa-Ti-ng-Anh-8-005.jpg",
+    //     "data": []
+    // },
+    // {
+    //     "img": "https://i.postimg.cc/7hjptJhM/Metaisach-Com-S-ch-Gi-o-Khoa-Ti-ng-Anh-8-006.jpg",
+    //     "data": []
+    // },
+    // {
+    //     "img": "https://i.postimg.cc/hvXk01Dt/Metaisach-Com-S-ch-Gi-o-Khoa-Ti-ng-Anh-8-007.jpg",
+    //     "data": []
+    // },
+    // {
+    //     "img": "https://i.postimg.cc/yYZqgjpf/Metaisach-Com-S-ch-Gi-o-Khoa-Ti-ng-Anh-8-008.jpg",
+    //     "data": []
+    // },
+    // {
+    //     "img": "https://i.postimg.cc/Nj6WbMcm/Metaisach-Com-S-ch-Gi-o-Khoa-Ti-ng-Anh-8-009.jpg",
+    //     "data": []
+    // },
+    // {
+    //     "img": "https://i.postimg.cc/s23bLrj8/Metaisach-Com-S-ch-Gi-o-Khoa-Ti-ng-Anh-8-010.jpg",
+    //     "data": []
+    // },
     {
         "img": "https://i.postimg.cc/yYc147KY/Metaisach-Com-S-ch-Gi-o-Khoa-Ti-ng-Anh-8-011.jpg",
         "data": [{

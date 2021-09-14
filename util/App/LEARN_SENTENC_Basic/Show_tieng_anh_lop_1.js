@@ -152,9 +152,9 @@ export default function Show_Tieng_anh_lop_1(Dulieu_tieng_anh_lop_1, tokenCheck,
                                                     <i>Bấm chọn</i>
                                                 </div>
                                             </div>
-
+                                            {/* 
                                             <hr />
-                                            <div>{md_img.Show_img(e.ArrImg)}</div>
+                                            <div>{md_img.Show_img(e.ArrImg)}</div> */}
                                         </div>
                                     )}
                                     <hr />
@@ -163,11 +163,11 @@ export default function Show_Tieng_anh_lop_1(Dulieu_tieng_anh_lop_1, tokenCheck,
 
 
 
-                                        <div style={{ border: "1px solid black", borderRadius: "5px", padding: "10px", display: "inline-block", cursor: "pointer" }} onClick={() => { SET_Game_Nhinhinhdoanchu(true) }}>
+                                        {/* <div style={{ border: "1px solid black", borderRadius: "5px", padding: "10px", display: "inline-block", cursor: "pointer" }} onClick={() => { SET_Game_Nhinhinhdoanchu(true) }}>
 
                                             <h3 style={{ color: "red" }}> Nhìn hình đoán chữ</h3>
                                             <i>Bấm để chơi</i>
-                                        </div>
+                                        </div> */}
 
                                         <div style={{ border: "1px solid black", borderRadius: "5px", padding: "10px", display: "inline-block", cursor: "pointer" }} onClick={() => { SET_Game_Nghevachoncau(true) }}>
                                             <h3 style={{ color: "red" }}> Nghe và chọn câu</h3>
@@ -175,7 +175,7 @@ export default function Show_Tieng_anh_lop_1(Dulieu_tieng_anh_lop_1, tokenCheck,
 
                                         </div>
                                         <br />
-                                        {Game_Nhinhinhdoanchu ? md_img.game_withImg(Dulieu_tieng_anh_lop_1.slice(0, parseInt(Num_page) + 1), SET_Game_Nhinhinhdoanchu) : null}
+                                        {/* {Game_Nhinhinhdoanchu ? md_img.game_withImg(Dulieu_tieng_anh_lop_1.slice(0, parseInt(Num_page) + 1), SET_Game_Nhinhinhdoanchu) : null} */}
                                         {Game_Nghevachoncau ? md_img.game_withlisten(Dulieu_tieng_anh_lop_1.slice(0, parseInt(Num_page) + 1), SET_Game_Nghevachoncau) : null}
 
                                     </div>
@@ -194,7 +194,7 @@ export default function Show_Tieng_anh_lop_1(Dulieu_tieng_anh_lop_1, tokenCheck,
                                     <Show_tienganhphothong_hocphatam />
                                     <hr />
                                     {Show_QuangCao()}
-                                   
+
                                 </div>
                                 :
                                 <Show_tienganhphothong_phanbaihoc

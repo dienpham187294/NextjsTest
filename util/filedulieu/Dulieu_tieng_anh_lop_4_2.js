@@ -4,18 +4,18 @@ export default
       "img": "https://i.postimg.cc/QCmg7q5h/S-ch-H-c-Sinh-Ti-ng-Anh-L-p-4-T-p-2-01.jpg",
       "data": []
   },
-  {
-      "img": "https://i.postimg.cc/66ffFBPg/S-ch-H-c-Sinh-Ti-ng-Anh-L-p-4-T-p-2-02.jpg",
-      "data": []
-  },
-  {
-      "img": "https://i.postimg.cc/7Lzg947B/S-ch-H-c-Sinh-Ti-ng-Anh-L-p-4-T-p-2-03.jpg",
-      "data": []
-  },
-  {
-      "img": "https://i.postimg.cc/W3P0fyws/S-ch-H-c-Sinh-Ti-ng-Anh-L-p-4-T-p-2-04.jpg",
-      "data": []
-  },
+//   {
+//       "img": "https://i.postimg.cc/66ffFBPg/S-ch-H-c-Sinh-Ti-ng-Anh-L-p-4-T-p-2-02.jpg",
+//       "data": []
+//   },
+//   {
+//       "img": "https://i.postimg.cc/7Lzg947B/S-ch-H-c-Sinh-Ti-ng-Anh-L-p-4-T-p-2-03.jpg",
+//       "data": []
+//   },
+//   {
+//       "img": "https://i.postimg.cc/W3P0fyws/S-ch-H-c-Sinh-Ti-ng-Anh-L-p-4-T-p-2-04.jpg",
+//       "data": []
+//   },
   {
       "img": "https://i.postimg.cc/bws0Gkvf/S-ch-H-c-Sinh-Ti-ng-Anh-L-p-4-T-p-2-05.jpg",
       "data": [

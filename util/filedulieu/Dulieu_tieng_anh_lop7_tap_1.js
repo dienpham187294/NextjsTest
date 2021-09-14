@@ -5,36 +5,36 @@ export default [
 
         ]
     },
-    {
-        "img": "https://i.postimg.cc/vZ0FJCKW/tieng-anh-lop-7-2.jpg",
-        "data": [
+    // {
+    //     "img": "https://i.postimg.cc/vZ0FJCKW/tieng-anh-lop-7-2.jpg",
+    //     "data": [
 
-        ]
-    },
-    {
-        "img": "https://i.postimg.cc/k40dj8pz/tieng-anh-lop-7-3.jpg",
-        "data": [
+    //     ]
+    // },
+    // {
+    //     "img": "https://i.postimg.cc/k40dj8pz/tieng-anh-lop-7-3.jpg",
+    //     "data": [
 
-        ]
-    },
-    {
-        "img": "https://i.postimg.cc/g2SQS8ws/tieng-anh-lop-7-4.jpg",
-        "data": [
+    //     ]
+    // },
+    // {
+    //     "img": "https://i.postimg.cc/g2SQS8ws/tieng-anh-lop-7-4.jpg",
+    //     "data": [
 
-        ]
-    },
-    {
-        "img": "https://i.postimg.cc/pTN04ZPf/tieng-anh-lop-7-5.jpg",
-        "data": [
+    //     ]
+    // },
+    // {
+    //     "img": "https://i.postimg.cc/pTN04ZPf/tieng-anh-lop-7-5.jpg",
+    //     "data": [
 
-        ]
-    },
-    {
-        "img": "https://i.postimg.cc/DZqCTXzt/tieng-anh-lop-7-6.jpg",
-        "data": [
+    //     ]
+    // },
+    // {
+    //     "img": "https://i.postimg.cc/DZqCTXzt/tieng-anh-lop-7-6.jpg",
+    //     "data": [
 
-        ]
-    },
+    //     ]
+    // },
     {
         "img": "https://i.postimg.cc/fT60xgCf/tieng-anh-lop-7-7.jpg",
         "data": [

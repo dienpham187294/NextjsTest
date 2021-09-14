@@ -4,26 +4,26 @@ export default
             "img": "https://i.postimg.cc/DzdycpjV/S-ch-H-c-Sinh-Ti-ng-Anh-L-p-5-T-p-2-01.jpg",
             "data": []
         },
-        {
-            "img": "https://i.postimg.cc/zDdvMMJ8/S-ch-H-c-Sinh-Ti-ng-Anh-L-p-5-T-p-2-02.jpg",
-            "data": []
-        },
-        {
-            "img": "https://i.postimg.cc/vBY827k4/S-ch-H-c-Sinh-Ti-ng-Anh-L-p-5-T-p-2-03.jpg",
-            "data": []
-        },
-        {
-            "img": "https://i.postimg.cc/d3S0y7WL/S-ch-H-c-Sinh-Ti-ng-Anh-L-p-5-T-p-2-04.jpg",
-            "data": []
-        },
-        {
-            "img": "https://i.postimg.cc/x1mdX1L1/S-ch-H-c-Sinh-Ti-ng-Anh-L-p-5-T-p-2-05.jpg",
-            "data": []
-        },
-        {
-            "img": "https://i.postimg.cc/fbhRmQvj/S-ch-H-c-Sinh-Ti-ng-Anh-L-p-5-T-p-2-06.jpg",
-            "data": []
-        },
+        // {
+        //     "img": "https://i.postimg.cc/zDdvMMJ8/S-ch-H-c-Sinh-Ti-ng-Anh-L-p-5-T-p-2-02.jpg",
+        //     "data": []
+        // },
+        // {
+        //     "img": "https://i.postimg.cc/vBY827k4/S-ch-H-c-Sinh-Ti-ng-Anh-L-p-5-T-p-2-03.jpg",
+        //     "data": []
+        // },
+        // {
+        //     "img": "https://i.postimg.cc/d3S0y7WL/S-ch-H-c-Sinh-Ti-ng-Anh-L-p-5-T-p-2-04.jpg",
+        //     "data": []
+        // },
+        // {
+        //     "img": "https://i.postimg.cc/x1mdX1L1/S-ch-H-c-Sinh-Ti-ng-Anh-L-p-5-T-p-2-05.jpg",
+        //     "data": []
+        // },
+        // {
+        //     "img": "https://i.postimg.cc/fbhRmQvj/S-ch-H-c-Sinh-Ti-ng-Anh-L-p-5-T-p-2-06.jpg",
+        //     "data": []
+        // },
         {
             "img": "https://i.postimg.cc/NfSMGH9n/S-ch-H-c-Sinh-Ti-ng-Anh-L-p-5-T-p-2-07.jpg",
             "data": [

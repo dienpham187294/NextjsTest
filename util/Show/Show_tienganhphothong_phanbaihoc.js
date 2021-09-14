@@ -112,6 +112,7 @@ export default function Show_tienganhphothong_phanbaihoc({ Data_Learn, SET_Data_
                     SET_Data_Learn("");
                     SET_Docthu("");
                     $("#ID_ShowTiengAnh").scrollTop(150)
+                    document.getElementById("BUTTON_CLICK_TO_STOP_TALK").click();
                 }}
             >Chọn câu khác.</button>
             <button

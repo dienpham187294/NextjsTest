@@ -4,26 +4,26 @@ export default
             "img": "https://i.postimg.cc/fyf3CwhM/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-01.jpg",
             "data": []
         },
-        {
-            "img": "https://i.postimg.cc/qMGnXGk2/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-02.jpg",
-            "data": []
-        },
-        {
-            "img": "https://i.postimg.cc/k52bC3Wy/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-03.jpg",
-            "data": []
-        },
-        {
-            "img": "https://i.postimg.cc/dVHygtZ1/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-04.jpg",
-            "data": []
-        },
-        {
-            "img": "https://i.postimg.cc/767JC3sG/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-05.jpg",
-            "data": []
-        },
-        {
-            "img": "https://i.postimg.cc/h4L7c0QN/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-06.jpg",
-            "data": []
-        },
+        // {
+        //     "img": "https://i.postimg.cc/qMGnXGk2/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-02.jpg",
+        //     "data": []
+        // },
+        // {
+        //     "img": "https://i.postimg.cc/k52bC3Wy/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-03.jpg",
+        //     "data": []
+        // },
+        // {
+        //     "img": "https://i.postimg.cc/dVHygtZ1/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-04.jpg",
+        //     "data": []
+        // },
+        // {
+        //     "img": "https://i.postimg.cc/767JC3sG/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-05.jpg",
+        //     "data": []
+        // },
+        // {
+        //     "img": "https://i.postimg.cc/h4L7c0QN/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-06.jpg",
+        //     "data": []
+        // },
         {
             "img": "https://i.postimg.cc/jdRn5Jz2/S-ch-h-c-sinh-Ti-ng-anh-3-T-p-1-07.jpg",
             "data": [

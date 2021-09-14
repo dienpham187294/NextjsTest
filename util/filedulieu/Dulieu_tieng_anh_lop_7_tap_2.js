@@ -5,18 +5,18 @@ export default [
 
         ]
     },
-    {
-        "img": "https://i.postimg.cc/bwCq6d78/lop-7-lessbyte-02.jpg",
-        "data": [
+    // {
+    //     "img": "https://i.postimg.cc/bwCq6d78/lop-7-lessbyte-02.jpg",
+    //     "data": [
 
-        ]
-    },
-    {
-        "img": "https://i.postimg.cc/cJv0P0W3/lop-7-lessbyte-03.jpg",
-        "data": [
+    //     ]
+    // },
+    // {
+    //     "img": "https://i.postimg.cc/cJv0P0W3/lop-7-lessbyte-03.jpg",
+    //     "data": [
 
-        ]
-    },
+    //     ]
+    // },
     {
         "img": "https://i.postimg.cc/NG6Y3d3d/lop-7-lessbyte-04.jpg",
         "data": [

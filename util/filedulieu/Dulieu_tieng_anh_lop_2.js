@@ -4,18 +4,18 @@ export default
             "img": "https://i.postimg.cc/05YV5BmN/S-ch-l-p-2-1-01.jpg",
             "data": []
         },
-        {
-            "img": "https://i.postimg.cc/TPKkR2q8/S-ch-l-p-2-1-02.jpg",
-            "data": []
-        },
-        {
-            "img": "https://i.postimg.cc/T1J0kKGb/S-ch-l-p-2-1-03.jpg",
-            "data": []
-        },
-        {
-            "img": "https://i.postimg.cc/Y0H8f6ck/S-ch-l-p-2-1-04.jpg",
-            "data": []
-        },
+        // {
+        //     "img": "https://i.postimg.cc/TPKkR2q8/S-ch-l-p-2-1-02.jpg",
+        //     "data": []
+        // },
+        // {
+        //     "img": "https://i.postimg.cc/T1J0kKGb/S-ch-l-p-2-1-03.jpg",
+        //     "data": []
+        // },
+        // {
+        //     "img": "https://i.postimg.cc/Y0H8f6ck/S-ch-l-p-2-1-04.jpg",
+        //     "data": []
+        // },
         {
             "img": "https://i.postimg.cc/Hs33X86D/S-ch-l-p-2-1-05.jpg",
             "data": [

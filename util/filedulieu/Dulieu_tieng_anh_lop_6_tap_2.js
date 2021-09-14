@@ -4,26 +4,26 @@ export default
         "img": "https://i.postimg.cc/ZKSRfDYG/New-English-6-Tap-2-01.jpg",
         "data": []
     },
-    {
-        "img": "https://i.postimg.cc/wjxBzymF/New-English-6-Tap-2-02.jpg",
-        "data": []
-    },
-    {
-        "img": "https://i.postimg.cc/66RqfNKV/New-English-6-Tap-2-03.jpg",
-        "data": []
-    },
-    {
-        "img": "https://i.postimg.cc/tCNg8tYY/New-English-6-Tap-2-04.jpg",
-        "data": []
-    },
-    {
-        "img": "https://i.postimg.cc/bw6wwy0P/New-English-6-Tap-2-05.jpg",
-        "data": []
-    },
-    {
-        "img": "https://i.postimg.cc/N0SGRdPP/New-English-6-Tap-2-06.jpg",
-        "data": []
-    },
+    // {
+    //     "img": "https://i.postimg.cc/wjxBzymF/New-English-6-Tap-2-02.jpg",
+    //     "data": []
+    // },
+    // {
+    //     "img": "https://i.postimg.cc/66RqfNKV/New-English-6-Tap-2-03.jpg",
+    //     "data": []
+    // },
+    // {
+    //     "img": "https://i.postimg.cc/tCNg8tYY/New-English-6-Tap-2-04.jpg",
+    //     "data": []
+    // },
+    // {
+    //     "img": "https://i.postimg.cc/bw6wwy0P/New-English-6-Tap-2-05.jpg",
+    //     "data": []
+    // },
+    // {
+    //     "img": "https://i.postimg.cc/N0SGRdPP/New-English-6-Tap-2-06.jpg",
+    //     "data": []
+    // },
     {
         "img": "https://i.postimg.cc/N05fy3bH/New-English-6-Tap-2-07.jpg",
         "data": [
