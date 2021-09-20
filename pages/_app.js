@@ -9,7 +9,7 @@ import List_IDs from "../util/List_IDs/List_IDs"
 import Head from "next/head";
 import { async } from 'regenerator-runtime';
 const { detect } = require('detect-browser');
- const ip = require('ip');
+const ip = require('ip');
 
 function MyApp({ Component, pageProps }) {
   const [Status, SET_Status] = useState(0)
@@ -98,9 +98,6 @@ function MyApp({ Component, pageProps }) {
       </div>
       <div id={List_IDs["Sound"]}></div>
       <br />
-      <Link href="/main/Main_admin">
-        <a>Powered by Ericpham</a>
-      </Link>
     </footer>
   </>)
 
