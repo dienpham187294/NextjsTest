@@ -39,7 +39,7 @@ function UpLoadFile(props) {
             <table className="table table-striped"><tbody>
                 {DL.map((e, i) =>
                     <tr key={i}>
-                        <td> <b style={{ color: "blue" }}>{e[0].nameoflession}</b>  </td>
+                        <td> <b style={{ color: "black" }}>{e[0].nameoflession}</b>  </td>
                         <td>
                             <div
                                 style={{ border: "1px solid green", borderRadius: "5px", padding: "5px", marginTop: "5px", cursor: "pointer" }}
