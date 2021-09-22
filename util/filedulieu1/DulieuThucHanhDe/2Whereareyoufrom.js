@@ -274,6 +274,7 @@ const DL1 = [
     {
         "nameoflession": "Bài 2: Bạn đến từ đâu? -- Where are you from?",
         "huongdan": "Tìm thông tin người đối thoại đến từ đâu?",
+        "srcYoutube": "https://www.youtube.com/embed/bDvJSWnuvtU",
         "hoctap": [
             { "EN": "Hi, how are you?", "VN": "Chào! Bạn khỏe không?", "IPA": "haɪ, haʊ ɑː juː?", "IPAVN": "" },
             { "EN": "I am fine. Thank you.", "VN": "Tôi ổn. Cảm ơn bạn.", "IPA": "aɪ æm faɪn. θæŋk juː.", "IPAVN": "" },

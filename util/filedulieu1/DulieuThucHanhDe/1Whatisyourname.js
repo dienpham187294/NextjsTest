@@ -273,6 +273,7 @@ const Whatisyourname = [
     {
         "nameoflession": "Bài 1: Bạn tên là gì? -- What is your name?",
         "huongdan": "Tìm thông tin người đối thoại tên là gì?",
+        "srcYoutube": "https://www.youtube.com/embed/uIlfrvvQiME",
         "hoctap": [
             { "EN": "What is your name?", "VN": "Tên của bạn là gì?", "IPA": "wɒt ɪz jɔː neɪm?", "IPAVN": "" },
             { "EN": "My name is Sophia.", "VN": "Tôi tên là sophia.", "IPA": "maɪ neɪm ɪz səʊˈfiːə.", "IPAVN": "" },

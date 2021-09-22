@@ -275,6 +275,7 @@ const Wheredoyoulive = [
     {
         "nameoflession": "Bài 3: Bạn sống ở đâu? -- Where do you live?",
         "huongdan": "Tìm thông tin người đối thoại đang sống ở đâu đâu?",
+        "srcYoutube": "",
         "hoctap": [
             { "EN": "Where do you live?", "VN": "Bạn sống ở đâu?", "IPA": "weə duː juː lɪv?", "IPAVN": "" },
             { "EN": "I live in Paris.", "VN": "Tôi sống ở Paris.", "IPA": "aɪ lɪv ɪn ˈpærɪs.", "IPAVN": "" },

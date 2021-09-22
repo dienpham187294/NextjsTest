@@ -1,9 +1,11 @@
 
 
 // import $ from "jquery"
-// import { useEffect, useState } from "react";
+import { useState } from "react";
 import DL from "../../../util/filedulieu1/DulieuThucHanhDe/DulieuTotal";
 function UpLoadFile(props) {
+
+    const [srcYoutube, SET_SrcYoutube] = useState("")
 
     function Fnpick(arrPick) {
         try {
@@ -36,39 +38,67 @@ function UpLoadFile(props) {
     }
     return (
         <div style={{ margin: "5%" }}>
-            <table className="table table-striped"><tbody>
-                {DL.map((e, i) =>
-                    <tr key={i}>
-                        <td> <b style={{ color: "black" }}>{e[0].nameoflession}</b>  </td>
-                        <td>
-                            <div
-                                style={{ border: "1px solid green", borderRadius: "5px", padding: "5px", marginTop: "5px", cursor: "pointer" }}
-                                className="btnHover"
-                                onClick={() => {
-                                    Fnpick(e)
-                                }}
+            <table className="table table-striped">
+                <tbody>
+                    {DL.map((e, i) =>
+                        <tr key={i}>
+                            <td>
+                                <b style={{ color: "black" }}>{e[0].nameoflession}</b>
+                                <br />
+                                <button
+                                    style={{ border: "1px solid green", borderRadius: "5px", padding: "5px", marginTop: "5px", cursor: "pointer" }}
+                                    className="btnHover ml-1"
+                                    onClick={() => {
+                                        Fnpick(e)
+                                    }}
 
-                            >Thực hành</div>
-                            <div
-                                style={{ border: "1px solid green", borderRadius: "5px", padding: "5px", marginTop: "5px", cursor: "pointer" }}
-                                className="btnHover"
-                                onClick={() => {
-                                    props.Total.fnObj.SET_Data_InfoOflession(e[0].hoctap)
-                                    props.Total.fnObj.SET_PageChange(2)
-                                }}
-                            >Học tập</div>
-                            <div
-                                style={{ border: "1px solid green", borderRadius: "5px", padding: "5px", marginTop: "5px", cursor: "pointer" }}
-                                className="btnHover"
-                                onClick={() => {
-                                    props.Total.fnObj.SET_Data_InfoOflession(e[0].hoctap)
-                                    props.Total.fnObj.SET_PageChange(2)
-                                }}
-                            >Xem video</div>
-                        </td>
-                    </tr>
-                )}
-            </tbody></table>
+                                >Thực hành</button>
+                                <button
+                                    style={{ border: "1px solid green", borderRadius: "5px", padding: "5px", marginTop: "5px", cursor: "pointer" }}
+                                    className="btnHover ml-1"
+                                    onClick={() => {
+                                        props.Total.fnObj.SET_Data_InfoOflession(e[0].hoctap)
+                                        props.Total.fnObj.SET_PageChange(2)
+                                    }}
+                                >Học tập</button>
+
+                                {e[0].srcYoutube !== "" ?
+                                    <button
+                                        style={{ border: "1px solid green", borderRadius: "5px", padding: "5px", marginTop: "5px", cursor: "pointer" }}
+                                        className="btnHover ml-1"
+                                        onClick={() => {
+                                            SET_SrcYoutube(e[0].srcYoutube)
+                                        }}
+                                    >Xem video</button>
+                                    : null}
+                            </td>
+                        </tr>
+                    )}
+                </tbody></table>
+
+            {srcYoutube !== "" ?
+                <div
+                    style={{
+                        position: "fixed",
+                        top: "5px",
+                        bottom: "5px",
+                        left: "5px",
+                        right: "5px",
+                        textAlign: "center",
+                        backgroundColor: "white",
+                        opacity: "0.9"
+                    }}
+                >
+                    <button className="btn btn-danger" onClick={() => { SET_SrcYoutube("") }}>Thoát</button>
+                    <hr />
+                    <iframe width="560" height="315"
+                        src={srcYoutube}
+                        title="YouTube video player" frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen>
+                    </iframe>
+                </div>
+                : null}
         </div>
     )
 }
