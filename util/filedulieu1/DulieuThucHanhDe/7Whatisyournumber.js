@@ -273,7 +273,7 @@ function PickRandom(arr) {
 const Whatisyourphonenumber
     = [
         {
-            "nameoflession": "Bài 7: Số điện thoại của bạn? -- what is your number?",
+            "nameoflession": "Bài 7: Số điện thoại của bạn? -- What is your number?",
             "huongdan": "Tìm thông tin số điện thoại người đối thoại?",
             "srcYoutube": "",
             "hoctap": [

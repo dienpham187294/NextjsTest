@@ -6,6 +6,9 @@ import Howoldareyou from "./4Howoldareyou"
 import Whenisyourbirthday from "./5Whenisyourbirthday"
 import Whatdoyoudo from "./6Whatdoyoudo"
 import Whatisyourphonenumber from "./7Whatisyournumber"
+import Whatlineofwork from "./8Whatlineofwork"
+import Whatcompanydoyouworkfor from "./9Whatcompanydoyouworkfor"
+import Whatrelegion from "./10Whatrelegionareyou"
 const DLTOTAL =
     [
         Whatisyourname,
@@ -15,6 +18,9 @@ const DLTOTAL =
         Whenisyourbirthday,
         Whatdoyoudo,
         Whatisyourphonenumber,
+        Whatlineofwork,
+        Whatcompanydoyouworkfor,
+        Whatrelegion,
         Dulieu_gameMiniSellFruit
     ]
 export default DLTOTAL

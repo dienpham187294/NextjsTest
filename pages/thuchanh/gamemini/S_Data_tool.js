@@ -23,7 +23,7 @@ function Show_Table(Data, Total) {
                     <div
                         key={indexeee}
                         onClick={() => {
-                            Total.stObj.inputSumit += " " + eee[e.indexToSubmit];
+                            Total.stObj.inputSumit += "//" + eee[e.indexToSubmit];
                             Total.fnObj.Submit_Show_OnePeopeAppear_ReactData(Total.stObj.inputSumit)
                             // console.log(eee[e.indexToSubmit])
                         }}

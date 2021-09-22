@@ -45,7 +45,7 @@ export default function Lesson(props) {
                         onClick={() => {
                             props.Total.fnObj.SET_PageChange(0);
                             try {
-                                $("#idStopLisening").click()
+                                $("#idStopLisening")[0].click()
                             } catch (error) {
 
                             }

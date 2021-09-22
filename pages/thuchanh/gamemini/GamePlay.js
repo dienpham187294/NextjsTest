@@ -183,7 +183,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
 
         try {
             let status = false
-            let n = e.split(" ").slice(-1)[0]
+            let n = e.split("//").slice(-1)[0]
             // console.log([0].indexOf("Elizabeth"))
             data.total.submit.forEach(e => {
                 if (e.includes(n)) {
@@ -216,16 +216,19 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                 })
 
                 if (status_check_submit) {
-                    Data_temp_Strickmode = (data.end.handling_next);
-                    let arrTemp = []
-                    data.end.handling_next.forEach(e => {
-                        e.manspeak.forEach(ee => {
-                            arrTemp.push(ee)
+                    if (data.end !== null) {
+                        Data_temp_Strickmode = (data.end.handling_next);
+                        let arrTemp = []
+                        data.end.handling_next.forEach(e => {
+                            e.manspeak.forEach(ee => {
+                                arrTemp.push(ee)
+                            })
                         })
-                    })
-                    SET_Info_StrickAnwers_Reactdata(arrTemp);
-                    $("#complete").html("<h4>Hoàn thành chọn đáp án!</h4>")
-
+                        SET_Info_StrickAnwers_Reactdata(arrTemp);
+                        $("#complete").html("<h4>Hoàn thành chọn đáp án!</h4>")
+                    } else {
+                        Submit_check_funtion_indata({ end_successfull: true })
+                    }
                 }
             })
         } catch (error) {

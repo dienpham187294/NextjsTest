@@ -121,8 +121,6 @@ function ConvertFileToObject(GameData) {
         Numberpickeachone = 1
     }
 
-
-
     let ARRRES = []
     GameData.forEach(e => {
         let i = e.DataInput.length - Numberpickeachone - 1;
