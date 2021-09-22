@@ -4,8 +4,24 @@ import ReadMessage from "../Read/ReadMessage"
 export default function Show_tienganhphothong_phanbaihoc({ Data_Learn, SET_Data_Learn, Data_Commands, SET_Data_Commands, Docthu, SET_Docthu, md_img }) {
 
     return (
-        <div className="text-justify">
-
+        <div
+            style={{
+                position: "fixed",
+                top: "0px",
+                bottom: "0px",
+                left: "0px",
+                right: "0px",
+                border: "5px solid green",
+                borderRadius: "10px",
+                backgroundColor: "white",
+                textAlign: 'justify',
+                overflowX: "hidden",
+                overflowY: "auto"
+            }}
+            className="text-justify">
+            <br />
+            <br />
+            <br />
             <div style={{ width: "100%", backgroundColor: "#ecf5d5", padding: "5px" }}>
                 <h3> {Data_Learn.EN}</h3>
                 <h3> {Data_Learn.VN}</h3>
@@ -105,9 +121,36 @@ export default function Show_tienganhphothong_phanbaihoc({ Data_Learn, SET_Data_
                 <i> nếu máy ngưng nhận giọng nói.</i>
             </div>
             <hr />
+
+
+            <div style={{
+                position: "fixed",
+                top: "20px",
+                width: "100%",
+                backgroundColor: "gray"
+            }}>
+                <button
+                    className="btn btn-warning"
+                    onClick={() => {
+                        SET_Data_Learn("");
+                        SET_Docthu("");
+                        $("#ID_ShowTiengAnh").scrollTop(150)
+                        document.getElementById("BUTTON_CLICK_TO_STOP_TALK").click();
+                    }}
+                >Chọn câu khác.</button>
+                <button
+                    className="btn btn-warning ml-2"
+                    onClick={() => {
+                        try {
+                            $("#Btn_nextDatalearn").click()
+                        } catch (error) {
+                            console.log(error)
+                        }
+                    }}
+                >Câu tiếp.</button>
+            </div>
             <button
                 className="btn btn-warning"
-                style={{ fontSize: "larger", padding: "20px" }}
                 onClick={() => {
                     SET_Data_Learn("");
                     SET_Docthu("");
@@ -117,7 +160,6 @@ export default function Show_tienganhphothong_phanbaihoc({ Data_Learn, SET_Data_
             >Chọn câu khác.</button>
             <button
                 className="btn btn-warning ml-2"
-                style={{ fontSize: "larger", padding: "20px" }}
                 onClick={() => {
                     try {
                         $("#Btn_nextDatalearn").click()

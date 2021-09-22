@@ -1,8 +1,5 @@
 import Dulieu_hocphatam from "../filedulieu/Dulieu_hocphatam"
-
 export default function Show_tienganhphothong_hocphatam() {
-
-
     return (<div>
         <h4 style={{ color: "blue" }}>Học về cách phát âm.</h4>
 

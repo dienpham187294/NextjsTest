@@ -86,17 +86,15 @@ function UpLoadFile(props) {
                         right: "5px",
                         textAlign: "center",
                         backgroundColor: "white",
-                        opacity: "0.9"
                     }}
                 >
                     <button className="btn btn-danger" onClick={() => { SET_SrcYoutube("") }}>Thoát</button>
                     <hr />
-                    <iframe width="560" height="315"
-                        src={srcYoutube}
-                        title="YouTube video player" frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen>
-                    </iframe>
+
+
+                    <div class="respondiframe">
+                        <iframe class="responsive-iframe" src={srcYoutube}></iframe>
+                    </div>
                 </div>
                 : null}
         </div>
