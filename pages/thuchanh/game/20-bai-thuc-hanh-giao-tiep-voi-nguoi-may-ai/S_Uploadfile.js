@@ -59,6 +59,9 @@ function RandomInt(min, max) {
 }
 
 function ConvertFileToObject(GameData) {
+  
+
+
     let Numberofelementwanttopick
     let Numberpickeachone
     if (GameData.length <= 30) {
@@ -69,9 +72,6 @@ function ConvertFileToObject(GameData) {
         Numberofelementwanttopick = GameData.length;
         Numberpickeachone = 1
     }
-
-
-
     let ARRRES = []
     GameData.forEach(e => {
         let i = e.DataInput.length - Numberpickeachone - 1;
@@ -87,7 +87,6 @@ function ConvertFileToObject(GameData) {
             eeee.forEach((ee, index) => {
                 arrTextTemp[index + 1] = arrTextTemp[index].split(e.ArrToReplace[index]).join(ee)
             })
-
             ARRRES.push(JSON.parse(arrTextTemp[arrTextTemp.length - 1]))
         });
 

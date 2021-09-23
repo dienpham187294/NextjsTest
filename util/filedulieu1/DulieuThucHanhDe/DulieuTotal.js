@@ -9,6 +9,12 @@ import Whatisyourphonenumber from "./7Whatisyournumber"
 import Whatlineofwork from "./8Whatlineofwork"
 import Whatcompanydoyouworkfor from "./9Whatcompanydoyouworkfor"
 import Whatrelegion from "./10Whatrelegionareyou"
+import Whatmaritalstatus from "./11Maritalstatus"
+import Doyouhaveboyfriend from "./12Doyouhaveboyfriend"
+import Howmanychildren from "./13Howmanychildrendoyouwant"
+import Howmamysiblings from "./14Howmaynysiblingsdoyouhave"
+import Whodoyoulivewith from "./15Whodoyoulivewith"
+import Whattimedoyougetup from "./16Whattimedoyougetup"
 const DLTOTAL =
     [
         Whatisyourname,
@@ -21,6 +27,12 @@ const DLTOTAL =
         Whatlineofwork,
         Whatcompanydoyouworkfor,
         Whatrelegion,
+        Whatmaritalstatus,
+        Doyouhaveboyfriend,
+        Howmanychildren,
+        Howmamysiblings,
+        Whodoyoulivewith,
+        Whattimedoyougetup,
         Dulieu_gameMiniSellFruit
     ]
 export default DLTOTAL

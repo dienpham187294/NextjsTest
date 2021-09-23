@@ -1,0 +1,58 @@
+{
+    "total": {
+        "image": "https://i.postimg.cc/hjmdPVwm/man3.jpg",
+        "status": true,
+        "gender": "male",
+        "submit": [
+            [
+                "Alone"
+            ]
+        ],
+        "submitsyntax": [
+            [
+                "Tình trạng: "
+            ]
+        ],
+        "robotspeakfirst": [
+            "Hi",
+            "Hello"
+        ]
+    },
+    "begin": {
+        "handling_next": [
+            {
+                "manspeak": [
+                    "hi"
+                ],
+                "robotspeak": [
+                    "I’m not dating anyone"
+                ],
+                "icon": "",
+                "function": {
+                    "end_successfull": false,
+                    "end_unsuccessfull": false
+                },
+                "handling_next": []
+            }
+        ]
+    },
+    "middle": {
+        "handling_next": [
+            {
+                "manspeak": [
+                    "hi"
+                ],
+                "robotspeak": [
+                    "I’m not dating anyone"
+                ],
+                "icon": "",
+                "function": {
+                    "end_successfull": false,
+                    "end_unsuccessfull": false
+                },
+                "handling_next": []
+            }
+        ]
+    },
+    "end": null
+}

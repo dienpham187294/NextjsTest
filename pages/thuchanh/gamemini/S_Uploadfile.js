@@ -108,6 +108,11 @@ function RandomInt(min, max) {
 }
 
 function ConvertFileToObject(GameData) {
+
+
+    // console.log(GameData)
+
+
     let Numberofelementwanttopick
     let Numberpickeachone
     if (GameData.length <= 30) {
@@ -129,13 +134,22 @@ function ConvertFileToObject(GameData) {
         let selected = shuffled.slice(begini, begini + Numberpickeachone);
 
         selected.forEach(eeee => {
+
+
             let TextTemp = JSON.stringify(e.template);
+
+
+
+
+
             let arrTextTemp = [TextTemp]
             eeee.forEach((ee, index) => {
+
                 arrTextTemp[index + 1] = arrTextTemp[index].split(e.ArrToReplace[index]).join(ee)
             })
+            let arrFN = ((arrTextTemp[arrTextTemp.length - 1]).split('"[').join('[').split(']"').join(']').split(`'`).join(`"`))
 
-            ARRRES.push(JSON.parse(arrTextTemp[arrTextTemp.length - 1]))
+            ARRRES.push(JSON.parse(arrFN))
         });
 
     })
