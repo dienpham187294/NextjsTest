@@ -86,6 +86,7 @@ const Whattimedoyougetup
             "hoctap": [
 
             ],
+            "status": "new",
         },
         {
             "coerdataoflession": [

@@ -8,8 +8,10 @@ function UpLoadFile(props) {
     const [srcYoutube, SET_SrcYoutube] = useState("")
 
     function Fnpick(arrPick) {
-        try {
 
+
+
+        try {
             props.Total.fnObj.SET_Data_InfoOflession(arrPick[0].hoctap)
             let ArrDataTool = [];
             arrPick[1].coerdataoflession.forEach(eee => {
@@ -27,7 +29,7 @@ function UpLoadFile(props) {
                 GameData.push({ "template": eee.template, "ArrToReplace": eee.ArrToReplace, "DataInput": eee.DataInput })
             });
 
-            props.Total.fnObj.SET_Data_Game(ConvertFileToObject(GameData))
+            props.Total.fnObj.SET_Data_Game(ConvertFileToObject(GameData, arrPick[0].status))
 
             props.Total.fnObj.SET_PageChange(1);
             props.Total.fnObj.SET_huongdan(arrPick[0].huongdan)
@@ -107,12 +109,8 @@ function RandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-function ConvertFileToObject(GameData) {
-
-
+function ConvertFileToObject(GameData, status) {
     // console.log(GameData)
-
-
     let Numberofelementwanttopick
     let Numberpickeachone
     if (GameData.length <= 30) {
@@ -132,24 +130,25 @@ function ConvertFileToObject(GameData) {
         const shuffled = e.DataInput.sort(() => 0.5 - Math.random());
         // Get sub-array of first n elements after shuffled
         let selected = shuffled.slice(begini, begini + Numberpickeachone);
-
         selected.forEach(eeee => {
-
-
             let TextTemp = JSON.stringify(e.template);
-
-
-
-
-
             let arrTextTemp = [TextTemp]
             eeee.forEach((ee, index) => {
-
                 arrTextTemp[index + 1] = arrTextTemp[index].split(e.ArrToReplace[index]).join(ee)
             })
-            let arrFN = ((arrTextTemp[arrTextTemp.length - 1]).split('"[').join('[').split(']"').join(']').split(`'`).join(`"`))
 
-            ARRRES.push(JSON.parse(arrFN))
+            if (status === "new") {
+                let arrFN = ((arrTextTemp[arrTextTemp.length - 1]).split('"[').join('[').split(']"').join(']').split(`'`).join(`"`))
+
+                ARRRES.push(JSON.parse(arrFN))
+            }
+            else {
+                let arrFN = ((arrTextTemp[arrTextTemp.length - 1]))
+
+                ARRRES.push(JSON.parse(arrFN))
+            }
+
+
         });
 
     })

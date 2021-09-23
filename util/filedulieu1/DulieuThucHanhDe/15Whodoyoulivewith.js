@@ -71,6 +71,7 @@ const Whodoyoulivewith
             "hoctap": [
 
             ],
+            "status": "new",
         },
         {
             "coerdataoflession": [

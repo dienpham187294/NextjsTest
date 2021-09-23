@@ -85,6 +85,8 @@ const Doyouhaveboyfriend
             "hoctap": [
 
             ],
+
+            "status": "new",
         },
         {
             "coerdataoflession": [

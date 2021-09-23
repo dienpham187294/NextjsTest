@@ -64,6 +64,7 @@ const Whatmaritalstatus
             "hoctap": [
 
             ],
+            "status": "new",
         },
         {
             "coerdataoflession": [
