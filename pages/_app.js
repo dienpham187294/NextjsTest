@@ -1,13 +1,13 @@
 
 import '../styles/globals.css'
-import Link from 'next/link'
+// import Link from 'next/link'
 import 'regenerator-runtime/runtime'
-import { getCookie } from "../util/Cookies/functionCookies"
+// import { getCookie } from "../util/Cookies/functionCookies"
 import { useEffect, useState } from 'react';
-import Linkapi from "../util/api/Linkapi"
+// import Linkapi from "../util/api/Linkapi"
 import List_IDs from "../util/List_IDs/List_IDs"
 import Head from "next/head";
-import { async } from 'regenerator-runtime';
+// import { async } from 'regenerator-runtime';
 const { detect } = require('detect-browser');
 const ip = require('ip');
 

@@ -1,6 +1,6 @@
 import Body from "./main/_body"
-import cookies from 'next-cookies'
-import { useEffect, useState } from "react"
+// import cookies from 'next-cookies'
+// import { useEffect, useState } from "react"
 
 function Home() {
   // const [Status, SET_Status] = useState(true)

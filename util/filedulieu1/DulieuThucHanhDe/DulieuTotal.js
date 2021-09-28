@@ -20,6 +20,9 @@ import Whattimedoyouhavebreakfast from "./18What time do you have breakfast"
 import Whattimedoyougotobed from "./19What time do you go to bed"
 import Whatsyourhobby from "./20What’s your hobby"
 import Whatsyourfavoritefood from "./21What’s your favorite food"
+import Whatsyourfavoritecolor from "./22What’s your favorite color"
+import Whatsyourfavoritedrink from "./23What’s your favorite drink"
+import Whatkindsoffilmsdoyoulike from "./24What kinds of films do you like"
 const DLTOTAL =
     [
         Whatisyourname,
@@ -43,6 +46,9 @@ const DLTOTAL =
         Whattimedoyougotobed,
         Whatsyourhobby,
         Whatsyourfavoritefood,
+        Whatsyourfavoritecolor,
+        Whatsyourfavoritedrink,
+        Whatkindsoffilmsdoyoulike,
         Dulieu_gameMiniSellFruit
     ]
 export default DLTOTAL
