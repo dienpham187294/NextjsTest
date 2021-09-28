@@ -52,7 +52,7 @@ function MyApp({ Component, pageProps }) {
   return (<>
 
     <Head>
-      <title>ENGLISH TOOL</title>
+      <title>Thực hành tiếng anh</title>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="description" content="Ericpham Product" />
       <meta name="facebook-domain-verification" content="4v65nvfymyec6nthr2m2l2rbcvo7kp" />
