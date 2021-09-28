@@ -15,6 +15,11 @@ import Howmanychildren from "./13Howmanychildrendoyouwant"
 import Howmamysiblings from "./14Howmaynysiblingsdoyouhave"
 import Whodoyoulivewith from "./15Whodoyoulivewith"
 import Whattimedoyougetup from "./16Whattimedoyougetup"
+import Whendoyoudomorningexercises from "./17When do you do morning exercises"
+import Whattimedoyouhavebreakfast from "./18What time do you have breakfast"
+import Whattimedoyougotobed from "./19What time do you go to bed"
+import Whatsyourhobby from "./20What’s your hobby"
+import Whatsyourfavoritefood from "./21What’s your favorite food"
 const DLTOTAL =
     [
         Whatisyourname,
@@ -33,6 +38,12 @@ const DLTOTAL =
         Howmamysiblings,
         Whodoyoulivewith,
         Whattimedoyougetup,
+        Whendoyoudomorningexercises,
+        Whattimedoyouhavebreakfast,
+        Whattimedoyougotobed,
+        Whatsyourhobby,
+        Whatsyourfavoritefood,
         Dulieu_gameMiniSellFruit
     ]
 export default DLTOTAL
+

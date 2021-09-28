@@ -3,23 +3,23 @@ let ARRp = (JSON.parse(JSON.stringify(ArrPeple)));
 let ArrInput = [
     {
         "input": "5.30am",
-        "robotspeak": ["I usually get up at 5.30am."],
-        "manspeak1": [" What time do you get up?"],
+        "robotspeak": ["I often do morning exercises at 5.30am."],
+        "manspeak1": ["When do you do morning exercises?"],
     },
     {
         "input": "6.30am",
-        "robotspeak": ["I usually get up at 6.30am."],
-        "manspeak1": [" What time do you get up?"],
+        "robotspeak": ["I often do morning exercises at 6.30am."],
+        "manspeak1": ["When do you do morning exercises?"],
     },
     {
         "input": "7.30am",
-        "robotspeak": ["I usually get up at 7.30am."],
-        "manspeak1": [" What time do you get up?"],
+        "robotspeak": ["I often do morning exercises at 7.30am."],
+        "manspeak1": ["When do you do morning exercises?"],
     },
     {
         "input": "8.30am",
-        "robotspeak": ["I usually get up at 8.30am."],
-        "manspeak1": [" What time do you get up?"],
+        "robotspeak": ["I often do morning exercises at 8.30am."],
+        "manspeak1": ["When do you do morning exercises?"],
     },
 
 ]
@@ -68,11 +68,11 @@ function ToArrConverto(arr) {
 function GETRANDOMi(arr) {
     return Math.floor(Math.random() * arr.length);
 }
-const Whattimedoyougetup
+const Whendoyoudomorningexercises
     = [
         {
-            "nameoflession": "Bài 16: Bạn dậy mấy giờ?  -- What time do you get up?",
-            "huongdan": "Tìm thông tin giờ thức giấc của người đối thoại?",
+            "nameoflession": "Bài 17: Bạn tập thể dục lúc mấy giờ?  -- When do you do morning exercises?",
+            "huongdan": "Tìm thông tin giờ tập thể dục của người đối thoại?",
             "srcYoutube": "",
             "hoctap": [
 
@@ -145,7 +145,7 @@ const Whattimedoyougetup
         }
     ]
 
-export default Whattimedoyougetup
+export default Whendoyoudomorningexercises
 
 
 

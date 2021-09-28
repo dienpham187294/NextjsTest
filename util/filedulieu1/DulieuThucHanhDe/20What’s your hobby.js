@@ -2,26 +2,30 @@ import ArrPeple from "./ArrOfpeple"
 let ARRp = (JSON.parse(JSON.stringify(ArrPeple)));
 let ArrInput = [
     {
-        "input": "5.30am",
-        "robotspeak": ["I usually get up at 5.30am."],
-        "manspeak1": [" What time do you get up?"],
+        "input": "football, reading books, skateboarding, swimming.",
+        "robotspeak": [
+            "I like playing football, reading books, skateboarding, swimming.",
+            "I am interested in playing football, reading books, skateboarding, swimming.",
+        ],
+        "manspeak1": ["What’s your hobby?"],
     },
     {
-        "input": "6.30am",
-        "robotspeak": ["I usually get up at 6.30am."],
-        "manspeak1": [" What time do you get up?"],
+        "input": "guitar",
+        "robotspeak": [
+            "I am interested in playing guitar.",
+            "I like playing guitar.",
+        ],
+        "manspeak1": ["What’s your hobby?"],
     },
     {
-        "input": "7.30am",
-        "robotspeak": ["I usually get up at 7.30am."],
-        "manspeak1": [" What time do you get up?"],
-    },
-    {
-        "input": "8.30am",
-        "robotspeak": ["I usually get up at 8.30am."],
-        "manspeak1": [" What time do you get up?"],
-    },
-
+        "input": "listening to music, dancing, playing tennis and collecting coins",
+        "robotspeak": [
+            "My hobbies are listening to music, dancing, playing tennis and collecting coins.",
+            "I like listening to music, dancing, playing tennis and collecting coins.",
+            "I am interested in listening to music, dancing, playing tennis and collecting coins."
+        ],
+        "manspeak1": ["What’s your hobby?"],
+    }
 ]
 
 
@@ -68,11 +72,13 @@ function ToArrConverto(arr) {
 function GETRANDOMi(arr) {
     return Math.floor(Math.random() * arr.length);
 }
-const Whattimedoyougetup
+
+
+const Whatsyourhobby
     = [
         {
-            "nameoflession": "Bài 16: Bạn dậy mấy giờ?  -- What time do you get up?",
-            "huongdan": "Tìm thông tin giờ thức giấc của người đối thoại?",
+            "nameoflession": "Bài 20: Sở thích của bạn là gì?  -- What’s your hobby?",
+            "huongdan": "Tìm thông tin sở thích của người đối thoại?",
             "srcYoutube": "",
             "hoctap": [
 
@@ -94,7 +100,7 @@ const Whattimedoyougetup
                             ],
                             "submitsyntax": [
                                 [
-                                    "Giờ: "
+                                    "Sở thích: "
                                 ]
                             ],
                             "robotspeakfirst": [
@@ -145,7 +151,7 @@ const Whattimedoyougetup
         }
     ]
 
-export default Whattimedoyougetup
+export default Whatsyourhobby
 
 
 
