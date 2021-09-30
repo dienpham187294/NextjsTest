@@ -51,7 +51,7 @@ function GetArr(input) {
             e[4] = 18
         } else {
             e[3] = ArrInput[1].input
-            e[4] = ArrInput[GETRANDOMi(ArrInput)].tuoi
+            e[4] = ArrInput[1].tuoi[GETRANDOMi(ArrInput[1].tuoi)]
         }
     });
     return arrRes
