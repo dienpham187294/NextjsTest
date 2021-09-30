@@ -2,7 +2,7 @@
 
 // import $ from "jquery"
 import { useState } from "react";
-import DL from "../../../util/filedulieu1/DulieuThucHanhDe/DulieuTotal";
+import DL from "../../../util/filedulieu1/DulieuThuchanhLv2/DulieuTotal";
 function UpLoadFile(props) {
 
     const [srcYoutube, SET_SrcYoutube] = useState("")
@@ -10,6 +10,7 @@ function UpLoadFile(props) {
     function Fnpick(arrPick) {
         try {
             props.Total.fnObj.SET_Data_InfoOflession(arrPick[0].hoctap)
+            props.Total.fnObj.SET_DataSupport(arrPick[0])
             let ArrDataTool = [];
             arrPick[1].coerdataoflession.forEach(eee => {
                 if (eee.Tabletool.length > 0) {
@@ -29,6 +30,8 @@ function UpLoadFile(props) {
             props.Total.fnObj.SET_Data_Game(ConvertFileToObject(GameData, arrPick[0].status))
 
             props.Total.fnObj.SET_PageChange(1);
+
+            
             props.Total.fnObj.SET_huongdan(arrPick[0].huongdan)
 
         } catch (error) {
@@ -108,26 +111,26 @@ function RandomInt(min, max) {
 
 function ConvertFileToObject(GameData, status) {
     // console.log(GameData)
-    let Numberofelementwanttopick
-    let Numberpickeachone
-    if (GameData.length <= 30) {
-        Numberofelementwanttopick = 30;
-        let NumberofChance = GameData.length;
-        Numberpickeachone = Math.floor(Numberofelementwanttopick / NumberofChance)
-    } else {
-        Numberofelementwanttopick = GameData.length;
-        Numberpickeachone = 1
-    }
+    // let Numberofelementwanttopick
+    // let Numberpickeachone
+    // if (GameData.length <= 30) {
+    //     Numberofelementwanttopick = 30;
+    //     let NumberofChance = GameData.length;
+    //     Numberpickeachone = Math.floor(Numberofelementwanttopick / NumberofChance)
+    // } else {
+    //     Numberofelementwanttopick = GameData.length;
+    //     Numberpickeachone = 1
+    // }
 
     let ARRRES = []
     GameData.forEach(e => {
-        let i = e.DataInput.length - Numberpickeachone - 1;
-        let begini = RandomInt(0, i);
+        // let i = e.DataInput.length - Numberpickeachone - 1;
+        // let begini = RandomInt(0, i);
 
         const shuffled = e.DataInput.sort(() => 0.5 - Math.random());
         // Get sub-array of first n elements after shuffled
-        let selected = shuffled.slice(begini, begini + Numberpickeachone);
-        selected.forEach(eeee => {
+        // let selected = shuffled.slice(begini, begini + Numberpickeachone);
+        shuffled.forEach(eeee => {
             let TextTemp = JSON.stringify(e.template);
             let arrTextTemp = [TextTemp]
             eeee.forEach((ee, index) => {

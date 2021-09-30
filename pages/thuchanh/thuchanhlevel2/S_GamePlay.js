@@ -1,6 +1,6 @@
 
 import { useEffect, useState } from "react"
-import Dictaphone from "../..//helpers/RegcognitionV1-0-1AI0.5_01"
+import Dictaphone from "../../helpers/RegcognitionV1-0-1AI0.5_01"
 import ArrOfPeopeAppear_ReactJSX from "./GamePlay"
 // import $ from "jquery"
 
@@ -25,13 +25,13 @@ function GamePlay(props) {
 
     return (
         <>
-            <div className="row">
-                <div className="col-md-2 sm-12" style={{ maxHeight: "300px", overflow: "auto" }}>
+            <div>
+                <div style={{ display: "none" }}>
                     <Dictaphone
                         Data={Data_Commands} Total={props.Total}
                     />
                 </div>
-                <div className="col-md-9 sm-12">{
+                <div >{
                     ArrOfPeopeAppear_ReactData !== null ?
                         <ArrOfPeopeAppear_ReactJSX
                             ArrOfPeopeAppear_ReactData={ArrOfPeopeAppear_ReactData}
