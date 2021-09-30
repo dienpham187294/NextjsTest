@@ -371,7 +371,44 @@ function ArrOfPeopeAppear_ReactJSX(props) {
         }
         return null
     }
+
+
+
+    function ShowAllChange() {
+        try {
+            return (
+                props.ArrOfPeopeAppear_ReactData.map((e, i) =>
+                    <div
+                        key={i}
+                        style={{
+                            display: "inline-block",
+                            border: "1px solid green",
+                            borderRadius: "3px",
+                            padding: "10px",
+                            margin: "10px",
+                            cursor: "pointer",
+                            backgroundColor: "yellow"
+                        }}
+                        onClick={() => {
+                            $("#idClickMiniGame")[0].click();
+                            props.Total.stObj.indexOfPeople = i
+                            props.Total.fnObj.AddTo_Show_ArrOfPeopeAppear_ReactData(i)
+                        }
+
+                        }
+                    >
+                        {i}
+                    </div>
+                )
+            )
+        } catch (error) {
+            return null
+        }
+    }
     /*END JUST ONE TO SHOW */
+
+
+
 
 
     return (
@@ -381,29 +418,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
 
                 </div>
                 <div style={{ backgroundColor: "gray" }}>
-                    {props.ArrOfPeopeAppear_ReactData.map((e, i) =>
-                        <div
-                            key={i}
-                            style={{
-                                display: "inline-block",
-                                border: "1px solid green",
-                                borderRadius: "3px",
-                                padding: "10px",
-                                margin: "10px",
-                                cursor: "pointer",
-                                backgroundColor: "yellow"
-                            }}
-                            onClick={() => {
-                                $("#idClickMiniGame")[0].click();
-                                props.Total.stObj.indexOfPeople = i
-                                props.Total.fnObj.AddTo_Show_ArrOfPeopeAppear_ReactData(i)
-                            }
-
-                            }
-                        >
-                            {i}
-                        </div>
-                    )}
+                    {ShowAllChange()}
                 </div>
                 {Show_OnePeopeAppear_ReactData()}
 
