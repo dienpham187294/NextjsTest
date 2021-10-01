@@ -1,58 +1,2192 @@
-{
-    "total": {
-        "image": "https://i.postimg.cc/hjmdPVwm/man3.jpg",
-        "status": true,
-        "gender": "male",
-        "submit": [
-            [
-                "Alone"
+[
+    {
+        "total": {
+            "image": "https://i.postimg.cc/d0pCY5Wv/man1.png",
+            "status": true,
+            "gender": "male",
+            "submit": [
+                [
+                    "Khác"
+                ]
+            ],
+            "submitsyntax": [
+                [
+                    "Đã tìm thấy: "
+                ]
+            ],
+            "robotspeakfirst": [
+                "Hi",
+                "Hello"
             ]
-        ],
-        "submitsyntax": [
-            [
-                "Tình trạng: "
+        },
+        "begin": {
+            "handling_next": [
+                {
+                    "manspeak": [
+                        "Hi, how are you?"
+                    ],
+                    "robotspeak": [
+                        "I'm good",
+                        "Good"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                }
             ]
-        ],
-        "robotspeakfirst": [
-            "Hi",
-            "Hello"
-        ]
-    },
-    "begin": {
-        "handling_next": [
-            {
-                "manspeak": [
-                    "hi"
-                ],
-                "robotspeak": [
-                    "I’m not dating anyone"
-                ],
-                "icon": "",
-                "function": {
-                    "end_successfull": false,
-                    "end_unsuccessfull": false
+        },
+        "middle": {
+            "handling_next": [
+                {
+                    "manspeak": [
+                        "What is your name?"
+                    ],
+                    "robotspeak": [
+                        "My name is Matthew"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
                 },
-                "handling_next": []
-            }
-        ]
+                {
+                    "manspeak": [
+                        "How old are you?"
+                    ],
+                    "robotspeak": [
+                        "I am 29"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                }
+            ]
+        },
+        "end": null
     },
-    "middle": {
-        "handling_next": [
-            {
-                "manspeak": [
-                    "hi"
-                ],
-                "robotspeak": [
-                    "I’m not dating anyone"
-                ],
-                "icon": "",
-                "function": {
-                    "end_successfull": false,
-                    "end_unsuccessfull": false
+    {
+        "total": {
+            "image": "https://i.postimg.cc/tCNFxtgt/women3.jpg",
+            "status": true,
+            "gender": "female",
+            "submit": [
+                [
+                    "Khác"
+                ]
+            ],
+            "submitsyntax": [
+                [
+                    "Đã tìm thấy: "
+                ]
+            ],
+            "robotspeakfirst": [
+                "Hi",
+                "Hello"
+            ]
+        },
+        "begin": {
+            "handling_next": [
+                {
+                    "manspeak": [
+                        "Hi, how are you?"
+                    ],
+                    "robotspeak": [
+                        "I'm good",
+                        "Good"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                }
+            ]
+        },
+        "middle": {
+            "handling_next": [
+                {
+                    "manspeak": [
+                        "What is your name?"
+                    ],
+                    "robotspeak": [
+                        "My name is Betty"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
                 },
-                "handling_next": []
-            }
-        ]
+                {
+                    "manspeak": [
+                        "How old are you?"
+                    ],
+                    "robotspeak": [
+                        "I am 19"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                }
+            ]
+        },
+        "end": null
     },
-    "end": null
-}
+    {
+        "total": {
+            "image": "https://i.postimg.cc/MGvBNCmd/women1.jpg",
+            "status": true,
+            "gender": "female",
+            "submit": [
+                [
+                    "Khác"
+                ]
+            ],
+            "submitsyntax": [
+                [
+                    "Đã tìm thấy: "
+                ]
+            ],
+            "robotspeakfirst": [
+                "Hi",
+                "Hello"
+            ]
+        },
+        "begin": {
+            "handling_next": [
+                {
+                    "manspeak": [
+                        "Hi, how are you?"
+                    ],
+                    "robotspeak": [
+                        "I'm good",
+                        "Good"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                }
+            ]
+        },
+        "middle": {
+            "handling_next": [
+                {
+                    "manspeak": [
+                        "What is your name?"
+                    ],
+                    "robotspeak": [
+                        "My name is Nancy"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                },
+                {
+                    "manspeak": [
+                        "How old are you?"
+                    ],
+                    "robotspeak": [
+                        "I am 22"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                }
+            ]
+        },
+        "end": null
+    },
+    {
+        "total": {
+            "image": "https://i.postimg.cc/hjmdPVwm/man3.jpg",
+            "status": true,
+            "gender": "male",
+            "submit": [
+                [
+                    "Khác"
+                ]
+            ],
+            "submitsyntax": [
+                [
+                    "Đã tìm thấy: "
+                ]
+            ],
+            "robotspeakfirst": [
+                "Hi",
+                "Hello"
+            ]
+        },
+        "begin": {
+            "handling_next": [
+                {
+                    "manspeak": [
+                        "Hi, how are you?"
+                    ],
+                    "robotspeak": [
+                        "I'm good",
+                        "Good"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                }
+            ]
+        },
+        "middle": {
+            "handling_next": [
+                {
+                    "manspeak": [
+                        "What is your name?"
+                    ],
+                    "robotspeak": [
+                        "My name is Joshua"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                },
+                {
+                    "manspeak": [
+                        "How old are you?"
+                    ],
+                    "robotspeak": [
+                        "I am 23"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                }
+            ]
+        },
+        "end": null
+    },
+    {
+        "total": {
+            "image": "https://i.postimg.cc/Jz7ZcDDw/women5.jpg",
+            "status": true,
+            "gender": "female",
+            "submit": [
+                [
+                    "Khác"
+                ]
+            ],
+            "submitsyntax": [
+                [
+                    "Đã tìm thấy: "
+                ]
+            ],
+            "robotspeakfirst": [
+                "Hi",
+                "Hello"
+            ]
+        },
+        "begin": {
+            "handling_next": [
+                {
+                    "manspeak": [
+                        "Hi, how are you?"
+                    ],
+                    "robotspeak": [
+                        "I'm good",
+                        "Good"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                }
+            ]
+        },
+        "middle": {
+            "handling_next": [
+                {
+                    "manspeak": [
+                        "What is your name?"
+                    ],
+                    "robotspeak": [
+                        "My name is Karen"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                },
+                {
+                    "manspeak": [
+                        "How old are you?"
+                    ],
+                    "robotspeak": [
+                        "I am 23"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                }
+            ]
+        },
+        "end": null
+    },
+    {
+        "total": {
+            "image": "https://i.postimg.cc/mgdMdLCP/man5.png",
+            "status": true,
+            "gender": "male",
+            "submit": [
+                [
+                    "Khác"
+                ]
+            ],
+            "submitsyntax": [
+                [
+                    "Đã tìm thấy: "
+                ]
+            ],
+            "robotspeakfirst": [
+                "Hi",
+                "Hello"
+            ]
+        },
+        "begin": {
+            "handling_next": [
+                {
+                    "manspeak": [
+                        "Hi, how are you?"
+                    ],
+                    "robotspeak": [
+                        "I'm good",
+                        "Good"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                }
+            ]
+        },
+        "middle": {
+            "handling_next": [
+                {
+                    "manspeak": [
+                        "What is your name?"
+                    ],
+                    "robotspeak": [
+                        "My name is William"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                },
+                {
+                    "manspeak": [
+                        "How old are you?"
+                    ],
+                    "robotspeak": [
+                        "I am 21"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                }
+            ]
+        },
+        "end": null
+    },
+    {
+        "total": {
+            "image": "https://i.postimg.cc/mgdMdLCP/man5.png",
+            "status": true,
+            "gender": "male",
+            "submit": [
+                [
+                    "Khác"
+                ]
+            ],
+            "submitsyntax": [
+                [
+                    "Đã tìm thấy: "
+                ]
+            ],
+            "robotspeakfirst": [
+                "Hi",
+                "Hello"
+            ]
+        },
+        "begin": {
+            "handling_next": [
+                {
+                    "manspeak": [
+                        "Hi, how are you?"
+                    ],
+                    "robotspeak": [
+                        "I'm good",
+                        "Good"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                }
+            ]
+        },
+        "middle": {
+            "handling_next": [
+                {
+                    "manspeak": [
+                        "What is your name?"
+                    ],
+                    "robotspeak": [
+                        "My name is Charles"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                },
+                {
+                    "manspeak": [
+                        "How old are you?"
+                    ],
+                    "robotspeak": [
+                        "I am 20"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                }
+            ]
+        },
+        "end": null
+    },
+    {
+        "total": {
+            "image": "https://i.postimg.cc/02spjH9y/women4.jpg",
+            "status": true,
+            "gender": "female",
+            "submit": [
+                [
+                    "Khác"
+                ]
+            ],
+            "submitsyntax": [
+                [
+                    "Đã tìm thấy: "
+                ]
+            ],
+            "robotspeakfirst": [
+                "Hi",
+                "Hello"
+            ]
+        },
+        "begin": {
+            "handling_next": [
+                {
+                    "manspeak": [
+                        "Hi, how are you?"
+                    ],
+                    "robotspeak": [
+                        "I'm good",
+                        "Good"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                }
+            ]
+        },
+        "middle": {
+            "handling_next": [
+                {
+                    "manspeak": [
+                        "What is your name?"
+                    ],
+                    "robotspeak": [
+                        "My name is Sarah"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                },
+                {
+                    "manspeak": [
+                        "How old are you?"
+                    ],
+                    "robotspeak": [
+                        "I am 25"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                }
+            ]
+        },
+        "end": null
+    },
+    {
+        "total": {
+            "image": "https://i.postimg.cc/Jz7ZcDDw/women5.jpg",
+            "status": true,
+            "gender": "female",
+            "submit": [
+                [
+                    "Khác"
+                ]
+            ],
+            "submitsyntax": [
+                [
+                    "Đã tìm thấy: "
+                ]
+            ],
+            "robotspeakfirst": [
+                "Hi",
+                "Hello"
+            ]
+        },
+        "begin": {
+            "handling_next": [
+                {
+                    "manspeak": [
+                        "Hi, how are you?"
+                    ],
+                    "robotspeak": [
+                        "I'm good",
+                        "Good"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                }
+            ]
+        },
+        "middle": {
+            "handling_next": [
+                {
+                    "manspeak": [
+                        "What is your name?"
+                    ],
+                    "robotspeak": [
+                        "My name is Michelle"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                },
+                {
+                    "manspeak": [
+                        "How old are you?"
+                    ],
+                    "robotspeak": [
+                        "I am 22"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                }
+            ]
+        },
+        "end": null
+    },
+    {
+        "total": {
+            "image": "https://i.postimg.cc/wMKDhwJF/women2.png",
+            "status": true,
+            "gender": "female",
+            "submit": [
+                [
+                    "Khác"
+                ]
+            ],
+            "submitsyntax": [
+                [
+                    "Đã tìm thấy: "
+                ]
+            ],
+            "robotspeakfirst": [
+                "Hi",
+                "Hello"
+            ]
+        },
+        "begin": {
+            "handling_next": [
+                {
+                    "manspeak": [
+                        "Hi, how are you?"
+                    ],
+                    "robotspeak": [
+                        "I'm good",
+                        "Good"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                }
+            ]
+        },
+        "middle": {
+            "handling_next": [
+                {
+                    "manspeak": [
+                        "What is your name?"
+                    ],
+                    "robotspeak": [
+                        "My name is Kimberly"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                },
+                {
+                    "manspeak": [
+                        "How old are you?"
+                    ],
+                    "robotspeak": [
+                        "I am 25"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                }
+            ]
+        },
+        "end": null
+    },
+    {
+        "total": {
+            "image": "https://i.postimg.cc/tCNFxtgt/women3.jpg",
+            "status": true,
+            "gender": "female",
+            "submit": [
+                [
+                    "Khác"
+                ]
+            ],
+            "submitsyntax": [
+                [
+                    "Đã tìm thấy: "
+                ]
+            ],
+            "robotspeakfirst": [
+                "Hi",
+                "Hello"
+            ]
+        },
+        "begin": {
+            "handling_next": [
+                {
+                    "manspeak": [
+                        "Hi, how are you?"
+                    ],
+                    "robotspeak": [
+                        "I'm good",
+                        "Good"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                }
+            ]
+        },
+        "middle": {
+            "handling_next": [
+                {
+                    "manspeak": [
+                        "What is your name?"
+                    ],
+                    "robotspeak": [
+                        "My name is Jessica"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                },
+                {
+                    "manspeak": [
+                        "How old are you?"
+                    ],
+                    "robotspeak": [
+                        "I am 30"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                }
+            ]
+        },
+        "end": null
+    },
+    {
+        "total": {
+            "image": "https://i.postimg.cc/MGvBNCmd/women1.jpg",
+            "status": true,
+            "gender": "female",
+            "submit": [
+                [
+                    "Khác"
+                ]
+            ],
+            "submitsyntax": [
+                [
+                    "Đã tìm thấy: "
+                ]
+            ],
+            "robotspeakfirst": [
+                "Hi",
+                "Hello"
+            ]
+        },
+        "begin": {
+            "handling_next": [
+                {
+                    "manspeak": [
+                        "Hi, how are you?"
+                    ],
+                    "robotspeak": [
+                        "I'm good",
+                        "Good"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                }
+            ]
+        },
+        "middle": {
+            "handling_next": [
+                {
+                    "manspeak": [
+                        "What is your name?"
+                    ],
+                    "robotspeak": [
+                        "My name is Dorothy"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                },
+                {
+                    "manspeak": [
+                        "How old are you?"
+                    ],
+                    "robotspeak": [
+                        "I am 22"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                }
+            ]
+        },
+        "end": null
+    },
+    {
+        "total": {
+            "image": "https://i.postimg.cc/J7JN1WVF/man4.png",
+            "status": true,
+            "gender": "male",
+            "submit": [
+                [
+                    "Khác"
+                ]
+            ],
+            "submitsyntax": [
+                [
+                    "Đã tìm thấy: "
+                ]
+            ],
+            "robotspeakfirst": [
+                "Hi",
+                "Hello"
+            ]
+        },
+        "begin": {
+            "handling_next": [
+                {
+                    "manspeak": [
+                        "Hi, how are you?"
+                    ],
+                    "robotspeak": [
+                        "I'm good",
+                        "Good"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                }
+            ]
+        },
+        "middle": {
+            "handling_next": [
+                {
+                    "manspeak": [
+                        "What is your name?"
+                    ],
+                    "robotspeak": [
+                        "My name is Michael"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                },
+                {
+                    "manspeak": [
+                        "How old are you?"
+                    ],
+                    "robotspeak": [
+                        "I am 25"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                }
+            ]
+        },
+        "end": null
+    },
+    {
+        "total": {
+            "image": "https://i.postimg.cc/MGvBNCmd/women1.jpg",
+            "status": true,
+            "gender": "female",
+            "submit": [
+                [
+                    "Khác"
+                ]
+            ],
+            "submitsyntax": [
+                [
+                    "Đã tìm thấy: "
+                ]
+            ],
+            "robotspeakfirst": [
+                "Hi",
+                "Hello"
+            ]
+        },
+        "begin": {
+            "handling_next": [
+                {
+                    "manspeak": [
+                        "Hi, how are you?"
+                    ],
+                    "robotspeak": [
+                        "I'm good",
+                        "Good"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                }
+            ]
+        },
+        "middle": {
+            "handling_next": [
+                {
+                    "manspeak": [
+                        "What is your name?"
+                    ],
+                    "robotspeak": [
+                        "My name is Ashley"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                },
+                {
+                    "manspeak": [
+                        "How old are you?"
+                    ],
+                    "robotspeak": [
+                        "I am 19"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                }
+            ]
+        },
+        "end": null
+    },
+    {
+        "total": {
+            "image": "https://i.postimg.cc/SRWCVcf4/man2.png",
+            "status": true,
+            "gender": "male",
+            "submit": [
+                [
+                    "Khác"
+                ]
+            ],
+            "submitsyntax": [
+                [
+                    "Đã tìm thấy: "
+                ]
+            ],
+            "robotspeakfirst": [
+                "Hi",
+                "Hello"
+            ]
+        },
+        "begin": {
+            "handling_next": [
+                {
+                    "manspeak": [
+                        "Hi, how are you?"
+                    ],
+                    "robotspeak": [
+                        "I'm good",
+                        "Good"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                }
+            ]
+        },
+        "middle": {
+            "handling_next": [
+                {
+                    "manspeak": [
+                        "What is your name?"
+                    ],
+                    "robotspeak": [
+                        "My name is Anthony"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                },
+                {
+                    "manspeak": [
+                        "How old are you?"
+                    ],
+                    "robotspeak": [
+                        "I am 25"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                }
+            ]
+        },
+        "end": null
+    },
+    {
+        "total": {
+            "image": "https://i.postimg.cc/hjmdPVwm/man3.jpg",
+            "status": true,
+            "gender": "male",
+            "submit": [
+                [
+                    "Khác"
+                ]
+            ],
+            "submitsyntax": [
+                [
+                    "Đã tìm thấy: "
+                ]
+            ],
+            "robotspeakfirst": [
+                "Hi",
+                "Hello"
+            ]
+        },
+        "begin": {
+            "handling_next": [
+                {
+                    "manspeak": [
+                        "Hi, how are you?"
+                    ],
+                    "robotspeak": [
+                        "I'm good",
+                        "Good"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                }
+            ]
+        },
+        "middle": {
+            "handling_next": [
+                {
+                    "manspeak": [
+                        "What is your name?"
+                    ],
+                    "robotspeak": [
+                        "My name is John"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                },
+                {
+                    "manspeak": [
+                        "How old are you?"
+                    ],
+                    "robotspeak": [
+                        "I am 26"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                }
+            ]
+        },
+        "end": null
+    },
+    {
+        "total": {
+            "image": "https://i.postimg.cc/d0pCY5Wv/man1.png",
+            "status": true,
+            "gender": "male",
+            "submit": [
+                [
+                    "Khác"
+                ]
+            ],
+            "submitsyntax": [
+                [
+                    "Đã tìm thấy: "
+                ]
+            ],
+            "robotspeakfirst": [
+                "Hi",
+                "Hello"
+            ]
+        },
+        "begin": {
+            "handling_next": [
+                {
+                    "manspeak": [
+                        "Hi, how are you?"
+                    ],
+                    "robotspeak": [
+                        "I'm good",
+                        "Good"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                }
+            ]
+        },
+        "middle": {
+            "handling_next": [
+                {
+                    "manspeak": [
+                        "What is your name?"
+                    ],
+                    "robotspeak": [
+                        "My name is David"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                },
+                {
+                    "manspeak": [
+                        "How old are you?"
+                    ],
+                    "robotspeak": [
+                        "I am 25"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                }
+            ]
+        },
+        "end": null
+    },
+    {
+        "total": {
+            "image": "https://i.postimg.cc/d0pCY5Wv/man1.png",
+            "status": true,
+            "gender": "male",
+            "submit": [
+                [
+                    "Khác"
+                ]
+            ],
+            "submitsyntax": [
+                [
+                    "Đã tìm thấy: "
+                ]
+            ],
+            "robotspeakfirst": [
+                "Hi",
+                "Hello"
+            ]
+        },
+        "begin": {
+            "handling_next": [
+                {
+                    "manspeak": [
+                        "Hi, how are you?"
+                    ],
+                    "robotspeak": [
+                        "I'm good",
+                        "Good"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                }
+            ]
+        },
+        "middle": {
+            "handling_next": [
+                {
+                    "manspeak": [
+                        "What is your name?"
+                    ],
+                    "robotspeak": [
+                        "My name is Christopher"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                },
+                {
+                    "manspeak": [
+                        "How old are you?"
+                    ],
+                    "robotspeak": [
+                        "I am 29"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                }
+            ]
+        },
+        "end": null
+    },
+    {
+        "total": {
+            "image": "https://i.postimg.cc/mgdMdLCP/man5.png",
+            "status": true,
+            "gender": "male",
+            "submit": [
+                [
+                    "Khác"
+                ]
+            ],
+            "submitsyntax": [
+                [
+                    "Đã tìm thấy: "
+                ]
+            ],
+            "robotspeakfirst": [
+                "Hi",
+                "Hello"
+            ]
+        },
+        "begin": {
+            "handling_next": [
+                {
+                    "manspeak": [
+                        "Hi, how are you?"
+                    ],
+                    "robotspeak": [
+                        "I'm good",
+                        "Good"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                }
+            ]
+        },
+        "middle": {
+            "handling_next": [
+                {
+                    "manspeak": [
+                        "What is your name?"
+                    ],
+                    "robotspeak": [
+                        "My name is Steven"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                },
+                {
+                    "manspeak": [
+                        "How old are you?"
+                    ],
+                    "robotspeak": [
+                        "I am 21"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                }
+            ]
+        },
+        "end": null
+    },
+    {
+        "total": {
+            "image": "https://i.postimg.cc/d0pCY5Wv/man1.png",
+            "status": true,
+            "gender": "male",
+            "submit": [
+                [
+                    "Khác"
+                ]
+            ],
+            "submitsyntax": [
+                [
+                    "Đã tìm thấy: "
+                ]
+            ],
+            "robotspeakfirst": [
+                "Hi",
+                "Hello"
+            ]
+        },
+        "begin": {
+            "handling_next": [
+                {
+                    "manspeak": [
+                        "Hi, how are you?"
+                    ],
+                    "robotspeak": [
+                        "I'm good",
+                        "Good"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                }
+            ]
+        },
+        "middle": {
+            "handling_next": [
+                {
+                    "manspeak": [
+                        "What is your name?"
+                    ],
+                    "robotspeak": [
+                        "My name is James"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                },
+                {
+                    "manspeak": [
+                        "How old are you?"
+                    ],
+                    "robotspeak": [
+                        "I am 23"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                }
+            ]
+        },
+        "end": null
+    },
+    {
+        "total": {
+            "image": "https://i.postimg.cc/J7JN1WVF/man4.png",
+            "status": true,
+            "gender": "male",
+            "submit": [
+                [
+                    "Khác"
+                ]
+            ],
+            "submitsyntax": [
+                [
+                    "Đã tìm thấy: "
+                ]
+            ],
+            "robotspeakfirst": [
+                "Hi",
+                "Hello"
+            ]
+        },
+        "begin": {
+            "handling_next": [
+                {
+                    "manspeak": [
+                        "Hi, how are you?"
+                    ],
+                    "robotspeak": [
+                        "I'm good",
+                        "Good"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                }
+            ]
+        },
+        "middle": {
+            "handling_next": [
+                {
+                    "manspeak": [
+                        "What is your name?"
+                    ],
+                    "robotspeak": [
+                        "My name is Kenneth"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                },
+                {
+                    "manspeak": [
+                        "How old are you?"
+                    ],
+                    "robotspeak": [
+                        "I am 30"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                }
+            ]
+        },
+        "end": null
+    },
+    {
+        "total": {
+            "image": "https://i.postimg.cc/hjmdPVwm/man3.jpg",
+            "status": true,
+            "gender": "male",
+            "submit": [
+                [
+                    "Khác"
+                ]
+            ],
+            "submitsyntax": [
+                [
+                    "Đã tìm thấy: "
+                ]
+            ],
+            "robotspeakfirst": [
+                "Hi",
+                "Hello"
+            ]
+        },
+        "begin": {
+            "handling_next": [
+                {
+                    "manspeak": [
+                        "Hi, how are you?"
+                    ],
+                    "robotspeak": [
+                        "I'm good",
+                        "Good"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                }
+            ]
+        },
+        "middle": {
+            "handling_next": [
+                {
+                    "manspeak": [
+                        "What is your name?"
+                    ],
+                    "robotspeak": [
+                        "My name is Joseph"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                },
+                {
+                    "manspeak": [
+                        "How old are you?"
+                    ],
+                    "robotspeak": [
+                        "I am 27"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                }
+            ]
+        },
+        "end": null
+    },
+    {
+        "total": {
+            "image": "https://i.postimg.cc/J7JN1WVF/man4.png",
+            "status": true,
+            "gender": "male",
+            "submit": [
+                [
+                    "Khác"
+                ]
+            ],
+            "submitsyntax": [
+                [
+                    "Đã tìm thấy: "
+                ]
+            ],
+            "robotspeakfirst": [
+                "Hi",
+                "Hello"
+            ]
+        },
+        "begin": {
+            "handling_next": [
+                {
+                    "manspeak": [
+                        "Hi, how are you?"
+                    ],
+                    "robotspeak": [
+                        "I'm good",
+                        "Good"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                }
+            ]
+        },
+        "middle": {
+            "handling_next": [
+                {
+                    "manspeak": [
+                        "What is your name?"
+                    ],
+                    "robotspeak": [
+                        "My name is Donald"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                },
+                {
+                    "manspeak": [
+                        "How old are you?"
+                    ],
+                    "robotspeak": [
+                        "I am 24"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                }
+            ]
+        },
+        "end": null
+    },
+    {
+        "total": {
+            "image": "https://i.postimg.cc/02spjH9y/women4.jpg",
+            "status": true,
+            "gender": "female",
+            "submit": [
+                [
+                    "Khác"
+                ]
+            ],
+            "submitsyntax": [
+                [
+                    "Đã tìm thấy: "
+                ]
+            ],
+            "robotspeakfirst": [
+                "Hi",
+                "Hello"
+            ]
+        },
+        "begin": {
+            "handling_next": [
+                {
+                    "manspeak": [
+                        "Hi, how are you?"
+                    ],
+                    "robotspeak": [
+                        "I'm good",
+                        "Good"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                }
+            ]
+        },
+        "middle": {
+            "handling_next": [
+                {
+                    "manspeak": [
+                        "What is your name?"
+                    ],
+                    "robotspeak": [
+                        "My name is Margaret"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                },
+                {
+                    "manspeak": [
+                        "How old are you?"
+                    ],
+                    "robotspeak": [
+                        "I am 26"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                }
+            ]
+        },
+        "end": null
+    },
+    {
+        "total": {
+            "image": "https://i.postimg.cc/Jz7ZcDDw/women5.jpg",
+            "status": true,
+            "gender": "female",
+            "submit": [
+                [
+                    "Khác"
+                ]
+            ],
+            "submitsyntax": [
+                [
+                    "Đã tìm thấy: "
+                ]
+            ],
+            "robotspeakfirst": [
+                "Hi",
+                "Hello"
+            ]
+        },
+        "begin": {
+            "handling_next": [
+                {
+                    "manspeak": [
+                        "Hi, how are you?"
+                    ],
+                    "robotspeak": [
+                        "I'm good",
+                        "Good"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                }
+            ]
+        },
+        "middle": {
+            "handling_next": [
+                {
+                    "manspeak": [
+                        "What is your name?"
+                    ],
+                    "robotspeak": [
+                        "My name is Elizabeth"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                },
+                {
+                    "manspeak": [
+                        "How old are you?"
+                    ],
+                    "robotspeak": [
+                        "I am 20"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                }
+            ]
+        },
+        "end": null
+    },
+    {
+        "total": {
+            "image": "https://i.postimg.cc/MGvBNCmd/women1.jpg",
+            "status": true,
+            "gender": "female",
+            "submit": [
+                [
+                    "Khác"
+                ]
+            ],
+            "submitsyntax": [
+                [
+                    "Đã tìm thấy: "
+                ]
+            ],
+            "robotspeakfirst": [
+                "Hi",
+                "Hello"
+            ]
+        },
+        "begin": {
+            "handling_next": [
+                {
+                    "manspeak": [
+                        "Hi, how are you?"
+                    ],
+                    "robotspeak": [
+                        "I'm good",
+                        "Good"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                }
+            ]
+        },
+        "middle": {
+            "handling_next": [
+                {
+                    "manspeak": [
+                        "What is your name?"
+                    ],
+                    "robotspeak": [
+                        "My name is Barbara"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                },
+                {
+                    "manspeak": [
+                        "How old are you?"
+                    ],
+                    "robotspeak": [
+                        "I am 30"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                }
+            ]
+        },
+        "end": null
+    },
+    {
+        "total": {
+            "image": "https://i.postimg.cc/d0pCY5Wv/man1.png",
+            "status": true,
+            "gender": "male",
+            "submit": [
+                [
+                    "Khác"
+                ]
+            ],
+            "submitsyntax": [
+                [
+                    "Đã tìm thấy: "
+                ]
+            ],
+            "robotspeakfirst": [
+                "Hi",
+                "Hello"
+            ]
+        },
+        "begin": {
+            "handling_next": [
+                {
+                    "manspeak": [
+                        "Hi, how are you?"
+                    ],
+                    "robotspeak": [
+                        "I'm good",
+                        "Good"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                }
+            ]
+        },
+        "middle": {
+            "handling_next": [
+                {
+                    "manspeak": [
+                        "What is your name?"
+                    ],
+                    "robotspeak": [
+                        "My name is Paul"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                },
+                {
+                    "manspeak": [
+                        "How old are you?"
+                    ],
+                    "robotspeak": [
+                        "I am 19"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                }
+            ]
+        },
+        "end": null
+    },
+    {
+        "total": {
+            "image": "https://i.postimg.cc/MGvBNCmd/women1.jpg",
+            "status": true,
+            "gender": "female",
+            "submit": [
+                [
+                    "Khác"
+                ]
+            ],
+            "submitsyntax": [
+                [
+                    "Đã tìm thấy: "
+                ]
+            ],
+            "robotspeakfirst": [
+                "Hi",
+                "Hello"
+            ]
+        },
+        "begin": {
+            "handling_next": [
+                {
+                    "manspeak": [
+                        "Hi, how are you?"
+                    ],
+                    "robotspeak": [
+                        "I'm good",
+                        "Good"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                }
+            ]
+        },
+        "middle": {
+            "handling_next": [
+                {
+                    "manspeak": [
+                        "What is your name?"
+                    ],
+                    "robotspeak": [
+                        "My name is Mary"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                },
+                {
+                    "manspeak": [
+                        "How old are you?"
+                    ],
+                    "robotspeak": [
+                        "I am 19"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                }
+            ]
+        },
+        "end": null
+    },
+    {
+        "total": {
+            "image": "https://i.postimg.cc/d0pCY5Wv/man1.png",
+            "status": true,
+            "gender": "male",
+            "submit": [
+                [
+                    "Khác"
+                ]
+            ],
+            "submitsyntax": [
+                [
+                    "Đã tìm thấy: "
+                ]
+            ],
+            "robotspeakfirst": [
+                "Hi",
+                "Hello"
+            ]
+        },
+        "begin": {
+            "handling_next": [
+                {
+                    "manspeak": [
+                        "Hi, how are you?"
+                    ],
+                    "robotspeak": [
+                        "I'm good",
+                        "Good"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                }
+            ]
+        },
+        "middle": {
+            "handling_next": [
+                {
+                    "manspeak": [
+                        "What is your name?"
+                    ],
+                    "robotspeak": [
+                        "My name is Christopher"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                },
+                {
+                    "manspeak": [
+                        "How old are you?"
+                    ],
+                    "robotspeak": [
+                        "I am 29"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                }
+            ]
+        },
+        "end": null
+    },
+    {
+        "total": {
+            "image": "https://i.postimg.cc/SRWCVcf4/man2.png",
+            "status": true,
+            "gender": "male",
+            "submit": [
+                [
+                    "Khác"
+                ]
+            ],
+            "submitsyntax": [
+                [
+                    "Đã tìm thấy: "
+                ]
+            ],
+            "robotspeakfirst": [
+                "Hi",
+                "Hello"
+            ]
+        },
+        "begin": {
+            "handling_next": [
+                {
+                    "manspeak": [
+                        "Hi, how are you?"
+                    ],
+                    "robotspeak": [
+                        "I'm good",
+                        "Good"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                }
+            ]
+        },
+        "middle": {
+            "handling_next": [
+                {
+                    "manspeak": [
+                        "What is your name?"
+                    ],
+                    "robotspeak": [
+                        "My name is Andrew"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                },
+                {
+                    "manspeak": [
+                        "How old are you?"
+                    ],
+                    "robotspeak": [
+                        "I am 27"
+                    ],
+                    "icon": "",
+                    "function": {
+                        "end_successfull": false,
+                        "end_unsuccessfull": false
+                    },
+                    "handling_next": []
+                }
+            ]
+        },
+        "end": null
+    }
+]
