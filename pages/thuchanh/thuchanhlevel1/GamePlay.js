@@ -11,7 +11,7 @@ let VoicePick = 1;
 let State_of_Anwer = "none";
 let Data_temp_Strickmode;
 let AllData_OfOne;
-
+let iThoigian = 0;
 let interNguoitieptheo, iNguoitieptheo;
 
 function ArrOfPeopeAppear_ReactJSX(props) {
@@ -30,6 +30,11 @@ function ArrOfPeopeAppear_ReactJSX(props) {
     useEffect(
         () => {
             inter()
+            iThoigian = 0
+            setInterval(() => {
+                iThoigian += 1
+                $("#thoigian").text(iThoigian)
+            }, 1000);
             props.Total.stObj.timebegin = Date.now()
             props.Total.stObj.indexOfPeople = 0
             props.Total.fnObj.AddTo_Show_ArrOfPeopeAppear_ReactData = AddTo_Show_ArrOfPeopeAppear_ReactData
@@ -305,7 +310,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                                 <b>Cần hoàn thành: <span style={{ color: "blue" }}>{props.huongdan}</span>   </b> <br /> {showSubmitSyxtax(Info_ToSunmit_Reactdata)}
 
                                 <hr />
-                                <h3> Điểm: {Score} <span style={{ color: "red" }}>Chọn sai: {Sai} </span>  </h3>
+                                <h3> Điểm: {Score} <span style={{ color: "red" }}>Chọn sai: {Sai} </span> <span id="thoigian">0</span>  </h3>
                                 <span id="showInterimID" style={{ color: "red" }}></span>
                                 <br />
                                 <div
@@ -405,6 +410,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                     <h1>Kết thúc!</h1>
                     <h3>Điểm: {Score}</h3>
                     <span style={{ color: "red" }}>Chọn sai: {Sai} </span>
+
                     <p>Thời gian: <span id="time"></span></p>
                     <button
                         className="btn btn-danger"
