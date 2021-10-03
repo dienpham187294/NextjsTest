@@ -30,11 +30,15 @@ function ArrOfPeopeAppear_ReactJSX(props) {
     useEffect(
         () => {
             inter()
-            iThoigian = 0
-            setInterval(() => {
-                iThoigian += 1
-                $("#thoigian").text(iThoigian)
-            }, 1000);
+            if (iThoigian === 0) {
+                iThoigian = 1
+                setInterval(() => {
+                    iThoigian += 1
+                    $("#thoigian").text(iThoigian)
+                }, 1000);
+            } else {
+                iThoigian = 1
+            }
             props.Total.stObj.timebegin = Date.now()
             props.Total.stObj.indexOfPeople = 0
             props.Total.fnObj.AddTo_Show_ArrOfPeopeAppear_ReactData = AddTo_Show_ArrOfPeopeAppear_ReactData
