@@ -32,11 +32,18 @@ function Show_Table(Data, Total) {
                         <div
                             key={indexeee}
 
-                            style={{ display: "inline-block", cursor: "pointer", border: "1px solid green", borderRadius: "5px", padding: "5px", margin: "5px" }}>
+                            style={{
+                                display: "inline-block",
+                                cursor: "pointer",
+                                border: "1px solid green",
+                                borderRadius: "5px", padding: "5px",
+                                margin: "5px",
+                                maxHeight: "150px",
+                                overflowY: "auto"
+                            }}>
                             {eee.map((eeee, indexeeee) =>
                                 <div
                                     key={indexeeee}
-
                                 >
                                     {Check_ImageOrNot(eeee) ?
                                         <img src={eeee} width="60px" /> :

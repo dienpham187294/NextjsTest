@@ -192,9 +192,12 @@ function ArrOfPeopeAppear_ReactJSX(props) {
         try {
             let status = false
             let n = e.split("//").slice(-1)[0]
+
+
             // console.log([0].indexOf("Elizabeth"))
             data.total.submit.forEach(e => {
                 if (e.includes(n)) {
+                    // console.log(e, n)
                     status = true
                 }
             })
@@ -444,19 +447,19 @@ function showSubmitSyxtax(Info_ToSunmit_Reactdata) {
             Info_ToSunmit_Reactdata.map((e, i) =>
                 <div key={i} style={{ display: "inline-block", border: "1px solid black", padding: "5px", borderRadius: "5px", margin: "5px" }}>
                     {/* <b>Lựa chọn {i + 1}</b> */}
-                    <table >
-                        <tbody>
-                            {e.map((ee, ii) =>
-                                <tr key={ii}>
-                                    <td id={"ct" + i + ii}>
-                                        {ee}
-                                    </td>
-                                    <td id={"ct1" + i + ii}>
-                                    </td>
-                                </tr>
-                            )}
-                        </tbody>
-                    </table>
+                    {/* <table >
+                        <tbody> */}
+                    {e.map((ee, ii) =>
+                        <div style={{ display: "inline-block", borderLeft: "5px solid green", padding: "3px" }} key={ii}>
+                            <div id={"ct" + i + ii}>
+                                {ee}
+                            </div>
+                            <div id={"ct1" + i + ii}>
+                            </div>
+                        </div>
+                    )}
+                    {/* </tbody>
+                    </table> */}
                 </div>
             )
         )
