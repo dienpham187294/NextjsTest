@@ -200,7 +200,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
 
         try {
             let status = false
-            let n = e.split("//").slice(-1)[0]
+            let n = e.split("===").slice(-1)[0]
 
 
             // console.log([0].indexOf("Elizabeth"))

@@ -56,7 +56,7 @@ function Show_Table(Data, Total) {
                                             src={eeee} width="180px" style={{ margin: "5px 25px" }} /> :
                                         <span
                                             onClick={() => {
-                                                Total.stObj.inputSumit += "//" + eeee;
+                                                Total.stObj.inputSumit += "===" + eeee;
                                                 // console.log(eeee)
                                                 Total.fnObj.Submit_Show_OnePeopeAppear_ReactData(Total.stObj.inputSumit)
                                                 // console.log(eee[e.indexToSubmit])
