@@ -48,7 +48,7 @@ function Show_Table(Data, Total) {
                                     {Check_ImageOrNot(eeee) ?
                                         <img
                                             onClick={() => {
-                                                Total.stObj.inputSumit += "//" + eeee;
+                                                Total.stObj.inputSumit += "===" + eeee;
                                                 // console.log(eeee)
                                                 Total.fnObj.Submit_Show_OnePeopeAppear_ReactData(Total.stObj.inputSumit)
                                                 // console.log(eee[e.indexToSubmit])
