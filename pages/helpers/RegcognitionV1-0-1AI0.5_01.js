@@ -18,7 +18,7 @@ function Dictaphone({ Data, Total }) {
             command: Data,
             callback: (command) => { Total.fnObj.Xuly(`${command}`) },
             isFuzzyMatch: true,
-            fuzzyMatchingThreshold: 0.4,
+            fuzzyMatchingThreshold: 0.6,
             bestMatchOnly: true
         }]
     }, [Data])

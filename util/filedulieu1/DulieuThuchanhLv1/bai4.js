@@ -125,10 +125,6 @@ let Data_arrFastFood = [
         "input": "https://i.postimg.cc/xC7fYkGh/Egg-Roll.jpg"
     },
     {
-        "name": "Egg",
-        "input": "https://i.postimg.cc/xC7fYkGh/Egg-Roll.jpg"
-    },
-    {
         "name": "French-Fries",
         "input": "https://i.postimg.cc/dQbCjDM5/French-Fries.png"
     },
