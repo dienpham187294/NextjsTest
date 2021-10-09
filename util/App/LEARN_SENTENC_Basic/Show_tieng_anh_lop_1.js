@@ -9,7 +9,7 @@ import Show_tienganhphothong_hocphatam from "../../Show/Show_tienganhphothong_ho
 import Dictaphone from "../../../pages/helpers/RegcognitionV1-0-1AI0.2LearnBasic"
 import MD_Image from "../../models/md_image"
 import ReadMessage from "../../Read/ReadMessage"
-import ThucHanhA from "../../../pages/thuchanh/gamemini"
+import ThucHanhA from "../../../pages/thuchanh/thuchanhde"
 const queryString = require('query-string');
 // let linkReset = ""
 let statusCount = 0;
