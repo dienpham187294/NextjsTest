@@ -24,7 +24,11 @@ import Whatsyourfavoritecolor from "./22What’s your favorite color"
 import Whatsyourfavoritedrink from "./23What’s your favorite drink"
 import Whatkindsoffilmsdoyoulike from "./24What kinds of films do you like"
 import Whatdoyouwant from "./25Whatdoyouwant"
-import L25 from "./25"
+import Didyoulikethemovie from "./26 Did you likethe movie"
+import Wheredoyoustudy from "./27Wheredoyoustudy"
+import Whattimedoyougotoschool from "./28What time do you go to school"
+import Howdoyougettoschool from "./29How do you get to school"
+import Whatisyourmajor from "./30What is your major"
 const DLTOTAL =
     [
         Whatisyourname,
@@ -52,7 +56,11 @@ const DLTOTAL =
         Whatsyourfavoritedrink,
         Whatkindsoffilmsdoyoulike,
         Whatdoyouwant,
-        // L25
+        Didyoulikethemovie,
+        Wheredoyoustudy,
+        Whattimedoyougotoschool,
+        Howdoyougettoschool,
+        Whatisyourmajor
     ]
 export default DLTOTAL
 
