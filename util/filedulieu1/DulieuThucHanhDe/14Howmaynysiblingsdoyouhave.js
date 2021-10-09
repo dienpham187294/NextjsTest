@@ -79,8 +79,8 @@ function GETRANDOMi(arr) {
 const Howmamysiblings
     = [
         {
-            "nameoflession": "Bài 14: Bạn có mấy đứa con?  -- How many children do you have?",
-            "huongdan": "Tìm thông tin tình trạng có bao nhiêu người con của người đối thoại?",
+            "nameoflession": "Bài 14: Bạn có bao nhiêu anh chị em ruột ?  -- How many siblings do you have?",
+            "huongdan": "Tìm thông tin tình trạng có bao nhiêu anh chị em của người đối thoại?",
             "srcYoutube": "",
             "hoctap": [
 
