@@ -1,4 +1,5 @@
 import ArrPeple from "./ArrOfpeple"
+let ARRp = (JSON.parse(JSON.stringify(ArrPeple)));
 let ArrInput = ["Christian.", "Buddhism."]
 let ArrSubmit = [
     [
@@ -101,7 +102,7 @@ const Whatrelegion
                         "---GENDER",
                         "---INPUT"
                     ],
-                    "DataInput": GetArr(ArrPeple),
+                    "DataInput": GetArr(ARRp),
                     "Tabletool": [
                         {
                             "indexToSubmit": 0,

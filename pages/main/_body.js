@@ -1,4 +1,4 @@
-import ThuchanhA from "../thuchanh/gamemini";
+import ThuchanhA from "../thuchanh/thuchanhde";
 export default function body() {
     return (
         <div className="container">

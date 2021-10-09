@@ -1,6 +1,7 @@
-const DL2 = [
+const Whatdoyouwant
+ = [
     {
-        "nameoflession": "Bạn muốn gì? What do you want?",
+        "nameoflession": "25. Bạn muốn gì? What do you want?",
         "huongdan": "Tìm thông tin người đối thoại cần mua gì?",
         "srcYoutube": "",
         "hoctap": [
@@ -394,4 +395,4 @@ const DL2 = [
     }
 ]
 
-export default DL2
+export default Whatdoyouwant

@@ -1,4 +1,4 @@
-import Dulieu_gameMiniSellFruit from "./DL2"
+// import Dulieu_gameMiniSellFruit from "./DL2"
 import Whereareyoufrom from "./2Whereareyoufrom"
 import Whatisyourname from "./1Whatisyourname"
 import wheredoyoulive from "./3Wheredoyoulive"
@@ -23,6 +23,8 @@ import Whatsyourfavoritefood from "./21What’s your favorite food"
 import Whatsyourfavoritecolor from "./22What’s your favorite color"
 import Whatsyourfavoritedrink from "./23What’s your favorite drink"
 import Whatkindsoffilmsdoyoulike from "./24What kinds of films do you like"
+import Whatdoyouwant from "./25Whatdoyouwant"
+import L25 from "./25"
 const DLTOTAL =
     [
         Whatisyourname,
@@ -49,7 +51,8 @@ const DLTOTAL =
         Whatsyourfavoritecolor,
         Whatsyourfavoritedrink,
         Whatkindsoffilmsdoyoulike,
-        Dulieu_gameMiniSellFruit
+        Whatdoyouwant,
+        // L25
     ]
 export default DLTOTAL
 

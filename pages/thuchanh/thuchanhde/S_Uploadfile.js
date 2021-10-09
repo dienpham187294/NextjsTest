@@ -8,32 +8,52 @@ function UpLoadFile(props) {
     const [srcYoutube, SET_SrcYoutube] = useState("")
 
     function Fnpick(arrPick) {
-        try {
-            props.Total.fnObj.SET_Data_InfoOflession(arrPick[0].hoctap)
-            let ArrDataTool = [];
-            arrPick[1].coerdataoflession.forEach(eee => {
-                if (eee.Tabletool.length > 0) {
-                    eee.Tabletool.forEach(eeee => {
-                        ArrDataTool.push(eeee)
-                    })
-                }
-            });
+        if (arrPick[0].status !== "done") {
+            try {
+                props.Total.fnObj.SET_Data_InfoOflession(arrPick[0].hoctap)
+                let ArrDataTool = [];
+                arrPick[1].coerdataoflession.forEach(eee => {
+                    if (eee.Tabletool.length > 0) {
+                        eee.Tabletool.forEach(eeee => {
+                            ArrDataTool.push(eeee)
+                        })
+                    }
+                });
 
-            props.Total.fnObj.SET_Data_TableTool(ArrDataTool)
+                props.Total.fnObj.SET_Data_TableTool(ArrDataTool)
 
-            let GameData = [];
-            arrPick[1].coerdataoflession.forEach(eee => {
-                GameData.push({ "template": eee.template, "ArrToReplace": eee.ArrToReplace, "DataInput": eee.DataInput })
-            });
+                let GameData = [];
+                arrPick[1].coerdataoflession.forEach(eee => {
+                    GameData.push({ "template": eee.template, "ArrToReplace": eee.ArrToReplace, "DataInput": eee.DataInput })
+                });
 
-            props.Total.fnObj.SET_Data_Game(ConvertFileToObject(GameData, arrPick[0].status))
+                props.Total.fnObj.SET_Data_Game(ConvertFileToObject(GameData, arrPick[0].status))
 
-            props.Total.fnObj.SET_PageChange(1);
-            props.Total.fnObj.SET_huongdan(arrPick[0].huongdan)
+                props.Total.fnObj.SET_PageChange(1);
+                props.Total.fnObj.SET_huongdan(arrPick[0].huongdan)
 
-        } catch (error) {
-            console.log(error);
+            } catch (error) {
+                console.log(error);
+            }
+        } else {
+            try {
+                let ArrDataTool = [];
+                // arrPick[1].coerdataoflession.forEach(eee => {
+                //     if (eee.Tabletool.length > 0) {
+                //         eee.Tabletool.forEach(eeee => {
+                //             ArrDataTool.push(eeee)
+                //         })
+                //     }
+                // });
+                props.Total.fnObj.SET_Data_TableTool(arrPick[1].coerdataoflession[0].total.Tabletool)
+                props.Total.fnObj.SET_Data_InfoOflession(arrPick[0].hoctap)
+                props.Total.fnObj.SET_Data_Game(arrPick[1].coerdataoflession.sort(() => 0.5 - Math.random()))
+                props.Total.fnObj.SET_PageChange(1);
+            } catch (error) {
+                console.log(error);
+            }
         }
+
     }
     return (
         <div style={{ margin: "5%" }}>

@@ -1,4 +1,5 @@
 import ArrPeple from "./ArrOfpeple"
+let ARRp = (JSON.parse(JSON.stringify(ArrPeple)));
 let ArrInput = ["an investment bank", "a small business", "an international company"]
 let ArrSubmit = [
     [
@@ -104,7 +105,7 @@ const Whatcompanydoyouworkfor
                         "---GENDER",
                         "---INPUT"
                     ],
-                    "DataInput": GetArr(ArrPeple),
+                    "DataInput": GetArr(ARRp),
                     "Tabletool": [
                         {
                             "indexToSubmit": 0,
