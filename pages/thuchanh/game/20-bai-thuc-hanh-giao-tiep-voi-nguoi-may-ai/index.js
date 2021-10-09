@@ -1,5 +1,5 @@
 
-import ThucHanhA from "../../gamemini"
+import ThucHanhA from "../../thuchanhde"
 
 export default function Show() {
 
