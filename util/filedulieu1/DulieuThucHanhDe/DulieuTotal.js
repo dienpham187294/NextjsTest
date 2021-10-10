@@ -29,6 +29,16 @@ import Wheredoyoustudy from "./27Wheredoyoustudy"
 import Whattimedoyougotoschool from "./28What time do you go to school"
 import Howdoyougettoschool from "./29How do you get to school"
 import Whatisyourmajor from "./30What is your major"
+import WhydoyoustudyEnglish from "./31Why do you study English"
+import Whatdoyouwanttodoafteryougraduate from "./32What do you want to do after you graduate"
+import HowdidyoulearnEnglish from "./33How did you learn English"
+import Howmanylanguagesdoyouspeak from "./34How many languages do you speak"
+import CanyouspeakEnglish from "./35Can you speak English"
+import HowlonghaveyoulearningEnglish from "./36How long have you learning English"
+import Whichgradeareyouin from "./37Which grade are you in"
+import Whichyearareyouin from "./38Which year are you in"
+import Doyouhaveanyexamscomingup from "./39Do you have any exams coming up"
+import Whatsyourfavoritesubject from "./40 What’s your favorite subject"
 const DLTOTAL =
     [
         Whatisyourname,
@@ -60,7 +70,17 @@ const DLTOTAL =
         Wheredoyoustudy,
         Whattimedoyougotoschool,
         Howdoyougettoschool,
-        Whatisyourmajor
+        Whatisyourmajor,
+        WhydoyoustudyEnglish,
+        Whatdoyouwanttodoafteryougraduate,
+        HowdidyoulearnEnglish,
+        Howmanylanguagesdoyouspeak,
+        CanyouspeakEnglish,
+        HowlonghaveyoulearningEnglish,
+        Whichgradeareyouin,
+        Whichyearareyouin,
+        Doyouhaveanyexamscomingup,
+        Whatsyourfavoritesubject
     ]
 export default DLTOTAL
 
