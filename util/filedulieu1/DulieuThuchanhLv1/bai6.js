@@ -31,13 +31,13 @@ DataTable.push(GetDataArrToClick(Arr1))
 let Arr2 = [
     {
         "DK": "male",
-        // "input": "Book Table",
+
         "qs": ["Good evening, sir."],
         "output": ["Good evening"]
     },
     {
         "DK": "female",
-        // "input": "Take Table",
+
         "qs": ["Good evening, ma'am."],
         "output": ["Good evening"]
     }
@@ -89,6 +89,7 @@ ArrPeple.forEach(e => {
     }
 
     let i1 = GETRANDOMi(Arr1)
+    ArrInFN.Submit.push(Arr1[i1].input)
     if (Arr1[i1].input === "Book Table") {
         ArrInFN.Submit.push(e[0])
     }
@@ -101,15 +102,15 @@ ArrPeple.forEach(e => {
     let i3 = GETRANDOMi(Arr3)
     Arrin3.push("1-0")
     Arrin4.push(FnObjHanldingNext(Arr3[i3].qs, Arr3[i3].output))
-    ArrInFN.Submit.push(Arr3[i3].input)
+    if (Arr1[i1].input === "Book Table") {
+        ArrInFN.Submit.push(Arr3[i3].input)
+    }
+
     // FnToArrobj(Arrin1, Arrin2)
 
     // console.log(Fnperson(ArrInFN, DataTable, Arrin2, FnToArrobj(Arrin3, Arrin4)))
 
     coerdataoflession.push(Fnperson(ArrInFN, DataTable, ArrBegin, FnToArrobj(Arrin3, Arrin4)))
-
-
-
 })
 
 
