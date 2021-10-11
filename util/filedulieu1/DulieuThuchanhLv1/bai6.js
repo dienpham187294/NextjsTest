@@ -101,7 +101,7 @@ ArrPeple.forEach(e => {
     let i3 = GETRANDOMi(Arr3)
     Arrin3.push("1-0")
     Arrin4.push(FnObjHanldingNext(Arr3[i3].qs, Arr3[i3].output))
-
+    ArrInFN.Submit.push(Arr3[i3].input)
     // FnToArrobj(Arrin1, Arrin2)
 
     // console.log(Fnperson(ArrInFN, DataTable, Arrin2, FnToArrobj(Arrin3, Arrin4)))
