@@ -80,7 +80,7 @@ const DLTOTAL =
         Whichgradeareyouin,
         Whichyearareyouin,
         Doyouhaveanyexamscomingup,
-        Whatsyourfavoritesubject
+        Whatsyourfavoritesubjectinput
     ]
 export default DLTOTAL
 

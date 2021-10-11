@@ -42,15 +42,34 @@ let Arr2 = [
         "output": ["Good evening"]
     }
 ]
-// let Arr3 = [
-//     {
-//         "input": "Foood",
-//         // "input": "Book Table",
-//         "qs": ["Would you like to order something in advance?"],
-//         "output": ["I want to order food."]
-//     }
-// ]
-// DataTable.push(GetDataArrToClick(Arr3))
+
+let Arr3Input =
+    [
+        "Grilled fish of the day",
+        "Steak with chips or salad",
+        "Sausage and roast tomato pasta",
+        "Chicken salad with garlic yoghurt dressing",
+        "Cheese and tomato pizza",
+        "Mushroom omelette",
+        "Vegetable chili",
+        "Soup of the day with brown or white bread",
+        "Homemade carrot cake",
+        "Homemade banana cake",
+        "Chocolate ice cream with chocolate sauce",
+        "Fresh fruit salad with grapes, mango, melon and apple, served with cream or ice cream",
+    ]
+let Arr3 = []
+Arr3Input.forEach(e => {
+    Arr3.push(
+        {
+            "input": e,
+            // "input": "Book Table",
+            "qs": ["Would you like to order something in advance?"],
+            "output": ["I want to order " + e]
+        }
+    )
+})
+DataTable.push(GetDataArrToClick(Arr3))
 
 ArrPeple.forEach(e => {
 
@@ -79,9 +98,9 @@ ArrPeple.forEach(e => {
     Arrin4.push(FnObjHanldingNext(["What is your name?"], ["My name is " + e[0]]))
 
 
-    // let i3 = GETRANDOMi(Arr3)
-    // Arrin3.push("1-0")
-    // Arrin4.push(FnObjHanldingNext(Arr3[i3].qs, Arr3[i3].output))
+    let i3 = GETRANDOMi(Arr3)
+    Arrin3.push("1-0")
+    Arrin4.push(FnObjHanldingNext(Arr3[i3].qs, Arr3[i3].output))
 
     // FnToArrobj(Arrin1, Arrin2)
 
@@ -103,11 +122,11 @@ ArrPeple.forEach(e => {
 
 
 // coerdataoflession.push(nam)
-const Bai5
+const Bai6
 
     = [
         {
-            "nameoflession": "Thực hành bài 5",
+            "nameoflession": "Thực hành bài 6",
             "srcYoutube": "",
             "hoctap": [
             ],
@@ -118,7 +137,7 @@ const Bai5
         }
     ]
 
-export default Bai5
+export default Bai6
 
 
 function FnToArrobj(ArrIn1, ArrIn2) {
