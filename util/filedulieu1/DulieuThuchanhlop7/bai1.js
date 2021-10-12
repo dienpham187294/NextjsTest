@@ -1,49 +1,108 @@
 import ArrPeple from "./ArrOfpeple"
+
 // let ARRp = (JSON.parse(JSON.stringify(ArrPeple)).concat(JSON.parse(JSON.stringify(ArrPeple))));
-//Gia định những người tới để làm một cuộc khảo sát về sở thích cá nhân
+
+// Gia định những người tới để làm một cuộc khảo sát về sở thích cá nhân
 
 // Một hàm return về hanhdlingNext object một hàm return về Một dãy đan xen các handlingnextObj một hàm thêm Submit)  
 
-// Bối cảnh Bạn đang nhân viên 
-let ArrName = []
+// Bối cảnh Bạn đang nhân viên
+let DataTable = []
+let coerdataoflession = []
+let ArrName = ['Richard', 'Barbara', 'Michael', 'Betty', 'Kimberly', 'Lisa', 'Steven', 'Robert', 'Susan', 'Dorothy', 'William', 'Donna', 'Mary', 'Michelle', 'David', 'Anthony', 'Charles', 'Ashley', 'Linda', 'Patricia', 'Christopher', 'Kenneth', 'Margaret', 'Karen', 'Mark', 'Thomas', 'Matthew', 'Sandra', 'Sarah', 'Jessica', 'Daniel', 'Donald', 'Joseph', 'Emily', 'James', 'Nancy', 'Paul', 'Jennifer', 'Andrew', 'Elizabeth', 'John', 'Joshua']
+
+DataTable.push(ArrName)
+
+let Arr3Input =
+    [
+        "cycling",
+        "taking photos",
+        "cooking",
+        "bird-watching",
+        "gardening",
+        "arranging flowers",
+        "skating",
+        "playing the guitar",
+        "playing board games"
+    ]
+let Arr3 = []
+Arr3Input.forEach(e => {
+    Arr3.push(
+        {
+            "input": e,
+            "qs": ["what's your hobby?", "Do you have a hobby?"],
+            "output": ["I like " + e, "My hobby is " + e]
+        }
+    )
+})
+DataTable.push(Arr3Input)
 
 ArrPeple.forEach(e => {
-    ArrName.push(e[0])
+
+    let ArrInFN = {}
+    ArrInFN.Submit = []
+    ArrInFN.img = e[1]
+    ArrInFN.gender = e[2]
+
+    let ArrBegin = []
+    ArrBegin.push(FnObjHanldingNext(["Good afternoon", "hi", "hello"], []))
+
+
+    let Arrin3 = []
+    let Arrin4 = []
+
+    Arrin3.push("0")
+    Arrin4.push(FnObjHanldingNext(["What is your name?"], ["My name is " + e[0]]))
+    ArrInFN.Submit.push(e[0])
+
+    let i3 = GETRANDOMi(Arr3)
+    Arrin3.push("1")
+    Arrin4.push(FnObjHanldingNext(Arr3[i3].qs, Arr3[i3].output))
+    ArrInFN.Submit.push(Arr3[i3].input)
+
+
+
+
+    coerdataoflession.push(Fnperson(ArrInFN, DataTable, ArrBegin, FnToArrobj(Arrin3, Arrin4)))
 })
 
-console.log(ArrName)
+
+// let Arrin1 = ["0"]
+// let Arrin2 = [
+//     FnObjHanldingNext(["Hi, What do you want?", "Hi, May I help you?"], ["I want to book a table for tonight"]),
+// ]
+
+// FnToArrobj(Arrin1, Arrin2)
 
 
-let DataTable = []
-
-
-
-let Arrin1 = ["0"]
-let Arrin2 = [
-    FnObjHanldingNext(["Hi, What do you want?", "Hi, May I help you?"], ["I want to book a table for tonight"]),
+let hoctap = [
+    { "EN": "Good afternoon", "VN": "Chào buổi chiêu", "IPA": "gʊd ˈɑːftəˈnuːn" },
+    { "EN": "What is your name?", "VN": "Tên của bạn là gì?", "IPA": "wɒt ɪz jɔː neɪm?" },
+    { "EN": "what's your hobby?", "VN": "Sở thích của bạn là gì?", "IPA": "wɒts jɔː ˈhɒbi?" },
+    { "EN": "Do you have a hobby?", "VN": "Bạn có sở thích chứ?", "IPA": "duː juː hæv ə ˈhɒbi?" },
+    { "EN": "I like cycling", "VN": "Tôi thích đi xe đạp", "IPA": "aɪ laɪk ˈsaɪklɪŋ" },
+    { "EN": "My hobby is cycling", "VN": "Sở thích của tôi là đi xe đạp", "IPA": "maɪ ˈhɒbi ɪz ˈsaɪklɪŋ" },
+    { "EN": "cycling", "VN": "Đi xe đạp", "IPA": "ˈsaɪklɪŋ" },
+    { "EN": "taking photos", "VN": "Chụp ảnh", "IPA": "ˈteɪkɪŋ ˈfəʊtəʊz" },
+    { "EN": "cooking", "VN": "Nấu nướng", "IPA": "ˈkʊkɪŋ" },
+    { "EN": "bird-watching", "VN": "Ngắm chim", "IPA": "bɜːd-ˈwɒʧɪŋ" },
+    { "EN": "gardening", "VN": "Làm vườn", "IPA": "ˈgɑːdnɪŋ" },
+    { "EN": "arranging flowers", "VN": "Sắp xếp hoa", "IPA": "əˈreɪnʤɪŋ ˈflaʊəz" },
+    { "EN": "skating", "VN": "Trượt băng", "IPA": "ˈskeɪtɪŋ" },
+    { "EN": "playing the guitar", "VN": "Chơi guitar", "IPA": "ˈpleɪɪŋ ðə gɪˈtɑː" },
+    { "EN": "playing board games", "VN": "Chơi trò chơi trên bàn cờ", "IPA": "ˈpleɪɪŋ bɔːd geɪmz" },
 ]
-
-FnToArrobj(Arrin1, Arrin2)
-
-
-
-let coerdataoflession = []
-
-
-
-// coerdataoflession.push(nam)
 const Bai1
 
     = [
         {
-            "nameoflession": "Thực hành bài 5",
+            "nameoflession": "Thực hành bài 1",
             "srcYoutube": "",
-            "hoctap": [
-            ],
+            "hoctap": hoctap,
             "status": "",
         },
         {
-            "coerdataoflession": []
+            "coerdataoflession": coerdataoflession
         }
     ]
 
@@ -79,6 +138,13 @@ function FnToArrobj(ArrIn1, ArrIn2) {
     return ObjRes
 }
 
+function GetDataArrToClick(Arr) {
+    let ArrRes = [];
+    Arr.forEach(e => {
+        ArrRes.push(e.input)
+    })
+    return ArrRes
+}
 
 function FnObjHanldingNext(ArrIn1, ArrIn2, objIn) {
     let objOut = {};
