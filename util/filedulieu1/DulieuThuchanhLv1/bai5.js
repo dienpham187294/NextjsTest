@@ -216,9 +216,9 @@ function Fnperson(Arr, DataTable, Begin, Middle) {
     return person
 }
 
-function PickRandom(arr) {
-    return arr[Math.floor(Math.random() * arr.length)];
-}
+// function PickRandom(arr) {
+//     return arr[Math.floor(Math.random() * arr.length)];
+// }
 
 function GETRANDOMi(arr) {
     return Math.floor(Math.random() * arr.length);

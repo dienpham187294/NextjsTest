@@ -4,6 +4,7 @@ import Bai3 from "./bai3"
 import Bai4 from "./bai4"
 import Bai5 from "./bai5"
 import Bai6 from "./bai6"
+import Bai7 from "./bai7"
 const DLTOTAL =
     [
         Bai1,
@@ -11,7 +12,8 @@ const DLTOTAL =
         Bai3,
         Bai4,
         Bai5,
-        Bai6
+        Bai6,
+        Bai7
     ]
 export default DLTOTAL
 

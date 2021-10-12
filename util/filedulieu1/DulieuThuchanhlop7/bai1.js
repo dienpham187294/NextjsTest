@@ -1,11 +1,5 @@
 import ArrPeple from "./ArrOfpeple"
 
-// let ARRp = (JSON.parse(JSON.stringify(ArrPeple)).concat(JSON.parse(JSON.stringify(ArrPeple))));
-
-// Gia định những người tới để làm một cuộc khảo sát về sở thích cá nhân
-
-// Một hàm return về hanhdlingNext object một hàm return về Một dãy đan xen các handlingnextObj một hàm thêm Submit)  
-
 // Bối cảnh Bạn đang nhân viên
 let DataTable = []
 let coerdataoflession = []
@@ -60,20 +54,8 @@ ArrPeple.forEach(e => {
     Arrin4.push(FnObjHanldingNext(Arr3[i3].qs, Arr3[i3].output))
     ArrInFN.Submit.push(Arr3[i3].input)
 
-
-
-
     coerdataoflession.push(Fnperson(ArrInFN, DataTable, ArrBegin, FnToArrobj(Arrin3, Arrin4)))
 })
-
-
-// let Arrin1 = ["0"]
-// let Arrin2 = [
-//     FnObjHanldingNext(["Hi, What do you want?", "Hi, May I help you?"], ["I want to book a table for tonight"]),
-// ]
-
-// FnToArrobj(Arrin1, Arrin2)
-
 
 let hoctap = [
     { "EN": "Good afternoon", "VN": "Chào buổi chiêu", "IPA": "gʊd ˈɑːftəˈnuːn" },
@@ -204,9 +186,9 @@ function Fnperson(Arr, DataTable, Begin, Middle) {
     return person
 }
 
-function PickRandom(arr) {
-    return arr[Math.floor(Math.random() * arr.length)];
-}
+// function PickRandom(arr) {
+//     return arr[Math.floor(Math.random() * arr.length)];
+// }
 
 function GETRANDOMi(arr) {
     return Math.floor(Math.random() * arr.length);

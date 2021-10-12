@@ -73,17 +73,17 @@ let Arr3Input2 = [
     "https://i.postimg.cc/BbS5qZLH/Fresh-fruit-salad-with-grapes-mango-melon-and-apple-served-with-cream-or-ice-cream.jpg"
 ]
 let Arr3 = []
-Arr3Input.forEach(e => {
+Arr3Input.forEach((e, i) => {
     Arr3.push(
         {
-            "input": e,
+            "input": Arr3Input2[i],
             // "input": "Book Table",
             "qs": ["Would you like to order something in advance?"],
             "output": ["I want to order " + e]
         }
     )
 })
-DataTable.push(Arr3Input)
+DataTable.push(Arr3Input2)
 
 ArrPeple.forEach(e => {
 
@@ -137,11 +137,11 @@ ArrPeple.forEach(e => {
 
 
 // coerdataoflession.push(nam)
-const Bai6
+const Bai7
 
     = [
         {
-            "nameoflession": "Thực hành bài 6",
+            "nameoflession": "Thực hành bài 7",
             "srcYoutube": "",
             "hoctap": [
             ],
@@ -152,7 +152,7 @@ const Bai6
         }
     ]
 
-export default Bai6
+export default Bai7
 
 
 function FnToArrobj(ArrIn1, ArrIn2) {
