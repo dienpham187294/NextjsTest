@@ -31,6 +31,18 @@ let Arr3Input1 =
         "an expensive hobby.",
         "a cheap hobby."
     ]
+let Arr3Input10 =
+    [
+        "an easy hobby.",
+        "an easy hobby.",
+        "a difficult hobby.",
+        "an easy hobby.",
+        "an easy hobby.",
+        "a difficult hobby.",
+        "a difficult hobby.",
+        "a difficult hobby.",
+        "an easy hobby."
+    ]
 let Arr3Input2 =
     [
         "https://i.postimg.cc/NGbhRkpR/cycling.jpg",
@@ -45,6 +57,7 @@ let Arr3Input2 =
     ]
 let Arr3 = []
 let Arr4 = []
+let Arr5 = []
 Arr3Input.forEach((e, i) => {
 
     Arr3.push(
@@ -62,8 +75,16 @@ Arr3Input.forEach((e, i) => {
             "output": ["It is " + Arr3Input1[i]]
         }
     )
+
+    Arr5.push(
+        {
+            "input": Arr3Input10[i],
+            "qs": ["is it difficult?"],
+            "output": ["It is " + Arr3Input10[i]]
+        }
+    )
 })
-DataTable.push(["a cheap hobby.", "an expensive hobby."])
+DataTable.push(["a cheap hobby.", "an expensive hobby.", "a difficult hobby.", "an easy hobby."])
 DataTable.push(Arr3Input2)
 
 ArrPeple.forEach(e => {
@@ -91,21 +112,20 @@ ArrPeple.forEach(e => {
     Arrin3.push("1-0")
     Arrin4.push(FnObjHanldingNext(Arr4[i3].qs, Arr4[i3].output))
     ArrInFN.Submit.push(Arr4[i3].input)
-
+    Arrin3.push("1-0-0")
+    Arrin4.push(FnObjHanldingNext(Arr5[i3].qs, Arr5[i3].output))
+    ArrInFN.Submit.push(Arr5[i3].input)
 
     coerdataoflession.push(Fnperson(ArrInFN, DataTable, ArrBegin, FnToArrobj(Arrin3, Arrin4)))
 })
 
 let hoctap = [
-    { "EN": "a cheap hobby", "VN": "một sở thích rẻ tiền", "IPA": "ə ʧiːp ˈhɒbi" },
-    { "EN": "an expensive hobby", "VN": "một sở thích đắt tiền", "IPA": "ən ɪksˈpɛnsɪv ˈhɒbi" },
-    { "EN": "is it expensive?", "VN": "nó có đắt không?", "IPA": "ɪz ɪt ɪksˈpɛnsɪv?" },
 ]
-const Bai2
+const Bai3
 
     = [
         {
-            "nameoflession": "Thực hành bài 2",
+            "nameoflession": "Thực hành bài 3",
             "srcYoutube": "",
             "hoctap": hoctap,
             "status": "",
@@ -115,7 +135,7 @@ const Bai2
         }
     ]
 
-export default Bai2
+export default Bai3
 
 
 function FnToArrobj(ArrIn1, ArrIn2) {
