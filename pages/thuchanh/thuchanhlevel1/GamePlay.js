@@ -170,6 +170,16 @@ function ArrOfPeopeAppear_ReactJSX(props) {
         }
     }
 
+    function Submit_check_funtion_indata_01(command) {
+        try {
+            if (command.readFirst !== undefined) {
+                setTimeout(() => ReadMessage(command.readFirst.PickRandom()), 1500)
+            }
+        } catch (error) {
+
+        }
+    }
+
     function Submit_check_funtion_indata(command) {
         try {
             if (command.end_successfull) {
@@ -194,6 +204,8 @@ function ArrOfPeopeAppear_ReactJSX(props) {
         } catch (error) {
             console.log(error)
         }
+
+
     }
     function Submit_Show_OnePeopeAppear_ReactData(e) {
         let data = AllData_OfOne
@@ -242,6 +254,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                         Data_temp_Strickmode = (data.end.handling_next);
                         let arrTemp = []
                         data.end.handling_next.forEach(e => {
+                            Submit_check_funtion_indata_01(e.function)
                             e.manspeak.forEach(ee => {
                                 arrTemp.push(ee)
                             })

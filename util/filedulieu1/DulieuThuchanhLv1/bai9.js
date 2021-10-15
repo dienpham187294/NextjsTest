@@ -24,12 +24,12 @@ DataTable.push(ArrName)
 let Arr1 = [
     {
         "input": "Book Table",
-        "qs": ["What do you want?", "May I help you?"],
+        "qs": ["How can I help you?"],
         "output": ["I want to book a table for tonight."]
     },
     {
         "input": "Take Table",
-        "qs": ["What do you want?", "May I help you?"],
+        "qs": ["How can I help you?"],
         "output": ["I want to take a table."]
     }
 ]
@@ -38,17 +38,17 @@ DataTable.push(GetDataArrToClick(Arr1))
 let Arr2 = [
     {
         "DK": "male",
-
         "qs": ["Good evening, sir."],
         "output": ["Good evening"]
     },
     {
         "DK": "female",
-
         "qs": ["Good evening, ma'am."],
         "output": ["Good evening"]
     }
 ]
+
+
 
 let Arr3Input =
     [
@@ -112,7 +112,7 @@ Arr4Input.forEach((e, i) => {
         {
             "input": Arr4Input2[i],
             // "input": "Book Table",
-            "qs": ["Anything else?", "Would you like to order some drinks? "],
+            "qs": ["Anything else?", "Would you like to order some drinks?"],
             "output": [e + " please."]
         }
     )
@@ -120,6 +120,38 @@ Arr4Input.forEach((e, i) => {
 
 
 DataTable.push(Arr3Input2.concat(Arr4Input2))
+
+
+let Arr2_01 = [
+    {
+        "readfisrt": ["Excuse me, what time does the restaurant close?"],
+        "qs": ["It is 10 pm."],
+        "output": ["Thanks"]
+    },
+    {
+        "readfisrt": ["Excuse me, do you have any baby highchairs?"],
+        "qs": ["Yes of course, I'll bring it to you right away."],
+        "output": ["Thanks"]
+    },
+    {
+        "readfisrt": ["Excuse me, can I ask where the restroom is?"],
+        "qs": ["Yes of course. Go straight at the end of the road, turn right."],
+        "output": ["Thanks"]
+    },
+    {
+        "readfisrt": ["Excuse me, Can I ask what is the wifi password?"],
+        "qs": ["The password is I love you."],
+        "output": ["Thanks"]
+    },
+]
+let Arr2_01_Datatable = []
+Arr2_01.forEach(
+    (e) => {
+        Arr2_01_Datatable.push(e.readfisrt)
+    }
+)
+DataTable.push(Arr2_01_Datatable)
+
 
 ArrPeple.forEach(e => {
 
@@ -129,7 +161,7 @@ ArrPeple.forEach(e => {
     ArrInFN.gender = e[2]
 
 
-    // let Arrin2 = [FnObjHanldingNext(["Good evening, sir."], ["Good evening."])]
+    // // let Arrin2 = [FnObjHanldingNext(["Good evening, sir."], ["Good evening."])]
     let ArrBegin = []
 
     if (ArrInFN.gender === "male") {
@@ -146,7 +178,7 @@ ArrPeple.forEach(e => {
     let Arrin3 = ["0"]
     let Arrin4 = [FnObjHanldingNext(Arr1[i1].qs, Arr1[i1].output)]
     Arrin3.push("1")
-    Arrin4.push(FnObjHanldingNext(["What is your name?"], ["My name is " + e[0]]))
+    Arrin4.push(FnObjHanldingNext(["Can I have your name?"], ["My name is " + e[0]]))
 
 
     let i3 = GETRANDOMi(Arr3)
@@ -162,9 +194,19 @@ ArrPeple.forEach(e => {
         ArrInFN.Submit.push(Arr4[i4].input)
     }
 
+    let End = []
 
-
-    coerdataoflession.push(Fnperson(ArrInFN, DataTable, ArrBegin, FnToArrobj(Arrin3, Arrin4)))
+    let i5 = GETRANDOMi(Arr2_01)
+    End.push(
+        FnObjHanldingNext(
+            Arr2_01[i5].qs,
+            Arr2_01[i5].output,
+            {
+                "end_successfull": true,
+                "readFirst": Arr2_01[i5].readfisrt
+            }
+        ))
+    coerdataoflession.push(Fnperson(ArrInFN, DataTable, ArrBegin, FnToArrobj(Arrin3, Arrin4), End))
 })
 
 
@@ -177,11 +219,11 @@ ArrPeple.forEach(e => {
 
 
 // coerdataoflession.push(nam)
-const Bai8
+const Bai9
 
     = [
         {
-            "nameoflession": "Thực hành bài 8",
+            "nameoflession": "Thực hành bài 9",
             "srcYoutube": "",
             "hoctap": [
             ],
@@ -192,8 +234,7 @@ const Bai8
         }
     ]
 
-export default Bai8
-
+export default Bai9
 
 function FnToArrobj(ArrIn1, ArrIn2) {
     let ObjRes = []
@@ -249,7 +290,16 @@ function FnObjHanldingNext(ArrIn1, ArrIn2, objIn) {
 }
 
 
-function Fnperson(Arr, DataTable, Begin, Middle) {
+function Fnperson(Arr, DataTable, Begin, Middle, End) {
+    // console.log(End)
+    let endIn;
+    if (End !== undefined) {
+        endIn = {
+            "handling_next": End
+        }
+    } else {
+        endIn = null
+    }
     let person = {
         "total": {
             "image": Arr.img,
@@ -284,7 +334,7 @@ function Fnperson(Arr, DataTable, Begin, Middle) {
         "middle": {
             "handling_next": Middle
         },
-        "end": null
+        "end": endIn
     }
 
     return person
