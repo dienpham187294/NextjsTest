@@ -121,25 +121,47 @@ Arr4Input.forEach((e, i) => {
 
 DataTable.push(Arr3Input2.concat(Arr4Input2))
 
+let Arr5Input =
+    [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+    ]
+
+let Arr5 = []
+Arr5Input.forEach((e, i) => {
+    Arr5.push(
+        {
+            "input": e,
+            // "input": "Book Table",
+            "qs": ["How many people do you have?"],
+            "output": ["we have " + e + " please."]
+        }
+    )
+})
+
+DataTable.push(Arr5Input)
 
 let Arr2_01 = [
     {
-        "readfisrt": ["Excuse me, what time does the restaurant close?"],
+        "readfisrt": ["What time does the restaurant close?"],
         "qs": ["It is 10 pm."],
         "output": ["Thanks"]
     },
     {
-        "readfisrt": ["Excuse me, do you have any baby highchairs?"],
+        "readfisrt": ["Do you have any baby highchairs?"],
         "qs": ["Yes of course, I'll bring it to you right away."],
         "output": ["Thanks"]
     },
     {
-        "readfisrt": ["Excuse me, can I ask where the restroom is?"],
+        "readfisrt": ["Can I ask where the restroom is?"],
         "qs": ["Yes of course. Go straight at the end of the road, turn right."],
         "output": ["Thanks"]
     },
     {
-        "readfisrt": ["Excuse me, Can I ask what is the wifi password?"],
+        "readfisrt": ["Can I ask what is the wifi password?"],
         "qs": ["The password is I love you."],
         "output": ["Thanks"]
     },
@@ -170,29 +192,42 @@ ArrPeple.forEach(e => {
         ArrBegin.push(FnObjHanldingNext(Arr2[1].qs, Arr2[1].output))
     }
 
+
     let i1 = GETRANDOMi(Arr1)
+    let Arrin3 = ["0"]
+    let Arrin4 = [FnObjHanldingNext(Arr1[i1].qs, Arr1[i1].output)]
+
     ArrInFN.Submit.push(Arr1[i1].input)
     if (Arr1[i1].input === "Book Table") {
         ArrInFN.Submit.push(e[0])
-    }
-    let Arrin3 = ["0"]
-    let Arrin4 = [FnObjHanldingNext(Arr1[i1].qs, Arr1[i1].output)]
-    Arrin3.push("1")
-    Arrin4.push(FnObjHanldingNext(["Can I have your name?"], ["My name is " + e[0]]))
 
 
-    let i3 = GETRANDOMi(Arr3)
-    Arrin3.push("1-0")
-    Arrin4.push(FnObjHanldingNext(Arr3[i3].qs, Arr3[i3].output))
+        Arrin3.push("1")
+        Arrin4.push(FnObjHanldingNext(["Can I have your name?"], ["My name is " + e[0]]))
 
-    let i4 = GETRANDOMi(Arr4)
-    Arrin3.push("1-0-1")
-    Arrin4.push(FnObjHanldingNext(Arr4[i4].qs, Arr4[i4].output))
+        let i3 = GETRANDOMi(Arr3)
+        Arrin3.push("1-0")
+        Arrin4.push(FnObjHanldingNext(Arr3[i3].qs, Arr3[i3].output))
 
-    if (Arr1[i1].input === "Book Table") {
+        let i4 = GETRANDOMi(Arr4)
+        Arrin3.push("1-0-1")
+        Arrin4.push(FnObjHanldingNext(Arr4[i4].qs, Arr4[i4].output))
+
+
         ArrInFN.Submit.push(Arr3[i3].input)
         ArrInFN.Submit.push(Arr4[i4].input)
     }
+
+    if (Arr1[i1].input !== "Book Table") {
+        let i5 = GETRANDOMi(Arr5)
+        Arrin3.push("0-0")
+        Arrin4.push(FnObjHanldingNext(Arr5[i5].qs, Arr5[i5].output))
+        ArrInFN.Submit.push(Arr5[i5].input)
+    }
+
+
+
+
 
     let End = []
 
@@ -206,6 +241,10 @@ ArrPeple.forEach(e => {
                 "readFirst": Arr2_01[i5].readfisrt
             }
         ))
+
+
+
+
     coerdataoflession.push(Fnperson(ArrInFN, DataTable, ArrBegin, FnToArrobj(Arrin3, Arrin4), End))
 })
 
@@ -219,11 +258,11 @@ ArrPeple.forEach(e => {
 
 
 // coerdataoflession.push(nam)
-const Bai9
+const Bai10
 
     = [
         {
-            "nameoflession": "Thực hành bài 9",
+            "nameoflession": "Thực hành bài 10",
             "srcYoutube": "",
             "hoctap": [
             ],
@@ -234,7 +273,7 @@ const Bai9
         }
     ]
 
-export default Bai9
+export default Bai10
 
 function FnToArrobj(ArrIn1, ArrIn2) {
     let ObjRes = []

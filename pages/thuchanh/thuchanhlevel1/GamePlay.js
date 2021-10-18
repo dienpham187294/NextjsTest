@@ -173,7 +173,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
     function Submit_check_funtion_indata_01(command) {
         try {
             if (command.readFirst !== undefined) {
-                setTimeout(() => ReadMessage(command.readFirst.PickRandom()), 1500)
+                setTimeout(() => ReadMessage(command.readFirst.PickRandom()), 1000)
             }
         } catch (error) {
 
