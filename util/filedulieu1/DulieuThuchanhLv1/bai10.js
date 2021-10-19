@@ -349,11 +349,14 @@ function Fnperson(Arr, DataTable, Begin, Middle, End) {
             ],
             "submitsyntax": [
                 [
-                    "Yêu cầu 1: ",
-                    "Yêu cầu 2: ",
-                    "Yêu cầu 3: ",
-                    "Yêu cầu 4: ",
-
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5",
+                    "6",
+                    "7",
+                    "8",
                 ]
             ],
             "Tabletool": [

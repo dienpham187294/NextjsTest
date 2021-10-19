@@ -22,6 +22,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
     const [Info_ToSunmit_Reactdata, SET_Info_ToSunmit_Reactdata] = useState(null);
     const [Score, SET_Score] = useState(0)
     const [Sai, SET_Sai] = useState(0)
+    const [Boqua, SET_Boqua] = useState(0)
     const [Data_TableTool, SET_Data_TableTool] = useState([])
     useEffect(() => {
         props.SET_Data_Commands(Info_StrickAnwers_Reactdata)
@@ -173,7 +174,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
     function Submit_check_funtion_indata_01(command) {
         try {
             if (command.readFirst !== undefined) {
-                setTimeout(() => ReadMessage(command.readFirst.PickRandom()), 1000)
+                setTimeout(() => ReadMessage(command.readFirst.PickRandom()), 500)
             }
         } catch (error) {
 
@@ -244,7 +245,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                     } else {
                         // $("")
                         $("#ct" + i + ii).css("background-color", "yellow");
-                        $("#ct1" + i + ii).text(text);
+                        $("#ct1" + i + ii).text("X");
                         // console.log()
                     }
                 })
@@ -288,10 +289,12 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                     <span className="Span_Show_Info_StrickAnwers_Reactdata" key={index}>{e} <b style={{ backgroundColor: "black" }}>||</b> </span>
                 )
             }
-            else {
+            else if (Score < 10) {
                 return Info_StrickAnwers_Reactdata.map((e, index) =>
                     <span className="Span_Show_Info_StrickAnwers_Reactdata" key={index}>{SortLetter(e)} <b style={{ backgroundColor: "black" }}>||</b> </span>
                 )
+            } else {
+                return null
             }
         } catch (error) {
             console.log(error)
@@ -327,7 +330,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                                 <b>Cần hoàn thành: <span style={{ color: "blue" }}>{props.huongdan}</span>   </b> <br /> {showSubmitSyxtax(Info_ToSunmit_Reactdata)}
 
                                 <hr />
-                                <h3> Điểm: {Score} <span style={{ color: "red" }}>Chọn sai: {Sai} </span> <span id="thoigian">0</span>  </h3>
+                                <h3> Điểm: {Score} <span style={{ color: "red" }}>Chọn sai: {Sai} </span> <span id="thoigian">0</span> | <span style={{ color: "red" }}>{Boqua}</span> </h3>
                                 <span id="showInterimID" style={{ color: "red" }}></span>
                                 <br />
                                 <div
@@ -344,6 +347,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                                         className="btn btn-outline-primary form-control mt-1"
                                         id="btnNguoitieptheo"
                                         onClick={() => {
+                                            SET_Boqua(B => B + 1)
                                             $("#complete").html("")
                                             $("#showbtnNext").hide()
                                             props.Total.stObj.inputSumit = ""
@@ -351,7 +355,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                                             props.Total.fnObj.AddTo_Show_ArrOfPeopeAppear_ReactData(props.Total.stObj.indexOfPeople)
                                         }}
                                     >Người tiếp theo</button>
-                                    <br />
+                                    {/* <br />
                                     <button
                                         // className="btn btn-sm btn-outline-primary"
                                         className="btn btn-outline-danger form-control mt-1"
@@ -359,7 +363,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                                             // console.log(props.Total)
                                             props.Total.fnObj.SET_PageChange(2)
                                         }}
-                                    >Học câu</button>
+                                    >Học câu</button> */}
                                     <br />
                                     <button
                                         // className="btn btn-sm btn-outline-primary"
