@@ -248,15 +248,18 @@ function ArrOfPeopeAppear_ReactJSX(props) {
 
     function Show_Info_StrickAnwers_Reactdata() {
         try {
-            if (Score < 10) {
+            if (Score < 5) {
                 return Info_StrickAnwers_Reactdata.map((e, index) =>
                     <span className="Span_Show_Info_StrickAnwers_Reactdata" key={index}>{e} <b style={{ backgroundColor: "black" }}>||</b> </span>
                 )
             }
-            else {
+            else if (Score < 15) {
                 return Info_StrickAnwers_Reactdata.map((e, index) =>
                     <span className="Span_Show_Info_StrickAnwers_Reactdata" key={index}>{SortLetter(e)} <b style={{ backgroundColor: "black" }}>||</b> </span>
                 )
+            }
+            else {
+                return null
             }
         } catch (error) {
             console.log(error)
