@@ -15,7 +15,7 @@ function Dictaphone({ Data, Xuly }) {
             command: Data,
             callback: (command) => { Xuly(`${command}`) },
             isFuzzyMatch: true,
-            fuzzyMatchingThreshold: 0.4,
+            fuzzyMatchingThreshold: 0.6,
             bestMatchOnly: true
         }]
     }, [Data])

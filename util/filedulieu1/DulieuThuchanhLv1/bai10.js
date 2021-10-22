@@ -265,6 +265,13 @@ const Bai10
             "nameoflession": "Thực hành bài 10",
             "srcYoutube": "",
             "hoctap": [
+                { "EN": "order something in advance", "VN": "đặt hàng trước một cái gì đó", "IPA": "ˈɔːdə ˈsʌmθɪŋ ɪn ədˈvɑːns" },
+                { "EN": "Yes of course", "VN": "Phải, tất nhiên", "IPA": "jɛs ɒv kɔːs" },
+                { "EN": "It is 10 pm.", "VN": "Bây giờ là 10 giờ tối.", "IPA": "ɪt ɪz 10 pm." },
+                { "EN": "Yes of course, I'll bring it to you right away.", "VN": "Vâng, tất nhiên, tôi sẽ mang nó cho bạn ngay lập tức.", "IPA": "jɛs ɒv kɔːs, aɪl brɪŋ ɪt tuː juː raɪt əˈweɪ." },
+                { "EN": "Yes of course. Go straight at the end of the road, turn right.", "VN": "Phải, tất nhiên. Đi thẳng ở cuối đường, rẽ phải.", "IPA": "jɛs ɒv kɔːs. gəʊ streɪt æt ði ɛnd ɒv ðə rəʊd, tɜːn raɪt." },
+                { "EN": "The password is I love you.", "VN": "Mật khẩu là anh yêu em.", "IPA": "ðə ˈpɑːswɜːd ɪz aɪ lʌv juː." },
+
             ],
             "status": "",
         },
