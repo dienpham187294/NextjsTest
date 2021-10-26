@@ -90,6 +90,10 @@ function ArrOfPeopeAppear_ReactJSX(props) {
 
                     if (MessageArr[MessageArr.length - 1] !== "none") {
                         let data = MessageArr[MessageArr.length - 1];
+
+                        // Submit_check_funtion_indata_01(data.function)
+
+                        // console.log(data.function)
                         if (data.robotspeak.length > 0) {
                             ReadMessage(data.robotspeak.PickRandom(), VoicePick);
                         }
@@ -100,6 +104,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                                 e.manspeak.forEach(ee => {
                                     arrTemp.push(ee)
                                 })
+                                // Submit_check_funtion_indata_01(e.function)
                             })
                             SET_Info_StrickAnwers_Reactdata(arrTemp)
                         } else {
@@ -109,6 +114,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                                 e.manspeak.forEach(ee => {
                                     arrTemp.push(ee)
                                 })
+                                // Submit_check_funtion_indata_01(e.function)
                             })
                             SET_Info_StrickAnwers_Reactdata(arrTemp)
 
@@ -184,6 +190,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
     function Submit_check_funtion_indata(command) {
         try {
             if (command.end_successfull) {
+
                 State_of_Anwer = "none";
                 SET_Score(S => S + 1)
                 $("#divCountdown").show();
@@ -198,6 +205,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                         clearInterval(interNguoitieptheo)
                     }
                 }, (1000));
+
             }
             if (command.end_unsuccessfull) {
                 State_of_Anwer = "none";
