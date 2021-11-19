@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
 
 function DataTool(props) {
     const [Data_phongto, SET_Data_phongto] = useState(null)
@@ -33,6 +33,7 @@ function Show_Table(Data, Total, SET_Data_phongto) {
                                 borderRadius: "5px", padding: "5px",
                                 margin: "5px",
                                 maxHeight: "150px",
+                                maxWidth: "15%",
                                 overflowY: "auto"
                             }}>
                             <button
@@ -109,7 +110,9 @@ function ShowDataPhongto(data, Total, SET_Data_phongto) {
                     right: "5px",
                     backgroundColor: "white",
                     overflow: "auto",
-                    zIndex: 3
+                    zIndex: 3,
+                    padding: "15%",
+                    textAlign: "left"
                 }}>
                 <button
                     className="btn btn-danger"

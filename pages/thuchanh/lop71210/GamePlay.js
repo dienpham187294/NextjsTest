@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 // import Read_ReactJSX from "../../../pages/helpers/Read_ReactJSX"
 import $ from "jquery"
 import DataTool from "./S_Data_tool"
-import ReadReactSpeech from "../../helpers/Read_ReactSpeech"
+import ReadReactSpeech from "../../helpers/Read_ReactSpeechSlow"
 import ReadMessage from "../../../util/Read/ReadMessage"
 // import { prop } from "cheerio/lib/api/attributes";
 const stringSimilarity = require("string-similarity");
@@ -13,7 +13,8 @@ let Data_temp_Strickmode;
 let AllData_OfOne;
 let iThoigian = 0;
 let interNguoitieptheo, iNguoitieptheo;
-
+let rateRead = 1.1
+let pitchRead = 1.2
 function ArrOfPeopeAppear_ReactJSX(props) {
 
     const [Info_StrickAnwers_Reactdata, SET_Info_StrickAnwers_Reactdata] = useState(["hi how are you"])
@@ -31,15 +32,15 @@ function ArrOfPeopeAppear_ReactJSX(props) {
     useEffect(
         () => {
             inter()
-            if (iThoigian === 0) {
-                iThoigian = 1
-                setInterval(() => {
-                    iThoigian += 1
-                    $("#thoigian").text(iThoigian)
-                }, 1000);
-            } else {
-                iThoigian = 1
-            }
+            // if (iThoigian === 0) {
+            //     iThoigian = 1
+            //     setInterval(() => {
+            //         iThoigian += 1
+            //         $("#thoigian").text(iThoigian)
+            //     }, 1000);
+            // } else {
+            //     iThoigian = 1
+            // }
             props.Total.stObj.timebegin = Date.now()
             props.Total.stObj.indexOfPeople = 0
             props.Total.fnObj.AddTo_Show_ArrOfPeopeAppear_ReactData = AddTo_Show_ArrOfPeopeAppear_ReactData
@@ -95,7 +96,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
 
                         // console.log(data.function)
                         if (data.robotspeak.length > 0) {
-                            ReadMessage(data.robotspeak.PickRandom(), VoicePick);
+                            ReadMessage(data.robotspeak.PickRandom(), VoicePick, rateRead, pitchRead);
                         }
                         if (data.handling_next.length > 0) {
                             Data_temp_Strickmode = (data.handling_next)
@@ -159,6 +160,9 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                 // .SET_Data_TableTool()
                 SET_Info_StrickAnwers_Reactdata(Arr_HoldAllManSpeak)
                 await SET_Avatar_Reactdata(n.total.image);
+                if (n.total.icon !== "" && n.total.icon !== undefined) {
+                    SET_Info_Icon_Reactdata(n.total.icon)
+                }
                 await SET_Info_ToSunmit_Reactdata([])
                 await SET_Info_ToSunmit_Reactdata(n.total.submitsyntax)
                 if (n.total.gender === "female") {
@@ -166,7 +170,9 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                 } else {
                     VoicePick = (2);
                 }
-                ReadMessage(n.total.robotspeakfirst.PickRandom(), VoicePick)
+                rateRead = [0.9, 1.0, 1.1, 1.2].PickRandom()
+                pitchRead = [0.9, 1.0, 1.1, 1.2].PickRandom()
+                ReadMessage(n.total.robotspeakfirst.PickRandom(), VoicePick, rateRead, pitchRead)
             } else {
                 $("#showEnd").show()
                 $("#time").text(Math.floor((Date.now() - props.Total.stObj.timebegin) / 1000 / 60) + " phút " + Math.floor(((Date.now() - props.Total.stObj.timebegin)) / 1000) % 60 + " giây.")
@@ -180,7 +186,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
     function Submit_check_funtion_indata_01(command) {
         try {
             if (command.readFirst !== undefined) {
-                setTimeout(() => ReadMessage(command.readFirst.PickRandom(), VoicePick), 500)
+                setTimeout(() => ReadMessage(command.readFirst.PickRandom(), VoicePick, rateRead, pitchRead), 500)
             }
             if (command.icon !== undefined) {
                 SET_Info_Icon_Reactdata(command.icon)
@@ -325,24 +331,48 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                     <div>
                         <div className="GameSence_Playing_OneShow">
                             <div>
-                                <img alt={Info_Avatar_Reactdata} src={Info_Avatar_Reactdata} width="60px" />
-                                {Info_Icon_Reactdata !== "" ?
-                                    <>
-                                        <img alt={Info_Icon_Reactdata} src={Info_Icon_Reactdata} width="100px" />
-                                    </>
-                                    : null}
-                                <hr />
-                                <b>Cần nói: </b> {Show_Info_StrickAnwers_Reactdata()}
-                                <hr />
-                                <b>Đáp án: </b>
-                                <DataTool Data={Data_TableTool} Total={props.Total} />
-                                <hr />
-                                <div id="complete" style={{ color: "red" }}></div>
-                                <b>Cần hoàn thành: <span style={{ color: "blue" }}>{props.huongdan}</span>   </b> <br /> {showSubmitSyxtax(Info_ToSunmit_Reactdata)}
+                                <div className="row">
+                                    <div className="col-4">
+                                        <img alt={Info_Avatar_Reactdata} src={Info_Avatar_Reactdata} width="160px" />
+                                        {Info_Icon_Reactdata !== "" ?
+                                            <>
+                                                <img alt={Info_Icon_Reactdata} src={Info_Icon_Reactdata} width="140px" />
+                                            </>
+                                            : null}
+                                    </div>
+                                    <div className="col-6">
+                                        <br />
+                                        <b>Cần nói: </b> {Show_Info_StrickAnwers_Reactdata()}
+                                        <hr />
+                                        <div className="row">
+                                            <div className="col-6">
+                                                <div id="complete" style={{ color: "red" }}></div>
+                                                <b>Cần hoàn thành: <span style={{ color: "blue" }}>{props.huongdan}</span>   </b> <br /> {showSubmitSyxtax(Info_ToSunmit_Reactdata)}
+                                            </div>
+                                            <div className="col-6">
+                                                <h3> Điểm: {Score} <span style={{ color: "red" }}>Chọn sai: {Sai} </span> <span id="thoigian">0</span> | <span style={{ color: "red" }}>{Boqua}</span> </h3>
+                                                <span id="showInterimID" style={{ color: "violet" }}></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
                                 <hr />
-                                <h3> Điểm: {Score} <span style={{ color: "red" }}>Chọn sai: {Sai} </span> <span id="thoigian">0</span> | <span style={{ color: "red" }}>{Boqua}</span> </h3>
-                                <span id="showInterimID" style={{ color: "red" }}></span>
+
+                                {/* <hr /> */}
+                                <div className="row">
+                                    <div className="col-12">
+                                        <b>Công cụ: </b>
+                                        <DataTool Data={Data_TableTool} Total={props.Total} />
+                                    </div>
+
+                                </div>
+
+                                <hr />
+
+
+                                {/* <hr /> */}
+
                                 <br />
                                 <div
                                     style={{
@@ -366,18 +396,8 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                                             props.Total.fnObj.AddTo_Show_ArrOfPeopeAppear_ReactData(props.Total.stObj.indexOfPeople)
                                         }}
                                     >Người tiếp theo</button>
-                                    {/* <br />
-                                    <button
-                                        // className="btn btn-sm btn-outline-primary"
-                                        className="btn btn-outline-danger form-control mt-1"
-                                        onClick={() => {
-                                            // console.log(props.Total)
-                                            props.Total.fnObj.SET_PageChange(2)
-                                        }}
-                                    >Học câu</button> */}
                                     <br />
                                     <button
-                                        // className="btn btn-sm btn-outline-primary"
                                         className="btn btn-outline-primary form-control mt-1"
                                         onClick={() => {
                                             // console.log(props.Total)

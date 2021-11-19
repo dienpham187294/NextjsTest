@@ -101,13 +101,23 @@ let hoctap = [
     { "EN": "an expensive hobby", "VN": "một sở thích đắt tiền", "IPA": "ən ɪksˈpɛnsɪv ˈhɒbi" },
     { "EN": "is it expensive?", "VN": "nó có đắt không?", "IPA": "ɪz ɪt ɪksˈpɛnsɪv?" },
 ]
+let listenOnly = [
+   
+]
+let writeOnly = [
+   
+]
 const Bai2
 
     = [
         {
             "nameoflession": "Thực hành bài 2",
             "srcYoutube": "",
-            "hoctap": hoctap,
+            "hoctap": {
+                "listenRead": hoctap,
+                "listenOnly": listenOnly,
+                "writeOnly": writeOnly
+            },
             "status": "",
         },
         {

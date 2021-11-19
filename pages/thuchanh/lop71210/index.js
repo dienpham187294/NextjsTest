@@ -1,5 +1,5 @@
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 import UpLoadFile from "./S_Uploadfile"
 import InfoLession from "./S_Lession"
@@ -10,7 +10,7 @@ import GamePlay from "./S_GamePlay"
 function Manager() {
     const [PageChange, SET_PageChange] = useState(0)
     const [Data_InfoOflession, SET_Data_InfoOflession] = useState([])
-  
+
     const [Data_Game, SET_Data_Game] = useState([])
     const [huongdan, SET_huongdan] = useState("")
     const Total = new MDG(SET_PageChange, SET_Data_Game, SET_Data_InfoOflession, SET_huongdan)

@@ -1,6 +1,6 @@
 let i = Date.now()
 
-export default async function ReadMessage(text, voiceNum, rate) {
+export default async function ReadMessage(text, voiceNum, rate, pitch) {
 
     if (Date.now() - 1 > 1500) {
         i = Date.now()
@@ -19,6 +19,9 @@ export default async function ReadMessage(text, voiceNum, rate) {
                     console.log(error)
                 }
             }
+            if (pitch === undefined) {
+                pitch = 1
+            }
             if (text === "I") {
                 text = "i"
             }
@@ -29,7 +32,7 @@ export default async function ReadMessage(text, voiceNum, rate) {
                         let voices = window.speechSynthesis.getVoices();
                         msg.voice = voices[voiceNum + 4];
                         msg.rate = rate;
-                        msg.pitch = 1;
+                        msg.pitch = pitch;
                         msg.text = text;
                         speechSynthesis.speak(msg);
                         try {
@@ -48,6 +51,7 @@ export default async function ReadMessage(text, voiceNum, rate) {
 
                     await $("#SpeechText").val(text)
                     await $("#SpeechRate").val(rate)
+                    await $("#SpeechPitch").val(pitch)
                     try {
                         $("#id_test_rate").text(rate)
                     } catch (error) {

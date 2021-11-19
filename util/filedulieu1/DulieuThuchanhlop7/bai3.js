@@ -121,13 +121,23 @@ ArrPeple.forEach(e => {
 
 let hoctap = [
 ]
+let listenOnly = [
+   
+]
+let writeOnly = [
+   
+]
 const Bai3
 
     = [
         {
             "nameoflession": "Thực hành bài 3",
             "srcYoutube": "",
-            "hoctap": hoctap,
+            "hoctap":  {
+                "listenRead": hoctap,
+                "listenOnly": listenOnly,
+                "writeOnly": writeOnly
+            },
             "status": "",
         },
         {

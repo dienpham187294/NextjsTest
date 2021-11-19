@@ -74,13 +74,26 @@ let hoctap = [
     { "EN": "playing the guitar", "VN": "Chơi guitar", "IPA": "ˈpleɪɪŋ ðə gɪˈtɑː" },
     { "EN": "playing board games", "VN": "Chơi trò chơi trên bàn cờ", "IPA": "ˈpleɪɪŋ bɔːd geɪmz" },
 ]
+let listenOnly = [
+    ["Hi", "Hello", "How are you"],
+    ["Hi 1", "Hello 1", "How are you 1"]
+]
+let writeOnly = [
+    ["Hi 1", "Hello 1", "How are you 1"],
+    ["Hi 1", "Hello 1", "How are you 1"]
+]
 const Bai1
 
     = [
         {
             "nameoflession": "Thực hành bài 1",
             "srcYoutube": "",
-            "hoctap": hoctap,
+            "hoctap":
+            {
+                "listenRead": hoctap,
+                "listenOnly": listenOnly,
+                "writeOnly": writeOnly
+            },
             "status": "",
         },
         {

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import dynamic from 'next/dynamic'
-import { async } from 'regenerator-runtime';
-import List_IDs from '../../util/List_IDs/List_IDs';
+// import { async } from 'regenerator-runtime';
+// import List_IDs from '../../util/List_IDs/List_IDs';
 const Speech = dynamic(
     () => {
         return import('react-speech')
@@ -23,8 +23,6 @@ function Read(props) {
             <input
                 onClick={() => {
                     arrText.push($("#SpeechText").val());
-
-
                 }}
                 type="button" id="SpeechTextBtn"
             />

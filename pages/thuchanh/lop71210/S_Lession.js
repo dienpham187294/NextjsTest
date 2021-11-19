@@ -1,34 +1,129 @@
-// import $ from "jquery"
+import $ from "jquery"
+// import { pick } from "query-string";
 import { useState } from "react"
 import ReadMessage from "../../../util/Read/ReadMessage"
 import ReadReactSpeech from "../../helpers/Read_ReactSpeechSlow"
 import Dictaphone from "../../helpers/RegcognitionV1-0-1AI0.5 _02"
+
+let pickToRead = "";
+let listenScore = 0
 export default function Lesson(props) {
     const [Data_Learn, SET_Data_Learn] = useState("")
+    const [Data_LearnListen, SET_Data_LearnListen] = useState("")
+    const [Data_LearnWrite, SET_Data_LearnWrite] = useState("")
     const [Docthu, SET_Docthu] = useState("")
     const [Data_Commands, SET_Data_Commands] = useState("====")
+    const [Page, SET_Page] = useState("nghenoi")
 
     try {
         return (
             <div >
-                {Data_Learn !== "" ? Show_tienganhphothong_phanbaihoc(Data_Learn, Docthu, SET_Docthu, SET_Data_Commands, Data_Commands) : null}
-                {props.Data.map((e, i) =>
+                <hr />
+                <div className="row" style={{ textAlign: "center", backgroundColor: "gray", padding: "15px" }}>
                     <div
-                        onClick={() => {
-                            SET_Data_Learn(e);
-                            document.getElementById("idStartLisening").click();
-                        }}
-                        key={i}
-                        style={{ border: "1px solid green", borderRadius: "5px", padding: "5px", margin: "5px", cursor: "pointer" }}
+                        className="col-4"
+                        style={{ backgroundColor: Page === "nghenoi" ? "yellow" : "white", cursor: "pointer" }}
+                        onClick={() => { SET_Page("nghenoi") }}
                     >
-                        <span style={{ color: "blue" }}> {e.EN}</span>
-                        <br />
-                        <i>{e.VN}</i>
-                        <br />
-                        <button style={{ backgroundColor: "yellow" }}>Bấm chọn để học</button>
-
+                        Nghe - nói
                     </div>
-                )}
+                    <div
+                        className="col-4"
+                        style={{ backgroundColor: Page === "nghe" ? "yellow" : "white", cursor: "pointer" }}
+                        onClick={() => { SET_Page("nghe") }}
+                    >Nghe</div>
+                    <div
+                        className="col-4"
+                        style={{ backgroundColor: Page === "docviet" ? "yellow" : "white", cursor: "pointer" }}
+                        onClick={() => { SET_Page("docviet") }}
+                    >Đọc - Viết</div>
+                </div>
+
+                {Page === "nghenoi" ?
+                    <div>
+                        {/* <b> Chọn câu:</b> */}
+                        <div style={{ backgroundColor: "gray" }}>
+                            <select
+                                onChange={(e) => {
+                                    SET_Data_Learn(props.Data.listenRead[e.currentTarget.value]);
+                                    // console.log(props.Data)
+                                    document.getElementById("idStartLisening").click();
+                                }}
+                                className="form-control mt-3">
+                                <option>Chọn bài học</option>
+                                {props.Data.listenRead.map((e, i) =>
+                                    <option
+                                        key={i}
+                                        value={i}
+                                    >
+                                        {e.EN}
+                                    </option>
+                                )}
+                            </select>
+                            <hr />
+                        </div>
+
+                        <hr />
+                        {Data_Learn !== "" ? Show_tienganhphothong_phanbaihoc(Data_Learn, Docthu, SET_Docthu, SET_Data_Commands, Data_Commands) : null}
+                    </div>
+                    : null}
+                {Page === "nghe" ?
+                    <div>
+                        {/* <b> Chọn câu:</b> */}
+                        <div style={{ backgroundColor: "gray" }}>
+                            <select
+                                onChange={(e) => {
+                                    SET_Data_LearnListen(props.Data.listenOnly[e.currentTarget.value]);
+                                    // console.log(props.Data)
+                                    document.getElementById("idStartLisening").click();
+                                }}
+                                className="form-control mt-3">
+                                <option>Chọn bài học</option>
+                                {props.Data.listenOnly.map((e, i) =>
+                                    <option
+                                        key={i}
+                                        value={i}
+                                    >
+                                        {i}
+                                    </option>
+                                )}
+                            </select>
+                            <hr />
+                        </div>
+
+                        <hr />
+                        {Data_LearnListen !== "" ? Show_tienganhphothong_listen(Data_LearnListen) : null}
+                    </div>
+                    : null}
+                {Page === "docviet" ?
+                    <div>
+                        {/* <b> Chọn câu:</b> */}
+                        <div style={{ backgroundColor: "gray" }}>
+                            <select
+                                onChange={(e) => {
+                                    SET_Data_LearnWrite(props.Data.writeOnly[e.currentTarget.value]);
+                                    // console.log(props.Data)
+                                    document.getElementById("idStartLisening").click();
+                                }}
+                                className="form-control mt-3">
+                                <option>Chọn bài học</option>
+                                {props.Data.writeOnly.map((e, i) =>
+                                    <option
+                                        key={i}
+                                        value={i}
+                                    >
+                                        {i}
+                                    </option>
+                                )}
+                            </select>
+                            <hr />
+                        </div>
+
+                        <hr />
+                        {Data_LearnWrite !== "" ? Show_tienganhphothong_Write(Data_LearnWrite) : null}
+                    </div>
+                    : null}
+
 
                 <div
                     style={{
@@ -158,3 +253,85 @@ function Show_tienganhphothong_phanbaihoc(Data_Learn, Docthu, SET_Docthu, SET_Da
 
 }
 
+function Show_tienganhphothong_listen(Data_LearnListen) {
+
+    try {
+        return (
+            <div>
+                <button
+                    className="btn btn-info mr-5"
+                    onClick={() => {
+                        pickToRead = Data_LearnListen.PickRandom();
+                        let voice = [1, 2].PickRandom()
+                        let rate = [0.8, 0.9, 1.0, 1.1, 1.2].PickRandom()
+                        let pitch = [0.8, 0.9, 1.0, 1.1, 1.2].PickRandom()
+                        ReadMessage(pickToRead, voice, rate, pitch)
+                    }}
+                >Click to listen</button>  <b >Điểm: <span id="listenScore">0</span></b>
+                <hr />
+                {Data_LearnListen.map((e, i) =>
+                    <button
+                        className="btn btn-info ml-2" key={i}
+                        onClick={() => {
+                            if (e === pickToRead) {
+                                pickToRead = "";
+                                listenScore += 1;
+                                document.getElementById("listenScore").textContent = listenScore
+                            }
+                        }}
+                    >{e}</button>
+                )}
+                <hr />
+
+            </div>
+        )
+    } catch (error) {
+        return null
+    }
+
+}
+
+function Show_tienganhphothong_Write(Data_LearnWrite) {
+
+    try {
+        return (
+            <div>
+                {Data_LearnWrite.map((e, i) =>
+                    <div
+                        key={i}
+                        style={{ margin: "10px" }}
+                    >
+
+                        {showThread(e, i)}
+                        <br />
+                        <b id={"row" + i}></b>
+                        <hr />
+                    </div>
+                )}
+
+            </div>
+        )
+    } catch (error) {
+        return null
+    }
+}
+
+function showThread(text, n) {
+    let arrIn1 = text.split(" ").sort(() => Math.random() - 0.5);
+    return (
+        arrIn1.map((e, i) =>
+            <button
+                className="btn btn-info ml-2" key={i}
+                onClick={() => {
+                    let t = $("#row" + n).text() + e + " ";
+
+                    if (t.includes(text)) {
+                        t += " |Correct!"
+                    }
+
+                    $("#row" + n).text(t);
+                }}
+            >{e}</button>
+        )
+    )
+}
