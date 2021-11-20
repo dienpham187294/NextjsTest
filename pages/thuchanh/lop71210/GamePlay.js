@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 // import Read_ReactJSX from "../../../pages/helpers/Read_ReactJSX"
 import $ from "jquery"
+import Linkapi from "../../../util/api/Linkapi"
 import DataTool from "./S_Data_tool"
 import ReadReactSpeech from "../../helpers/Read_ReactSpeechSlow"
 import ReadMessage from "../../../util/Read/ReadMessage"
@@ -15,6 +16,10 @@ let iThoigian = 0;
 let interNguoitieptheo, iNguoitieptheo;
 let rateRead = 1.1
 let pitchRead = 1.2
+let idRoomOnline;
+let idMember;
+let interOnline;
+let i1 = 0
 function ArrOfPeopeAppear_ReactJSX(props) {
 
     const [Info_StrickAnwers_Reactdata, SET_Info_StrickAnwers_Reactdata] = useState(["hi how are you"])
@@ -25,9 +30,32 @@ function ArrOfPeopeAppear_ReactJSX(props) {
     const [Sai, SET_Sai] = useState(0)
     const [Boqua, SET_Boqua] = useState(0)
     const [Data_TableTool, SET_Data_TableTool] = useState([])
+    const [RoomOnline, SET_RoomOnline] = useState("")
+    const [DataOnline, SET_DataOnline] = useState([])
+
     useEffect(() => {
         props.SET_Data_Commands(Info_StrickAnwers_Reactdata)
+
+        if (i1 === 0) {
+            idRoomOnline = Date.now() + ["a", "b", "c", "d", "e", "f"].PickRandom()
+            if (localStorage.getItem("idMember") !== null) {
+                idMember = localStorage.getItem("idMember")
+            } else {
+                idMember = Date.now() + ["a", "b", "c", "d", "e", "f"].PickRandom();
+                localStorage.setItem("idMember", idMember)
+            }
+            i1++
+        }
+
     }, [Info_StrickAnwers_Reactdata])
+
+    useEffect(() => {
+        if (RoomOnline !== "") {
+            getOnline(RoomOnline, idMember, "", Score)
+        }
+
+    }, [Score])
+
 
     useEffect(
         () => {
@@ -49,6 +77,30 @@ function ArrOfPeopeAppear_ReactJSX(props) {
             AddTo_Show_ArrOfPeopeAppear_ReactData(0)
         }, []
     );
+
+    async function getOnline(idRoom, idMember, score) {
+        try {
+            const res = await fetch(
+                Linkapi + "api/apiOnline?idRoom=" + idRoom + "&idMember=" + idMember + "&score=" + score
+                ,
+                {
+                    method: 'GET',
+                    headers: {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    }
+                })
+            let data = await res.json();
+            if (data.success) {
+                SET_DataOnline(data.data)
+            }
+
+
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
 
     function inter() {
         setTimeout(() => {
@@ -350,8 +402,10 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                                                 <b>Cần hoàn thành: <span style={{ color: "blue" }}>{props.huongdan}</span>   </b> <br /> {showSubmitSyxtax(Info_ToSunmit_Reactdata)}
                                             </div>
                                             <div className="col-6">
-                                                <h3> Điểm: {Score} <span style={{ color: "red" }}>Chọn sai: {Sai} </span> <span id="thoigian">0</span> | <span style={{ color: "red" }}>{Boqua}</span> </h3>
+                                                <b> Điểm: {Score} <span style={{ color: "red" }}>Chọn sai: {Sai} </span> <span id="thoigian">0</span> | <span style={{ color: "red" }}>{Boqua}</span> </b>
+                                                <br />
                                                 <span id="showInterimID" style={{ color: "violet" }}></span>
+
                                             </div>
                                         </div>
                                     </div>
@@ -370,8 +424,9 @@ function ArrOfPeopeAppear_ReactJSX(props) {
 
                                 <hr />
 
+                                {showDataOnline(DataOnline)}
 
-                                {/* <hr /> */}
+
 
                                 <br />
                                 <div
@@ -404,11 +459,44 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                                             props.Total.fnObj.SET_PageChange(0)
                                             try {
                                                 $("#idStopLisening")[0].click()
+                                                clearInterval(interOnline)
                                             } catch (error) {
 
                                             }
                                         }}
                                     >Trở lại chọn bài</button>
+                                    <br />
+
+                                    {RoomOnline === "" ?
+                                        <div>
+                                            <input id="getIdRoom" defaultValue={idRoomOnline} type="text" />
+                                            <button
+                                                onClick={() => {
+                                                    getOnline($("#getIdRoom").val(), idMember,  Score)
+                                                    SET_RoomOnline($("#getIdRoom").val())
+                                                }}
+                                            >Vào phòng</button>
+                                        </div>
+                                        :
+                                        <div>
+                                            {RoomOnline}
+                                            <br />
+                                            <button
+                                                onClick={() => {
+                                                    clearInterval(interOnline)
+                                                    SET_RoomOnline("")
+                                                }}
+                                            >Thoát</button>
+
+                                            <button
+                                                onClick={() => {
+                                                    getOnline(RoomOnline, idMember,  Score)
+                                                }}
+                                            >Cập nhật</button>
+                                            {/* <input id="idName" type="text" placeholder="Tên" /> */}
+                                        </div>
+                                    }
+
                                 </div>
                                 <div style={{
                                     position: "fixed",
@@ -526,4 +614,21 @@ function showSubmitSyxtax(Info_ToSunmit_Reactdata) {
     }
 
     return JSON.stringify(Info_ToSunmit_Reactdata)
+}
+
+
+
+function showDataOnline(DataOnline) {
+    // console.log(DataOnline)
+    try {
+        return (
+            DataOnline.map((e, i) =>
+                <span style={{ border: "1px solid green", borderRadius: "3px", padding: "5px", margin: "4px" }} key={i}>
+                    {e.score}
+                </span>
+            )
+        )
+    } catch (error) {
+        return null
+    }
 }
