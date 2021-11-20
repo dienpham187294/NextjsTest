@@ -258,8 +258,9 @@ function Show_tienganhphothong_listen(Data_LearnListen) {
     try {
         return (
             <div>
+                <b className="ml-5">Điểm: <span id="listenScore">0</span></b>
                 <button
-                    className="btn btn-info mr-5"
+                    className="btn btn-warning ml-5"
                     onClick={() => {
                         pickToRead = Data_LearnListen.PickRandom();
                         let voice = [1, 2].PickRandom()
@@ -267,7 +268,7 @@ function Show_tienganhphothong_listen(Data_LearnListen) {
                         let pitch = [0.8, 0.9, 1.0, 1.1, 1.2].PickRandom()
                         ReadMessage(pickToRead, voice, rate, pitch)
                     }}
-                >Click to listen</button>  <b >Điểm: <span id="listenScore">0</span></b>
+                >Click to listen</button>
                 <hr />
                 {Data_LearnListen.map((e, i) =>
                     <button
@@ -319,19 +320,25 @@ function Show_tienganhphothong_Write(Data_LearnWrite) {
 function showThread(text, n) {
     let arrIn1 = text.split(" ").sort(() => Math.random() - 0.5);
     return (
-        arrIn1.map((e, i) =>
+        <>
+            {arrIn1.map((e, i) =>
+                <button
+                    className="btn btn-info ml-2" key={i}
+                    onClick={() => {
+                        let t = $("#row" + n).text() + e + " ";
+
+                        if (t.includes(text)) {
+                            t += " |CORRECT!  "
+                        }
+
+                        $("#row" + n).text(t);
+                    }}
+                >{e}</button>
+            )}
             <button
-                className="btn btn-info ml-2" key={i}
-                onClick={() => {
-                    let t = $("#row" + n).text() + e + " ";
-
-                    if (t.includes(text)) {
-                        t += " |Correct!"
-                    }
-
-                    $("#row" + n).text(t);
-                }}
-            >{e}</button>
-        )
+                className="btn btn-danger ml-5"
+                onClick={() => { $("#row" + n).text(""); }}
+            >XXXX</button>
+        </>
     )
 }

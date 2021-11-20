@@ -12,9 +12,14 @@ let arr_In1 = [
     { "submit": "Have a sunburn.", "input": "I was outside all day yesterday. Now, my face was red and burning.", "qs": "You should wear a hat when you are outside." },
     { "submit": "Have flu.", "input": "I keep sneezing and coughing.", "qs": "You should exercise regularly." },
     { "submit": "Have a temperature.", "input": "I am so tired. I can’t keep my eyes open! I’m very hot too.", "qs": "You should see a doctor" },
-    { "submit": "Have a stomachache.", "input": "He ate some seafood yesterday. Now I feel sick.", "qs": "You should be careful with what you eat and drink." },
+    { "submit": "Have a stomachache.", "input": "I ate some seafood yesterday. Now I feel sick.", "qs": "You should be careful with what you eat and drink." },
     { "submit": "Have a sore throat.", "input": "My throat is very sore.", "qs": "You should drink warm liquids such as hot tea with honey." },
 ]
+// let tArr = []
+// arr_In1.forEach(e => {
+//     tArr.push(e.qs)
+//     console.log(JSON.stringify(tArr))
+// })
 DataTable.push(["Have a sunburn.", "Have flu.", "Have a temperature.", "Have a stomachache.", "Have a sore throat."])
 ArrPeple.forEach(e => {
 
@@ -42,12 +47,17 @@ ArrPeple.forEach(e => {
 })
 
 let hoctap = [
+
 ]
 let listenOnly = [
-   
+    ["Have a sunburn.", "Have flu.", "Have a temperature.", "Have a stomachache.", "Have a sore throat."],
+    ["I was outside all day yesterday. Now, my face was red and burning.", "I keep sneezing and coughing.", "I am so tired. I can’t keep my eyes open! I’m very hot too.", "I ate some seafood yesterday. Now I feel sick.", "My throat is very sore."],
+    ["You should wear a hat when you are outside.", "You should exercise regularly.", "You should see a doctor", "You should be careful with what you eat and drink.", "You should drink warm liquids such as hot tea with honey."]
 ]
 let writeOnly = [
-   
+    ["Have a sunburn.", "Have flu.", "Have a temperature.", "Have a stomachache.", "Have a sore throat."],
+    ["I was outside all day yesterday. Now, my face was red and burning.", "I keep sneezing and coughing.", "I am so tired. I can’t keep my eyes open! I’m very hot too.", "I ate some seafood yesterday. Now I feel sick.", "My throat is very sore."],
+    ["You should wear a hat when you are outside.", "You should exercise regularly.", "You should see a doctor", "You should be careful with what you eat and drink.", "You should drink warm liquids such as hot tea with honey."]
 ]
 const Bai21
 
@@ -55,7 +65,7 @@ const Bai21
         {
             "nameoflession": "Thực hành bài 2.1",
             "srcYoutube": "",
-            "hoctap":  {
+            "hoctap": {
                 "listenRead": hoctap,
                 "listenOnly": listenOnly,
                 "writeOnly": writeOnly
