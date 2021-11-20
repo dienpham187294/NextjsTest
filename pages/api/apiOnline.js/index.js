@@ -1,54 +1,45 @@
-
+import { connectToDatabase } from '../../../util/mongodb'
 const fs = require('file-system');
 export default async (req, res) => {
 
     const { idRoom, idMember, score } = req.query;
-
+    const { db } = await connectToDatabase();
     try {
         console.log(idRoom, idMember, score)
 
-        await fs.readFile('./RoomList.txt', 'utf8', (err, jsonFile) => {
+        const data = await db.collection("roomOnline").find({ _id: "6198a0cecd9c640d86725128" }).toArray()
 
-            let tArr = [];
-            let tOutput = []
-            if (checkArray(jsonFile)) {
-                tArr = JSON.parse(jsonFile)
-                if (jsonFile.includes(idRoom)) {
-                    console.log("includes")
-                    tArr.forEach(e => {
-                        if (e.idRoom === idRoom) {
-                            if (!JSON.stringify(e.Members).includes(idMember)) {
-                                e.Members.push({
-                                    "idMember": idMember,
+        // console.log(data)
 
-                                    "score": score
-                                })
-                            } else {
-                                e.Members.forEach(ee => {
-                                    if (ee.idMember === idMember) {
 
-                                        ee.score = score
-                                    }
-                                })
-                            }
-                            fs.writeFile('./RoomList.txt', JSON.stringify(tArr));
-                            res.status(200).json({ success: true, data: e.Members })
-                        }
-                    });
-                } else {
-                    tArr.push({
-                        "idRoom": idRoom,
-                        "Members": [
-                            {
+
+
+        let jsonFile = data[0].data
+        let tArr = [];
+
+        if (checkArray(jsonFile)) {
+            tArr = JSON.parse(jsonFile)
+            if (jsonFile.includes(idRoom)) {
+                console.log("includes")
+                tArr.forEach(e => {
+                    if (e.idRoom === idRoom) {
+                        if (!JSON.stringify(e.Members).includes(idMember)) {
+                            e.Members.push({
                                 "idMember": idMember,
 
                                 "score": score
-                            }
-                        ]
-                    })
-                    fs.writeFile('./RoomList.txt', JSON.stringify(tArr));
-                    res.status(200).json({ success: true, data: ["first"] })
-                }
+                            })
+                        } else {
+                            e.Members.forEach(ee => {
+                                if (ee.idMember === idMember) {
+
+                                    ee.score = score
+                                }
+                            })
+                        }
+                        res.status(200).json({ success: true, data: e.Members })
+                    }
+                });
             } else {
                 tArr.push({
                     "idRoom": idRoom,
@@ -60,15 +51,39 @@ export default async (req, res) => {
                         }
                     ]
                 })
-                fs.writeFile('./RoomList.txt', JSON.stringify(tArr));
+
                 res.status(200).json({ success: true, data: ["first"] })
-
             }
+        } else {
+            tArr.push({
+                "idRoom": idRoom,
+                "Members": [
+                    {
+                        "idMember": idMember,
+
+                        "score": score
+                    }
+                ]
+            })
+
+            res.status(200).json({ success: true, data: ["first"] })
+
+        }
+
+        await db.collection("roomOnline").updateOne(
+            { _id: "6198a0cecd9c640d86725128" },
+            {
+                $set: {
+                    data: JSON.stringify(tArr)
+                }
+            },
+            {
+                upsert: true
+            }
+        )
 
 
 
-
-        })
     } catch (error) {
         res.status(400).json({ success: false })
     }
