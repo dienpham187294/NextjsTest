@@ -473,8 +473,8 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                                             <input id="getIdRoom" defaultValue={idRoomOnline} type="text" />
                                             <button
                                                 onClick={() => {
-                                                    getOnline($("#getIdRoom").val(), idMember, Score)
                                                     SET_RoomOnline($("#getIdRoom").val())
+                                                    getOnline($("#getIdRoom").val(), idMember, Score)
                                                 }}
                                             >Vào phòng</button>
                                         </div>
@@ -484,7 +484,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                                             <br />
                                             <button
                                                 onClick={() => {
-                                                    clearInterval(interOnline)
+                                                    // clearInterval(interOnline)
                                                     SET_RoomOnline("")
                                                 }}
                                             >Thoát</button>
