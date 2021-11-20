@@ -1,5 +1,5 @@
 import { connectToDatabase } from '../../../util/mongodb'
-const fs = require('file-system');
+// const fs = require('file-system');
 export default async (req, res) => {
 
     const { idRoom, idMember, score } = req.query;
