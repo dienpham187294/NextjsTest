@@ -9,11 +9,6 @@ export default async (req, res) => {
 
         const data = await db.collection("roomOnline").find({ _id: "6198a0cecd9c640d86725128" }).toArray()
 
-        // console.log(data)
-
-
-
-
         let jsonFile = data[0].data
         let tArr = [];
 

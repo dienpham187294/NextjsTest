@@ -51,7 +51,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
 
     useEffect(() => {
         if (RoomOnline !== "") {
-            getOnline(RoomOnline, idMember, "", Score)
+            getOnline(RoomOnline, idMember, Score)
         }
 
     }, [Score])
@@ -91,6 +91,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                     }
                 })
             let data = await res.json();
+            console.log(data)
             if (data.success) {
                 SET_DataOnline(data.data)
             }
@@ -472,7 +473,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                                             <input id="getIdRoom" defaultValue={idRoomOnline} type="text" />
                                             <button
                                                 onClick={() => {
-                                                    getOnline($("#getIdRoom").val(), idMember,  Score)
+                                                    getOnline($("#getIdRoom").val(), idMember, Score)
                                                     SET_RoomOnline($("#getIdRoom").val())
                                                 }}
                                             >Vào phòng</button>
@@ -490,7 +491,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
 
                                             <button
                                                 onClick={() => {
-                                                    getOnline(RoomOnline, idMember,  Score)
+                                                    getOnline(RoomOnline, idMember, Score)
                                                 }}
                                             >Cập nhật</button>
                                             {/* <input id="idName" type="text" placeholder="Tên" /> */}
