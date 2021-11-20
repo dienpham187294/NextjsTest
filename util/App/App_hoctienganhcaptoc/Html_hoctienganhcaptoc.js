@@ -6,23 +6,24 @@ import Check2String from "../../String_tool/Check2String"
 import List_IDs from "../../List_IDs/List_IDs"
 import Linkapi from "../../api/Linkapi"
 import Dictionary_with_image from "../../../pages/helpers/IMAGE/Dictionary_with_image"
-const queryString = require('query-string');
+// const queryString = require('query-string');
 export default function Show_Demo_Sentence_Basic(OBJ_INPUT) {
     const [Data_Learn, SET_Data_Learn] = useState("")
     const [Data_Commands, SET_Data_Commands] = useState("====")
     const [Docthu, SET_Docthu] = useState("")
     const [Data_use, SET_Data_use] = useState(OBJ_INPUT[0])
-    const [Name, SET_Name] = useState("")
+    const [Name, SET_Name] = useState("---")
     const [Status, SET_Status] = useState(0)
     const [Popup, SET_Popup] = useState("")
-    useEffect(() => {
-        setTimeout(() => {
-            const parsed = queryString.parse(window.location.search);
-            if (parsed["token"] !== undefined) {
-                CHECK_Token(parsed["token"], SET_Name)
-            }
-        }, 5000)
-    }, [Status])
+    // useEffect(() => {
+    //     setTimeout(() => {
+    //         // const parsed = queryString.parse(window.location.search);
+    //         // if (parsed["token"] !== undefined) {
+    //         //     CHECK_Token(parsed["token"], SET_Name)
+    //         // }
+    //         SET_Name("-")
+    //     }, 5000)
+    // }, [Status])
     try {
         return (
             <div className="container">
@@ -44,7 +45,7 @@ export default function Show_Demo_Sentence_Basic(OBJ_INPUT) {
 
                     {Name === "" ? "Xin chờ 5s..." :
                         <div>
-                            <b>{Name}</b>
+                            {/* <b>{Name}</b> */}
                             <select onChange={(e) => {
                                 SET_Data_use(OBJ_INPUT[e.currentTarget.value])
                             }} className="form-control">

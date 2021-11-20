@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import Read_ReactSpeech from "../../../pages/helpers/Read_ReactSpeechSlow"
 // import Dictionary_with_image from "../../../pages/helpers/IMAGE/Dictionary_with_image"
-import Linkapi from "../../api/Linkapi"
+// import Linkapi from "../../api/Linkapi"
 import FullScreen from "../../fullscreen/fullscreen"
 // import Show_QuangCao from "../../Show/Show_QuangCao"
 import Show_tienganhphothong_phanbaihoc from "../../Show/Show_tienganhphothong_phanbaihoc"
@@ -10,14 +10,14 @@ import Dictaphone from "../../../pages/helpers/RegcognitionV1-0-1AI0.2LearnBasic
 import MD_Image from "../../models/md_image"
 import ReadMessage from "../../Read/ReadMessage"
 import ThucHanhA from "../../../pages/thuchanh/thuchanhde"
-const queryString = require('query-string');
+// const queryString = require('query-string')
 // let linkReset = ""
 let statusCount = 0;
 let Int_nextDatalearn = 0;
 export default function Show_Tieng_anh_lop_1(Dulieu_tieng_anh_lop_1, tokenCheck, href) {
     const [Data_Learn, SET_Data_Learn] = useState("")
 
-    const [Name, SET_Name] = useState("")
+    const [Name, SET_Name] = useState("---")
 
     const [Status, SET_Status] = useState("")
 
@@ -36,18 +36,19 @@ export default function Show_Tieng_anh_lop_1(Dulieu_tieng_anh_lop_1, tokenCheck,
     const md_img = new MD_Image()
 
     useEffect(() => {
-        const parsed = queryString.parse(window.location.search);
-        if (parsed["token"] !== undefined) {
-            if (!(parsed["token"].includes(tokenCheck))) {
-                alert("Tài khoản không hợp lệ (token không tồn tại). Vui lòng nhắn tin englishtool.co để nhận được trợ giúp.")
-            } else {
-                CHECK_Token(parsed["token"], SET_Name);
-                if (localStorage.getItem("score_ep")) {
-                    SET_Score(localStorage.getItem("score_ep"))
-                }
-            }
-        } else {
-            alert("Cần token để sử dụng. Vui lòng nhắn tin englishtool.co để nhận được trợ giúp. Xin cảm ơn")
+        // const parsed = queryString.parse(window.location.search);
+        // if (parsed["token"] !== undefined) {
+        //     if (!(parsed["token"].includes(tokenCheck))) {
+        //         alert("Tài khoản không hợp lệ (token không tồn tại). Vui lòng nhắn tin englishtool.co để nhận được trợ giúp.")
+        //     } else {
+        //         CHECK_Token(parsed["token"], SET_Name);
+                
+        //     }
+        // } else {
+        //     alert("Cần token để sử dụng. Vui lòng nhắn tin englishtool.co để nhận được trợ giúp. Xin cảm ơn")
+        // }
+        if (localStorage.getItem("score_ep")) {
+            SET_Score(localStorage.getItem("score_ep"))
         }
     }, [Status])
 
@@ -77,7 +78,7 @@ export default function Show_Tieng_anh_lop_1(Dulieu_tieng_anh_lop_1, tokenCheck,
                         ? null
                         :
                         <div className="container">
-                            <h3>Xin chào {Name}</h3>
+                            {/* <h3>Xin chào {Name}</h3> */}
                             <p>Điểm: {Score}</p>
                             <div className="row" style={{ backgroundColor: "gray", padding: "5px" }}>
                                 <div
@@ -278,23 +279,23 @@ Array.prototype.PickRandom = function () {
 
 
 
-async function CHECK_Token(token, SET_Name) {
-    try {
-        const res = await fetch(Linkapi + "api/Token_app/check_token?token=" + token + "&browserinfo=" + navigator.userAgent, {
-            method: 'GET',
-            headers: {
-                "Accept": "application/json",
-                "Content-Type": "application/json"
-            }
-        })
-        let data = await res.json();
-        if (data.data["status"] === "token-found") {
-            SET_Name("Xin chào " + data.data["username"])
-        }
-        if (data.data["status"] === "token-not-found") {
-            alert("Tài khoản không tồn tại. Vui lòng nhắn tin vào page để được trợ giúp. Xin cảm ơn!")
-        }
-    } catch (error) {
-        console.log(error)
-    }
-}
+// async function CHECK_Token(token, SET_Name) {
+//     try {
+//         const res = await fetch(Linkapi + "api/Token_app/check_token?token=" + token + "&browserinfo=" + navigator.userAgent, {
+//             method: 'GET',
+//             headers: {
+//                 "Accept": "application/json",
+//                 "Content-Type": "application/json"
+//             }
+//         })
+//         let data = await res.json();
+//         if (data.data["status"] === "token-found") {
+//             SET_Name("Xin chào " + data.data["username"])
+//         }
+//         if (data.data["status"] === "token-not-found") {
+//             alert("Tài khoản không tồn tại. Vui lòng nhắn tin vào page để được trợ giúp. Xin cảm ơn!")
+//         }
+//     } catch (error) {
+//         console.log(error)
+//     }
+// }

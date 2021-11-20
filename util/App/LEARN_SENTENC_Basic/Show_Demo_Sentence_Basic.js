@@ -12,7 +12,7 @@ export default function Show_Demo_Sentence_Basic() {
     const [Data_Commands, SET_Data_Commands] = useState("====")
     const [Docthu, SET_Docthu] = useState("")
     const [Data_use, SET_Data_use] = useState([])
-    const [Name, SET_Name] = useState("")
+    const [Name, SET_Name] = useState("----")
     const [Status, SET_Status] = useState(0)
     const [Popup, SET_Popup] = useState("")
     useEffect(() => {
