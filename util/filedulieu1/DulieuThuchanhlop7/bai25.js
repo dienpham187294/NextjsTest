@@ -9,28 +9,34 @@ let coerdataoflession = []
 // DataTable.push(ArrName)
 
 let arr_In1 = [
-    { "input": "Can we smile more to live longer?", "qs": "Yes, that’s absolutely true." },
-    { "input": "Does sleeping in help me recover?", "qs": "No, false. Waking up at the same time is better." },
-    { "input": "Should I eat more fresh fish, like sushi?", "qs": "No. Sushi is great. But we shouldn’t eat too much." },
-    { "input": "Sitting too close to the TV is not good, isn’t it?", "qs": "No, it’s not how close you sit. It’s how long you watch TV." },
-    { "input": "How about picking up the food we drop. Is it OK?", "qs": "No, that’s a myth! You shouldn’t eat it, ever!" },
-    { "input": "Do vegetarians get fewer vitamins?", "qs": "No, that’s false. You don’t need meat to get your vitamins." },
-    { "input": "What is a calorie?", "qs": "A calorie is an energy that helps us do our everyday activities." },
-    { "input": "What happens when we have too many calories?", "qs": "If we eat too many calories, we can get fat." },
-    { "input": "What is a healthy number of calories per day?", "qs": "To stay healthy you need between 1,600 and 2,500 calories." },
-    { "input": "Which activity uses a lot of calories?", "qs": "Sports like riding a bike and running using a lot of calories." },
+    { "input": "I want to know how many calories I use per hour when sleeping", "qs": "It's 60" },
+    { "input": "I want to know how many calories I use per hour when watching TV", "qs": "It's 75" },
+    { "input": "I want to know how many calories I use per hour when walking", "qs": "It's 230" },
+    { "input": "I want to know how many calories I use per hour when gardening", "qs": "It's 275" },
+    { "input": "I want to know how many calories I use per hour when doing aerobics", "qs": "It's 330" },
+    { "input": "I want to know how many calories I use per hour when swimming", "qs": "It's 460" },
+    { "input": "I want to know how many calories I use per hour when cycling", "qs": "It's 590" },
+    { "input": "I want to know how many calories I use per hour when running", "qs": "It's 880" },
 ]
+
+let arr_In1_sub = ["sleeping",
+    "watching TV",
+    "walking",
+    "gardening",
+    "doing aerobics",
+    "swimming",
+    "cycling",
+    "running"
+]
+
 let tArr = []
-arr_In1.forEach(e => {
+arr_In1.forEach((e, i) => {
+    tArr.push(arr_In1_sub[i]);
     tArr.push(e.qs);
     tArr.push("---")
 })
 DataTable.push(tArr)
-// let arr_In2 = [
-//     { "input": "I play computer games and watch TV a lot. My eyes feel really dry. What should I do?", "qs": "You should try to rest your eyes. Also, try the 20-20-20 rule: every 20 minutes look away about 20 feet for 20 seconds" },
-//     { "input": "I love burgers and chips, but I’m putting on weight. What can I do?", "qs": "You can start to count your calories. Then think about how much exercise you do. Eat less junk food, and exercise more. You should be fine." },
-//     { "input": "By the weekend I’m so tired. Do you think I should sleep in, or wake up at the usual time on Saturday and Sunday?", "qs": "I think you should set your alarm for 8 a.m., or 9 a.m. It’s good to maintain your usual sleep pattern. Try to exercise, or do something healthy once you are awake." },
-// ]
+
 // DataTable.push(["Have a sunburn.", "Have flu.", "Have a temperature.", "Have a stomachache.", "Have a sore throat."])
 ArrPeple.forEach(e => {
 
@@ -41,23 +47,45 @@ ArrPeple.forEach(e => {
 
     let SpeakFirst = ["hi. I'm " + e[0], "hello. I'm " + e[0]]
 
+    let i1 = GETRANDOMi(arr_In1)
+
     let ArrBegin = []
-    ArrBegin.push(FnObjHanldingNext(["hi " + e[0] + ", how can I help you?"], ["I have a few questions can you answer them for me?"]))
+    ArrBegin.push(FnObjHanldingNext(["hi " + e[0] + ", how can I help you?"], [arr_In1[i1].input]))
 
     //middle
 
     let Arrin3 = []
     let Arrin4 = []
-    let i1 = GETRANDOMi(arr_In1)
+    // let i1 = GETRANDOMi(arr_In1)
     Arrin3.push("0")
-    Arrin4.push(FnObjHanldingNext(["Yes of course. What do you want to know?", "What is your question?"], [arr_In1[i1].input]))
-    Arrin3.push("0-0")
-    Arrin4.push(FnObjHanldingNext([arr_In1[i1].qs], ["Thank you."], { end_successfull: true }))
+    Arrin4.push(FnObjHanldingNext([arr_In1[i1].input], ["Thanks.", "Thank you."], { end_successfull: true }))
+    // let i2 = GETRANDOMi(arr_In2)
+    // Arrin3.push("0-0")
+    // Arrin4.push(FnObjHanldingNext([arr_In1[i1].qs], [arr_In2[i2].input]))
 
+    // Arrin3.push("0-0-0")
+    // Arrin4.push(FnObjHanldingNext([arr_In2[i2].qs], ["Thank you."], { end_successfull: true }))
+    // // Arrin3.push("0-1")
+    // Arrin4.push(FnObjHanldingNext(["What did you do yesterday?"], ["I play football with my friends and swimming after that."]))
+    // ArrInFN.Submit.push(arr_In1[i1].submit)
+
+    // let i3 = GETRANDOMi(Arr3)
+    // Arrin3.push("1")
+    // Arrin4.push(FnObjHanldingNext(Arr3[i3].qs, Arr3[i3].output))
+    // ArrInFN.Submit.push(Arr3[i3].input)
+    // Arrin3.push("1-0")
+    // Arrin4.push(FnObjHanldingNext(Arr4[i3].qs, Arr4[i3].output))
+    // ArrInFN.Submit.push(Arr4[i3].input)
+    // Arrin3.push("1-0-0")
+    // Arrin4.push(FnObjHanldingNext(Arr5[i3].qs, Arr5[i3].output))
+    // ArrInFN.Submit.push(Arr5[i3].input)
+
+
+    // let i4 = GETRANDOMi(Arr3Input)
     let End = []
     // End.push(FnObjHanldingNext([arr_In1[i1].qs], ["I will follow your advice.", "That’s good advice.", "Thank you for your advice."], { end_successfull: true }))
 
-    coerdataoflession.push(Fnperson(ArrInFN, DataTable, ArrBegin, FnToArrobj(Arrin3, Arrin4), End, SpeakFirst, "https://i.postimg.cc/qqdJ9jR5/call-Butoon.png"))
+    coerdataoflession.push(Fnperson(ArrInFN, DataTable, ArrBegin, FnToArrobj(Arrin3, Arrin4), End, SpeakFirst, "calories"))
 })
 
 let hoctap = [
@@ -68,11 +96,11 @@ let listenOnly = [
 let writeOnly = [
 
 ]
-const Bai22
+const Bai25
 
     = [
         {
-            "nameoflession": "Thực hành bài 2.2",
+            "nameoflession": "Thực hành bài 2.5",
             "srcYoutube": "",
             "hoctap": {
                 "listenRead": hoctap,
@@ -86,7 +114,8 @@ const Bai22
         }
     ]
 
-export default Bai22
+export default Bai25
+
 
 
 function FnToArrobj(ArrIn1, ArrIn2) {

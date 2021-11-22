@@ -321,7 +321,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                 })
 
                 if (status_check_submit) {
-                    if (data.end !== null) {
+                    if (data.end.handling_next !== null) {
                         Data_temp_Strickmode = (data.end.handling_next);
                         let arrTemp = []
                         data.end.handling_next.forEach(e => {
@@ -472,17 +472,19 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                                         <div>
                                             <input id="getIdRoom" defaultValue={idRoomOnline} type="text" />
                                             <button
+                                                className="btn btn-sm btn-danger"
                                                 onClick={() => {
                                                     SET_RoomOnline($("#getIdRoom").val())
                                                     getOnline($("#getIdRoom").val(), idMember, Score)
                                                 }}
-                                            >Vào phòng</button>
+                                            >Online</button>
                                         </div>
                                         :
                                         <div>
                                             {RoomOnline}
                                             <br />
                                             <button
+                                                className="btn btn-sm btn-danger"
                                                 onClick={() => {
                                                     // clearInterval(interOnline)
                                                     SET_RoomOnline("")
@@ -490,6 +492,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                                             >Thoát</button>
 
                                             <button
+                                                className="btn btn-sm btn-warning"
                                                 onClick={() => {
                                                     getOnline(RoomOnline, idMember, Score)
                                                 }}

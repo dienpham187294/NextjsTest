@@ -15,12 +15,14 @@ let arr_In1 = [
     { "submit": "Have a stomachache.", "input": "I ate some seafood yesterday. Now I feel sick.", "qs": "You should be careful with what you eat and drink." },
     { "submit": "Have a sore throat.", "input": "My throat is very sore.", "qs": "You should drink warm liquids such as hot tea with honey." },
 ]
-// let tArr = []
-// arr_In1.forEach(e => {
-//     tArr.push(e.qs)
-//     console.log(JSON.stringify(tArr))
-// })
+let tArr = []
+arr_In1.forEach(e => {
+    tArr.push(e.qs)
+    tArr.push("---")
+    // console.log(JSON.stringify(tArr))
+})
 DataTable.push(["Have a sunburn.", "Have flu.", "Have a temperature.", "Have a stomachache.", "Have a sore throat."])
+DataTable.push(tArr)
 ArrPeple.forEach(e => {
 
     let ArrInFN = {}

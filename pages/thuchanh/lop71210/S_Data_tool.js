@@ -34,7 +34,8 @@ function Show_Table(Data, Total, SET_Data_phongto) {
                                 margin: "5px",
                                 maxHeight: "150px",
                                 maxWidth: "15%",
-                                overflowY: "auto"
+                                overflowY: "auto",
+                                textAlign: "left"
                             }}>
                             <button
                                 className="btn btn-sm btn-outline-primary"
