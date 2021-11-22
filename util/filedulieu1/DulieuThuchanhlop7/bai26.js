@@ -132,7 +132,7 @@ ArrPeple.forEach(e => {
     let End = null
     // End.push(FnObjHanldingNext(["hi"], ["I will follow your advice.", "That’s good advice.", "Thank you for your advice."], { end_successfull: true }))
 
-    coerdataoflession.push(Fnperson(ArrInFN, DataTable, ArrBegin, FnToArrobj(Arrin3, Arrin4), End, SpeakFirst, arr_In1[i1].submit))
+    coerdataoflession.push(Fnperson(ArrInFN, DataTable, ArrBegin, FnToArrobj(Arrin3, Arrin4), End, SpeakFirst, "calories"))
 })
 
 let hoctap = [
