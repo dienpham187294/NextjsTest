@@ -321,7 +321,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                 })
 
                 if (status_check_submit) {
-                    if (data.end.handling_next !== null) {
+                    if (data.end !== null && data.end.handling_next !== null) {
                         Data_temp_Strickmode = (data.end.handling_next);
                         let arrTemp = []
                         data.end.handling_next.forEach(e => {
