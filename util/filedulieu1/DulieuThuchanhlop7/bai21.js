@@ -49,7 +49,11 @@ ArrPeple.forEach(e => {
 })
 
 let hoctap = [
-
+    { "EN": "You should wear a hat when you are outside.", "VN": "Bạn nên đội mũ khi ra ngoài.", "IPA": "juː ʃʊd weər ə hæt wɛn juː ɑːr ˌaʊtˈsaɪd." },
+    { "EN": "You should exercise regularly.", "VN": "Bạn nên tập thể dục thường xuyên.", "IPA": "juː ʃʊd ˈɛksəsaɪz ˈrɛgjʊləli." },
+    { "EN": "You should see a doctor", "VN": "Bạn nên đi khám bác sĩ", "IPA": "juː ʃʊd siː ə ˈdɒktə" },
+    { "EN": "You should be careful with what you eat and drink.", "VN": "Bạn nên cẩn thận với những gì bạn ăn và uống.", "IPA": "juː ʃʊd biː ˈkeəfʊl wɪð wɒt juː iːt ænd drɪŋk." },
+    { "EN": "You should drink warm liquids such as hot tea with honey.", "VN": "Bạn nên uống nước ấm như trà nóng với mật ong.", "IPA": "juː ʃʊd drɪŋk wɔːm ˈlɪkwɪdz sʌʧ æz hɒt tiː wɪð ˈhʌni." },
 ]
 let listenOnly = [
     ["Have a sunburn.", "Have flu.", "Have a temperature.", "Have a stomachache.", "Have a sore throat."],
