@@ -55,7 +55,7 @@ function MyApp({ Component, pageProps }) {
       <title>Thực hành tiếng anh</title>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="description" content="Ericpham Product" />
-      <meta name="facebook-domain-verification" content="4v65nvfymyec6nthr2m2l2rbcvo7kp" />
+      {/* <meta name="facebook-domain-verification" content="4v65nvfymyec6nthr2m2l2rbcvo7kp" /> */}
       <link rel="icon" href="/favicon.ico" />
       <link
         rel="stylesheet"
@@ -84,7 +84,12 @@ function MyApp({ Component, pageProps }) {
 
 
     <footer className="mt-5 text-center">
-
+      <div>
+        <hr />
+        Created by Ká Điện.
+        <br />
+        <i>Objective: Create games that have the effect of replacing the actual language practice environment. Make it easy and fast for everyone to access the practice and use of this tool for fluency.</i>
+      </div>
       <div style={{ display: "none" }}>
         <span id="ID_TEXT_BROWSERNAME"></span><span id="Detect_device"></span>
         <p id={List_IDs["GET_Cookies"]}> ===</p>

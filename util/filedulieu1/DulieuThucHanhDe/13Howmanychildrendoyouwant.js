@@ -63,7 +63,7 @@ function GETRANDOMi(arr) {
 const Howmanychildren
     = [
         {
-            "nameoflession": "Bài 13: Bạn có mấy đứa con?  -- How many children do you have?",
+            "nameoflession": "Lesson 13: How many children do you have?",
             "huongdan": "Tìm thông tin tình trạng có bao nhiêu người con của người đối thoại?",
             "srcYoutube": "",
             "hoctap": [

@@ -74,7 +74,7 @@ function GETRANDOMi(arr) {
 const Whatkindsoffilmsdoyoulike
     = [
         {
-            "nameoflession": "Bài 24: Thể loại phim yêu thích của bạn là gì?  -- What kinds of films do you like?",
+            "nameoflession": "Lesson 24: What kinds of films do you like?",
             "huongdan": "Tìm thông tin Thể loại phim yêu thích của người đối thoại?",
             "srcYoutube": "",
             "hoctap": [

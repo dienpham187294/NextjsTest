@@ -273,7 +273,7 @@ function PickRandom(arr) {
 const Whenisyourbirthday
     = [
         {
-            "nameoflession": "Bài 5: Bạn sinh ngày nào? -- When is your birthday?",
+            "nameoflession": "Lesson 5: When is your birthday?",
             "huongdan": "Tìm thông tin ngày sinh người đối thoại?",
             "srcYoutube": "https://www.youtube.com/embed/n2trpvRsKgU",
             "hoctap": [

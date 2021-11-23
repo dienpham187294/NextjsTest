@@ -46,7 +46,7 @@ ARRp.forEach(e => {
 const HowlonghaveyoulearningEnglish
     = [
         {
-            "nameoflession": "Bài 36 - How long have you learning English?",
+            "nameoflession": "Lesson 36: How long have you learning English?",
             "srcYoutube": "",
             "hoctap": [
             ],

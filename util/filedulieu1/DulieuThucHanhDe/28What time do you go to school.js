@@ -55,7 +55,7 @@ ARRp.forEach(e => {
 const Whattimedoyougotoschool
     = [
         {
-            "nameoflession": "Bài 28 - What time do you go to school?",
+            "nameoflession": "Lesson 28: What time do you go to school?",
             "srcYoutube": "",
             "hoctap": [
             ],

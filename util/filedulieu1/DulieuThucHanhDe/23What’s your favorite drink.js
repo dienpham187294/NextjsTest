@@ -73,7 +73,7 @@ function GETRANDOMi(arr) {
 const Whatsyourfavoritedrink
     = [
         {
-            "nameoflession": "Bài 23: Thức uống yêu thích của bạn là gì?  -- What’s your favorite drink?",
+            "nameoflession": "Lesson 23: What’s your favorite drink?",
             "huongdan": "Tìm thông tin thức uống yêu thích của người đối thoại?",
             "srcYoutube": "",
             "hoctap": [

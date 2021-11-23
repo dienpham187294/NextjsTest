@@ -71,7 +71,7 @@ function GETRANDOMi(arr) {
 const Whattimedoyougotobed
     = [
         {
-            "nameoflession": "Bài 19: Bạn đi ngủ lúc mấy giờ?  -- What time do you go to bed?",
+            "nameoflession": "Lesson 19: What time do you go to bed?",
             "huongdan": "Tìm thông tin giờ đi ngủ của người đối thoại?",
             "srcYoutube": "",
             "hoctap": [

@@ -26,7 +26,7 @@ function PickRandom(arr) {
 const Whatlineofwork
     = [
         {
-            "nameoflession": "Bài 8: Bạn làm trong lĩnh vực nào? -- What line of work are you in?",
+            "nameoflession": "Lesson 8: What line of work are you in?",
             "huongdan": "Tìm thông tin lĩnh vực làm việc của người đối thoại?",
             "srcYoutube": "",
             "hoctap": [

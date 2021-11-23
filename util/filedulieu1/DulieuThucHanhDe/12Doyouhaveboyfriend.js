@@ -79,7 +79,7 @@ function GETRANDOMi(arr) {
 const Doyouhaveboyfriend
     = [
         {
-            "nameoflession": "Bài 12: Bạn có bạn trai/gái chưa?  -- Do you have a boyfriend/ girlfriend?Do you have a boyfriend/ girlfriend?",
+            "nameoflession": "Lesson 12: Do you have a boyfriend/ girlfriend?Do you have a boyfriend/ girlfriend?",
             "huongdan": "Tìm thông tin tình trạng độc thân của người đối thoại?",
             "srcYoutube": "",
             "hoctap": [

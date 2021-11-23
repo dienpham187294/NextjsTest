@@ -71,7 +71,7 @@ function GETRANDOMi(arr) {
 const Whendoyoudomorningexercises
     = [
         {
-            "nameoflession": "Bài 17: Bạn tập thể dục lúc mấy giờ?  -- When do you do morning exercises?",
+            "nameoflession": "Lesson 17: When do you do morning exercises?",
             "huongdan": "Tìm thông tin giờ tập thể dục của người đối thoại?",
             "srcYoutube": "",
             "hoctap": [

@@ -71,7 +71,7 @@ function GETRANDOMi(arr) {
 const Whattimedoyouhavebreakfast
     = [
         {
-            "nameoflession": "Bài 18: Bạn ăn sáng lúc mấy giờ?  -- What time do you have breakfast?",
+            "nameoflession": "Lesson 18: What time do you have breakfast?",
             "huongdan": "Tìm thông tin giờ ăn sáng của người đối thoại?",
             "srcYoutube": "",
             "hoctap": [

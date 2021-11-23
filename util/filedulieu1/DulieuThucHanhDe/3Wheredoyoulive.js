@@ -273,7 +273,7 @@ function PickRandom(arr) {
 
 const Wheredoyoulive = [
     {
-        "nameoflession": "Bài 3: Bạn sống ở đâu? -- Where do you live?",
+        "nameoflession": "Lesson 3: Where do you live?",
         "huongdan": "Tìm thông tin người đối thoại đang sống ở đâu đâu?",
         "srcYoutube": "https://www.youtube.com/embed/FP1lPifjAYs",
         "hoctap": [

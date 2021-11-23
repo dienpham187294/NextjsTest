@@ -80,7 +80,7 @@ const Didyoulikethemovie
 
     = [
         {
-            "nameoflession": "Bài 26 - Did you like the movie?",
+            "nameoflession": "Lesson 26: Did you like the movie?",
             "srcYoutube": "",
             "hoctap": [
             ],

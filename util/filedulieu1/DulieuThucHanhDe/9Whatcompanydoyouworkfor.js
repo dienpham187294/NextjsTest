@@ -26,7 +26,7 @@ function PickRandom(arr) {
 const Whatcompanydoyouworkfor
     = [
         {
-            "nameoflession": "Bài 9: Bạn làm việc cho công ty nào?  -- What company do you work for?",
+            "nameoflession": "Lesson 9: What company do you work for?",
             "huongdan": "Tìm thông tin công ty làm việc của người đối thoại?",
             "srcYoutube": "",
             "hoctap": [

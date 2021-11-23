@@ -50,7 +50,7 @@ ARRp.forEach(e => {
 const Whatisyourmajor
     = [
         {
-            "nameoflession": "Bài 30 - What is your major?",
+            "nameoflession": "Lesson 30: What is your major?",
             "srcYoutube": "",
             "hoctap": [
             ],

@@ -73,7 +73,7 @@ function GETRANDOMi(arr) {
 const Whatsyourfavoritefood
     = [
         {
-            "nameoflession": "Bài 21: Món ăn yêu thích của bạn là gì?  -- What’s your favorite food?",
+            "nameoflession": "Lesson 21: What’s your favorite food?",
             "huongdan": "Tìm thông tin món ăn yêu thích của người đối thoại?",
             "srcYoutube": "",
             "hoctap": [

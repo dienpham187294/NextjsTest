@@ -46,7 +46,7 @@ ARRp.forEach(e => {
 const Whatsyourfavoritesubject
     = [
         {
-            "nameoflession": "Bài 40 - What’s your favorite subject?",
+            "nameoflession": "Lesson 40: What’s your favorite subject?",
             "srcYoutube": "",
             "hoctap": [
             ],

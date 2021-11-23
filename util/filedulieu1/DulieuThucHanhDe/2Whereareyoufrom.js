@@ -272,7 +272,7 @@ function PickRandom(arr) {
 }
 const DL1 = [
     {
-        "nameoflession": "Bài 2: Bạn đến từ đâu? -- Where are you from?",
+        "nameoflession": "Lesson 2: Where are you from?",
         "huongdan": "Tìm thông tin người đối thoại đến từ đâu?",
         "srcYoutube": "https://www.youtube.com/embed/bDvJSWnuvtU",
         "hoctap": [

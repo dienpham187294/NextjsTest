@@ -273,7 +273,7 @@ function PickRandom(arr) {
 const Whatdoyoudo
     = [
         {
-            "nameoflession": "Bài 6: Bạn làm nghề gì? -- What do you do?/ What is your job?",
+            "nameoflession": "Lesson 6: What do you do?/ What is your job?",
             "huongdan": "Tìm thông tin nghề nghiệp người đối thoại?",
             "srcYoutube": "",
             "hoctap": [

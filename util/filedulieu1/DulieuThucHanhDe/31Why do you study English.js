@@ -45,7 +45,7 @@ ARRp.forEach(e => {
 const WhydoyoustudyEnglish
     = [
         {
-            "nameoflession": "Bài 31 - Why do you study English?",
+            "nameoflession": "Lesson 31: Why do you study English?",
             "srcYoutube": "",
             "hoctap": [
             ],

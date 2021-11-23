@@ -45,7 +45,7 @@ ARRp.forEach(e => {
 const Whatdoyouwanttodoafteryougraduate
     = [
         {
-            "nameoflession": "Bài 32 - What do you want to do after you graduate?",
+            "nameoflession": "Lesson 32: What do you want to do after you graduate?",
             "srcYoutube": "",
             "hoctap": [
             ],

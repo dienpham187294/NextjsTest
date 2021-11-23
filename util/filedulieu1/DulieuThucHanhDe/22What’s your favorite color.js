@@ -73,7 +73,7 @@ function GETRANDOMi(arr) {
 const Whatsyourfavoritecolor
     = [
         {
-            "nameoflession": "Bài 22: Màu sắc yêu thích của bạn là gì?  -- What’s your favorite color?",
+            "nameoflession": "Lesson 22: What’s your favorite color?",
             "huongdan": "Tìm thông tin màu sắc yêu thích của người đối thoại?",
             "srcYoutube": "",
             "hoctap": [

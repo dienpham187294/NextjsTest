@@ -77,7 +77,7 @@ function GETRANDOMi(arr) {
 const Whatsyourhobby
     = [
         {
-            "nameoflession": "Bài 20: Sở thích của bạn là gì?  -- What’s your hobby?",
+            "nameoflession": "Lesson 20: What’s your hobby?",
             "huongdan": "Tìm thông tin sở thích của người đối thoại?",
             "srcYoutube": "",
             "hoctap": [

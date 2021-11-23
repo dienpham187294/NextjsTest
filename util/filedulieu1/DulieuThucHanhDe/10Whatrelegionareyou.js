@@ -23,7 +23,7 @@ function PickRandom(arr) {
 const Whatrelegion
     = [
         {
-            "nameoflession": "Bài 10: Bạn theo tôn giáo nào?  -- What religion are you?",
+            "nameoflession": "Lesson 10: What religion are you?",
             "huongdan": "Tìm thông tin tôn giáo của người đối thoại?",
             "srcYoutube": "",
             "hoctap": [

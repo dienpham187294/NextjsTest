@@ -271,7 +271,7 @@ function PickRandom(arr) {
 }
 const Whatisyourname = [
     {
-        "nameoflession": "Bài 1: Bạn tên là gì? -- What is your name?",
+        "nameoflession": "Lesson 1: What is your name?",
         "huongdan": "Tìm thông tin người đối thoại tên là gì?",
         "srcYoutube": "https://www.youtube.com/embed/uIlfrvvQiME",
         "hoctap": [
