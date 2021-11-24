@@ -86,13 +86,13 @@ function Show_Table(Data, Total, SET_Data_phongto) {
 
 
 function Check_ImageOrNot(Stringtocheck) {
-    if (typeof (Stringtocheck) === "string") {
-        if (
-            Stringtocheck.indexOf(".png") > -1
-            || Stringtocheck.indexOf(".jpg") > -1
-            || Stringtocheck.indexOf(".jpeg") > -1
-            || Stringtocheck.indexOf(".gif") > -1
-        ) { return true }
+    if (
+        typeof (Stringtocheck) === "string"
+        && (Stringtocheck.includes(".png")
+            || Stringtocheck.includes(".jpg")
+            || Stringtocheck.includes(".jpeg")
+            || Stringtocheck.includes(".gif"))) {
+        return true
     }
     return false
 }

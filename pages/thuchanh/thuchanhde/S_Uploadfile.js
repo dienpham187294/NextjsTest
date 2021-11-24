@@ -71,7 +71,7 @@ function UpLoadFile(props) {
                                         Fnpick(e)
                                     }}
 
-                                >Thực hành</button>
+                                >Practice</button>
                                 <button
                                     style={{ border: "1px solid green", borderRadius: "5px", padding: "5px", marginTop: "5px", cursor: "pointer" }}
                                     className="btnHover ml-1"
@@ -79,7 +79,7 @@ function UpLoadFile(props) {
                                         props.Total.fnObj.SET_Data_InfoOflession(e[0].hoctap)
                                         props.Total.fnObj.SET_PageChange(2)
                                     }}
-                                >Học tập</button>
+                                >Study</button>
 
                                 {e[0].srcYoutube !== "" ?
                                     <button
@@ -88,7 +88,7 @@ function UpLoadFile(props) {
                                         onClick={() => {
                                             SET_SrcYoutube(e[0].srcYoutube)
                                         }}
-                                    >Xem video</button>
+                                    >Video</button>
                                     : null}
                             </td>
                         </tr>

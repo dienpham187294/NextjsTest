@@ -80,6 +80,22 @@ a:hover {
     width: 60px;
 }
 
+/* .bodyInfomationDiv{
+    text-align: center;
+    color: red;
+} */
+@media only screen and (min-width: 600px) {
+    .bodyInfomationDiv{
+        text-align: center;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .bodyInfomationDiv2{
+        text-align: justify;
+        text-justify: inter-word;
+    }
+  }
 
 /* .gamesence_allcource{
 

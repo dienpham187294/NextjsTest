@@ -20,6 +20,7 @@ let idRoomOnline;
 let idMember;
 let interOnline;
 let i1 = 0
+let timeCount;
 function ArrOfPeopeAppear_ReactJSX(props) {
 
     const [Info_StrickAnwers_Reactdata, SET_Info_StrickAnwers_Reactdata] = useState(["hi how are you"])
@@ -35,7 +36,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
 
     useEffect(() => {
         props.SET_Data_Commands(Info_StrickAnwers_Reactdata)
-
+        timeCount = Date.now()
         if (i1 === 0) {
             idRoomOnline = Date.now() + ["a", "b", "c", "d", "e", "f"].PickRandom()
             if (localStorage.getItem("idMember") !== null) {
@@ -331,7 +332,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                             })
                         })
                         SET_Info_StrickAnwers_Reactdata(arrTemp);
-                        $("#complete").html("<h4>Hoàn thành chọn đáp án!</h4>")
+                        $("#complete").html("<b>Done!</b>")
                     } else {
                         Submit_check_funtion_indata({ end_successfull: true })
                     }
@@ -354,7 +355,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
 
     function Show_Info_StrickAnwers_Reactdata() {
         try {
-            if (Score < 5) {
+            if (Score < 3) {
                 return Info_StrickAnwers_Reactdata.map((e, index) =>
                     <span className="Span_Show_Info_StrickAnwers_Reactdata" key={index}>{e} <b style={{ backgroundColor: "black" }}>||</b> </span>
                 )
@@ -387,23 +388,37 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                                 <div className="row">
                                     <div className="col-4">
                                         <img alt={Info_Avatar_Reactdata} src={Info_Avatar_Reactdata} width="160px" />
-                                        {Info_Icon_Reactdata !== "" ?
+                                        {Check_ImageOrNot(Info_Icon_Reactdata) ?
                                             <>
                                                 <img alt={Info_Icon_Reactdata} src={Info_Icon_Reactdata} width="140px" />
                                             </>
-                                            : null}
+                                            : <b><i>{Info_Icon_Reactdata}</i></b>}
                                     </div>
                                     <div className="col-6">
                                         <br />
-                                        <b>Cần nói: </b> {Show_Info_StrickAnwers_Reactdata()}
+                                        {Show_Info_StrickAnwers_Reactdata()}
                                         <hr />
                                         <div className="row">
                                             <div className="col-6">
-                                                <div id="complete" style={{ color: "red" }}></div>
-                                                <b>Cần hoàn thành: <span style={{ color: "blue" }}>{props.huongdan}</span>   </b> <br /> {showSubmitSyxtax(Info_ToSunmit_Reactdata)}
+                                                {showSubmitSyxtax(Info_ToSunmit_Reactdata)}
+                                                <span id="complete" style={{ color: "red" }}></span>
+                                                <br />
+                                                <span style={{ color: "blue" }}>{props.huongdan}</span>
+
+
                                             </div>
                                             <div className="col-6">
-                                                <b> Điểm: {Score} <span style={{ color: "red" }}>Chọn sai: {Sai} </span> <span id="thoigian">0</span> | <span style={{ color: "red" }}>{Boqua}</span> </b>
+                                                <b> Điểm: {Score} <span style={{ color: "red" }}>Chọn sai: {Sai} </span> | <span style={{ color: "red" }}>{Boqua}</span> </b>
+                                                <button
+                                                    onClick={() => {
+                                                        let t = (Date.now() - timeCount) / 1000 / 60;
+
+                                                        $("#thoigian").text(Math.floor(t) + " phút.")
+
+                                                    }}
+                                                >Time</button>
+                                                
+                                                <span id="thoigian"></span>
                                                 <br />
                                                 <span id="showInterimID" style={{ color: "violet" }}></span>
 
@@ -451,10 +466,10 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                                             props.Total.stObj.indexOfPeople += 1
                                             props.Total.fnObj.AddTo_Show_ArrOfPeopeAppear_ReactData(props.Total.stObj.indexOfPeople)
                                         }}
-                                    >Người tiếp theo</button>
+                                    >Next</button>
                                     <br />
                                     <button
-                                        className="btn btn-outline-primary form-control mt-1"
+                                        className="btn btn-outline-danger form-control mt-1"
                                         onClick={() => {
                                             // console.log(props.Total)
                                             props.Total.fnObj.SET_PageChange(0)
@@ -465,7 +480,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
 
                                             }
                                         }}
-                                    >Trở lại chọn bài</button>
+                                    >Exit</button>
                                     <br />
 
                                     {RoomOnline === "" ?
@@ -515,7 +530,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                                 }}
                                     id="divCountdown"
                                 >
-                                    <h1 style={{ color: "red" }}>Người tiếp theo...   <span id="countDown">3</span></h1>
+                                    <h1 style={{ color: "red" }}>Next...   <span id="countDown">3</span></h1>
 
                                 </div>
                             </div>
@@ -602,9 +617,7 @@ function showSubmitSyxtax(Info_ToSunmit_Reactdata) {
                     {e.map((ee, ii) =>
                         <div style={{ display: "inline-block", borderLeft: "5px solid green", padding: "3px" }} key={ii}>
                             <div id={"ct" + i + ii}>
-                                {ee}
-                            </div>
-                            <div id={"ct1" + i + ii}>
+                                {ee} <span id={"ct1" + i + ii}></span>
                             </div>
                         </div>
                     )}
@@ -635,4 +648,16 @@ function showDataOnline(DataOnline) {
     } catch (error) {
         return null
     }
+}
+
+function Check_ImageOrNot(Stringtocheck) {
+    if (
+        typeof (Stringtocheck) === "string"
+        && (Stringtocheck.includes(".png")
+            || Stringtocheck.includes(".jpg")
+            || Stringtocheck.includes(".jpeg")
+            || Stringtocheck.includes(".gif"))) {
+        return true
+    }
+    return false
 }
