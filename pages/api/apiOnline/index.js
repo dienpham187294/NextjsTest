@@ -5,18 +5,18 @@ export default async (req, res) => {
     const { idRoom, idMember, score } = req.query;
     const { db } = await connectToDatabase();
     try {
-        console.log(idRoom, idMember, score)
+        // console.log(idRoom, idMember, score)
 
         const data = await db.collection("roomOnline").find({ _id: "6198a0cecd9c640d86725128" }).toArray()
 
         let jsonFile = data[0].data;
-        console.log(jsonFile)
+        // console.log(jsonFile)
         let tArr = [];
 
         if (checkArray(jsonFile)) {
             tArr = JSON.parse(jsonFile)
             if (jsonFile.includes(idRoom)) {
-                console.log("includes")
+                // console.log("includes")
                 tArr.forEach(e => {
                     if (e.idRoom === idRoom) {
                         if (!JSON.stringify(e.Members).includes(idMember)) {
