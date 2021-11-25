@@ -61,9 +61,30 @@ ArrPeple.forEach(e => {
 })
 
 let hoctap = [
+    { "EN": "Yes, that’s absolutely true.", "VN": "Vâng, điều đó hoàn toàn đúng.", "IPA": "jɛs, ðæts ˈæbsəluːtli truː." },
+    { "EN": "No, false. Waking up at the same time is better.", "VN": "Không, sai. Thức dậy cùng một lúc sẽ tốt hơn.", "IPA": "nəʊ, fɔːls. ˈweɪkɪŋ ʌp æt ðə seɪm taɪm ɪz ˈbɛtə." },
+    { "EN": "No. Sushi is great. But we shouldn’t eat too much.", "VN": "Không. Sushi rất tuyệt. Nhưng chúng ta không nên ăn quá nhiều.", "IPA": "nəʊ. ˈsʊʃi ɪz greɪt. bʌt wiː ʃʊdnt iːt tuː mʌʧ." },
+    { "EN": "No, it’s not how close you sit. It’s how long you watch TV.", "VN": "Không, không phải là bạn ngồi gần như thế nào. Đó là thời lượng bạn xem TV.", "IPA": "nəʊ, ɪts nɒt haʊ kləʊs juː sɪt. ɪts haʊ lɒŋ juː wɒʧ ˌtiːˈviː." },
+    { "EN": "No, that’s a myth! You shouldn’t eat it, ever!", "VN": "Không, đó là một huyền thoại! Bạn không nên ăn nó, bao giờ!", "IPA": "nəʊ, ðæts ə mɪθ! juː ʃʊdnt iːt ɪt, ˈɛvə!" },
+    { "EN": "No, that’s false. You don’t need meat to get your vitamins.", "VN": "Không, điều đó là sai. Bạn không cần thịt để có được vitamin.", "IPA": "nəʊ, ðæts fɔːls. juː dəʊnt niːd miːt tuː gɛt jɔː ˈvɪtəmɪnz." },
+    { "EN": "A calorie is an energy that helps us do our everyday activities.", "VN": "Calo là năng lượng giúp chúng ta thực hiện các hoạt động hàng ngày.", "IPA": "ə ˈkæləri ɪz ən ˈɛnəʤi ðæt hɛlps ʌs duː ˈaʊər ˈɛvrɪdeɪ ækˈtɪvɪtiz." },
+    { "EN": "If we eat too many calories, we can get fat.", "VN": "Nếu chúng ta ăn quá nhiều calo, chúng ta có thể bị béo.", "IPA": "ɪf wiː iːt tuː ˈmɛni ˈkæləriz, wiː kæn gɛt fæt." },
+    { "EN": "To stay healthy you need between 1,600 and 2,500 calories.", "VN": "Để giữ sức khỏe, bạn cần từ 1.600 đến 2.500 calo.", "IPA": "tuː steɪ ˈhɛlθi juː niːd bɪˈtwiːn 1,600 ænd 2,500 ˈkæləriz." },
+    { "EN": "Sports like riding a bike and running using a lot of calories.", "VN": "Các môn thể thao như đạp xe và chạy sử dụng nhiều calo.", "IPA": "spɔːts laɪk ˈraɪdɪŋ ə baɪk ænd ˈrʌnɪŋ ˈjuːzɪŋ ə lɒt ɒv ˈkæləriz." },
 ]
 let listenOnly = [
-
+    [
+        "Can we smile more to live longer?",
+        "Does sleeping in help me recover?",
+        "Should I eat more fresh fish, like sushi?",
+        "Sitting too close to the TV is not good, isn’t it?",
+        "How about picking up the food we drop. Is it OK?",
+        "Do vegetarians get fewer vitamins?",
+        "What is a calorie?",
+        "What happens when we have too many calories?",
+        "What is a healthy number of calories per day?",
+        "Which activity uses a lot of calories?",
+    ]
 ]
 let writeOnly = [
 
