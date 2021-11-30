@@ -2,11 +2,9 @@
 
 // import $ from "jquery"
 import { useState } from "react";
-import DL from "../../../util/filedulieu1/DulieuThuchanhlop7/DulieuTotal";
-import DL1 from "../../../util/filedulieu1/DulieuThuchanh_hung/DulieuTotal"
-
-const DLTotal = DL.concat(DL1)
+import DL from "../../../util/filedulieu1/DulieuThuchanh_hung/DulieuTotal";
 function UpLoadFile(props) {
+
     const [srcYoutube, SET_SrcYoutube] = useState("")
 
     function Fnpick(arrPick) {
@@ -42,7 +40,7 @@ function UpLoadFile(props) {
         <div style={{ margin: "5%" }}>
             <table className="table table-striped">
                 <tbody>
-                    {DLTotal.map((e, i) =>
+                    {DL.map((e, i) =>
                         <tr key={i}>
                             <td>
                                 <b style={{ color: "black" }}>{e[0].nameoflession}</b>
