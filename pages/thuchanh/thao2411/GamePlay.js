@@ -417,7 +417,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
 
                                                     }}
                                                 >Time</button>
-                                                
+
                                                 <span id="thoigian"></span>
                                                 <br />
                                                 <span id="showInterimID" style={{ color: "violet" }}></span>
@@ -640,9 +640,9 @@ function showDataOnline(DataOnline) {
     try {
         return (
             DataOnline.map((e, i) =>
-                <span style={{ border: "1px solid green", borderRadius: "3px", padding: "5px", margin: "4px" }} key={i}>
+                <div style={{ border: "1px solid green", borderRadius: "3px", padding: "5px", margin: "4px", backgroundColor: "blueviolet" }} key={i}>
                     {e.score}
-                </span>
+                </div>
             )
         )
     } catch (error) {

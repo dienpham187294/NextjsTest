@@ -119,7 +119,7 @@ ArrPeple.forEach(e => {
     let SpeakFirst = ["hi", "hello"]
     let i1 = GETRANDOMi(ArrIn1)
     let ArrBegin = []
-    ArrBegin.push(FnObjHanldingNext(["Where do you live"], ["I live in " + ArrIn1[i1], ArrIn1[i1]]))
+    ArrBegin.push(FnObjHanldingNext(["Where do you live?"], ["I live in " + ArrIn1[i1], ArrIn1[i1]]))
 
     //middle
 
@@ -131,7 +131,7 @@ ArrPeple.forEach(e => {
     ArrInFN.Submit.push(ArrIn1[i1])
     let End = null
     // End.push(FnObjHanldingNext([arr_In1[i1].qs], ["I will follow your advice.", "That’s good advice.", "Thank you for your advice."], { end_successfull: true }))
-    coerdataoflession.push(Fnperson(ArrInFN, DataTable, ArrBegin, FnToArrobj(Arrin3, Arrin4), End, SpeakFirst, "WhereFrom"))
+    coerdataoflession.push(Fnperson(ArrInFN, DataTable, ArrBegin, FnToArrobj(Arrin3, Arrin4), End, SpeakFirst, "WhereLive"))
 })
 
 let hoctap = [
