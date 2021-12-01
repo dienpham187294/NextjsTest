@@ -7,9 +7,8 @@ let coerdataoflession = []
 // let ArrName = ['Richard', 'Barbara', 'Michael', 'Betty', 'Kimberly', 'Lisa', 'Steven', 'Robert', 'Susan', 'Dorothy', 'William', 'Donna', 'Mary', 'Michelle', 'David', 'Anthony', 'Charles', 'Ashley', 'Linda', 'Patricia', 'Christopher', 'Kenneth', 'Margaret', 'Karen', 'Mark', 'Thomas', 'Matthew', 'Sandra', 'Sarah', 'Jessica', 'Daniel', 'Donald', 'Joseph', 'Emily', 'James', 'Nancy', 'Paul', 'Jennifer', 'Andrew', 'Elizabeth', 'John', 'Joshua']
 
 // DataTable.push(ArrName)
-let ArrIn1 = [
-    "China", "India", "United States", "Indonesia", "Pakistan", "Brazil", "Nigeria", "Bangladesh", "Russia", "Mexico", "Japan", "Ethiopia", "Philippines", "Egypt", "Vietnam", "DR Congo", "Turkey", "Iran", "Germany", "Thailand", "United Kingdom", "France", "Tanzania", "Italy", "South Africa", "Kenya", "Myanmar", "South Korea", "Colombia", "Uganda", "Spain", "Argentina", "Sudan", "Algeria", "Ukraine", "Iraq", "Afghanistan", "Canada", "Poland", "Morocco", "Saudi Arabia", "Uzbekistan", "Angola", "Peru", "Malaysia", "Mozambique", "Ghana", "Yemen", "Nepal", "Venezuela", "Madagascar", "Cameroon", "Ivory Coast", "North Korea", "Australia", "Niger", "Taiwan", "Sri Lanka", "Burkina Faso", "Mali", "Malawi", "Chile", "Romania", "Kazakhstan", "Zambia", "Syria", "Guatemala", "Ecuador", "Senegal", "Netherlands", "Cambodia", "Chad", "Somalia", "Zimbabwe", "Guinea", "Rwanda", "Benin", "Burundi", "Tunisia", "Bolivia", "Belgium", "Haiti", "South Sudan", "Cuba", "Dominican Republic", "Czech Republic", "Greece", "Jordan", "Azerbaijan", "Portugal", "Sweden", "Honduras", "United Arab Emirates", "Tajikistan", "Hungary", "Belarus", "Papua New Guinea", "Austria", "Israel", "Switzerland", "Serbia", "Togo", "Sierra Leone", "Hong Kong", "Laos", "Paraguay", "Libya", "Bulgaria", "Lebanon", "Nicaragua", "Kyrgyzstan", "El Salvador", "Turkmenistan", "Singapore", "Denmark", "Republic of the Congo", "Finland", "Norway", "Slovakia", "Oman", "Palestine", "Liberia", "Costa Rica", "Ireland", "Central African Republic", "New Zealand", "Mauritania", "Panama", "Kuwait", "Croatia", "Moldova", "Georgia", "Eritrea", "Uruguay", "Mongolia", "Bosnia And Herzegovina", "Jamaica", "Armenia", "Qatar", "Albania", "Puerto Rico", "Lithuania", "Namibia", "Gambia", "Botswana", "Gabon", "Lesotho", "North Macedonia", "Slovenia", "Guinea Bissau", "Latvia", "Bahrain", "Equatorial Guinea", "Trinidad And Tobago", "Timor Leste", "Estonia", "Mauritius", "Cyprus", "Eswatini", "Djibouti", "Fiji", "Reunion", "Comoros", "Guyana", "Bhutan", "Solomon Islands", "Luxembourg", "Montenegro", "Western Sahara", "Suriname", "Cape Verde", "Maldives", "Malta", "Brunei", "Belize", "Guadeloupe", "Bahamas", "Martinique", "Iceland", "Vanuatu", "French Guiana", "Barbados", "Mayotte", "Sao Tome And Principe", "Samoa", "Saint Lucia", "Kiribati", "Micronesia", "Grenada", "Saint Vincent And the Grenadines", "Tonga", "Seychelles", "Antigua And Barbuda", "Andorra", "Dominica", "Marshall Islands", "Greenland", "Saint Kitts And Nevis", "Monaco", "Liechtenstein", "San Marino", "Palau", "Tuvalu", "Nauru", "Vatican City"
-]
+let ArrIn1 = ["March 8", "March 17", "January 21", "January 29", "March 17", "May 14", "May 30", "September 5", "March 3", "October 29", "December 6", "June 14", "November 20", "January 6", "January 24", "March 10", "May 25", "September 13", "September 22", "December 15", "June 24", "November 3", "June 5", "July 17", "August 26", "January 28", "April 2", "September 1", "October 28", "November 25", "July 9", "September 22", "October 29", "December 10", "July 29", "September 24", "October 11", "December 10", "February 27", "July 30", "January 27", "February 10", "March 28", "April 21", "June 12", "October 7", "December 16", "April 23", "June 2", "August 17", "January 2", "January 28", "February 1", "April 30", "October 20", "November 17", "March 2", "March 4", "May 10", "July 15", "September 21", "October 28", "December 26", "August 10", "December 10", "June 13", "July 3", "May 6", "August 13", "August 24", "February 26", "July 26", "January 12", "August 11", "August 14", "June 17", "July 26", "August 17", "March 4", "July 23", "September 24", "October 10", "May 12", "September 8", "January 10", "January 21", "September 13", "November 2", "March 7", "June 14", "July 16", "October 30", "December 9", "December 15", "September 6", "November 17", "December 13", "June 27", "November 17", "December 28"]
+
 DataTable.push(ArrIn1)
 ArrPeple.forEach(e => {
 
@@ -19,10 +18,13 @@ ArrPeple.forEach(e => {
     ArrInFN.gender = e[2]
 
     let SpeakFirst = ["hi", "hello"]
-    let i1 = GETRANDOMi(ArrIn1)
+
     let ArrBegin = []
+
+
+    let i1 = GETRANDOMi(ArrIn1)
     let t1 = ArrIn1[i1]
-    ArrBegin.push(FnObjHanldingNext(["Where are you from?"], ["I'm from " + t1, t1, "I am from " + t1, "I come from " + t1]))
+    ArrBegin.push(FnObjHanldingNext(["When is your birthday?"], ["My birthday is on " + t1, t1]))
 
     //middle
 
@@ -30,11 +32,11 @@ ArrPeple.forEach(e => {
     let Arrin4 = []
 
     Arrin3.push("0")
-    Arrin4.push(FnObjHanldingNext(["Where are you from?"], ["I'm from " + t1, t1, "I am from " + t1, "I come from " + t1]))
+    Arrin4.push(FnObjHanldingNext(["When is your birthday?"], ["My birthday is on " + t1, t1]))
     ArrInFN.Submit.push(t1)
     let End = null
     // End.push(FnObjHanldingNext([arr_In1[i1].qs], ["I will follow your advice.", "That’s good advice.", "Thank you for your advice."], { end_successfull: true }))
-    coerdataoflession.push(Fnperson(ArrInFN, DataTable, ArrBegin, FnToArrobj(Arrin3, Arrin4), End, SpeakFirst, "WhereFrom"))
+    coerdataoflession.push(Fnperson(ArrInFN, DataTable, ArrBegin, FnToArrobj(Arrin3, Arrin4), End, SpeakFirst, "WhenBirthday"))
 })
 
 let hoctap = [
@@ -44,11 +46,11 @@ let listenOnly = [
 ]
 let writeOnly = [
 ]
-const Bai14
+const Bai17
 
     = [
         {
-            "nameoflession": "Practice 1.4",
+            "nameoflession": "Practice 1.7",
             "srcYoutube": "",
             "hoctap": {
                 "listenRead": hoctap,
@@ -62,7 +64,7 @@ const Bai14
         }
     ]
 
-export default Bai14
+export default Bai17
 
 
 function FnToArrobj(ArrIn1, ArrIn2) {

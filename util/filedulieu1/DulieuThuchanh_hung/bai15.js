@@ -7,107 +7,7 @@ let coerdataoflession = []
 // let ArrName = ['Richard', 'Barbara', 'Michael', 'Betty', 'Kimberly', 'Lisa', 'Steven', 'Robert', 'Susan', 'Dorothy', 'William', 'Donna', 'Mary', 'Michelle', 'David', 'Anthony', 'Charles', 'Ashley', 'Linda', 'Patricia', 'Christopher', 'Kenneth', 'Margaret', 'Karen', 'Mark', 'Thomas', 'Matthew', 'Sandra', 'Sarah', 'Jessica', 'Daniel', 'Donald', 'Joseph', 'Emily', 'James', 'Nancy', 'Paul', 'Jennifer', 'Andrew', 'Elizabeth', 'John', 'Joshua']
 
 // DataTable.push(ArrName)
-let ArrIn1 = ["New York",
-    "Los Angeles",
-    "Chicago",
-    "Houston",
-    "Phoenix",
-    "Philadelphia",
-    "San Antonio",
-    "San Diego",
-    "Dallas",
-    "San Jose",
-    "Austin",
-    "Jacksonville",
-    "Fort Worth",
-    "Columbus",
-    "Indianapolis",
-    "Charlotte",
-    "San Francisco",
-    "Seattle",
-    "Denver",
-    "Washington",
-    "Nashville",
-    "Oklahoma City",
-    "El Paso",
-    "Boston",
-    "Portland",
-    "Las Vegas",
-    "Detroit",
-    "Memphis",
-    "Louisville",
-    "Baltimore",
-    "Milwaukee",
-    "Albuquerque",
-    "Tucson",
-    "Fresno",
-    "Sacramento",
-    "Kansas City",
-    "Mesa",
-    "Atlanta",
-    "Omaha",
-    "Colorado Springs",
-    "Raleigh",
-    "Long Beach",
-    "Virginia Beach",
-    "Miami",
-    "Oakland",
-    "Minneapolis",
-    "Tulsa",
-    "Bakersfield",
-    "Wichita",
-    "Arlington",
-    "Aurora",
-    "Tampa",
-    "New Orleans",
-    "Cleveland",
-    "Honolulu",
-    "Anaheim",
-    "Lexington",
-    "Stockton",
-    "Corpus Christi",
-    "Henderson",
-    "Riverside",
-    "Newark",
-    "Saint Paul",
-    "Santa Ana",
-    "Cincinnati",
-    "Irvine",
-    "Orlando",
-    "Pittsburgh",
-    "St. Louis",
-    "Greensboro",
-    "Jersey City",
-    "Anchorage",
-    "Lincoln",
-    "Plano",
-    "Durham",
-    "Buffalo",
-    "Chandler",
-    "Chula Vista",
-    "Toledo",
-    "Madison",
-    "Gilbert",
-    "Reno",
-    "Fort Wayne",
-    "North Las Vegas",
-    "St. Petersburg",
-    "Lubbock",
-    "Irving",
-    "Laredo",
-    "Winston–Salem",
-    "Chesapeake",
-    "Glendale",
-    "Garland",
-    "Scottsdale",
-    "Norfolk",
-    "Boise",
-    "Fremont",
-    "Spokane",
-    "Santa Clarita",
-    "Baton Rouge",
-    "Richmond",
-]
+let ArrIn1 = ["Tokyo, Japan", "Delhi, India", "Shanghai, China", "Sao Paulo, Brazil", "Mexico City, Mexico", "Dhaka, Bangladesh", "Cairo, Egypt", "Beijing, China", "Mumbai, India", "Osaka, Japan", "Karachi, Pakistan", "Chongqing, China", "Istanbul, Turkey", "Buenos Aires, Argentina", "Kolkata, India", "Kinshasa, DR Congo", "Lagos, Nigeria", "Manila, Philippines", "Tianjin, China", "Guangzhou, China", "Rio De Janeiro, Brazil", "Lahore, Pakistan", "Bangalore, India", "Moscow, Russia", "Shenzhen, China", "Chennai, India", "Bogota, Colombia", "Paris, France", "Jakarta, Indonesia", "Lima, Peru", "Bangkok, Thailand", "Hyderabad, India", "Seoul, South Korea", "Nagoya, Japan", "London, United Kingdom", "Chengdu, China", "Tehran, Iran", "Nanjing, China", "Ho Chi Minh City, Vietnam", "Luanda, Angola", "Wuhan, China", "Xi An Shaanxi, China", "Ahmedabad, India", "New York City, United States", "Kuala Lumpur, Malaysia", "Hangzhou, China", "Hong Kong, Hong Kong", "Surat, India", "Dongguan, China", "Suzhou, China", "Foshan, China", "Riyadh, Saudi Arabia", "Shenyang, China", "Baghdad, Iraq", "Dar Es Salaam, Tanzania", "Santiago, Chile", "Pune, India", "Madrid, Spain", "Haerbin, China", "Toronto, Canada", "Belo Horizonte, Brazil", "Singapore, Singapore", "Khartoum, Sudan", "Johannesburg, South Africa", "Dalian, China", "Qingdao, China", "Barcelona, Spain", "Fukuoka, Japan", "Ji Nan Shandong, China", "Zhengzhou, China", "Saint Petersburg, Russia", "Yangon, Myanmar", "Alexandria, Egypt", "Abidjan, Ivory Coast", "Guadalajara, Mexico", "Ankara, Turkey", "Chittagong, Bangladesh", "Melbourne, Australia", "Addis Ababa, Ethiopia", "Sydney, Australia", "Monterrey, Mexico", "Nairobi, Kenya", "Hanoi, Vietnam", "Brasilia, Brazil", "Cape Town, South Africa", "Jiddah, Saudi Arabia", "Changsha, China", "Kunming, China", "Urumqi, China", "Changchun, China", "Xinbei, Taiwan", "Shantou, China", "Hefei, China", "Kabul, Afghanistan", "Rome, Italy", "Ningbo, China", "Tel Aviv, Israel", "Montreal, Canada", "Shijiazhuang, China", "Recife, Brazil", "Yaounde, Cameroon", "Porto Alegre, Brazil", "Fortaleza, Brazil", "Kano, Nigeria", "Medellin, Colombia", "Jaipur, India", "Los Angeles, United States", "Taiyuan Shanxi, China", "Nanning, China", "Ekurhuleni, South Africa"]
 DataTable.push(ArrIn1)
 ArrPeple.forEach(e => {
 
@@ -117,9 +17,13 @@ ArrPeple.forEach(e => {
     ArrInFN.gender = e[2]
 
     let SpeakFirst = ["hi", "hello"]
-    let i1 = GETRANDOMi(ArrIn1)
+
     let ArrBegin = []
-    ArrBegin.push(FnObjHanldingNext(["Where do you live?"], ["I live in " + ArrIn1[i1], ArrIn1[i1]]))
+
+
+    let i1 = GETRANDOMi(ArrIn1)
+    let t1 = ArrIn1[i1]
+    ArrBegin.push(FnObjHanldingNext(["Where do you live?"], ["I live in " + t1, t1]))
 
     //middle
 
@@ -127,8 +31,8 @@ ArrPeple.forEach(e => {
     let Arrin4 = []
 
     Arrin3.push("0")
-    Arrin4.push(FnObjHanldingNext(["Where do you live"], ["I live in " + ArrIn1[i1], ArrIn1[i1]]))
-    ArrInFN.Submit.push(ArrIn1[i1])
+    Arrin4.push(FnObjHanldingNext(["Where do you live"], ["I live in " + t1, t1]))
+    ArrInFN.Submit.push(t1)
     let End = null
     // End.push(FnObjHanldingNext([arr_In1[i1].qs], ["I will follow your advice.", "That’s good advice.", "Thank you for your advice."], { end_successfull: true }))
     coerdataoflession.push(Fnperson(ArrInFN, DataTable, ArrBegin, FnToArrobj(Arrin3, Arrin4), End, SpeakFirst, "WhereLive"))

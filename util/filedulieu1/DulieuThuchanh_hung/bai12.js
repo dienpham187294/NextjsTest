@@ -7,33 +7,7 @@ let coerdataoflession = []
 // let ArrName = ['Richard', 'Barbara', 'Michael', 'Betty', 'Kimberly', 'Lisa', 'Steven', 'Robert', 'Susan', 'Dorothy', 'William', 'Donna', 'Mary', 'Michelle', 'David', 'Anthony', 'Charles', 'Ashley', 'Linda', 'Patricia', 'Christopher', 'Kenneth', 'Margaret', 'Karen', 'Mark', 'Thomas', 'Matthew', 'Sandra', 'Sarah', 'Jessica', 'Daniel', 'Donald', 'Joseph', 'Emily', 'James', 'Nancy', 'Paul', 'Jennifer', 'Andrew', 'Elizabeth', 'John', 'Joshua']
 
 // DataTable.push(ArrName)
-let ArrIn1 = ["18",
-    "19",
-    "20",
-    "21",
-    "22",
-    "23",
-    "24",
-    "25",
-    "26",
-    "27",
-    "28",
-    "29",
-    "30",
-    "31",
-    "32",
-    "33",
-    "34",
-    "35",
-    "36",
-    "37",
-    "38",
-    "39",
-    "40",
-    "41",
-    "42",
-    "43",
-]
+let ArrIn1 = ["18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80"]
 DataTable.push(ArrIn1)
 ArrPeple.forEach(e => {
 
@@ -43,18 +17,21 @@ ArrPeple.forEach(e => {
     ArrInFN.gender = e[2]
 
     let SpeakFirst = ["hi", "hello"]
-    let i1 = GETRANDOMi(ArrIn1)
+
     let ArrBegin = []
-    ArrBegin.push(FnObjHanldingNext(["How old are you?", "Can I have your age?"], ["My age is " + ArrIn1[i1], "I am " + ArrIn1[i1]]))
+
+    let i1 = GETRANDOMi(ArrIn1)
+    let t1 = ArrIn1[i1]
+    ArrBegin.push(FnObjHanldingNext(["How old are you?", "Can I have your age?"], ["My age is " + t1, "I am " + t1, "I’m " + t1 + " years old."]))
 
     //middle
 
     let Arrin3 = []
     let Arrin4 = []
-   
+
     Arrin3.push("0")
-    Arrin4.push(FnObjHanldingNext(["How old are you?", "Can I have your age?"], ["My age is " + ArrIn1[i1], "I am " + ArrIn1[i1]]))
-    ArrInFN.Submit.push(ArrIn1[i1])
+    Arrin4.push(FnObjHanldingNext(["How old are you?", "Can I have your age?"], ["My age is " + t1, "I am " + t1, "I’m " + t1 + " years old."]))
+    ArrInFN.Submit.push(t1)
     let End = null
     // End.push(FnObjHanldingNext([arr_In1[i1].qs], ["I will follow your advice.", "That’s good advice.", "Thank you for your advice."], { end_successfull: true }))
     coerdataoflession.push(Fnperson(ArrInFN, DataTable, ArrBegin, FnToArrobj(Arrin3, Arrin4), End, SpeakFirst, "Age"))
