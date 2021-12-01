@@ -35,6 +35,7 @@ ArrPeple.forEach(e => {
 })
 
 let hoctap = [
+    { "EN": "Hi, how are you?", "VN": "Chào! Bạn khỏe không?", "IPA": "haɪ, haʊ ɑː juː?" },
 ]
 let listenOnly = [
     ArrIn1

@@ -188,10 +188,7 @@ function FnObjHanldingNext(ArrIn1, ArrIn2, objIn, icon) {
 
 function Fnperson(Arr, DataTable, Begin, Middle, End, robotspeakfirst, icon) {
     // console.log(End)
-    let syntax = [];
-    Arr.Submit.forEach((e, i) => {
-        syntax.push(i)
-    })
+    let syntax = ["1", "2", "3"];
 
     let endIn;
     if (End !== undefined) {
