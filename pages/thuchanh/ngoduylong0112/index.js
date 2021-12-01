@@ -2,8 +2,8 @@
 import { useState } from "react";
 
 import UpLoadFile from "./S_Uploadfile"
-import InfoLession from "./S_Lession"
-import GamePlay from "./S_GamePlay"
+import InfoLession from "../../../util/mainPlay/S_Lession"
+import GamePlay from "../../../util/mainPlay/S_GamePlay"
 
 
 

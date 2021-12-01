@@ -1,18 +1,19 @@
 import React, { useEffect, useState } from "react";
 // import Read_ReactJSX from "../../../pages/helpers/Read_ReactJSX"
 import $ from "jquery"
-import Linkapi from "../../../util/api/Linkapi"
+import Linkapi from "../api/Linkapi"
 import DataTool from "./S_Data_tool"
-import ReadReactSpeech from "../../helpers/Read_ReactSpeechSlow"
-import ReadMessage from "../../../util/Read/ReadMessage"
+import ReadReactSpeech from "../../pages/helpers/Read_ReactSpeechSlow"
+import ReadMessage from "../Read/ReadMessage"
 // import { prop } from "cheerio/lib/api/attributes";
 const stringSimilarity = require("string-similarity");
+import showDataGameOnline from "./showDataGameOnline"
 // import Cookies_ReadingPage from "../../../../../util/Cookies/Cookies_ReadingPage"
 let VoicePick = 1;
 let State_of_Anwer = "none";
 let Data_temp_Strickmode;
 let AllData_OfOne;
-let iThoigian = 0;
+
 let interNguoitieptheo, iNguoitieptheo;
 let rateRead = 1.1
 let pitchRead = 1.2
@@ -38,11 +39,11 @@ function ArrOfPeopeAppear_ReactJSX(props) {
         props.SET_Data_Commands(Info_StrickAnwers_Reactdata)
         timeCount = Date.now()
         if (i1 === 0) {
-            idRoomOnline = Date.now() + ["a", "b", "c", "d", "e", "f"].PickRandom()
+            idRoomOnline = Date.now() + PickRandom(["a", "b", "c", "d", "e", "f"])
             if (localStorage.getItem("idMember") !== null) {
                 idMember = localStorage.getItem("idMember")
             } else {
-                idMember = Date.now() + ["a", "b", "c", "d", "e", "f"].PickRandom();
+                idMember = Date.now() + PickRandom(["a", "b", "c", "d", "e", "f"]);
                 localStorage.setItem("idMember", idMember)
             }
             i1++
@@ -61,15 +62,6 @@ function ArrOfPeopeAppear_ReactJSX(props) {
     useEffect(
         () => {
             inter()
-            // if (iThoigian === 0) {
-            //     iThoigian = 1
-            //     setInterval(() => {
-            //         iThoigian += 1
-            //         $("#thoigian").text(iThoigian)
-            //     }, 1000);
-            // } else {
-            //     iThoigian = 1
-            // }
             props.Total.stObj.timebegin = Date.now()
             props.Total.stObj.indexOfPeople = 0
             props.Total.fnObj.AddTo_Show_ArrOfPeopeAppear_ReactData = AddTo_Show_ArrOfPeopeAppear_ReactData
@@ -150,7 +142,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
 
                         // console.log(data.function)
                         if (data.robotspeak.length > 0) {
-                            ReadMessage(data.robotspeak.PickRandom(), VoicePick, rateRead, pitchRead);
+                            ReadMessage(PickRandom(data.robotspeak), VoicePick, rateRead, pitchRead);
                         }
                         if (data.handling_next.length > 0) {
                             Data_temp_Strickmode = (data.handling_next)
@@ -224,12 +216,12 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                 } else {
                     VoicePick = (2);
                 }
-                rateRead = [0.9, 1.0, 1.1, 1.2].PickRandom()
-                pitchRead = [0.9, 1.0, 1.1, 1.2].PickRandom()
-                ReadMessage(n.total.robotspeakfirst.PickRandom(), VoicePick, rateRead, pitchRead)
+                rateRead = PickRandom([0.9, 1.0, 1.1, 1.2])
+                pitchRead = PickRandom([0.9, 1.0, 1.1, 1.2])
+                ReadMessage(PickRandom(n.total.robotspeakfirst), VoicePick, rateRead, pitchRead)
             } else {
-                $("#showEnd").show()
-                $("#time").text(Math.floor((Date.now() - props.Total.stObj.timebegin) / 1000 / 60) + " phút " + Math.floor(((Date.now() - props.Total.stObj.timebegin)) / 1000) % 60 + " giây.")
+                // $("#showEnd").show()
+                // $("#time").text(Math.floor((Date.now() - props.Total.stObj.timebegin) / 1000 / 60) + " phút " + Math.floor(((Date.now() - props.Total.stObj.timebegin)) / 1000) % 60 + " giây.")
             }
 
         } catch (error) {
@@ -440,52 +432,23 @@ function ArrOfPeopeAppear_ReactJSX(props) {
 
                                 <hr />
 
-                                {showDataOnline(DataOnline)}
-
-
-
+                                {showDataGameOnline(DataOnline)}
                                 <br />
                                 <div
                                     style={{
                                         position: "fixed",
-                                        bottom: "10%",
-                                        right: "10%",
-                                        width: "10%",
-                                        minWidth: "200px",
+                                        bottom: "1%",
+                                        left: "10%",
+                                        width: "80%",
+                                        textAlign: "right",
                                         backgroundColor: "white"
                                     }}
                                 >
-                                    <button
-                                        className="btn btn-outline-primary form-control mt-1"
-                                        id="btnNguoitieptheo"
-                                        onClick={() => {
-                                            SET_Boqua(B => B + 1)
-                                            $("#complete").html("")
-                                            $("#showbtnNext").hide()
-                                            props.Total.stObj.inputSumit = ""
-                                            props.Total.stObj.indexOfPeople += 1
-                                            props.Total.fnObj.AddTo_Show_ArrOfPeopeAppear_ReactData(props.Total.stObj.indexOfPeople)
-                                        }}
-                                    >Next</button>
-                                    <br />
-                                    <button
-                                        className="btn btn-outline-danger form-control mt-1"
-                                        onClick={() => {
-                                            // console.log(props.Total)
-                                            props.Total.fnObj.SET_PageChange(0)
-                                            try {
-                                                $("#idStopLisening")[0].click()
-                                                clearInterval(interOnline)
-                                            } catch (error) {
-
-                                            }
-                                        }}
-                                    >Exit</button>
-                                    <br />
+                                    <a className="mr-5" href="https://forms.gle/JZWwQNx4XP8fDken9">Phiếu khảo sát</a>
 
                                     {RoomOnline === "" ?
-                                        <div>
-                                            <input id="getIdRoom" defaultValue={idRoomOnline} type="text" />
+                                        <>
+                                            <input className="mr-2" id="getIdRoom" defaultValue={idRoomOnline} type="text" />
                                             <button
                                                 className="btn btn-sm btn-danger"
                                                 onClick={() => {
@@ -493,13 +456,21 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                                                     getOnline($("#getIdRoom").val(), idMember, Score)
                                                 }}
                                             >Online</button>
-                                        </div>
+                                        </>
                                         :
-                                        <div>
+                                        <>
                                             {RoomOnline}
-                                            <br />
                                             <button
-                                                className="btn btn-sm btn-danger"
+                                                className="btn btn-sm btn-info mr-2 ml-2"
+                                                onClick={() => {
+                                                    // clearInterval(interOnline)
+                                                    // SET_RoomOnline("")
+                                                }}
+                                            >Play Game</button>
+
+
+                                            <button
+                                                className="btn btn-sm btn-danger mr-2 ml-2"
                                                 onClick={() => {
                                                     // clearInterval(interOnline)
                                                     SET_RoomOnline("")
@@ -513,10 +484,40 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                                                 }}
                                             >Cập nhật</button>
                                             {/* <input id="idName" type="text" placeholder="Tên" /> */}
-                                        </div>
+                                        </>
                                     }
 
+
+                                    <button
+                                        className="btn btn-outline-danger ml-3"
+                                        onClick={() => {
+                                            // console.log(props.Total)
+                                            props.Total.fnObj.SET_PageChange(0)
+                                            try {
+                                                $("#idStopLisening")[0].click()
+                                                clearInterval(interOnline)
+                                            } catch (error) {
+
+                                            }
+                                        }}
+                                    >Out</button>
+
+                                    <button
+                                        className="btn btn-outline-primary ml-3"
+                                        id="btnNguoitieptheo"
+                                        onClick={() => {
+                                            SET_Boqua(B => B + 1)
+                                            $("#complete").html("")
+                                            $("#showbtnNext").hide()
+                                            props.Total.stObj.inputSumit = ""
+                                            props.Total.stObj.indexOfPeople += 1
+                                            props.Total.fnObj.AddTo_Show_ArrOfPeopeAppear_ReactData(props.Total.stObj.indexOfPeople)
+                                        }}
+                                    >Next</button>
+
+
                                 </div>
+
                                 <div style={{
                                     position: "fixed",
                                     top: "10%",
@@ -535,6 +536,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 )
             }
@@ -550,7 +552,8 @@ function ArrOfPeopeAppear_ReactJSX(props) {
         <>
             <div className="GameSence_Playing">
                 {Show_OnePeopeAppear_ReactData()}
-                <div
+
+                {/* <div
                     id="showEnd"
                     style={{
                         position: "fixed",
@@ -579,9 +582,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                             props.Total.fnObj.SET_PageChange(0)
                         }}
                     >Trở lại chọn bài</button>
-
-
-                </div>
+                </div> */}
             </div>
             <ReadReactSpeech />
         </>
@@ -601,10 +602,12 @@ function checkMessageReturnNumber(message_API, message_INPUT) {
     }
 }
 
-Array.prototype.PickRandom = function () {
-    return this[Math.floor(Math.random() * this.length)];
+// Array.prototype.PickRandom = function () {
+//     return this[Math.floor(Math.random() * this.length)];
+// }
+function PickRandom(Arr) {
+    return Arr[Math.floor(Math.random() * Arr.length)];
 }
-
 function showSubmitSyxtax(Info_ToSunmit_Reactdata) {
 
     try {
@@ -635,20 +638,7 @@ function showSubmitSyxtax(Info_ToSunmit_Reactdata) {
 
 
 
-function showDataOnline(DataOnline) {
-    // console.log(DataOnline)
-    try {
-        return (
-            DataOnline.map((e, i) =>
-                <div style={{ border: "1px solid green", borderRadius: "3px", padding: "5px", margin: "4px", backgroundColor: "blueviolet" }} key={i}>
-                    {e.score}
-                </div>
-            )
-        )
-    } catch (error) {
-        return null
-    }
-}
+
 
 function Check_ImageOrNot(Stringtocheck) {
     if (

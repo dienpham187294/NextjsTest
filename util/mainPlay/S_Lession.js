@@ -1,9 +1,9 @@
 import $ from "jquery"
 // import { pick } from "query-string";
 import { useState } from "react"
-import ReadMessage from "../../../util/Read/ReadMessage"
-import ReadReactSpeech from "../../helpers/Read_ReactSpeechSlow"
-import Dictaphone from "../../helpers/RegcognitionV1-0-1AI0.5 _02"
+import ReadMessage from "../Read/ReadMessage"
+import ReadReactSpeech from "../../pages/helpers/Read_ReactSpeechSlow"
+import Dictaphone from "../../pages/helpers/RegcognitionV1-0-1AI0.5 _02"
 
 let pickToRead = "";
 let listenScore = 0

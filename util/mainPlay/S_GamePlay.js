@@ -1,6 +1,6 @@
 
 import { useState } from "react"
-import Dictaphone from "../..//helpers/RegcognitionV1-0-1AI0.5_01"
+import Dictaphone from "../../pages/helpers/RegcognitionV1-0-1AI0.5_01"
 import ArrOfPeopeAppear_ReactJSX from "./GamePlay"
 // import $ from "jquery"
 
