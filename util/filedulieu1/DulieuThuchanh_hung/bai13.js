@@ -14,7 +14,7 @@ const Bai13
 
     = [
         {
-            "nameoflession": "P 1.3 = 1.2 + 1.3",
+            "nameoflession": "A.3| A.2 + A.3",
             "srcYoutube": "",
             "hoctap": {
                 "listenRead": hoctap,

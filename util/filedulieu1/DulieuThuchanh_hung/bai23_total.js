@@ -37,7 +37,7 @@ const Bai23
 
     = [
         {
-            "nameoflession": "Practice 2.3",
+            "nameoflession": "B.3",
             "srcYoutube": "",
             "hoctap": {
                 "listenRead": hoctap,

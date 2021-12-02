@@ -50,7 +50,7 @@ const Bai17
 
     = [
         {
-            "nameoflession": "Practice 1.7",
+            "nameoflession": "A.7",
             "srcYoutube": "",
             "hoctap": {
                 "listenRead": hoctap,

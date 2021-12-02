@@ -21,7 +21,7 @@ const Bai16
 
     = [
         {
-            "nameoflession": "1.6|1.2-1.5",
+            "nameoflession": "A.6|A.1-A.5",
             "srcYoutube": "",
             "hoctap": {
                 "listenRead": hoctap,

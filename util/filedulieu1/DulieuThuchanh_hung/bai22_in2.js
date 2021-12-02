@@ -52,7 +52,7 @@ const Bai22In2
 
     = [
         {
-            "nameoflession": "Practice 2.2",
+            "nameoflession": "B.2",
             "srcYoutube": "",
             "hoctap": {
                 "listenRead": hoctap,

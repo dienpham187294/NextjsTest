@@ -25,7 +25,7 @@ let writeOnly = [
 const BaiA9
     = [
         {
-            "nameoflession": "1.9|1.2-1.8",
+            "nameoflession": "A.9|A.2-A.8",
             "srcYoutube": "",
             "hoctap": {
                 "listenRead": hoctap,

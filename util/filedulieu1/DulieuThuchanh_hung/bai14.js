@@ -48,7 +48,7 @@ const Bai14
 
     = [
         {
-            "nameoflession": "Practice 1.4",
+            "nameoflession": "A.4",
             "srcYoutube": "",
             "hoctap": {
                 "listenRead": hoctap,

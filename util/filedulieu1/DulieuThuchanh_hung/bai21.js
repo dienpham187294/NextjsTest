@@ -46,7 +46,7 @@ const Bai21
 
     = [
         {
-            "nameoflession": "Practice 2.1",
+            "nameoflession": "B.1",
             "srcYoutube": "",
             "hoctap": {
                 "listenRead": hoctap,
