@@ -118,7 +118,7 @@ const BaiA1
 
     = [
         {
-            "nameoflession": "Blockchain và các tác động đến nền kinh tế: B1 What is blockchain?",
+            "nameoflession": "Blockchain và các tác động đến nền kinh tế.1b What is blockchain?",
             "srcYoutube": "https://www.youtube.com/embed/6WG7D47tGb0",
             "hoctap": {
                 "listenRead": hoctap,
