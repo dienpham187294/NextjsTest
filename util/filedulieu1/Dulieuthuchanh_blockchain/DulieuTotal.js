@@ -1,5 +1,5 @@
 
-import BaiA1a from "./baiA1"
+import BaiA1a from "./baiA1a"
 
 import BaiA1b from "./baiA1b"
 
