@@ -165,9 +165,7 @@ export default function Lesson(props) {
             SET_Data_Commands("====")
         }
     }
-    function PickRandom(arr) {
-        return arr[Math.floor(Math.random() * arr.length)];
-    }
+
 }
 
 
@@ -188,7 +186,7 @@ function Show_tienganhphothong_phanbaihoc(Data_Learn, Docthu, SET_Docthu, SET_Da
                         className="btn btn-primary"
                         style={{ fontSize: "larger", padding: "15px", backgroundColor: "blue", color: "white" }}
                         onClick={() => {
-                            ReadMessage(Data_Learn.EN, [1, 2].PickRandom(), 0.9)
+                            ReadMessage(Data_Learn.EN, PickRandom([1, 2]), 0.9)
                         }}
                     >Nghe nguyên câu</button>
                     <br />
@@ -204,7 +202,7 @@ function Show_tienganhphothong_phanbaihoc(Data_Learn, Docthu, SET_Docthu, SET_Da
                                 display: "inline-block",
                                 marginLeft: "10px"
                             }}
-                            onClick={() => { ReadMessage(e, [1, 2].PickRandom(), 0.3) }}
+                            onClick={() => { ReadMessage(e, PickRandom([1, 2]), 0.3) }}
                             key={i}>
                             {e}
                         </span>
@@ -263,9 +261,9 @@ function Show_tienganhphothong_listen(Data_LearnListen) {
                     className="btn btn-warning ml-5"
                     onClick={() => {
                         pickToRead = Data_LearnListen.PickRandom();
-                        let voice = [1, 2].PickRandom()
-                        let rate = [0.8, 0.9, 1.0, 1.1, 1.2].PickRandom()
-                        let pitch = [0.8, 0.9, 1.0, 1.1, 1.2].PickRandom()
+                        let voice = PickRandom([1, 2])
+                        let rate = PickRandom([0.8, 0.9, 1.0, 1.1, 1.2])
+                        let pitch = PickRandom([0.8, 0.9, 1.0, 1.1, 1.2])
                         ReadMessage(pickToRead, voice, rate, pitch)
                     }}
                 >Click to listen</button>
@@ -341,4 +339,8 @@ function showThread(text, n) {
             >XXXX</button>
         </>
     )
+}
+
+function PickRandom(arr) {
+    return arr[Math.floor(Math.random() * arr.length)];
 }

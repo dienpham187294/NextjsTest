@@ -39,7 +39,10 @@ function Show_Table(Data, Total, SET_Data_phongto) {
                             }}>
                             <button
                                 className="btn btn-sm btn-outline-primary"
-                                onClick={() => { SET_Data_phongto(eee) }}
+                                onClick={() => {
+                                    SET_Data_phongto(eee)
+                                    console.log(Total, "111111111111")
+                                }}
                             >Phóng to</button>
                             {eee.map((eeee, indexeeee) =>
                                 <div

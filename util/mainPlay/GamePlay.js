@@ -34,7 +34,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
     const [Data_TableTool, SET_Data_TableTool] = useState([])
     const [RoomOnline, SET_RoomOnline] = useState("")
     const [DataOnline, SET_DataOnline] = useState([])
-
+    const [ShowHint, SET_ShowHint] = useState(false)
     useEffect(() => {
         props.SET_Data_Commands(Info_StrickAnwers_Reactdata)
         timeCount = Date.now()
@@ -57,6 +57,10 @@ function ArrOfPeopeAppear_ReactJSX(props) {
         }
 
     }, [Score])
+    useEffect(() => {
+        console.log(ShowHint)
+
+    }, [ShowHint])
 
 
     useEffect(
@@ -67,6 +71,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
             props.Total.fnObj.AddTo_Show_ArrOfPeopeAppear_ReactData = AddTo_Show_ArrOfPeopeAppear_ReactData
             props.Total.fnObj.Submit_Show_OnePeopeAppear_ReactData = Submit_Show_OnePeopeAppear_ReactData
             props.Total.fnObj.Xuly = Xuly
+            props.Total.fnObj.SET_ShowHint = SET_ShowHint
             AddTo_Show_ArrOfPeopeAppear_ReactData(0)
         }, []
     );
@@ -412,7 +417,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
 
                                                 <span id="thoigian"></span>
                                                 <br />
-                                                <span id="showInterimID" style={{ color: "violet" }}></span>
+                                                {/* <span id="showInterimID" style={{ color: "violet" }}></span> */}
 
                                             </div>
                                         </div>
@@ -552,7 +557,24 @@ function ArrOfPeopeAppear_ReactJSX(props) {
         <>
             <div className="GameSence_Playing">
                 {Show_OnePeopeAppear_ReactData()}
-
+                {ShowHint ?
+                    <div style={{
+                        position: "fixed",
+                        bottom: "2%",
+                        left: "5%",
+                        padding: "5px",
+                        backgroundColor: "white",
+                        border: "1px solid green",
+                        borderRadius: "8px",
+                        zIndex: 5
+                    }}>
+                        {Check_ImageOrNot(Info_Icon_Reactdata) ?
+                            <>
+                                <img alt={Info_Icon_Reactdata} src={Info_Icon_Reactdata} width="140px" />
+                            </>
+                            : <b><i>{Info_Icon_Reactdata}</i></b>}
+                    </div>
+                    : null}
                 {/* <div
                     id="showEnd"
                     style={{

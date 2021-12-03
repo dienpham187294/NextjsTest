@@ -34,7 +34,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
     const [Data_TableTool, SET_Data_TableTool] = useState([])
     const [RoomOnline, SET_RoomOnline] = useState("")
     const [DataOnline, SET_DataOnline] = useState([])
-
+    const [ShowHint, SET_ShowHint] = useState("hide")
     useEffect(() => {
         props.SET_Data_Commands(Info_StrickAnwers_Reactdata)
         timeCount = Date.now()
@@ -67,6 +67,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
             props.Total.fnObj.AddTo_Show_ArrOfPeopeAppear_ReactData = AddTo_Show_ArrOfPeopeAppear_ReactData
             props.Total.fnObj.Submit_Show_OnePeopeAppear_ReactData = Submit_Show_OnePeopeAppear_ReactData
             props.Total.fnObj.Xuly = Xuly
+            props.Total.fnObj.SET_ShowHint = SET_ShowHint
             AddTo_Show_ArrOfPeopeAppear_ReactData(0)
         }, []
     );

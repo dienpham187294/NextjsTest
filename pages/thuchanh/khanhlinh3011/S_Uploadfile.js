@@ -2,7 +2,7 @@
 
 // import $ from "jquery"
 import { useState } from "react";
-import DL from "../../../util/filedulieu1/DulieuThuchanh_hung/DulieuTotal";
+import DL from "../../../util/filedulieu1/Dulieuthuchanh_blockchain/DulieuTotal";
 function UpLoadFile(props) {
 
     const [srcYoutube, SET_SrcYoutube] = useState("")
@@ -79,21 +79,28 @@ function UpLoadFile(props) {
                 <div
                     style={{
                         position: "fixed",
-                        top: "5px",
-                        bottom: "5px",
-                        left: "5px",
-                        right: "5px",
+                        top: "10%",
+                        bottom: "10%",
+                        left: "10%",
+                        right: "10%",
                         textAlign: "center",
                         backgroundColor: "white",
+                        overflow: "auto"
                     }}
                 >
-                    <button className="btn btn-danger" onClick={() => { SET_SrcYoutube("") }}>Thoát</button>
-                    <hr />
+
 
 
                     <div class="respondiframe">
-                        <iframe class="responsive-iframe" src={srcYoutube}></iframe>
+                        <iframe class="responsive-iframe" src={srcYoutube} allowFullScreen></iframe>
                     </div>
+
+                    <button style={{
+                        position: "fixed",
+                        right: "3%",
+                        top: "3%"
+                    }} className="btn btn-danger" onClick={() => { SET_SrcYoutube("") }}>Thoát</button>
+
                 </div>
                 : null}
         </div>
