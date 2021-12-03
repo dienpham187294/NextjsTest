@@ -114,7 +114,7 @@ let listenOnly = [
 ]
 let writeOnly = [
 ]
-const BaiA1
+const BaiA1b
 
     = [
         {
@@ -132,7 +132,7 @@ const BaiA1
         }
     ]
 
-export default BaiA1
+export default BaiA1b
 
 
 function FnToArrobj(ArrIn1, ArrIn2) {
