@@ -1,68 +1,40 @@
 import ArrPeple from "./ArrOfpeple"
-
+import pickNRandomElementsOfArray from "../dataHelperFunction/pickNRandomElementsOfArray"
+// import getRandomi from "../dataHelperFunction/getRandomi"
+import getElementsToDataTable from "../dataHelperFunction/getElementsToDataTable"
 // Bối cảnh Bạn đang nhân viên
 let DataTable = []
 let coerdataoflession = []
 
 // let ArrName = ['Richard', 'Barbara', 'Michael', 'Betty', 'Kimberly', 'Lisa', 'Steven', 'Robert', 'Susan', 'Dorothy', 'William', 'Donna', 'Mary', 'Michelle', 'David', 'Anthony', 'Charles', 'Ashley', 'Linda', 'Patricia', 'Christopher', 'Kenneth', 'Margaret', 'Karen', 'Mark', 'Thomas', 'Matthew', 'Sandra', 'Sarah', 'Jessica', 'Daniel', 'Donald', 'Joseph', 'Emily', 'James', 'Nancy', 'Paul', 'Jennifer', 'Andrew', 'Elizabeth', 'John', 'Joshua']
-let ArrIn1 = ["Doing fine", "Good", "I'm good", "I'm great"]
+// let ArrIn1 = ["Doing fine", "Good", "I'm good", "I'm great"]
 // DataTable.push(ArrName)
-let ArrIn2 = ["2", "3", "4"]
-// DataTable.push(ArrIn1)
-DataTable.push(["For to go.", "For here."])
-DataTable.push(ArrIn2)
-let Arr3Input =
+let ArrIn1 =
     [
-        "Grilled fish of the day",
-        "Steak with chips or salad",
-        "Sausage and roast tomato pasta",
-        "Chicken salad with garlic yoghurt dressing",
-        "Cheese and tomato pizza",
-        "Mushroom omelette",
-        "Vegetable chili",
-        "Soup of the day with brown or white bread",
-        "Homemade carrot cake",
-        "Homemade banana cake",
-        "Chocolate ice cream with chocolate sauce",
-        "Fresh fruit salad with grapes, mango, melon and apple, served with cream or ice cream",
+        { "input": "Grilled fish of the day", "img": "https://i.postimg.cc/h41MN6zV/Grilled-fish-of-the-day.jpg" },
+        { "input": "Steak with chips or salad", "img": "https://i.postimg.cc/QdwqprwZ/Steak-with-chips-or-salad.jpg" },
+        { "input": "Sausage and roast tomato pasta", "img": "https://i.postimg.cc/J4h3vnWW/Sausage-and-roast-tomato-pasta.png" },
+        { "input": "Chicken salad with garlic yoghurt dressing", "img": "https://i.postimg.cc/bJQLyF6c/Chicken-salad-with-garlic-yoghurt-dressing.jpg" },
+        { "input": "Cheese and tomato pizza", "img": "https://i.postimg.cc/FKSVpBXd/Cheese-and-tomato-pizza.jpg" },
+        { "input": "Mushroom omelette", "img": "https://i.postimg.cc/RVPdZtTF/Mushroom-omelette.jpg" },
+        { "input": "Vegetable chili", "img": "https://i.postimg.cc/xCSy439s/Vegetable-chili.jpg" },
+        { "input": "Soup of the day with brown or white bread", "img": "https://i.postimg.cc/jSLXwj8h/Soup-of-the-day-with-brown-or-white-bread.jpg" },
+        { "input": "Homemade carrot cake", "img": "https://i.postimg.cc/MH97XkV4/Homemade-carrot-cake.jpg" },
+        { "input": "Homemade banana cake", "img": "https://i.postimg.cc/RVCGmdKy/Homemade-banana-cake.jpg" },
+        { "input": "Chocolate ice cream with chocolate sauce", "img": "https://i.postimg.cc/D0n68dDW/Chocolate-ice-cream-with-chocolate-sauce.jpg" },
+        { "input": "Fresh fruit salad with grapes, mango, melon and apple, served with cream or ice cream", "img": "https://i.postimg.cc/BbS5qZLH/Fresh-fruit-salad-with-grapes-mango-melon-and-apple-served-with-cream-or-ice-cream.jpg" },
     ]
-let Arr3Input2 = [
-    "https://i.postimg.cc/h41MN6zV/Grilled-fish-of-the-day.jpg",
-    "https://i.postimg.cc/QdwqprwZ/Steak-with-chips-or-salad.jpg",
-    "https://i.postimg.cc/J4h3vnWW/Sausage-and-roast-tomato-pasta.png",
-    "https://i.postimg.cc/bJQLyF6c/Chicken-salad-with-garlic-yoghurt-dressing.jpg",
-    "https://i.postimg.cc/FKSVpBXd/Cheese-and-tomato-pizza.jpg",
-    "https://i.postimg.cc/RVPdZtTF/Mushroom-omelette.jpg",
-    "https://i.postimg.cc/xCSy439s/Vegetable-chili.jpg",
-    "https://i.postimg.cc/jSLXwj8h/Soup-of-the-day-with-brown-or-white-bread.jpg",
-    "https://i.postimg.cc/MH97XkV4/Homemade-carrot-cake.jpg",
-    "https://i.postimg.cc/RVCGmdKy/Homemade-banana-cake.jpg",
-    "https://i.postimg.cc/D0n68dDW/Chocolate-ice-cream-with-chocolate-sauce.jpg",
-    "https://i.postimg.cc/BbS5qZLH/Fresh-fruit-salad-with-grapes-mango-melon-and-apple-served-with-cream-or-ice-cream.jpg"
-]
 
-DataTable.push(Arr3Input2)
-
-// DataTable.push(Arr3Input2)
-let Arr4Input =
+let ArrIn2 =
     [
-        "Mineral water",
-        "Fresh orange juice",
-        "Soft drink",
-        "English tea",
-        "Irish Cream Coffee"
+        { "input": "Mineral water", "img": "https://i.postimg.cc/Hk3yHMkd/Mineral-water.jpg" },
+        { "input": "Fresh orange juice", "img": "https://i.postimg.cc/NGrmTLpk/Fresh-orange-juice.jpg" },
+        { "input": "Soft drink", "img": "https://i.postimg.cc/TPwWPPKm/Soft-drink.jpg" },
+        { "input": "English tea", "img": "https://i.postimg.cc/YqKgxkPK/English-tea.jpg" },
+        { "input": "Irish Cream Coffee", "img": "https://i.postimg.cc/nc4mRg8s/Irish-Cream-Coffee.jpg" },
     ]
-let Arr4Input2 = [
-    "https://i.postimg.cc/Hk3yHMkd/Mineral-water.jpg",
-    "https://i.postimg.cc/NGrmTLpk/Fresh-orange-juice.jpg",
-    "https://i.postimg.cc/TPwWPPKm/Soft-drink.jpg",
-    "https://i.postimg.cc/YqKgxkPK/English-tea.jpg",
-    "https://i.postimg.cc/nc4mRg8s/Irish-Cream-Coffee.jpg",
-]
 
-DataTable.push(Arr4Input2)
-
-
+DataTable.push(getElementsToDataTable(ArrIn1, "img"))
 
 ArrPeple.forEach(e => {
 
@@ -71,42 +43,42 @@ ArrPeple.forEach(e => {
     ArrInFN.img = e[1]
     ArrInFN.gender = e[2]
 
-    let SpeakFirst = ["hi", "hello"]
-    // let i1 = GETRANDOMi(ArrIn1)
+    let SpeakFirst = ["Excuse me"]
+
     let ArrBegin = []
-    ArrBegin.push(FnObjHanldingNext(["Hi, how are you?", "Good afternoon, how are you?", "Good morning, how are you?"], ArrIn1))
-    // ArrInFN.Submit.push(ArrIn1[i1])
+    ArrBegin.push(FnObjHanldingNext(["Yes, may I help you?"], ["I want to order."]))
+
     //middle
 
     let Arrin3 = []
     let Arrin4 = []
+    let Arri1 = pickNRandomElementsOfArray(ArrIn1, 2)
+    // console.log(Arri1)
+    let Anwer1 = "I want to order " + Arri1[0].input + "and, " + Arri1[1].input
+    ArrInFN.Submit.push(Arri1[0].img)
+    ArrInFN.Submit.push(Arri1[1].img)
 
     Arrin3.push("0")
-    Arrin4.push(FnObjHanldingNext(["Do you want to eat here or to go?"], ["Eat here, please.", "I want to eat here."]))
-    ArrInFN.Submit.push("For here.")
+    Arrin4.push(FnObjHanldingNext(["What would you like?"], [Anwer1]))
 
-
-    let i2 = GETRANDOMi(ArrIn2)
-    Arrin3.push("0-1")
-    Arrin4.push(FnObjHanldingNext(["How many people do you have?"], ["I have " + ArrIn2[i2] + " people, please."]))
-    ArrInFN.Submit.push(ArrIn2[i2])
     let End = null
     // End.push(FnObjHanldingNext([arr_In1[i1].qs], ["I will follow your advice.", "That’s good advice.", "Thank you for your advice."], { end_successfull: true }))
-    coerdataoflession.push(Fnperson(ArrInFN, DataTable, ArrBegin, FnToArrobj(Arrin3, Arrin4), End, SpeakFirst, "https://i.postimg.cc/kgRbM0Rv/guest-Is-Comming.jpg"))
+    coerdataoflession.push(Fnperson(ArrInFN, DataTable, ArrBegin, FnToArrobj(Arrin3, Arrin4), End, SpeakFirst, "https://i.postimg.cc/jSzMzhTN/callwaiter.jpg"))
 })
 
 let hoctap = [
+
 ]
 let listenOnly = [
-    ArrIn1
+
 ]
 let writeOnly = [
 ]
-const Bai23In2
+const Bai24
 
     = [
         {
-            "nameoflession": "Practice 2.2",
+            "nameoflession": "B.4",
             "srcYoutube": "",
             "hoctap": {
                 "listenRead": hoctap,
@@ -120,7 +92,7 @@ const Bai23In2
         }
     ]
 
-export default Bai23In2
+export default Bai24
 
 
 function FnToArrobj(ArrIn1, ArrIn2) {
@@ -229,6 +201,3 @@ function Fnperson(Arr, DataTable, Begin, Middle, End, robotspeakfirst, icon) {
 //     return arr[Math.floor(Math.random() * arr.length)];
 // }
 
-function GETRANDOMi(arr) {
-    return Math.floor(Math.random() * arr.length);
-}

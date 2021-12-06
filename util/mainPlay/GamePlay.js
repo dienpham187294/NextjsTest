@@ -417,7 +417,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
 
                                                 <span id="thoigian"></span>
                                                 <br />
-                                                {/* <span id="showInterimID" style={{ color: "violet" }}></span> */}
+                                                <span id="showInterimID" style={{ color: "violet" }}></span>
 
                                             </div>
                                         </div>

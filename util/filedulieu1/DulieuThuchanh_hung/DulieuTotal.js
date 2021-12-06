@@ -14,10 +14,12 @@ import BaiA10 from "./bai20-10"
 import Bai21 from "./bai21"
 import Bai22 from "./bai22_total"
 import Bai23 from "./bai23_total"
+import Bai24 from "./bai24_in1"
+import Bai25 from "./bai25_total"
 const DLTOTAL =
     [
         Bai11, Bai12, Bai13, Bai14, Bai15, Bai16, Bai17, BaiA8, BaiA9, BaiA10,
-        Bai21, Bai22, Bai23
+        Bai21, Bai22, Bai23, Bai24, Bai25
     ]
 export default DLTOTAL
 

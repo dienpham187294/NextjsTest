@@ -3,16 +3,6 @@ import Body from "./main/_body"
 // import { useEffect, useState } from "react"
 
 function Home() {
-  // const [Status, SET_Status] = useState(true)
-  // useEffect(() => {
-  //   if (Status) {
-  //     try {
-  //       document.getElementById("Text_Cookies").value = cookies["ericpham"]
-  //       document.getElementById("Btn_Cookies").click()
-  //     } catch (error) { }
-  //     SET_Status(false)
-  //   }
-  // })
   return (
     <div className="container-fluid">
       <div className="row bg-dark">
@@ -23,6 +13,11 @@ function Home() {
     </div>
   )
 }
+
+
+
+
+
 
 // Home.getInitialProps = async (context) => {
 //   try {

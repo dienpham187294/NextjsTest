@@ -93,8 +93,8 @@ function UpLoadFile(props) {
                     <hr />
 
 
-                    <div class="respondiframe">
-                        <iframe class="responsive-iframe" src={srcYoutube}></iframe>
+                    <div className="respondiframe">
+                        <iframe className="responsive-iframe" src={srcYoutube}></iframe>
                     </div>
                 </div>
                 : null}
