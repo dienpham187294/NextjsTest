@@ -3,7 +3,7 @@ export default function getElementsToDataTable(ArrInput, elementsName, option) {
 
     ArrInput.forEach(e => {
         ArrOutput.push(e[elementsName])
-        if (option !== null) {
+        if (option !== undefined) {
             ArrOutput.push(option)
         }
     });

@@ -261,7 +261,7 @@ function Show_tienganhphothong_listen(Data_LearnListen) {
                 <button
                     className="btn btn-warning ml-5"
                     onClick={() => {
-                        pickToRead = Data_LearnListen.PickRandom();
+                        pickToRead = PickRandom(Data_LearnListen);
                         let voice = PickRandom([1, 2])
                         let rate = PickRandom([0.8, 0.9, 1.0, 1.1, 1.2])
                         let pitch = PickRandom([0.8, 0.9, 1.0, 1.1, 1.2])
@@ -271,7 +271,7 @@ function Show_tienganhphothong_listen(Data_LearnListen) {
                 <hr />
                 {Data_LearnListen.map((e, i) =>
                     <button
-                        className="btn btn-info ml-2" key={i}
+                        className="btn btn-info ml-3 mt-3" key={i}
                         onClick={() => {
                             if (e === pickToRead) {
                                 pickToRead = "";

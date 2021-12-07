@@ -83,7 +83,7 @@ let hoctap = [
     { "EN": "What will happen to the ones who don't?", "VN": "Điều gì sẽ xảy ra với những người không?", "IPA": "wɒt wɪl ˈhæpən tuː ðə wʌnz huː dəʊnt?" },
 ]
 let listenOnly = [
-
+    getElementsToDataTable(ArrIn1, "qs")
 ]
 let writeOnly = [
 ]
