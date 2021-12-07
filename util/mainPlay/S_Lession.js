@@ -207,15 +207,16 @@ function Show_tienganhphothong_phanbaihoc(Data_Learn, Docthu, SET_Docthu, SET_Da
                             {e}
                         </span>
                     )}
-                    <h1>{Data_Learn.IPA}</h1>
+                    <h3>{Data_Learn.IPA}</h3>
                     <p>{Data_Learn.IPAVN !== "" ? Data_Learn.IPAVN : null}</p>
-                    <i>Học đọc phiên âm quốc tế (ví dụ /stænd ʌp/)  </i>
+                    {/* <i>Học đọc phiên âm quốc tế (ví dụ /stænd ʌp/)  </i>
                     <a href="https://www.youtube.com/embed/DyYFwoITfXY" target="_self">
                         <button
                             className="btn btn-sm btn-outline-primary"
 
                         >  Tại đây</button>
-                    </a> <span id="id_test_rate"></span>
+                    </a>  */}
+                    <span id="id_test_rate"></span>
                 </div>
                 <hr />
                 <div style={{ width: "100%", backgroundColor: "#ffe6e6", padding: "5px" }}>

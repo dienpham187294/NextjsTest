@@ -18,7 +18,7 @@ export default function body() {
                 </div>
                 <hr />
                 <div className="respondiframe">
-                    <iframe className="responsive-iframe" src="https://www.youtube.com/embed/EaUK7bJ-ty8"></iframe>
+                    <iframe className="responsive-iframe" src="https://www.youtube.com/embed/EaUK7bJ-ty8" allowFullScreen></iframe>
                 </div>
                 <hr />
                 {/* <div>
