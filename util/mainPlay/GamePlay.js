@@ -37,8 +37,9 @@ function ArrOfPeopeAppear_ReactJSX(props) {
     const [ShowHint, SET_ShowHint] = useState(false)
     useEffect(() => {
         props.SET_Data_Commands(Info_StrickAnwers_Reactdata)
-        timeCount = Date.now()
+
         if (i1 === 0) {
+            timeCount = Date.now()
             idRoomOnline = Date.now() + PickRandom(["a", "b", "c", "d", "e", "f"])
             if (localStorage.getItem("idMember") !== null) {
                 idMember = localStorage.getItem("idMember")
@@ -57,10 +58,6 @@ function ArrOfPeopeAppear_ReactJSX(props) {
         }
 
     }, [Score])
-    useEffect(() => {
-        console.log(ShowHint)
-
-    }, [ShowHint])
 
 
     useEffect(
