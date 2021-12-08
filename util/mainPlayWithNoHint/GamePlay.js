@@ -2,12 +2,12 @@ import React, { useEffect, useState } from "react";
 // import Read_ReactJSX from "../../../pages/helpers/Read_ReactJSX"
 import $ from "jquery"
 import Linkapi from "../api/Linkapi"
-import DataTool from "./S_Data_tool"
+import DataTool from "../mainPlay/S_Data_tool"
 import ReadReactSpeech from "../../pages/helpers/Read_ReactSpeechSlow"
 import ReadMessage from "../Read/ReadMessage"
 // import { prop } from "cheerio/lib/api/attributes";
 const stringSimilarity = require("string-similarity");
-import showDataGameOnline from "./showDataGameOnline"
+import showDataGameOnline from "../mainPlay/showDataGameOnline"
 // import Cookies_ReadingPage from "../../../../../util/Cookies/Cookies_ReadingPage"
 let VoicePick = 1;
 let State_of_Anwer = "none";

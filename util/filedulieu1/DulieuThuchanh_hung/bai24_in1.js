@@ -54,7 +54,7 @@ ArrPeple.forEach(e => {
     let Arrin4 = []
     let Arri1 = pickNRandomElementsOfArray(ArrIn1, 2)
     // console.log(Arri1)
-    let Anwer1 = "I want to order " + Arri1[0].input + "and, " + Arri1[1].input
+    let Anwer1 = "I want to order " + Arri1[0].input + ", and " + Arri1[1].input
     ArrInFN.Submit.push(Arri1[0].img)
     ArrInFN.Submit.push(Arri1[1].img)
 
