@@ -35,7 +35,7 @@ let ArrIn2 =
     ]
 
 DataTable.push(getElementsToDataTable(ArrIn1, "img"))
-
+let arrListLisen1 = []
 ArrPeple.forEach(e => {
 
     let ArrInFN = {}
@@ -54,7 +54,9 @@ ArrPeple.forEach(e => {
     let Arrin4 = []
     let Arri1 = pickNRandomElementsOfArray(ArrIn1, 2)
     // console.log(Arri1)
-    let Anwer1 = "I want to order " + Arri1[0].input + ", and " + Arri1[1].input
+    let Anwer1 = "I want to order " + Arri1[0].input + ", and " + Arri1[1].input;
+
+    arrListLisen1.push(Arri1[0].input + ", and " + Arri1[1].input)
     ArrInFN.Submit.push(Arri1[0].img)
     ArrInFN.Submit.push(Arri1[1].img)
 
@@ -70,7 +72,7 @@ let hoctap = [
 
 ]
 let listenOnly = [
-
+    arrListLisen1
 ]
 let writeOnly = [
 ]

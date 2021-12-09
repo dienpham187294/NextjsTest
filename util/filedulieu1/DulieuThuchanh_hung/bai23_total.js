@@ -3,7 +3,7 @@ import Bai23In2 from "./bai23_in2"
 // import Bai12 from "./bai12"
 let coerdataoflession = Bai23In1[1].coerdataoflession.slice(0, 20).concat(Bai23In2[1].coerdataoflession.slice(0, 20))
 let hoctap = [
-    { "EN": "What would you like today?", "VN": "Hôm nay bạn muốn gì?", "IPA": "wɒt wʊd juː laɪk təˈdeɪ?" },
+    { "EN": "What would you like today?", "VN": "Hôm nay bạn muốn gì?", "IPA": "wɒt wʊd juː laɪk təˈdeɪ" },
     { "EN": "What do you want to order?", "VN": "Bạn muốn gọi món gì?", "IPA": "wɒt duː juː wɒnt tuː ˈɔːdə?" },
     { "EN": "Do you want to take a drink?", "VN": "Bạn có muốn uống một ly không?", "IPA": "duː juː wɒnt tuː teɪk ə drɪŋk?" },
 ]
