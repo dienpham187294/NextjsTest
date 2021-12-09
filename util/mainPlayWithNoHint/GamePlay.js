@@ -5,9 +5,12 @@ import Linkapi from "../api/Linkapi"
 import DataTool from "../mainPlay/S_Data_tool"
 import ReadReactSpeech from "../../pages/helpers/Read_ReactSpeechSlow"
 import ReadMessage from "../Read/ReadMessage"
+import showDataGameOnline from "../mainPlay/showDataGameOnline"
+import secondToMinutes from "../filedulieu1/dataHelperFunction/secondToMinutes";
+
 // import { prop } from "cheerio/lib/api/attributes";
 const stringSimilarity = require("string-similarity");
-import showDataGameOnline from "../mainPlay/showDataGameOnline"
+
 // import Cookies_ReadingPage from "../../../../../util/Cookies/Cookies_ReadingPage"
 let VoicePick = 1;
 let State_of_Anwer = "none";
@@ -21,7 +24,7 @@ let idRoomOnline;
 let idMember;
 let interOnline;
 let i1 = 0
-let timeCount;
+let timeCount = 0;
 function ArrOfPeopeAppear_ReactJSX(props) {
 
     const [Info_StrickAnwers_Reactdata, SET_Info_StrickAnwers_Reactdata] = useState(["hi how are you"])
@@ -34,11 +37,17 @@ function ArrOfPeopeAppear_ReactJSX(props) {
     const [Data_TableTool, SET_Data_TableTool] = useState([])
     const [RoomOnline, SET_RoomOnline] = useState("")
     const [DataOnline, SET_DataOnline] = useState([])
-    const [ShowHint, SET_ShowHint] = useState("hide")
+    const [ShowHint, SET_ShowHint] = useState(false)
     useEffect(() => {
         props.SET_Data_Commands(Info_StrickAnwers_Reactdata)
-        timeCount = Date.now()
+
         if (i1 === 0) {
+            if (timeCount === 0) {
+                setInterval(() => {
+                    timeCount += 1;
+                    $("#thoigian").text(secondToMinutes(timeCount))
+                }, 1000);
+            }
             idRoomOnline = Date.now() + PickRandom(["a", "b", "c", "d", "e", "f"])
             if (localStorage.getItem("idMember") !== null) {
                 idMember = localStorage.getItem("idMember")
@@ -55,7 +64,6 @@ function ArrOfPeopeAppear_ReactJSX(props) {
         if (RoomOnline !== "") {
             getOnline(RoomOnline, idMember, Score)
         }
-
     }, [Score])
 
 
@@ -402,17 +410,17 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                                             </div>
                                             <div className="col-6">
                                                 <b> Điểm: {Score} <span style={{ color: "red" }}>Chọn sai: {Sai} </span> | <span style={{ color: "red" }}>{Boqua}</span> </b>
-                                                <button
-                                                    onClick={() => {
-                                                        let t = (Date.now() - timeCount) / 1000 / 60;
 
-                                                        $("#thoigian").text(Math.floor(t) + " phút.")
-
-                                                    }}
-                                                >Time</button>
 
                                                 <span id="thoigian"></span>
-                                                <br />
+
+                                                <button
+                                                    className="btn btn-sm btn-primary ml-1"
+                                                    onClick={() => {
+                                                        timeCount = 1
+                                                    }}
+                                                >Reset</button>
+                                                {/* <br /> */}
                                                 {/* <span id="showInterimID" style={{ color: "violet" }}></span> */}
 
                                             </div>
@@ -553,7 +561,24 @@ function ArrOfPeopeAppear_ReactJSX(props) {
         <>
             <div className="GameSence_Playing">
                 {Show_OnePeopeAppear_ReactData()}
-
+                {ShowHint ?
+                    <div style={{
+                        position: "fixed",
+                        bottom: "2%",
+                        left: "5%",
+                        padding: "5px",
+                        backgroundColor: "white",
+                        border: "1px solid green",
+                        borderRadius: "8px",
+                        zIndex: 5
+                    }}>
+                        {Check_ImageOrNot(Info_Icon_Reactdata) ?
+                            <>
+                                <img alt={Info_Icon_Reactdata} src={Info_Icon_Reactdata} width="140px" />
+                            </>
+                            : <b><i>{Info_Icon_Reactdata}</i></b>}
+                    </div>
+                    : null}
                 {/* <div
                     id="showEnd"
                     style={{

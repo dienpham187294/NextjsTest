@@ -5,9 +5,12 @@ import Linkapi from "../api/Linkapi"
 import DataTool from "./S_Data_tool"
 import ReadReactSpeech from "../../pages/helpers/Read_ReactSpeechSlow"
 import ReadMessage from "../Read/ReadMessage"
+import showDataGameOnline from "./showDataGameOnline"
+import secondToMinutes from "../filedulieu1/dataHelperFunction/secondToMinutes";
+
 // import { prop } from "cheerio/lib/api/attributes";
 const stringSimilarity = require("string-similarity");
-import showDataGameOnline from "./showDataGameOnline"
+
 // import Cookies_ReadingPage from "../../../../../util/Cookies/Cookies_ReadingPage"
 let VoicePick = 1;
 let State_of_Anwer = "none";
@@ -21,7 +24,7 @@ let idRoomOnline;
 let idMember;
 let interOnline;
 let i1 = 0
-let timeCount;
+let timeCount = 0;
 function ArrOfPeopeAppear_ReactJSX(props) {
 
     const [Info_StrickAnwers_Reactdata, SET_Info_StrickAnwers_Reactdata] = useState(["hi how are you"])
@@ -39,7 +42,12 @@ function ArrOfPeopeAppear_ReactJSX(props) {
         props.SET_Data_Commands(Info_StrickAnwers_Reactdata)
 
         if (i1 === 0) {
-            timeCount = Date.now()
+            if (timeCount === 0) {
+                setInterval(() => {
+                    timeCount += 1;
+                    $("#thoigian").text(secondToMinutes(timeCount))
+                }, 1000);
+            }
             idRoomOnline = Date.now() + PickRandom(["a", "b", "c", "d", "e", "f"])
             if (localStorage.getItem("idMember") !== null) {
                 idMember = localStorage.getItem("idMember")
@@ -56,7 +64,6 @@ function ArrOfPeopeAppear_ReactJSX(props) {
         if (RoomOnline !== "") {
             getOnline(RoomOnline, idMember, Score)
         }
-
     }, [Score])
 
 
@@ -403,16 +410,16 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                                             </div>
                                             <div className="col-6">
                                                 <b> Điểm: {Score} <span style={{ color: "red" }}>Chọn sai: {Sai} </span> | <span style={{ color: "red" }}>{Boqua}</span> </b>
-                                                <button
-                                                    onClick={() => {
-                                                        let t = (Date.now() - timeCount) / 1000 / 60;
 
-                                                        $("#thoigian").text(Math.floor(t) + " phút.")
-
-                                                    }}
-                                                >Time</button>
 
                                                 <span id="thoigian"></span>
+
+                                                <button
+                                                    className="btn btn-sm btn-primary ml-1"
+                                                    onClick={() => {
+                                                        timeCount = 1
+                                                    }}
+                                                >Reset</button>
                                                 <br />
                                                 <span id="showInterimID" style={{ color: "violet" }}></span>
 
