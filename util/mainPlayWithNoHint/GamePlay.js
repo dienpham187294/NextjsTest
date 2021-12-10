@@ -2,10 +2,10 @@ import React, { useEffect, useState } from "react";
 // import Read_ReactJSX from "../../../pages/helpers/Read_ReactJSX"
 import $ from "jquery"
 import Linkapi from "../api/Linkapi"
-import DataTool from "../mainPlay/S_Data_tool"
+import DataTool from "./S_Data_tool"
 import ReadReactSpeech from "../../pages/helpers/Read_ReactSpeechSlow"
 import ReadMessage from "../Read/ReadMessage"
-import showDataGameOnline from "../mainPlay/showDataGameOnline"
+import showDataGameOnline from "./showDataGameOnline"
 import secondToMinutes from "../filedulieu1/dataHelperFunction/secondToMinutes";
 
 // import { prop } from "cheerio/lib/api/attributes";
@@ -38,6 +38,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
     const [RoomOnline, SET_RoomOnline] = useState("")
     const [DataOnline, SET_DataOnline] = useState([])
     const [ShowHint, SET_ShowHint] = useState(false)
+
     useEffect(() => {
         props.SET_Data_Commands(Info_StrickAnwers_Reactdata)
 
@@ -76,6 +77,8 @@ function ArrOfPeopeAppear_ReactJSX(props) {
             props.Total.fnObj.Submit_Show_OnePeopeAppear_ReactData = Submit_Show_OnePeopeAppear_ReactData
             props.Total.fnObj.Xuly = Xuly
             props.Total.fnObj.SET_ShowHint = SET_ShowHint
+
+
             AddTo_Show_ArrOfPeopeAppear_ReactData(0)
         }, []
     );
@@ -420,8 +423,8 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                                                         timeCount = 1
                                                     }}
                                                 >Reset</button>
-                                                {/* <br /> */}
-                                                {/* <span id="showInterimID" style={{ color: "violet" }}></span> */}
+                                                {/* <br />
+                                                <span id="showInterimID" style={{ color: "violet" }}></span> */}
 
                                             </div>
                                         </div>
@@ -430,7 +433,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
 
                                 <hr />
 
-                                {/* <hr /> */}
+
                                 <div className="row">
                                     <div className="col-12">
                                         <b>Công cụ: </b>
@@ -453,16 +456,32 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                                         backgroundColor: "white"
                                     }}
                                 >
+                                    <button
+                                        className="btn btn-outline-danger ml-3"
+                                        style={{
+                                            float: "left"
+                                        }}
+                                        onClick={() => {
+                                            // console.log(props.Total)
+                                            props.Total.fnObj.SET_PageChange(0)
+                                            try {
+                                                $("#idStopLisening")[0].click()
+                                                clearInterval(interOnline)
+                                            } catch (error) {
+
+                                            }
+                                        }}
+                                    >Chọn bài</button>
                                     <a className="mr-5" href="https://forms.gle/JZWwQNx4XP8fDken9">Phiếu khảo sát</a>
 
                                     {RoomOnline === "" ?
                                         <>
-                                            <input className="mr-2" id="getIdRoom" defaultValue={idRoomOnline} type="text" />
+                                            {/* <input className="mr-2" id="getIdRoom" defaultValue={idRoomOnline} type="text" /> */}
                                             <button
                                                 className="btn btn-sm btn-danger"
                                                 onClick={() => {
-                                                    SET_RoomOnline($("#getIdRoom").val())
-                                                    getOnline($("#getIdRoom").val(), idMember, Score)
+                                                    SET_RoomOnline(props.NameOflession)
+                                                    getOnline(props.NameOflession, idMember, Score)
                                                 }}
                                             >Online</button>
                                         </>
@@ -497,19 +516,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                                     }
 
 
-                                    <button
-                                        className="btn btn-outline-danger ml-3"
-                                        onClick={() => {
-                                            // console.log(props.Total)
-                                            props.Total.fnObj.SET_PageChange(0)
-                                            try {
-                                                $("#idStopLisening")[0].click()
-                                                clearInterval(interOnline)
-                                            } catch (error) {
 
-                                            }
-                                        }}
-                                    >Out</button>
 
                                     <button
                                         className="btn btn-outline-primary ml-3"

@@ -38,6 +38,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
     const [RoomOnline, SET_RoomOnline] = useState("")
     const [DataOnline, SET_DataOnline] = useState([])
     const [ShowHint, SET_ShowHint] = useState(false)
+
     useEffect(() => {
         props.SET_Data_Commands(Info_StrickAnwers_Reactdata)
 
@@ -76,6 +77,8 @@ function ArrOfPeopeAppear_ReactJSX(props) {
             props.Total.fnObj.Submit_Show_OnePeopeAppear_ReactData = Submit_Show_OnePeopeAppear_ReactData
             props.Total.fnObj.Xuly = Xuly
             props.Total.fnObj.SET_ShowHint = SET_ShowHint
+
+
             AddTo_Show_ArrOfPeopeAppear_ReactData(0)
         }, []
     );
@@ -473,12 +476,12 @@ function ArrOfPeopeAppear_ReactJSX(props) {
 
                                     {RoomOnline === "" ?
                                         <>
-                                            <input className="mr-2" id="getIdRoom" defaultValue={idRoomOnline} type="text" />
+                                            {/* <input className="mr-2" id="getIdRoom" defaultValue={idRoomOnline} type="text" /> */}
                                             <button
                                                 className="btn btn-sm btn-danger"
                                                 onClick={() => {
-                                                    SET_RoomOnline($("#getIdRoom").val())
-                                                    getOnline($("#getIdRoom").val(), idMember, Score)
+                                                    SET_RoomOnline(props.NameOflession)
+                                                    getOnline(props.NameOflession, idMember, Score)
                                                 }}
                                             >Online</button>
                                         </>

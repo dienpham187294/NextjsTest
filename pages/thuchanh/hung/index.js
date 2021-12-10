@@ -13,12 +13,13 @@ function Manager() {
 
     const [Data_Game, SET_Data_Game] = useState([])
     const [huongdan, SET_huongdan] = useState("")
-    const Total = new MDG(SET_PageChange, SET_Data_Game, SET_Data_InfoOflession, SET_huongdan)
+    const [NameOflession, SET_NameOflession] = useState("")
+    const Total = new MDG(SET_PageChange, SET_Data_Game, SET_Data_InfoOflession, SET_huongdan, SET_NameOflession)
     return (
         <div >
             {PageChange === 0 ? <UpLoadFile Total={Total} />
                 : PageChange === 2 ? <InfoLession Data={Data_InfoOflession} Total={Total} />
-                    : PageChange === 1 ? <GamePlay Data={Data_Game} huongdan={huongdan} Total={Total} />
+                    : PageChange === 1 ? <GamePlay Data={Data_Game} huongdan={huongdan} NameOflession={NameOflession} Total={Total} />
                         : PageChange}
         </div>
 
@@ -31,13 +32,15 @@ function MDG(
     SET_PageChange,
     SET_Data_Game,
     SET_Data_InfoOflession,
-    SET_huongdan
+    SET_huongdan,
+    SET_NameOflession
 ) {
     this.fnObj = {
         "SET_PageChange": SET_PageChange,
         "SET_Data_Game": SET_Data_Game,
         "SET_Data_InfoOflession": SET_Data_InfoOflession,
-        "SET_huongdan": SET_huongdan
+        "SET_huongdan": SET_huongdan,
+        "SET_NameOflession": SET_NameOflession
     }
     this.stObj = {
         "inputSumit": "",
