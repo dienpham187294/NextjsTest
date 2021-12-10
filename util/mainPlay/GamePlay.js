@@ -49,7 +49,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                     $("#thoigian").text(secondToMinutes(timeCount))
                 }, 1000);
             }
-            idRoomOnline = Date.now() + PickRandom(["a", "b", "c", "d", "e", "f"])
+            // idRoomOnline = Date.now() + PickRandom(["a", "b", "c", "d", "e", "f"])
             if (localStorage.getItem("idMember") !== null) {
                 idMember = localStorage.getItem("idMember")
             } else {
