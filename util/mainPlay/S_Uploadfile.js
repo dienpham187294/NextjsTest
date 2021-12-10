@@ -1,5 +1,6 @@
+
 import { useState } from "react";
-import DL from "../../../util/filedulieu1/DulieuThuchanh_hung/DulieuTotal";
+
 function UpLoadFile(props) {
 
     const [srcYoutube, SET_SrcYoutube] = useState("")
@@ -19,11 +20,24 @@ function UpLoadFile(props) {
         <div style={{ margin: "5%" }}>
             <table className="table table-striped">
                 <tbody>
-                    {DL.map((e, i) =>
+                    {props.DL.map((e, i) =>
                         <tr key={i}>
                             <td>
+                                {e[0].storyBoicanh !== "" && e[0].storyBoicanh !== undefined ?
+                                    <>
+                                        <p style={
+                                            {
+                                                color: "blueviolet"
+                                            }
+                                        }>
+                                            {e[0].storyBoicanh}
+                                        </p>
+                                    </>
+
+                                    : null}
+
                                 <b style={{ color: "black" }}>{e[0].nameoflession}</b>
-                                <br />
+                                <p>{e[0].story}</p>
                                 <button
                                     style={{ border: "1px solid green", borderRadius: "5px", padding: "5px", marginTop: "5px", cursor: "pointer" }}
                                     className="btnHover ml-1"
@@ -54,28 +68,30 @@ function UpLoadFile(props) {
                     )}
                 </tbody></table>
 
-            {srcYoutube !== "" ?
-                <div
-                    style={{
-                        position: "fixed",
-                        top: "5px",
-                        bottom: "5px",
-                        left: "5px",
-                        right: "5px",
-                        textAlign: "center",
-                        backgroundColor: "white",
-                    }}
-                >
-                    <button className="btn btn-danger" onClick={() => { SET_SrcYoutube("") }}>Thoát</button>
-                    <hr />
+            {
+                srcYoutube !== "" ?
+                    <div
+                        style={{
+                            position: "fixed",
+                            top: "5px",
+                            bottom: "5px",
+                            left: "5px",
+                            right: "5px",
+                            textAlign: "center",
+                            backgroundColor: "white",
+                        }}
+                    >
+                        <button className="btn btn-danger" onClick={() => { SET_SrcYoutube("") }}>Thoát</button>
+                        <hr />
 
 
-                    <div class="respondiframe">
-                        <iframe class="responsive-iframe" src={srcYoutube}></iframe>
+                        <div class="respondiframe">
+                            <iframe class="responsive-iframe" src={srcYoutube}></iframe>
+                        </div>
                     </div>
-                </div>
-                : null}
-        </div>
+                    : null
+            }
+        </div >
     )
 }
 

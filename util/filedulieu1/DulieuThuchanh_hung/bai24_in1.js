@@ -56,11 +56,15 @@ let listenOnly = [
 ]
 let writeOnly = [
 ]
+let storyBoicanh = ""
+let story = `Hôm nay, nếu khách đang ngồi sẵn gọi thì lại hỏi xem khách cần gì. Nếu khách cần order thì làm cho khách.`
 const Bai24
 
     = [
         {
-            "nameoflession": "B.4",
+            "nameoflession": "B.2.1",
+            "storyBoicanh": storyBoicanh,
+            "story": story,
             "srcYoutube": "",
             "hoctap": {
                 "listenRead": hoctap,

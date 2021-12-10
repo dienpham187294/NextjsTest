@@ -11,15 +11,18 @@ let hoctap = []
 let listenOnly = []
 let writeOnly = []
 
-
+let storyBoicanh = ""
+let story = "Hôm nay làm hết những gì đã học nè."
 
 
 const Bai25
 
     = [
         {
-            "nameoflession": "B.6: Tổng hợp",
+            "nameoflession": "B.Total",
             "srcYoutube": "",
+            "storyBoicanh": storyBoicanh,
+            "story": story,
             "hoctap": {
                 "listenRead": hoctap,
                 "listenOnly": listenOnly,

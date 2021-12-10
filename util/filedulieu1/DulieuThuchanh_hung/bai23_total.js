@@ -33,12 +33,17 @@ let listenOnly = [
 let writeOnly = [
 
 ]
- 
+let storyBoicanh = ""
+let story =
+    `Hôm nay, sau khi chào hỏi khách hãy hỏi khách muốn ăn tại chỗ hay mua mang đi. 
+Nếu ăn tại chỗ thì hỏi khách có bao nhiêu người để xếp bàn. 
+Nếu khách mua mang đi thì order món và nước cho khách.`
 const Bai23
-
     = [
         {
-            "nameoflession": "B.3",
+            "nameoflession": "B.1.3",
+            "storyBoicanh": storyBoicanh,
+            "story": story,
             "srcYoutube": "",
             "hoctap": {
                 "listenRead": hoctap,
