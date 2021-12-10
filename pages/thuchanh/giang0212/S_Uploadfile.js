@@ -1,6 +1,4 @@
 
-
-// import $ from "jquery"
 import { useState } from "react";
 import DL from "../../../util/filedulieu1/DulieuThuchanh_hung/DulieuTotal";
 function UpLoadFile(props) {

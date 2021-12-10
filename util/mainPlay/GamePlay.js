@@ -20,7 +20,7 @@ let AllData_OfOne;
 let interNguoitieptheo, iNguoitieptheo;
 let rateRead = 1.1
 let pitchRead = 1.2
-let idRoomOnline;
+
 let idMember;
 let interOnline;
 let i1 = 0
@@ -41,7 +41,8 @@ function ArrOfPeopeAppear_ReactJSX(props) {
 
     useEffect(() => {
         props.SET_Data_Commands(Info_StrickAnwers_Reactdata)
-
+        console.log(props.ShowInterim)
+        console.log(props.NameOflession)
         if (i1 === 0) {
             if (timeCount === 0) {
                 setInterval(() => {
@@ -424,7 +425,8 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                                                     }}
                                                 >Reset</button>
                                                 <br />
-                                                <span id="showInterimID" style={{ color: "violet" }}></span>
+                                                {props.ShowInterim ? <span id="showInterimID" style={{ color: "violet" }}></span> : null}
+
 
                                             </div>
                                         </div>

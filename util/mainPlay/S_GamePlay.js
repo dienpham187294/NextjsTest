@@ -43,6 +43,8 @@ function GamePlay(props) {
                             Total={props.Total}
                             huongdan={props.huongdan}
                             SET_Data_TableTool={props.SET_Data_TableTool}
+                            NameOflession={props.NameOflession}
+                            ShowInterim={props.ShowInterim}
                         /> : ""}
                 </div>
 

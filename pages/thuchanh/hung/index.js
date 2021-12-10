@@ -5,7 +5,7 @@ import UpLoadFile from "./S_Uploadfile"
 import InfoLession from "../../../util/mainPlay/S_Lession"
 import GamePlay from "../../../util/mainPlay/S_GamePlay"
 
-
+const ShowInterim = true
 
 function Manager() {
     const [PageChange, SET_PageChange] = useState(0)
@@ -19,7 +19,7 @@ function Manager() {
         <div >
             {PageChange === 0 ? <UpLoadFile Total={Total} />
                 : PageChange === 2 ? <InfoLession Data={Data_InfoOflession} Total={Total} />
-                    : PageChange === 1 ? <GamePlay Data={Data_Game} huongdan={huongdan} NameOflession={NameOflession} Total={Total} />
+                    : PageChange === 1 ? <GamePlay Data={Data_Game} huongdan={huongdan} NameOflession={NameOflession} Total={Total} ShowInterim={ShowInterim} />
                         : PageChange}
         </div>
 
