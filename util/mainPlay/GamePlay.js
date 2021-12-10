@@ -453,6 +453,22 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                                         backgroundColor: "white"
                                     }}
                                 >
+                                    <button
+                                        className="btn btn-outline-danger ml-3"
+                                        style={{
+                                            float: "left"
+                                        }}
+                                        onClick={() => {
+                                            // console.log(props.Total)
+                                            props.Total.fnObj.SET_PageChange(0)
+                                            try {
+                                                $("#idStopLisening")[0].click()
+                                                clearInterval(interOnline)
+                                            } catch (error) {
+
+                                            }
+                                        }}
+                                    >Chọn bài</button>
                                     <a className="mr-5" href="https://forms.gle/JZWwQNx4XP8fDken9">Phiếu khảo sát</a>
 
                                     {RoomOnline === "" ?
@@ -497,19 +513,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                                     }
 
 
-                                    <button
-                                        className="btn btn-outline-danger ml-3"
-                                        onClick={() => {
-                                            // console.log(props.Total)
-                                            props.Total.fnObj.SET_PageChange(0)
-                                            try {
-                                                $("#idStopLisening")[0].click()
-                                                clearInterval(interOnline)
-                                            } catch (error) {
 
-                                            }
-                                        }}
-                                    >Out</button>
 
                                     <button
                                         className="btn btn-outline-primary ml-3"
