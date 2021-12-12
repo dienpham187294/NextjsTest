@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-// import Read_ReactJSX from "../../../pages/helpers/Read_ReactJSX"
 import $ from "jquery"
 import Linkapi from "../api/Linkapi"
 import DataTool from "./S_Data_tool"
@@ -7,11 +6,7 @@ import ReadReactSpeech from "../../pages/helpers/Read_ReactSpeechSlow"
 import ReadMessage from "../Read/ReadMessage"
 import showDataGameOnline from "./showDataGameOnline"
 import secondToMinutes from "../filedulieu1/dataHelperFunction/secondToMinutes";
-
-// import { prop } from "cheerio/lib/api/attributes";
 const stringSimilarity = require("string-similarity");
-
-// import Cookies_ReadingPage from "../../../../../util/Cookies/Cookies_ReadingPage"
 let VoicePick = 1;
 let State_of_Anwer = "none";
 let Data_temp_Strickmode;
@@ -25,6 +20,7 @@ let idMember;
 let interOnline;
 let i1 = 0
 let timeCount = 0;
+let ArrHoldThingToReview = [];
 function ArrOfPeopeAppear_ReactJSX(props) {
 
     const [Info_StrickAnwers_Reactdata, SET_Info_StrickAnwers_Reactdata] = useState(["hi how are you"])
@@ -38,11 +34,11 @@ function ArrOfPeopeAppear_ReactJSX(props) {
     const [RoomOnline, SET_RoomOnline] = useState("")
     const [DataOnline, SET_DataOnline] = useState([])
     const [ShowHint, SET_ShowHint] = useState(false)
-
+    const [ShowReview, SET_ShowReview] = useState("")
     useEffect(() => {
         props.SET_Data_Commands(Info_StrickAnwers_Reactdata)
-        console.log(props.ShowInterim)
-        console.log(props.NameOflession)
+        // console.log(props.ShowInterim)
+        // console.log(props.NameOflession)
         if (i1 === 0) {
             if (timeCount === 0) {
                 setInterval(() => {
@@ -141,7 +137,6 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                                     Rate = TEMP_CHECK[0];
                                     Length_C = TEMP_CHECK[1];
                                     MessageArr.push(e)
-
                                 }
                             }
                         })
@@ -149,11 +144,13 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                     //----------------------
 
                     if (MessageArr[MessageArr.length - 1] !== "none") {
+
+                        ArrHoldThingToReview.push({
+                            "textToRead": Info_message,
+                            "textReadAlready": $("#showInterimID").text()
+                        })
+
                         let data = MessageArr[MessageArr.length - 1];
-
-                        // Submit_check_funtion_indata_01(data.function)
-
-                        // console.log(data.function)
                         if (data.robotspeak.length > 0) {
                             ReadMessage(PickRandom(data.robotspeak), VoicePick, rateRead, pitchRead);
                         }
@@ -164,7 +161,6 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                                 e.manspeak.forEach(ee => {
                                     arrTemp.push(ee)
                                 })
-                                // Submit_check_funtion_indata_01(e.function)
                             })
                             SET_Info_StrickAnwers_Reactdata(arrTemp)
                         } else {
@@ -174,7 +170,6 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                                 e.manspeak.forEach(ee => {
                                     arrTemp.push(ee)
                                 })
-                                // Submit_check_funtion_indata_01(e.function)
                             })
                             SET_Info_StrickAnwers_Reactdata(arrTemp)
 
@@ -209,14 +204,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                 })
 
                 SET_Data_TableTool(props.ArrOfPeopeAppear_ReactData[index].total.Tabletool)
-                // try {
-                //     let i2 = 
-                //     props.SET_Data_TableTool(i2)
-                // } catch (error) {
-                //     console.log(error)
-                // }
 
-                // .SET_Data_TableTool()
                 SET_Info_StrickAnwers_Reactdata(Arr_HoldAllManSpeak)
                 await SET_Avatar_Reactdata(n.total.image);
                 if (n.total.icon !== "" && n.total.icon !== undefined) {
@@ -421,13 +409,20 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                                                 <button
                                                     className="btn btn-sm btn-primary ml-1"
                                                     onClick={() => {
-                                                        timeCount = 1
+                                                        timeCount = 1;
+                                                        SET_Score(0);
+
                                                     }}
                                                 >Reset</button>
+
+                                                <button
+                                                    className="btn btn-sm btn-primary ml-1"
+                                                    onClick={() => {
+                                                        SET_ShowReview(ArrHoldThingToReview)
+                                                    }}
+                                                >Review</button>
                                                 <br />
-                                                {props.ShowInterim ? <span id="showInterimID" style={{ color: "violet" }}></span> : null}
-
-
+                                                {props.ShowInterim ? <span id="showInterimID" style={{ color: "violet" }}></span> : <span id="showInterimID" style={{ color: "violet", display: "none" }}></span>}
                                             </div>
                                         </div>
                                     </div>
@@ -552,6 +547,20 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                                     <h1 style={{ color: "red" }}>Next...   <span id="countDown">3</span></h1>
 
                                 </div>
+
+                                {ShowReview !== "" ?
+                                    <div style={{
+                                        position: "fixed",
+                                        top: "2%",
+                                        bottom: "2%",
+                                        right: "2%",
+                                        left: "2%",
+                                        backgroundColor: "white",
+                                    }}>
+                                        {showReview(ShowReview, SET_ShowReview)}
+                                    </div>
+                                    : null}
+
                             </div>
                         </div>
 
@@ -685,4 +694,54 @@ function Check_ImageOrNot(Stringtocheck) {
         return true
     }
     return false
+}
+
+function showReview(ShowReview, SET_ShowReview) {
+    return (
+        <div>
+            <button
+                className="btn btn-primary"
+                onClick={() => {
+                    SET_ShowReview("")
+                }}
+                style={{ float: "right" }}
+            >
+                Thoát
+            </button>
+
+            <table className="table table-striped">
+                <tbody>
+                    {
+                        ShowReview.map((e, i) =>
+                            <tr key={i}>
+                                <td>
+                                    {e.textToRead}
+                                </td>
+                                <td style={{ color: "green" }}>
+                                    {e.textReadAlready}
+                                </td>
+                                <td style={{ color: "red" }}>
+                                    {checkPronouns(e.textToRead, e.textReadAlready)}
+                                </td>
+                            </tr>
+                        )
+                    }
+                </tbody>
+            </table>
+        </div>
+    )
+}
+function checkPronouns(textToRead, textReadAlready) {
+    let output = ""
+
+    let StringtextReadAlready = textReadAlready.toLowerCase()
+    let ArrtextToRead = textToRead.toLowerCase().split(" ")
+
+    ArrtextToRead.forEach(e => {
+        if (!StringtextReadAlready.includes(e)) {
+            output += " " + e
+        }
+    })
+
+    return output
 }

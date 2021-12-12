@@ -61,7 +61,7 @@ ArrPeple.forEach(e => {
 
 
     input_01_Body.push("1")
-    input_02_Body.push(FnObjHanldingNext(["Something to drinks?"], [Aw_1]))
+    input_02_Body.push(FnObjHanldingNext(["Something to drink?"], [Aw_1]))
 
 
 
