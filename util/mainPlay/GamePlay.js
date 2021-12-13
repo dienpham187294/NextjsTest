@@ -353,7 +353,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                     <span className="Span_Show_Info_StrickAnwers_Reactdata" key={index}>{e} <b style={{ backgroundColor: "black" }}>||</b> </span>
                 )
             }
-            else if (Score < 10) {
+            else if (Score < 6) {
                 return Info_StrickAnwers_Reactdata.map((e, index) =>
                     <span className="Span_Show_Info_StrickAnwers_Reactdata" key={index}>{SortLetter(e)} <b style={{ backgroundColor: "black" }}>||</b> </span>
                 )
@@ -646,9 +646,7 @@ function checkMessageReturnNumber(message_API, message_INPUT) {
     }
 }
 
-// Array.prototype.PickRandom = function () {
-//     return this[Math.floor(Math.random() * this.length)];
-// }
+
 function PickRandom(Arr) {
     return Arr[Math.floor(Math.random() * Arr.length)];
 }
@@ -658,9 +656,7 @@ function showSubmitSyxtax(Info_ToSunmit_Reactdata) {
         return (
             Info_ToSunmit_Reactdata.map((e, i) =>
                 <div key={i} style={{ display: "inline-block", border: "1px solid black", padding: "5px", borderRadius: "5px", margin: "5px" }}>
-                    {/* <b>Lựa chọn {i + 1}</b> */}
-                    {/* <table >
-                        <tbody> */}
+
                     {e.map((ee, ii) =>
                         <div style={{ display: "inline-block", borderLeft: "5px solid green", padding: "3px" }} key={ii}>
                             <div id={"ct" + i + ii}>
@@ -668,8 +664,7 @@ function showSubmitSyxtax(Info_ToSunmit_Reactdata) {
                             </div>
                         </div>
                     )}
-                    {/* </tbody>
-                    </table> */}
+
                 </div>
             )
         )
@@ -708,7 +703,9 @@ function showReview(ShowReview, SET_ShowReview) {
             >
                 Thoát
             </button>
-
+            <hr />
+            {/* {generalReview(ShowReview)} */}
+            <hr />
             <table className="table table-striped">
                 <tbody>
                     {
@@ -732,6 +729,7 @@ function showReview(ShowReview, SET_ShowReview) {
     )
 }
 function checkPronouns(textToRead, textReadAlready) {
+
     let output = ""
 
     let StringtextReadAlready = textReadAlready.toLowerCase()
@@ -739,9 +737,41 @@ function checkPronouns(textToRead, textReadAlready) {
 
     ArrtextToRead.forEach(e => {
         if (!StringtextReadAlready.includes(e)) {
-            output += " " + e
+            output += e + ", "
         }
     })
 
     return output
+}
+function generalReview(ShowReview) {
+    let output = {}
+    let ArrHoldToCheck = []
+    ShowReview.forEach(e => {
+        if (ArrHoldToCheck.includes(e.textToRead)) {
+            output[e.textToRead].nTextToRead += 1;
+            output[e.textToRead].Error += checkPronouns(e.textToRead, e.textReadAlready)
+        } else {
+            output[e.textToRead] =
+            {
+                "textToRead": e.textToRead,
+                "nTextToRead": 1,
+                "Error": checkPronouns(e.textToRead, e.textReadAlready)
+            }
+            ArrHoldToCheck.push(e.textToRead)
+        }
+    })
+    try {
+        return (
+            <div>
+                {ArrHoldToCheck.map((e, i) =>
+                    <div key={i}>
+                        {output[e].textToRead || output[e].nTextToRead}
+                    </div>
+                )}
+            </div>
+        )
+    } catch (error) {
+        return null
+    }
+
 }
