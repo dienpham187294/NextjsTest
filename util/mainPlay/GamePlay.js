@@ -450,7 +450,8 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                                         left: "10%",
                                         width: "80%",
                                         textAlign: "right",
-                                        backgroundColor: "white"
+                                        backgroundColor: "white",
+                                       
                                     }}
                                 >
                                     <button
@@ -556,6 +557,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                                         right: "2%",
                                         left: "2%",
                                         backgroundColor: "white",
+                                        overflow: "auto"
                                     }}>
                                         {showReview(ShowReview, SET_ShowReview)}
                                     </div>
