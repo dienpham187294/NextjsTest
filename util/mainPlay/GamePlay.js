@@ -422,7 +422,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                                                     }}
                                                 >Review</button>
                                                 <br />
-                                                {props.ShowInterim ? <span id="showInterimID" style={{ color: "violet" }}></span> : <span id="showInterimID" style={{ color: "violet", display: "none" }}></span>}
+                                                {props.ShowInterim ? <span id="showInterimID" style={{ color: "violet" }}></span> : <span id="showInterimID" style={{ color: "violet", backgroundColor: "violet" }}></span>}
                                             </div>
                                         </div>
                                     </div>
@@ -451,7 +451,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                                         width: "80%",
                                         textAlign: "right",
                                         backgroundColor: "white",
-                                       
+
                                     }}
                                 >
                                     <button
@@ -557,8 +557,15 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                                         right: "2%",
                                         left: "2%",
                                         backgroundColor: "white",
-                                        overflow: "auto"
+                                        overflow: "auto",
+                                        textAlign: "left"
                                     }}>
+                                        Bài: {props.NameOflession}
+
+                                        <b> Điểm: {Score} <span style={{ color: "red" }}>Chọn sai: {Sai} </span> | <span style={{ color: "red" }}>{Boqua}</span> </b>
+                                        <span>{secondToMinutes(timeCount)}</span>
+
+                                        <hr />
                                         {showReview(ShowReview, SET_ShowReview)}
                                     </div>
                                     : null}
@@ -705,10 +712,24 @@ function showReview(ShowReview, SET_ShowReview) {
             >
                 Thoát
             </button>
+            <p>In kết quả: Ctrl P - chọn Lưu dưới dạng PDF/ Save as PDF - Bấm lưu/Save</p>
             <hr />
-            {/* {generalReview(ShowReview)} */}
+            {generalReview(ShowReview)}
             <hr />
             <table className="table table-striped">
+                <thead>
+                    <tr>
+                        <td>
+                            Câu cần nói
+                        </td>
+                        <td>
+                            Câu nói của người thực hành phần mềm ghi nhận
+                        </td>
+                        <td>
+                            Những từ còn thiếu trong câu
+                        </td>
+                    </tr>
+                </thead>
                 <tbody>
                     {
                         ShowReview.map((e, i) =>
@@ -767,7 +788,8 @@ function generalReview(ShowReview) {
             <div>
                 {ArrHoldToCheck.map((e, i) =>
                     <div key={i}>
-                        {output[e].textToRead || output[e].nTextToRead}
+                        {output[e].textToRead} x {output[e].nTextToRead}
+                        || {showNError(output[e].Error)}
                     </div>
                 )}
             </div>
@@ -776,4 +798,42 @@ function generalReview(ShowReview) {
         return null
     }
 
+}
+
+function showNError(input) {
+    try {
+        let ouput = {}
+        let ArrError = input.split(", ")
+        let ArrHoldElements = []
+        ArrError.forEach(e => {
+            if (!ArrHoldElements.includes(e) && e !== "") {
+                ouput[e] = {
+                    "content": e,
+                    "times": getOccurrence(ArrError, e)
+                };
+                ArrHoldElements.push(e)
+            }
+        })
+
+        return (
+            <>
+                {
+                    ArrHoldElements.map((e, i) =>
+                        <>
+                            <span key={i} style={{ color: "red" }}>{ouput[e].content} x {ouput[e].times}</span>
+                            <span>---</span>
+                        </>
+                    )
+                }
+            </>
+        )
+
+    } catch (error) {
+        console.log(error)
+        return null
+    }
+}
+
+function getOccurrence(array, value) {
+    return array.filter((v) => (v === value)).length;
 }
