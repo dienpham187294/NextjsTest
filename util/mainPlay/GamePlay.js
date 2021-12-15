@@ -6,7 +6,17 @@ import ReadReactSpeech from "../../pages/helpers/Read_ReactSpeechSlow"
 import ReadMessage from "../Read/ReadMessage"
 import showDataGameOnline from "./showDataGameOnline"
 import secondToMinutes from "../filedulieu1/dataHelperFunction/secondToMinutes";
-const stringSimilarity = require("string-similarity");
+import SortLetter from "./funtionInside/SortLetter";
+import inter from "./funtionInside/inter";
+import checkMessageReturnNumber from "./funtionInside/checkMessageReturnNumber"
+import PickRandom from "./funtionInside/PickRandom"
+import Check_ImageOrNot from "./funtionInside/Check_ImageOrNot"
+import showReview from "./funtionInside/showReview"
+import ShowInfoHint from "./funtionInside/ShowInfoHint"
+import showSubmitSyxtax from "./funtionInside/showSubmitSyxtax"
+import getOnline from "./funtionInside/getOnline"
+
+
 let VoicePick = 1;
 let State_of_Anwer = "none";
 let Data_temp_Strickmode;
@@ -37,8 +47,6 @@ function ArrOfPeopeAppear_ReactJSX(props) {
     const [ShowReview, SET_ShowReview] = useState("")
     useEffect(() => {
         props.SET_Data_Commands(Info_StrickAnwers_Reactdata)
-        // console.log(props.ShowInterim)
-        // console.log(props.NameOflession)
         if (i1 === 0) {
             if (timeCount === 0) {
                 setInterval(() => {
@@ -46,7 +54,6 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                     $("#thoigian").text(secondToMinutes(timeCount))
                 }, 1000);
             }
-            // idRoomOnline = Date.now() + PickRandom(["a", "b", "c", "d", "e", "f"])
             if (localStorage.getItem("idMember") !== null) {
                 idMember = localStorage.getItem("idMember")
             } else {
@@ -60,7 +67,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
 
     useEffect(() => {
         if (RoomOnline !== "") {
-            getOnline(RoomOnline, idMember, Score)
+            getOnline(RoomOnline, idMember, Score, SET_DataOnline)
         }
     }, [Score])
 
@@ -74,46 +81,14 @@ function ArrOfPeopeAppear_ReactJSX(props) {
             props.Total.fnObj.Submit_Show_OnePeopeAppear_ReactData = Submit_Show_OnePeopeAppear_ReactData
             props.Total.fnObj.Xuly = Xuly
             props.Total.fnObj.SET_ShowHint = SET_ShowHint
-
-
+            props.Total.fnObj.SET_Info_Icon_Reactdata = SET_Info_Icon_Reactdata
             AddTo_Show_ArrOfPeopeAppear_ReactData(0)
         }, []
     );
 
-    async function getOnline(idRoom, idMember, score) {
-        try {
-            const res = await fetch(
-                Linkapi + "api/apiOnline?idRoom=" + idRoom + "&idMember=" + idMember + "&score=" + score
-                ,
-                {
-                    method: 'GET',
-                    headers: {
-                        "Accept": "application/json",
-                        "Content-Type": "application/json"
-                    }
-                })
-            let data = await res.json();
-            console.log(data)
-            if (data.success) {
-                SET_DataOnline(data.data)
-            }
 
 
-        } catch (error) {
-            console.log(error)
-        }
-    }
 
-
-    function inter() {
-        setTimeout(() => {
-            try {
-                $("#idClickMiniGame")[0].click()
-            } catch (error) {
-                inter()
-            }
-        }, 1000)
-    }
     function Xuly(Info_message) {
         try {
             if (State_of_Anwer !== "none") {
@@ -222,8 +197,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                 pitchRead = PickRandom([0.9, 1.0, 1.1, 1.2])
                 ReadMessage(PickRandom(n.total.robotspeakfirst), VoicePick, rateRead, pitchRead)
             } else {
-                // $("#showEnd").show()
-                // $("#time").text(Math.floor((Date.now() - props.Total.stObj.timebegin) / 1000 / 60) + " phút " + Math.floor(((Date.now() - props.Total.stObj.timebegin)) / 1000) % 60 + " giây.")
+                alert("Kết thúc")
             }
 
         } catch (error) {
@@ -335,16 +309,6 @@ function ArrOfPeopeAppear_ReactJSX(props) {
         } catch (error) {
             console.log(error)
         }
-    }
-
-    function SortLetter(Input) {
-        let Res = [];
-        let Data = Input.split(" ")
-        Data.forEach(e => {
-            Res.push(e.charAt(0) + "...")
-        })
-
-        return Res.join(" ")
     }
 
     function Show_Info_StrickAnwers_Reactdata() {
@@ -479,7 +443,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                                                 className="btn btn-sm btn-danger"
                                                 onClick={() => {
                                                     SET_RoomOnline(props.NameOflession)
-                                                    getOnline(props.NameOflession, idMember, Score)
+                                                    getOnline(props.NameOflession, idMember, Score, SET_DataOnline)
                                                 }}
                                             >Online</button>
                                         </>
@@ -506,7 +470,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                                             <button
                                                 className="btn btn-sm btn-warning"
                                                 onClick={() => {
-                                                    getOnline(RoomOnline, idMember, Score)
+                                                    getOnline(RoomOnline, idMember, Score, SET_DataOnline)
                                                 }}
                                             >Cập nhật</button>
                                             {/* <input id="idName" type="text" placeholder="Tên" /> */}
@@ -606,36 +570,6 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                             : <b><i>{Info_Icon_Reactdata}</i></b>}
                     </div>
                     : null}
-                {/* <div
-                    id="showEnd"
-                    style={{
-                        position: "fixed",
-                        display: "none",
-                        top: "15%",
-                        bottom: "15%",
-                        left: "15%",
-                        right: "15%",
-                        backgroundColor: "white",
-                        border: "1px solid green",
-                        borderRadius: "8px",
-                        textAlign: "center",
-                        zIndex: 2
-                    }}
-                >
-                    <h1>Kết thúc!</h1>
-                    <h3>Điểm: {Score}</h3>
-                    <span style={{ color: "red" }}>Chọn sai: {Sai} </span>
-
-                    <p>Thời gian: <span id="time"></span></p>
-                    <button
-                        className="btn btn-danger"
-                        style={{ padding: "10px" }}
-                        onClick={() => {
-
-                            props.Total.fnObj.SET_PageChange(0)
-                        }}
-                    >Trở lại chọn bài</button>
-                </div> */}
             </div>
             <ReadReactSpeech />
         </>
@@ -643,231 +577,14 @@ function ArrOfPeopeAppear_ReactJSX(props) {
 }
 export default ArrOfPeopeAppear_ReactJSX
 
-function checkMessageReturnNumber(message_API, message_INPUT) {
-    try {
-        let n = stringSimilarity.compareTwoStrings(message_API, message_INPUT) * 10
-        if (n > 2 / 3) {
-            return [n, message_INPUT.split(" ").length]
-        }
-        return [0, 0]
-    } catch (error) {
-        return [0, 0]
-    }
-}
-
-
-function PickRandom(Arr) {
-    return Arr[Math.floor(Math.random() * Arr.length)];
-}
-function showSubmitSyxtax(Info_ToSunmit_Reactdata) {
-
-    try {
-        return (
-            Info_ToSunmit_Reactdata.map((e, i) =>
-                <div key={i} style={{ display: "inline-block", border: "1px solid black", padding: "5px", borderRadius: "5px", margin: "5px" }}>
-
-                    {e.map((ee, ii) =>
-                        <div style={{ display: "inline-block", borderLeft: "5px solid green", padding: "3px" }} key={ii}>
-                            <div id={"ct" + i + ii}>
-                                {ee} <span id={"ct1" + i + ii}></span>
-                            </div>
-                        </div>
-                    )}
-
-                </div>
-            )
-        )
-    } catch (error) {
-
-    }
-
-    return JSON.stringify(Info_ToSunmit_Reactdata)
-}
 
 
 
 
 
-function Check_ImageOrNot(Stringtocheck) {
-    if (
-        typeof (Stringtocheck) === "string"
-        && (Stringtocheck.includes(".png")
-            || Stringtocheck.includes(".jpg")
-            || Stringtocheck.includes(".jpeg")
-            || Stringtocheck.includes(".gif"))) {
-        return true
-    }
-    return false
-}
-
-function showReview(ShowReview, SET_ShowReview) {
-    return (
-        <div>
-            <button
-                className="btn btn-primary"
-                onClick={() => {
-                    SET_ShowReview("")
-                }}
-                style={{ float: "right" }}
-            >
-                Thoát
-            </button>
-            <p>In kết quả: Ctrl P - chọn Lưu dưới dạng PDF/ Save as PDF - Bấm lưu/Save</p>
-            <hr />
-            {generalReview(ShowReview)}
-            <hr />
-            <table className="table table-striped">
-                <thead>
-                    <tr>
-                        <td>
-                            Câu cần nói
-                        </td>
-                        <td>
-                            Câu nói của người thực hành phần mềm ghi nhận
-                        </td>
-                        <td>
-                            Những từ còn thiếu trong câu
-                        </td>
-                    </tr>
-                </thead>
-                <tbody>
-                    {
-                        ShowReview.map((e, i) =>
-                            <tr key={i}>
-                                <td>
-                                    {e.textToRead}
-                                </td>
-                                <td style={{ color: "green" }}>
-                                    {e.textReadAlready}
-                                </td>
-                                <td style={{ color: "red" }}>
-                                    {checkPronouns(e.textToRead, e.textReadAlready)}
-                                </td>
-                            </tr>
-                        )
-                    }
-                </tbody>
-            </table>
-        </div>
-    )
-}
-function checkPronouns(textToRead, textReadAlready) {
-
-    let output = ""
-
-    let StringtextReadAlready = textReadAlready.toLowerCase()
-    let ArrtextToRead = textToRead.toLowerCase().split(" ")
-
-    ArrtextToRead.forEach(e => {
-        if (!StringtextReadAlready.includes(e)) {
-            output += e + ", "
-        }
-    })
-
-    return output
-}
-function generalReview(ShowReview) {
-    let output = {}
-    let ArrHoldToCheck = []
-    ShowReview.forEach(e => {
-        if (ArrHoldToCheck.includes(e.textToRead)) {
-            output[e.textToRead].nTextToRead += 1;
-            output[e.textToRead].Error += checkPronouns(e.textToRead, e.textReadAlready)
-        } else {
-            output[e.textToRead] =
-            {
-                "textToRead": e.textToRead,
-                "nTextToRead": 1,
-                "Error": checkPronouns(e.textToRead, e.textReadAlready)
-            }
-            ArrHoldToCheck.push(e.textToRead)
-        }
-    })
-    try {
-        return (
-            <div>
-                {ArrHoldToCheck.map((e, i) =>
-                    <div key={i}>
-                        {output[e].textToRead} x {output[e].nTextToRead}
-                        || {showNError(output[e].Error)}
-                    </div>
-                )}
-            </div>
-        )
-    } catch (error) {
-        return null
-    }
-
-}
-
-function showNError(input) {
-    try {
-        let ouput = {}
-        let ArrError = input.split(", ")
-        let ArrHoldElements = []
-        ArrError.forEach(e => {
-            if (!ArrHoldElements.includes(e) && e !== "") {
-                ouput[e] = {
-                    "content": e,
-                    "times": getOccurrence(ArrError, e)
-                };
-                ArrHoldElements.push(e)
-            }
-        })
-
-        return (
-            <>
-                {
-                    ArrHoldElements.map((e, i) =>
-                        <>
-                            <span key={i} style={{ color: "red" }}>{ouput[e].content} x {ouput[e].times}</span>
-                            <span>---</span>
-                        </>
-                    )
-                }
-            </>
-        )
-
-    } catch (error) {
-        console.log(error)
-        return null
-    }
-}
-
-function getOccurrence(array, value) {
-    return array.filter((v) => (v === value)).length;
-}
 
 
-function ShowInfoHint(Info_Icon_Reactdata) {
-    try {
-        if (Info_Icon_Reactdata === undefined || Info_Icon_Reactdata === "") {
-            $("#showDivInHint").html("")
-            return null
-        }
-        else {
-            if (Info_Icon_Reactdata.includes("/>")) {
-                $("#showDivInHint").html(Info_Icon_Reactdata)
-                return null
-            }
-            else {
-                $("#showDivInHint").html("")
-                return (
-                    <>
-                        {Check_ImageOrNot(Info_Icon_Reactdata) ?
-                            <>
-                                <img alt={Info_Icon_Reactdata} src={Info_Icon_Reactdata} width="140px" />
-                            </>
-                            : <b><i>{Info_Icon_Reactdata}</i></b>}
-                    </>
-                )
-            }
-        }
-    } catch (error) {
-        try {
-            return "error"
-        } catch (error) {
-            return null
-        }
-    }
-}
+
+
+
+

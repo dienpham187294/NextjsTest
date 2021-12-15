@@ -1,5 +1,5 @@
 import { useState } from "react"
-
+import Check_ImageOrNot from "./funtionInside/Check_ImageOrNot"
 function DataTool(props) {
     const [Data_phongto, SET_Data_phongto] = useState(null)
     try {
@@ -42,7 +42,7 @@ function Show_Table(Data, Total, SET_Data_phongto) {
                                 onClick={() => {
                                     SET_Data_phongto(eee)
                                     Total.fnObj.SET_ShowHint(true)
-                                    
+
                                 }}
                             >Phóng to</button>
                             {eee.map((eeee, indexeeee) =>
@@ -53,17 +53,16 @@ function Show_Table(Data, Total, SET_Data_phongto) {
                                         <img
                                             onClick={() => {
                                                 Total.stObj.inputSumit += "===" + eeee;
-                                                // console.log(eeee)
+                                                Total.fnObj.SET_Info_Icon_Reactdata(eeee)
                                                 Total.fnObj.Submit_Show_OnePeopeAppear_ReactData(Total.stObj.inputSumit)
-                                                // console.log(eee[e.indexToSubmit])
+
                                             }}
                                             src={eeee} width="180px" style={{ margin: "5px 25px" }} /> :
                                         <span
                                             onClick={() => {
                                                 Total.stObj.inputSumit += "===" + eeee;
-                                                // console.log(eeee)
+                                                Total.fnObj.SET_Info_Icon_Reactdata(eeee)
                                                 Total.fnObj.Submit_Show_OnePeopeAppear_ReactData(Total.stObj.inputSumit)
-                                                // console.log(eee[e.indexToSubmit])
                                             }}
                                         >{eeee}</span>
                                     }
@@ -89,17 +88,6 @@ function Show_Table(Data, Total, SET_Data_phongto) {
 }
 
 
-function Check_ImageOrNot(Stringtocheck) {
-    if (
-        typeof (Stringtocheck) === "string"
-        && (Stringtocheck.includes(".png")
-            || Stringtocheck.includes(".jpg")
-            || Stringtocheck.includes(".jpeg")
-            || Stringtocheck.includes(".gif"))) {
-        return true
-    }
-    return false
-}
 function ShowDataPhongto(data, Total, SET_Data_phongto) {
     try {
 
@@ -109,7 +97,7 @@ function ShowDataPhongto(data, Total, SET_Data_phongto) {
                     position: "fixed",
                     border: "1px solid green",
                     borderRadius: "4px",
-                    top: "5px",
+                    top: "25%",
                     bottom: "5px",
                     left: "5px",
                     right: "5px",
@@ -122,7 +110,7 @@ function ShowDataPhongto(data, Total, SET_Data_phongto) {
                 <button
                     className="btn btn-danger"
                     onClick={() => { SET_Data_phongto(null); Total.fnObj.SET_ShowHint(false) }}
-                    style={{ position: "fixed", top: "5px", right: "20%" }}
+                    style={{ position: "fixed", top: "25%", right: "20%" }}
                 >Trở lại</button>
                 {
                     data.map((eeee, indexeeee) =>
@@ -134,17 +122,15 @@ function ShowDataPhongto(data, Total, SET_Data_phongto) {
                                 <img
                                     onClick={() => {
                                         Total.stObj.inputSumit += "===" + eeee;
-                                        // console.log(eeee)
+                                        Total.fnObj.SET_Info_Icon_Reactdata(eeee)
                                         Total.fnObj.Submit_Show_OnePeopeAppear_ReactData(Total.stObj.inputSumit)
-                                        // console.log(eee[e.indexToSubmit])
                                     }}
                                     src={eeee} width="350px" style={{ margin: "5px 25px", cursor: "pointer" }} /> :
                                 <span
                                     onClick={() => {
                                         Total.stObj.inputSumit += "===" + eeee;
-                                        // console.log(eeee)
+                                        Total.fnObj.SET_Info_Icon_Reactdata(eeee)
                                         Total.fnObj.Submit_Show_OnePeopeAppear_ReactData(Total.stObj.inputSumit)
-                                        // console.log(eee[e.indexToSubmit])
                                     }}
                                     style={{ cursor: "pointer" }}
                                 >{eeee}</span>
