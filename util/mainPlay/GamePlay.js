@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import $ from "jquery"
-import Linkapi from "../api/Linkapi"
+
 import DataTool from "./S_Data_tool"
 import ReadReactSpeech from "../../pages/helpers/Read_ReactSpeechSlow"
 import ReadMessage from "../Read/ReadMessage"

@@ -1,3 +1,5 @@
+import Linkapi from "../api/Linkapi"
+
 export default async function getOnline(idRoom, idMember, score, SET_DataOnline) {
     try {
         const res = await fetch(
