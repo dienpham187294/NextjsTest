@@ -189,6 +189,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
     /*BEGIN ARR TO SHOW */
     async function AddTo_Show_ArrOfPeopeAppear_ReactData(index) {
         try {
+
             // console.log(index, props.ArrOfPeopeAppear_ReactData[index]);
             if (props.ArrOfPeopeAppear_ReactData[index] !== undefined) {
                 props.ArrOfPeopeAppear_ReactData[index].total.status = false;
@@ -207,9 +208,9 @@ function ArrOfPeopeAppear_ReactJSX(props) {
 
                 SET_Info_StrickAnwers_Reactdata(Arr_HoldAllManSpeak)
                 await SET_Avatar_Reactdata(n.total.image);
-                if (n.total.icon !== "" && n.total.icon !== undefined) {
-                    SET_Info_Icon_Reactdata(n.total.icon)
-                }
+                // if (n.total.icon !== "" && n.total.icon !== undefined) {
+                SET_Info_Icon_Reactdata(n.total.icon)
+                // }
                 await SET_Info_ToSunmit_Reactdata([])
                 await SET_Info_ToSunmit_Reactdata(n.total.submitsyntax)
                 if (n.total.gender === "female") {
@@ -381,11 +382,10 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                                 <div className="row">
                                     <div className="col-4">
                                         <img alt={Info_Avatar_Reactdata} src={Info_Avatar_Reactdata} width="160px" />
-                                        {Check_ImageOrNot(Info_Icon_Reactdata) ?
-                                            <>
-                                                <img alt={Info_Icon_Reactdata} src={Info_Icon_Reactdata} width="140px" />
-                                            </>
-                                            : <b><i>{Info_Icon_Reactdata}</i></b>}
+
+                                        {ShowInfoHint(Info_Icon_Reactdata)}
+                                        <div id="showDivInHint"></div>
+
                                     </div>
                                     <div className="col-6">
                                         <br />
@@ -836,4 +836,38 @@ function showNError(input) {
 
 function getOccurrence(array, value) {
     return array.filter((v) => (v === value)).length;
+}
+
+
+function ShowInfoHint(Info_Icon_Reactdata) {
+    try {
+        if (Info_Icon_Reactdata === undefined || Info_Icon_Reactdata === "") {
+            $("#showDivInHint").html("")
+            return null
+        }
+        else {
+            if (Info_Icon_Reactdata.includes("/>")) {
+                $("#showDivInHint").html(Info_Icon_Reactdata)
+                return null
+            }
+            else {
+                $("#showDivInHint").html("")
+                return (
+                    <>
+                        {Check_ImageOrNot(Info_Icon_Reactdata) ?
+                            <>
+                                <img alt={Info_Icon_Reactdata} src={Info_Icon_Reactdata} width="140px" />
+                            </>
+                            : <b><i>{Info_Icon_Reactdata}</i></b>}
+                    </>
+                )
+            }
+        }
+    } catch (error) {
+        try {
+            return "error"
+        } catch (error) {
+            return null
+        }
+    }
 }
