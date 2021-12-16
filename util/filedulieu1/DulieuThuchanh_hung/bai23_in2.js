@@ -91,13 +91,13 @@ ArrPeple.forEach(e => {
     let Arrin4 = []
 
     Arrin3.push("0")
-    Arrin4.push(FnObjHanldingNext(["Do you want to eat here or to go?"], ["Eat here, please.", "I want to eat here."]))
+    Arrin4.push(FnObjHanldingNext(["Do you want to eat here or to go?", "How can I help you?", "May I help you?"], ["Eat here, please.", "I want to eat here."]))
     ArrInFN.Submit.push("For here.")
 
 
     let i2 = getRandomi(ArrIn2)
     Arrin3.push("0-1")
-    Arrin4.push(FnObjHanldingNext(["How many people do you have?"], ["I have " + ArrIn2[i2] + " people, please."]))
+    Arrin4.push(FnObjHanldingNext(["How many people do you have?", "For how many?"], ["I have " + ArrIn2[i2] + " people, please.", "A table for " + ArrIn2[i2]]))
     ArrInFN.Submit.push(ArrIn2[i2])
     let End = null
     // End.push(FnObjHanldingNext([arr_In1[i1].qs], ["I will follow your advice.", "That’s good advice.", "Thank you for your advice."], { end_successfull: true }))

@@ -26,7 +26,7 @@ ArrPeple.forEach(e => {
     let SpeakFirst = ["Excuse me"]
 
     let ArrBegin = []
-    ArrBegin.push(FnObjHanldingNext(["Yes, may I help you?"], ["I want to order."]))
+    ArrBegin.push(FnObjHanldingNext(["May I help you?", "How can I help you?"], ["I want to order.", "Order, please!"]))
 
     //middle
 
@@ -41,7 +41,7 @@ ArrPeple.forEach(e => {
     ArrInFN.Submit.push(Arri1[1].img)
 
     Arrin3.push("0")
-    Arrin4.push(FnObjHanldingNext(["What would you like?"], [Anwer1]))
+    Arrin4.push(FnObjHanldingNext(["What would you like?", "What do you want to order?"], [Anwer1]))
 
     let End = null
     // End.push(FnObjHanldingNext([arr_In1[i1].qs], ["I will follow your advice.", "That’s good advice.", "Thank you for your advice."], { end_successfull: true }))
