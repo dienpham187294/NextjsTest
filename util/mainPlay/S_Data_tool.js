@@ -6,7 +6,7 @@ function DataTool(props) {
         return (
             <>
                 {Show_Table(props.Data, props.Total, SET_Data_phongto)}
-                {ShowDataPhongto(Data_phongto, props.Total, SET_Data_phongto)}
+                {ShowDataPhongto(props.Data, Data_phongto, props.Total, SET_Data_phongto)}
             </>
         )
     } catch (error) {
@@ -88,7 +88,7 @@ function Show_Table(Data, Total, SET_Data_phongto) {
 }
 
 
-function ShowDataPhongto(data, Total, SET_Data_phongto) {
+function ShowDataPhongto(dataRoot, data, Total, SET_Data_phongto) {
     try {
 
         return (
@@ -107,6 +107,45 @@ function ShowDataPhongto(data, Total, SET_Data_phongto) {
                     padding: "15%",
                     textAlign: "left"
                 }}>
+
+                {dataRoot.map((e, index) =>
+                    <div key={index} style={{ position: "fixed", top: "25%" }}>
+                        <div >
+                            {e.dataoftable.map((eee, indexeee) =>
+                                <div
+                                    key={indexeee}
+                                    style={{
+                                        display: "inline-block",
+                                        cursor: "pointer",
+
+                                    }}>
+                                    <button
+                                        className="btn btn-primary ml-1"
+                                        onClick={() => {
+                                            SET_Data_phongto(eee)
+                                        }}
+                                    >
+                                        {Check_ImageOrNot(eee[0]) ?
+                                            <img
+                                                src={eee[0]} height="40px" /> :
+                                            <span
+
+                                            >{eee[0]}</span>
+                                        }
+
+                                    </button>
+                                </div>
+
+
+
+                            )}
+                        </div>
+
+                    </div >
+                )}
+
+
+
                 <button
                     className="btn btn-danger"
                     onClick={() => { SET_Data_phongto(null); Total.fnObj.SET_ShowHint(false) }}
@@ -116,8 +155,8 @@ function ShowDataPhongto(data, Total, SET_Data_phongto) {
                     data.map((eeee, indexeeee) =>
                         <div
                             key={indexeeee}
+                            style={{ display: "inline-block", border: "1px solid black", borderRadius: "5px", padding: "10px", margin: "5px" }}
                         >
-
                             {Check_ImageOrNot(eeee) ?
                                 <img
                                     onClick={() => {
@@ -125,7 +164,7 @@ function ShowDataPhongto(data, Total, SET_Data_phongto) {
                                         Total.fnObj.SET_Info_Icon_Reactdata(eeee)
                                         Total.fnObj.Submit_Show_OnePeopeAppear_ReactData(Total.stObj.inputSumit)
                                     }}
-                                    src={eeee} width="350px" style={{ margin: "5px 25px", cursor: "pointer" }} /> :
+                                    src={eeee} width="250px" style={{ margin: "5px 25px", cursor: "pointer" }} /> :
                                 <span
                                     onClick={() => {
                                         Total.stObj.inputSumit += "===" + eeee;
@@ -135,7 +174,6 @@ function ShowDataPhongto(data, Total, SET_Data_phongto) {
                                     style={{ cursor: "pointer" }}
                                 >{eeee}</span>
                             }
-                            < br />
                         </div>
                     )
                 }

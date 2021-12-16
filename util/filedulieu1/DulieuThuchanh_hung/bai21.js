@@ -5,16 +5,13 @@ import getRandomi from "../dataHelperFunction/getRandomi"
 import Fnperson from "../dataHelperFunction/Fnperson"
 import FnObjHanldingNext from "../dataHelperFunction/FnObjHanldingNext"
 import FnToArrobj from "../dataHelperFunction/FnToArrobj"
-
+import DataTotal1 from "./DulieuInside/A1_total1"
 
 
 let DataTable = []
 let coerdataoflession = []
-// let ArrName = ['Richard', 'Barbara', 'Michael', 'Betty', 'Kimberly', 'Lisa', 'Steven', 'Robert', 'Susan', 'Dorothy', 'William', 'Donna', 'Mary', 'Michelle', 'David', 'Anthony', 'Charles', 'Ashley', 'Linda', 'Patricia', 'Christopher', 'Kenneth', 'Margaret', 'Karen', 'Mark', 'Thomas', 'Matthew', 'Sandra', 'Sarah', 'Jessica', 'Daniel', 'Donald', 'Joseph', 'Emily', 'James', 'Nancy', 'Paul', 'Jennifer', 'Andrew', 'Elizabeth', 'John', 'Joshua']
-let ArrIn1 = ["Doing fine", "Good", "I'm good", "I'm great"]
-// DataTable.push(ArrName)
 
-DataTable.push(ArrIn1)
+DataTable.push(DataTotal1.awGreeting)
 ArrPeple.forEach(e => {
 
     let ArrInFN = {}
@@ -23,28 +20,29 @@ ArrPeple.forEach(e => {
     ArrInFN.gender = e[2]
 
     let SpeakFirst = ["hi", "hello"]
-    let i1 = getRandomi(ArrIn1)
+    let i1 = getRandomi(DataTotal1.awGreeting)
     let ArrBegin = []
-    ArrBegin.push(FnObjHanldingNext(["Hi, how are you?", "Good afternoon, how are you?", "Good morning, how are you?"], [ArrIn1[i1]]))
-    ArrInFN.Submit.push(ArrIn1[i1])
+    ArrBegin.push(FnObjHanldingNext(DataTotal1.greeting, [DataTotal1.awGreeting[i1]]))
+
+    ArrInFN.Submit.push(DataTotal1.awGreeting[i1])
     //middle
 
     let Arrin3 = []
     let Arrin4 = []
 
     Arrin3.push("0")
-    Arrin4.push(FnObjHanldingNext(["Hi, how are you?"], [ArrIn1[i1]]))
+    Arrin4.push(FnObjHanldingNext(DataTotal1.greeting, [DataTotal1.awGreeting[i1]]))
 
     let End = null
     // End.push(FnObjHanldingNext([arr_In1[i1].qs], ["I will follow your advice.", "That’s good advice.", "Thank you for your advice."], { end_successfull: true }))
-    coerdataoflession.push(Fnperson(ArrInFN, DataTable, ArrBegin, FnToArrobj(Arrin3, Arrin4), End, SpeakFirst, "https://i.postimg.cc/kgRbM0Rv/guest-Is-Comming.jpg"))
+    coerdataoflession.push(Fnperson(ArrInFN, DataTable, ArrBegin, FnToArrobj(Arrin3, Arrin4), End, SpeakFirst, DataTotal1.imgGreeting))
 })
 
 let hoctap = [
     { "EN": "Hi, how are you?", "VN": "Chào! Bạn khỏe không?", "IPA": "haɪ, haʊ ɑː juː?" },
 ]
 let listenOnly = [
-    ArrIn1
+    DataTotal1.awGreeting
 ]
 let writeOnly = [
 ]

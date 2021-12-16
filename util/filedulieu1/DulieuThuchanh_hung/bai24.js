@@ -4,7 +4,7 @@ import getElementsToDataTable from "../dataHelperFunction/getElementsToDataTable
 import Fnperson from "../dataHelperFunction/Fnperson"
 import FnObjHanldingNext from "../dataHelperFunction/FnObjHanldingNext"
 import FnToArrobj from "../dataHelperFunction/FnToArrobj"
-
+import DataTotal1 from "./DulieuInside/A1_total1"
 
 import Foods from "./DulieuInside/A1_foods"
 import Drinks from "./DulieuInside/A1_drinks"
@@ -29,7 +29,7 @@ ArrPeple.forEach(e => {
     let SpeakFirst = ["Excuse me"]
     //Begin
     let ArrBegin = []
-    ArrBegin.push(FnObjHanldingNext(["Yes, may I help you?"], ["I want to order."]))
+    ArrBegin.push(FnObjHanldingNext(DataTotal1.askForNeedInTable, DataTotal1.awNeedToOrder))
 
     //middle
 
@@ -45,7 +45,7 @@ ArrPeple.forEach(e => {
     ArrInFN.Submit.push(Ai_0[1].img)
 
     input_01_Body.push("0")
-    input_02_Body.push(FnObjHanldingNext(["What would you like?", "What do you want to order?"], [Aw_0]))
+    input_02_Body.push(FnObjHanldingNext(DataTotal1.askForFood, [Aw_0]))
 
     //1
     let Ai_1 = pickNRandomElementsOfArray(Drinks, 2)
@@ -61,7 +61,7 @@ ArrPeple.forEach(e => {
 
 
     input_01_Body.push("1")
-    input_02_Body.push(FnObjHanldingNext(["Something to drink?", "Do you want to order a drink?", "Do you want to take some drinks?"], [Aw_1]))
+    input_02_Body.push(FnObjHanldingNext(DataTotal1.askForDrink, [Aw_1]))
 
 
 
@@ -82,7 +82,8 @@ let writeOnly = [
 ]
 let storyBoicanh = ""
 let story = "Hôm nay, nếu khách đang ngồi sẵn gọi thì lại hỏi xem khách cần gì. Nếu khách cần order thì làm cho khách. Nhớ order nước uống nữa nhé."
-const Bai24_in2
+const Bai24
+
     = [
         {
             "nameoflession": "B.2.2",
@@ -101,7 +102,8 @@ const Bai24_in2
         }
     ]
 
-export default Bai24_in2
+export default Bai24
+
 
 
 

@@ -1,10 +1,8 @@
-import Bai23 from "./bai23_total"
-import Bai24 from "./bai24_in1"
-
-
+import Bai23 from "./bai23"
+import Bai24 from "./bai24"
 import combineLesson from "../dataHelperFunction/combineLesson"
 
-let coerdataoflession = combineLesson([Bai23, Bai24], [20, 20])
+let coerdataoflession = combineLesson([Bai24, Bai23], [20, 20])
 
 
 let hoctap = []
@@ -12,7 +10,7 @@ let listenOnly = []
 let writeOnly = []
 
 let storyBoicanh = ""
-let story = "Hôm nay làm hết những gì đã học nè."
+let story = "Tổng hợp."
 
 
 const Bai25
