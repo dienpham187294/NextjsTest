@@ -45,7 +45,7 @@ ArrPeple.forEach(e => {
     ArrInFN.Submit.push(Ai_0[1].img)
 
     input_01_Body.push("0")
-    input_02_Body.push(FnObjHanldingNext(["What would you like?"], [Aw_0]))
+    input_02_Body.push(FnObjHanldingNext(["What would you like?", "What do you want to order?"], [Aw_0]))
 
     //1
     let Ai_1 = pickNRandomElementsOfArray(Drinks, 2)
@@ -61,7 +61,7 @@ ArrPeple.forEach(e => {
 
 
     input_01_Body.push("1")
-    input_02_Body.push(FnObjHanldingNext(["Something to drink?", "Do you want to order a drink?"], [Aw_1]))
+    input_02_Body.push(FnObjHanldingNext(["Something to drink?", "Do you want to order a drink?", "Do you want to take some drinks?"], [Aw_1]))
 
 
 

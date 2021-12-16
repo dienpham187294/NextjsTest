@@ -101,7 +101,7 @@ ArrPeple.forEach(e => {
 
     let i4 = getRandomi(Arr4Input)
     Arrin3.push("1-0")
-    Arrin4.push(FnObjHanldingNext(["Do you want to take some drinks?"], [Arr4Input[i4] + ", please."]))
+    Arrin4.push(FnObjHanldingNext(["Do you want to take some drinks?", "Something to drink?", "Do you want to order a drink?"], [Arr4Input[i4] + ", please."]))
     ArrInFN.Submit.push(Arr4Input2[i4])
 
     let End = null
