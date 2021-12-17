@@ -16,6 +16,7 @@ export default function Fnperson(Arr, DataTable, Begin, Middle, End, robotspeakf
             "status": true,
             "gender": Arr.gender,
             "icon": icon,
+            "viewPick": Arr.viewPick,
             "submit": [
                 Arr.Submit
             ],

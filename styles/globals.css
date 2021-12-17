@@ -58,10 +58,10 @@ a:hover {
     border-radius: 6px;
     border: 5px solid green;
     background-color: whitesmoke;
-    left: 1%;   
-    right: 1%;
-    top: 1%;
-    bottom: 1%;
+    left: 1px;   
+    right: 1px;
+    top: 1px;
+    bottom: 1px;
     overflow: auto;
     z-index: 2;
 }
