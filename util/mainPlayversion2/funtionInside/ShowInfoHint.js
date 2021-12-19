@@ -25,7 +25,10 @@ export default function ShowInfoHint(Info_Icon_Reactdata, SET_ShowHint) {
                             </>
                             : <>
                                 <hr />
-                                <b><i>{Info_Icon_Reactdata}</i></b>
+                                <b><i
+                                    onMouseOver={() => { SET_ShowHint(true) }}
+                                    onMouseOut={() => { SET_ShowHint(false) }}
+                                >{Info_Icon_Reactdata}</i></b>
                             </>}
                     </>
                 )

@@ -1,8 +1,8 @@
 
 import { useState } from "react";
-import UpLoadFile from "../../../util/mainPlay/S_Uploadfile"
-import InfoLession from "../../../util/mainPlay/S_Lession"
-import GamePlay from "../../../util/mainPlay/S_GamePlay"
+import UpLoadFile from "../../../util/mainPlayversion2/S_Uploadfile"
+import InfoLession from "../../../util/mainPlayversion2/S_Lession"
+import GamePlay from "../../../util/mainPlayversion2/S_GamePlay"
 import DL from "../../../util/filedulieu1/DulieuThuchanh_hung/DulieuTotal";
 const ShowInterim = true
 

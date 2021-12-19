@@ -1,3 +1,5 @@
+let lastIndexOfPerson;
+import PickRandom from "./PickRandom";
 export default function showToPickPerson(
     DataShowToPick, SET_DataShowToPick, StatusShowToPick, SET_StatusShowToPick,
     ArrOfPeopeAppear_ReactData, AddTo_Show_ArrOfPeopeAppear_ReactData,
@@ -18,9 +20,10 @@ export default function showToPickPerson(
                                 <div key={i}
                                     style={{ display: "inline-block", margin: "5px", border: "1px solid green", borderRadius: "5px" }}
                                     onClick={() => {
-                                        updateDataShowToPick(DataShowToPick, SET_DataShowToPick)
+                                        updateDataShowToPick(DataShowToPick, SET_DataShowToPick, lastIndexOfPerson, e)
                                         AddTo_Show_ArrOfPeopeAppear_ReactData(e)
                                         SET_StatusShowToPick(false)
+                                        Total.stObj.inputSumit = ""
                                     }}
                                 >
                                     {ArrOfPeopeAppear_ReactData[e].total.viewPick !== undefined ?
@@ -48,7 +51,7 @@ export default function showToPickPerson(
                                 Total.fnObj.SET_PageChange(0)
                                 try {
                                     $("#idStopLisening")[0].click()
-                                
+
                                 } catch (error) { }
                             }}
                         >Chọn bài</button>
@@ -63,6 +66,45 @@ export default function showToPickPerson(
     }
 }
 
-function updateDataShowToPick(DataShowToPick, SET_DataShowToPick) {
+function updateDataShowToPick(DataShowToPick, SET_DataShowToPick, lastIndexOfPerson, index) {
+    lastIndexOfPerson = DataShowToPick[DataShowToPick.length - 1];
+
+    let ArrNew = [];
+    DataShowToPick.forEach(e => {
+        if (e !== index) {
+            ArrNew.push(e)
+        }
+    })
+    let Arr0 = []
+    let Arr1 = [1]
+    let Arr2 = [2, 2]
+    let Arr3 = [3, 3]
+
+    try {
+        if (ArrNew.length === 0) {
+            let needToAdd = PickRandom([Arr1, Arr2, Arr3]);
+            needToAdd.forEach((e, i) => {
+                ArrNew.push(lastIndexOfPerson + i)
+            })
+        }
+        if (ArrNew.length === 1) {
+            let needToAdd = PickRandom([Arr0, Arr1, Arr2]);
+            needToAdd.forEach((e, i) => {
+                ArrNew.push(lastIndexOfPerson + i)
+            })
+        }
+        if (ArrNew.length === 0) {
+            let needToAdd = PickRandom([Arr0, Arr1]);
+            needToAdd.forEach((e, i) => {
+                ArrNew.push(lastIndexOfPerson + i)
+            })
+        }
+
+        SET_DataShowToPick(ArrNew)
+
+
+    } catch (error) {
+
+    }
 
 }

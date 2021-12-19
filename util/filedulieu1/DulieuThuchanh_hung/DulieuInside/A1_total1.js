@@ -14,7 +14,7 @@ export default {
     "awForDrink": awForDrink,
     "askForNeedInTable": ["How can I help you?", "May I help you?", "What do you want?"],
     "awNeedToOrder": ["I want to order.", "Order please!", "Can I order now?"],
-   
+
 }
 
 function awForHowMany(n) {

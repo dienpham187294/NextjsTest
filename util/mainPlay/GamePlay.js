@@ -249,6 +249,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
 
     }
     function Submit_Show_OnePeopeAppear_ReactData(e) {
+        
         let data = AllData_OfOne
 
         try {

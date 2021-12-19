@@ -54,7 +54,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
     const [ShowHint, SET_ShowHint] = useState(false)
     const [ShowReview, SET_ShowReview] = useState("")
     const [StatusShowToPick, SET_StatusShowToPick] = useState(true)
-    const [DataShowToPick, SET_DataShowToPick] = useState([0, 1])
+    const [DataShowToPick, SET_DataShowToPick] = useState([0, 1, 2])
     useEffect(() => {
         props.SET_Data_Commands(Info_StrickAnwers_Reactdata)
         if (i1 === 0) {
@@ -252,6 +252,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
     }
     function Submit_Show_OnePeopeAppear_ReactData(e) {
         let data = AllData_OfOne
+        console.log(e)
         try {
             let status = false
             let n = e.split("===").slice(-1)[0]

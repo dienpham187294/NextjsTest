@@ -24,7 +24,7 @@ DataTable.push(getElementsToDataTable(Drinks, "img"))
 
 
 
-ArrPeple.forEach(e => {
+ArrPeple.slice(0, 20).forEach(e => {
 
     let ArrInFN = {}
     ArrInFN.Submit = []
@@ -103,7 +103,7 @@ ArrPeple.slice(0, 20).forEach(e => {
 let hoctap = [
 ]
 let listenOnly = [
-    
+
 ]
 let writeOnly = [
 ]
