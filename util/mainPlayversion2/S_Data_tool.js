@@ -31,9 +31,10 @@ function Show_Table(Data, Total, SET_Data_phongto) {
                                 cursor: "pointer",
                                 border: "1px solid green",
                                 borderRadius: "5px", padding: "5px",
+                                backgroundColor: "#F0FFFF",
                                 margin: "5px",
                                 height: "150px",
-                                maxWidth: "15%",
+                                width: "150px",
                                 overflowY: "auto",
                                 textAlign: "left"
                             }}>
@@ -41,7 +42,6 @@ function Show_Table(Data, Total, SET_Data_phongto) {
                                 className="btn btn-sm btn-outline-primary"
                                 onClick={() => {
                                     SET_Data_phongto(eee)
-
                                 }}
                             >Phóng to</button>
                             {eee.map((eeee, indexeeee) =>
@@ -56,7 +56,7 @@ function Show_Table(Data, Total, SET_Data_phongto) {
                                                 Total.fnObj.Submit_Show_OnePeopeAppear_ReactData(Total.stObj.inputSumit)
 
                                             }}
-                                            src={eeee} width="180px" style={{ margin: "5px 25px" }} /> :
+                                            src={eeee} width="150px" style={{ margin: "5px 0px" }} /> :
                                         <span
                                             onClick={() => {
                                                 Total.stObj.inputSumit += "===" + eeee;
@@ -94,16 +94,16 @@ function ShowDataPhongto(dataRoot, data, Total, SET_Data_phongto) {
             <div
                 style={{
                     position: "fixed",
-                    border: "1px solid green",
+                    border: "5px solid violet",
                     borderRadius: "4px",
                     top: "25%",
                     bottom: "5px",
                     left: "5px",
                     right: "5px",
-                    backgroundColor: "white",
+                    backgroundColor: "#ADD8E6",
                     overflow: "auto",
                     zIndex: 3,
-                    padding: "15%",
+                    padding: "5%",
                     textAlign: "left"
                 }}>
 
@@ -142,7 +142,7 @@ function ShowDataPhongto(dataRoot, data, Total, SET_Data_phongto) {
                 <button
                     className="btn btn-danger"
                     onClick={() => { SET_Data_phongto(null) }}
-                    style={{ position: "fixed", top: "25%", right: "20%" }}
+                    style={{ position: "fixed", top: "27%", right: "20%" }}
                 >Trở lại</button>
 
 
@@ -151,7 +151,7 @@ function ShowDataPhongto(dataRoot, data, Total, SET_Data_phongto) {
                     data.map((eeee, indexeeee) =>
                         <div
                             key={indexeeee}
-                            style={{ display: "inline-block", border: "1px solid black", borderRadius: "5px", padding: "10px", margin: "5px" }}
+                            style={{ display: "inline-block", border: "1px solid black", borderRadius: "5px", padding: "10px", margin: "5px", backgroundColor: "#F0FFFF" }}
                         >
                             {Check_ImageOrNot(eeee) ?
                                 <img

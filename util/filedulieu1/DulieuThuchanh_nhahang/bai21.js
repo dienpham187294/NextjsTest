@@ -11,32 +11,7 @@ import objEndSuccefull from "../dataHelperFunction/objEndSuccefull"
 let DataTable = []
 let coerdataoflession = []
 
-DataTable.push(DataTotal1.awGreeting)
-ArrPeple.forEach(e => {
-
-    let objInputPart1 = {}
-    objInputPart1.Submit = []
-    objInputPart1.img = e[1]
-    objInputPart1.gender = e[2]
-    objInputPart1.viewPick = DataTotal1.viewPhoneCall()
-
-    let SpeakFirst = []
-    let ArrBegin = []
-    ArrBegin.push(FnObjHanldingNext(DataTotal1.greeting, DataTotal1.awForNeed, {}, DataTotal1.showSignalFullyBooked))
-
-
-    //middle
-
-    let Arrin3 = []
-    let Arrin4 = []
-
-    Arrin3.push("0")
-    Arrin4.push(FnObjHanldingNext(DataTotal1.awFordecline(e[2]), DataTotal1.repondsTodecline, objEndSuccefull))
-
-    let End = null
-    // End.push(FnObjHanldingNext([arr_In1[i1].qs], ["I will follow your advice.", "That’s good advice.", "Thank you for your advice."], { end_successfull: true }))
-    coerdataoflession.push(Fnperson(objInputPart1, DataTable, ArrBegin, FnToArrobj(Arrin3, Arrin4), End, SpeakFirst, DataTotal1.imgIconCall(e[2])))
-})
+Notables()
 
 let hoctap = []
 let listenOnly = []
@@ -73,3 +48,43 @@ const Bai21
 export default Bai21
 
 
+function Notables() {
+    ArrPeple.slice(0, 5).forEach(e => {
+        let objInputPart1 = {}
+        objInputPart1.Submit = []
+        objInputPart1.img = e[1]
+        objInputPart1.gender = e[2]
+        objInputPart1.viewPick = DataTotal1.viewPhoneCall()
+        let SpeakFirst = ["hi", "hello"]
+        let ArrBegin = []
+        ArrBegin.push(FnObjHanldingNext(DataTotal1.greeting, DataTotal1.awForNeed, {}, DataTotal1.showSignalFullyBooked))
+        //middle
+        let Arrin3 = []
+        let Arrin4 = []
+        Arrin3.push("0")
+        Arrin4.push(FnObjHanldingNext(DataTotal1.awFordecline(e[2]), DataTotal1.repondsTodecline, objEndSuccefull))
+        let End = null
+        coerdataoflession.push(Fnperson(objInputPart1, DataTable, ArrBegin, FnToArrobj(Arrin3, Arrin4), End, SpeakFirst, DataTotal1.imgIconCall(e[2])))
+    })
+}
+
+
+function TableOnlySmokingArea() {
+    ArrPeple.slice(0, 10).forEach(e => {
+        let objInputPart1 = {}
+        objInputPart1.Submit = []
+        objInputPart1.img = e[1]
+        objInputPart1.gender = e[2]
+        objInputPart1.viewPick = DataTotal1.viewPhoneCall()
+        let SpeakFirst = ["hi", "hello"]
+        let ArrBegin = []
+        ArrBegin.push(FnObjHanldingNext(DataTotal1.greeting, DataTotal1.awForNeed, {}, DataTotal1.showSignalFullyBooked))
+        //middle
+        let Arrin3 = []
+        let Arrin4 = []
+        Arrin3.push("0")
+        Arrin4.push(FnObjHanldingNext(DataTotal1.awFordecline(e[2]), DataTotal1.repondsTodecline, objEndSuccefull))
+        let End = null
+        coerdataoflession.push(Fnperson(objInputPart1, DataTable, ArrBegin, FnToArrobj(Arrin3, Arrin4), End, SpeakFirst, DataTotal1.imgIconCall(e[2])))
+    })
+}

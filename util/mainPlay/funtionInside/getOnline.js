@@ -1,18 +1,24 @@
-import Linkapi from "../../api/Linkapi"
+// import Linkapi from "../../api/Linkapi"
 
 export default async function getOnline(idRoom, idMember, score, SET_DataOnline) {
     try {
         const res = await fetch(
-            Linkapi + "api/apiOnline?idRoom=" + idRoom + "&idMember=" + idMember + "&score=" + score
+            "https://nodejsserverforenglishtool.herokuapp.com/api"
             ,
             {
-                method: 'GET',
+                method: 'POST',
                 headers: {
                     "Accept": "application/json",
                     "Content-Type": "application/json"
-                }
+                },
+                body: JSON.stringify({
+                    idRoom: idRoom,
+                    idMember: idMember,
+                    score: score
+                })
             })
         let data = await res.json();
+        // console.log(data)
         if (data.success) {
             SET_DataOnline(data.data)
         }

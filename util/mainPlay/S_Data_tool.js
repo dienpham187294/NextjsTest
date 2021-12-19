@@ -41,7 +41,7 @@ function Show_Table(Data, Total, SET_Data_phongto) {
                                 className="btn btn-sm btn-outline-primary"
                                 onClick={() => {
                                     SET_Data_phongto(eee)
-                                    Total.fnObj.SET_ShowHint(true)
+                                    // Total.fnObj.SET_ShowHint(true)
 
                                 }}
                             >Phóng to</button>
@@ -148,7 +148,7 @@ function ShowDataPhongto(dataRoot, data, Total, SET_Data_phongto) {
 
                 <button
                     className="btn btn-danger"
-                    onClick={() => { SET_Data_phongto(null); Total.fnObj.SET_ShowHint(false) }}
+                    onClick={() => { SET_Data_phongto(null) }}
                     style={{ position: "fixed", top: "25%", right: "20%" }}
                 >Trở lại</button>
                 {

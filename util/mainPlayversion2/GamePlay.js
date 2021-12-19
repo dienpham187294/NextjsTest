@@ -6,11 +6,9 @@ import ReadReactSpeech from "../../pages/helpers/Read_ReactSpeechSlow"
 import ReadMessage from "../Read/ReadMessage"
 import showDataGameOnline from "./showDataGameOnline"
 import secondToMinutes from "../filedulieu1/dataHelperFunction/secondToMinutes";
-import SortLetter from "./funtionInside/SortLetter";
 import inter from "./funtionInside/inter";
 import checkMessageReturnNumber from "./funtionInside/checkMessageReturnNumber"
 import PickRandom from "./funtionInside/PickRandom"
-import Check_ImageOrNot from "./funtionInside/Check_ImageOrNot"
 import showReview from "./funtionInside/showReview"
 import ShowInfoHint from "./funtionInside/ShowInfoHint"
 import showSubmitSyxtax from "./funtionInside/showSubmitSyxtax"
@@ -30,12 +28,12 @@ let State_of_Anwer = "none";
 let Data_temp_Strickmode;
 let AllData_OfOne;
 
-let interNguoitieptheo, iNguoitieptheo;
+
 let rateRead = 1.1
 let pitchRead = 1.2
 
 let idMember;
-let interOnline;
+
 let i1 = 0
 let timeCount = 0;
 let ArrHoldThingToReview = [];
@@ -64,6 +62,11 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                 setInterval(() => {
                     timeCount += 1;
                     $("#thoigian").text(secondToMinutes(timeCount))
+                    if (timeCount % 20 === 0) {
+                        try {
+                            getOnline(props.NameOflession, idMember, Score, SET_DataOnline)
+                        } catch (error) { console.log(error) }
+                    }
                 }, 1000);
             }
             if (localStorage.getItem("idMember") !== null) {
@@ -78,9 +81,9 @@ function ArrOfPeopeAppear_ReactJSX(props) {
     }, [Info_StrickAnwers_Reactdata])
 
     useEffect(() => {
-        if (RoomOnline !== "") {
-            getOnline(RoomOnline, idMember, Score, SET_DataOnline)
-        }
+        try {
+            getOnline(props.NameOflession, idMember, Score, SET_DataOnline)
+        } catch (error) { console.log(error) }
     }, [Score])
 
 
@@ -161,7 +164,9 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                             SET_Info_StrickAnwers_Reactdata(arrTemp)
 
                         }
-                        SET_Info_Icon_Reactdata(data.icon)
+                        if (data.icon !== undefined && data.icon !== "") {
+                            SET_Info_Icon_Reactdata(data.icon)
+                        }
                         Submit_check_funtion_indata(data.function);
                     }
 
@@ -233,18 +238,6 @@ function ArrOfPeopeAppear_ReactJSX(props) {
 
                 State_of_Anwer = "none";
                 SET_Score(S => S + 1)
-                // $("#divCountdown").show();
-                // iNguoitieptheo = 3
-                // interNguoitieptheo = setInterval(() => {
-                //     iNguoitieptheo -= 1;
-                //     $("#countDown").text(iNguoitieptheo)
-                //     if (iNguoitieptheo === 0) {
-                //         $("#divCountdown").hide();
-                //         $("#countDown").text(3)
-                //         $("#btnNguoitieptheo")[0].click();
-                //         clearInterval(interNguoitieptheo)
-                //     }
-                // }, (1000));
                 SET_StatusShowToPick(true)
 
             }
@@ -346,8 +339,8 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                                 </div>
                                 <hr />
                                 {showBottomPart1(
-                                    props, interOnline, RoomOnline, getOnline, idMember, Score, SET_DataOnline,
-                                    SET_RoomOnline, SET_Boqua, SET_StatusShowToPick
+                                    props, RoomOnline, getOnline, idMember, Score, SET_DataOnline,
+                                    SET_RoomOnline, SET_Boqua, SET_StatusShowToPick, timeCount, i1
                                 )}
                                 {showDivNext()}
                                 {showDivReview(ShowReview, props, secondToMinutes, timeCount, showReview, SET_ShowReview,
@@ -374,7 +367,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                 {showHintPartWhenOpenTool(ShowHint, Info_Icon_Reactdata)}
                 {showToPickPerson(
                     DataShowToPick, SET_DataShowToPick, StatusShowToPick, SET_StatusShowToPick,
-                    props.ArrOfPeopeAppear_ReactData, AddTo_Show_ArrOfPeopeAppear_ReactData
+                    props.ArrOfPeopeAppear_ReactData, AddTo_Show_ArrOfPeopeAppear_ReactData, props.Total
                 )}
             </div>
             <ReadReactSpeech />

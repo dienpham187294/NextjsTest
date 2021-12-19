@@ -149,7 +149,10 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                             SET_Info_StrickAnwers_Reactdata(arrTemp)
 
                         }
-                        SET_Info_Icon_Reactdata(data.icon)
+                        if (data.icon !== undefined && data.icon !== "") {
+                            SET_Info_Icon_Reactdata(data.icon)
+                        }
+
                         Submit_check_funtion_indata(data.function);
                     }
 
@@ -221,7 +224,6 @@ function ArrOfPeopeAppear_ReactJSX(props) {
     function Submit_check_funtion_indata(command) {
         try {
             if (command.end_successfull) {
-
                 State_of_Anwer = "none";
                 SET_Score(S => S + 1)
                 $("#divCountdown").show();
@@ -236,7 +238,6 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                         clearInterval(interNguoitieptheo)
                     }
                 }, (1000));
-
             }
             if (command.end_unsuccessfull) {
                 State_of_Anwer = "none";
@@ -282,10 +283,8 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                     if (e.toLowerCase().indexOf(text) === -1) {
                         status_check_submit = false
                     } else {
-                        // $("")
                         $("#ct" + i + ii).css("background-color", "yellow");
                         $("#ct1" + i + ii).text("X");
-                        // console.log()
                     }
                 })
 
@@ -345,7 +344,12 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                             <div>
                                 <div className="row">
                                     <div className="col-4">
-                                        <img alt={Info_Avatar_Reactdata} src={Info_Avatar_Reactdata} width="160px" />
+                                        <img
+
+                                            alt={Info_Avatar_Reactdata} src={Info_Avatar_Reactdata} width="160px"
+                                            onMouseOver={() => { SET_ShowHint(true) }}
+                                            onMouseOut={() => { SET_ShowHint(false) }}
+                                        />
 
                                         {ShowInfoHint(Info_Icon_Reactdata)}
                                         <div id="showDivInHint"></div>
@@ -556,16 +560,16 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                     <div style={{
                         position: "fixed",
                         bottom: "2%",
-                        left: "5%",
+                        left: "2%",
                         padding: "5px",
                         backgroundColor: "white",
                         border: "1px solid green",
                         borderRadius: "8px",
-                        zIndex: 5
+                        zIndex: 3
                     }}>
                         {Check_ImageOrNot(Info_Icon_Reactdata) ?
                             <>
-                                <img alt={Info_Icon_Reactdata} src={Info_Icon_Reactdata} width="140px" />
+                                <img alt={Info_Icon_Reactdata} src={Info_Icon_Reactdata} width="360px" />
                             </>
                             : <b><i>{Info_Icon_Reactdata}</i></b>}
                     </div>
