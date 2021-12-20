@@ -322,7 +322,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                         <div className="GameSence_Playing_OneShow">
                             <div>
                                 <div className="row">
-                                    {showTopLeftPart1(Info_Avatar_Reactdata, ShowInfoHint, Info_Icon_Reactdata, SET_ShowHint)}
+                                    {showTopLeftPart1(Info_Avatar_Reactdata, ShowInfoHint, Info_Icon_Reactdata, SET_ShowHint, ShowHint)}
                                     {showTopCenter1(
                                         props, showOptionToRead, Score, Info_StrickAnwers_Reactdata,
                                         showSubmitSyxtax, Info_ToSunmit_Reactdata,

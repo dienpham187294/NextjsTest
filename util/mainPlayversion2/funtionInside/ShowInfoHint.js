@@ -1,5 +1,5 @@
 import Check_ImageOrNot from "./Check_ImageOrNot"
-export default function ShowInfoHint(Info_Icon_Reactdata, SET_ShowHint) {
+export default function ShowInfoHint(Info_Icon_Reactdata) {
     try {
         if (Info_Icon_Reactdata === undefined || Info_Icon_Reactdata === "") {
             $("#showDivInHint").html("")
@@ -19,15 +19,13 @@ export default function ShowInfoHint(Info_Icon_Reactdata, SET_ShowHint) {
                                 <img
                                     alt={Info_Icon_Reactdata} src={Info_Icon_Reactdata}
                                     width="140px"
-                                    onMouseOver={() => { SET_ShowHint(true) }}
-                                    onMouseOut={() => { SET_ShowHint(false) }}
+
                                 />
                             </>
                             : <>
                                 <hr />
                                 <b><i
-                                    onMouseOver={() => { SET_ShowHint(true) }}
-                                    onMouseOut={() => { SET_ShowHint(false) }}
+
                                 >{Info_Icon_Reactdata}</i></b>
                             </>}
                     </>

@@ -14,7 +14,7 @@ let DataTable = []
 let coerdataoflession = []
 
 DataTable.push(
-    getElementsToDataTable(MA1.ENVN, "EN", "-")
+    getElementsToDataTable(MA1.ENVN, "EN")
 )
 
 ArrPeple.forEach((e, ie) => {

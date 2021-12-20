@@ -95,7 +95,7 @@ function ShowDataPhongto(dataRoot, data, Total, SET_Data_phongto) {
             <div
                 style={{
                     position: "fixed",
-                    border: "1px solid green",
+                    border: "5px solid blue",
                     borderRadius: "4px",
                     top: "25%",
                     bottom: "5px",
@@ -109,7 +109,7 @@ function ShowDataPhongto(dataRoot, data, Total, SET_Data_phongto) {
                 }}>
 
                 {dataRoot.map((e, index) =>
-                    <div key={index} style={{ position: "fixed", top: "25%" }}>
+                    <div key={index} style={{ position: "fixed", top: "20%" }}>
                         <div >
                             {e.dataoftable.map((eee, indexeee) =>
                                 <div
@@ -148,13 +148,19 @@ function ShowDataPhongto(dataRoot, data, Total, SET_Data_phongto) {
                 <button
                     className="btn btn-danger"
                     onClick={() => { SET_Data_phongto(null) }}
-                    style={{ position: "fixed", top: "25%", right: "20%" }}
+                    style={{ position: "fixed", top: "20%", right: "20%" }}
                 >Trở lại</button>
                 {
                     data.map((eeee, indexeeee) =>
                         <div
                             key={indexeeee}
-                            style={{ display: "inline-block", border: "1px solid black", borderRadius: "5px", padding: "10px", margin: "5px" }}
+                            style={{
+                                display: Check_ImageOrNot(eeee) ? "inline-block" : "intinial",
+                                border: "1px solid black",
+                                borderRadius: "5px",
+                                padding: "10px",
+                                margin: "5px",
+                            }}
                         >
                             {Check_ImageOrNot(eeee) ?
                                 <img
@@ -164,14 +170,16 @@ function ShowDataPhongto(dataRoot, data, Total, SET_Data_phongto) {
                                         Total.fnObj.Submit_Show_OnePeopeAppear_ReactData(Total.stObj.inputSumit)
                                     }}
                                     src={eeee} width="250px" style={{ margin: "5px 25px", cursor: "pointer" }} /> :
-                                <span
+                                <b
                                     onClick={() => {
                                         Total.stObj.inputSumit += "===" + eeee;
                                         Total.fnObj.SET_Info_Icon_Reactdata(eeee)
                                         Total.fnObj.Submit_Show_OnePeopeAppear_ReactData(Total.stObj.inputSumit)
                                     }}
                                     style={{ cursor: "pointer" }}
-                                >{eeee}</span>
+                                >
+                                    {eeee}
+                                </b>
                             }
                         </div>
                     )

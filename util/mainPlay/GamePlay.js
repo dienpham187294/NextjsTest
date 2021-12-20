@@ -52,6 +52,11 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                 setInterval(() => {
                     timeCount += 1;
                     $("#thoigian").text(secondToMinutes(timeCount))
+                    if (timeCount % 20 === 0) {
+                        try {
+                            getOnline(props.NameOflession, idMember, Score, SET_DataOnline)
+                        } catch (error) { console.log(error) }
+                    }
                 }, 1000);
             }
             if (localStorage.getItem("idMember") !== null) {
@@ -66,9 +71,9 @@ function ArrOfPeopeAppear_ReactJSX(props) {
     }, [Info_StrickAnwers_Reactdata])
 
     useEffect(() => {
-        if (RoomOnline !== "") {
-            getOnline(RoomOnline, idMember, Score, SET_DataOnline)
-        }
+        try {
+            getOnline(props.NameOflession, idMember, Score, SET_DataOnline)
+        } catch (error) { console.log(error) }
     }, [Score])
 
 
@@ -349,8 +354,9 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                                         <img
 
                                             alt={Info_Avatar_Reactdata} src={Info_Avatar_Reactdata} width="160px"
-                                            onMouseOver={() => { SET_ShowHint(true) }}
-                                            onMouseOut={() => { SET_ShowHint(false) }}
+                                            // onMouseOver={() => { SET_ShowHint(true) }}
+                                            // onMouseOut={() => { SET_ShowHint(false) }}
+                                            onClick={() => { SET_ShowHint(!ShowHint) }}
                                         />
 
                                         {ShowInfoHint(Info_Icon_Reactdata)}
@@ -442,47 +448,6 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                                     >Chọn bài</button>
                                     <a className="mr-5" href="https://forms.gle/JZWwQNx4XP8fDken9">Phiếu khảo sát</a>
 
-                                    {RoomOnline === "" ?
-                                        <>
-                                            {/* <input className="mr-2" id="getIdRoom" defaultValue={idRoomOnline} type="text" /> */}
-                                            <button
-                                                className="btn btn-sm btn-danger"
-                                                onClick={() => {
-                                                    SET_RoomOnline(props.NameOflession)
-                                                    getOnline(props.NameOflession, idMember, Score, SET_DataOnline)
-                                                }}
-                                            >Online</button>
-                                        </>
-                                        :
-                                        <>
-                                            {RoomOnline}
-                                            <button
-                                                className="btn btn-sm btn-info mr-2 ml-2"
-                                                onClick={() => {
-                                                    // clearInterval(interOnline)
-                                                    // SET_RoomOnline("")
-                                                }}
-                                            >Play Game</button>
-
-
-                                            <button
-                                                className="btn btn-sm btn-danger mr-2 ml-2"
-                                                onClick={() => {
-                                                    // clearInterval(interOnline)
-                                                    SET_RoomOnline("")
-                                                }}
-                                            >Thoát</button>
-
-                                            <button
-                                                className="btn btn-sm btn-warning"
-                                                onClick={() => {
-                                                    getOnline(RoomOnline, idMember, Score, SET_DataOnline)
-                                                }}
-                                            >Cập nhật</button>
-                                            {/* <input id="idName" type="text" placeholder="Tên" /> */}
-                                        </>
-                                    }
-
 
 
 
@@ -563,8 +528,9 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                         position: "fixed",
                         bottom: "2%",
                         left: "2%",
-                        padding: "5px",
-                        backgroundColor: "white",
+                        padding: "15px",
+                        backgroundColor: "black",
+                        color: "yellow",
                         border: "1px solid green",
                         borderRadius: "8px",
                         zIndex: 3

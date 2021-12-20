@@ -108,15 +108,15 @@ function ShowDataPhongto(dataRoot, data, Total, SET_Data_phongto) {
                 }}>
 
                 {dataRoot.map((e, index) =>
-                    <div key={index} style={{ position: "fixed", top: "25%", backgroundColor: "grey" }}>
-                        <div >
+                    <div key={index} style={{ position: "fixed", top: "20%" }}>
+                        <div
+                        >
                             {e.dataoftable.map((eee, indexeee) =>
                                 <div
                                     key={indexeee}
                                     style={{
                                         display: "inline-block",
                                         cursor: "pointer",
-
                                     }}>
                                     <button
                                         className="btn btn-primary ml-1"
@@ -129,7 +129,7 @@ function ShowDataPhongto(dataRoot, data, Total, SET_Data_phongto) {
                                                 src={eee[0]} height="40px" /> :
                                             <span
 
-                                            >{eee[0]}</span>
+                                            >{eee[0].slice(0, 6)}</span>
                                         }
 
                                     </button>
@@ -142,7 +142,7 @@ function ShowDataPhongto(dataRoot, data, Total, SET_Data_phongto) {
                 <button
                     className="btn btn-danger"
                     onClick={() => { SET_Data_phongto(null) }}
-                    style={{ position: "fixed", top: "27%", right: "20%" }}
+                    style={{ position: "fixed", top: "20%", right: "20%" }}
                 >Trở lại</button>
 
 
@@ -151,7 +151,14 @@ function ShowDataPhongto(dataRoot, data, Total, SET_Data_phongto) {
                     data.map((eeee, indexeeee) =>
                         <div
                             key={indexeeee}
-                            style={{ display: "inline-block", border: "1px solid black", borderRadius: "5px", padding: "10px", margin: "5px", backgroundColor: "#F0FFFF" }}
+                            style={{
+                                display: Check_ImageOrNot(eeee) ? "inline-block" : "initial",
+                                border: "1px solid black",
+                                borderRadius: "5px",
+                                padding: "10px",
+                                margin: "5px",
+                                backgroundColor: "#F0FFFF"
+                            }}
                         >
                             {Check_ImageOrNot(eeee) ?
                                 <img
@@ -161,14 +168,14 @@ function ShowDataPhongto(dataRoot, data, Total, SET_Data_phongto) {
                                         Total.fnObj.Submit_Show_OnePeopeAppear_ReactData(Total.stObj.inputSumit)
                                     }}
                                     src={eeee} width="250px" style={{ margin: "5px 25px", cursor: "pointer" }} /> :
-                                <span
+                                <b
                                     onClick={() => {
                                         Total.stObj.inputSumit += "===" + eeee;
                                         Total.fnObj.SET_Info_Icon_Reactdata(eeee)
                                         Total.fnObj.Submit_Show_OnePeopeAppear_ReactData(Total.stObj.inputSumit)
                                     }}
                                     style={{ cursor: "pointer" }}
-                                >{eeee}</span>
+                                >{eeee}</b>
                             }
                         </div>
                     )
