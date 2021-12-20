@@ -31,7 +31,7 @@ function Show_Table(Data, Total, SET_Data_phongto) {
                                 cursor: "pointer",
                                 border: "1px solid green",
                                 borderRadius: "5px", padding: "5px",
-                                backgroundColor: "#F0FFFF",
+                             
                                 margin: "5px",
                                 height: "150px",
                                 width: "150px",
@@ -100,7 +100,7 @@ function ShowDataPhongto(dataRoot, data, Total, SET_Data_phongto) {
                     bottom: "5px",
                     left: "5px",
                     right: "5px",
-                    backgroundColor: "#ADD8E6",
+            
                     overflow: "auto",
                     zIndex: 3,
                     padding: "5%",
@@ -157,7 +157,6 @@ function ShowDataPhongto(dataRoot, data, Total, SET_Data_phongto) {
                                 borderRadius: "5px",
                                 padding: "10px",
                                 margin: "5px",
-                                backgroundColor: "#F0FFFF"
                             }}
                         >
                             {Check_ImageOrNot(eeee) ?
