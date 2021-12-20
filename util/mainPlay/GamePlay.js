@@ -249,7 +249,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
 
     }
     function Submit_Show_OnePeopeAppear_ReactData(e) {
-        
+
         let data = AllData_OfOne
 
         try {
@@ -318,11 +318,12 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                     <span className="Span_Show_Info_StrickAnwers_Reactdata" key={index}>{e} <b style={{ backgroundColor: "black" }}>||</b> </span>
                 )
             }
-            else if (Score < 6) {
-                return Info_StrickAnwers_Reactdata.map((e, index) =>
-                    <span className="Span_Show_Info_StrickAnwers_Reactdata" key={index}>{SortLetter(e)} <b style={{ backgroundColor: "black" }}>||</b> </span>
-                )
-            } else {
+            // else if (Score < 6) {
+            //     return Info_StrickAnwers_Reactdata.map((e, index) =>
+            //         <span className="Span_Show_Info_StrickAnwers_Reactdata" key={index}>{SortLetter(e)} <b style={{ backgroundColor: "black" }}>||</b> </span>
+            //     )
+            // } 
+            else {
                 return null
             }
         } catch (error) {

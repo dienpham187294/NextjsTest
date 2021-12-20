@@ -117,7 +117,6 @@ function ShowDataPhongto(dataRoot, data, Total, SET_Data_phongto) {
                                     style={{
                                         display: "inline-block",
                                         cursor: "pointer",
-
                                     }}>
                                     <button
                                         className="btn btn-primary ml-1"
@@ -130,7 +129,7 @@ function ShowDataPhongto(dataRoot, data, Total, SET_Data_phongto) {
                                                 src={eee[0]} height="40px" /> :
                                             <span
 
-                                            >{eee[0]}</span>
+                                            >{eee[0].slice(0, 6)}</span>
                                         }
 
                                     </button>

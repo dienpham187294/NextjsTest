@@ -9,7 +9,13 @@ function UpLoadFile(props) {
         try {
             props.Total.fnObj.SET_Data_InfoOflession(arrPick[0].hoctap)
             props.Total.fnObj.SET_NameOflession(arrPick[0].nameoflession)
-            props.Total.fnObj.SET_Data_Game(arrPick[1].coerdataoflession.sort(() => 0.5 - Math.random()))
+            if (arrPick[0].status === "noSort") {
+                props.Total.fnObj.SET_Data_Game(arrPick[1].coerdataoflession)
+            } else {
+                props.Total.fnObj.SET_Data_Game(arrPick[1].coerdataoflession.sort(() => 0.5 - Math.random()))
+            }
+
+
             props.Total.fnObj.SET_PageChange(1);
 
         } catch (error) {
