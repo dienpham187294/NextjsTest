@@ -108,7 +108,7 @@ export default {
             "AW": "Mergers and acquisitions can result in new organizations whose financial and strategic options are much improved."
         },
         {
-            "QS": "When external growth occurs?",
+            "QS": "When does external growth occur?",
             "AW": "External growth occurs when a business purchases the existing assets of another entity through a merger."
         },
         {
