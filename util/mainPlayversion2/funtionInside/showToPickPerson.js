@@ -16,18 +16,16 @@ export default function showToPickPerson(
                         border: "5px solid blue", borderRadius: '5px'
                     }}>
                         {
-                            DataShowToPick.map((e, i) =>
-                                <div key={i}
-                                    style={{ display: "inline-block", margin: "5px", border: "1px solid green", borderRadius: "5px" }}
-                                    onClick={() => {
-                                        updateDataShowToPick(DataShowToPick, SET_DataShowToPick, lastIndexOfPerson, e)
-                                        AddTo_Show_ArrOfPeopeAppear_ReactData(e)
-                                        SET_StatusShowToPick(false)
-                                        Total.stObj.inputSumit = ""
-                                    }}
-                                >
-                                    {Show(ArrOfPeopeAppear_ReactData[e].total)}
-                                </div>
+                            showDivMain(
+                                DataShowToPick,
+                                updateDataShowToPick,
+                                SET_DataShowToPick,
+                                lastIndexOfPerson,
+                                AddTo_Show_ArrOfPeopeAppear_ReactData,
+                                SET_StatusShowToPick,
+                                Total,
+                                Show,
+                                ArrOfPeopeAppear_ReactData
                             )
                         }
                         <button
@@ -55,6 +53,92 @@ export default function showToPickPerson(
         return null
     }
 }
+function showDivMain(
+    DataShowToPick,
+    updateDataShowToPick,
+    SET_DataShowToPick,
+    lastIndexOfPerson,
+    AddTo_Show_ArrOfPeopeAppear_ReactData,
+    SET_StatusShowToPick,
+    Total,
+    Show,
+    ArrOfPeopeAppear_ReactData
+) {
+
+    let Arr = []
+    let objOutput = {
+
+    }
+    DataShowToPick.forEach(e => {
+        try {
+            if (!Arr.includes(ArrOfPeopeAppear_ReactData[e].total.viewPick.header)) {
+                Arr.push(ArrOfPeopeAppear_ReactData[e].total.viewPick.header)
+                objOutput[ArrOfPeopeAppear_ReactData[e].total.viewPick.header] = [e]
+            }
+            else {
+                objOutput[ArrOfPeopeAppear_ReactData[e].total.viewPick.header].push(e)
+            }
+
+        } catch (error) {
+
+            try {
+                objOutput["none"].push(e)
+            } catch (error) {
+                Arr.push("none")
+                objOutput["none"] = [e]
+            }
+
+        }
+    })
+
+
+    return <>
+        {Arr.map((ee, ii) =>
+            <div
+                style={{
+                    border: "1px solid black",
+                    borderRadius: "10px",
+                    width: "100%",
+                    margin: "5px"
+                }}
+                key={ii}>
+                <h5>{ee !== "none" ? ee : null}</h5>
+                <div>
+                    {objOutput[ee].map((e, i) =>
+                        <div key={i}
+                            style={{ display: "inline-block", margin: "5px", border: "1px solid green", borderRadius: "5px" }}
+                            onClick={() => {
+                                updateDataShowToPick(DataShowToPick, SET_DataShowToPick, lastIndexOfPerson, e)
+                                AddTo_Show_ArrOfPeopeAppear_ReactData(e)
+                                SET_StatusShowToPick(false)
+                                Total.stObj.inputSumit = ""
+                            }}
+                        >
+                            {Show(ArrOfPeopeAppear_ReactData[e].total)}
+                        </div>
+                    )}
+                </div>
+            </div>
+        )}
+
+        {/* {DataShowToPick.map((e, i) =>
+            <div key={i}
+                style={{ display: "inline-block", margin: "5px", border: "1px solid green", borderRadius: "5px" }}
+                onClick={() => {
+                    updateDataShowToPick(DataShowToPick, SET_DataShowToPick, lastIndexOfPerson, e)
+                    AddTo_Show_ArrOfPeopeAppear_ReactData(e)
+                    SET_StatusShowToPick(false)
+                    Total.stObj.inputSumit = ""
+                }}
+            >
+                {Show(ArrOfPeopeAppear_ReactData[e].total)}
+            </div>
+        )} */}
+    </>
+}
+
+
+
 
 function updateDataShowToPick(DataShowToPick, SET_DataShowToPick, lastIndexOfPerson, index) {
     lastIndexOfPerson = DataShowToPick[DataShowToPick.length - 1];
@@ -102,11 +186,9 @@ function updateDataShowToPick(DataShowToPick, SET_DataShowToPick, lastIndexOfPer
 function Show(data) {
     try {
         return <>
-            <h5>{data.viewPick.header}</h5>
-            <p>{data.viewPick.content}</p>
-            <img src={data.viewPick.img} height="250px" />
+            <img src={data.viewPick.img} height="120px" />
         </>
     } catch (error) {
-        return <img src={data.icon} height="250px" />
+        return <img src={data.icon} height="120px" />
     }
 }

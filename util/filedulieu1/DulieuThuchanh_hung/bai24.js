@@ -25,6 +25,10 @@ ArrPeple.forEach(e => {
     ArrInFN.Submit = []
     ArrInFN.img = e[1]
     ArrInFN.gender = e[2]
+    ArrInFN.viewPick = {
+        "header": "Guest at the table.",
+        "img": "https://i.postimg.cc/jSzMzhTN/callwaiter.jpg"
+    }
 
     let SpeakFirst = ["Excuse me"]
     //Begin

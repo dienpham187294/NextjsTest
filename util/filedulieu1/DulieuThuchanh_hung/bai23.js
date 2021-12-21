@@ -30,7 +30,10 @@ ArrPeple.slice(0, 20).forEach(e => {
     ArrInFN.Submit = []
     ArrInFN.img = e[1]
     ArrInFN.gender = e[2]
-
+    ArrInFN.viewPick = {
+        "header": "Guest at the door.",
+        "img": "https://i.postimg.cc/kgRbM0Rv/guest-Is-Comming.jpg"
+    }
     let SpeakFirst = ["hi", "hello"]
 
     let ArrBegin = []
@@ -73,7 +76,10 @@ ArrPeple.slice(0, 20).forEach(e => {
     ArrInFN.Submit = []
     ArrInFN.img = e[1]
     ArrInFN.gender = e[2]
-
+    ArrInFN.viewPick = {
+        "header": "Guest at the door.",
+        "img": "https://i.postimg.cc/kgRbM0Rv/guest-Is-Comming.jpg"
+    }
     let SpeakFirst = ["hi", "hello"]
 
     let ArrBegin = []

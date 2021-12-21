@@ -9,8 +9,11 @@ import objEndSuccefull from "../dataHelperFunction/objEndSuccefull"
 
 import DataTotal2 from "./DulieuInside/A1_total2"
 import Drinks from "./DulieuInside/A1_drinks"
-import Bai25 from "./bai25_total"
+
 import DataTestKnowleged from "./DulieuInside/A1_knowleged01"
+
+import Bai23 from "./bai23"
+import Bai24 from "./bai24"
 // console.log(convertArrToObjSource(
 //     [["Which way do I go to the toilet?",
 //         "Where's the toilet?",
@@ -20,7 +23,7 @@ import DataTestKnowleged from "./DulieuInside/A1_knowleged01"
 // ))
 let DataTable = []
 
-let coerdataoflession = [].concat(Bai25[0].coerdataoflession)
+let coerdataoflession = [].concat(Bai23[1].coerdataoflession, Bai24[1].coerdataoflession)
 
 
 
@@ -33,6 +36,7 @@ WantOrderDrink(10, DataTotal2.tar02, Drinks)
 WantBabyChair(5)
 WantATool(15)
 checkKnowleged(15)
+WantToToilet(10)
 
 DataTable.push(getElementsToDataTable(Drinks, "img"))
 DataTable.push(getElementsToDataTable(DataTotal2.img, "img"))
@@ -79,7 +83,7 @@ function checkKnowleged(n) {
         ArrInFN.img = e[1]
         ArrInFN.gender = e[2]
         ArrInFN.viewPick = {
-            "header": "",
+            "header": "What is it mean?",
             "content": "",
             "img": "https://i.postimg.cc/76LB7hKz/icon-Nhiem-Vu.png"
         }
@@ -124,6 +128,10 @@ function WantATool(n) {
         ArrInFN.Submit = []
         ArrInFN.img = e[1]
         ArrInFN.gender = e[2]
+        ArrInFN.viewPick = {
+            "header": "Guest at the table.",
+            "img": "https://i.postimg.cc/jSzMzhTN/callwaiter.jpg"
+        }
         let SpeakFirst = DataTotal2.tar03.M0Excuse
         let ArrNeedToUse = DataTotal2.img.slice(1, 3);
         let ToolsArrPick = pickNRandomElementsOfArray(ArrNeedToUse, 1)
@@ -164,6 +172,10 @@ function WantToToilet(n) {
         ArrInFN.Submit = []
         ArrInFN.img = e[1]
         ArrInFN.gender = e[2]
+        ArrInFN.viewPick = {
+            "header": "Guest at the table.",
+            "img": "https://i.postimg.cc/jSzMzhTN/callwaiter.jpg"
+        }
         let SpeakFirst = DataTotal2.tar03.M0Excuse
         let ArrBegin = []
         ArrBegin.push(
@@ -201,6 +213,10 @@ function WantBabyChair(n) {
         ArrInFN.Submit = []
         ArrInFN.img = e[1]
         ArrInFN.gender = e[2]
+        ArrInFN.viewPick = {
+            "header": "Guest at the table.",
+            "img": "https://i.postimg.cc/jSzMzhTN/callwaiter.jpg"
+        }
         let SpeakFirst = DataTotal2.tar03.M0Excuse
         let ArrBegin = []
         ArrBegin.push(
@@ -237,6 +253,10 @@ function WantOrderDrink(n, CoreData, Drinks) {
         ArrInFN.Submit = []
         ArrInFN.img = e[1]
         ArrInFN.gender = e[2]
+        ArrInFN.viewPick = {
+            "header": "Guest at the table.",
+            "img": "https://i.postimg.cc/jSzMzhTN/callwaiter.jpg"
+        }
         let SpeakFirst = CoreData.M0Excuse
 
         let DrinksArrPick = pickNRandomElementsOfArray(Drinks, 1)
@@ -282,6 +302,10 @@ function WantMenu(n, CoreData) {
         ArrInFN.Submit = []
         ArrInFN.img = e[1]
         ArrInFN.gender = e[2]
+        ArrInFN.viewPick = {
+            "header": "Guest at the table.",
+            "img": "https://i.postimg.cc/jSzMzhTN/callwaiter.jpg"
+        }
         let SpeakFirst = CoreData.M0Excuse
         //Begin
 
@@ -297,8 +321,6 @@ function WantMenu(n, CoreData) {
         let input_02_Body = [
             FnObjHanldingNext(CoreData["N1How ca"], CoreData["M2I want"])
         ]
-
-
         let End = null
         coerdataoflession.push(
             Fnperson(
@@ -312,6 +334,4 @@ function WantMenu(n, CoreData) {
             )
         )
     })
-
-
 }

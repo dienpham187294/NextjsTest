@@ -30,7 +30,7 @@ export default function showBottomPart1(
                 className="btn btn-sm btn-outline-info ml-3"
                 style={{ float: "left" }}
             >
-                <a target={"_blank"} href="https://forms.gle/JZWwQNx4XP8fDken9">Phiếu khảo sát</a>
+                <a target={"_blank"} href="https://forms.gle/JZWwQNx4XP8fDken9">Đóng góp ý kiến</a>
             </button>
 
 
