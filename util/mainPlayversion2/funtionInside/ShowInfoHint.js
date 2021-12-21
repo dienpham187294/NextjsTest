@@ -19,13 +19,10 @@ export default function ShowInfoHint(Info_Icon_Reactdata) {
                                 <img
                                     alt={Info_Icon_Reactdata} src={Info_Icon_Reactdata}
                                     width="140px"
-
                                 />
                             </>
                             : <>
-                                <hr />
                                 <b><i
-
                                 >{Info_Icon_Reactdata}</i></b>
                             </>}
                     </>

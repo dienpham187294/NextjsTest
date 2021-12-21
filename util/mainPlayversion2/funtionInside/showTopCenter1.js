@@ -7,7 +7,7 @@ export default function showTopCenter1(
     Boqua, SET_Score, SET_ShowReview, ArrHoldThingToReview, Sai
 ) {
     try {
-        return <div className="col-8">
+        return <div className="col-6">
             <div className="row">
                 <div className="col-4">
                     {showSubmitSyxtax(Info_ToSunmit_Reactdata)}

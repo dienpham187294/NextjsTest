@@ -18,7 +18,7 @@ export default async function getOnline(idRoom, idMember, score, SET_DataOnline)
                 })
             })
         let data = await res.json();
-        // console.log(data)
+        console.log(1)
         if (data.success) {
             SET_DataOnline(data.data)
         }

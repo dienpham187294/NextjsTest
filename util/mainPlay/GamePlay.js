@@ -52,11 +52,6 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                 setInterval(() => {
                     timeCount += 1;
                     $("#thoigian").text(secondToMinutes(timeCount))
-                    if (timeCount % 20 === 0) {
-                        try {
-                            getOnline(props.NameOflession, idMember, Score, SET_DataOnline)
-                        } catch (error) { console.log(error) }
-                    }
                 }, 1000);
             }
             if (localStorage.getItem("idMember") !== null) {
@@ -87,6 +82,9 @@ function ArrOfPeopeAppear_ReactJSX(props) {
             props.Total.fnObj.Xuly = Xuly
             props.Total.fnObj.SET_ShowHint = SET_ShowHint
             props.Total.fnObj.SET_Info_Icon_Reactdata = SET_Info_Icon_Reactdata
+            props.Total.fnObj.getOnline = function () {
+                getOnline(props.NameOflession, idMember, Score, SET_DataOnline)
+            }
             AddTo_Show_ArrOfPeopeAppear_ReactData(0)
         }, []
     );
@@ -417,7 +415,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
 
                                 <hr />
 
-                                {showDataGameOnline(DataOnline)}
+                                {showDataGameOnline(DataOnline, props.Total)}
                                 <br />
                                 <div
                                     style={{
