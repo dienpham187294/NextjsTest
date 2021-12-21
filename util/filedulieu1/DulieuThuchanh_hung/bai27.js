@@ -20,7 +20,7 @@ import DataTestKnowleged from "./DulieuInside/A1_knowleged01"
 // ))
 let DataTable = []
 
-let coerdataoflession = [].concat(Bai25)
+let coerdataoflession = [].concat(Bai25[0].coerdataoflession)
 
 
 
@@ -33,6 +33,7 @@ WantOrderDrink(10, DataTotal2.tar02, Drinks)
 WantBabyChair(5)
 WantATool(15)
 checkKnowleged(15)
+
 DataTable.push(getElementsToDataTable(Drinks, "img"))
 DataTable.push(getElementsToDataTable(DataTotal2.img, "img"))
 DataTable.push([DataTotal2.tar05["N1Thetoi"]])
@@ -78,11 +79,11 @@ function checkKnowleged(n) {
         ArrInFN.img = e[1]
         ArrInFN.gender = e[2]
         ArrInFN.viewPick = {
-            "header": "Test",
-            "content": "Test",
+            "header": "",
+            "content": "",
             "img": "https://i.postimg.cc/76LB7hKz/icon-Nhiem-Vu.png"
         }
-        let SpeakFirst = ["Hi"]
+        let SpeakFirst = ["What is it mean?"]
         let TestArrPick = pickNRandomElementsOfArray(DataTestKnowleged, 1)
         //Begin
         let ArrBegin = []
@@ -123,24 +124,14 @@ function WantATool(n) {
         ArrInFN.Submit = []
         ArrInFN.img = e[1]
         ArrInFN.gender = e[2]
-
-
-
         let SpeakFirst = DataTotal2.tar03.M0Excuse
-
-
         let ArrNeedToUse = DataTotal2.img.slice(1, 3);
-
         let ToolsArrPick = pickNRandomElementsOfArray(ArrNeedToUse, 1)
         let ToolPick = ToolsArrPick[0].name
-
-
-        //Begin
         let ArrBegin = []
         ArrBegin.push(
             FnObjHanldingNext(DataTotal2.tar03["N1Howcan"], DataTotal2.tar04.M0Iwanta(ToolPick))
         )
-        //middle
         let input_01_Body = [
             "0"
         ]
@@ -173,23 +164,11 @@ function WantToToilet(n) {
         ArrInFN.Submit = []
         ArrInFN.img = e[1]
         ArrInFN.gender = e[2]
-
-
-
         let SpeakFirst = DataTotal2.tar03.M0Excuse
-
-
-        // let ArrNeedToUse = DataTotal2.img.slice(1, 2);
-        // let ToolsArrPick = pickNRandomElementsOfArray(ArrNeedToUse, 1)
-        // let ToolPick = ToolsArrPick[0].name
-
-
-        //Begin
         let ArrBegin = []
         ArrBegin.push(
             FnObjHanldingNext(DataTotal2.tar03["N1Howcan"], DataTotal2.tar05["M0Whichw"])
         )
-        //middle
         let input_01_Body = [
             "0"
         ]
@@ -222,31 +201,17 @@ function WantBabyChair(n) {
         ArrInFN.Submit = []
         ArrInFN.img = e[1]
         ArrInFN.gender = e[2]
-
-
-
         let SpeakFirst = DataTotal2.tar03.M0Excuse
-
-
-        // let ArrNeedToUse = DataTotal2.img.slice(1, 2);
-        // let ToolsArrPick = pickNRandomElementsOfArray(ArrNeedToUse, 1)
-        // let ToolPick = ToolsArrPick[0].name
-
-
-        //Begin
         let ArrBegin = []
         ArrBegin.push(
             FnObjHanldingNext(DataTotal2.tar03["N1Howcan"], DataTotal2.tar03["M2Doyouh"])
         )
-        //middle
         let input_01_Body = [
             "0"
         ]
         let input_02_Body = [
             FnObjHanldingNext(DataTotal2.tar03["N3Yesofc"], ["Thank you."], objEndSuccefull)
         ]
-
-
         let End = null
         coerdataoflession.push(
             Fnperson(
@@ -260,8 +225,6 @@ function WantBabyChair(n) {
             )
         )
     })
-
-
 }
 
 

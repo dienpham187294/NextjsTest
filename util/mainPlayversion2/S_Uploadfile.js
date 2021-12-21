@@ -11,7 +11,6 @@ function UpLoadFile(props) {
             props.Total.fnObj.SET_NameOflession(arrPick[0].nameoflession)
             props.Total.fnObj.SET_Data_Game(arrPick[1].coerdataoflession.sort(() => 0.5 - Math.random()))
             props.Total.fnObj.SET_PageChange(1);
-
         } catch (error) {
             console.log(error);
         }

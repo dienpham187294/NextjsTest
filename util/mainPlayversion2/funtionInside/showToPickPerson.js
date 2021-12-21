@@ -26,17 +26,7 @@ export default function showToPickPerson(
                                         Total.stObj.inputSumit = ""
                                     }}
                                 >
-                                    {ArrOfPeopeAppear_ReactData[e].total.viewPick !== undefined ?
-                                        <>
-                                            <h5>{ArrOfPeopeAppear_ReactData[e].total.viewPick.header}</h5>
-                                            <p>{ArrOfPeopeAppear_ReactData[e].total.viewPick.content}</p>
-                                            <img src={ArrOfPeopeAppear_ReactData[e].total.viewPick.img} height="250px" />
-                                        </>
-                                        :
-                                        <img src={ArrOfPeopeAppear_ReactData[e].total.icon} height="250px" />
-                                    }
-
-
+                                    {Show(ArrOfPeopeAppear_ReactData[e].total)}
                                 </div>
                             )
                         }
@@ -107,4 +97,16 @@ function updateDataShowToPick(DataShowToPick, SET_DataShowToPick, lastIndexOfPer
 
     }
 
+}
+
+function Show(data) {
+    try {
+        return <>
+            <h5>{data.viewPick.header}</h5>
+            <p>{data.viewPick.content}</p>
+            <img src={data.viewPick.img} height="250px" />
+        </>
+    } catch (error) {
+        return <img src={data.icon} height="250px" />
+    }
 }

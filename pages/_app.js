@@ -74,6 +74,8 @@ function MyApp({ Component, pageProps }) {
         src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         crossOrigin="anonymous"
       />
+
+
     </Head>
 
 

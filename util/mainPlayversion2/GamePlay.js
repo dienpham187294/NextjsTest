@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import $ from "jquery"
-
 import DataTool from "./S_Data_tool"
 import ReadReactSpeech from "../../pages/helpers/Read_ReactSpeechSlow"
 import ReadMessage from "../Read/ReadMessage"
@@ -21,7 +20,7 @@ import showBottomPart1 from "./funtionInside/showBottomPart1"
 import showDivReview from "./funtionInside/showDivReview"
 import showDivNext from "./funtionInside/showDivNext"
 import showToPickPerson from "./funtionInside/showToPickPerson"
-
+import Check_ImageOrNot from "./funtionInside/Check_ImageOrNot"
 
 let VoicePick = 1;
 let State_of_Anwer = "none";
@@ -49,7 +48,6 @@ function ArrOfPeopeAppear_ReactJSX(props) {
     const [Sai, SET_Sai] = useState(0)
     const [Boqua, SET_Boqua] = useState(0)
     const [Data_TableTool, SET_Data_TableTool] = useState([])
-    const [RoomOnline, SET_RoomOnline] = useState("")
     const [DataOnline, SET_DataOnline] = useState([])
     const [ShowHint, SET_ShowHint] = useState(false)
     const [ShowReview, SET_ShowReview] = useState("")
@@ -281,8 +279,11 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                     if (e.toLowerCase().indexOf(text) === -1) {
                         status_check_submit = false
                     } else {
-                        $("#ct" + i + ii).css("background-color", "yellow");
-                        $("#ct1" + i + ii).text("X");
+                        Check_ImageOrNot(ee) ?
+                            $("#ct1" + i + ii).html(
+                                `<img src="` + ee + `" height="50px" />`
+                            )
+                            : $("#ct1" + i + ii).html(ee);
                     }
                 })
 
@@ -340,8 +341,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                                 </div>
                                 <hr />
                                 {showBottomPart1(
-                                    props, RoomOnline, getOnline, idMember, Score, SET_DataOnline,
-                                    SET_RoomOnline, SET_Boqua, SET_StatusShowToPick, timeCount, i1
+                                    props, SET_Boqua, SET_StatusShowToPick
                                 )}
                                 {showDivNext()}
                                 {showDivReview(ShowReview, props, secondToMinutes, timeCount, showReview, SET_ShowReview,
@@ -376,13 +376,6 @@ function ArrOfPeopeAppear_ReactJSX(props) {
     )
 }
 export default ArrOfPeopeAppear_ReactJSX
-
-
-
-
-
-
-
 
 
 

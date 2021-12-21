@@ -78,11 +78,11 @@ function checkKnowleged(n) {
         ArrInFN.img = e[1]
         ArrInFN.gender = e[2]
         ArrInFN.viewPick = {
-            "header": "Test",
-            "content": "Test",
+            "header": "",
+            "content": "",
             "img": "https://i.postimg.cc/76LB7hKz/icon-Nhiem-Vu.png"
         }
-        let SpeakFirst = ["Hi"]
+        let SpeakFirst = ["What is it mean?"]
         let TestArrPick = pickNRandomElementsOfArray(DataTestKnowleged, 1)
         //Begin
         let ArrBegin = []
@@ -91,25 +91,25 @@ function checkKnowleged(n) {
         )
         //middle
         let input_01_Body = [
-            "0"
-        ]
+                "0"
+            ]
         let input_02_Body = [
-            FnObjHanldingNext([], [])
-        ]
+                FnObjHanldingNext([], [])
+            ]
 
 
         let End = null
         coerdataoflession.push(
-            Fnperson(
-                ArrInFN,
-                DataTable,
-                ArrBegin,
-                FnToArrobj(input_01_Body, input_02_Body),
-                End,
-                SpeakFirst,
-                TestArrPick[0].VN
+                Fnperson(
+                    ArrInFN,
+                    DataTable,
+                    ArrBegin,
+                    FnToArrobj(input_01_Body, input_02_Body),
+                    End,
+                    SpeakFirst,
+                    TestArrPick[0].VN
+                )
             )
-        )
     })
 
 
@@ -173,30 +173,18 @@ function WantToToilet(n) {
         ArrInFN.Submit = []
         ArrInFN.img = e[1]
         ArrInFN.gender = e[2]
-
-
-
         let SpeakFirst = DataTotal2.tar03.M0Excuse
-
-
-        // let ArrNeedToUse = DataTotal2.img.slice(1, 2);
-        // let ToolsArrPick = pickNRandomElementsOfArray(ArrNeedToUse, 1)
-        // let ToolPick = ToolsArrPick[0].name
-
-
-        //Begin
         let ArrBegin = []
         ArrBegin.push(
             FnObjHanldingNext(DataTotal2.tar03["N1Howcan"], DataTotal2.tar05["M0Whichw"])
         )
-        //middle
+
         let input_01_Body = [
             "0"
         ]
         let input_02_Body = [
             FnObjHanldingNext(DataTotal2.tar05["N1Thetoi"], ["Thank you."], objEndSuccefull)
         ]
-
 
         let End = null
         coerdataoflession.push(
