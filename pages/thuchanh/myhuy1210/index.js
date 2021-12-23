@@ -1,12 +1,9 @@
 
 import { useState } from "react";
-import UpLoadFile from "../../../util/mainPlay/S_Uploadfile"
-import InfoLession from "../../../util/mainPlay/S_Lession"
-import GamePlay from "../../../util/mainPlay/S_GamePlay"
-import DL from "../../../util/filedulieu1/DulieuThuchanhlop7/DulieuTotal";
-import DL1 from "../../../util/filedulieu1/DulieuThuchanh_hung/DulieuTotal"
-
-const DLTotal = DL.concat(DL1)
+import UpLoadFile from "../../../util/mainPlayversion2/S_Uploadfile"
+import InfoLession from "../../../util/mainPlayversion2/S_Lession"
+import GamePlay from "../../../util/mainPlayversion2/S_GamePlay"
+import DL from "../../../util/filedulieu1/DulieuThuchanh_hung/DulieuTotal";
 const ShowInterim = true
 
 function Manager() {
@@ -19,7 +16,7 @@ function Manager() {
     const Total = new MDG(SET_PageChange, SET_Data_Game, SET_Data_InfoOflession, SET_huongdan, SET_NameOflession)
     return (
         <div >
-            {PageChange === 0 ? <UpLoadFile Total={Total} DL={DLTotal} />
+            {PageChange === 0 ? <UpLoadFile Total={Total} DL={DL} />
                 : PageChange === 2 ? <InfoLession Data={Data_InfoOflession} Total={Total} />
                     : PageChange === 1 ? <GamePlay Data={Data_Game} huongdan={huongdan} NameOflession={NameOflession} Total={Total} ShowInterim={ShowInterim} />
                         : PageChange}

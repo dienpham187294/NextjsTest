@@ -12,7 +12,7 @@ function UpLoadFile(props) {
             if (arrPick[0].status === "noSort") {
                 props.Total.fnObj.SET_Data_Game(arrPick[1].coerdataoflession)
             } else {
-                props.Total.fnObj.SET_Data_Game(arrPick[1].coerdataoflession.sort(() => 0.5 - Math.random()))
+                props.Total.fnObj.SET_Data_Game(arrPick[1].coerdataoflession.sort())
             }
 
 

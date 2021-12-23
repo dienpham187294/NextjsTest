@@ -263,6 +263,8 @@ ArrPeple.slice(0, 10).forEach(e => {
     )
     coerdataoflession.push(Fnperson(ArrInFN, DataTable, ArrBegin, FnToArrobj(Arrin3, Arrin4), End, SpeakFirst))
 })
+
+
 let listenOnly = []
 let writeOnly = []
 
