@@ -35,7 +35,8 @@ ArrPeple.forEach(e => {
     ArrBegin.push(
         FnObjHanldingNext(
             Data.bai2.N02,
-            ims
+            ims,
+            objEndSuccefull
         )
     )
     let Arrin3 = [
