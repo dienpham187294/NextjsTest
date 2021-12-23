@@ -120,20 +120,6 @@ function showDivMain(
                 </div>
             </div>
         )}
-
-        {/* {DataShowToPick.map((e, i) =>
-            <div key={i}
-                style={{ display: "inline-block", margin: "5px", border: "1px solid green", borderRadius: "5px" }}
-                onClick={() => {
-                    updateDataShowToPick(DataShowToPick, SET_DataShowToPick, lastIndexOfPerson, e)
-                    AddTo_Show_ArrOfPeopeAppear_ReactData(e)
-                    SET_StatusShowToPick(false)
-                    Total.stObj.inputSumit = ""
-                }}
-            >
-                {Show(ArrOfPeopeAppear_ReactData[e].total)}
-            </div>
-        )} */}
     </>
 }
 
@@ -189,6 +175,12 @@ function Show(data) {
             <img src={data.viewPick.img} height="120px" />
         </>
     } catch (error) {
-        return <img src={data.icon} height="120px" />
+
+        if (data.icon !== undefined && data.icon !== "" && data.icon !== null) {
+            return <img src={data.icon} height="120px" />
+        }
+        else {
+            return <img src={"https://i.postimg.cc/VNJf7gXX/person.png"} height="120px" />
+        }
     }
 }

@@ -21,7 +21,7 @@ import showDivReview from "./funtionInside/showDivReview"
 import showDivNext from "./funtionInside/showDivNext"
 import showToPickPerson from "./funtionInside/showToPickPerson"
 import Check_ImageOrNot from "./funtionInside/Check_ImageOrNot"
-
+import showCenterCountDown from "./funtionInside/showCenterCountDown"
 let VoicePick = 1;
 let State_of_Anwer = "none";
 let Data_temp_Strickmode;
@@ -32,6 +32,7 @@ let rateRead = 1.1
 let pitchRead = 1.2
 
 let idMember;
+let iNguoitieptheo, interNguoitieptheo;
 
 let i1 = 0
 let timeCount = 0;
@@ -233,7 +234,22 @@ function ArrOfPeopeAppear_ReactJSX(props) {
 
                 State_of_Anwer = "none";
                 SET_Score(S => S + 1)
-                SET_StatusShowToPick(true)
+
+                $("#divCountdown").show();
+                iNguoitieptheo = 3
+                interNguoitieptheo = setInterval(() => {
+                    iNguoitieptheo -= 1;
+                    $("#countDown").text(iNguoitieptheo)
+                    if (iNguoitieptheo === 0) {
+                        $("#divCountdown").hide();
+                        $("#countDown").text(3)
+                        SET_StatusShowToPick(true)
+                        clearInterval(interNguoitieptheo)
+                    }
+                }, (1000));
+
+
+
 
             }
             if (command.end_unsuccessfull) {
@@ -320,12 +336,12 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                         <div className="GameSence_Playing_OneShow">
                             <div>
                                 <div className="row">
-                                    {showTopLeftPart1(Info_Avatar_Reactdata, ShowInfoHint, Info_Icon_Reactdata, SET_ShowHint, ShowHint)}
                                     {showTopCenter1(
                                         props, showOptionToRead, Score, Info_StrickAnwers_Reactdata,
                                         showSubmitSyxtax, Info_ToSunmit_Reactdata,
                                         Boqua, SET_Score, SET_ShowReview, ArrHoldThingToReview, Sai
                                     )}
+                                    {showTopLeftPart1(Info_Avatar_Reactdata, ShowInfoHint, Info_Icon_Reactdata, SET_ShowHint, ShowHint)}
                                 </div>
                                 <hr />
                                 <div className="row">
@@ -341,6 +357,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                                     props, SET_Boqua, SET_StatusShowToPick
                                 )}
                                 {showDivNext()}
+                                {showCenterCountDown()}
                                 {showDivReview(ShowReview, props, secondToMinutes, timeCount, showReview, SET_ShowReview,
                                     Score, Sai, Boqua)}
 

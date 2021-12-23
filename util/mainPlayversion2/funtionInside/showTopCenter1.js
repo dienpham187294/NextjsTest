@@ -9,12 +9,7 @@ export default function showTopCenter1(
     try {
         return <div className="col-6">
             <div className="row">
-                <div className="col-4">
-                    {showSubmitSyxtax(Info_ToSunmit_Reactdata)}
-                    <span id="complete" style={{ color: "red" }}></span>
-                    <br />
-                    <span style={{ color: "blue" }}>{props.huongdan}</span>
-                </div>
+
                 <div className="col-8">
                     {showOptionToRead(Score, Info_StrickAnwers_Reactdata)}
                     <hr />
@@ -37,6 +32,12 @@ export default function showTopCenter1(
                     >Review</button>
                     <br />
                     {props.ShowInterim ? <span id="showInterimID" style={{ color: "violet" }}></span> : <span id="showInterimID" style={{ color: "violet", backgroundColor: "violet" }}></span>}
+                </div>
+                <div className="col-4">
+                    {showSubmitSyxtax(Info_ToSunmit_Reactdata)}
+                    <span id="complete" style={{ color: "red" }}></span>
+                    <br />
+                    <span style={{ color: "blue" }}>{props.huongdan}</span>
                 </div>
             </div>
         </div>
