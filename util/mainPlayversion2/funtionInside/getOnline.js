@@ -16,14 +16,16 @@ export default async function getOnline(idRoom, idMember, score, SET_DataOnline)
                 body: JSON.stringify({
                     idRoom: idRoom,
                     idMember: idMember,
-                    score: score
+                    info: {
+                        score: score
+                    }
                 })
             })
         let data = await res.json();
         console.log(1)
         if (data.success) {
             SET_DataOnline(data.data)
-            console.log(1)
+            console.log(2)
         }
     } catch (error) {
         console.log(error)
