@@ -45,7 +45,7 @@ export default {
                 "in2": "3"
             },
             {
-                "in1": ["A table for 3"],
+                "in1": ["A table for 4"],
                 "in2": "4"
             },
         ]
@@ -79,7 +79,7 @@ export default {
                 "in2": "3"
             },
             {
-                "in1": ["A table for 3"],
+                "in1": ["A table for 4"],
                 "in2": "4"
             },
         ],
@@ -121,7 +121,7 @@ export default {
                 "in2": "3"
             },
             {
-                "in1": ["A table for 3"],
+                "in1": ["A table for 4"],
                 "in2": "4"
             },
         ],

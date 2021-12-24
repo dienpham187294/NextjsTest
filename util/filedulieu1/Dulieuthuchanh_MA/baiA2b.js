@@ -8,33 +8,31 @@ import FnToArrobj from "../dataHelperFunction/FnToArrobj"
 import objEndSuccefull from "../dataHelperFunction/objEndSuccefull"
 
 
-import MA1 from "./Dulieuinside/MA1"
+import MA2 from "./Dulieuinside/MA2"
 
 let DataTable = []
 let coerdataoflession = []
 
 DataTable.push(
-    getElementsToDataTable(MA1.ENVN, "EN")
+    getElementsToDataTable(MA2["QSAW"], "AW", "-")
 )
 
-ArrPeple.forEach((e, ie) => {
+ArrPeple.forEach(e => {
 
     let ArrInFN = {}
     ArrInFN.Submit = []
     ArrInFN.img = e[1]
     ArrInFN.gender = e[2]
+    let i1 = getRandomi(MA2.QSAW)
 
-
-    let i1 = ie % MA1.ENVN.length
-
-    let SpeakFirst = ["Hi"]
+    let SpeakFirst = [MA2.QSAW[i1].QS]
 
     let ArrBegin = []
 
 
 
     ArrBegin.push(
-        FnObjHanldingNext([MA1.ENVN[i1].EN], ["Good."], objEndSuccefull)
+        FnObjHanldingNext([MA2.QSAW[i1].AW], ["Good."], objEndSuccefull)
     )
 
     //middle
@@ -56,20 +54,18 @@ ArrPeple.forEach((e, ie) => {
             ArrBegin,
             FnToArrobj(Arrin3, Arrin4),
             End,
-            SpeakFirst,
-            MA1.ENVN[i1].VN
+            SpeakFirst
         )
     )
 })
 
-
 let storyBoicanh = `Tìm hiểu về mua bán và sáp nhập.`
-let story = `Tổng quan`
-const BaiA1a
+let story = `Mergers & DD`
+const BaiA2b
 
     = [
         {
-            "nameoflession": "B.1.a",
+            "nameoflession": "B.2.b",
             "srcYoutube": "",
             "storyBoicanh": storyBoicanh,
             "story": story,
@@ -78,12 +74,13 @@ const BaiA1a
                 "listenOnly": [],
                 "writeOnly": []
             },
-            "status": "noSort",
+            "status": "",
         },
         {
             "coerdataoflession": coerdataoflession
         }
     ]
 
-export default BaiA1a
+export default BaiA2b
+
 

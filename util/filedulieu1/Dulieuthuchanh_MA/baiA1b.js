@@ -58,9 +58,7 @@ ArrPeple.forEach(e => {
         )
     )
 })
-let hoctap = []
-let listenOnly = []
-let writeOnly = []
+
 
 let storyBoicanh = `Tìm hiểu về mua bán và sáp nhập.`
 let story = `Tổng quan`
@@ -73,9 +71,9 @@ const BaiA1b
             "storyBoicanh": storyBoicanh,
             "story": story,
             "hoctap": {
-                "listenRead": hoctap,
-                "listenOnly": listenOnly,
-                "writeOnly": writeOnly
+                "listenRead": [],
+                "listenOnly": [],
+                "writeOnly": []
             },
             "status": "",
         },
