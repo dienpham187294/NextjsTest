@@ -1,9 +1,9 @@
 
 import { useState } from "react";
-import UpLoadFile from "../../../util/mainPlayversion2/S_Uploadfile"
-import InfoLession from "../../../util/mainPlayversion2/S_Lession"
-import GamePlay from "../../../util/mainPlayversion2/S_GamePlay"
-import DL from "../../../util/filedulieu1/DulieuThuchanh_nhahang/DulieuTotal";
+import UpLoadFile from "../../../util/mainPlayversion3withPIXIJS/S_Uploadfile"
+import InfoLession from "../../../util/mainPlayversion3withPIXIJS/S_Lession"
+import GamePlay from "../../../util/mainPlayversion3withPIXIJS/S_GamePlay"
+import DL from "../../../util/filedulieu1/Dulieuthuchanh_version3/DulieuTotal";
 const ShowInterim = true
 
 function Manager() {
@@ -20,6 +20,12 @@ function Manager() {
                 : PageChange === 2 ? <InfoLession Data={Data_InfoOflession} Total={Total} />
                     : PageChange === 1 ? <GamePlay Data={Data_Game} huongdan={huongdan} NameOflession={NameOflession} Total={Total} ShowInterim={ShowInterim} />
                         : PageChange}
+
+            <div>
+                <div id="ID_objPixjSpriteIntinial"></div>
+                <div id="ID_objPixjSpriteUse"></div>
+                <div id="ID_objMapPixijs"></div>
+            </div>
         </div>
 
     )

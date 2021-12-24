@@ -1,42 +1,21 @@
 import React, { useRef, useEffect, useState } from "react";
-import { async } from "regenerator-runtime";
 import GetFinal from "../../util/rarely_use/GetFinal"
-import SetAlert from "../../util/rarely_use/SetAlert"
-import Read_ReactSpeech from "../helpers/Read_ReactSpeech"
 import arrNPC from "../../util/game/arrNpc"
-import Dictaphone from "../helpers/RegcognitionV1-0-1AI"
-import Show_RightSide from "../../util/game/showrightside"
-import Xuly from "../../util/game/xuly"
-import Xylyhandling from "../../util/game/xulyhandling"
-import ButtonDictaphone from "../../util/game/ButtonDictaphone"
-
 let arrLocation = [{ x: 0, y: 0 }];
-let arrXuly = [{}]
-let Arrhandling_next = ["none"];
-
 function MyComponent() {
     const ref = useRef(null);
-    const [ShowSide, SET_ShowSide] = useState("")
-    const [AlertChange, SET_AlertChange] = useState(0)
-    //////////
-    const [Data_Commands, SET_Data_Commands] = useState(["hi first"])
-    const [Check_MessageApiChange, SET_Check_MessageApiChange] = useState(0)
-    const [Data_handlingNext, SET_Data_handlingNext] = useState([])
-
-    const [ImageLeftSide, SET_ImageLeftSide] = useState("")
-    //////////
     useEffect(() => {
         // On first render create our application
         try {
             const PIXI = require("pixi.js");
             const { Application } = require("pixi.js");
             const app = new Application({
-                width: 600,
+                width: 1200,
                 height: 600,
                 backgroundColor: "tranparent"
             });
             let bg = PIXI.Sprite.from('https://i.postimg.cc/VkTnKBrp/MapGame.jpg')
-            bg.width = 600;
+            bg.width = 1200;
             bg.height = 600;
             app.stage.addChild(bg);
             app.interactive = true;
@@ -98,11 +77,7 @@ function MyComponent() {
                                 (GetFinal(arrLocation)["y"] > e.y) &&
                                 (GetFinal(arrLocation)["y"] < e.y + e.height)
                             ) {
-                                arrXuly.push(e.xuly)
-                                Arrhandling_next.push(e.xuly["handling_next"])
-                                SET_Data_handlingNext(e.xuly["handling_next"])
-                                SET_ImageLeftSide(e.xuly["Showhinh"])
-                                Xuly(SET_ShowSide, SetAlert, SET_Data_Commands, arrXuly, SET_AlertChange, SET_ImageLeftSide)
+
                             }
                         })
                         ticker.stop();
@@ -125,40 +100,16 @@ function MyComponent() {
         }
     }, []);
 
-    useEffect(() => {
-        let MessageApi = $("#messageRes").val()
-        Xylyhandling(MessageApi, GetFinal(Arrhandling_next), Data_handlingNext, SET_Data_handlingNext, SET_Data_Commands, SET_ImageLeftSide)
-    }, [Check_MessageApiChange])
+
 
     return (
         <div style={{ width: "100%", textAlign: "center", marginTop: "10px" }}>
-
-            <hr />
             <div ref={ref} />
-            <hr />
-            <div style={{
-                position: "fixed",
-                width: "300px",
-                left: "1px",
-                top: "100px",
-                zIndex: 1
-            }}>
-                <Dictaphone Data={Data_Commands} />
-                {ButtonDictaphone(SetAlert, SET_Check_MessageApiChange)}
-            </div>
-            <hr />
-            {ShowSide === "" ? "" :
-                Show_RightSide({ SET_ShowSide, arrXuly, Data_Commands, ImageLeftSide })
-            }
-            <Read_ReactSpeech />
         </div>
     )
 }
 
 export default MyComponent
 
-Array.prototype.PickRandom = function () {
-    return this[Math.floor(Math.random() * this.length)];
-}
 
 

@@ -71,49 +71,49 @@ export default Bai26
 
 
 
-function checkKnowleged(n) {
-    ArrPeple.slice(0, n).forEach(e => {
-        let ArrInFN = {}
-        ArrInFN.Submit = []
-        ArrInFN.img = e[1]
-        ArrInFN.gender = e[2]
-        ArrInFN.viewPick = {
-            "header": "What is it mean?",
-            "content": "",
-            "img": "https://i.postimg.cc/76LB7hKz/icon-Nhiem-Vu.png"
-        }
-        let SpeakFirst = ["What is it mean?"]
-        let TestArrPick = pickNRandomElementsOfArray(DataTestKnowleged, 1)
-        //Begin
-        let ArrBegin = []
-        ArrBegin.push(
-            FnObjHanldingNext([TestArrPick[0].EN], ["Good"], objEndSuccefull)
-        )
-        //middle
-        let input_01_Body = [
-            "0"
-        ]
-        let input_02_Body = [
-            FnObjHanldingNext([], [])
-        ]
+// function checkKnowleged(n) {
+//     ArrPeple.slice(0, n).forEach(e => {
+//         let ArrInFN = {}
+//         ArrInFN.Submit = []
+//         ArrInFN.img = e[1]
+//         ArrInFN.gender = e[2]
+//         ArrInFN.viewPick = {
+//             "header": "What is it mean?",
+//             "content": "",
+//             "img": "https://i.postimg.cc/76LB7hKz/icon-Nhiem-Vu.png"
+//         }
+//         let SpeakFirst = ["What is it mean?"]
+//         let TestArrPick = pickNRandomElementsOfArray(DataTestKnowleged, 1)
+//         //Begin
+//         let ArrBegin = []
+//         ArrBegin.push(
+//             FnObjHanldingNext([TestArrPick[0].EN], ["Good"], objEndSuccefull)
+//         )
+//         //middle
+//         let input_01_Body = [
+//             "0"
+//         ]
+//         let input_02_Body = [
+//             FnObjHanldingNext([], [])
+//         ]
 
 
-        let End = null
-        coerdataoflession.push(
-            Fnperson(
-                ArrInFN,
-                DataTable,
-                ArrBegin,
-                FnToArrobj(input_01_Body, input_02_Body),
-                End,
-                SpeakFirst,
-                TestArrPick[0].VN
-            )
-        )
-    })
+//         let End = null
+//         coerdataoflession.push(
+//             Fnperson(
+//                 ArrInFN,
+//                 DataTable,
+//                 ArrBegin,
+//                 FnToArrobj(input_01_Body, input_02_Body),
+//                 End,
+//                 SpeakFirst,
+//                 TestArrPick[0].VN
+//             )
+//         )
+//     })
 
 
-}
+// }
 
 
 
