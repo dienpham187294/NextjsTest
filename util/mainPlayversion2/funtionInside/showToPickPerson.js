@@ -127,7 +127,7 @@ function showDivMain(
 
 
 function updateDataShowToPick(DataShowToPick, SET_DataShowToPick, lastIndexOfPerson, index) {
-    lastIndexOfPerson = DataShowToPick[DataShowToPick.length - 1];
+    let numI = DataShowToPick[DataShowToPick.length - 1];
 
     let ArrNew = [];
     DataShowToPick.forEach(e => {
@@ -140,31 +140,24 @@ function updateDataShowToPick(DataShowToPick, SET_DataShowToPick, lastIndexOfPer
     let Arr2 = [2, 2]
     let Arr3 = [3, 3]
 
+    let lengthOfNow = ArrNew.length
     try {
-        if (ArrNew.length === 0) {
-            let needToAdd = PickRandom([Arr1, Arr2, Arr3]);
-            needToAdd.forEach((e, i) => {
-                ArrNew.push(lastIndexOfPerson + i)
+        if (lengthOfNow === 0) {
+            PickRandom([Arr1, Arr2, Arr3]).forEach((e, i) => {
+                ArrNew.push(numI + i + 1)
             })
         }
-        if (ArrNew.length === 1) {
-            let needToAdd = PickRandom([Arr0, Arr1, Arr2]);
-            needToAdd.forEach((e, i) => {
-                ArrNew.push(lastIndexOfPerson + i)
-            })
-        }
-        if (ArrNew.length === 0) {
-            let needToAdd = PickRandom([Arr0, Arr1]);
-            needToAdd.forEach((e, i) => {
-                ArrNew.push(lastIndexOfPerson + i)
+
+        if (lengthOfNow === 1) {
+            PickRandom([Arr1, Arr2]).forEach((e, i) => {
+                ArrNew.push(numI + i + 1)
             })
         }
 
         SET_DataShowToPick(ArrNew)
 
-
     } catch (error) {
-
+        console.log(error)
     }
 
 }

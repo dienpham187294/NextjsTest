@@ -7,8 +7,6 @@ let iCheck = true
 let iNext = "none";
 let time = Date.now()
 let ArrSprite = {}
-
-
 function PixiJSDiv() {
     const Data_objMapPixi = JSON.parse($("#ID_objMapPixijs").text())
     const ref = useRef(null);
@@ -142,9 +140,6 @@ function PixiJSDiv() {
                             let dataobjPixjSprite = JSON.parse($("#ID_objPixjSpriteUse").text())
                             BtnAddData(dataobjPixjSprite[iNext[0]][iNext[1]])
                             ArrSprite[iNext[0]][iNext[1]].visible = false
-                            sprite.x += 99;
-
-
                         }
                         setTimeout(() => {
                             let dataobjPixjSprite = JSON.parse($("#ID_objPixjSpriteUse").text())
