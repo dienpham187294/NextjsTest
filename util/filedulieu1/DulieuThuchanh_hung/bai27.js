@@ -12,6 +12,8 @@ import Drinks from "./DulieuInside/A1_drinks"
 
 import DataTestKnowleged from "./DulieuInside/A1_knowleged01"
 
+import shuffleArr from "../dataHelperFunction/shuffleArr"
+
 import Bai23 from "./bai23"
 import Bai24 from "./bai24"
 // console.log(convertArrToObjSource(
@@ -69,7 +71,7 @@ const Bai27
             "status": "",
         },
         {
-            "coerdataoflession": coerdataoflession
+            "coerdataoflession": shuffleArr(coerdataoflession)
         }
     ]
 
