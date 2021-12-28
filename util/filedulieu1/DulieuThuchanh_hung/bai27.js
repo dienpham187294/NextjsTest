@@ -16,13 +16,7 @@ import shuffleArr from "../dataHelperFunction/shuffleArr"
 
 import Bai23 from "./bai23"
 import Bai24 from "./bai24"
-// console.log(convertArrToObjSource(
-//     [["Which way do I go to the toilet?",
-//         "Where's the toilet?",
-//     ], ["The toilet is at the end of the hallway.",
-//     ], ["Thank you.",
-//     ]]
-// ))
+
 let DataTable = []
 
 let coerdataoflession = [].concat(Bai23[1].coerdataoflession, Bai24[1].coerdataoflession)
@@ -59,7 +53,7 @@ const Bai27
 
     = [
         {
-            "nameoflession": "B.3.0",
+            "nameoflession": "B.3.1",
             "srcYoutube": "",
             "storyBoicanh": storyBoicanh,
             "story": story,
@@ -118,8 +112,6 @@ function checkKnowleged(n) {
             )
         )
     })
-
-
 }
 
 
@@ -292,8 +284,6 @@ function WantOrderDrink(n, CoreData, Drinks) {
             )
         )
     })
-
-
 }
 
 

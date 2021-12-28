@@ -290,46 +290,46 @@ function ArrOfPeopeAppear_ReactJSX(props) {
         }
 
 
-        try {
+        if (JSON.stringify(data.total.submit) !== "[[]]") {
+            try {
+                data.total.submit.forEach((eee, i) => {
+                    let status_check_submit = true
+                    eee.forEach((ee, ii) => {
+                        let text = ee;
+                        if (typeof (ee) === "string") {
+                            text = ee.toLowerCase()
+                        }
+                        if (e.toLowerCase().indexOf(text) === -1) {
+                            status_check_submit = false
+                        } else {
+                            Check_ImageOrNot(ee) ?
+                                $("#ct1" + i + ii).html(
+                                    `<img src="` + ee + `" height="50px" />`
+                                )
+                                : $("#ct1" + i + ii).html(ee);
+                        }
+                    })
 
-
-            data.total.submit.forEach((eee, i) => {
-                let status_check_submit = true
-                eee.forEach((ee, ii) => {
-                    let text = ee;
-                    if (typeof (ee) === "string") {
-                        text = ee.toLowerCase()
-                    }
-                    if (e.toLowerCase().indexOf(text) === -1) {
-                        status_check_submit = false
-                    } else {
-                        Check_ImageOrNot(ee) ?
-                            $("#ct1" + i + ii).html(
-                                `<img src="` + ee + `" height="50px" />`
-                            )
-                            : $("#ct1" + i + ii).html(ee);
+                    if (status_check_submit) {
+                        if (data.end !== null && data.end.handling_next !== null) {
+                            Data_temp_Strickmode = (data.end.handling_next);
+                            let arrTemp = []
+                            data.end.handling_next.forEach(e => {
+                                Submit_check_funtion_indata_01(e.function)
+                                e.manspeak.forEach(ee => {
+                                    arrTemp.push(ee)
+                                })
+                            })
+                            SET_Info_StrickAnwers_Reactdata(arrTemp);
+                            $("#complete").html("<b>Done!</b>")
+                        } else {
+                            Submit_check_funtion_indata({ end_successfull: true })
+                        }
                     }
                 })
-
-                if (status_check_submit) {
-                    if (data.end !== null && data.end.handling_next !== null) {
-                        Data_temp_Strickmode = (data.end.handling_next);
-                        let arrTemp = []
-                        data.end.handling_next.forEach(e => {
-                            Submit_check_funtion_indata_01(e.function)
-                            e.manspeak.forEach(ee => {
-                                arrTemp.push(ee)
-                            })
-                        })
-                        SET_Info_StrickAnwers_Reactdata(arrTemp);
-                        $("#complete").html("<b>Done!</b>")
-                    } else {
-                        Submit_check_funtion_indata({ end_successfull: true })
-                    }
-                }
-            })
-        } catch (error) {
-            console.log(error)
+            } catch (error) {
+                console.log(error)
+            }
         }
     }
 

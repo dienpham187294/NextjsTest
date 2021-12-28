@@ -2,6 +2,8 @@ import { useState } from "react"
 import Check_ImageOrNot from "./funtionInside/Check_ImageOrNot"
 function DataTool(props) {
     const [Data_phongto, SET_Data_phongto] = useState(null)
+
+
     try {
         return (
             <>
@@ -18,72 +20,64 @@ export default DataTool
 
 
 function Show_Table(Data, Total, SET_Data_phongto) {
-
-   
     try {
-        return Data.map((e, index) =>
-            <div key={index} style={{ maxHeight: "250px", overflow: "auto" }}>
-                <div >
-                    {e.dataoftable.map((eee, indexeee) =>
+        return <div style={{ maxHeight: "250px", overflow: "auto" }}>
+            <div >
+                {Data.map((eee, indexeee) =>
+                    <div
+                        key={indexeee}
+                        style={{
+                            display: "inline-block",
+                            cursor: "pointer",
+                            border: "1px solid green",
+                            borderRadius: "5px", padding: "5px",
+                            backgroundColor: "white",
+                            margin: "5px",
+                            height: "150px",
+                            width: "150px",
+                            overflowY: "auto",
+                            textAlign: "left"
+                        }}>
+                        <button
+                            className="btn btn-sm btn-outline-primary"
+                            onClick={() => {
+                                SET_Data_phongto(eee)
+                            }}
+                        >Phóng to</button>
+                        {eee.map((eeee, indexeeee) =>
+                            <div
+                                key={indexeeee}
+                            >
+                                {Check_ImageOrNot(eeee) ?
+                                    <img
+                                        onClick={() => {
+                                            Total.stObj.inputSumit += "===" + eeee;
+                                            Total.fnObj.SET_Info_Icon_Reactdata(eeee)
+                                            Total.fnObj.Submit_Show_OnePeopeAppear_ReactData(Total.stObj.inputSumit)
 
-                        <div
-                            key={indexeee}
-                            style={{
-                                display: "inline-block",
-                                cursor: "pointer",
-                                border: "1px solid green",
-                                borderRadius: "5px", padding: "5px",
-                                backgroundColor: "white",
-                                margin: "5px",
-                                height: "150px",
-                                width: "150px",
-                                overflowY: "auto",
-                                textAlign: "left"
-                            }}>
-                            <button
-                                className="btn btn-sm btn-outline-primary"
-                                onClick={() => {
-                                    SET_Data_phongto(eee)
-                                }}
-                            >Phóng to</button>
-                            {eee.map((eeee, indexeeee) =>
-                                <div
-                                    key={indexeeee}
-                                >
-                                    {Check_ImageOrNot(eeee) ?
-                                        <img
-                                            onClick={() => {
-                                                Total.stObj.inputSumit += "===" + eeee;
-                                                Total.fnObj.SET_Info_Icon_Reactdata(eeee)
-                                                Total.fnObj.Submit_Show_OnePeopeAppear_ReactData(Total.stObj.inputSumit)
+                                        }}
+                                        src={eeee} width="150px" style={{ margin: "5px 0px" }} /> :
+                                    <span
+                                        onClick={() => {
+                                            Total.stObj.inputSumit += "===" + eeee;
+                                            Total.fnObj.SET_Info_Icon_Reactdata(eeee)
+                                            Total.fnObj.Submit_Show_OnePeopeAppear_ReactData(Total.stObj.inputSumit)
+                                        }}
+                                    >{eeee}</span>
+                                }
+                                < br />
+                            </div>
 
-                                            }}
-                                            src={eeee} width="150px" style={{ margin: "5px 0px" }} /> :
-                                        <span
-                                            onClick={() => {
-                                                Total.stObj.inputSumit += "===" + eeee;
-                                                Total.fnObj.SET_Info_Icon_Reactdata(eeee)
-                                                Total.fnObj.Submit_Show_OnePeopeAppear_ReactData(Total.stObj.inputSumit)
-                                            }}
-                                        >{eeee}</span>
-                                    }
-                                    < br />
-                                </div>
+                        )}
+                    </div>
+                )}
+            </div>
 
-                            )}
-                        </div>
-
-
-
-                    )}
-                </div>
-
-            </div >
-        )
+        </div >
 
     } catch (error) {
-
-        return null
+        console.log(error)
+        return "null"
     }
 
 }
@@ -113,7 +107,7 @@ function ShowDataPhongto(dataRoot, data, Total, SET_Data_phongto) {
                     <div key={index} style={{ position: "fixed", top: "20%" }}>
                         <div
                         >
-                            {e.dataoftable.map((eee, indexeee) =>
+                            {e.map((eee, indexeee) =>
                                 <div
                                     key={indexeee}
                                     style={{
@@ -146,9 +140,6 @@ function ShowDataPhongto(dataRoot, data, Total, SET_Data_phongto) {
                     onClick={() => { SET_Data_phongto(null) }}
                     style={{ position: "fixed", top: "20%", right: "20%" }}
                 >Trở lại</button>
-
-
-
                 {
                     data.map((eeee, indexeeee) =>
                         <div

@@ -1,36 +1,44 @@
 import React, { useEffect, useState } from "react";
 import $ from "jquery"
-
 import DataTool from "./S_Data_tool"
 import ReadReactSpeech from "../../pages/helpers/Read_ReactSpeechSlow"
 import ReadMessage from "../Read/ReadMessage"
 import showDataGameOnline from "./showDataGameOnline"
 import secondToMinutes from "../filedulieu1/dataHelperFunction/secondToMinutes";
-import SortLetter from "./funtionInside/SortLetter";
 import inter from "./funtionInside/inter";
 import checkMessageReturnNumber from "./funtionInside/checkMessageReturnNumber"
 import PickRandom from "./funtionInside/PickRandom"
-import Check_ImageOrNot from "./funtionInside/Check_ImageOrNot"
 import showReview from "./funtionInside/showReview"
 import ShowInfoHint from "./funtionInside/ShowInfoHint"
 import showSubmitSyxtax from "./funtionInside/showSubmitSyxtax"
 import getOnline from "./funtionInside/getOnline"
-
-
+import showHintPartWhenOpenTool from "./funtionInside/showHintPartWhenOpenTool"
+import showOptionToRead from "./funtionInside/showOptionToRead"
+import showTopLeftPart1 from "./funtionInside/showTopLeftPart1"
+import showTopCenter1 from "./funtionInside/showTopCenter1"
+import showBottomPart1 from "./funtionInside/showBottomPart1"
+import showDivReview from "./funtionInside/showDivReview"
+import showDivNext from "./funtionInside/showDivNext"
+import showToPickPerson from "./funtionInside/showToPickPerson"
+import Check_ImageOrNot from "./funtionInside/Check_ImageOrNot"
+import showCenterCountDown from "./funtionInside/showCenterCountDown"
 let VoicePick = 1;
 let State_of_Anwer = "none";
 let Data_temp_Strickmode;
 let AllData_OfOne;
 
-let interNguoitieptheo, iNguoitieptheo;
+
 let rateRead = 1.1
 let pitchRead = 1.2
 
 let idMember;
-let interOnline;
+let iNguoitieptheo, interNguoitieptheo;
+
 let i1 = 0
 let timeCount = 0;
 let ArrHoldThingToReview = [];
+
+
 function ArrOfPeopeAppear_ReactJSX(props) {
 
     const [Info_StrickAnwers_Reactdata, SET_Info_StrickAnwers_Reactdata] = useState(["hi how are you"])
@@ -40,11 +48,12 @@ function ArrOfPeopeAppear_ReactJSX(props) {
     const [Score, SET_Score] = useState(0)
     const [Sai, SET_Sai] = useState(0)
     const [Boqua, SET_Boqua] = useState(0)
-    const [Data_TableTool, SET_Data_TableTool] = useState([])
-    const [RoomOnline, SET_RoomOnline] = useState("")
+    // const [Data_TableTool, SET_Data_TableTool] = useState([])
     const [DataOnline, SET_DataOnline] = useState([])
     const [ShowHint, SET_ShowHint] = useState(false)
     const [ShowReview, SET_ShowReview] = useState("")
+    const [StatusShowToPick, SET_StatusShowToPick] = useState(true)
+    const [DataShowToPick, SET_DataShowToPick] = useState([0, 1, 2])
     useEffect(() => {
         props.SET_Data_Commands(Info_StrickAnwers_Reactdata)
         if (i1 === 0) {
@@ -65,11 +74,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
 
     }, [Info_StrickAnwers_Reactdata])
 
-    useEffect(() => {
-        try {
-            getOnline(props.NameOflession, idMember, Score, SET_DataOnline)
-        } catch (error) { console.log(error) }
-    }, [Score])
+
 
 
     useEffect(
@@ -83,14 +88,17 @@ function ArrOfPeopeAppear_ReactJSX(props) {
             props.Total.fnObj.SET_ShowHint = SET_ShowHint
             props.Total.fnObj.SET_Info_Icon_Reactdata = SET_Info_Icon_Reactdata
             props.Total.fnObj.getOnline = function () {
-                getOnline(props.NameOflession, idMember, Score, SET_DataOnline)
+                try {
+                    getOnline(props.NameOflession, idMember, Score, SET_DataOnline)
+                } catch (error) { console.log(error) }
             }
-            AddTo_Show_ArrOfPeopeAppear_ReactData(0)
         }, []
     );
 
 
-
+    // useEffect(() => {
+    //     props.Total.fnObj.getOnline()
+    // }, [Score])
 
     function Xuly(Info_message) {
         try {
@@ -155,7 +163,6 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                         if (data.icon !== undefined && data.icon !== "") {
                             SET_Info_Icon_Reactdata(data.icon)
                         }
-
                         Submit_check_funtion_indata(data.function);
                     }
 
@@ -166,11 +173,8 @@ function ArrOfPeopeAppear_ReactJSX(props) {
         }
     }
 
-
-    /*BEGIN ARR TO SHOW */
     async function AddTo_Show_ArrOfPeopeAppear_ReactData(index) {
         try {
-
             // console.log(index, props.ArrOfPeopeAppear_ReactData[index]);
             if (props.ArrOfPeopeAppear_ReactData[index] !== undefined) {
                 props.ArrOfPeopeAppear_ReactData[index].total.status = false;
@@ -185,7 +189,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                     })
                 })
 
-                SET_Data_TableTool(props.ArrOfPeopeAppear_ReactData[index].total.Tabletool)
+                // SET_Data_TableTool(props.ArrOfPeopeAppear_ReactData[index].total.Tabletool)
 
                 SET_Info_StrickAnwers_Reactdata(Arr_HoldAllManSpeak)
                 await SET_Avatar_Reactdata(n.total.image);
@@ -227,8 +231,10 @@ function ArrOfPeopeAppear_ReactJSX(props) {
     function Submit_check_funtion_indata(command) {
         try {
             if (command.end_successfull) {
+
                 State_of_Anwer = "none";
                 SET_Score(S => S + 1)
+
                 $("#divCountdown").show();
                 iNguoitieptheo = 3
                 interNguoitieptheo = setInterval(() => {
@@ -237,10 +243,14 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                     if (iNguoitieptheo === 0) {
                         $("#divCountdown").hide();
                         $("#countDown").text(3)
-                        $("#btnNguoitieptheo")[0].click();
+                        SET_StatusShowToPick(true)
                         clearInterval(interNguoitieptheo)
                     }
                 }, (1000));
+
+
+
+
             }
             if (command.end_unsuccessfull) {
                 State_of_Anwer = "none";
@@ -252,18 +262,19 @@ function ArrOfPeopeAppear_ReactJSX(props) {
 
     }
     function Submit_Show_OnePeopeAppear_ReactData(e) {
-
         let data = AllData_OfOne
 
+
+
+
         try {
+
+
+
             let status = false
             let n = e.split("===").slice(-1)[0]
-
-
-            // console.log([0].indexOf("Elizabeth"))
             data.total.submit.forEach(e => {
                 if (e.includes(n)) {
-                    // console.log(e, n)
                     status = true
                 }
             })
@@ -272,7 +283,6 @@ function ArrOfPeopeAppear_ReactJSX(props) {
             }
         } catch (error) {
         }
-
 
         if (JSON.stringify(data.total.submit) !== "[[]]") {
             try {
@@ -315,28 +325,9 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                 console.log(error)
             }
         }
+
     }
 
-    function Show_Info_StrickAnwers_Reactdata() {
-        try {
-            if (Score < 3) {
-                return Info_StrickAnwers_Reactdata.map((e, index) =>
-                    <span className="Span_Show_Info_StrickAnwers_Reactdata" key={index}>{e} <b style={{ backgroundColor: "black" }}>||</b> </span>
-                )
-            }
-            // else if (Score < 6) {
-            //     return Info_StrickAnwers_Reactdata.map((e, index) =>
-            //         <span className="Span_Show_Info_StrickAnwers_Reactdata" key={index}>{SortLetter(e)} <b style={{ backgroundColor: "black" }}>||</b> </span>
-            //     )
-            // } 
-            else {
-                return null
-            }
-        } catch (error) {
-            console.log(error)
-        }
-        return null
-    }
 
 
 
@@ -351,160 +342,30 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                         <div className="GameSence_Playing_OneShow">
                             <div>
                                 <div className="row">
-                                    <div className="col-4">
-                                        <img
-
-                                            alt={Info_Avatar_Reactdata} src={Info_Avatar_Reactdata} width="160px"
-                                            // onMouseOver={() => { SET_ShowHint(true) }}
-                                            // onMouseOut={() => { SET_ShowHint(false) }}
-                                            onClick={() => { SET_ShowHint(!ShowHint) }}
-                                        />
-
-                                        {ShowInfoHint(Info_Icon_Reactdata)}
-                                        <div id="showDivInHint"></div>
-
-                                    </div>
-                                    <div className="col-6">
-                                        <br />
-                                        {Show_Info_StrickAnwers_Reactdata()}
-                                        <hr />
-                                        <div className="row">
-                                            <div className="col-6">
-                                                {showSubmitSyxtax(Info_ToSunmit_Reactdata)}
-                                                <span id="complete" style={{ color: "red" }}></span>
-                                                <br />
-                                                <span style={{ color: "blue" }}>{props.huongdan}</span>
-
-
-                                            </div>
-                                            <div className="col-6">
-                                                <b> Điểm: {Score} <span style={{ color: "red" }}>Chọn sai: {Sai} </span> | <span style={{ color: "red" }}>{Boqua}</span> </b>
-
-
-                                                <span id="thoigian"></span>
-
-                                                <button
-                                                    className="btn btn-sm btn-primary ml-1"
-                                                    onClick={() => {
-                                                        timeCount = 1;
-                                                        SET_Score(0);
-
-                                                    }}
-                                                >Reset</button>
-
-                                                <button
-                                                    className="btn btn-sm btn-primary ml-1"
-                                                    onClick={() => {
-                                                        SET_ShowReview(ArrHoldThingToReview)
-                                                    }}
-                                                >Review</button>
-                                                <br />
-                                                {props.ShowInterim ? <span id="showInterimID" style={{ color: "violet" }}></span> : <span id="showInterimID" style={{ color: "violet", backgroundColor: "violet" }}></span>}
-                                            </div>
-                                        </div>
-                                    </div>
+                                    {showTopCenter1(
+                                        props, showOptionToRead, Score, Info_StrickAnwers_Reactdata,
+                                        showSubmitSyxtax, Info_ToSunmit_Reactdata,
+                                        Boqua, SET_Score, SET_ShowReview, ArrHoldThingToReview, Sai
+                                    )}
+                                    {showTopLeftPart1(Info_Avatar_Reactdata, ShowInfoHint, Info_Icon_Reactdata, SET_ShowHint, ShowHint)}
                                 </div>
-
                                 <hr />
-
-                                {/* <hr /> */}
                                 <div className="row">
-                                    <div className="col-12">
-                                        <b>Công cụ: </b>
-                                        <DataTool Data={Data_TableTool} Total={props.Total} />
+                                    <div className="col-4">
+                                        {showDataGameOnline(DataOnline, props.Total)}
                                     </div>
-
+                                    <div className="col-8" style={{ textAlign: "left" }}>
+                                        <DataTool Data={props.DataToolR} Total={props.Total} />
+                                    </div>
                                 </div>
-
                                 <hr />
-
-                                {showDataGameOnline(DataOnline, props.Total)}
-                                <br />
-                                <div
-                                    style={{
-                                        position: "fixed",
-                                        bottom: "1%",
-                                        left: "10%",
-                                        width: "80%",
-                                        textAlign: "right",
-                                        backgroundColor: "white",
-
-                                    }}
-                                >
-                                    <button
-                                        className="btn btn-outline-danger ml-3"
-                                        style={{
-                                            float: "left"
-                                        }}
-                                        onClick={() => {
-                                            // console.log(props.Total)
-                                            props.Total.fnObj.SET_PageChange(0)
-                                            try {
-                                                $("#idStopLisening")[0].click()
-                                                clearInterval(interOnline)
-                                            } catch (error) {
-
-                                            }
-                                        }}
-                                    >Chọn bài</button>
-                                    <a className="mr-5" href="https://forms.gle/JZWwQNx4XP8fDken9">Phiếu khảo sát</a>
-
-
-
-
-                                    <button
-                                        className="btn btn-outline-primary ml-3"
-                                        id="btnNguoitieptheo"
-                                        onClick={() => {
-                                            SET_Boqua(B => B + 1)
-                                            $("#complete").html("")
-                                            $("#showbtnNext").hide()
-                                            props.Total.stObj.inputSumit = ""
-                                            props.Total.stObj.indexOfPeople += 1
-                                            props.Total.fnObj.AddTo_Show_ArrOfPeopeAppear_ReactData(props.Total.stObj.indexOfPeople)
-                                        }}
-                                    >Next</button>
-
-
-                                </div>
-
-                                <div style={{
-                                    position: "fixed",
-                                    top: "10%",
-                                    bottom: "10%",
-                                    right: "10%",
-                                    left: "10%",
-                                    backgroundColor: "white",
-                                    opacity: "0.9",
-                                    textAlign: "center",
-                                    display: "none"
-                                }}
-                                    id="divCountdown"
-                                >
-                                    <h1 style={{ color: "red" }}>Next...   <span id="countDown">3</span></h1>
-
-                                </div>
-
-                                {ShowReview !== "" ?
-                                    <div style={{
-                                        position: "fixed",
-                                        top: "2%",
-                                        bottom: "2%",
-                                        right: "2%",
-                                        left: "2%",
-                                        backgroundColor: "white",
-                                        overflow: "auto",
-                                        textAlign: "left"
-                                    }}>
-                                        Bài: {props.NameOflession}
-
-                                        <b> Điểm: {Score} <span style={{ color: "red" }}>Chọn sai: {Sai} </span> | <span style={{ color: "red" }}>{Boqua}</span> </b>
-                                        <span>{secondToMinutes(timeCount)}</span>
-
-                                        <hr />
-                                        {showReview(ShowReview, SET_ShowReview)}
-                                    </div>
-                                    : null}
+                                {showBottomPart1(
+                                    props, SET_Boqua, SET_StatusShowToPick
+                                )}
+                                {showDivNext()}
+                                {showCenterCountDown()}
+                                {showDivReview(ShowReview, props, secondToMinutes, timeCount, showReview, SET_ShowReview,
+                                    Score, Sai, Boqua)}
 
                             </div>
                         </div>
@@ -524,38 +385,17 @@ function ArrOfPeopeAppear_ReactJSX(props) {
         <>
             <div className="GameSence_Playing">
                 {Show_OnePeopeAppear_ReactData()}
-                {ShowHint ?
-                    <div style={{
-                        position: "fixed",
-                        bottom: "2%",
-                        left: "2%",
-                        padding: "15px",
-                        backgroundColor: "black",
-                        color: "yellow",
-                        border: "1px solid green",
-                        borderRadius: "8px",
-                        zIndex: 3
-                    }}>
-                        {Check_ImageOrNot(Info_Icon_Reactdata) ?
-                            <>
-                                <img alt={Info_Icon_Reactdata} src={Info_Icon_Reactdata} width="360px" />
-                            </>
-                            : <b><i>{Info_Icon_Reactdata}</i></b>}
-                    </div>
-                    : null}
+                {showHintPartWhenOpenTool(ShowHint, Info_Icon_Reactdata)}
+                {showToPickPerson(
+                    DataShowToPick, SET_DataShowToPick, StatusShowToPick, SET_StatusShowToPick,
+                    props.ArrOfPeopeAppear_ReactData, AddTo_Show_ArrOfPeopeAppear_ReactData, props.Total
+                )}
             </div>
             <ReadReactSpeech />
         </>
     )
 }
 export default ArrOfPeopeAppear_ReactJSX
-
-
-
-
-
-
-
 
 
 
