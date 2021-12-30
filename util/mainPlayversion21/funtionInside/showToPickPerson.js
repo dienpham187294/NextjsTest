@@ -1,4 +1,5 @@
 
+import Check_ImageOrNot from "./Check_ImageOrNot";
 import PickRandom from "./PickRandom";
 export default function showToPickPerson(
     DataShowToPick, SET_DataShowToPick, StatusShowToPick, SET_StatusShowToPick,
@@ -168,12 +169,17 @@ function Show(data) {
             <img src={data.viewPick.img} height="120px" />
         </>
     } catch (error) {
+        try {
+            if (data.icon !== undefined && data.icon !== "" && data.icon !== null && Check_ImageOrNot(data.icon)) {
+                return <img src={data.icon} height="120px" />
+            } else {
+                return <img src={"https://i.postimg.cc/VNJf7gXX/person.png"} height="120px" />
+            }
 
-        if (data.icon !== undefined && data.icon !== "" && data.icon !== null) {
-            return <img src={data.icon} height="120px" />
-        }
-        else {
+        } catch (error) {
             return <img src={"https://i.postimg.cc/VNJf7gXX/person.png"} height="120px" />
         }
+
+
     }
 }

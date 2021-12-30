@@ -104,27 +104,28 @@ function ShowDataPhongto(dataRoot, data, Total, SET_Data_phongto) {
                 }}>
 
                 {dataRoot.map((e, index) =>
-                    <div key={index} style={{ position: "fixed", top: "20%" }}>
+
+
+                    <div key={index} style={{ position: "fixed", bottom: "10%", left: "1px" }}>
                         <div
                         >
-                            {e.map((eee, indexeee) =>
+                            {dataRoot.map((eee, indexeee) =>
                                 <div
                                     key={indexeee}
                                     style={{
-                                        display: "inline-block",
                                         cursor: "pointer",
                                     }}>
                                     <button
-                                        className="btn btn-primary ml-1"
+                                        className="btn btn-primary mt-1"
                                         onClick={() => {
                                             SET_Data_phongto(eee)
                                         }}
                                     >
                                         {Check_ImageOrNot(eee[0]) ?
                                             <img
-                                                src={eee[0]} height="40px" /> :
+                                                src={eee[0]} width="40px" /> :
                                             <span
-
+                                                style={{ width: "40px" }}
                                             >{eee[0].slice(0, 6)}</span>
                                         }
 
@@ -138,7 +139,7 @@ function ShowDataPhongto(dataRoot, data, Total, SET_Data_phongto) {
                 <button
                     className="btn btn-danger"
                     onClick={() => { SET_Data_phongto(null) }}
-                    style={{ position: "fixed", top: "20%", right: "20%" }}
+                    style={{ position: "fixed", bottom: "10%", right: "10%" }}
                 >Trở lại</button>
                 {
                     data.map((eeee, indexeeee) =>

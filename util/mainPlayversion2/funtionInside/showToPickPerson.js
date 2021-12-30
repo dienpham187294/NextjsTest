@@ -169,7 +169,7 @@ function Show(data) {
         </>
     } catch (error) {
 
-        if (data.icon !== undefined && data.icon !== "" && data.icon !== null) {
+        if (data.icon !== undefined && data.icon !== "" && data.icon !== null ) {
             return <img src={data.icon} height="120px" />
         }
         else {
