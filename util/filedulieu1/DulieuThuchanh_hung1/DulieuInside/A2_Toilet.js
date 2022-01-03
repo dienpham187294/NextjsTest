@@ -41,7 +41,7 @@ export default function A2_Toilet(n) {
         ]
         let input_02_Body = [
             FnObjHanldingNext(
-                ["Which way do I go to the toilet?"],
+                ["The toilet is in the end of the hallway."],
                 ["Thank you!"],
                 objEndSuccefull
             )
