@@ -15,7 +15,7 @@ export default function A2_Toilet(n) {
 
     let output = []
     let DataTable = {
-        "m01": ["Which way do I go to the toilet?"]
+        "m01": ["The toilet is in the end of the hallway."]
     }
 
     ArrPeple.slice(0, n).forEach(e => {
