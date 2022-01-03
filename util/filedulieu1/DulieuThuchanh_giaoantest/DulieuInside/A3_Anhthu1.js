@@ -50,16 +50,16 @@ export default function A3_Anhthu1(n) {
                 "index": "0",
                 "handle": FnObjHanldingNext(
                     [
-                        "I’m good. Thank you. How are you?",
-                        "I’m great. Thank you. How are you?",
+                        "I'm good. Thank you. How are you?",
+                        "I'm great. Thank you. How are you?",
                         "Doing great. Thank you. How are you?",
-                        "I’m good. Thank you. How about you?",
-                        "I’m great. Thank you. How about you?",
+                        "I'm good. Thank you. How about you?",
+                        "I'm great. Thank you. How about you?",
                         "Doing great. Thank you. How about you?",
                     ],
                     [
-                        "I’m good. Thank you.",
-                        "I’m great, Thank you."
+                        "I'm good. Thank you.",
+                        "I'm great, Thank you."
                     ]
                 ),
             },
@@ -71,7 +71,7 @@ export default function A3_Anhthu1(n) {
                         "What can i help you?"
                     ],
                     [
-                        "I’m just checking whether your restaurant has been opened again?",
+                        "I'm just checking whether your restaurant has been opened again?",
                         "Has your restaurant opened again?",
                         "Is your restaurant at 123 Ho Tung Mau street opened again?"
                     ]
@@ -83,7 +83,7 @@ export default function A3_Anhthu1(n) {
                     [
                         "Yes, sir",
                         "Yes, madam",
-                        "Yes, we’ve been back to normal for a while"
+                        "Yes, we've been back to normal for a while"
                     ],
                     [
                         "Cool. Do you serve at your restaurant or just order to go?",
@@ -113,7 +113,7 @@ export default function A3_Anhthu1(n) {
                         "Do you want to make a reservation or order to go now?"
                     ],
                     [
-                        "No, Thanks, I’m just checking.",
+                        "No, Thanks, I'm just checking.",
                         "Not now. Thanks."
                     ]
                 ),
@@ -122,8 +122,8 @@ export default function A3_Anhthu1(n) {
                 "index": "0-0-0-0-0-0",
                 "handle": FnObjHanldingNext(
                     [
-                        "I’m well – noted, sir. Anything else i can help you?",
-                        "I’m well – noted, ma’am. Anything else i can help you?"
+                        "I'm well noted, sir. Anything else i can help you?",
+                        "I'm well noted, ma'am. Anything else i can help you?"
                     ],
                     [
                         "No. I will come next time. Thanks a lot. ",
@@ -197,7 +197,7 @@ export default function A3_Anhthu1(n) {
                 input_01_End.push(PIndex(i))
 
             }
-           
+
             input_02_End.push(e.handle)
         })
 

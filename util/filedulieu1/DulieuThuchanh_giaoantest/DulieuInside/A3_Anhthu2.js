@@ -53,16 +53,16 @@ export default function A3_Anhthu2(n) {
                 "index": "0",
                 "handle": FnObjHanldingNext(
                     [
-                        "I’m good. Thank you. How are you?",
-                        "I’m great. Thank you. How are you?",
+                        "I'm good. Thank you. How are you?",
+                        "I'm great. Thank you. How are you?",
                         "Doing great. Thank you. How are you?",
-                        "I’m good. Thank you. How about you?",
-                        "I’m great. Thank you. How about you?",
+                        "I'm good. Thank you. How about you?",
+                        "I'm great. Thank you. How about you?",
                         "Doing great. Thank you. How about you?",
                     ],
                     [
-                        "I’m good. Thank you.",
-                        "I’m great, Thank you."
+                        "I'm good. Thank you.",
+                        "I'm great, Thank you."
                     ]
                 ),
             },
@@ -74,9 +74,9 @@ export default function A3_Anhthu2(n) {
                         "What can i help you?"
                     ],
                     [
-                        "I’d like to make a reservation",
+                        "I'd like to make a reservation",
                         "I need to make a reservation",
-                        "I’m coming to your restaurant on next Tuesday"
+                        "I'm coming to your restaurant on next Tuesday"
                     ]
                 ),
             },
@@ -98,7 +98,7 @@ export default function A3_Anhthu2(n) {
                 "handle": FnObjHanldingNext(
                     [
                         "What time will you come?",
-                        "What’s the exact time for the reservation?"
+                        "What's the exact time for the reservation?"
                     ],
                     [
                         "7.00 PM",
@@ -165,19 +165,19 @@ export default function A3_Anhthu2(n) {
                     ],
                     [
                         "I will order later",
-                        "I will order when I’m there"]
+                        "I will order when I'm there"]
                 ),
             },
             {
                 "index": "0-0",
                 "handle": FnObjHanldingNext(
                     [
-                        "I’d like to reconfirm on your reservation. A table for two on 7.00 PM, next Tuesday, Dec 28th, 2021. Public place, smoke free. Would you please let me know your name please?",
-                        "I’d like to reconfirm on your reservation. A table for two on 7.00 PM, next Tuesday, Dec 28th, 2021. Public place, smoke free. May I have your name please?"
+                        "I'd like to reconfirm on your reservation. A table for two on 7.00 PM, next Tuesday, Dec 28th, 2021. Public place, smoke free. Would you please let me know your name please?",
+                        "I'd like to reconfirm on your reservation. A table for two on 7.00 PM, next Tuesday, Dec 28th, 2021. Public place, smoke free. May I have your name please?"
                     ],
                     [
-                        "I’m Jessie",
-                        "It’s Jessie"
+                        "I'm Jessie",
+                        "It's Jessie"
                     ],
 
                 ),
@@ -202,7 +202,7 @@ export default function A3_Anhthu2(n) {
                         "Do you have any special request?"
                     ],
                     [
-                        "No, thanks", "It’s ok", "That’s fine"
+                        "No, thanks", "It's ok", "That's fine"
                     ],
 
                 ),
@@ -212,10 +212,10 @@ export default function A3_Anhthu2(n) {
                 "handle": FnObjHanldingNext(
                     [
                         "Thanks sir. Please tell us your name when you come.",
-                        "Thanks ma’am. Please tell us your name when you come."
+                        "Thanks ma'am. Please tell us your name when you come."
                     ],
                     [
-                        "Sure", "It’s ok", "That’s fine"
+                        "Sure", "It's ok", "That's fine"
                     ],
 
                 ),
@@ -261,7 +261,7 @@ export default function A3_Anhthu2(n) {
                 input_01_End.push(PIndex(i))
 
             }
-          
+
             input_02_End.push(e.handle)
         })
 

@@ -24,6 +24,8 @@ let DataTable = [
     InA3_Anhthu2.tool.m01
 ]
 
+console.log(shuffleArr(shuffleArr(coerdataoflession)))
+
 const Bai5
     = [
         {
