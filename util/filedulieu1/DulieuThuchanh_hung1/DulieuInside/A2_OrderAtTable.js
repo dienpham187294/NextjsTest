@@ -44,6 +44,7 @@ export default function A2_OrderAtTable(n) {
         let input_01_Body = [
             "0",
             "1",
+        
         ]
         let input_02_Body = [
             FnObjHanldingNext(
