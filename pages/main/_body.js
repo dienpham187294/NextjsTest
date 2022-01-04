@@ -21,20 +21,6 @@ export default function body() {
                     <iframe className="responsive-iframe" src="https://www.youtube.com/embed/EaUK7bJ-ty8" allowFullScreen></iframe>
                 </div>
                 <hr />
-                {/* <div>
-                    <select className="form-control">
-                        <option>Level 1</option>
-                        <option>Level 2</option>
-                        <option>Level 3</option>
-                        <option>Level 4</option>
-                        <option>Level 5</option>
-                        <option>Level 6</option>
-                        <option>Level 7</option>
-                        <option>Level 8</option>
-                        <option>Level 9</option>
-                        <option>Level 10</option>
-                    </select>
-                </div> */}
                 <ThuchanhA />
             </div>
         </>

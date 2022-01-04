@@ -90,7 +90,7 @@ function MyApp({ Component, pageProps }) {
         <hr />
         Created by Ká Điện.
         <br />
-        <i>Objective: Create games that have the effect of replacing the actual language practice environment. Make it easy and fast for everyone to access the practice and use of this tool for fluency.</i>
+        <i>Objective: Create games that have the effect of replacing the actual language practice environment in order to make it easy and fast for everyone to access the practice and use of this tool for fluency.</i>
       </div>
       <div style={{ display: "none" }}>
         <span id="ID_TEXT_BROWSERNAME"></span><span id="Detect_device"></span>

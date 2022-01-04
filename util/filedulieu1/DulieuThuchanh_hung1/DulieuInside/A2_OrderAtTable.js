@@ -44,14 +44,12 @@ export default function A2_OrderAtTable(n) {
         let input_01_Body = [
             "0",
             "1",
-            "2"
         ]
         let input_02_Body = [
             FnObjHanldingNext(
                 ["What would you like today?", "What do you want to order?"],
                 AwFoods(A1_foods)
-            )
-            ,
+            ),
             FnObjHanldingNext(
                 ["Do you want to take some drinks", "Something to drink?", "Do you want to order a drink?"],
                 AwDrink(A1_drinks)
