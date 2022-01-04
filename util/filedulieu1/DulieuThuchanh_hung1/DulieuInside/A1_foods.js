@@ -7,6 +7,6 @@ export default [
     { "input": "Mushroom omelette", "img": "https://i.postimg.cc/bJNqZ3nq/Mushroom-omelette.jpg" },
     { "input": "Vegetable chili", "img": "https://i.postimg.cc/x1DYv0mx/Vegetable-chili.jpg" },
     { "input": "Soup of the day with brown or white bread", "img": "https://i.postimg.cc/L5GS0Sbs/Soup-of-the-day-with-brown-or-white-bread.jpg" },
-    { "input": "Homemade carrot cake", "img": "https://i.postimg.cc/fWPMb7Rh/Homemade-carrot-cake.jpg" },
-    { "input": "Homemade banana cake", "img": "https://i.postimg.cc/FKx9F27P/Homemade-banana-cake.jpg" },
+    // { "input": "Homemade carrot cake", "img": "https://i.postimg.cc/fWPMb7Rh/Homemade-carrot-cake.jpg" },
+    // { "input": "Homemade banana cake", "img": "https://i.postimg.cc/FKx9F27P/Homemade-banana-cake.jpg" },
 ]
