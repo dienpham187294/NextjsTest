@@ -23,7 +23,7 @@ let InA2_BabyChair = A2_BabyChair(5)
 let InA2_Toilet = A2_Toilet(5)
 let InA3_Recommends = A3_Recommends(10)
 let InA3_Recommends1 = A3_Recommends1(10)
-let InA3_RecommendsAndQs = A3_RecommendsAndQs(10)
+let InA3_RecommendsAndQs = A3_RecommendsAndQs(40)
 let InA3_RecommendsAndQs1 = A3_RecommendsAndQs1(10)
 let InA3_Recommends1AndOrderDrinks = A3_Recommends1AndOrderDrinks(10)
 
