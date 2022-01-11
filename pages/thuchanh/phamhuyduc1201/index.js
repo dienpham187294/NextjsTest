@@ -1,9 +1,9 @@
 
 import { useState } from "react";
-import UpLoadFile from "../../../util/mainPlayforhighlevel/S_Uploadfile"
-import InfoLession from "../../../util/mainPlayforhighlevel/S_Lession"
-import GamePlay from "../../../util/mainPlayforhighlevel/S_GamePlay"
-import DL from "../../../util/filedulieu1/Dulieuthuchanh_MA/DulieuTotal";
+import UpLoadFile from "../../../util/mainPlayversion2/S_Uploadfile"
+import InfoLession from "../../../util/mainPlayversion2/S_Lession"
+import GamePlay from "../../../util/mainPlayversion2/S_GamePlay"
+import DL from "../../../util/filedulieu1/DulieuThuchanh_hung/DulieuTotal";
 const ShowInterim = true
 
 function Manager() {

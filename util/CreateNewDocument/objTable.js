@@ -1,4 +1,4 @@
-{
+export default {
     "name": "Table 1",
     "data": [
         [

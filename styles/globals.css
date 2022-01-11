@@ -247,3 +247,8 @@ a:hover {
     color: red;
     font-weight: 700;
 }
+.span3{
+    background-color: black;
+    color: white;
+    padding: 3px;
+}

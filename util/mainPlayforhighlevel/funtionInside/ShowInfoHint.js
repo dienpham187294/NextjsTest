@@ -16,14 +16,11 @@ export default function ShowInfoHint(Info_Icon_Reactdata) {
                     <>
                         {Check_ImageOrNot(Info_Icon_Reactdata) ?
                             <>
-                                <img
-                                    alt={Info_Icon_Reactdata} src={Info_Icon_Reactdata}
-                                    width="140px"
-                                />
+                                <img alt={Info_Icon_Reactdata} src={Info_Icon_Reactdata} width="140px" />
                             </>
                             : <>
-                                <b><i
-                                >{Info_Icon_Reactdata}</i></b>
+                                <hr />
+                                <b><i>{Info_Icon_Reactdata}</i></b>
                             </>}
                     </>
                 )
@@ -31,10 +28,9 @@ export default function ShowInfoHint(Info_Icon_Reactdata) {
         }
     } catch (error) {
         try {
-            return null
+            return "error"
         } catch (error) {
             return null
         }
     }
 }
-
