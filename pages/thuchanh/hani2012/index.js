@@ -17,7 +17,7 @@ function Manager() {
     return (
         <div >
             {PageChange === 0 ? <UpLoadFile Total={Total} DL={DL} />
-                : PageChange === 2 ? <InfoLession Data={Data_InfoOflession} Total={Total} />
+                : PageChange === 2 ? <InfoLession Data={Data_InfoOflession} Total={Total} Data={Data_Game} />
                     : PageChange === 1 ? <GamePlay Data={Data_Game} huongdan={huongdan} NameOflession={NameOflession} Total={Total} ShowInterim={ShowInterim} />
                         : PageChange}
         </div>

@@ -4,7 +4,7 @@ import { useState } from "react"
 import ReadMessage from "../Read/ReadMessage"
 import ReadReactSpeech from "../../pages/helpers/Read_ReactSpeechSlow"
 import Dictaphone from "../../pages/helpers/RegcognitionV1-0-1AI0.5 _02"
-
+import BshowStructure from "./funtionInside/BshowStructure"
 let pickToRead = "";
 let listenScore = 0
 export default function Lesson(props) {
@@ -13,9 +13,10 @@ export default function Lesson(props) {
     const [Data_LearnWrite, SET_Data_LearnWrite] = useState("")
     const [Docthu, SET_Docthu] = useState("")
     const [Data_Commands, SET_Data_Commands] = useState("====")
-    const [Page, SET_Page] = useState("nghenoi")
+    const [Page, SET_Page] = useState("cautruc")
 
     try {
+        
         return (
             <div >
                 <hr />
@@ -27,7 +28,7 @@ export default function Lesson(props) {
                         SET_Page(e.currentTarget.value)
                     }}
                 >
-                    <option value={"nghe"}>
+                    <option value={"cautruc"}>
                         Chọn phần học
                     </option>
                     <option value={"nghe"}>
@@ -35,6 +36,9 @@ export default function Lesson(props) {
                     </option>
                     <option value={"docviet"}>
                         Đọc viết
+                    </option>
+                    <option value={"cautruc"}>
+                        Cấu trúc bài thực hành
                     </option>
                 </select>
 
@@ -168,12 +172,27 @@ export default function Lesson(props) {
                         }}>Trở lại phần chọn bài</button>
                 </div>
 
+                {Page === "cautruc" ?
+                    BshowStructure(props.Data_Game)
+                    : null
+                }
+
+
+
+
+
+
                 <ReadReactSpeech />
                 <Dictaphone Data={Data_Commands} Xuly={Xuly} />
             </div>
         )
     } catch (error) {
-        return null
+
+        try {
+            return JSON.stringify(props.Data_Game)
+        } catch (error) {
+            return null
+        }
     }
 
 
