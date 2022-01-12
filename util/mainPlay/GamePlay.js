@@ -82,13 +82,18 @@ function ArrOfPeopeAppear_ReactJSX(props) {
             props.Total.fnObj.Xuly = Xuly
             props.Total.fnObj.SET_ShowHint = SET_ShowHint
             props.Total.fnObj.SET_Info_Icon_Reactdata = SET_Info_Icon_Reactdata
-            props.Total.fnObj.getOnline = function () {
-                getOnline(props.NameOflession, idMember, Score, SET_DataOnline)
-            }
+            // props.Total.fnObj.getOnline = function () {
+            //     getOnline(props.NameOflession, idMember, Score, SET_DataOnline)
+            // }
             AddTo_Show_ArrOfPeopeAppear_ReactData(0)
         }, []
     );
 
+    useEffect(() => {
+        if (Score === 1) {
+            timeCount = 0
+        }
+    }, [Score])
 
 
 

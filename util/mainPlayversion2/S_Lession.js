@@ -19,6 +19,27 @@ export default function Lesson(props) {
         return (
             <div >
                 <hr />
+
+
+                <select
+                    className="form-control"
+                    onChange={(e) => {
+                        SET_Page(e.currentTarget.value)
+                    }}
+                >
+                    <option value={"nghe"}>
+                        Chọn phần học
+                    </option>
+                    <option value={"nghe"}>
+                        Nghe
+                    </option>
+                    <option value={"docviet"}>
+                        Đọc viết
+                    </option>
+                </select>
+
+
+                {/* 
                 <div className="row" style={{ textAlign: "center", backgroundColor: "gray", padding: "15px" }}>
                     <div
                         className="col-4"
@@ -37,7 +58,7 @@ export default function Lesson(props) {
                         style={{ backgroundColor: Page === "docviet" ? "yellow" : "white", cursor: "pointer" }}
                         onClick={() => { SET_Page("docviet") }}
                     >Đọc - Viết</div>
-                </div>
+                </div> */}
 
                 {Page === "nghenoi" ?
                     <div>
@@ -49,7 +70,7 @@ export default function Lesson(props) {
                                     // console.log(props.Data)
                                     document.getElementById("idStartLisening").click();
                                 }}
-                                className="form-control mt-3">
+                                className=" mt-3">
                                 <option>Chọn bài học</option>
                                 {props.Data.listenRead.map((e, i) =>
                                     <option
@@ -77,7 +98,7 @@ export default function Lesson(props) {
                                     // console.log(props.Data)
                                     document.getElementById("idStartLisening").click();
                                 }}
-                                className="form-control mt-3">
+                                className=" mt-3">
                                 <option>Chọn bài học</option>
                                 {props.Data.listenOnly.map((e, i) =>
                                     <option
@@ -105,7 +126,7 @@ export default function Lesson(props) {
                                     // console.log(props.Data)
                                     document.getElementById("idStartLisening").click();
                                 }}
-                                className="form-control mt-3">
+                                className=" mt-3">
                                 <option>Chọn bài học</option>
                                 {props.Data.writeOnly.map((e, i) =>
                                     <option

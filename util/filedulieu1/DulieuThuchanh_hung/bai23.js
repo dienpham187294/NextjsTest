@@ -109,7 +109,8 @@ ArrPeple.slice(0, 20).forEach(e => {
 let hoctap = [
 ]
 let listenOnly = [
-
+    getElementsToDataTable(Foods, "input"),
+    getElementsToDataTable(Drinks, "input")
 ]
 let writeOnly = [
 ]

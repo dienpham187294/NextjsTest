@@ -87,21 +87,21 @@ function ArrOfPeopeAppear_ReactJSX(props) {
             props.Total.fnObj.Xuly = Xuly
             props.Total.fnObj.SET_ShowHint = SET_ShowHint
             props.Total.fnObj.SET_Info_Icon_Reactdata = SET_Info_Icon_Reactdata
-            props.Total.fnObj.getOnline = function () {
-                try {
-                    getOnline(props.NameOflession, idMember, Score, SET_DataOnline)
-                } catch (error) { console.log(error) }
-            }
+            // props.Total.fnObj.getOnline = function () {
+            //     try {
+            //         getOnline(props.NameOflession, idMember, Score, SET_DataOnline)
+            //     } catch (error) { console.log(error) }
+            // }
         }, []
     );
 
 
     useEffect(() => {
-        props.Total.fnObj.getOnline()
         if (Score === 1) {
             timeCount = 0
         }
     }, [Score])
+
     useEffect(() => {
         if (StatusShowToPick) {
             $("#idShowToPickPerson").show()
