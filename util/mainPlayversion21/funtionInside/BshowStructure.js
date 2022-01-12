@@ -10,7 +10,7 @@ export default function BshowStructure(data) {
             viewIndex(showCore(DataMainthisdiv, "middle"), "B01mainDivMid")
             viewIndex(showCore(DataMainthisdiv, "end"), "B01mainDivEnd")
         } catch (error) {
-            console.log(error)
+           
         }
 
     }, [DataMainthisdiv])
@@ -63,14 +63,14 @@ function loopHandle(input, n, output) {
             }
         });
     } catch (error) {
-        console.log(error)
+        
     }
 }
 
 
 function viewIndex(objMain, id) {
 
-    console.log(objMain)
+ 
 
     $("#" + id).html("")
     let i = 1

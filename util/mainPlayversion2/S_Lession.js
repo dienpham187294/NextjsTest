@@ -16,7 +16,7 @@ export default function Lesson(props) {
     const [Page, SET_Page] = useState("cautruc")
 
     try {
-       
+
         return (
             <div >
                 <hr />
@@ -172,15 +172,10 @@ export default function Lesson(props) {
                         }}>Trở lại phần chọn bài</button>
                 </div>
 
-                {Page === "cautruc" ?
-                    BshowStructure(props.Data_Game)
-                    : null
-                }
 
-
-
-
-
+                <div style={{ display: Page === "cautruc" ? "initial" : "none" }}>
+                    {BshowStructure(props.Data_Game)}
+                </div>
 
                 <ReadReactSpeech />
                 <Dictaphone Data={Data_Commands} Xuly={Xuly} />
