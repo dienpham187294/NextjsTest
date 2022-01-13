@@ -9,6 +9,7 @@ function UpLoadFile(props) {
         try {
             props.Total.fnObj.SET_Data_InfoOflession(arrPick[0].hoctap)
             props.Total.fnObj.SET_NameOflession(arrPick[0].nameoflession)
+            props.Total.fnObj.SET_DataToolR(arrPick[0].dataTool)
             props.Total.fnObj.SET_Data_Game(shuffleArr(shuffleArr(arrPick[1].coerdataoflession)))
             props.Total.fnObj.SET_PageChange(1);
         } catch (error) {
