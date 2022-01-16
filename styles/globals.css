@@ -229,13 +229,13 @@ a:hover {
     background-color: yellow;
 }
 .divT{
+    position: relative;
     border: 1px solid black;
-    width: fit-content;
-    display: inline-block;
+    display: inline-table;
     padding: 5px;
     min-width: 150px;
     margin-left: 3px;
-    height: 100%;
+   
 }
 .span0 {
     cursor: pointer;

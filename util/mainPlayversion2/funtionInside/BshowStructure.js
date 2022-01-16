@@ -22,15 +22,18 @@ export default function BshowStructure(data) {
                         i = (i + 1) % data.length
                         setDataMainthisdiv(data[i])
                     } catch (error) { }
+
                 }}
             >Next</button>
-            <div id="B01mainDivBegin"></div>
+            <hr />
+            <div id="B01mainDivBegin" style={{ backgroundColor: "#e6e6ff" }}></div>
             <hr />
             <div id="B01mainDivMid"></div>
             <hr />
-            <div id="B01mainDivEnd"></div>
+            <div id="B01mainDivEnd" style={{ backgroundColor: "#e6e6ff" }}></div>
             <hr />
-        </div >
+            <div id="B01mainDivAllSentences" style={{ backgroundColor: "#e6e6ff" }}></div>
+        </div>
     )
 }
 
@@ -70,6 +73,7 @@ function loopHandle(input, n, output) {
 function viewIndex(objMain, id) {
 
 
+
     $("#" + id).html("")
     let i = 1
     let arr10 = []
@@ -92,7 +96,7 @@ function viewIndex(objMain, id) {
         if (i === 0) {
             e.forEach(ee => {
                 let objHelper = ""
-                if (ee.m03.endSuccessfull) {
+                if (ee.m03.end_successfull) {
                     objHelper += `End`
                 }
                 if (ee.m04 !== "") {
@@ -106,7 +110,7 @@ function viewIndex(objMain, id) {
 
                 let divT =
                     `<div id="` + id + ee.m00 + `" class="divT">
-                    <i id="a`+ id + ee.m00 + `" class="span0"> ` + ee.m00[0] + `</i><br/>
+                   
                     <span class="span1"> `+ ee.m01[0] + `</span><br/><span  class="span2">` + ee.m02[0] + `</span>
                     <p class="span3">
                     ` + objHelper + `</p>
@@ -118,12 +122,12 @@ function viewIndex(objMain, id) {
 
             e.forEach(ee => {
                 let objHelper = ""
-                if (ee.m03.endSuccessfull) {
+                if (ee.m03.end_successfull) {
                     objHelper = `<br/>End`
                 }
                 let divT =
                     `<div id="` + id + ee.m00 + `" class="divT">
-                        <i id="a`+ id + ee.m00 + `" class="span0"> ` + ee.m00 + `</i><br/>
+            
                      <span class="span1"> `+ ee.m01[0] + `</span><br/><span  class="span2">` + ee.m02[0] + `</span>`
                     + objHelper + `
                 <div>`

@@ -1,22 +1,28 @@
 import { useEffect, useState } from "react"
 let i = 0
+let arrOfAllSentences = []
 export default function BshowStructure(data) {
 
     const [DataMainthisdiv, setDataMainthisdiv] = useState(data[0])
-
+    const [DataAllSentences, setDataAllSentences] = useState(data[0])
     useEffect(() => {
         try {
+            arrOfAllSentences = []
             viewIndex(showCore(DataMainthisdiv, "begin"), "B01mainDivBegin")
             viewIndex(showCore(DataMainthisdiv, "middle"), "B01mainDivMid")
             viewIndex(showCore(DataMainthisdiv, "end"), "B01mainDivEnd")
+
+            setDataAllSentences(arrOfAllSentences)
         } catch (error) {
-           
+
         }
 
     }, [DataMainthisdiv])
     return (
         <div >
             <button
+                className="btn btn-primary"
+
                 onClick={() => {
                     try {
                         i = (i + 1) % data.length
@@ -25,12 +31,16 @@ export default function BshowStructure(data) {
 
                 }}
             >Next</button>
-            <div id="B01mainDivBegin"></div>
+            <hr />
+            <div id="B01mainDivBegin" style={{ backgroundColor: "#e6e6ff" }}></div>
             <hr />
             <div id="B01mainDivMid"></div>
             <hr />
-            <div id="B01mainDivEnd"></div>
+            <div id="B01mainDivEnd" style={{ backgroundColor: "#e6e6ff" }}></div>
             <hr />
+            <div id="B01mainDivAllSentences" style={{ backgroundColor: "#e6e6ff" }}></div>
+            <hr />
+            {showAllSentence(DataAllSentences)}
         </div>
     )
 }
@@ -39,6 +49,8 @@ function showCore(input, index) {
     let output = []
 
     loopHandle(input[index], "", output)
+
+
 
     return output
 }
@@ -57,20 +69,22 @@ function loopHandle(input, n, output) {
                 "m03": e.function,
                 "m04": e.icon
             }
+            arrOfAllSentences.push(e.manspeak)
+            arrOfAllSentences.push(e.robotspeak)
             output.push(obj)
             if (e.handling_next.length > 0) {
                 loopHandle(e, m00, output)
             }
         });
     } catch (error) {
-        
+
     }
 }
 
 
 function viewIndex(objMain, id) {
 
- 
+
 
     $("#" + id).html("")
     let i = 1
@@ -94,7 +108,7 @@ function viewIndex(objMain, id) {
         if (i === 0) {
             e.forEach(ee => {
                 let objHelper = ""
-                if (ee.m03.endSuccessfull) {
+                if (ee.m03.end_successfull) {
                     objHelper += `End`
                 }
                 if (ee.m04 !== "") {
@@ -108,7 +122,7 @@ function viewIndex(objMain, id) {
 
                 let divT =
                     `<div id="` + id + ee.m00 + `" class="divT">
-                    <i id="a`+ id + ee.m00 + `" class="span0"> ` + ee.m00[0] + `</i><br/>
+                   
                     <span class="span1"> `+ ee.m01[0] + `</span><br/><span  class="span2">` + ee.m02[0] + `</span>
                     <p class="span3">
                     ` + objHelper + `</p>
@@ -120,12 +134,12 @@ function viewIndex(objMain, id) {
 
             e.forEach(ee => {
                 let objHelper = ""
-                if (ee.m03.endSuccessfull) {
+                if (ee.m03.end_successfull) {
                     objHelper = `<br/>End`
                 }
                 let divT =
                     `<div id="` + id + ee.m00 + `" class="divT">
-                        <i id="a`+ id + ee.m00 + `" class="span0"> ` + ee.m00 + `</i><br/>
+            
                      <span class="span1"> `+ ee.m01[0] + `</span><br/><span  class="span2">` + ee.m02[0] + `</span>`
                     + objHelper + `
                 <div>`
@@ -146,4 +160,15 @@ function countIndex(n, arr) {
         }
     })
     return stt
+}
+function showAllSentence(DataAllSentences) {
+
+
+    return DataAllSentences.map((e, i) =>
+        <div key={i} className={i % 2 === 0 ? "span1" : "span2"}>
+            {e.map((ee, ii) =>
+                <p key={ii}>{ee}</p>
+            )}
+        </div>
+    )
 }
