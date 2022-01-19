@@ -81,11 +81,11 @@ function AwHowmany() {
 
     let input = pickNRandomElementsOfArray(["2", "3", "4"], 1)
 
-    ArrOfSubmit.push(input)
+    ArrOfSubmit.push(input[0])
 
     return (
         [
-            "A table for " + input + ", please."
+            "A table for " + input[0] + ", please."
         ]
     )
 }

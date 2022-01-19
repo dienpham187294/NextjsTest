@@ -12,8 +12,10 @@ import Bai25 from "./bai2_5"
 
 
 import Bai3 from "./bai3"
+import Bai4 from "./bai4"
 const DLTOTAL =
     [
+        Bai4,
         Bai1, Bai11, Bai12, Bai13, Bai14,
         Bai2, Bai3,
         Bai21, Bai22, Bai23, Bai24, Bai25

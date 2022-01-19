@@ -1,6 +1,21 @@
 let i = Date.now()
-
+let saveText = "";
+let saveVoiNum = 0;
+let savePitch = 0
 export default async function ReadMessage(text, voiceNum, rate, pitch) {
+    if (text !== undefined) {
+        saveText = text;
+        saveVoiNum = voiceNum;
+        savePitch = pitch
+    }
+
+    if (text === undefined) {
+        text = saveText
+        voiceNum = saveVoiNum
+        rate = 0.7
+        pitch = savePitch
+    }
+
 
     if (Date.now() - 1 > 1500) {
         i = Date.now()

@@ -46,6 +46,7 @@ function GamePlay(props) {
                             NameOflession={props.NameOflession}
                             ShowInterim={props.ShowInterim}
                             DataToolR={props.DataToolR}
+                            Data_Commands={Data_Commands}
                         /> : ""}
                 </div>
 

@@ -22,6 +22,7 @@ import showDivNext from "./funtionInside/showDivNext"
 import showToPickPerson from "./funtionInside/showToPickPerson"
 import Check_ImageOrNot from "./funtionInside/Check_ImageOrNot"
 import showCenterCountDown from "./funtionInside/showCenterCountDown"
+import { prop } from "cheerio/lib/api/attributes";
 let VoicePick = 1;
 let State_of_Anwer = "none";
 let Data_temp_Strickmode;
@@ -39,6 +40,7 @@ let timeCount = 0;
 let ArrHoldThingToReview = [];
 
 
+
 function ArrOfPeopeAppear_ReactJSX(props) {
 
     const [Info_StrickAnwers_Reactdata, SET_Info_StrickAnwers_Reactdata] = useState(["hi how are you"])
@@ -54,6 +56,9 @@ function ArrOfPeopeAppear_ReactJSX(props) {
     const [ShowReview, SET_ShowReview] = useState("")
     const [StatusShowToPick, SET_StatusShowToPick] = useState(true)
     const [DataShowToPick, SET_DataShowToPick] = useState([0, 1, 2])
+    const [DataAction, SET_DataAction] = useState(null)
+
+    const [DataActionCheck, SET_DataActionCheck] = useState(null)
     useEffect(() => {
         props.SET_Data_Commands(Info_StrickAnwers_Reactdata)
         if (i1 === 0) {
@@ -104,76 +109,82 @@ function ArrOfPeopeAppear_ReactJSX(props) {
 
 
     function Xuly(Info_message) {
-        try {
-            if (State_of_Anwer !== "none") {
-                if (State_of_Anwer === "strictmode") {
-                    // Buoc 1 lay du lieu cuc bo 
-                    let Data_Strict = Data_temp_Strickmode
-                    //Buoc 2 xu ly data
-                    let Rate = 6
-                    let Length_C = 0
-                    let MessageArr = ["none"]
-                    //----------------------
-                    Data_Strict.forEach(e => {
-                        e.manspeak.forEach(ee => {
-                            let TEMP_CHECK = checkMessageReturnNumber(Info_message, ee)
-                            if (TEMP_CHECK[0] >= Rate) {
-                                if (TEMP_CHECK[0] === Length_C && TEMP_CHECK[1] > Length_C) {
-                                    Rate = TEMP_CHECK[0];
-                                    Length_C = TEMP_CHECK[1];
-                                    MessageArr.push(e);
-                                } else {
-                                    Rate = TEMP_CHECK[0];
-                                    Length_C = TEMP_CHECK[1];
-                                    MessageArr.push(e)
-                                }
-                            }
-                        })
-                    })
-                    //----------------------
-
-                    if (MessageArr[MessageArr.length - 1] !== "none") {
-
-                        ArrHoldThingToReview.push({
-                            "textToRead": Info_message,
-                            "textReadAlready": $("#showInterimID").text()
-                        })
-
-                        let data = MessageArr[MessageArr.length - 1];
-                        if (data.robotspeak.length > 0) {
-                            ReadMessage(PickRandom(data.robotspeak), VoicePick, rateRead, pitchRead);
-                        }
-                        if (data.handling_next.length > 0) {
-                            Data_temp_Strickmode = (data.handling_next)
-                            let arrTemp = [];
-                            data.handling_next.forEach(e => {
-                                e.manspeak.forEach(ee => {
-                                    arrTemp.push(ee)
-                                })
-                            })
-                            SET_Info_StrickAnwers_Reactdata(arrTemp)
-                        } else {
-                            Data_temp_Strickmode = (AllData_OfOne.middle.handling_next)
-                            let arrTemp = [];
-                            AllData_OfOne.middle.handling_next.forEach(e => {
-                                e.manspeak.forEach(ee => {
-                                    arrTemp.push(ee)
-                                })
-                            })
-                            SET_Info_StrickAnwers_Reactdata(arrTemp)
-
-                        }
-                        if (data.icon !== undefined && data.icon !== "") {
-                            SET_Info_Icon_Reactdata(data.icon)
-                        }
-                        Submit_check_funtion_indata(data.function);
-                    }
-
-                }
-            }
-        } catch (error) {
-            console.log(error)
+        if (Info_message === "can you speak again") {
+            ReadMessage()
         }
+        else {
+            try {
+                if (State_of_Anwer !== "none") {
+                    if (State_of_Anwer === "strictmode") {
+                        // Buoc 1 lay du lieu cuc bo 
+                        let Data_Strict = Data_temp_Strickmode
+                        //Buoc 2 xu ly data
+                        let Rate = 6
+                        let Length_C = 0
+                        let MessageArr = ["none"]
+                        //----------------------
+                        Data_Strict.forEach(e => {
+                            e.manspeak.forEach(ee => {
+                                let TEMP_CHECK = checkMessageReturnNumber(Info_message, ee)
+                                if (TEMP_CHECK[0] >= Rate) {
+                                    if (TEMP_CHECK[0] === Length_C && TEMP_CHECK[1] > Length_C) {
+                                        Rate = TEMP_CHECK[0];
+                                        Length_C = TEMP_CHECK[1];
+                                        MessageArr.push(e);
+                                    } else {
+                                        Rate = TEMP_CHECK[0];
+                                        Length_C = TEMP_CHECK[1];
+                                        MessageArr.push(e)
+                                    }
+                                }
+                            })
+                        })
+                        //----------------------
+
+                        if (MessageArr[MessageArr.length - 1] !== "none") {
+
+                            ArrHoldThingToReview.push({
+                                "textToRead": Info_message,
+                                "textReadAlready": $("#showInterimID").text()
+                            })
+
+                            let data = MessageArr[MessageArr.length - 1];
+                            if (data.robotspeak.length > 0) {
+                                ReadMessage(PickRandom(data.robotspeak), VoicePick, rateRead, pitchRead);
+                            }
+                            if (data.handling_next.length > 0) {
+                                Data_temp_Strickmode = (data.handling_next)
+                                let arrTemp = [];
+                                data.handling_next.forEach(e => {
+                                    e.manspeak.forEach(ee => {
+                                        arrTemp.push(ee)
+                                    })
+                                })
+                                SET_Info_StrickAnwers_Reactdata(arrTemp)
+                            } else {
+                                Data_temp_Strickmode = (AllData_OfOne.middle.handling_next)
+                                let arrTemp = [];
+                                AllData_OfOne.middle.handling_next.forEach(e => {
+                                    e.manspeak.forEach(ee => {
+                                        arrTemp.push(ee)
+                                    })
+                                })
+                                SET_Info_StrickAnwers_Reactdata(arrTemp)
+
+                            }
+                            if (data.icon !== undefined && data.icon !== "") {
+                                SET_Info_Icon_Reactdata(data.icon)
+                            }
+                            Submit_check_funtion_indata(data.function);
+                        }
+
+                    }
+                }
+            } catch (error) {
+                console.log(error)
+            }
+        }
+
     }
 
     async function AddTo_Show_ArrOfPeopeAppear_ReactData(index) {
@@ -234,10 +245,8 @@ function ArrOfPeopeAppear_ReactJSX(props) {
     function Submit_check_funtion_indata(command) {
         try {
             if (command.end_successfull) {
-
                 State_of_Anwer = "none";
                 SET_Score(S => S + 1)
-
                 $("#divCountdown").show();
                 iNguoitieptheo = 3
                 interNguoitieptheo = setInterval(() => {
@@ -250,14 +259,26 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                         clearInterval(interNguoitieptheo)
                     }
                 }, (1000));
+            }
 
+            if (command.action !== undefined) {
+                State_of_Anwer = "none";
+                SET_DataAction(command.action)
 
-
-
+                let ArrCheck = [];
+                command.action.list.forEach(e => {
+                    ArrCheck.push(e.stt)
+                })
+                SET_DataActionCheck(ArrCheck)
+            } else {
+                State_of_Anwer = "strictmode";
+                SET_DataAction(null)
             }
             if (command.end_unsuccessfull) {
                 State_of_Anwer = "none";
             }
+
+
         } catch (error) {
             console.log(error)
         }
@@ -354,10 +375,10 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                                 </div>
                                 <hr />
                                 <div className="row">
-                                    <div className="col-4">
+                                    {/* <div className="col-4">
                                         {showDataGameOnline(DataOnline, props.Total)}
-                                    </div>
-                                    <div className="col-8" style={{ textAlign: "left" }}>
+                                    </div> */}
+                                    <div className="col-12" style={{ textAlign: "center" }}>
                                         <DataTool Data={props.DataToolR} Total={props.Total} />
                                     </div>
                                 </div>
@@ -393,6 +414,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                     DataShowToPick, SET_DataShowToPick, StatusShowToPick, SET_StatusShowToPick,
                     props.ArrOfPeopeAppear_ReactData, AddTo_Show_ArrOfPeopeAppear_ReactData, props.Total
                 )}
+                {DataAction !== null ? showAction(DataAction, SET_DataAction, props.Data_Commands, DataActionCheck) : null}
             </div>
             <ReadReactSpeech />
         </>
@@ -402,5 +424,74 @@ export default ArrOfPeopeAppear_ReactJSX
 
 
 
+function showAction(DataAction, SET_DataAction, Data_Commands, DataActionCheck) {
 
 
+    let ArrT2 = JSON.parse(JSON.stringify(DataAction));
+
+
+    return (
+
+
+        <div style={{
+            position: "fixed", top: "20%", bottom: "20%", right: "20%", padding: "5%",
+            left: "20%", backgroundColor: "white", overflow: "auto", textAlign: "center", zIndex: 4,
+            border: "5px solid blue", borderRadius: '5px'
+        }}>
+            <div className="row">
+                <div className="col-12" style={{ textAlign: "center" }}>
+                    <h1>{DataAction.name}</h1>
+                </div>
+                <hr />
+                <div className="col-6 border-right">
+                    <b>You</b>
+                    {DataAction.list.map((e, i) =>
+                        <p
+                            key={i}
+                            style={{ cursor: "pointer" }}
+                            onClick={() => {
+                                ArrT2.list[i].stt = false;
+                                SET_DataAction(ArrT2);
+
+                            }}
+                        >{e.stt ? e.data : null}</p>
+                    )}
+                </div>
+                <div className="col-6">
+                    <b>Guest</b>
+                    {DataAction.list.map((e, i) =>
+                        <p
+                            key={i}
+                            style={{ cursor: "pointer" }}
+                            onClick={() => {
+                                ArrT2.list[i].stt = true;
+                                SET_DataAction(ArrT2)
+
+                            }}
+                        >{!e.stt ? e.data : null}</p>
+                    )}
+                </div>
+            </div>
+            <div>
+                {checkAction(DataActionCheck, DataAction) ? <h1 style={{ color: "red" }}>{Data_Commands}</h1> : null}
+            </div>
+
+        </div>
+    )
+}
+
+function checkAction(DataActionCheck, DataAction) {
+    try {
+        let n = true
+        DataAction.list.forEach((e, i) => {
+            if (e.stt === DataActionCheck[i]) {
+                n = false
+            }
+        })
+        if (n) { State_of_Anwer = "strictmode" } else { State_of_Anwer = "none" }
+        return n
+    } catch (error) {
+        return false
+    }
+
+}

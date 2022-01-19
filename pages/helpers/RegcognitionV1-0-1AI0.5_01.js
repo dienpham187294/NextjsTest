@@ -10,12 +10,12 @@ if (process.brower) {
 }
 let commands = [];
 
-
+let arr = ["can you speak again"]
 
 function Dictaphone({ Data, Total }) {
     useEffect(() => {
         commands = [{
-            command: Data,
+            command: Data.concat(arr),
             callback: (command) => { Total.fnObj.Xuly(`${command}`) },
             isFuzzyMatch: true,
             fuzzyMatchingThreshold: 0.6,
