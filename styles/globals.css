@@ -237,6 +237,23 @@ a:hover {
     margin-left: 3px;
    
 }
+
+.divT1{
+    border: 3px solid black;
+    padding: 15px;
+    min-width: 150px;
+    margin:15px;
+    width: fit-content;
+}
+
+.divT2{
+    position: relative;
+    border: 3px solid blue;
+    display: inline-table;
+    padding: 15px;
+    min-width: 150px;
+    margin:15px;
+}
 .span0 {
     cursor: pointer;
 }
