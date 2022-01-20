@@ -29,6 +29,7 @@ import A4_PickOrder_02 from "./DulieuInside/A4_PickOrder_02"
 //  let InA3_Recommends1AndOrderDrinks = A3_Recommends1AndOrderDrinks(10)
 let InA4_PickOrder_01 = A4_PickOrder_01(30)
 let InA4_PickOrder_02 = A4_PickOrder_02(30)
+
 let coerdataoflession = [].concat(
     // InA3_Recommends.core,
     // InA3_Recommends1.core,
@@ -42,7 +43,8 @@ let coerdataoflession = [].concat(
     // InA2_BabyChair.core,
     // InA2_Toilet.core,
     InA4_PickOrder_01.core,
-    InA4_PickOrder_02.core
+    // InA4_PickOrder_02.core,
+
 )
 
 let DataTable = [
@@ -54,7 +56,7 @@ let DataTable = [
 
 ]
 
-const Bai4
+const Bai41
     = [
         {
             "nameoflession": "Bài 4_01",
@@ -73,7 +75,7 @@ const Bai4
             "coerdataoflession": shuffleArr(shuffleArr(coerdataoflession))
         }
     ]
-export default Bai4
+export default Bai41
 
 
 

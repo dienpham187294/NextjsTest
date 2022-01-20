@@ -22,6 +22,7 @@ import showDivNext from "./funtionInside/showDivNext"
 import showToPickPerson from "./funtionInside/showToPickPerson"
 import Check_ImageOrNot from "./funtionInside/Check_ImageOrNot"
 import showCenterCountDown from "./funtionInside/showCenterCountDown"
+
 import { prop } from "cheerio/lib/api/attributes";
 let VoicePick = 1;
 let State_of_Anwer = "none";
@@ -412,7 +413,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                     DataShowToPick, SET_DataShowToPick, StatusShowToPick, SET_StatusShowToPick,
                     props.ArrOfPeopeAppear_ReactData, AddTo_Show_ArrOfPeopeAppear_ReactData, props.Total
                 )}
-                {DataAction !== null ? showAction(DataAction, SET_DataAction, props.Data_Commands) : null}
+                {DataAction !== null ? showAction(DataAction, SET_DataAction, props.Data_Commands, showOptionToRead, Score) : null}
             </div>
             <ReadReactSpeech />
         </>
@@ -422,7 +423,7 @@ export default ArrOfPeopeAppear_ReactJSX
 
 
 
-function showAction(DataAction, SET_DataAction, Data_Commands) {
+function showAction(DataAction, SET_DataAction, Data_Commands, showOptionToRead, Score) {
 
 
     let ArrT2 = JSON.parse(JSON.stringify(DataAction));
@@ -472,7 +473,7 @@ function showAction(DataAction, SET_DataAction, Data_Commands) {
             </div>
             <hr />
             <div>
-                {checkAction(DataAction) ? <h5 style={{ color: "red" }}>{Data_Commands}</h5> : null}
+                {checkAction(DataAction) ? <h5>{showOptionToRead(Score, Data_Commands)}</h5> : "Speak"}
             </div>
 
         </div>

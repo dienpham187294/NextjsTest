@@ -13,11 +13,24 @@ let ArrOfSubmit;
 
 export default function A4_PickOrder_01(n) {
 
-    let output = []
+
+
+
     let DataTable = {
         "m00": dataPickuptable_02
     }
 
+    let output = [].concat(
+        getOutputT(DataTable, 0),
+        getOutputT(DataTable, 1),
+        getOutputT(DataTable, 2)
+    )
+
+    return { "core": output.concat(output, output), "tool": DataTable }
+}
+
+function getOutputT(DataTable, n) {
+    let outputT = []
     dataPickuptable_01.slice(0, 10).forEach(e => {
         ArrOfSubmit = []
         let ArrInFN = {}
@@ -88,28 +101,19 @@ export default function A4_PickOrder_01(n) {
             },
             {
                 "index": "1",
-                "handle": FnObjHanldingNext(
-                    ["What is your phone number?", "How about your phone number?"],
-                    [
-                        "It's " + e["Phone number"],
-                        e["Phone number"]
-                    ]
-                )
+                "handle": R_phonenumber(e, n)
             },
             {
                 "index": "2",
-                "handle": FnObjHanldingNext(
-                    ["What is your Receipt number"],
-                    [
-                        "It's " + e["Receipt number"],
-                        e["Receipt number"]
-                    ],
-                )
+                "handle": R_receiptnumber(e, n)
             },
             {
                 "index": "3",
                 "handle": FnObjHanldingNext(
-                    ["Your order is " + e["Ordered food"] + ". Is it right?"],
+                    [
+                        "Your order is " + e["Ordered food"] + ". Is it right?",
+                        "You order " + e["Ordered food"] + ". Right?"
+                    ],
                     ["Yes it is."]
                 )
             },
@@ -130,7 +134,6 @@ export default function A4_PickOrder_01(n) {
                                 ],
                             "submit": [false]
                         }
-
                     }
                 )
             },
@@ -161,7 +164,7 @@ export default function A4_PickOrder_01(n) {
 
 
 
-        output.push(
+        outputT.push(
             Fnperson(
                 ArrInFN,
                 DataTable,
@@ -174,6 +177,65 @@ export default function A4_PickOrder_01(n) {
         )
     })
 
-    return { "core": output.concat(output, output), "tool": DataTable }
+    return outputT
 }
+
+function R_phonenumber(e, n) {
+    let Arr_01 = [
+        FnObjHanldingNext(
+            ["What is your phone number?", "How about your phone number?"],
+            [
+                "It's " + e["Phone number"],
+                e["Phone number"]
+            ]
+        ),
+        FnObjHanldingNext(
+            ["What is your phone number?", "How about your phone number?"],
+            [
+                "It's " + e["Phone number"],
+                e["Phone number"]
+            ]
+        ),
+        FnObjHanldingNext(
+            ["What is your phone number?", "How about your phone number?"],
+            [
+                "Actually, I came to pick up my friend's order, I don't remember the phone number",
+                "Sorry, I don't remember. Actually, I came to pick up my friend's order."
+            ]
+        )
+    ]
+
+    return Arr_01[n]
+}
+
+
+function R_receiptnumber(e, n) {
+
+    let Arr_02 = [
+        FnObjHanldingNext(
+            ["What is your Receipt number", "How about the Receipt number?"],
+            [
+                "It's " + e["Receipt number"],
+                e["Receipt number"]
+            ],
+        ),
+        FnObjHanldingNext(
+            ["What is your Receipt number", "How about the Receipt number?"],
+            [
+                "I don't remember.",
+                "Sorry, I don't remember it."
+            ],
+        ),
+        FnObjHanldingNext(
+            ["What is your Receipt number", "How about the Receipt number?"],
+            [
+                "It's " + e["Receipt number"],
+                e["Receipt number"]
+            ],
+        )
+    ]
+
+    return Arr_02[n]
+}
+
 
