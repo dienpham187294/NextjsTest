@@ -1,6 +1,6 @@
 export default function showBottomPart1(
     props,
-    SET_Boqua, SET_StatusShowToPick
+    SET_Boqua, SET_StatusShowToPick, SET_DataAction
 ) {
     try {
         return <div
@@ -48,6 +48,7 @@ export default function showBottomPart1(
                 onClick={() => {
                     SET_Boqua(B => B + 1)
                     SET_StatusShowToPick(true)
+                    SET_DataAction(null)
                 }}
             >Next</button>
         </div>

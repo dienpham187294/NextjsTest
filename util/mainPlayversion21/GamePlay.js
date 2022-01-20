@@ -383,7 +383,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                                 </div>
                                 <hr />
                                 {showBottomPart1(
-                                    props, SET_Boqua, SET_StatusShowToPick
+                                    props, SET_Boqua, SET_StatusShowToPick, SET_DataAction
                                 )}
                                 {showDivNext()}
                                 {showCenterCountDown()}
@@ -473,7 +473,8 @@ function showAction(DataAction, SET_DataAction, Data_Commands, showOptionToRead,
             </div>
             <hr />
             <div>
-                {checkAction(DataAction) ? <h5>{showOptionToRead(Score, Data_Commands)}</h5> : "Speak"}
+                {checkAction(DataAction) ? <h5>{showOptionToRead(Score, Data_Commands)}</h5> : null}
+                {checkAction(DataAction) ? <h5 style={{ color: "red" }}>Done</h5> : null}
             </div>
 
         </div>

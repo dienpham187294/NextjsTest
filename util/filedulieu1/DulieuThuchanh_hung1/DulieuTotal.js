@@ -13,9 +13,10 @@ import Bai3 from "./bai3"
 
 import Bai41 from "./bai4_01"
 import Bai42 from "./bai4_02"
+import Bai43 from "./bai4_03"
 const DLTOTAL =
     [
-        [Bai41, Bai42],
+        [Bai41, Bai42, Bai43],
         Bai3,
         Bai2,
         [Bai21, Bai22, Bai23, Bai24, Bai25],

@@ -11,7 +11,7 @@ import dataPickuptable_01 from "./A1_tableOfPickup_01"
 import dataPickuptable_02 from "./A1_tableOfPickup_02"
 let ArrOfSubmit;
 
-export default function A4_PickOrder_02(n) {
+export default function A4_PickOrder_03(n) {
 
 
 
@@ -134,17 +134,17 @@ function getOutputT(DataTable, n) {
                         "It is $" + e["Total Price"],
                     ],
                     ["Here you are!"],
-                    nhantien(e)
+                    nhantien()
                 )
             },
             {
                 "index": "3-0-0-0",
                 "handle": FnObjHanldingNext(
                     [
-                        "I get $" + e["Total Price"],
-                        "I receive $" + e["Total Price"],
-                        "I get " + e["Total Price"] + " dollars",
-                        "I receive " + e["Total Price"] + " dollars",
+                        "I get $200. Your change is " + yourchange(e["Total Price"]),
+                        "I receive $200. Your change is " + yourchange(e["Total Price"]),
+                        "I get 200 dollars. Your change is " + yourchange(e["Total Price"]),
+                        "I receive 200 dollars. Your change is " + yourchange(e["Total Price"]),
                     ],
                     ["That's right."],
                     giaodoan(e)
@@ -195,7 +195,12 @@ function getOutputT(DataTable, n) {
     return outputT
 }
 
+function yourchange(e) {
 
+    let i = 200 - parseInt(e)
+
+    return i
+}
 
 function giaodoan(e) {
     return {
@@ -215,14 +220,14 @@ function giaodoan(e) {
 }
 
 
-function nhantien(e) {
+function nhantien() {
     return {
         "action": {
             "name": "Nhận tiền thanh toán!",
             "list":
                 [
                     {
-                        "data": e["Total Price"] + "$",
+                        "data": "200$",
                         "stt": false
                     }
                 ],
@@ -259,6 +264,7 @@ function R_phonenumber(e, n) {
 
     return Arr_01[n]
 }
+
 
 
 function R_receiptnumber(e, n) {
