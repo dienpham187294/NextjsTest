@@ -58,7 +58,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
     const [DataShowToPick, SET_DataShowToPick] = useState([0, 1, 2])
     const [DataAction, SET_DataAction] = useState(null)
 
-    const [DataActionCheck, SET_DataActionCheck] = useState(null)
+
     useEffect(() => {
         props.SET_Data_Commands(Info_StrickAnwers_Reactdata)
         if (i1 === 0) {
@@ -264,12 +264,10 @@ function ArrOfPeopeAppear_ReactJSX(props) {
             if (command.action !== undefined) {
                 State_of_Anwer = "none";
                 SET_DataAction(command.action)
-
                 let ArrCheck = [];
                 command.action.list.forEach(e => {
                     ArrCheck.push(e.stt)
                 })
-                SET_DataActionCheck(ArrCheck)
             } else {
                 State_of_Anwer = "strictmode";
                 SET_DataAction(null)
@@ -414,7 +412,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                     DataShowToPick, SET_DataShowToPick, StatusShowToPick, SET_StatusShowToPick,
                     props.ArrOfPeopeAppear_ReactData, AddTo_Show_ArrOfPeopeAppear_ReactData, props.Total
                 )}
-                {DataAction !== null ? showAction(DataAction, SET_DataAction, props.Data_Commands, DataActionCheck) : null}
+                {DataAction !== null ? showAction(DataAction, SET_DataAction, props.Data_Commands) : null}
             </div>
             <ReadReactSpeech />
         </>
@@ -424,7 +422,7 @@ export default ArrOfPeopeAppear_ReactJSX
 
 
 
-function showAction(DataAction, SET_DataAction, Data_Commands, DataActionCheck) {
+function showAction(DataAction, SET_DataAction, Data_Commands) {
 
 
     let ArrT2 = JSON.parse(JSON.stringify(DataAction));
@@ -444,7 +442,7 @@ function showAction(DataAction, SET_DataAction, Data_Commands, DataActionCheck) 
                 </div>
                 <hr />
                 <div className="col-6 border-right">
-                    <b>You</b>
+                    <b>A</b>
                     {DataAction.list.map((e, i) =>
                         <p
                             key={i}
@@ -458,7 +456,7 @@ function showAction(DataAction, SET_DataAction, Data_Commands, DataActionCheck) 
                     )}
                 </div>
                 <div className="col-6">
-                    <b>Guest</b>
+                    <b>B</b>
                     {DataAction.list.map((e, i) =>
                         <p
                             key={i}
@@ -472,19 +470,20 @@ function showAction(DataAction, SET_DataAction, Data_Commands, DataActionCheck) 
                     )}
                 </div>
             </div>
+            <hr />
             <div>
-                {checkAction(DataActionCheck, DataAction) ? <h1 style={{ color: "red" }}>{Data_Commands}</h1> : null}
+                {checkAction(DataAction) ? <h5 style={{ color: "red" }}>{Data_Commands}</h5> : null}
             </div>
 
         </div>
     )
 }
 
-function checkAction(DataActionCheck, DataAction) {
+function checkAction(DataAction) {
     try {
         let n = true
         DataAction.list.forEach((e, i) => {
-            if (e.stt === DataActionCheck[i]) {
+            if (e.stt !== DataAction.submit[i]) {
                 n = false
             }
         })

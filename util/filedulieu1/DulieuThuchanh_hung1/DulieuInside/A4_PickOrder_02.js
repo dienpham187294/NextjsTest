@@ -110,7 +110,14 @@ export default function A4_PickOrder_02(n) {
                 "index": "3",
                 "handle": FnObjHanldingNext(
                     ["Your order is " + e["Ordered food"] + ". Is it right?"],
-                    ["Yes it is."],
+                    ["Yes it is."]
+                )
+            },
+            {
+                "index": "3-0",
+                "handle": FnObjHanldingNext(
+                    ["Your order is ready!"],
+                    [""],
                     {
                         "action": {
                             "name": "Giao đồ ăn cho khách!",
@@ -120,17 +127,18 @@ export default function A4_PickOrder_02(n) {
                                         "data": e["Ordered food"],
                                         "stt": true
                                     }
-                                ]
+                                ],
+                            "submit": [false]
                         }
 
                     }
                 )
             },
             {
-                "index": "3-0",
+                "index": "3-0-0",
                 "handle": FnObjHanldingNext(
-                    ["Your order is ready! Here you are!"],
-                    ["Thank you!."],
+                    ["Here you are!"],
+                    ["Thank you"],
                     objEndSuccefull
                 )
             },
