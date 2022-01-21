@@ -4,7 +4,6 @@ const ArrPeple
             "Richard",
             "https://i.postimg.cc/SRWCVcf4/man2.png",
             "male",
-
         ],
         [
             "Barbara",

@@ -1,10 +1,7 @@
 import Check_ImageOrNot from "../mainPlayversion21/funtionInside/Check_ImageOrNot"
 
-
-
 export default function showHintAlot(input) {
     try {
-        
         return (
             <div>
                 {
@@ -44,7 +41,7 @@ export default function showHintAlot(input) {
                                     <>
                                         <img
                                             alt={input} src={input}
-                                            width="40px"
+                                            width="40px" height={"40px"}
                                         />
                                     </>
                                     : <>

@@ -43,12 +43,13 @@ export default
                                         cursor: "pointer",
                                     }}>
                                     <button
+
                                         className="btn btn-primary mt-1"
                                         onClick={() => {
                                             SET_Data_phongto(eee)
                                         }}
                                     >
-                                        {showListTable(eee)}
+                                        {showListTable(eee, indexeee)}
                                     </button>
                                 </div>
                             )}
@@ -76,7 +77,7 @@ export default
 
 
 
-function showListTable(eee) {
+function showListTable(eee, indexeee) {
 
     try {
         return (
@@ -84,17 +85,17 @@ function showListTable(eee) {
                 {
                     Check_ImageOrNot(eee[0]) ?
                         <img
-                            src={eee[0]} width="40px" /> :
+                            src={eee[0]} width="40px" height={"30px"} /> :
                         <span
-                            style={{ width: "40px" }}
+                            style={{ width: "80px" }}
                         >{eee[0].slice(0, 6)}</span>
                 }
             </>
         )
     } catch (error) {
         return <span
-            style={{ width: "40px" }}
-        >Table</span>
+            style={{ width: "80px" }}
+        >Table {indexeee}</span>
     }
 
 }
@@ -142,7 +143,7 @@ function showInside01(data, Total, UpdateDataTable, SET_UpdateDataTable) {
         else {
             return (
                 <>
-                    {showTable00(UpdateDataTable, SET_UpdateDataTable, data)}
+                    {showTable00(UpdateDataTable, SET_UpdateDataTable, data, Total)}
                 </>
             )
         }
@@ -153,7 +154,7 @@ function showInside01(data, Total, UpdateDataTable, SET_UpdateDataTable) {
     }
 }
 
-function showTable00(eee, SET_UpdateDataTable, data) {
+function showTable00(eee, SET_UpdateDataTable, data, Total) {
     try {
 
         return (
@@ -171,7 +172,7 @@ function showTable00(eee, SET_UpdateDataTable, data) {
                     }}
                     placeholder="Enter letters to search!"
                     type={"text"} className="form-control" />
-                {showtableWithoutInput(eee)}
+                {showtableWithoutInput(eee, Total)}
             </>
         )
     } catch (error) {
@@ -179,7 +180,7 @@ function showTable00(eee, SET_UpdateDataTable, data) {
         return null
     }
 }
-function showtableWithoutInput(eee) {
+function showtableWithoutInput(eee, Total) {
     try {
         let arrOfKeys = Object.keys(eee[0])
         return (
@@ -195,8 +196,11 @@ function showtableWithoutInput(eee) {
                             {arrOfKeys.map((ee2, ii2) =>
                                 <td key={ii2}>{
                                     Check_ImageOrNot(e1[ee2])
-                                        ? <img src={e1[ee2]} width="150px" height={"150px"} style={{ margin: "5px 0px" }} />
-                                        : <span >{e1[ee2]}</span>
+                                        ? <img
+                                            style={{ cursor: "pointer" }}
+                                            src={e1[ee2]} width="150px" height={"150px"} style={{ margin: "5px 0px" }} />
+                                        : <span
+                                        >{e1[ee2]}</span>
                                 }</td>
                             )}
                         </tr>

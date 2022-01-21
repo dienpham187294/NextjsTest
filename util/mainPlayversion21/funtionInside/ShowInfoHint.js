@@ -1,40 +1,61 @@
 import Check_ImageOrNot from "./Check_ImageOrNot"
-export default function ShowInfoHint(Info_Icon_Reactdata) {
+
+export default function showHintAlot(input) {
     try {
-        if (Info_Icon_Reactdata === undefined || Info_Icon_Reactdata === "") {
-            $("#showDivInHint").html("")
-            return null
-        }
-        else {
-            if (Info_Icon_Reactdata.includes("/>")) {
-                $("#showDivInHint").html(Info_Icon_Reactdata)
-                return null
-            }
-            else {
-                $("#showDivInHint").html("")
-                return (
-                    <>
-                        {Check_ImageOrNot(Info_Icon_Reactdata) ?
-                            <>
-                                <img
-                                    alt={Info_Icon_Reactdata} src={Info_Icon_Reactdata}
-                                    width="140px"
-                                />
-                            </>
-                            : <>
-                                <b><i
-                                >{Info_Icon_Reactdata}</i></b>
-                            </>}
-                    </>
-                )
-            }
-        }
+
+        return (
+            <div>
+                {
+                    input.map((e, i) =>
+                        <div key={i} style={{ display: "inline-block" }} >
+                            {e === undefined || e === "" ? null :
+                                <>
+                                    {Check_ImageOrNot(e) ?
+                                        <>
+                                            <img
+                                                alt={e} src={e}
+                                                width="40px"
+                                            />
+                                        </>
+                                        : <>
+                                            <b><i
+                                            >{e}</i></b>
+                                        </>}
+                                </>
+                            }
+                        </div>
+                    )
+                }
+            </div>
+        )
+
+
+
     } catch (error) {
         try {
-            return null
+            return (
+                <div>
+                    {
+                        input === undefined || input === "" ? null :
+                            <>
+                                {Check_ImageOrNot(input) ?
+                                    <>
+                                        <img
+                                            alt={input} src={input}
+                                            width="40px" height={"40px"}
+                                        />
+                                    </>
+                                    : <>
+                                        <b><i
+                                        >{input}</i></b>
+                                    </>}
+                            </>
+                    }
+                </div>
+            )
         } catch (error) {
-            return null
+            return "eror"
         }
+
     }
 }
-

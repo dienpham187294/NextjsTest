@@ -26,7 +26,7 @@ import convertArrToObjSource from "../../../util/filedulieu1/dataHelperFunction/
 import objEndSuccefull from "../../../util/filedulieu1/dataHelperFunction/objEndSuccefull"
 import turnArrToArrofArr from "../../../util/CreateNewDocument/turnArrToArrofArr"
 import ArrPeple from "../../../util/filedulieu1/dataHelperFunction/ArrOfpeple"
-
+import readXlsxFile from 'read-excel-file'
 
 
 function Index() {
@@ -39,25 +39,57 @@ function Index() {
 
 
 
-    useEffect(() => {
-        viewIndex(objMain, setDataSideLeft, "mainViewBegin", "begin", setpart)
-        viewIndex(objMain, setDataSideLeft, "mainViewMid", "mid", setpart)
-        viewIndex(objMain, setDataSideLeft, "mainViewEnd", "end", setpart)
-    }, [objMain])
+    // useEffect(() => {
+    //     viewIndex(objMain, setDataSideLeft, "mainViewBegin", "begin", setpart)
+    //     viewIndex(objMain, setDataSideLeft, "mainViewMid", "mid", setpart)
+    //     viewIndex(objMain, setDataSideLeft, "mainViewEnd", "end", setpart)
+    // }, [objMain])
+
+
+    // useEffect(() => {
+    //     $("#selectPartID").val(part)
+    // }, [part])
+
+    // useEffect(() => {
+    //     if (localStorage.getItem("objMainR") !== null) {
+    //         setobjMain(JSON.parse(localStorage.getItem("objMainR")))
+    //     }
+    // }, [])
+    // useEffect(() => {
+    //     localStorage.setItem("objMainR", JSON.stringify(objMain))
+    // }, [objMain])
 
 
     useEffect(() => {
-        $("#selectPartID").val(part)
-    }, [part])
+        try {
+            const input = document.getElementById('input')
 
-    useEffect(() => {
-        if (localStorage.getItem("objMainR") !== null) {
-            setobjMain(JSON.parse(localStorage.getItem("objMainR")))
+            input.addEventListener('change', () => {
+                readXlsxFile(input.files[0]).then((rows) => {
+                    let Arr1 = rows[0]
+                    console.log(Arr1)
+                    let arr = []
+                    rows.forEach((e, i) => {
+
+                        if (i > 0) {
+                            let obj = {}
+                            Arr1.forEach((ee, i) => {
+                                obj[ee] = e[i]
+                            })
+
+                            arr.push(obj)
+                        }
+
+                    })
+                    console.log(JSON.stringify(arr))
+                })
+            })
+        } catch (error) {
+            console.log(error)
         }
     }, [])
-    useEffect(() => {
-        localStorage.setItem("objMainR", JSON.stringify(objMain))
-    }, [objMain])
+
+
     function setDataSideLeft(i, objMain) {
         objMain.forEach((e) => {
             if (e.m00 === i) {
@@ -69,7 +101,8 @@ function Index() {
     return (
         <>
             <div className="row">
-                <div className="col-5" >
+                <input type="file" id="input" />
+                {/* <div className="col-5" >
                     <div className="row">
                         <div className="col-6">
                             {showTotal(objMain.total)}
@@ -174,9 +207,9 @@ function Index() {
                         <hr />
                         {JSON.stringify(sideLeftData)}
                     </div>
-                </div>
+                </div> */}
             </div>
-            <div>
+            {/* <div>
                 <button
                     onClick={() => {
                         let submit = []
@@ -316,7 +349,7 @@ function Index() {
 
                     }}
                     className="btn btn-outline-primary">Insert</button>
-            </div>
+            </div> */}
         </>
     )
 

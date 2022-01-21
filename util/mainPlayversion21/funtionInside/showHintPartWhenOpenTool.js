@@ -18,7 +18,7 @@ export default function showHintPartWhenOpenTool(ShowHint, Info_Icon_Reactdata) 
                         }}>
                             {Check_ImageOrNot(Info_Icon_Reactdata) ?
                                 <>
-                                    <img alt={Info_Icon_Reactdata} src={Info_Icon_Reactdata} width="360px" />
+                                    <img alt={Info_Icon_Reactdata} src={Info_Icon_Reactdata} width="360px" height={"360px"} />
                                 </>
                                 : <b><i>{Info_Icon_Reactdata}</i></b>}
                         </div>
