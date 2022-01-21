@@ -12,7 +12,7 @@ import dataPickuptable_02 from "./A1_tableOfPickup_02"
 
 import dataTableBooked from "./A1_tableOfBooking"
 import dataPhoneNumber from "./A1_phonenumber"
-
+import shuffleArr from "../../dataHelperFunction/shuffleArr"
 
 let ArrOfSubmit;
 let dataTableBooked_use = dataTableBooked.slice(18, 21)
@@ -101,6 +101,7 @@ function getOutputT(DataTable, n) {
                 "index": "0",
                 "handle": FnObjHanldingNext(
                     [
+                        "Which day do you want to book?",
                         "For what day, please?",
                     ],
                     [
@@ -112,8 +113,9 @@ function getOutputT(DataTable, n) {
                 "index": "0-0",
                 "handle": FnObjHanldingNext(
                     [
-                        "Sorry" + nameBE + ". We ran out of tables that day.",
-                        "Unfortunately" + nameBE + ". We ran out of tables that day.",
+                        "Sorry" + nameBE + ". All the tables is booked that day.",
+                        "Sorry" + nameBE + ". All tables are fully booked.",
+                        "Unfortunately" + nameBE + ". We run out of tables that day.",
                     ],
                     [
                         "Unfortunately!",
@@ -125,7 +127,7 @@ function getOutputT(DataTable, n) {
                 "index": "0-0-0",
                 "handle": FnObjHanldingNext(
                     [
-                        "Do you want to change to another date" + nameBE + "?",
+                        "Do you want to change to another day" + nameBE + "?",
                     ],
                     [
                         "How about the " + objUse.date1[0].Date,
@@ -136,7 +138,7 @@ function getOutputT(DataTable, n) {
                 "index": "0-0-0-0",
                 "handle": FnObjHanldingNext(
                     [
-                        "We had space available that day. Do you have a seat request?",
+                        "We have space available that day. Do you have any seat requests?",
                     ],
                     [
                         "Anywhere is fine."
@@ -186,7 +188,7 @@ function getOutputT(DataTable, n) {
                 "index": "4",
                 "handle": FnObjHanldingNext(
                     [
-                        "Please wait a moment. I have taken the reservation.",
+                        "Please wait a moment.",
                     ],
                     [
                         ""
@@ -240,7 +242,7 @@ function getOutputT(DataTable, n) {
                 "index": "4-0-0-0",
                 "handle": FnObjHanldingNext(
                     [
-                        "So thank you. See you soon.",
+                        "Thank you. See you soon.",
                     ],
                     [
                         "Thank you."
@@ -283,36 +285,32 @@ function getOutputT(DataTable, n) {
     return outputT
 }
 
-function objaction_01(
-    Arr
-) {
-
-    let obj = {
-        "action": {
-            "name": "Ghi nhận đơn đặt hàng của khách!",
-            "list": [],
-            "submit": []
-        }
-    }
-
+function objaction_01(Arr) {
+    let arrT = []
     Arr.forEach((e) => {
         e.input.forEach((ee, ii) => {
             if (e.index === ii) {
-                obj.action.list.push(
+                arrT.push(
                     {
                         "data": ee,
-                        "stt": true
+                        "stt": true,
+                        "submit": false
                     }
                 )
-                obj.action.submit.push(false)
             } else {
-                obj.action.list.push({ "data": ee, "stt": true })
-                obj.action.submit.push(true)
+                arrT.push({ "data": ee, "stt": true, "submit": true })
             }
         })
     })
-    return obj
+
+    return {
+        "action": {
+            "name": "Ghi nhận đơn đặt hàng của khách!",
+            "list": shuffleArr(arrT),
+        }
+    }
 }
+
 
 function getArrDate(arrobj) {
     let arrFn = []

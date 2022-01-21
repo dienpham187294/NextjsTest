@@ -483,16 +483,29 @@ function showAction(DataAction, SET_DataAction, Data_Commands, showOptionToRead,
 
 function checkAction(DataAction) {
     try {
+
         let n = true
         DataAction.list.forEach((e, i) => {
-            if (e.stt !== DataAction.submit[i]) {
+            if (e.stt !== e.submit) {
                 n = false
             }
         })
         if (n) { State_of_Anwer = "strictmode" } else { State_of_Anwer = "none" }
         return n
+
     } catch (error) {
-        return false
+        try {
+            let n = true
+            DataAction.list.forEach((e, i) => {
+                if (e.stt !== DataAction.submit[i]) {
+                    n = false
+                }
+            })
+            if (n) { State_of_Anwer = "strictmode" } else { State_of_Anwer = "none" }
+            return n
+        } catch (error) {
+            return false
+        }
     }
 
 }

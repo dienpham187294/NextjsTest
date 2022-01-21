@@ -100,7 +100,9 @@ function getOutputT(DataTable, n) {
                 "index": "0",
                 "handle": FnObjHanldingNext(
                     [
-                        "For what day, please?",
+                        "Which day do you want to book?",
+                        "For what day" + nameBE,
+                        "For which day" + nameBE,
                     ],
                     [
                         "The " + objUse.date[0].Date
@@ -111,8 +113,9 @@ function getOutputT(DataTable, n) {
                 "index": "0-0",
                 "handle": FnObjHanldingNext(
                     [
-                        "Sorry" + nameBE + ". We ran out of tables that day.",
-                        "Unfortunately" + nameBE + ". We ran out of tables that day.",
+                        "Sorry" + nameBE + ". All the tables is booked that day.",
+                        "Sorry" + nameBE + ". All tables are fully booked.",
+                        "Unfortunately" + nameBE + ". We run out of tables that day.",
                     ],
                     [
                         "Unfortunately!",
@@ -124,7 +127,7 @@ function getOutputT(DataTable, n) {
                 "index": "0-0-0",
                 "handle": FnObjHanldingNext(
                     [
-                        "Do you want to change to another date" + nameBE + "?",
+                        "Do you want to change to another day" + nameBE + "?",
                     ],
                     [
                         "No thanks.",
