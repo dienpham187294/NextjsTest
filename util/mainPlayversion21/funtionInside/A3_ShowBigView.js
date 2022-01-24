@@ -18,13 +18,14 @@ export default
         return (
             <div
                 style={{
-                    position: "fixed",
-                    border: "5px solid violet",
-                    borderRadius: "4px",
-                    top: "25%",
-                    bottom: "5px",
-                    left: "5px",
-                    right: "5px",
+                    // position: "fixed",
+                    // border: "5px solid violet",
+                    // borderRadius: "4px",
+                    // top: "25%",
+                    // bottom: "5px",
+                    // left: "5px",
+                    // right: "5px",
+                    height: "350px",
                     backgroundColor: "white",
                     overflow: "auto",
                     zIndex: 3,
@@ -58,11 +59,11 @@ export default
                     </div >
 
                 )}
-                <button
+                {/* <button
                     className="btn btn-danger"
                     onClick={() => { SET_Data_phongto(null) }}
                     style={{ position: "fixed", bottom: "10%", right: "10%" }}
-                >Trở lại</button>
+                >Trở lại</button> */}
 
             </div>
 
@@ -124,7 +125,7 @@ function showInside01(data, Total, UpdateDataTable, SET_UpdateDataTable) {
                                             Total.fnObj.SET_Info_Icon_Reactdata(eeee)
                                             Total.fnObj.Submit_Show_OnePeopeAppear_ReactData(Total.stObj.inputSumit)
                                         }}
-                                        src={eeee} width="250px" height={"250px"} style={{ margin: "5px 25px", cursor: "pointer" }} /> :
+                                        src={eeee} width="150px" height={"150px"} style={{ margin: "5px 25px", cursor: "pointer" }} /> :
                                     <b
                                         onClick={() => {
                                             Total.stObj.inputSumit += "===" + eeee;

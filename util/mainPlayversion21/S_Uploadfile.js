@@ -3,7 +3,7 @@ import { useState } from "react";
 import shuffleArr from "../filedulieu1/dataHelperFunction/shuffleArr";
 function UpLoadFile(props) {
 
-    const [srcYoutube, SET_SrcYoutube] = useState("")
+    const [srcYoutube, SET_SrcYoutube] = useState("https://www.youtube.com/embed/a-48STRZtIQ")
 
     function Fnpick(arrPick) {
         try {
@@ -33,37 +33,13 @@ function UpLoadFile(props) {
                 <p>Đạt được một kết quả tương đối tốt chỉ với một thời gian thực hành nhỏ mỗi ngày.</p>
                 <b> <i>Phổ cập tiếng anh nghe nói cho người Việt!</i></b>
             </div>
+
             <hr />
             {showInInline(props.DL, setStructure, Fnpick)}
-
-
-
-
-            {/* {
-                srcYoutube !== "" ?
-                    <div
-                        style={{
-                            position: "fixed",
-                            top: "5px",
-                            bottom: "5px",
-                            left: "5px",
-                            right: "5px",
-                            textAlign: "center",
-                            backgroundColor: "white",
-                        }}
-                    >
-                        <button className="btn btn-danger" onClick={() => { SET_SrcYoutube("") }}>Thoát</button>
-                        <hr />
-
-
-                        <div class="respondiframe">
-                            <iframe class="responsive-iframe" src={srcYoutube}></iframe>
-                        </div>
-                    </div>
-                    : null
-            } */}
-
-
+            <hr />
+            <div class="respondiframe">
+                <iframe class="responsive-iframe" src={srcYoutube} allowFullScreen></iframe>
+            </div>
         </div >
     )
 }
@@ -177,50 +153,3 @@ function showInInline1(test, setStructure, Fnpick) {
 }
 
 
-// {props.DL.map((e, i) =>
-//     <div key={i}>
-//         <div>
-//             {e[0].storyBoicanh !== "" && e[0].storyBoicanh !== undefined ?
-//                 <>
-//                     <p style={
-//                         {
-//                             color: "blueviolet"
-//                         }
-//                     }>
-//                         {e[0].storyBoicanh}
-//                     </p>
-//                 </>
-
-//                 : null}
-
-//             <b style={{ color: "black" }}>{e[0].nameoflession}</b>
-//             <p>{e[0].story}</p>
-//             <button
-//                 style={{ border: "1px solid green", borderRadius: "5px", padding: "5px", marginTop: "5px", cursor: "pointer" }}
-//                 className="btnHover ml-1"
-//                 onClick={() => {
-//                     Fnpick(e)
-//                 }}
-
-//             >Practice</button>
-//             <button
-//                 style={{ border: "1px solid green", borderRadius: "5px", padding: "5px", marginTop: "5px", cursor: "pointer" }}
-//                 className="btnHover ml-1"
-//                 onClick={() => {
-
-//                     sedivvucture(e)
-
-//                 }}
-//             >Study</button>
-//             {e[0].srcYoutube !== "" ?
-//                 <button
-//                     style={{ border: "1px solid green", borderRadius: "5px", padding: "5px", marginTop: "5px", cursor: "pointer" }}
-//                     className="btnHover ml-1"
-//                     onClick={() => {
-//                         SET_SrcYoutube(e[0].srcYoutube)
-//                     }}
-//                 >Video</button>
-//                 : null}
-//         </div>
-//     </div>
-// )}
