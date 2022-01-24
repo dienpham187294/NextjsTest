@@ -210,10 +210,10 @@ function giaodoan(e) {
                 [
                     {
                         "data": e["Ordered food"],
-                        "stt": true
+                        "stt": true,
+                        "submit": false
                     }
-                ],
-            "submit": [false]
+                ]
         }
     }
 
@@ -228,10 +228,10 @@ function nhantien() {
                 [
                     {
                         "data": "200$",
-                        "stt": false
+                        "stt": false,
+                        "submit": true
                     }
                 ],
-            "submit": [true]
         }
     }
 }

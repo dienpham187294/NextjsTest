@@ -129,10 +129,10 @@ function getOutputT(DataTable, n) {
                                 [
                                     {
                                         "data": e["Ordered food"],
-                                        "stt": true
+                                        "stt": true,
+                                        "submit": false
                                     }
-                                ],
-                            "submit": [false]
+                                ]
                         }
                     }
                 )
