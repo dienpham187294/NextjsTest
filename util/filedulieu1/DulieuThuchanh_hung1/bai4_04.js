@@ -65,7 +65,7 @@ const Bai44
     = [
         {
             "nameoflession": "Bài 4_04",
-            "srcYoutube": "",
+            "srcYoutube": "https://www.youtube.com/embed/CTYla51ko0g",
             "storyBoicanh": "Nhà hàng",
             "story": "",
             "dataTool": DataTable,

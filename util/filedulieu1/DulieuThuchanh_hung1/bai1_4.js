@@ -31,17 +31,22 @@ let coerdataoflession = [].concat(
 )
 
 let DataTable = [
-    InA2_Togo.tool.m01.concat(InA2_EatHere.tool.m01),
-    InA2_Togo.tool.m02.concat(InA2_Togo.tool.m03),
-    InA2_Menu.tool.m01,
-    InA2_BabyChair.tool.m01.concat(InA2_Toilet.tool.m01)
+    InA2_Togo.tool.m01.concat(
+        InA2_EatHere.tool.m01,
+        InA2_Togo.tool.m02,
+        InA2_Togo.tool.m03,
+        InA2_Menu.tool.m01,
+        InA2_BabyChair.tool.m01,
+        InA2_Toilet.tool.m01
+    )
 ]
+
 
 const Bai14
     = [
         {
             "nameoflession": "B.3.2_04",
-            "srcYoutube": "",
+            "srcYoutube": "https://www.youtube.com/embed/_UK4Cs7Oj14",
             "storyBoicanh": "Nhà hàng",
             "story": "",
             "dataTool": DataTable,
