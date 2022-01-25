@@ -11,12 +11,13 @@ export default function showTopCenter1(
             <div className="row">
 
                 <div className="col-8">
-                    {showOptionToRead(Score, Info_StrickAnwers_Reactdata)}
-                    <hr />
+
                     <b> Điểm: {Score} <span style={{ color: "red" }}>Chọn sai: {Sai} </span> | <span style={{ color: "red" }}>{Boqua}</span> </b>
                     <span id="thoigian"></span>
-                    <hr />
-                    <button
+                    <br />
+                    {props.ShowInterim ? <span id="showInterimID" style={{ height: "50px", color: "violet" }}></span> : <span id="showInterimID" style={{ color: "violet", backgroundColor: "violet" }}></span>}
+                    {/* <hr /> */}
+                    {/* <button
                         className="btn btn-sm btn-primary ml-1"
                         onClick={() => {
                             timeCount = 1;
@@ -29,9 +30,11 @@ export default function showTopCenter1(
                         onClick={() => {
                             SET_ShowReview(ArrHoldThingToReview)
                         }}
-                    >Review</button>
-                    <br />
-                    {props.ShowInterim ? <span id="showInterimID" style={{ color: "violet" }}></span> : <span id="showInterimID" style={{ color: "violet", backgroundColor: "violet" }}></span>}
+                    >Review</button> */}
+                    <hr />
+                    {showOptionToRead(Score, Info_StrickAnwers_Reactdata)}
+
+
                 </div>
                 <div className="col-4">
                     {showSubmitSyxtax(Info_ToSunmit_Reactdata)}

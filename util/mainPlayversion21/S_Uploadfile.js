@@ -35,9 +35,9 @@ function UpLoadFile(props) {
             </div>
 
             <hr />
-            {showInInline(props.DL, setStructure, Fnpick)}
+            {showInInline(props.DL, setStructure, Fnpick, SET_SrcYoutube)}
             <hr />
-            <div className="respondiframe">
+            <div id="videoID" className="respondiframe">
                 <iframe className="responsive-iframe" src={srcYoutube} allowFullScreen></iframe>
             </div>
         </div >
@@ -47,7 +47,7 @@ function UpLoadFile(props) {
 export default UpLoadFile
 
 
-function showInInline(test, setStructure, Fnpick) {
+function showInInline(test, setStructure, Fnpick, SET_SrcYoutube) {
     try {
         return (
             <>
@@ -76,18 +76,18 @@ function showInInline(test, setStructure, Fnpick) {
                                     Fnpick(e)
                                 }}
 
-                            >Practice</button>
+                            >T. hành</button>
                             <button
                                 style={{ border: "1px solid green", borderRadius: "5px", padding: "5px", marginTop: "5px", cursor: "pointer" }}
                                 className="btnHover ml-1"
                                 onClick={() => {
-
                                     setStructure(e)
-
                                 }}
                             >Study</button>
+                            {showBtnVideoHuongdan(e[0].srcYoutube, SET_SrcYoutube)}
+
                         </div>
-                            : showInInline1(e, setStructure, Fnpick)}
+                            : showInInline1(e, setStructure, Fnpick, SET_SrcYoutube)}
                     </div>
                 )}
             </>
@@ -100,12 +100,12 @@ function showInInline(test, setStructure, Fnpick) {
 }
 
 
-function showInInline1(test, setStructure, Fnpick) {
+function showInInline1(test, setStructure, Fnpick, SET_SrcYoutube) {
     try {
         return (
             <>
                 {test.map((e, i) =>
-                    <div key={i} className="divT2">
+                    <div key={i} className="divT2" >
                         {e[0].nameoflession !== undefined ? <div>
                             {e[0].storyBoicanh !== "" && e[0].storyBoicanh !== undefined ?
                                 <>
@@ -129,18 +129,17 @@ function showInInline1(test, setStructure, Fnpick) {
                                     Fnpick(e)
                                 }}
 
-                            >Practice</button>
+                            >T.hành</button>
                             <button
                                 style={{ border: "1px solid green", borderRadius: "5px", padding: "5px", marginTop: "5px", cursor: "pointer" }}
                                 className="btnHover ml-1"
                                 onClick={() => {
-
                                     setStructure(e)
-
                                 }}
-                            >Study</button>
+                            >Học tập</button>
+                            {showBtnVideoHuongdan(e[0].srcYoutube, SET_SrcYoutube)}
                         </div>
-                            : showInInline(e, setStructure, Fnpick)}
+                            : showInInline(e, setStructure, Fnpick, SET_SrcYoutube)}
                     </div>
                 )}
             </>
@@ -153,3 +152,27 @@ function showInInline1(test, setStructure, Fnpick) {
 }
 
 
+function showBtnVideoHuongdan(dataqInput, SET_SrcYoutube) {
+    try {
+
+        if (dataqInput !== "") {
+            return (
+                <>
+                    <br />
+                    <a href="#videoID">
+                        <button
+                            style={{ border: "1px solid green", borderRadius: "5px", padding: "5px", marginTop: "5px", cursor: "pointer" }}
+                            className="btnHover ml-1"
+                            onClick={() => {
+                                SET_SrcYoutube(dataqInput)
+                            }}
+                        >Xem hướng dẫn</button>
+                    </a>
+                </>
+            )
+        }
+        return null
+    } catch (error) {
+        return null
+    }
+}
