@@ -60,7 +60,7 @@ const Bai42
     = [
         {
             "nameoflession": "Bài 4_02",
-            "srcYoutube": "",
+            "srcYoutube": "https://www.youtube.com/embed/Zrv1IhlCk_E",
             "storyBoicanh": "Nhà hàng",
             "story": "",
             "dataTool": DataTable,
