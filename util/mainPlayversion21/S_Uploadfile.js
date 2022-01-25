@@ -138,6 +138,7 @@ function showInInline1(test, setStructure, Fnpick, SET_SrcYoutube) {
                                 }}
                             >Học tập</button>
                             {showBtnVideoHuongdan(e[0].srcYoutube, SET_SrcYoutube)}
+                            {showBtnVideoNgheTacham(e[0].srcListenAndSplit, SET_SrcYoutube)}
                         </div>
                             : showInInline(e, setStructure, Fnpick, SET_SrcYoutube)}
                     </div>
@@ -151,6 +152,30 @@ function showInInline1(test, setStructure, Fnpick, SET_SrcYoutube) {
     }
 }
 
+
+function showBtnVideoNgheTacham(dataqInput, SET_SrcYoutube) {
+    try {
+        return (
+            <>
+                {dataqInput.map((e, i) =>
+                    <div key={i}>
+                        <a href="#videoID">
+                            <button
+                                style={{ border: "1px solid green", borderRadius: "5px", padding: "5px", marginTop: "5px", cursor: "pointer" }}
+                                className="btnHover ml-1"
+                                onClick={() => {
+                                    SET_SrcYoutube(e)
+                                }}
+                            >Câu {i}</button>
+                        </a>
+                    </div>
+                )}
+            </>
+        )
+    } catch (error) {
+        return null
+    }
+}
 
 function showBtnVideoHuongdan(dataqInput, SET_SrcYoutube) {
     try {

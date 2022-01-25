@@ -15,7 +15,7 @@ export default function A2_Toilet(n) {
 
     let output = []
     let DataTable = {
-        "m01": ["The toilet is in the end of the hallway."]
+        "m01": ["The toilet is at the end of the hallway."]
     }
 
     ArrPeple.slice(0, n).forEach(e => {
@@ -41,7 +41,7 @@ export default function A2_Toilet(n) {
         ]
         let input_02_Body = [
             FnObjHanldingNext(
-                ["The toilet is in the end of the hallway."],
+                ["The toilet is at the end of the hallway."],
                 ["Thank you!"],
                 objEndSuccefull
             )

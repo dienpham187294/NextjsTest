@@ -47,6 +47,10 @@ const Bai14
         {
             "nameoflession": "B.3.2_04",
             "srcYoutube": "https://www.youtube.com/embed/_UK4Cs7Oj14",
+            "srcListenAndSplit": [
+                "https://www.youtube.com/embed/8VJw3ExjoII",
+                "https://www.youtube.com/embed/mOp9E0kNWgI"
+            ],
             "storyBoicanh": "Nhà hàng",
             "story": "",
             "dataTool": DataTable,
