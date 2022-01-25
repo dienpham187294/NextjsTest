@@ -7,7 +7,7 @@ export default [
         "Receipt number": 101,
         "Payment status": "Paid",
         "Total Price": 100,
-        "Ordered food": "1 Grilled fish, 1 Steak, and  1 Mineral water",
+        "Ordered food": "one Grilled fish, one Steak, and one Mineral water",
         "Status": "Ready"
     },
     {
@@ -18,7 +18,7 @@ export default [
         "Receipt number": 102,
         "Payment status": "Paid",
         "Total Price": 100,
-        "Ordered food": "1 Steak, 1 pasta, and  1 Fresh orange juice",
+        "Ordered food": "one Steak, one pasta, and one Fresh orange juice",
         "Status": "Ready"
     },
     {
@@ -29,7 +29,7 @@ export default [
         "Receipt number": 103,
         "Payment status": "Paid",
         "Total Price": 100,
-        "Ordered food": "1 pasta, 1 Chicken salad, and  1 Soft drink",
+        "Ordered food": "one pasta, one Chicken salad, and one Soft drink",
         "Status": "Ready"
     },
     {
@@ -40,7 +40,7 @@ export default [
         "Receipt number": 104,
         "Payment status": "Paid",
         "Total Price": 120,
-        "Ordered food": "2 pasta, and  1 Mineral water",
+        "Ordered food": "two pasta and one Mineral water",
         "Status": "Ready"
     },
     {
@@ -51,7 +51,7 @@ export default [
         "Receipt number": 105,
         "Payment status": "Paid",
         "Total Price": 120,
-        "Ordered food": "2 Chicken salad, and  1 Fresh orange juice",
+        "Ordered food": "two Chicken salads and one Fresh orange juice",
         "Status": "Ready"
     },
     {
@@ -62,7 +62,7 @@ export default [
         "Receipt number": 106,
         "Payment status": "Paid",
         "Total Price": 80,
-        "Ordered food": "1 Steak, and  1 Mineral water",
+        "Ordered food": "one Steak and one Mineral water",
         "Status": "Ready"
     },
     {
@@ -73,7 +73,7 @@ export default [
         "Receipt number": 107,
         "Payment status": "Paid",
         "Total Price": 80,
-        "Ordered food": "1 pasta, and  1 Fresh orange juice",
+        "Ordered food": "one pasta and one Fresh orange juice",
         "Status": "Ready"
     },
     {
@@ -84,7 +84,7 @@ export default [
         "Receipt number": 108,
         "Payment status": "Paid",
         "Total Price": 80,
-        "Ordered food": "1 Chicken salad, and  1 Soft drink",
+        "Ordered food": "one Chicken salad and one Soft drink",
         "Status": "Ready"
     },
     {
@@ -95,7 +95,7 @@ export default [
         "Receipt number": 109,
         "Payment status": "Paid",
         "Total Price": 140,
-        "Ordered food": "2 pizza, and  2 English tea",
+        "Ordered food": "two pizzas and two English tea",
         "Status": "Ready"
     },
     {
@@ -106,7 +106,7 @@ export default [
         "Receipt number": 110,
         "Payment status": "Paid",
         "Total Price": 140,
-        "Ordered food": "2 Mushroom omelette, and  2 Irish Cream Coffee",
+        "Ordered food": "two Mushroom omelets and two Irish Cream Coffee",
         "Status": "Ready"
     },
     {
@@ -117,7 +117,7 @@ export default [
         "Receipt number": 111,
         "Payment status": "Unpaid",
         "Total Price": 100,
-        "Ordered food": "1 Chicken salad, 1 pizza, and  1 English tea",
+        "Ordered food": "one Chicken salad, one pizza, and one English tea",
         "Status": "Ready"
     },
     {
@@ -128,7 +128,7 @@ export default [
         "Receipt number": 112,
         "Payment status": "Unpaid",
         "Total Price": 100,
-        "Ordered food": "1 pizza, 1 Mushroom omelette, and  1 Irish Cream Coffee",
+        "Ordered food": "one pizza, one Mushroom omelet, and one Irish Cream Coffee",
         "Status": "Ready"
     },
     {
@@ -139,7 +139,7 @@ export default [
         "Receipt number": 113,
         "Payment status": "Unpaid",
         "Total Price": 120,
-        "Ordered food": "2 pizza, and  1 Soft drink",
+        "Ordered food": "two pizzas and one Soft drink",
         "Status": "Ready"
     },
     {
@@ -150,7 +150,7 @@ export default [
         "Receipt number": 114,
         "Payment status": "Unpaid",
         "Total Price": 120,
-        "Ordered food": "2 Mushroom omelette, and  1 English tea",
+        "Ordered food": "two Mushroom omelets and one English tea",
         "Status": "Ready"
     },
     {
@@ -161,7 +161,7 @@ export default [
         "Receipt number": 115,
         "Payment status": "Unpaid",
         "Total Price": 120,
-        "Ordered food": "2 Vegetable chili, and  1 Irish Cream Coffee",
+        "Ordered food": "two Vegetable chilies and one Irish Cream Coffee",
         "Status": "Ready"
     },
     {
@@ -172,7 +172,7 @@ export default [
         "Receipt number": 116,
         "Payment status": "Unpaid",
         "Total Price": 140,
-        "Ordered food": "2 Steak, and  2 Mineral water",
+        "Ordered food": "two Steak and two Mineral water",
         "Status": "Ready"
     },
     {
@@ -183,7 +183,7 @@ export default [
         "Receipt number": 117,
         "Payment status": "Unpaid",
         "Total Price": 140,
-        "Ordered food": "2 pasta, and  2 Fresh orange juice",
+        "Ordered food": "two pasta and two Fresh orange juice",
         "Status": "Ready"
     },
     {
@@ -194,7 +194,7 @@ export default [
         "Receipt number": 118,
         "Payment status": "Unpaid",
         "Total Price": 140,
-        "Ordered food": "2 Chicken salad, and  2 Soft drink",
+        "Ordered food": "two Chicken salads and two Soft drinks",
         "Status": "Ready"
     },
     {
@@ -205,7 +205,7 @@ export default [
         "Receipt number": 119,
         "Payment status": "Unpaid",
         "Total Price": 80,
-        "Ordered food": "1 pizza, and  1 English tea",
+        "Ordered food": "one pizza and one English tea",
         "Status": "Ready"
     },
     {
@@ -216,7 +216,7 @@ export default [
         "Receipt number": 120,
         "Payment status": "Unpaid",
         "Total Price": 80,
-        "Ordered food": "1 Mushroom omelette, and  1 Irish Cream Coffee",
+        "Ordered food": "one Mushroom omelet and one Irish Cream Coffee",
         "Status": "Ready"
     },
     {
@@ -227,7 +227,7 @@ export default [
         "Receipt number": 121,
         "Payment status": "Paid",
         "Total Price": 80,
-        "Ordered food": "1 Steak, and  1 Mineral water",
+        "Ordered food": "one Steak and one Mineral water",
         "Status": "Not yet"
     },
     {
@@ -238,7 +238,7 @@ export default [
         "Receipt number": 122,
         "Payment status": "Paid",
         "Total Price": 80,
-        "Ordered food": "1 pasta, and  1 Fresh orange juice",
+        "Ordered food": "one pasta and one Fresh orange juice",
         "Status": "Not yet"
     },
     {
@@ -249,7 +249,7 @@ export default [
         "Receipt number": 123,
         "Payment status": "Paid",
         "Total Price": 80,
-        "Ordered food": "1 Chicken salad, and  1 Soft drink",
+        "Ordered food": "one Chicken salad and one Soft drink",
         "Status": "Not yet"
     },
     {
@@ -260,7 +260,7 @@ export default [
         "Receipt number": 124,
         "Payment status": "Unpaid",
         "Total Price": 80,
-        "Ordered food": "1 pizza, and  1 English tea",
+        "Ordered food": "one pizza and one English tea",
         "Status": "Not yet"
     },
     {
@@ -271,7 +271,7 @@ export default [
         "Receipt number": 125,
         "Payment status": "Unpaid",
         "Total Price": 80,
-        "Ordered food": "1 Mushroom omelette, and  1 Irish Cream Coffee",
+        "Ordered food": "one Mushroom omelet and one Irish Cream Coffee",
         "Status": "Not yet"
     },
     {
@@ -282,7 +282,7 @@ export default [
         "Receipt number": 126,
         "Payment status": "Paid",
         "Total Price": 100,
-        "Ordered food": "1 Grilled fish, 1 Steak, and  1 Mineral water",
+        "Ordered food": "one Grilled fish, one Steak, and one Mineral water",
         "Status": "Not yet"
     },
     {
@@ -293,7 +293,7 @@ export default [
         "Receipt number": 127,
         "Payment status": "Paid",
         "Total Price": 100,
-        "Ordered food": "1 Steak, 1 pasta, and  1 Fresh orange juice",
+        "Ordered food": "one Steak, one pasta, and one Fresh orange juice",
         "Status": "Not yet"
     },
     {
@@ -304,7 +304,7 @@ export default [
         "Receipt number": 128,
         "Payment status": "Paid",
         "Total Price": 100,
-        "Ordered food": "1 pasta, 1 Chicken salad, and  1 Soft drink",
+        "Ordered food": "one pasta, one Chicken salad, and one Soft drink",
         "Status": "Not yet"
     },
     {
@@ -315,7 +315,7 @@ export default [
         "Receipt number": 129,
         "Payment status": "Unpaid",
         "Total Price": 100,
-        "Ordered food": "1 Chicken salad, 1 pizza, and  1 English tea",
+        "Ordered food": "one Chicken salad, one pizza, and one English tea",
         "Status": "Not yet"
     },
     {
@@ -326,7 +326,7 @@ export default [
         "Receipt number": 130,
         "Payment status": "Unpaid",
         "Total Price": 100,
-        "Ordered food": "1 pizza, 1 Mushroom omelette, and  1 Irish Cream Coffee",
+        "Ordered food": "one pizza, one Mushroom omelet, and one Irish Cream Coffee",
         "Status": "Not yet"
     },
     {
@@ -337,7 +337,7 @@ export default [
         "Receipt number": 131,
         "Payment status": "Paid",
         "Total Price": 120,
-        "Ordered food": "2 pasta, and  1 Mineral water",
+        "Ordered food": "two pasta and one Mineral water",
         "Status": "Not yet"
     },
     {
@@ -348,7 +348,7 @@ export default [
         "Receipt number": 132,
         "Payment status": "Paid",
         "Total Price": 120,
-        "Ordered food": "2 Chicken salad, and  1 Fresh orange juice",
+        "Ordered food": "two Chicken salads and one Fresh orange juice",
         "Status": "Not yet"
     },
     {
@@ -359,7 +359,7 @@ export default [
         "Receipt number": 133,
         "Payment status": "Unpaid",
         "Total Price": 120,
-        "Ordered food": "2 pizza, and  1 Soft drink",
+        "Ordered food": "two pizzas and one Soft drink",
         "Status": "Not yet"
     },
     {
@@ -370,7 +370,7 @@ export default [
         "Receipt number": 134,
         "Payment status": "Unpaid",
         "Total Price": 120,
-        "Ordered food": "2 Mushroom omelette, and  1 English tea",
+        "Ordered food": "two Mushroom omelets and one English tea",
         "Status": "Not yet"
     },
     {
@@ -381,7 +381,7 @@ export default [
         "Receipt number": 135,
         "Payment status": "Unpaid",
         "Total Price": 120,
-        "Ordered food": "2 Vegetable chili, and  1 Irish Cream Coffee",
+        "Ordered food": "two Vegetable chilies and one Irish Cream Coffee",
         "Status": "Not yet"
     },
     {
@@ -392,7 +392,7 @@ export default [
         "Receipt number": 136,
         "Payment status": "Paid",
         "Total Price": 140,
-        "Ordered food": "2 pizza, and  2 English tea",
+        "Ordered food": "two pizzas and two English tea",
         "Status": "Not yet"
     },
     {
@@ -403,7 +403,7 @@ export default [
         "Receipt number": 137,
         "Payment status": "Paid",
         "Total Price": 140,
-        "Ordered food": "2 Mushroom omelette, and  2 Irish Cream Coffee",
+        "Ordered food": "two Mushroom omelets and two Irish Cream Coffee",
         "Status": "Not yet"
     },
     {
@@ -414,7 +414,7 @@ export default [
         "Receipt number": 138,
         "Payment status": "Unpaid",
         "Total Price": 140,
-        "Ordered food": "2 Steak, and  2 Mineral water",
+        "Ordered food": "two Steak and two Mineral water",
         "Status": "Not yet"
     },
     {
@@ -425,7 +425,7 @@ export default [
         "Receipt number": 139,
         "Payment status": "Unpaid",
         "Total Price": 140,
-        "Ordered food": "2 pasta, and  2 Fresh orange juice",
+        "Ordered food": "two pasta and two Fresh orange juice",
         "Status": "Not yet"
     },
     {
@@ -436,7 +436,7 @@ export default [
         "Receipt number": 140,
         "Payment status": "Unpaid",
         "Total Price": 140,
-        "Ordered food": "2 Chicken salad, and  2 Soft drink",
+        "Ordered food": "two Chicken salads and two Soft drinks",
         "Status": "Not yet"
     }
 ]

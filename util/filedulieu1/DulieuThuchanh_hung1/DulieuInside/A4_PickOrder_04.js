@@ -9,6 +9,9 @@ import objEndSuccefull from "../../dataHelperFunction/objEndSuccefull"
 import Food from "./A1_foods"
 import dataPickuptable_01 from "./A1_tableOfPickup_01"
 import dataPickuptable_02 from "./A1_tableOfPickup_02"
+
+import A4_begin1 from "./A4_Begin1"
+
 let ArrOfSubmit;
 
 export default function A4_PickOrder_04(n) {
@@ -42,50 +45,12 @@ function getOutputT(DataTable, n) {
         }
         let SpeakFirst = ["Hi", "Hello"]
 
-
-
-
-        let Begin = [
-            {
-                "index": "0",
-                "handle": FnObjHanldingNext(
-                    ["Do you want to eat here or to go."],
-                    [
-                        "Actually, I placed a pickup order. The name is " + e.Name + ".",
-                        "Actually, I placed a pickup order. My name is " + e.Name + ".",
-                        "Actually, I'm here to get my order. It is under the name " + e.Name + ".",
-                        "Actually, I placed a pickup order.",
-                        "Actually, I'm here to get my order."
-                    ]
-                )
-            },
-            {
-                "index": "1",
-                "handle": FnObjHanldingNext(
-                    ["How can I help you", "May I help you"],
-                    [
-                        "Can I get the order for " + e.Name + "?",
-                        "Is the order for " + e.Name + " ready?",
-                        "I'm here to get my order."
-                    ]
-                )
-            },
-            {
-                "index": "2",
-                "handle": FnObjHanldingNext(
-                    ["What do you want"],
-                    ["I'm here to pick up an order."]
-                )
-            },
-
-        ]
-
         let input_01_Begin = []
         let input_02_Begin = []
 
-        Begin.forEach(e => {
-            input_01_Begin.push(e.index)
-            input_02_Begin.push(e.handle)
+        A4_begin1(e).forEach(ee => {
+            input_01_Begin.push(ee.index)
+            input_02_Begin.push(ee.handle)
         })
         let Mid = [
             {
@@ -242,21 +207,21 @@ function R_receiptnumber(e, n) {
 
     let Arr_02 = [
         FnObjHanldingNext(
-            ["What is your Receipt number", "How about the Receipt number?"],
+            ["What is your Receipt number?", "How about the Receipt number?"],
             [
                 "It's " + e["Receipt number"],
                 e["Receipt number"]
             ],
         ),
         FnObjHanldingNext(
-            ["What is your Receipt number", "How about the Receipt number?"],
+            ["What is your Receipt number?", "How about the Receipt number?"],
             [
                 "I don't remember.",
                 "Sorry, I don't remember it."
             ],
         ),
         FnObjHanldingNext(
-            ["What is your Receipt number", "How about the Receipt number?"],
+            ["What is your Receipt number?", "How about the Receipt number?"],
             [
                 "It's " + e["Receipt number"],
                 e["Receipt number"]

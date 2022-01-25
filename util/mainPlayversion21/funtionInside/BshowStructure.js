@@ -135,7 +135,10 @@ function viewIndex(objMain, id) {
             e.forEach(ee => {
                 let objHelper = ""
                 if (ee.m03.end_successfull) {
-                    objHelper = `<br/>End`
+                    objHelper = `<br/>Kết thúc!`
+                }
+                if (ee.m03.action) {
+                    objHelper = `<br/>Hành động!`
                 }
                 let divT =
                     `<div id="` + id + ee.m00 + `" class="divT">

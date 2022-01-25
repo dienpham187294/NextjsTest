@@ -29,7 +29,7 @@ function UpLoadFile(props) {
     return (
         <div style={{ margin: "5%" }}>
             <div style={{ width: "100%", textAlign: "center", }}>
-                <h1 style={{ color: "red" }}> <i>Lesson plan!</i></h1>
+                <h1 style={{ color: "red" }}> <i>Kế hoạch thực hành!</i></h1>
                 <p>Đạt được một kết quả tương đối tốt chỉ với một thời gian thực hành nhỏ mỗi ngày.</p>
                 <b> <i>Phổ cập tiếng anh nghe nói cho người Việt!</i></b>
             </div>
@@ -37,8 +37,8 @@ function UpLoadFile(props) {
             <hr />
             {showInInline(props.DL, setStructure, Fnpick)}
             <hr />
-            <div class="respondiframe">
-                <iframe class="responsive-iframe" src={srcYoutube} allowFullScreen></iframe>
+            <div className="respondiframe">
+                <iframe className="responsive-iframe" src={srcYoutube} allowFullScreen></iframe>
             </div>
         </div >
     )
