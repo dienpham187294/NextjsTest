@@ -47,7 +47,7 @@ const Bai6
         {
             "nameoflession": "How to Structure Earnouts in Business Mergers & Acquisitions",
             "srcYoutube": "https://www.youtube.com/embed/Q3DfoFgXLwY",
-            "storyBoicanh": "M&A",
+            "storyBoicanh": "M&A 06",
             "story": "",
             "dataTool": DataTable,
             "hoctap": {

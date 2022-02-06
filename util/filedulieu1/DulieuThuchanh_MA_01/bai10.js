@@ -47,7 +47,7 @@ const Bai10
         {
             "nameoflession": "Indemnification in Mergers & Acquisitions Explained",
             "srcYoutube": "https://www.youtube.com/embed/pnPdfZUGxZU",
-            "storyBoicanh": "M&A",
+            "storyBoicanh": "M&A 10",
             "story": "",
             "dataTool": DataTable,
             "hoctap": {

@@ -47,7 +47,7 @@ const Bai25
         {
             "nameoflession": "PART 1: Why Do Businesses Buy Other Businesses? (M&A Motivations)",
             "srcYoutube": "https://www.youtube.com/embed/Xd1FWmkjXFQ",
-            "storyBoicanh": "M&A",
+            "storyBoicanh": "M&A 25",
             "story": "",
             "dataTool": DataTable,
             "hoctap": {

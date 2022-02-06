@@ -47,7 +47,7 @@ const Bai9
         {
             "nameoflession": "Comparing Multiple Offers: Mergers & Acquisitons Explained",
             "srcYoutube": "https://www.youtube.com/embed/DC9-AqEzXmI",
-            "storyBoicanh": "M&A",
+            "storyBoicanh": "M&A 09",
             "story": "",
             "dataTool": DataTable,
             "hoctap": {

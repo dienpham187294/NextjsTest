@@ -47,7 +47,7 @@ const Bai8
         {
             "nameoflession": "Dealing with Debt in a Business Sale or Acquisition",
             "srcYoutube": "https://www.youtube.com/embed/rWu5eV6FhJY",
-            "storyBoicanh": "M&A",
+            "storyBoicanh": "M&A 08",
             "story": "",
             "dataTool": DataTable,
             "hoctap": {

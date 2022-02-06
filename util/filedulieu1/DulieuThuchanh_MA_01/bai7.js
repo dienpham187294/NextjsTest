@@ -47,7 +47,7 @@ const Bai7
         {
             "nameoflession": "EBITDA vs SDE: What's the Difference? | A Business Lawyer Explains",
             "srcYoutube": "https://www.youtube.com/embed/lN1XUxvPKQA",
-            "storyBoicanh": "M&A",
+            "storyBoicanh": "M&A 07",
             "story": "",
             "dataTool": DataTable,
             "hoctap": {

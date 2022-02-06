@@ -47,7 +47,7 @@ const Bai14
         {
             "nameoflession": "Mergers and Acquisitions: A Comprehensive Overview of the M&A Process",
             "srcYoutube": "https://www.youtube.com/embed/LpgBGO0aO-Y",
-            "storyBoicanh": "M&A",
+            "storyBoicanh": "M&A 14",
             "story": "",
             "dataTool": DataTable,
             "hoctap": {

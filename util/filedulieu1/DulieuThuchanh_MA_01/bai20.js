@@ -47,7 +47,7 @@ const Bai20
         {
             "nameoflession": "100% Seller Financing (No Money Down) Businesses",
             "srcYoutube": "https://www.youtube.com/embed/2pnuNJLK-k4",
-            "storyBoicanh": "M&A",
+            "storyBoicanh": "M&A 20",
             "story": "",
             "dataTool": DataTable,
             "hoctap": {

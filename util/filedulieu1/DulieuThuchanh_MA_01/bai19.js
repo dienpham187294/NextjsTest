@@ -47,7 +47,7 @@ const Bai19
         {
             "nameoflession": "Understanding a Roll-Up M&A Strategy",
             "srcYoutube": "https://www.youtube.com/embed/T31Peld1LEg",
-            "storyBoicanh": "M&A",
+            "storyBoicanh": "M&A 19",
             "story": "",
             "dataTool": DataTable,
             "hoctap": {

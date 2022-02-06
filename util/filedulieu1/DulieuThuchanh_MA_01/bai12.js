@@ -47,7 +47,7 @@ const Bai12
         {
             "nameoflession": "Understanding Strategic Buyers in Mergers and Acquisitions",
             "srcYoutube": "https://www.youtube.com/embed/tumylUHE_-0",
-            "storyBoicanh": "M&A",
+            "storyBoicanh": "M&A 12",
             "story": "",
             "dataTool": DataTable,
             "hoctap": {

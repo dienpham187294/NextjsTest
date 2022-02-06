@@ -47,7 +47,7 @@ const Bai17
         {
             "nameoflession": "How to Sell Your Business: Auctions vs Direct Negotiation Deals | Mergers and Acquisitions Explained",
             "srcYoutube": "https://www.youtube.com/embed/xoNq0Bb5qgg",
-            "storyBoicanh": "M&A",
+            "storyBoicanh": "M&A 17",
             "story": "",
             "dataTool": DataTable,
             "hoctap": {

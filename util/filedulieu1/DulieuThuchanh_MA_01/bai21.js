@@ -47,7 +47,7 @@ const Bai21
         {
             "nameoflession": "8 Ways to Avoid Merger & Acquisitions (M&A) Lawsuits",
             "srcYoutube": "https://www.youtube.com/embed/2Z51XwsUTGw",
-            "storyBoicanh": "M&A",
+            "storyBoicanh": "M&A 21",
             "story": "",
             "dataTool": DataTable,
             "hoctap": {

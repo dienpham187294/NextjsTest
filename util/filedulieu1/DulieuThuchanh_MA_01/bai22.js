@@ -47,7 +47,7 @@ const Bai22
         {
             "nameoflession": "M&A Deal Structures: Working Capital Adjustments vs. Locked Box Closing Approach",
             "srcYoutube": "https://www.youtube.com/embed/ydfu0lpiDjc",
-            "storyBoicanh": "M&A",
+            "storyBoicanh": "M&A 22",
             "story": "",
             "dataTool": DataTable,
             "hoctap": {

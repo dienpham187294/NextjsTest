@@ -47,7 +47,7 @@ const Bai24
         {
             "nameoflession": "The 4 Main Categories of Merger & Acquisition (M&A) Deals",
             "srcYoutube": "https://www.youtube.com/embed/1290srbuHcM",
-            "storyBoicanh": "M&A",
+            "storyBoicanh": "M&A 24",
             "story": "",
             "dataTool": DataTable,
             "hoctap": {

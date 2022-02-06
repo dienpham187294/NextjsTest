@@ -47,7 +47,7 @@ const Bai13
         {
             "nameoflession": "Understanding Individual Buyers in Mergers and Acquisitions",
             "srcYoutube": "https://www.youtube.com/embed/Di6jhXsR1bs",
-            "storyBoicanh": "M&A",
+            "storyBoicanh": "M&A 13",
             "story": "",
             "dataTool": DataTable,
             "hoctap": {

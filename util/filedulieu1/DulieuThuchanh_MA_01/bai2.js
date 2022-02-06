@@ -47,7 +47,7 @@ const Bai2
         {
             "nameoflession": "Merger & Acquistion (M&A) Deal Structures Explained",
             "srcYoutube": "https://www.youtube.com/embed/ASUM5illI98",
-            "storyBoicanh": "M&A",
+            "storyBoicanh": "M&A 02",
             "story": "",
             "dataTool": DataTable,
             "hoctap": {

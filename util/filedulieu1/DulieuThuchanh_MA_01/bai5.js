@@ -47,7 +47,7 @@ const Bai5
         {
             "nameoflession": "M&A Letters of Intent: Are They Really Necessary?",
             "srcYoutube": "https://www.youtube.com/embed/aNioqOmfOe4",
-            "storyBoicanh": "M&A",
+            "storyBoicanh": "M&A 05",
             "story": "",
             "dataTool": DataTable,
             "hoctap": {

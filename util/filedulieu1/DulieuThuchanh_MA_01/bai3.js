@@ -47,7 +47,7 @@ const Bai3
         {
             "nameoflession": "Mergers and Acquisitions Due Diligence Explained",
             "srcYoutube": "https://www.youtube.com/embed/zVZSS88gIGQ",
-            "storyBoicanh": "M&A",
+            "storyBoicanh": "M&A 03",
             "story": "",
             "dataTool": DataTable,
             "hoctap": {

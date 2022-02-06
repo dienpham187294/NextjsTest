@@ -47,7 +47,7 @@ const Bai4
         {
             "nameoflession": "3 Reasons to Consider Seller Financing in the Sale of Your Business",
             "srcYoutube": "https://www.youtube.com/embed/1Gyw5X02ISc",
-            "storyBoicanh": "M&A",
+            "storyBoicanh": "M&A 04",
             "story": "",
             "dataTool": DataTable,
             "hoctap": {

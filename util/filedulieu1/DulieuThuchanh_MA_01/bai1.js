@@ -47,7 +47,7 @@ const Bai1
         {
             "nameoflession": "Mergers and Acquisitions Explained_ A Crash Course on M&A",
             "srcYoutube": "https://www.youtube.com/embed/WBHzCDgEtVQ",
-            "storyBoicanh": "M&A",
+            "storyBoicanh": "M&A 01",
             "story": "",
             "dataTool": DataTable,
             "hoctap": {

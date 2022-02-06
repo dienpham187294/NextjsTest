@@ -47,7 +47,7 @@ const Bai18
         {
             "nameoflession": "6 Things to Do Before Selling a Business | Mergers and Acquisitions (M&A)",
             "srcYoutube": "https://www.youtube.com/embed/ArEG-bDHpw4",
-            "storyBoicanh": "M&A",
+            "storyBoicanh": "M&A 18",
             "story": "",
             "dataTool": DataTable,
             "hoctap": {

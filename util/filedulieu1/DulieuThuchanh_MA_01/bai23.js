@@ -47,7 +47,7 @@ const Bai23
         {
             "nameoflession": "What is M&A (Mergers & Acquisitions) (in 60 seconds)",
             "srcYoutube": "https://www.youtube.com/embed/VKjPLqG4em4",
-            "storyBoicanh": "M&A",
+            "storyBoicanh": "M&A 23",
             "story": "",
             "dataTool": DataTable,
             "hoctap": {

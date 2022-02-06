@@ -47,7 +47,7 @@ const Bai16
         {
             "nameoflession": "The One and Two-Step Acquisition Close | Mergers and Acquisitions (M&A)",
             "srcYoutube": "https://www.youtube.com/embed/bf-aVQQaP0U",
-            "storyBoicanh": "M&A",
+            "storyBoicanh": "M&A 16",
             "story": "",
             "dataTool": DataTable,
             "hoctap": {

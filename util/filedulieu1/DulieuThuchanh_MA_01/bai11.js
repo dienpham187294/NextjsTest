@@ -47,7 +47,7 @@ const Bai11
         {
             "nameoflession": "Understanding Private Equity Buyers in Mergers and Acquisitions",
             "srcYoutube": "https://www.youtube.com/embed/xXUU0MLG0Ic",
-            "storyBoicanh": "M&A",
+            "storyBoicanh": "M&A 11",
             "story": "",
             "dataTool": DataTable,
             "hoctap": {

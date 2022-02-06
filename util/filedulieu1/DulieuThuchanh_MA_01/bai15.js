@@ -47,7 +47,7 @@ const Bai15
         {
             "nameoflession": "Representations and Warranties in Mergers and Acquisitions (M&A)",
             "srcYoutube": "https://www.youtube.com/embed/cnvG-qb6w9Q",
-            "storyBoicanh": "M&A",
+            "storyBoicanh": "M&A 15",
             "story": "",
             "dataTool": DataTable,
             "hoctap": {
