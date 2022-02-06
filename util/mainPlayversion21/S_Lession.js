@@ -149,19 +149,39 @@ export default function Lesson(props) {
                     </div>
                     : null}
 
-
                 <div
                     style={{
                         position: "fixed",
-                        bottom: "10%",
-                        right: "10%",
+                        top: "1px",
+                        left: "1px",
                         width: "10%",
                         minWidth: "200px",
                         backgroundColor: "white"
                     }}
                 >
                     <button
-                        className="btn btn-outline-danger form-control mt-1"
+                        className="btn btn-danger form-control mt-1"
+                        onClick={() => {
+                            props.Total.fnObj.SET_PageChange(0);
+                            try {
+                                $("#idStopLisening")[0].click()
+                            } catch (error) {
+
+                            }
+                        }}>Trở lại phần chọn bài</button>
+                </div>
+                <div
+                    style={{
+                        position: "fixed",
+                        bottom: "10%",
+                        right: "1%",
+                        width: "10%",
+                        minWidth: "200px",
+                        backgroundColor: "white"
+                    }}
+                >
+                    <button
+                        className="btn btn-danger form-control mt-1"
                         onClick={() => {
                             props.Total.fnObj.SET_PageChange(0);
                             try {

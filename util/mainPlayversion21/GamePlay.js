@@ -22,8 +22,8 @@ import showDivNext from "./funtionInside/showDivNext"
 import showToPickPerson from "./funtionInside/showToPickPerson"
 import Check_ImageOrNot from "./funtionInside/Check_ImageOrNot"
 import showCenterCountDown from "./funtionInside/showCenterCountDown"
+import showHintAlot from "./funtionInside/ShowInfoHint_01_Inaction"
 
-import { prop } from "cheerio/lib/api/attributes";
 let VoicePick = 1;
 let State_of_Anwer = "none";
 let Data_temp_Strickmode;
@@ -413,7 +413,7 @@ function ArrOfPeopeAppear_ReactJSX(props) {
                     DataShowToPick, SET_DataShowToPick, StatusShowToPick, SET_StatusShowToPick,
                     props.ArrOfPeopeAppear_ReactData, AddTo_Show_ArrOfPeopeAppear_ReactData, props.Total
                 )}
-                {DataAction !== null ? showAction(DataAction, SET_DataAction, props.Data_Commands, showOptionToRead, Score) : null}
+                {DataAction !== null ? showAction(DataAction, SET_DataAction, props.Data_Commands, showOptionToRead, Score, showHintAlot) : null}
             </div>
             <ReadReactSpeech />
         </>
@@ -423,7 +423,7 @@ export default ArrOfPeopeAppear_ReactJSX
 
 
 
-function showAction(DataAction, SET_DataAction, Data_Commands, showOptionToRead, Score) {
+function showAction(DataAction, SET_DataAction, Data_Commands, showOptionToRead, Score, showHintAlot) {
 
 
     let ArrT2 = JSON.parse(JSON.stringify(DataAction));
@@ -453,7 +453,7 @@ function showAction(DataAction, SET_DataAction, Data_Commands, showOptionToRead,
                                 SET_DataAction(ArrT2);
 
                             }}
-                        >{e.stt ? e.data : null}</p>
+                        >{e.stt ? showHintAlot(e.data) : null}</p>
                     )}
                 </div>
                 <div className="col-6">
@@ -467,7 +467,7 @@ function showAction(DataAction, SET_DataAction, Data_Commands, showOptionToRead,
                                 SET_DataAction(ArrT2)
 
                             }}
-                        >{!e.stt ? e.data : null}</p>
+                        >{!e.stt ? showHintAlot(e.data) : null}</p>
                     )}
                 </div>
             </div>
