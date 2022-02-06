@@ -1,6 +1,7 @@
 
 import { useState } from "react";
 import shuffleArr from "../filedulieu1/dataHelperFunction/shuffleArr";
+
 function UpLoadFile(props) {
 
     const [srcYoutube, SET_SrcYoutube] = useState("https://www.youtube.com/embed/a-48STRZtIQ")
@@ -29,9 +30,9 @@ function UpLoadFile(props) {
     return (
         <div style={{ margin: "5%" }}>
             <div style={{ width: "100%", textAlign: "center", }}>
-                <h1 style={{ color: "red" }}> <i>Thực hành!</i></h1>
-                <p>Nhanh chóng đạt được một kết quả tương đối với cách thức đơn giản, hiệu quả.</p>
-                <b> <i>Phổ cập tiếng anh nghe nói!</i></b>
+                <h1 style={{ color: "red" }}> <i>Luyện tập!</i></h1>
+                <p>Nhanh chóng đạt được một kĩ năng tương đối với cách thức đơn giản, hiệu quả.</p>
+                <b> <i>Phổ cập tiếng anh phổ thông!</i></b>
             </div>
 
             <hr />

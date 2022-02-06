@@ -46,7 +46,7 @@ function getOutputT(DataTable, n) {
         let input_01_Begin = []
         let input_02_Begin = []
 
-    
+
         A4_begin1(e).forEach(ee => {
             input_01_Begin.push(ee.index)
             input_02_Begin.push(ee.handle)
@@ -173,7 +173,8 @@ function giaodoan(e) {
             "list":
                 [
                     {
-                        "data": e["Ordered food"],
+                        "title": e["Ordered food"],
+                        "data": "https://i.postimg.cc/ryZmZ7Bz/online-food-delivery-courier-delivers-paper-package-with-foodstuff-fast-delivery-service-human-carto.jpg",
                         "stt": true,
                         "submit": false
                     }
@@ -191,7 +192,8 @@ function nhantien() {
             "list":
                 [
                     {
-                        "data": "200$",
+                        "title": "200$",
+                        "data": "https://i.postimg.cc/hPsBMTx1/money.jpg",
                         "stt": false,
                         "submit": true
                     }

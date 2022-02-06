@@ -453,7 +453,7 @@ function showAction(DataAction, SET_DataAction, Data_Commands, showOptionToRead,
                                 SET_DataAction(ArrT2);
 
                             }}
-                        >{e.stt ? showHintAlot(e.data) : null}</p>
+                        >{e.stt ? showHintAlot(e.data, e.title) : null}</p>
                     )}
                 </div>
                 <div className="col-6">
@@ -467,7 +467,7 @@ function showAction(DataAction, SET_DataAction, Data_Commands, showOptionToRead,
                                 SET_DataAction(ArrT2)
 
                             }}
-                        >{!e.stt ? showHintAlot(e.data) : null}</p>
+                        >{!e.stt ? showHintAlot(e.data, e.title) : null}</p>
                     )}
                 </div>
             </div>

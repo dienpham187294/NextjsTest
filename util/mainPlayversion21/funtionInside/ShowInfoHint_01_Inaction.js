@@ -1,8 +1,10 @@
 import Check_ImageOrNot from "./Check_ImageOrNot"
 
-export default function showHintAlot(input) {
+export default function showHintAlot(input, title) {
     try {
-
+        if (title === undefined) {
+            title = input
+        }
         return (
             <div>
                 {
@@ -13,7 +15,7 @@ export default function showHintAlot(input) {
                                     {Check_ImageOrNot(e) ?
                                         <>
                                             <img
-
+                                                title={title}
                                                 alt={e} src={e}
                                                 width="100px"
                                                 height={"100px"}
@@ -43,7 +45,7 @@ export default function showHintAlot(input) {
                                 {Check_ImageOrNot(input) ?
                                     <>
                                         <img
-
+                                            title={title}
                                             alt={input} src={input}
                                             width="100px" height={"100px"}
                                         />

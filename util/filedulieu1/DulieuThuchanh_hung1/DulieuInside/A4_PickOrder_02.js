@@ -168,7 +168,8 @@ function giaodoan(e) {
             "list":
                 [
                     {
-                        "data":"https://i.postimg.cc/ryZmZ7Bz/online-food-delivery-courier-delivers-paper-package-with-foodstuff-fast-delivery-service-human-carto.jpg",
+                        "title": e["Ordered food"],
+                        "data": "https://i.postimg.cc/ryZmZ7Bz/online-food-delivery-courier-delivers-paper-package-with-foodstuff-fast-delivery-service-human-carto.jpg",
                         "stt": true,
                         "submit": false
                     }
@@ -187,7 +188,8 @@ function nhantien(e) {
             "list":
                 [
                     {
-                        "data": e["Total Price"] + "$",
+                        "title": e["Total Price"] + "$",
+                        "data": "https://i.postimg.cc/hPsBMTx1/money.jpg",
                         "stt": false,
                         "submit": true
                     }
