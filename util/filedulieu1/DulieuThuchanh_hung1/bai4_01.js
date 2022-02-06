@@ -63,6 +63,11 @@ const Bai41
             "srcYoutube": "https://www.youtube.com/embed/8UKiOdj21dg",
             "storyBoicanh": "Nhà hàng",
             "story": "",
+            "srcListenAndSplit": [
+                "https://www.youtube.com/embed/GweNA0Rjb5Y",
+                "https://www.youtube.com/embed/Y2zvP6KjwPg",
+                "https://www.youtube.com/embed/N80OHi_FQ2c"
+            ],
             "dataTool": DataTable,
             "hoctap": {
                 "listenRead": [],
