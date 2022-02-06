@@ -29,9 +29,9 @@ function UpLoadFile(props) {
     return (
         <div style={{ margin: "5%" }}>
             <div style={{ width: "100%", textAlign: "center", }}>
-                <h1 style={{ color: "red" }}> <i>Kế hoạch thực hành!</i></h1>
-                <p>Đạt được một kết quả tương đối tốt chỉ với một thời gian thực hành nhỏ mỗi ngày.</p>
-                <b> <i>Phổ cập tiếng anh nghe nói cho người Việt!</i></b>
+                <h1 style={{ color: "red" }}> <i>Thực hành!</i></h1>
+                <p>Nhanh chóng đạt được một kết quả tương đối với cách thức đơn giản, hiệu quả.</p>
+                <b> <i>Phổ cập tiếng anh nghe nói!</i></b>
             </div>
 
             <hr />
@@ -83,7 +83,7 @@ function showInInline(test, setStructure, Fnpick, SET_SrcYoutube) {
                                 onClick={() => {
                                     setStructure(e)
                                 }}
-                            >Study</button>
+                            >Học tập</button>
                             {showBtnVideoHuongdan(e[0].srcYoutube, SET_SrcYoutube)}
 
                         </div>
@@ -166,7 +166,7 @@ function showBtnVideoNgheTacham(dataqInput, SET_SrcYoutube) {
                                 onClick={() => {
                                     SET_SrcYoutube(e)
                                 }}
-                            >Câu {i}</button>
+                            >Video {i + 1}</button>
                         </a>
                     </div>
                 )}
@@ -191,7 +191,7 @@ function showBtnVideoHuongdan(dataqInput, SET_SrcYoutube) {
                             onClick={() => {
                                 SET_SrcYoutube(dataqInput)
                             }}
-                        >Xem hướng dẫn</button>
+                        >Video</button>
                     </a>
                 </>
             )
