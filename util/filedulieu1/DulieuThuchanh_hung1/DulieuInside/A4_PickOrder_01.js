@@ -93,7 +93,8 @@ function getOutputT(DataTable, n) {
                             "list":
                                 [
                                     {
-                                        "data": e["Ordered food"],
+                                        "title": e["Ordered food"],
+                                        "data": "https://i.postimg.cc/ryZmZ7Bz/online-food-delivery-courier-delivers-paper-package-with-foodstuff-fast-delivery-service-human-carto.jpg",
                                         "stt": true,
                                         "submit": false
                                     }
