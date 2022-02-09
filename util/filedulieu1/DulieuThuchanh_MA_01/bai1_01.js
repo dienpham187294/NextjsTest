@@ -1,30 +1,30 @@
 
 import shuffleArr from "../dataHelperFunction/shuffleArr"
 
-import A2_Bai1 from "./DulieuInside/A2_Bai1"
+import A2_Bai1_01 from "./DulieuInside/A2_Bai1_01"
 
 
-let InA2_Bai1 = A2_Bai1(40)
+let InA2_Bai1_01 = A2_Bai1_01(40)
 
 
 
 
 let coerdataoflession = [].concat(
-    InA2_Bai1.core,
+    InA2_Bai1_01.core,
 
 )
 
 let DataTable = [
-    // InA2_Bai1.tool.m01
+    
 ]
 
 
-const Bai1
+const Bai1_01
     = [
         {
-            "nameoflession": "Mergers and Acquisitions Explained_ A Crash Course on M&A",
-            "srcYoutube": "https://www.youtube.com/embed/WBHzCDgEtVQ",
-            "storyBoicanh": "M&A 01",
+            "nameoflession": "",
+            "srcYoutube": "",
+            "storyBoicanh": "Luyện tập 01",
             "story": "",
             "dataTool": DataTable,
             "hoctap": {
@@ -38,7 +38,7 @@ const Bai1
             "coerdataoflession": shuffleArr(shuffleArr(coerdataoflession))
         }
     ]
-export default Bai1
+export default Bai1_01
 
 
 

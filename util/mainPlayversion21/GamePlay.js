@@ -439,36 +439,40 @@ function showAction(DataAction, SET_DataAction, Data_Commands, showOptionToRead,
         }}>
             <div className="row">
                 <div className="col-12" style={{ textAlign: "center" }}>
-                    <h1>{DataAction.name}</h1>
+                    <h5>{DataAction.name}</h5>
                 </div>
                 <hr />
-                <div className="col-6 border-right">
-                    <b>A</b>
-                    {DataAction.list.map((e, i) =>
-                        <p
-                            key={i}
-                            style={{ cursor: "pointer" }}
-                            onClick={() => {
-                                ArrT2.list[i].stt = false;
-                                SET_DataAction(ArrT2);
+                <div className="row" style={{ textAlign: "left" }}>
+                    <div className="col-6 border-right">
+                        <b>A---</b>
+                        <hr />
+                        {DataAction.list.map((e, i) =>
+                            <p
+                                key={i}
+                                style={{ cursor: "pointer" }}
+                                onClick={() => {
+                                    ArrT2.list[i].stt = false;
+                                    SET_DataAction(ArrT2);
 
-                            }}
-                        >{e.stt ? showHintAlot(e.data, e.title) : null}</p>
-                    )}
-                </div>
-                <div className="col-6">
-                    <b>B</b>
-                    {DataAction.list.map((e, i) =>
-                        <p
-                            key={i}
-                            style={{ cursor: "pointer" }}
-                            onClick={() => {
-                                ArrT2.list[i].stt = true;
-                                SET_DataAction(ArrT2)
+                                }}
+                            >{e.stt ? showHintAlot(e.data, e.title) : null}</p>
+                        )}
+                    </div>
+                    <div className="col-6">
+                        <b>B---</b>
+                        <hr />
+                        {DataAction.list.map((e, i) =>
+                            <p
+                                key={i}
+                                style={{ cursor: "pointer" }}
+                                onClick={() => {
+                                    ArrT2.list[i].stt = true;
+                                    SET_DataAction(ArrT2)
 
-                            }}
-                        >{!e.stt ? showHintAlot(e.data, e.title) : null}</p>
-                    )}
+                                }}
+                            >{!e.stt ? showHintAlot(e.data, e.title) : null}</p>
+                        )}
+                    </div>
                 </div>
             </div>
             <hr />

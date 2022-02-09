@@ -25,36 +25,41 @@ import Bai24 from "./bai24"
 import Bai25 from "./bai25"
 import Bai26 from "./bai26"
 import Bai27 from "./bai27"
+import Bai1_01 from "./bai1_01"
+import Bai1_02 from "./bai1_02"
 const DLTOTAL =
     [
 
-        Bai1,
-        Bai2,
-        Bai3,
-        Bai4,
-        Bai5,
-        Bai6,
-        Bai7,
-        Bai8,
-        Bai9,
-        Bai10,
-        Bai11,
-        Bai12,
-        Bai13,
-        Bai14,
-        Bai15,
-        Bai16,
-        Bai17,
-        Bai18,
-        Bai19,
-        Bai20,
-        Bai21,
-        Bai22,
-        Bai23,
-        Bai24,
-        Bai25,
-        Bai26,
-        Bai27,
+        [
+            Bai1,
+            [Bai1_01, Bai1_02]
+        ],
+        [Bai2],
+        [Bai3],
+        [Bai4],
+        [Bai5],
+        [Bai6],
+        [Bai7],
+        [Bai8],
+        [Bai9],
+        [Bai10],
+        [Bai11],
+        [Bai12],
+        [Bai13],
+        [Bai14],
+        [Bai15],
+        [Bai16],
+        [Bai17],
+        [Bai18],
+        [Bai19],
+        [Bai20],
+        [Bai21],
+        [Bai22],
+        [Bai23],
+        [Bai24],
+        [Bai25],
+        [Bai26],
+        [Bai27],
     ]
 export default DLTOTAL
 
