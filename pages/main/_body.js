@@ -2,7 +2,6 @@ import ThuchanhA from "../thuchanh/thuchanhde";
 export default function body() {
     return (
         <>
-
             <div className="container">
                 <div className="bodyInfomationDiv">
                     <div style={{ padding: "0 0 40px", margin: "40px 40px 0 0" }}>
