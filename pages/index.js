@@ -4,11 +4,7 @@ import Body from "./main/_body"
 
 function Home() {
   return (
-    <div className="container-fluid">
-      <div className="row bg-dark">
-        <div className="col-6">   <b>  <i style={{ color: "white", fontSize: "20px", letterSpacing: "-1px" }}>EngPraticeCenter</i></b></div>
-        <div className="col-6">        <b>  <i style={{ color: "white", letterSpacing: "2px", float: "right" }}>Faster way to make your skill!</i></b></div>
-      </div>
+    <div>
       <Body />
     </div>
   )

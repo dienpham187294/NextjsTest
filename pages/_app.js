@@ -1,13 +1,9 @@
 
 import '../styles/globals.css'
-// import Link from 'next/link'
 import 'regenerator-runtime/runtime'
-// import { getCookie } from "../util/Cookies/functionCookies"
 import { useEffect, useState } from 'react';
-// import Linkapi from "../util/api/Linkapi"
 import List_IDs from "../util/List_IDs/List_IDs"
 import Head from "next/head";
-// import { async } from 'regenerator-runtime';
 const { detect } = require('detect-browser');
 const ip = require('ip');
 
@@ -54,13 +50,18 @@ function MyApp({ Component, pageProps }) {
     <Head>
       <title>Thực hành tiếng anh</title>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <meta name="description" content="Ericpham Product" />
+      <meta name="description" content="Thực hành tiếng anh" />
       {/* <meta name="facebook-domain-verification" content="4v65nvfymyec6nthr2m2l2rbcvo7kp" /> */}
       <link rel="icon" href="/favicon.ico" />
       <link
         rel="stylesheet"
         href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         crossOrigin="anonymous"
+      />
+      <link rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+        crossorigin="anonymous"
       />
       <script
         src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -86,12 +87,12 @@ function MyApp({ Component, pageProps }) {
 
 
     <footer className="mt-5 text-center">
-      <div>
+      {/* <div>
         <hr />
         Created by Ká Điện.
         <br />
         <i>Objective: Create games that have the effect of replacing the actual language practice environment in order to make it easy and fast for everyone to access the practice and use of this tool for fluency.</i>
-      </div>
+      </div> */}
       <div style={{ display: "none" }}>
         <span id="ID_TEXT_BROWSERNAME"></span><span id="Detect_device"></span>
         <p id={List_IDs["GET_Cookies"]}> ===</p>

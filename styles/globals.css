@@ -97,63 +97,7 @@ a:hover {
     }
   }
 
-/* .gamesence_allcource{
 
-} */
-
-/* .gamesence_allcource_card {
-    width: 23%;
-    min-width: 300px;
-    border: 1px solid green;
-    border-radius: 6px;
-    padding: 10px;
-    margin: 1%;
-    display: inline-block;
-}
-
-.Insert_lession div {
-    border: 1px solid green;
-    border-radius: 6px;
-}
-
-.Insert_lession textarea {
-    width: 80%;
-    height: fit-content;
-    margin-left: 50%;
-    transform: translateX(-50%);
-    border: 1px solid black;
-    margin-top: 10px;
-    border-radius: 10px;
-}
-
-.Insert_tool div {
-    border: 1px solid green;
-    border-radius: 6px;
-}
-
-.Insert_tool textarea {
-    width: 80%;
-    height: fit-content;
-    margin-left: 50%;
-    transform: translateX(-50%);
-    border: 1px solid black;
-    margin-top: 10px;
-    border-radius: 10px;
-}
-
-#Text_gamedata {
-    width: 80%;
-    height: fit-content;
-    margin-left: 50%;
-    transform: translateX(-50%);
-}
-
-.manager_create div{
-    border: 1px solid green;
-    border-radius: 6px;
-    padding: 10px;
-
-} */ 
 
 .respondiframe{
     position: relative;
@@ -267,4 +211,63 @@ a:hover {
 .span3{
     background-color: black;
     color: white;
+}
+.A0_topconent{
+    border-bottom: solid 1px #e6e6e6;
+    height: 70px;
+    line-height: 70px;
+    padding: 0 30px;
+    box-shadow:0 2px 4px rgb(0 0 0 / 10%)
+}
+.A0_01_topcontent{
+    color: black;
+    font-size: 20px;
+    letter-spacing: -1px;
+}
+.A0_02_topcontent{
+    color: black;
+    letter-spacing: 2px;
+    float: right;
+}
+.A1_sidebar {
+    display: inline-block;
+    width: 180px;
+}
+.A1_01_sidebar {
+    position: fixed;
+    top:70px;
+    bottom:0;
+    background-color: rgb(48, 65, 86);
+    z-index: 10;
+}
+
+.A1_01_sidebar div{
+   padding: 20px;
+   height: fit-content;
+   width: 100%; 
+   color: white;
+}
+.A1_01_sidebar div button{
+    width: 100%; 
+ }
+ 
+.A1_01_a_span_sidebar{
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    height: 56px;
+    line-height: 56px;
+    background-color: red;
+    padding: 20px;
+    white-space: nowrap;
+    border: 1px solid black;
+    border-radius: 6px;
+}
+
+.A2_content {
+    display: inline-block;
+}
+.dropdown-menu {
+    max-height: 400px;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
