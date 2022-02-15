@@ -239,6 +239,8 @@ a:hover {
     bottom:0;
     background-color: rgb(48, 65, 86);
     z-index: 10;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .A1_01_sidebar div{
