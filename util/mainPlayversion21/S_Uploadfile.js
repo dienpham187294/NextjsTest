@@ -8,6 +8,8 @@ function UpLoadFile(props) {
 
     function Fnpick(arrPick) {
         try {
+            console.log(JSON.stringify(arrPick))
+
             props.Total.fnObj.SET_Data_InfoOflession(arrPick[0].hoctap)
             props.Total.fnObj.SET_NameOflession(arrPick[0].nameoflession)
             props.Total.fnObj.SET_DataToolR(arrPick[0].dataTool)

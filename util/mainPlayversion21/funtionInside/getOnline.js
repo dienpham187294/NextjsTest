@@ -2,8 +2,6 @@
 
 export default async function getOnline(idRoom, idMember, score, SET_DataOnline) {
     try {
-
-
         const res = await fetch(
             "https://nodejsserverforenglishtool.herokuapp.com/api"
             ,

@@ -31,8 +31,8 @@ export default function showTopCenter1(
                             SET_ShowReview(ArrHoldThingToReview)
                         }}
                     >Review</button> */}
-                    <hr />
-                    {showOptionToRead(Score, Info_StrickAnwers_Reactdata)}
+                    {/* <hr />
+                    {showOptionToRead(Score, Info_StrickAnwers_Reactdata)} */}
 
 
                 </div>
