@@ -77,7 +77,7 @@ export default function A2_Bai1(n) {
             ),
             FnObjHanldingNext(
                 [objGet[2].Answer],
-                [],
+                [""],
                 fnAction_01(A1_Bai_01, objGetIPA[0].IPA)
             ),
             FnObjHanldingNext(

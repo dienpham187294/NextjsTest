@@ -12,7 +12,7 @@ export default async function ReadMessage(text, voiceNum, rate, pitch) {
     if (text === undefined) {
         text = saveText
         voiceNum = saveVoiNum
-        rate = 0.7
+        rate = 0.8
         pitch = savePitch
     }
 
