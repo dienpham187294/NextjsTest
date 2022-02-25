@@ -68,7 +68,7 @@ export default function A2_Bai1(n) {
         ]
 
         let input_01_Body = [
-            "0", "0-0", "0-0-0", "0-0-0-0", "0-0-0-0-0"
+            "0", "0-0", "0-0-0", "0-0-0-0", "0-0-0-0-0","0-0-0-0-0-0"
         ]
         let input_02_Body = [
             FnObjHanldingNext(

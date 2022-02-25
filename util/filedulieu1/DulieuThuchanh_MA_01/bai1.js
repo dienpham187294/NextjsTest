@@ -11,7 +11,6 @@ let InA2_Bai1 = A2_Bai1(40)
 
 let coerdataoflession = [].concat(
     InA2_Bai1.core,
-
 )
 
 let DataTable = [
